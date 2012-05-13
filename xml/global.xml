@@ -1,0 +1,1186 @@
+<global id="_b137bc261faaa7c78e42520141192137" key="" compact="0" stageWidth="1000" stageHeight="740" coreLibs="lib/global.swf,lib/FT_StorageRoom.swf,lib/ui.swf,lib/CoffeeShop.swf,lib/FT_Foyer.swf,lib/FT_Hall.swf,lib/FT_Office.swf,lib/FT_Office_AC.swf,lib/FT_Office_Computer.swf,lib/FT_Office_Phone.swf,lib/Home_Bedroom.swf,lib/Home_Computer.swf,lib/Home_LivingRoom.swf,lib/Map.swf,lib/SecretLair.swf,lib/FT_OT.swf,lib/StrollerTownTV.swf,lib/V_global.swf" voiceLibs="voice/V_global.swf,voice/V_CoffeeShop.swf" langOptions="en">
+  <config language="en" actor="ted" room="FT_StorageRoom" soundtrackVolume="0.5" soundfxVolume="0.5" voiceVolume="0.5" voices="1" subtitles="1"/>
+  <title><![CDATA[Episode 1 - Where Am I?]]></title>
+  <author><![CDATA[Kerrin Hardy]]></author>
+  <verbDialect>
+    <en><![CDATA[#verb# #noun#]]></en>
+  </verbDialect>
+  <itemDialect>
+    <en><![CDATA[Use #item# with #noun#]]></en>
+  </itemDialect>
+  <actors>
+    <actor id="ted" asset="lib/global.swf:Patrick" regX="1" regY="0" response="main" inventory="main" subtitle="0xFFFFFF"><![CDATA[Ted]]></actor>
+  </actors>
+  <responses>
+    <response id="main">
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="lib/V_global.swf:ICantTalkToThat">
+            <en><![CDATA[I can't talk to that!]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <debug echo="CantTalk"/>
+          <sound effect="lib/V_global.swf:ICantTalkToThat" waitForComplete="0"/>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="lib/V_global.swf:DontKnowWhatToDoWithThat">
+            <en><![CDATA[I don't know what to do with that!]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <debug echo="DontKnow"/>
+          <sound effect="lib/V_global.swf:DontKnowWhatToDoWithThat" waitForComplete="0"/>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="item">
+        <title>
+          <en><![CDATA[Item]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="lib/V_global.swf:ICantDoThat">
+            <en><![CDATA[I can't do that]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <debug echo="CantDo"/>
+          <sound effect="lib/V_global.swf:ICantDoThat" waitForComplete="0"/>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </response>
+  </responses>
+  <items>
+    <item id="BentWireHanger" asset="lib/global.swf:BentWireHanger" frame="[object FrameLabel]" hover="[object FrameLabel]">
+      <title>
+        <en><![CDATA[Bent Wire Hanger]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0001">
+            <en><![CDATA[It's a wire hanger....well it was before I bent it out of shape]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0002">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="Book" asset="lib/global.swf:Book" frame="" hover="">
+      <title>
+        <en><![CDATA[Book]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0003">
+            <en><![CDATA[It's a book called 'Intervine' that tells you how to help friends and family that are addicted.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0004">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="BookEnv" asset="lib/global.swf:BookEnv" frame="" hover="">
+      <title>
+        <en><![CDATA[Book]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0005">
+            <en><![CDATA[It's a book called 'Intervine' that tells you how to help friends and family that are addicted. There is a used envelope book marking the chapter on helpping girlfriends and boyfriends.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <inventory target="main" replace="BookEnv:Book,Envelope"/>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0006">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="DigitalFob" asset="lib/global.swf:DigitalFob" frame="" hover="">
+      <title>
+        <en><![CDATA[Digital Device]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0007">
+            <en><![CDATA[It's some sort of digital device. I found it in my office desk draw.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0008">
+            <en><![CDATA[I think it's needs to be plugged in to something.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="Envelope" asset="lib/global.swf:Envelope" frame="" hover="">
+      <title>
+        <en><![CDATA[Envelope]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0009">
+            <en><![CDATA[It has a phone number scribbled on it.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <layer target="FT_Office_Phone:Unknown" state="On"/>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0010">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="FramedPhoto" asset="lib/global.swf:FramedPhoto" frame="" hover="">
+      <title>
+        <en><![CDATA[Framed Photo of CEO]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0011">
+            <en><![CDATA[Its a portrait photo of the Sarah Bio, the CEO of Future Tech]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0012">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="IPod" asset="lib/global.swf:iPod" frame="" hover="">
+      <title>
+        <en><![CDATA[iPod]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0013">
+            <en><![CDATA[It the iPod I borrowed from the guard.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0014">
+            <en><![CDATA[I have more important things to do than listen to music at the moment.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="Key" asset="lib/global.swf:Key" frame="[object FrameLabel]" hover="[object FrameLabel]">
+      <title>
+        <en><![CDATA[Key]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0015">
+            <en><![CDATA[It's a key]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0016">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="KeyCard" asset="lib/global.swf:KeyCard" frame="" hover="">
+      <title>
+        <en><![CDATA[Key Card]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0017">
+            <en><![CDATA[It is an ID card]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0018">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="MedicalKey" asset="lib/global.swf:Key" frame="" hover="">
+      <title>
+        <en><![CDATA[Key]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0019">
+            <en><![CDATA[It's a key]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0020">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="MyKeyCard" asset="lib/global.swf:MyKeyCard" frame="" hover="">
+      <title>
+        <en><![CDATA[My Key Card]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0021">
+            <en><![CDATA[It's my key card]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0022">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="O2Tank" asset="lib/global.swf:O2" frame="" hover="">
+      <title>
+        <en><![CDATA[O2 Tank]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0023">
+            <en><![CDATA[It's full of gas.]]></en>
+          </dia>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0024">
+            <en><![CDATA[O2 that is.r]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0025">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="Pills" asset="lib/global.swf:Pills" frame="" hover="">
+      <title>
+        <en><![CDATA[Hayfever Tablets]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0026">
+            <en><![CDATA[Heyfever tablets. I wonder if these are the ones that make me tired?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0027">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="Scrub" asset="lib/global.swf:Scrub" frame="" hover="">
+      <title>
+        <en><![CDATA[Scrub]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0028">
+            <en><![CDATA[It's a new set of scrubs]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0029">
+            <en><![CDATA[I don't want to wear that now]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <logic>
+            <if eval="[_currentRoom] EQ FT_OT">
+              <layer target="_current:Guard" state="Visible"/>
+              <scriptCall global="beforeDialogue"/>
+              <layerSprite target="_avatar" frameOffset="32"/>
+              <puppetTween target="_avatar" type="moveThenTurn" to="layer:Guard" toView="7"/>
+              <tree load="Guard"/>
+            </if>
+            <else>
+              <dialogue play="*"/>
+            </else>
+          </logic>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="ScrubHanger" asset="lib/global.swf:ScrubHanger" frame="" hover="">
+      <title>
+        <en><![CDATA[Scubs on Hanger]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0030">
+            <en><![CDATA[It's a new scrub on a wire hanger]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0031">
+            <en><![CDATA[This wire hanger might be useful]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <inventory target="main" replace="ScrubHanger:Scrub,WireHanger"/>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="SonicParcel" asset="lib/global.swf:Parcel" frame="" hover="">
+      <title>
+        <en><![CDATA[Parcel]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0032">
+            <en><![CDATA[It's a parcel from iBay address to me, Dr Martin.]]></en>
+          </dia>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0033">
+            <en><![CDATA[It will be Sonic the Hedgehog]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0034">
+            <en><![CDATA[I don't want to open it just now.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="Stethoscope" asset="lib/global.swf:Stethoscope" frame="" hover="">
+      <title>
+        <en><![CDATA[Stethoscope]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0045">
+            <en><![CDATA[I can't hear anything interesting.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="USB" asset="lib/global.swf:USB" frame="" hover="">
+      <title>
+        <en><![CDATA[USB Stick]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0035">
+            <en><![CDATA[It is a USB memory stick.]]></en>
+          </dia>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0036">
+            <en><![CDATA[It has the drawing of some guy on the side.]]></en>
+          </dia>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0037">
+            <en><![CDATA[Paul and Storm said it had a robot personality on.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0038">
+            <en><![CDATA[It would need to be installed on a robot first.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0039">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="WeaponSystemManual" asset="lib/global.swf:Manual" frame="" hover="">
+      <title>
+        <en><![CDATA[Manual]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0040">
+            <en><![CDATA[It's a manual for 'The Armed Defense System Over 9000']]></en>
+          </dia>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0041">
+            <en><![CDATA[The system is voice controled. And can be accessed via a microphone that is built in, or remotely via a phone.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <logic eval="[lookedAtPhone] EQ 1">
+            <tree enableTopic="_current:Phone:_1:1"/>
+            <tree enableTopic="_current:Phone:_8:0"/>
+          </logic>
+          <logic eval="[lookedAtPhone] NE 1">
+            <tree enableTopic="_current:Phone:_8:1"/>
+          </logic>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0042">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+    <item id="WireHanger" asset="lib/global.swf:WireHanger" frame="" hover="">
+      <title>
+        <en><![CDATA[Wire Hanger]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0043">
+            <en><![CDATA[It's a wire hanger from the scrub I found in the box]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0044">
+            <en><![CDATA[On what?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog/>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+  </items>
+  <inventories>
+    <inventory id="main" items="" hoverStyle="outline" hoverColor="0x000000"/>
+  </inventories>
+  <combos>
+    <combo id="O2Scrub" primary="Scrub" pool="O2Tank">
+      <action id="">
+        <title>
+          <en><![CDATA[]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="voice/V_global.swf:global0000">
+            <en><![CDATA[Not sure that will do much at the moment.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <logic>
+            <if eval="[Flooded] EQ '1'">
+              <cursor item=""/>
+              <inventory target="main" remove="Scrub"/>
+              <layer target="_current:InflateScrub" state="Visible"/>
+              <layerTween targets="InflateScrub" by="x,-300" seconds="3" ease="expo:easeIn" waitForComplete="1"/>
+              <layer target="_current:InflateScrub" state="Burst"/>
+              <layerTween targets="HeavySpikeyThing" by="x,400" seconds="2" ease="expo:easeIn" waitForComplete="1"/>
+              <layer target="_current:Flood" state="Unflood"/>
+              <layer target="_current:HeavySpikeyThing" state="Dropped"/>
+              <layer target="_current:Weapons" state="Faulty"/>
+              <tree enableTopic="_current:Phone:_4:0"/>
+              <tree enableTopic="_current:Phone:_6:1"/>
+              <cache field="Flooded" value="0"/>
+              <tree load="Annoyed"/>
+            </if>
+            <else>
+              <dialogue play="*"/>
+            </else>
+          </logic>
+        </script>
+      </action>
+    </combo>
+  </combos>
+  <scripts>
+    <script id="_onNewGame">
+      <cache field="first_leave" value="start"/>
+      <cache field="guard_jacket" value="guard"/>
+      <cache field="guard_key" value="in_jacket"/>
+      <cache field="guard_ipod" value="in_jacket"/>
+      <cache field="laptop_song" value="start"/>
+      <cache field="tod_song" value="start"/>
+      <cache field="bought_sonic" value="start"/>
+      <cache field="pirate_jokes_left" value="5"/>
+      <cache field="stethoscope" value="1"/>
+      <game room="FT_StorageRoom"/>
+    </script>
+    <script id="_onStartGame">
+      <game actor="ted"/>
+      <keyboard addKeyScript="i">
+        <debug echo="Inventory..ho!"/>
+        <inventory display="toggle"/>
+      </keyboard>
+      <keyboard addKeyScript="m">
+        <menu display="toggle"/>
+      </keyboard>
+      <keyboard addKeyScript="h">
+        <menu display="toggle"/>
+      </keyboard>
+      <keyboard addKeyScript="d">
+        <debug enabled="1" display="toggle"/>
+      </keyboard>
+      <ui load="ui_layout"/>
+      <method define="prepare_dialogue" before="1">
+        <logic>
+          <if eval="@before EQ 1">
+            <debug echo="Dialogue..disable inventory"/>
+            <keyboard disableKey="i"/>
+            <inventory display="hide"/>
+            <layer target="ui_layout:inventory" state="hide"/>
+          </if>
+          <else>
+            <debug echo="Dialogue..enable inventory"/>
+            <keyboard enableKey="i"/>
+            <layer target="ui_layout:inventory" state="show"/>
+          </else>
+        </logic>
+      </method>
+    </script>
+    <script id="afterDialogue">
+      <debug echo="Dialogue..enable inventory"/>
+      <keyboard enableKey="i"/>
+      <layer target="ui_layout:inventory" state="show"/>
+    </script>
+    <script id="beforeDialogue">
+      <debug echo="Dialogue..disable inventory"/>
+      <keyboard disableKey="i"/>
+      <inventory display="hide"/>
+      <layer target="ui_layout:inventory" state="hide"/>
+    </script>
+  </scripts>
+</global>

@@ -1,0 +1,529 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: StreetDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: StreetDoor)
+ title: "Front Door"
+
+  -----
+  Action: "Look at" (#0, layer: StreetDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0000]
+   "It goes outside."
+
+  -----
+  Action: "Talk to" (#1, layer: StreetDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: StreetDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0001]
+   "I don't think I'm done here."
+
+ --------------------------------------------------
+ State: Day (layer: StreetDoor)
+ title: "Front Door"
+
+  -----
+  Action: "Look at" (#0, layer: StreetDoor, state: Day)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0002]
+   "It goes outside."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0051]
+   "Make sure you wrap up warm."
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0052]
+   "Ok, now you're starting to sound like my mum."
+
+  -----
+  Action: "Talk to" (#1, layer: StreetDoor, state: Day)
+
+  -----
+  Action: "Use" (#2, layer: StreetDoor, state: Day)
+
+
+--------------------------------------------------
+- Layer: BathroomDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: BathroomDoor)
+ title: "Bathroom"
+
+  -----
+  Action: "Look at" (#0, layer: BathroomDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0003]
+   "It goes to the bath, shower and toilet."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0049]
+   "Do you need to go before we set off?"
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0050]
+   "Er, no, I'm fine thanks."
+
+  -----
+  Action: "Talk to" (#1, layer: BathroomDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: BathroomDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0004]
+   "I don't need to go at the moment thanks. Especially with you watching!"
+
+
+--------------------------------------------------
+- Layer: BedroomDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: BedroomDoor)
+ title: "Bedroom"
+
+  -----
+  Action: "Look at" (#0, layer: BedroomDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0005]
+   "It goes to my bedroom."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0048]
+   "I bet no woman has ever been in there."
+
+  -----
+  Action: "Talk to" (#1, layer: BedroomDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: BedroomDoor, state: main)
+
+
+--------------------------------------------------
+- Layer: KitchenDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: KitchenDoor)
+ title: "Kitchen"
+
+  -----
+  Action: "Look at" (#0, layer: KitchenDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0006]
+   "It goes to the kitchen."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0046]
+   "Aren't you hungery?"
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0047]
+   "Hmmm, I seem to have an irrational fear of going in there."
+
+  -----
+  Action: "Talk to" (#1, layer: KitchenDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: KitchenDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0007]
+   "I'm not hungry. And I have a unexplainable fear of going into that room."
+
+
+--------------------------------------------------
+- Layer: Degrees
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Degrees)
+ title: "Degrees"
+
+  -----
+  Action: "Look at" (#0, layer: Degrees, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0008]
+   "It's a medical degree for Dr Ted Martin. I guess that must be me."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0045]
+   "Dr Martin? You don't seem intellegent enough to be a doctor."
+
+  -----
+  Action: "Talk to" (#1, layer: Degrees, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Degrees, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0009]
+   "I don't want that."
+
+
+--------------------------------------------------
+- Layer: Photos
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Photos)
+ title: "Photos"
+
+  -----
+  Action: "Look at" (#0, layer: Photos, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0010]
+   "It's a picture of me and Sarah Bio...we have our arms around each other...the CEO is my girlfriend!"
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0042]
+   "Yeah, right! Like she'd go out with a loser like you."
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0043]
+   "No, I remember, she is my girlfriend."
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0044]
+   "I don't think she looks like that now, but I can't remember any more at the moment."
+
+  -----
+  Action: "Talk to" (#1, layer: Photos, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Photos, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0011]
+   "I don't want that."
+
+
+--------------------------------------------------
+- Layer: Computer
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Computer)
+ title: "Computer"
+
+  -----
+  Action: "Look at" (#0, layer: Computer, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0012]
+   "It's my home computer."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0039]
+   "Wow look at how old it is!"
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0040]
+   "It looks like it's from 2012."
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0041]
+   "I think it's just meant to look retro."
+
+  -----
+  Action: "Talk to" (#1, layer: Computer, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Computer, state: main)
+
+
+--------------------------------------------------
+- Layer: Phone
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Phone)
+ title: "Phone"
+
+  -----
+  Action: "Look at" (#0, layer: Phone, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0013]
+   "It's my phone."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0037]
+   "Ha, ha. You still have a landline phone."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0038]
+   "All the cool people have the eyePhone installed in their eye."
+
+  -----
+  Action: "Talk to" (#1, layer: Phone, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Phone, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0014]
+   "I don't know any phone numbers."
+
+ --------------------------------------------------
+ State: Fault (layer: Phone)
+ title: "Phone"
+
+  -----
+  Action: "Look at" (#0, layer: Phone, state: Fault)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0015]
+   "It's my phone."
+
+  -----
+  Action: "Talk to" (#1, layer: Phone, state: Fault)
+
+  -----
+  Action: "Use" (#2, layer: Phone, state: Fault)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0016]
+   "Oh, there must be a fault, I don't have a dialing tone."
+
+
+--------------------------------------------------
+- Layer: Sofa
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Sofa)
+ title: "Sofa"
+
+  -----
+  Action: "Look at" (#0, layer: Sofa, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0017]
+   "It's my sofa."
+
+  -----
+  Action: "Talk to" (#1, layer: Sofa, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Sofa, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0018]
+   "I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though."
+
+ --------------------------------------------------
+ State: rested (layer: Sofa)
+ title: "Sofa"
+
+  -----
+  Action: "Look at" (#0, layer: Sofa, state: rested)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0019]
+   "It's my sofa."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0036]
+   "I'd just take a rest and watch TV."
+
+  -----
+  Action: "Talk to" (#1, layer: Sofa, state: rested)
+
+  -----
+  Action: "Use" (#2, layer: Sofa, state: rested)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0020]
+   "I don't think sitting down is the top of my priorities at the moment."
+
+
+--------------------------------------------------
+- Layer: TV
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: TV)
+ title: "TV"
+
+  -----
+  Action: "Look at" (#0, layer: TV, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0021]
+   "It's a TV."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0035]
+   "I wonder what's on? I'd just take a rest and watch TV."
+
+  -----
+  Action: "Talk to" (#1, layer: TV, state: main)
+
+  -----
+  Action: "Use" (#2, layer: TV, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0022]
+   "Lets see what is on."
+
+
+--------------------------------------------------
+- Layer: SonicParcel
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: SonicParcel)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: SonicParcel, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: SonicParcel, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: SonicParcel, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: SonicParcel)
+ title: "Parcel"
+
+  -----
+  Action: "Look at" (#0, layer: SonicParcel, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0023]
+   "It a parcel for me...Dr Martin."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0033]
+   "Dr Who?"
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0034]
+   "No, me."
+
+  -----
+  Action: "Talk to" (#1, layer: SonicParcel, state: On)
+
+  -----
+  Action: "Use" (#2, layer: SonicParcel, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0024]
+   "I love receiving parcels."
+
+
+--------------------------------------------------
+- Layer: LightSwitches
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: LightSwitches)
+ title: "Light Switches"
+
+  -----
+  Action: "Look at" (#0, layer: LightSwitches, state: main)
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0032]
+   "What is this modern art installation?"
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0025]
+   "It the light switches"
+
+  -----
+  Action: "Talk to" (#1, layer: LightSwitches, state: main)
+
+  -----
+  Action: "Use" (#2, layer: LightSwitches, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0026]
+   "I prefer to see."
+
+
+--------------------------------------------------
+- Layer: picture
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: picture)
+ title: "Picture"
+
+  -----
+  Action: "Look at" (#0, layer: picture, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0027]
+   "It a picture of a man being attacked by a giant octopus."
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0028]
+   "I really like it. I guess that is why I have a poster of it in my house."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0029]
+   "I always thought it was a little scary for the living room."
+
+   - Dialog [puppet: _avatar, voice::Home_LivingRoom0030]
+   "I must say, my ego nags like a girlfriend would."
+
+   - Dialog [puppet: ego, voice::Home_LivingRoom0031]
+   "Erm....oh look at that nice rug."
+
+  -----
+  Action: "Talk to" (#1, layer: picture, state: main)
+
+  -----
+  Action: "Use" (#2, layer: picture, state: main)
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
+
+
+
+
+TREES
+
+
+
+_avatar,"It goes outside.",:Home_LivingRoom0000
+_avatar,"I don't think I'm done here.",:Home_LivingRoom0001
+_avatar,"It goes outside.",:Home_LivingRoom0002
+ego,"Make sure you wrap up warm.",:Home_LivingRoom0051
+_avatar,"Ok, now you're starting to sound like my mum.",:Home_LivingRoom0052
+_avatar,"It goes to the bath, shower and toilet.",:Home_LivingRoom0003
+ego,"Do you need to go before we set off?",:Home_LivingRoom0049
+_avatar,"Er, no, I'm fine thanks.",:Home_LivingRoom0050
+_avatar,"I don't need to go at the moment thanks. Especially with you watching!",:Home_LivingRoom0004
+_avatar,"It goes to my bedroom.",:Home_LivingRoom0005
+ego,"I bet no woman has ever been in there.",:Home_LivingRoom0048
+_avatar,"It goes to the kitchen.",:Home_LivingRoom0006
+ego,"Aren't you hungery?",:Home_LivingRoom0046
+_avatar,"Hmmm, I seem to have an irrational fear of going in there.",:Home_LivingRoom0047
+_avatar,"I'm not hungry. And I have a unexplainable fear of going into that room.",:Home_LivingRoom0007
+_avatar,"It's a medical degree for Dr Ted Martin. I guess that must be me.",:Home_LivingRoom0008
+ego,"Dr Martin? You don't seem intellegent enough to be a doctor.",:Home_LivingRoom0045
+_avatar,"I don't want that.",:Home_LivingRoom0009
+_avatar,"It's a picture of me and Sarah Bio...we have our arms around each other...the CEO is my girlfriend!",:Home_LivingRoom0010
+ego,"Yeah, right! Like she'd go out with a loser like you.",:Home_LivingRoom0042
+_avatar,"No, I remember, she is my girlfriend.",:Home_LivingRoom0043
+_avatar,"I don't think she looks like that now, but I can't remember any more at the moment.",:Home_LivingRoom0044
+_avatar,"I don't want that.",:Home_LivingRoom0011
+_avatar,"It's my home computer.",:Home_LivingRoom0012
+ego,"Wow look at how old it is!",:Home_LivingRoom0039
+ego,"It looks like it's from 2012.",:Home_LivingRoom0040
+_avatar,"I think it's just meant to look retro.",:Home_LivingRoom0041
+_avatar,"It's my phone.",:Home_LivingRoom0013
+ego,"Ha, ha. You still have a landline phone.",:Home_LivingRoom0037
+ego,"All the cool people have the eyePhone installed in their eye.",:Home_LivingRoom0038
+_avatar,"I don't know any phone numbers.",:Home_LivingRoom0014
+_avatar,"It's my phone.",:Home_LivingRoom0015
+_avatar,"Oh, there must be a fault, I don't have a dialing tone.",:Home_LivingRoom0016
+_avatar,"It's my sofa.",:Home_LivingRoom0017
+_avatar,"I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though.",:Home_LivingRoom0018
+_avatar,"It's my sofa.",:Home_LivingRoom0019
+ego,"I'd just take a rest and watch TV.",:Home_LivingRoom0036
+_avatar,"I don't think sitting down is the top of my priorities at the moment.",:Home_LivingRoom0020
+_avatar,"It's a TV.",:Home_LivingRoom0021
+ego,"I wonder what's on? I'd just take a rest and watch TV.",:Home_LivingRoom0035
+_avatar,"Lets see what is on.",:Home_LivingRoom0022
+_avatar,"It a parcel for me...Dr Martin.",:Home_LivingRoom0023
+ego,"Dr Who?",:Home_LivingRoom0033
+_avatar,"No, me.",:Home_LivingRoom0034
+_avatar,"I love receiving parcels.",:Home_LivingRoom0024
+ego,"What is this modern art installation?",:Home_LivingRoom0032
+_avatar,"It the light switches",:Home_LivingRoom0025
+_avatar,"I prefer to see.",:Home_LivingRoom0026
+_avatar,"It a picture of a man being attacked by a giant octopus.",:Home_LivingRoom0027
+_avatar,"I really like it. I guess that is why I have a poster of it in my house.",:Home_LivingRoom0028
+ego,"I always thought it was a little scary for the living room.",:Home_LivingRoom0029
+_avatar,"I must say, my ego nags like a girlfriend would.",:Home_LivingRoom0030
+ego,"Erm....oh look at that nice rug.",:Home_LivingRoom0031
+
+
+

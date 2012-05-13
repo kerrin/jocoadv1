@@ -1,0 +1,142 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: Exit
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Exit)
+ title: "Exit"
+
+  -----
+  Action: "Look at" (#0, layer: Exit, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Exit, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Exit, state: main)
+
+
+--------------------------------------------------
+- Layer: Cold
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Cold)
+ title: "Cold"
+
+  -----
+  Action: "Look at" (#0, layer: Cold, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Cold, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Cold, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_AC0000]
+   "Wow, that quickly made it cold in here!"
+
+
+--------------------------------------------------
+- Layer: Hot
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Hot)
+ title: "Hot"
+
+  -----
+  Action: "Look at" (#0, layer: Hot, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Hot, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Hot, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_AC0001]
+   "That soon made it hot in here!"
+
+
+--------------------------------------------------
+- Layer: Tepid
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Tepid)
+ title: "Nice"
+
+  -----
+  Action: "Look at" (#0, layer: Tepid, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Tepid, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Tepid, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_AC0002]
+   "Ah, nice."
+
+
+--------------------------------------------------
+- Layer: Knob
+--------------------------------------------------
+ --------------------------------------------------
+ State: nice (layer: Knob)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Knob, state: nice)
+
+  -----
+  Action: "Talk to" (#1, layer: Knob, state: nice)
+
+  -----
+  Action: "Use" (#2, layer: Knob, state: nice)
+
+ --------------------------------------------------
+ State: hot (layer: Knob)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Knob, state: hot)
+
+  -----
+  Action: "Talk to" (#1, layer: Knob, state: hot)
+
+  -----
+  Action: "Use" (#2, layer: Knob, state: hot)
+
+ --------------------------------------------------
+ State: cold (layer: Knob)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Knob, state: cold)
+
+  -----
+  Action: "Talk to" (#1, layer: Knob, state: cold)
+
+  -----
+  Action: "Use" (#2, layer: Knob, state: cold)
+
+
+
+
+TREES
+
+
+
+_avatar,"Wow, that quickly made it cold in here!",:FT_Office_AC0000
+_avatar,"That soon made it hot in here!",:FT_Office_AC0001
+_avatar,"Ah, nice.",:FT_Office_AC0002
+
+
+

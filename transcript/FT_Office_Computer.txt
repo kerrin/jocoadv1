@@ -1,0 +1,448 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: Exit
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Exit)
+ title: "Exit"
+
+  -----
+  Action: "Look at" (#0, layer: Exit, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Exit, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Exit, state: main)
+
+
+--------------------------------------------------
+- Layer: Monitor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0000]
+   "It's a monitor, I need a password to unlock the computer."
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0001]
+   "You could try 'password', '123456', '654321', 'enterprise' or your username?"
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0002]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOn (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOn)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0003]
+   "It's the monitor"
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOn)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOn)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0004]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnEmail (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnEmail)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0005]
+   "I have an email from Jenny, her email signiture has her phone number. I'll add it to my phone book."
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0027]
+   "Jenny, I remember her. She doesn't like you, she is Sarahs friend."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnEmail)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnEmail)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0006]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnCalendar (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnCalendar)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0007]
+   "I had an appointment with Tom yesterday afternoon, it has his mobile number. I'll add it to my phone book."
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0028]
+   "Tom is mad, you can't believe a word he says."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnCalendar)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnCalendar)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0008]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnPatientHistory (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnPatientHistory)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0009]
+   "I must say, I have operated on Ms Sarah Bio a lot in the past, although not recently."
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0010]
+   "That's not worth remembering."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnPatientHistory)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnPatientHistory)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0011]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnContacts (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnContacts)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0012]
+   "Here are contact numbers for Bill, Sam and Ms Sarah Bio. I'll add them to my phone book."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0013]
+   "The rest are just companies, I don't think they will be of any help."
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0029]
+   "Are you sure the companies won't help. I'd spend hours calling them all."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnContacts)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnContacts)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0014]
+   "It's on already."
+
+
+--------------------------------------------------
+- Layer: Keyboard
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Keyboard)
+ title: "Keyboard"
+
+  -----
+  Action: "Look at" (#0, layer: Keyboard, state: main)
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0015]
+   "It's the interface between hand and computer, it has little keys on it, and isn't very interesting. It's a keyboard."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0016]
+   "Excuse me, but I'm the main character here!"
+
+  -----
+  Action: "Talk to" (#1, layer: Keyboard, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Keyboard, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0017]
+   "I don't remember my password."
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0018]
+   "You could try 'password', '123456', '654321', 'enterprise' or your username?"
+
+ --------------------------------------------------
+ State: HavePassword (layer: Keyboard)
+ title: "Keyboard"
+
+  -----
+  Action: "Look at" (#0, layer: Keyboard, state: HavePassword)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0019]
+   "It's a keyboard."
+
+  -----
+  Action: "Talk to" (#1, layer: Keyboard, state: HavePassword)
+
+  -----
+  Action: "Use" (#2, layer: Keyboard, state: HavePassword)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0020]
+   "I'll just enter the password IT Support gave me."
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0021]
+   "He is probably playing a trick on you, and it will format your hard disk, don't trust him!"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0022]
+   "It worked, I'm in."
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0023]
+   "I still think he's done something. Don't touch anything!"
+
+ --------------------------------------------------
+ State: LoggedOn (layer: Keyboard)
+ title: "Keyboard"
+
+  -----
+  Action: "Look at" (#0, layer: Keyboard, state: LoggedOn)
+
+   - Dialog [puppet: ego, voice::FT_Office_Computer0024]
+   "It's the interface between hand and computer, it has little keys on it, and isn't very interesting. It's a key board."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0025]
+   "Excuse me, but I'm the main character here!"
+
+  -----
+  Action: "Talk to" (#1, layer: Keyboard, state: LoggedOn)
+
+  -----
+  Action: "Use" (#2, layer: Keyboard, state: LoggedOn)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Computer0026]
+   "I need to open an application."
+
+
+--------------------------------------------------
+- Layer: Email
+--------------------------------------------------
+ --------------------------------------------------
+ State: On (layer: Email)
+ title: "Email"
+
+  -----
+  Action: "Look at" (#0, layer: Email, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Email, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Email, state: On)
+
+ --------------------------------------------------
+ State: Off (layer: Email)
+ title: "Email"
+
+  -----
+  Action: "Look at" (#0, layer: Email, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: Email, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: Email, state: Off)
+
+
+--------------------------------------------------
+- Layer: Contacts
+--------------------------------------------------
+ --------------------------------------------------
+ State: On (layer: Contacts)
+ title: "Contacts"
+
+  -----
+  Action: "Look at" (#0, layer: Contacts, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Contacts, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Contacts, state: On)
+
+ --------------------------------------------------
+ State: Off (layer: Contacts)
+ title: "Contacts"
+
+  -----
+  Action: "Look at" (#0, layer: Contacts, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: Contacts, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: Contacts, state: Off)
+
+
+--------------------------------------------------
+- Layer: Calendar
+--------------------------------------------------
+ --------------------------------------------------
+ State: On (layer: Calendar)
+ title: "Calendar"
+
+  -----
+  Action: "Look at" (#0, layer: Calendar, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Calendar, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Calendar, state: On)
+
+ --------------------------------------------------
+ State: Off (layer: Calendar)
+ title: "Calendar"
+
+  -----
+  Action: "Look at" (#0, layer: Calendar, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: Calendar, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: Calendar, state: Off)
+
+
+--------------------------------------------------
+- Layer: PatientHistory
+--------------------------------------------------
+ --------------------------------------------------
+ State: On (layer: PatientHistory)
+ title: "Patient History"
+
+  -----
+  Action: "Look at" (#0, layer: PatientHistory, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: PatientHistory, state: On)
+
+  -----
+  Action: "Use" (#2, layer: PatientHistory, state: On)
+
+ --------------------------------------------------
+ State: Off (layer: PatientHistory)
+ title: "Patient History"
+
+  -----
+  Action: "Look at" (#0, layer: PatientHistory, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: PatientHistory, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: PatientHistory, state: Off)
+
+
+--------------------------------------------------
+- Layer: Close
+--------------------------------------------------
+ --------------------------------------------------
+ State: On (layer: Close)
+ title: "X"
+
+  -----
+  Action: "Look at" (#0, layer: Close, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Close, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Close, state: On)
+
+ --------------------------------------------------
+ State: Off (layer: Close)
+ title: "X"
+
+  -----
+  Action: "Look at" (#0, layer: Close, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: Close, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: Close, state: Off)
+
+
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
+
+
+
+
+TREES
+
+
+
+_avatar,"It's a monitor, I need a password to unlock the computer.",:FT_Office_Computer0000
+ego,"You could try 'password', '123456', '654321', 'enterprise' or your username?",:FT_Office_Computer0001
+_avatar,"It's on already.",:FT_Office_Computer0002
+_avatar,"It's the monitor",:FT_Office_Computer0003
+_avatar,"It's on already.",:FT_Office_Computer0004
+_avatar,"I have an email from Jenny, her email signiture has her phone number. I'll add it to my phone book.",:FT_Office_Computer0005
+ego,"Jenny, I remember her. She doesn't like you, she is Sarahs friend.",:FT_Office_Computer0027
+_avatar,"It's on already.",:FT_Office_Computer0006
+_avatar,"I had an appointment with Tom yesterday afternoon, it has his mobile number. I'll add it to my phone book.",:FT_Office_Computer0007
+ego,"Tom is mad, you can't believe a word he says.",:FT_Office_Computer0028
+_avatar,"It's on already.",:FT_Office_Computer0008
+_avatar,"I must say, I have operated on Ms Sarah Bio a lot in the past, although not recently.",:FT_Office_Computer0009
+ego,"That's not worth remembering.",:FT_Office_Computer0010
+_avatar,"It's on already.",:FT_Office_Computer0011
+_avatar,"Here are contact numbers for Bill, Sam and Ms Sarah Bio. I'll add them to my phone book.",:FT_Office_Computer0012
+_avatar,"The rest are just companies, I don't think they will be of any help.",:FT_Office_Computer0013
+ego,"Are you sure the companies won't help. I'd spend hours calling them all.",:FT_Office_Computer0029
+_avatar,"It's on already.",:FT_Office_Computer0014
+ego,"It's the interface between hand and computer, it has little keys on it, and isn't very interesting. It's a keyboard.",:FT_Office_Computer0015
+_avatar,"Excuse me, but I'm the main character here!",:FT_Office_Computer0016
+_avatar,"I don't remember my password.",:FT_Office_Computer0017
+ego,"You could try 'password', '123456', '654321', 'enterprise' or your username?",:FT_Office_Computer0018
+_avatar,"It's a keyboard.",:FT_Office_Computer0019
+_avatar,"I'll just enter the password IT Support gave me.",:FT_Office_Computer0020
+ego,"He is probably playing a trick on you, and it will format your hard disk, don't trust him!",:FT_Office_Computer0021
+_avatar,"It worked, I'm in.",:FT_Office_Computer0022
+ego,"I still think he's done something. Don't touch anything!",:FT_Office_Computer0023
+ego,"It's the interface between hand and computer, it has little keys on it, and isn't very interesting. It's a key board.",:FT_Office_Computer0024
+_avatar,"Excuse me, but I'm the main character here!",:FT_Office_Computer0025
+_avatar,"I need to open an application.",:FT_Office_Computer0026
+
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cutscene>
+<cue id="single">
+<dia puppet="" frame="" sound="" color="#FF0000"
+plot="300,400">
+<en><![CDATA[Stroller Town by Jonathan Coulton]]></en>
+</dia>
+</cue>
+</cutscene>

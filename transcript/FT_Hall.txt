@@ -1,0 +1,780 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: DrMartinPhoto
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: DrMartinPhoto)
+ title: "Photo"
+
+  -----
+  Action: "Look at" (#0, layer: DrMartinPhoto, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0000]
+   "Who is this handsome guy? He looks familar."
+
+   - Dialog [puppet: ego, voice::FT_Hall0001]
+   "I've never seen him."
+
+  -----
+  Action: "Talk to" (#1, layer: DrMartinPhoto, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0002]
+   "It is just a photo."
+
+  -----
+  Action: "Use" (#2, layer: DrMartinPhoto, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0003]
+   "I don't need any more photos."
+
+
+--------------------------------------------------
+- Layer: SecurityDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SecurityDoor)
+ title: "Security Door"
+
+  -----
+  Action: "Look at" (#0, layer: SecurityDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0004]
+   "I think a guard is in there and heard me. I better hide quick!"
+
+  -----
+  Action: "Talk to" (#1, layer: SecurityDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: SecurityDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0005]
+   "I don't want to go that way!"
+
+  -----
+  Item: "KeyCard", "" (layer: SecurityDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0006]
+   "I don't want to go that way!"
+
+
+--------------------------------------------------
+- Layer: OfficeDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: OfficeDoor)
+ title: "Dr Martin Door"
+
+  -----
+  Action: "Look at" (#0, layer: OfficeDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0007]
+   "It's Dr Martins' door."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0008]
+   "It has a security card reader and iris scanner."
+
+   - Dialog [puppet: ego, voice::FT_Hall0009]
+   "I think you got lucky before, that same trick will never work again!"
+
+  -----
+  Action: "Talk to" (#1, layer: OfficeDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: OfficeDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0010]
+   "It's locked."
+
+   - Dialog [puppet: ego, voice::FT_Hall0011]
+   "Try kicking it down."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0012]
+   "The guard would hear me!"
+
+  -----
+  Item: "KeyCard", "" (layer: OfficeDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0013]
+   "It didn't work."
+
+
+--------------------------------------------------
+- Layer: FredMcCoy
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: FredMcCoy)
+ title: "Photo"
+
+  -----
+  Action: "Look at" (#0, layer: FredMcCoy, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0014]
+   "It's a photo of Fred McCoy. He appears to be a Nurse."
+
+  -----
+  Action: "Talk to" (#1, layer: FredMcCoy, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0015]
+   "It is just a photo."
+
+  -----
+  Action: "Use" (#2, layer: FredMcCoy, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0016]
+   "I don't need any more photos."
+
+
+--------------------------------------------------
+- Layer: ITSupportDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ITSupportDoor)
+ title: "IT Support Door"
+
+  -----
+  Action: "Look at" (#0, layer: ITSupportDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0017]
+   "It's a room for geeks."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0018]
+   "It has a security card reader and iris scanner."
+
+   - Dialog [puppet: ego, voice::FT_Hall0019]
+   "I think you got lucky before, that same trick will never work again!"
+
+  -----
+  Action: "Talk to" (#1, layer: ITSupportDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ITSupportDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0020]
+   "It's locked."
+
+   - Dialog [puppet: ego, voice::FT_Hall0021]
+   "Try kicking it down."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0022]
+   "The guard would hear me!"
+
+  -----
+  Item: "KeyCard", "" (layer: ITSupportDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0023]
+   "It didn't work."
+
+
+--------------------------------------------------
+- Layer: RogerWilco
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: RogerWilco)
+ title: "Photo"
+
+  -----
+  Action: "Look at" (#0, layer: RogerWilco, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0024]
+   "It's a picture of Roger Wilco. He appears to be a janitor."
+
+  -----
+  Action: "Talk to" (#1, layer: RogerWilco, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0025]
+   "It is just a photo."
+
+  -----
+  Action: "Use" (#2, layer: RogerWilco, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0026]
+   "I don't need any more photos."
+
+
+--------------------------------------------------
+- Layer: CEODoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CEODoor)
+ title: "CEO Door"
+
+  -----
+  Action: "Look at" (#0, layer: CEODoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0027]
+   "It's a door to the CEO's office."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0028]
+   "It has a security card reader and iris scanner."
+
+   - Dialog [puppet: ego, voice::FT_Hall0029]
+   "I think you got lucky before, that same trick will never work again!"
+
+  -----
+  Action: "Talk to" (#1, layer: CEODoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CEODoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0030]
+   "It's locked."
+
+   - Dialog [puppet: ego, voice::FT_Hall0031]
+   "Try kicking it down."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0032]
+   "The guard would hear me!"
+
+  -----
+  Item: "KeyCard", "" (layer: CEODoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0033]
+   "It didn't work."
+
+
+--------------------------------------------------
+- Layer: StorageRoomDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: StorageRoomDoor)
+ title: "Storage Room Door"
+
+  -----
+  Action: "Look at" (#0, layer: StorageRoomDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0034]
+   "It's the storage room I was locked in."
+
+  -----
+  Action: "Talk to" (#1, layer: StorageRoomDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: StorageRoomDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0035]
+   "It's locked. It must have locked after I left."
+
+   - Dialog [puppet: ego, voice::FT_Hall0036]
+   "Try kicking it down."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0037]
+   "The guard would hear me!"
+
+  -----
+  Item: "KeyCard", "" (layer: StorageRoomDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0038]
+   "It didn't work."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0039]
+   "Strange it let me out, but not back in."
+
+
+--------------------------------------------------
+- Layer: ChrisLanders
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ChrisLanders)
+ title: "Photo"
+
+  -----
+  Action: "Look at" (#0, layer: ChrisLanders, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0040]
+   "It's a picture of Chris Landers. He appears to be IT Support."
+
+  -----
+  Action: "Talk to" (#1, layer: ChrisLanders, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0041]
+   "It is just a photo."
+
+  -----
+  Action: "Use" (#2, layer: ChrisLanders, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0042]
+   "I don't need any more photos."
+
+
+--------------------------------------------------
+- Layer: OTDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: OTDoor)
+ title: "O.T. Door"
+
+  -----
+  Action: "Look at" (#0, layer: OTDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0043]
+   "It's the door for the O. T. I'm guessing an operating theather."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0044]
+   "It has a security card reader and iris scanner."
+
+   - Dialog [puppet: ego, voice::FT_Hall0045]
+   "I think you got lucky before, that same trick will never work again!"
+
+  -----
+  Action: "Talk to" (#1, layer: OTDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: OTDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0046]
+   "It's locked."
+
+   - Dialog [puppet: ego, voice::FT_Hall0047]
+   "Try kicking it down."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0048]
+   "The guard would hear me!"
+
+  -----
+  Item: "KeyCard", "" (layer: OTDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0049]
+   "It worked. I better get inside quick, before the guard comes out his office!"
+
+ --------------------------------------------------
+ State: Unlocked (layer: OTDoor)
+ title: "O.T. Door"
+
+  -----
+  Action: "Look at" (#0, layer: OTDoor, state: Unlocked)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0050]
+   "It's open. I better get inside before the guard sees me."
+
+  -----
+  Action: "Talk to" (#1, layer: OTDoor, state: Unlocked)
+
+  -----
+  Action: "Use" (#2, layer: OTDoor, state: Unlocked)
+
+  -----
+  Item: "KeyCard", "" (layer: OTDoor, state: Unlocked)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0051]
+   "It's open already."
+
+
+--------------------------------------------------
+- Layer: RobSmith
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: RobSmith)
+ title: "Photo"
+
+  -----
+  Action: "Look at" (#0, layer: RobSmith, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0052]
+   "It's a picture of Rob Smith. He appears to be a security guard."
+
+  -----
+  Action: "Talk to" (#1, layer: RobSmith, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0053]
+   "It is just a photo."
+
+  -----
+  Action: "Use" (#2, layer: RobSmith, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0054]
+   "I don't need any more photos."
+
+
+--------------------------------------------------
+- Layer: BillJones
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: BillJones)
+ title: "Photo"
+
+  -----
+  Action: "Look at" (#0, layer: BillJones, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0055]
+   "It's a picture of Bill Jones. He appears to be a security guard."
+
+   - Dialog [puppet: ego, voice::FT_Hall0056]
+   "Doesn't he look familiar?"
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0057]
+   "Yeah, I can't quite remember where I have seen him before."
+
+  -----
+  Action: "Talk to" (#1, layer: BillJones, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0058]
+   "It is just a photo."
+
+  -----
+  Action: "Use" (#2, layer: BillJones, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0059]
+   "I don't need any more photos."
+
+
+--------------------------------------------------
+- Layer: SamFroggert
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SamFroggert)
+ title: "Photo"
+
+  -----
+  Action: "Look at" (#0, layer: SamFroggert, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0060]
+   "It's a picture of Sam Froggert He appears to be a researcher."
+
+  -----
+  Action: "Talk to" (#1, layer: SamFroggert, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0061]
+   "It is just a photo."
+
+  -----
+  Action: "Use" (#2, layer: SamFroggert, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0062]
+   "I don't need any more photos."
+
+
+--------------------------------------------------
+- Layer: ReceptionDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ReceptionDoor)
+ title: "Reception Door"
+
+  -----
+  Action: "Look at" (#0, layer: ReceptionDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0063]
+   "It's the door to reception."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0064]
+   "It has a security card reader and iris scanner."
+
+   - Dialog [puppet: ego, voice::FT_Hall0065]
+   "I think you got lucky before, that same trick will never work again!"
+
+  -----
+  Action: "Talk to" (#1, layer: ReceptionDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ReceptionDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0066]
+   "It's locked."
+
+   - Dialog [puppet: ego, voice::FT_Hall0067]
+   "Try kicking it down."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0068]
+   "The guard would hear me!"
+
+  -----
+  Item: "KeyCard", "" (layer: ReceptionDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0069]
+   "It didn't work."
+
+
+--------------------------------------------------
+- Layer: SarahBio
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SarahBio)
+ title: "Photo"
+
+  -----
+  Action: "Look at" (#0, layer: SarahBio, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0070]
+   "It's a picture like the one I am carrying. It looks more recent though."
+
+  -----
+  Action: "Talk to" (#1, layer: SarahBio, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0071]
+   "It is just a photo."
+
+  -----
+  Action: "Use" (#2, layer: SarahBio, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0072]
+   "I don't need any more photos."
+
+
+--------------------------------------------------
+- Layer: Guard
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Guard)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Guard, state: main)
+
+   - Dialog [puppet: Guard, voice::FT_Hall0073]
+   "Hello?"
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0074]
+   "I better hide quick, before the guard sees me. I have a feeling I'm not meant to be out here."
+
+   - Dialog [puppet: ego, voice::FT_Hall0075]
+   "He'll never look for you in the guard room."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0093]
+   "I think maybe a different room would be better."
+
+  -----
+  Action: "Talk to" (#1, layer: Guard, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Guard, state: main)
+
+
+--------------------------------------------------
+- Layer: Plant
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Plant)
+ title: "Plant"
+
+  -----
+  Action: "Look at" (#0, layer: Plant, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0076]
+   "It's a plant."
+
+   - Dialog [puppet: ego, voice::FT_Hall0088]
+   "'No magician, I have never met you before, honest.'"
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0090]
+   "No, not that kind of plant!"
+
+  -----
+  Action: "Talk to" (#1, layer: Plant, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0077]
+   "Hello little fella."
+
+  -----
+  Action: "Use" (#2, layer: Plant, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0078]
+   "What with?"
+
+
+--------------------------------------------------
+- Layer: Plant2
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Plant2)
+ title: "Plant"
+
+  -----
+  Action: "Look at" (#0, layer: Plant2, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0079]
+   "It's a plant."
+
+   - Dialog [puppet: ego, voice::FT_Hall0087]
+   "'No magician, I have never met you before, honest.'"
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0089]
+   "No, not that kind of plant!"
+
+  -----
+  Action: "Talk to" (#1, layer: Plant2, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0080]
+   "Hello little fella."
+
+  -----
+  Action: "Use" (#2, layer: Plant2, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0081]
+   "What with?"
+
+
+--------------------------------------------------
+- Layer: Cactus
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Cactus)
+ title: "Cactus"
+
+  -----
+  Action: "Look at" (#0, layer: Cactus, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0082]
+   "It's a plant."
+
+   - Dialog [puppet: ego, voice::FT_Hall0085]
+   "'No magician, I have never met you before, honest.'"
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0086]
+   "No, not that kind of plant!"
+
+  -----
+  Action: "Talk to" (#1, layer: Cactus, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0083]
+   "Hello little fella."
+
+  -----
+  Action: "Use" (#2, layer: Cactus, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0084]
+   "What with?"
+
+   - Dialog [puppet: ego, voice::FT_Hall0091]
+   "I think you should push your face on to it, really quickly."
+
+   - Dialog [puppet: _avatar, voice::FT_Hall0092]
+   "Er...no."
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
+
+
+
+
+TREES
+
+
+
+_avatar,"Who is this handsome guy? He looks familar.",:FT_Hall0000
+ego,"I've never seen him.",:FT_Hall0001
+_avatar,"It is just a photo.",:FT_Hall0002
+_avatar,"I don't need any more photos.",:FT_Hall0003
+_avatar,"I think a guard is in there and heard me. I better hide quick!",:FT_Hall0004
+_avatar,"I don't want to go that way!",:FT_Hall0005
+_avatar,"I don't want to go that way!",:FT_Hall0006
+_avatar,"It's Dr Martins' door.",:FT_Hall0007
+_avatar,"It has a security card reader and iris scanner.",:FT_Hall0008
+ego,"I think you got lucky before, that same trick will never work again!",:FT_Hall0009
+_avatar,"It's locked.",:FT_Hall0010
+ego,"Try kicking it down.",:FT_Hall0011
+_avatar,"The guard would hear me!",:FT_Hall0012
+_avatar,"It didn't work.",:FT_Hall0013
+_avatar,"It's a photo of Fred McCoy. He appears to be a Nurse.",:FT_Hall0014
+_avatar,"It is just a photo.",:FT_Hall0015
+_avatar,"I don't need any more photos.",:FT_Hall0016
+_avatar,"It's a room for geeks.",:FT_Hall0017
+_avatar,"It has a security card reader and iris scanner.",:FT_Hall0018
+ego,"I think you got lucky before, that same trick will never work again!",:FT_Hall0019
+_avatar,"It's locked.",:FT_Hall0020
+ego,"Try kicking it down.",:FT_Hall0021
+_avatar,"The guard would hear me!",:FT_Hall0022
+_avatar,"It didn't work.",:FT_Hall0023
+_avatar,"It's a picture of Roger Wilco. He appears to be a janitor.",:FT_Hall0024
+_avatar,"It is just a photo.",:FT_Hall0025
+_avatar,"I don't need any more photos.",:FT_Hall0026
+_avatar,"It's a door to the CEO's office.",:FT_Hall0027
+_avatar,"It has a security card reader and iris scanner.",:FT_Hall0028
+ego,"I think you got lucky before, that same trick will never work again!",:FT_Hall0029
+_avatar,"It's locked.",:FT_Hall0030
+ego,"Try kicking it down.",:FT_Hall0031
+_avatar,"The guard would hear me!",:FT_Hall0032
+_avatar,"It didn't work.",:FT_Hall0033
+_avatar,"It's the storage room I was locked in.",:FT_Hall0034
+_avatar,"It's locked. It must have locked after I left.",:FT_Hall0035
+ego,"Try kicking it down.",:FT_Hall0036
+_avatar,"The guard would hear me!",:FT_Hall0037
+_avatar,"It didn't work.",:FT_Hall0038
+_avatar,"Strange it let me out, but not back in.",:FT_Hall0039
+_avatar,"It's a picture of Chris Landers. He appears to be IT Support.",:FT_Hall0040
+_avatar,"It is just a photo.",:FT_Hall0041
+_avatar,"I don't need any more photos.",:FT_Hall0042
+_avatar,"It's the door for the O. T. I'm guessing an operating theather.",:FT_Hall0043
+_avatar,"It has a security card reader and iris scanner.",:FT_Hall0044
+ego,"I think you got lucky before, that same trick will never work again!",:FT_Hall0045
+_avatar,"It's locked.",:FT_Hall0046
+ego,"Try kicking it down.",:FT_Hall0047
+_avatar,"The guard would hear me!",:FT_Hall0048
+_avatar,"It worked. I better get inside quick, before the guard comes out his office!",:FT_Hall0049
+_avatar,"It's open. I better get inside before the guard sees me.",:FT_Hall0050
+_avatar,"It's open already.",:FT_Hall0051
+_avatar,"It's a picture of Rob Smith. He appears to be a security guard.",:FT_Hall0052
+_avatar,"It is just a photo.",:FT_Hall0053
+_avatar,"I don't need any more photos.",:FT_Hall0054
+_avatar,"It's a picture of Bill Jones. He appears to be a security guard.",:FT_Hall0055
+ego,"Doesn't he look familiar?",:FT_Hall0056
+_avatar,"Yeah, I can't quite remember where I have seen him before.",:FT_Hall0057
+_avatar,"It is just a photo.",:FT_Hall0058
+_avatar,"I don't need any more photos.",:FT_Hall0059
+_avatar,"It's a picture of Sam Froggert He appears to be a researcher.",:FT_Hall0060
+_avatar,"It is just a photo.",:FT_Hall0061
+_avatar,"I don't need any more photos.",:FT_Hall0062
+_avatar,"It's the door to reception.",:FT_Hall0063
+_avatar,"It has a security card reader and iris scanner.",:FT_Hall0064
+ego,"I think you got lucky before, that same trick will never work again!",:FT_Hall0065
+_avatar,"It's locked.",:FT_Hall0066
+ego,"Try kicking it down.",:FT_Hall0067
+_avatar,"The guard would hear me!",:FT_Hall0068
+_avatar,"It didn't work.",:FT_Hall0069
+_avatar,"It's a picture like the one I am carrying. It looks more recent though.",:FT_Hall0070
+_avatar,"It is just a photo.",:FT_Hall0071
+_avatar,"I don't need any more photos.",:FT_Hall0072
+Guard,"Hello?",:FT_Hall0073
+_avatar,"I better hide quick, before the guard sees me. I have a feeling I'm not meant to be out here.",:FT_Hall0074
+ego,"He'll never look for you in the guard room.",:FT_Hall0075
+_avatar,"I think maybe a different room would be better.",:FT_Hall0093
+_avatar,"It's a plant.",:FT_Hall0076
+ego,"'No magician, I have never met you before, honest.'",:FT_Hall0088
+_avatar,"No, not that kind of plant!",:FT_Hall0090
+_avatar,"Hello little fella.",:FT_Hall0077
+_avatar,"What with?",:FT_Hall0078
+_avatar,"It's a plant.",:FT_Hall0079
+ego,"'No magician, I have never met you before, honest.'",:FT_Hall0087
+_avatar,"No, not that kind of plant!",:FT_Hall0089
+_avatar,"Hello little fella.",:FT_Hall0080
+_avatar,"What with?",:FT_Hall0081
+_avatar,"It's a plant.",:FT_Hall0082
+ego,"'No magician, I have never met you before, honest.'",:FT_Hall0085
+_avatar,"No, not that kind of plant!",:FT_Hall0086
+_avatar,"Hello little fella.",:FT_Hall0083
+_avatar,"What with?",:FT_Hall0084
+ego,"I think you should push your face on to it, really quickly.",:FT_Hall0091
+_avatar,"Er...no.",:FT_Hall0092
+
+
+

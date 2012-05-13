@@ -1,0 +1,121 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: Office
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Office)
+ title: "Office"
+
+  -----
+  Action: "Look at" (#0, layer: Office, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Office, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Office, state: main)
+
+
+--------------------------------------------------
+- Layer: Home
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Home)
+ title: "Home"
+
+  -----
+  Action: "Look at" (#0, layer: Home, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Home, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Home, state: main)
+
+
+--------------------------------------------------
+- Layer: CoffeeShop
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CoffeeShop)
+ title: "Coffee Shop"
+
+  -----
+  Action: "Look at" (#0, layer: CoffeeShop, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CoffeeShop, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CoffeeShop, state: main)
+
+ --------------------------------------------------
+ State: Know (layer: CoffeeShop)
+ title: "Coffee Shop"
+
+  -----
+  Action: "Look at" (#0, layer: CoffeeShop, state: Know)
+
+  -----
+  Action: "Talk to" (#1, layer: CoffeeShop, state: Know)
+
+  -----
+  Action: "Use" (#2, layer: CoffeeShop, state: Know)
+
+
+--------------------------------------------------
+- Layer: SecretLair
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SecretLair)
+ title: "Nothing of Interest"
+
+  -----
+  Action: "Look at" (#0, layer: SecretLair, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: SecretLair, state: main)
+
+  -----
+  Action: "Use" (#2, layer: SecretLair, state: main)
+
+ --------------------------------------------------
+ State: Know (layer: SecretLair)
+ title: "Secret Lair"
+
+  -----
+  Action: "Look at" (#0, layer: SecretLair, state: Know)
+
+  -----
+  Action: "Talk to" (#1, layer: SecretLair, state: Know)
+
+  -----
+  Action: "Use" (#2, layer: SecretLair, state: Know)
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+
+
+TREES
+
+
+
+
+
+

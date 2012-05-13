@@ -1,0 +1,946 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: Exit
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Exit)
+ title: "Exit"
+
+  -----
+  Action: "Look at" (#0, layer: Exit, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Exit, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Exit, state: main)
+
+
+--------------------------------------------------
+- Layer: Monitor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0000]
+   "It the login screen"
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0001]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOn (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOn)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0002]
+   "It's OS Win."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOn)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOn)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0003]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnEmail (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnEmail)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0004]
+   "I don't have any emails except one that arrived today and a load of spam."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0005]
+   "That is very odd."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0006]
+   "I wonder if anyone deleted them."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0007]
+   "The email from today is a joke about pirates."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnEmail)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnEmail)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0008]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnContacts (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnContacts)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0009]
+   "I don't have any contacts."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0010]
+   "I wonder if someone deleted them."
+
+   - Dialog [puppet: ego, voice::Home_Computer0080]
+   "Na, you just don't have any friends."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnContacts)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnContacts)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0011]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnCalendar (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnCalendar)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0012]
+   "Nothing in my calender."
+
+   - Dialog [puppet: ego, voice::Home_Computer0081]
+   "You must just stay in and do nothing all day."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0082]
+   "I thought I'd be a cool person."
+
+   - Dialog [puppet: ego, voice::Home_Computer0083]
+   "Cool people don't say they are cool."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnCalendar)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnCalendar)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0013]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnWebBrowser (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnWebBrowser)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0014]
+   "It's SafIE."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0015]
+   "I remember when Apple bought Microsoft and merged Safari and IE to make the best browser ever."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0016]
+   "Of course now it's back to being rubbish again."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnWebBrowser)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnWebBrowser)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0017]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnWebBrowserJoCo (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnWebBrowserJoCo)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0018]
+   "It's Jonathan Coultons website."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0019]
+   "He is releasing a song a week."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnWebBrowserJoCo)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnWebBrowserJoCo)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0020]
+   "It's on already."
+
+ --------------------------------------------------
+ State: LoggedOnWebBrowserIBay (layer: Monitor)
+ title: "Monitor"
+
+  -----
+  Action: "Look at" (#0, layer: Monitor, state: LoggedOnWebBrowserIBay)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0021]
+   "It's iBay. The page is showing auctions nearing completion."
+
+  -----
+  Action: "Talk to" (#1, layer: Monitor, state: LoggedOnWebBrowserIBay)
+
+  -----
+  Action: "Use" (#2, layer: Monitor, state: LoggedOnWebBrowserIBay)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0022]
+   "It's on already."
+
+
+--------------------------------------------------
+- Layer: Keyboard
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Keyboard)
+ title: "Keyboard"
+
+  -----
+  Action: "Look at" (#0, layer: Keyboard, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0023]
+   "It's a keyboard."
+
+  -----
+  Action: "Talk to" (#1, layer: Keyboard, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Keyboard, state: main)
+
+
+--------------------------------------------------
+- Layer: iPodDock
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: iPodDock)
+ title: "iPod Dock"
+
+  -----
+  Action: "Look at" (#0, layer: iPodDock, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0077]
+   "It's a dock for an iPod."
+
+  -----
+  Action: "Talk to" (#1, layer: iPodDock, state: main)
+
+  -----
+  Action: "Use" (#2, layer: iPodDock, state: main)
+
+  -----
+  Item: "IPod", "" (layer: iPodDock, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0024]
+   "It won't sync until I've logged on."
+
+ --------------------------------------------------
+ State: syncable (layer: iPodDock)
+ title: "iPod Dock"
+
+  -----
+  Action: "Look at" (#0, layer: iPodDock, state: syncable)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0078]
+   "It's a dock for an iPod."
+
+  -----
+  Action: "Talk to" (#1, layer: iPodDock, state: syncable)
+
+  -----
+  Action: "Use" (#2, layer: iPodDock, state: syncable)
+
+  -----
+  Item: "IPod", "" (layer: iPodDock, state: syncable)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0025]
+   "It has syncronied with my music collection."
+
+
+--------------------------------------------------
+- Layer: Email
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: Email)
+ title: "Email"
+
+  -----
+  Action: "Look at" (#0, layer: Email, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: Email, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: Email, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: Email)
+ title: "Email"
+
+  -----
+  Action: "Look at" (#0, layer: Email, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0026]
+   "It my email program, 'Planner'"
+
+  -----
+  Action: "Talk to" (#1, layer: Email, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Email, state: On)
+
+
+--------------------------------------------------
+- Layer: EmailContacts
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: EmailContacts)
+ title: "Email"
+
+  -----
+  Action: "Look at" (#0, layer: EmailContacts, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: EmailContacts, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: EmailContacts, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: EmailContacts)
+ title: "Contacts"
+
+  -----
+  Action: "Look at" (#0, layer: EmailContacts, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0027]
+   "It my email program, 'Planner'"
+
+  -----
+  Action: "Talk to" (#1, layer: EmailContacts, state: On)
+
+  -----
+  Action: "Use" (#2, layer: EmailContacts, state: On)
+
+
+--------------------------------------------------
+- Layer: EmailCalendar
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: EmailCalendar)
+ title: "Email"
+
+  -----
+  Action: "Look at" (#0, layer: EmailCalendar, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: EmailCalendar, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: EmailCalendar, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: EmailCalendar)
+ title: "Calendar"
+
+  -----
+  Action: "Look at" (#0, layer: EmailCalendar, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0028]
+   "It my email program, 'Planner'"
+
+  -----
+  Action: "Talk to" (#1, layer: EmailCalendar, state: On)
+
+  -----
+  Action: "Use" (#2, layer: EmailCalendar, state: On)
+
+
+--------------------------------------------------
+- Layer: WebBrowser
+--------------------------------------------------
+ --------------------------------------------------
+ State: On (layer: WebBrowser)
+ title: "Web Browser"
+
+  -----
+  Action: "Look at" (#0, layer: WebBrowser, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: WebBrowser, state: On)
+
+  -----
+  Action: "Use" (#2, layer: WebBrowser, state: On)
+
+ --------------------------------------------------
+ State: Off (layer: WebBrowser)
+ title: "Web Browser"
+
+  -----
+  Action: "Look at" (#0, layer: WebBrowser, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: WebBrowser, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: WebBrowser, state: Off)
+
+
+--------------------------------------------------
+- Layer: TodSong
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: TodSong)
+ title: "Tod T-1000"
+
+  -----
+  Action: "Look at" (#0, layer: TodSong, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: TodSong, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: TodSong, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: TodSong)
+ title: "Todd The T-1000"
+
+  -----
+  Action: "Look at" (#0, layer: TodSong, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0029]
+   "It's last weeks Thing a Week song. Todd The T-1000"
+
+   - Dialog [puppet: ego, voice::Home_Computer0076]
+   "Does Jonathan know Sarahs friend, it seems to be about him?"
+
+  -----
+  Action: "Talk to" (#1, layer: TodSong, state: On)
+
+  -----
+  Action: "Use" (#2, layer: TodSong, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0030]
+   "I'll download it."
+
+ --------------------------------------------------
+ State: OnDownloaded (layer: TodSong)
+ title: "Tod The T-1000"
+
+  -----
+  Action: "Look at" (#0, layer: TodSong, state: OnDownloaded)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0031]
+   "It's last weeks Thing a Week song. Tod The T-1000"
+
+  -----
+  Action: "Talk to" (#1, layer: TodSong, state: OnDownloaded)
+
+  -----
+  Action: "Use" (#2, layer: TodSong, state: OnDownloaded)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0032]
+   "I have already downloaded it."
+
+
+--------------------------------------------------
+- Layer: LaptopSong
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: LaptopSong)
+ title: "Laptop Like You"
+
+  -----
+  Action: "Look at" (#0, layer: LaptopSong, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: LaptopSong, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: LaptopSong, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: LaptopSong)
+ title: "Laptop Like You"
+
+  -----
+  Action: "Look at" (#0, layer: LaptopSong, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0033]
+   "It's this weeks Thing a Week song. A Laptop Like You."
+
+  -----
+  Action: "Talk to" (#1, layer: LaptopSong, state: On)
+
+  -----
+  Action: "Use" (#2, layer: LaptopSong, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0034]
+   "I'll download it."
+
+ --------------------------------------------------
+ State: OnDownloaded (layer: LaptopSong)
+ title: "Laptop Like You"
+
+  -----
+  Action: "Look at" (#0, layer: LaptopSong, state: OnDownloaded)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0035]
+   "It's this weeks Thing a Week song. A Laptop Like You."
+
+  -----
+  Action: "Talk to" (#1, layer: LaptopSong, state: OnDownloaded)
+
+  -----
+  Action: "Use" (#2, layer: LaptopSong, state: OnDownloaded)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0036]
+   "I have already downloaded it."
+
+
+--------------------------------------------------
+- Layer: WBJoCoLink
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: WBJoCoLink)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: WBJoCoLink, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: WBJoCoLink, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: WBJoCoLink, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: WBJoCoLink)
+ title: "Jonathan Coulton Home Page"
+
+  -----
+  Action: "Look at" (#0, layer: WBJoCoLink, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: WBJoCoLink, state: On)
+
+  -----
+  Action: "Use" (#2, layer: WBJoCoLink, state: On)
+
+
+--------------------------------------------------
+- Layer: WBIBuyLink
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: WBIBuyLink)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: WBIBuyLink, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: WBIBuyLink, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: WBIBuyLink, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: WBIBuyLink)
+ title: "My iBuy"
+
+  -----
+  Action: "Look at" (#0, layer: WBIBuyLink, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: WBIBuyLink, state: On)
+
+  -----
+  Action: "Use" (#2, layer: WBIBuyLink, state: On)
+
+
+--------------------------------------------------
+- Layer: Close
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: Close)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Close, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: Close, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: Close, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: Close)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Close, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Close, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Close, state: On)
+
+
+--------------------------------------------------
+- Layer: Back
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: Back)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Back, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: Back, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: Back, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: Back)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Back, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Back, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Back, state: On)
+
+
+--------------------------------------------------
+- Layer: Sonic
+--------------------------------------------------
+ --------------------------------------------------
+ State: Off (layer: Sonic)
+ title: "Sonic The Hedghog"
+
+  -----
+  Action: "Look at" (#0, layer: Sonic, state: Off)
+
+  -----
+  Action: "Talk to" (#1, layer: Sonic, state: Off)
+
+  -----
+  Action: "Use" (#2, layer: Sonic, state: Off)
+
+ --------------------------------------------------
+ State: On (layer: Sonic)
+ title: "Sonic The Hedghog"
+
+  -----
+  Action: "Look at" (#0, layer: Sonic, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0037]
+   "It's the original Sonic the Hedgehog"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0038]
+   "I must buy."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0039]
+   "The auction is nearly over."
+
+   - Dialog [puppet: ego, voice::Home_Computer0075]
+   "Oh, your one of those people who thinks the games were better in the old days."
+
+  -----
+  Action: "Talk to" (#1, layer: Sonic, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Sonic, state: On)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0040]
+   "I got my bid in just before the end of the auction."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0041]
+   "Almost finished...."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0042]
+   "I won the auction!"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0043]
+   "I'll just pay."
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0044]
+   "The auction says same day delivery."
+
+ --------------------------------------------------
+ State: OnBought (layer: Sonic)
+ title: "Sonic Youth CD"
+
+  -----
+  Action: "Look at" (#0, layer: Sonic, state: OnBought)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0045]
+   "It's just an old Sonic Youth CD"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0046]
+   "I could buy it new cheaper than that!"
+
+  -----
+  Action: "Talk to" (#1, layer: Sonic, state: OnBought)
+
+  -----
+  Action: "Use" (#2, layer: Sonic, state: OnBought)
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0047]
+   "Just a load of junk I'm not interested in."
+
+
+
+
+TREES
+--------------------------------------------------
+- Tree: GuessPassword
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: GuessPassword)
+
+  -----
+  Topic: "_0" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0048]
+   "Password"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0049]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_2" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0050]
+   "123456"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0051]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_3" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0052]
+   "Enterprise"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0053]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_4" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0054]
+   "Spiderman"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0055]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_5" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0056]
+   "Computer"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0057]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_6" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0058]
+   "Sarah"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0059]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_7" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0060]
+   "Ted"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0061]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_8" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0062]
+   "Martin"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0063]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_9" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0064]
+   "Robert"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0065]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_10" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0066]
+   "Mary"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0067]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_11" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0068]
+   "BSG"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0069]
+   "That worked!"
+
+  -----
+  Topic: "_13" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0070]
+   "BSG75"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0071]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_14" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0072]
+   "Galactica"
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0073]
+   "Nope that didn't work."
+
+  -----
+  Topic: "_12" (tree: GuessPassword, tier: )
+
+   - Dialog [puppet: _avatar, voice::Home_Computer0074]
+   "I give up"
+
+
+
+
+_avatar,"It the login screen",:Home_Computer0000
+_avatar,"It's on already.",:Home_Computer0001
+_avatar,"It's OS Win.",:Home_Computer0002
+_avatar,"It's on already.",:Home_Computer0003
+_avatar,"I don't have any emails except one that arrived today and a load of spam.",:Home_Computer0004
+_avatar,"That is very odd.",:Home_Computer0005
+_avatar,"I wonder if anyone deleted them.",:Home_Computer0006
+_avatar,"The email from today is a joke about pirates.",:Home_Computer0007
+_avatar,"It's on already.",:Home_Computer0008
+_avatar,"I don't have any contacts.",:Home_Computer0009
+_avatar,"I wonder if someone deleted them.",:Home_Computer0010
+ego,"Na, you just don't have any friends.",:Home_Computer0080
+_avatar,"It's on already.",:Home_Computer0011
+_avatar,"Nothing in my calender.",:Home_Computer0012
+ego,"You must just stay in and do nothing all day.",:Home_Computer0081
+_avatar,"I thought I'd be a cool person.",:Home_Computer0082
+ego,"Cool people don't say they are cool.",:Home_Computer0083
+_avatar,"It's on already.",:Home_Computer0013
+_avatar,"It's SafIE.",:Home_Computer0014
+_avatar,"I remember when Apple bought Microsoft and merged Safari and IE to make the best browser ever.",:Home_Computer0015
+_avatar,"Of course now it's back to being rubbish again.",:Home_Computer0016
+_avatar,"It's on already.",:Home_Computer0017
+_avatar,"It's Jonathan Coultons website.",:Home_Computer0018
+_avatar,"He is releasing a song a week.",:Home_Computer0019
+_avatar,"It's on already.",:Home_Computer0020
+_avatar,"It's iBay. The page is showing auctions nearing completion.",:Home_Computer0021
+_avatar,"It's on already.",:Home_Computer0022
+_avatar,"It's a keyboard.",:Home_Computer0023
+_avatar,"It's a dock for an iPod.",:Home_Computer0077
+_avatar,"It won't sync until I've logged on.",:Home_Computer0024
+_avatar,"It's a dock for an iPod.",:Home_Computer0078
+_avatar,"It has syncronied with my music collection.",:Home_Computer0025
+_avatar,"It my email program, 'Planner'",:Home_Computer0026
+_avatar,"It my email program, 'Planner'",:Home_Computer0027
+_avatar,"It my email program, 'Planner'",:Home_Computer0028
+_avatar,"It's last weeks Thing a Week song. Todd The T-1000",:Home_Computer0029
+ego,"Does Jonathan know Sarahs friend, it seems to be about him?",:Home_Computer0076
+_avatar,"I'll download it.",:Home_Computer0030
+_avatar,"It's last weeks Thing a Week song. Tod The T-1000",:Home_Computer0031
+_avatar,"I have already downloaded it.",:Home_Computer0032
+_avatar,"It's this weeks Thing a Week song. A Laptop Like You.",:Home_Computer0033
+_avatar,"I'll download it.",:Home_Computer0034
+_avatar,"It's this weeks Thing a Week song. A Laptop Like You.",:Home_Computer0035
+_avatar,"I have already downloaded it.",:Home_Computer0036
+_avatar,"It's the original Sonic the Hedgehog",:Home_Computer0037
+_avatar,"I must buy.",:Home_Computer0038
+_avatar,"The auction is nearly over.",:Home_Computer0039
+ego,"Oh, your one of those people who thinks the games were better in the old days.",:Home_Computer0075
+_avatar,"I got my bid in just before the end of the auction.",:Home_Computer0040
+_avatar,"Almost finished....",:Home_Computer0041
+_avatar,"I won the auction!",:Home_Computer0042
+_avatar,"I'll just pay.",:Home_Computer0043
+_avatar,"The auction says same day delivery.",:Home_Computer0044
+_avatar,"It's just an old Sonic Youth CD",:Home_Computer0045
+_avatar,"I could buy it new cheaper than that!",:Home_Computer0046
+_avatar,"Just a load of junk I'm not interested in.",:Home_Computer0047
+_avatar,"Password",:Home_Computer0048
+_avatar,"Nope that didn't work.",:Home_Computer0049
+_avatar,"123456",:Home_Computer0050
+_avatar,"Nope that didn't work.",:Home_Computer0051
+_avatar,"Enterprise",:Home_Computer0052
+_avatar,"Nope that didn't work.",:Home_Computer0053
+_avatar,"Spiderman",:Home_Computer0054
+_avatar,"Nope that didn't work.",:Home_Computer0055
+_avatar,"Computer",:Home_Computer0056
+_avatar,"Nope that didn't work.",:Home_Computer0057
+_avatar,"Sarah",:Home_Computer0058
+_avatar,"Nope that didn't work.",:Home_Computer0059
+_avatar,"Ted",:Home_Computer0060
+_avatar,"Nope that didn't work.",:Home_Computer0061
+_avatar,"Martin",:Home_Computer0062
+_avatar,"Nope that didn't work.",:Home_Computer0063
+_avatar,"Robert",:Home_Computer0064
+_avatar,"Nope that didn't work.",:Home_Computer0065
+_avatar,"Mary",:Home_Computer0066
+_avatar,"Nope that didn't work.",:Home_Computer0067
+_avatar,"BSG",:Home_Computer0068
+_avatar,"That worked!",:Home_Computer0069
+_avatar,"BSG75",:Home_Computer0070
+_avatar,"Nope that didn't work.",:Home_Computer0071
+_avatar,"Galactica",:Home_Computer0072
+_avatar,"Nope that didn't work.",:Home_Computer0073
+_avatar,"I give up",:Home_Computer0074
+
+
+

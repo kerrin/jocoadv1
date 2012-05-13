@@ -1,0 +1,360 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: Door
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Door)
+ title: "Door"
+
+  -----
+  Action: "Look at" (#0, layer: Door, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0000]
+   "It's a door."
+
+  -----
+  Action: "Talk to" (#1, layer: Door, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Door, state: main)
+
+
+--------------------------------------------------
+- Layer: boxes
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: boxes)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: boxes, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: boxes, state: main)
+
+  -----
+  Action: "Use" (#2, layer: boxes, state: main)
+
+
+--------------------------------------------------
+- Layer: Bed
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Bed)
+ title: "Bed"
+
+  -----
+  Action: "Look at" (#0, layer: Bed, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0001]
+   "It's a bed, and it looks mighty inviting."
+
+   - Dialog [puppet: ego, voice::Home_Bedroom0031]
+   "All the best decissions are made when you haven't had enough sleep."
+
+  -----
+  Action: "Talk to" (#1, layer: Bed, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Bed, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0002]
+   "I could do with a rest."
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0003]
+   "That is better."
+
+ --------------------------------------------------
+ State: Slept (layer: Bed)
+ title: "Used Bed"
+
+  -----
+  Action: "Look at" (#0, layer: Bed, state: Slept)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0004]
+   "It's a messy bed."
+
+  -----
+  Action: "Talk to" (#1, layer: Bed, state: Slept)
+
+  -----
+  Action: "Use" (#2, layer: Bed, state: Slept)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0005]
+   "I'm all rested now."
+
+
+--------------------------------------------------
+- Layer: UnderBed
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: UnderBed)
+ title: "Under Bed"
+
+  -----
+  Action: "Look at" (#0, layer: UnderBed, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0006]
+   "There are some boxes and other junk."
+
+  -----
+  Action: "Talk to" (#1, layer: UnderBed, state: main)
+
+  -----
+  Action: "Use" (#2, layer: UnderBed, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0007]
+   "The box has papers in. Here is my passport and birth certificate, I am Dr Ted Martin, my parents names are Robert and Mary Martin, some wage slips, I work for Future Tech. Nothing else of interest."
+
+ --------------------------------------------------
+ State: Found (layer: UnderBed)
+ title: "Under Bed"
+
+  -----
+  Action: "Look at" (#0, layer: UnderBed, state: Found)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0008]
+   "There are some boxes and other junk."
+
+   - Dialog [puppet: ego, voice::Home_Bedroom0030]
+   "I suppose your going to spend the rest of the day in your bedroom playing with yout junk."
+
+  -----
+  Action: "Talk to" (#1, layer: UnderBed, state: Found)
+
+  -----
+  Action: "Use" (#2, layer: UnderBed, state: Found)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0009]
+   "Nothing else of interest there."
+
+
+--------------------------------------------------
+- Layer: Cabnet
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Cabnet)
+ title: "Cabnet"
+
+  -----
+  Action: "Look at" (#0, layer: Cabnet, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0010]
+   "It's a bed side cabnet."
+
+  -----
+  Action: "Talk to" (#1, layer: Cabnet, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Cabnet, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0011]
+   "Looks like I am reading a book called, 'Intervene: How to help people with addiction'. There is also a key card for Future Tech this one is for Dr Ted Martin."
+
+ --------------------------------------------------
+ State: Found (layer: Cabnet)
+ title: "Cabnet"
+
+  -----
+  Action: "Look at" (#0, layer: Cabnet, state: Found)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0012]
+   "It's a bed side cabnet."
+
+   - Dialog [puppet: ego, voice::Home_Bedroom0029]
+   "I wouldn't look in there, you could find anything!"
+
+  -----
+  Action: "Talk to" (#1, layer: Cabnet, state: Found)
+
+  -----
+  Action: "Use" (#2, layer: Cabnet, state: Found)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0013]
+   "Nothing else of interest there."
+
+
+--------------------------------------------------
+- Layer: Wardrobe
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Wardrobe)
+ title: "Wardrobe"
+
+  -----
+  Action: "Look at" (#0, layer: Wardrobe, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0014]
+   "A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths like socks. I wear Argile socks."
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0015]
+   "Oh, that reminds me of a pirate joke."
+
+  -----
+  Action: "Talk to" (#1, layer: Wardrobe, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Wardrobe, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0016]
+   "Ok, I'll change my cloths, who knows how long I've been wearing these for."
+
+ --------------------------------------------------
+ State: Used (layer: Wardrobe)
+ title: "Wardrobe"
+
+  -----
+  Action: "Look at" (#0, layer: Wardrobe, state: Used)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0017]
+   "A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths."
+
+   - Dialog [puppet: ego, voice::Home_Bedroom0028]
+   "You stink! I'd change your clothes."
+
+  -----
+  Action: "Talk to" (#1, layer: Wardrobe, state: Used)
+
+  -----
+  Action: "Use" (#2, layer: Wardrobe, state: Used)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0018]
+   "I don't need to change again yet."
+
+
+--------------------------------------------------
+- Layer: basketball
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: basketball)
+ title: "Basket Ball"
+
+  -----
+  Action: "Look at" (#0, layer: basketball, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0019]
+   "It's a basket ball"
+
+   - Dialog [puppet: ego, voice::Home_Bedroom0027]
+   "I think you should have a game."
+
+  -----
+  Action: "Talk to" (#1, layer: basketball, state: main)
+
+  -----
+  Action: "Use" (#2, layer: basketball, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0020]
+   "It's a bit big to carry around, and I don't think I'll need it."
+
+
+--------------------------------------------------
+- Layer: picturemoon
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: picturemoon)
+ title: "Picture"
+
+  -----
+  Action: "Look at" (#0, layer: picturemoon, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0021]
+   "It's a painting of Chiron and it's moon"
+
+  -----
+  Action: "Talk to" (#1, layer: picturemoon, state: main)
+
+  -----
+  Action: "Use" (#2, layer: picturemoon, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0022]
+   "I don't want it"
+
+
+--------------------------------------------------
+- Layer: pictureseahorse
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: pictureseahorse)
+ title: "Picture"
+
+  -----
+  Action: "Look at" (#0, layer: pictureseahorse, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0023]
+   "It's a picture of a sea horse looking after it's babies"
+
+   - Dialog [puppet: ego, voice::Home_Bedroom0024]
+   "Doesn't that make it the mother?"
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0025]
+   "Well the female gave birth I would assume"
+
+  -----
+  Action: "Talk to" (#1, layer: pictureseahorse, state: main)
+
+  -----
+  Action: "Use" (#2, layer: pictureseahorse, state: main)
+
+   - Dialog [puppet: _avatar, voice::Home_Bedroom0026]
+   "I don't want it"
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+
+
+TREES
+
+
+
+_avatar,"It's a door.",:Home_Bedroom0000
+_avatar,"It's a bed, and it looks mighty inviting.",:Home_Bedroom0001
+ego,"All the best decissions are made when you haven't had enough sleep.",:Home_Bedroom0031
+_avatar,"I could do with a rest.",:Home_Bedroom0002
+_avatar,"That is better.",:Home_Bedroom0003
+_avatar,"It's a messy bed.",:Home_Bedroom0004
+_avatar,"I'm all rested now.",:Home_Bedroom0005
+_avatar,"There are some boxes and other junk.",:Home_Bedroom0006
+_avatar,"The box has papers in. Here is my passport and birth certificate, I am Dr Ted Martin, my parents names are Robert and Mary Martin, some wage slips, I work for Future Tech. Nothing else of interest.",:Home_Bedroom0007
+_avatar,"There are some boxes and other junk.",:Home_Bedroom0008
+ego,"I suppose your going to spend the rest of the day in your bedroom playing with yout junk.",:Home_Bedroom0030
+_avatar,"Nothing else of interest there.",:Home_Bedroom0009
+_avatar,"It's a bed side cabnet.",:Home_Bedroom0010
+_avatar,"Looks like I am reading a book called, 'Intervene: How to help people with addiction'. There is also a key card for Future Tech this one is for Dr Ted Martin.",:Home_Bedroom0011
+_avatar,"It's a bed side cabnet.",:Home_Bedroom0012
+ego,"I wouldn't look in there, you could find anything!",:Home_Bedroom0029
+_avatar,"Nothing else of interest there.",:Home_Bedroom0013
+_avatar,"A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths like socks. I wear Argile socks.",:Home_Bedroom0014
+_avatar,"Oh, that reminds me of a pirate joke.",:Home_Bedroom0015
+_avatar,"Ok, I'll change my cloths, who knows how long I've been wearing these for.",:Home_Bedroom0016
+_avatar,"A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths.",:Home_Bedroom0017
+ego,"You stink! I'd change your clothes.",:Home_Bedroom0028
+_avatar,"I don't need to change again yet.",:Home_Bedroom0018
+_avatar,"It's a basket ball",:Home_Bedroom0019
+ego,"I think you should have a game.",:Home_Bedroom0027
+_avatar,"It's a bit big to carry around, and I don't think I'll need it.",:Home_Bedroom0020
+_avatar,"It's a painting of Chiron and it's moon",:Home_Bedroom0021
+_avatar,"I don't want it",:Home_Bedroom0022
+_avatar,"It's a picture of a sea horse looking after it's babies",:Home_Bedroom0023
+ego,"Doesn't that make it the mother?",:Home_Bedroom0024
+_avatar,"Well the female gave birth I would assume",:Home_Bedroom0025
+_avatar,"I don't want it",:Home_Bedroom0026
+
+
+

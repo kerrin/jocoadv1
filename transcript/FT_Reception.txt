@@ -1,0 +1,1361 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: SecureDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SecureDoor)
+ title: "Secure Door"
+
+  -----
+  Action: "Look at" (#0, layer: SecureDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0000]
+   "It's the door to the hallway. You need a keycard to get through."
+
+  -----
+  Action: "Talk to" (#1, layer: SecureDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: SecureDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0001]
+   "I don't think the guard will like me going back there."
+
+ --------------------------------------------------
+ State: DayLocked (layer: SecureDoor)
+ title: "Secure Door"
+
+  -----
+  Action: "Look at" (#0, layer: SecureDoor, state: DayLocked)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0002]
+   "It's the door to the hallway. You need a keycard to get through."
+
+  -----
+  Action: "Talk to" (#1, layer: SecureDoor, state: DayLocked)
+
+  -----
+  Action: "Use" (#2, layer: SecureDoor, state: DayLocked)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0003]
+   "You need a keycard to get through."
+
+  -----
+  Item: "MyKeyCard", "" (layer: SecureDoor, state: DayLocked)
+
+ --------------------------------------------------
+ State: DayOpen (layer: SecureDoor)
+ title: "Secure Door"
+
+  -----
+  Action: "Look at" (#0, layer: SecureDoor, state: DayOpen)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0004]
+   "It's the door to the hallway."
+
+  -----
+  Action: "Talk to" (#1, layer: SecureDoor, state: DayOpen)
+
+  -----
+  Action: "Use" (#2, layer: SecureDoor, state: DayOpen)
+
+  -----
+  Item: "MyKeyCard", "" (layer: SecureDoor, state: DayOpen)
+
+
+--------------------------------------------------
+- Layer: poster
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: poster)
+ title: "Poster"
+
+  -----
+  Action: "Look at" (#0, layer: poster, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0005]
+   "It's a poster advertising the cybernetic enhanchments they perform here at Future tech."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0006]
+   "The slogan is, &quot;It's gonna be the Future Soon. Lets get ready for it.&quot;"
+
+  -----
+  Action: "Talk to" (#1, layer: poster, state: main)
+
+  -----
+  Action: "Use" (#2, layer: poster, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0007]
+   "I don't want it."
+
+
+--------------------------------------------------
+- Layer: Reception
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Reception)
+ title: "Reception Desk"
+
+  -----
+  Action: "Look at" (#0, layer: Reception, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0008]
+   "It's a reception desk."
+
+  -----
+  Action: "Talk to" (#1, layer: Reception, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Reception, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0009]
+   "Nothing of interest."
+
+ --------------------------------------------------
+ State: Day (layer: Reception)
+ title: "Receptionist"
+
+  -----
+  Action: "Look at" (#0, layer: Reception, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0010]
+   "It's the company receptionist"
+
+  -----
+  Action: "Talk to" (#1, layer: Reception, state: Day)
+
+  -----
+  Action: "Use" (#2, layer: Reception, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0011]
+   "I don't feel like using that person, for now."
+
+
+--------------------------------------------------
+- Layer: StreetDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: StreetDoor)
+ title: "Door"
+
+  -----
+  Action: "Look at" (#0, layer: StreetDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0012]
+   "It's the door to get outside."
+
+  -----
+  Action: "Talk to" (#1, layer: StreetDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: StreetDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0013]
+   "Hey, I just remembered something. I think its my address..."
+
+   - Dialog [puppet: ego, voice::FT_Reception0014]
+   "How convenient."
+
+
+--------------------------------------------------
+- Layer: Brochures
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Brochures)
+ title: "Brochures"
+
+  -----
+  Action: "Look at" (#0, layer: Brochures, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0015]
+   "It's a lot of Future Tech brochures."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0197]
+   "There is one for every augmentation you can think of."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0198]
+   "New eyes, new arms and legs, improve your lung capacity, new improved blood replacement that makes you able to do exercise 5 times as long!"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0199]
+   "And here is one for male enhancments...if you know what I mean."
+
+  -----
+  Action: "Talk to" (#1, layer: Brochures, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Brochures, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0016]
+   "I don't want that."
+
+
+--------------------------------------------------
+- Layer: Customer
+--------------------------------------------------
+ --------------------------------------------------
+ State: night (layer: Customer)
+ title: "Seat"
+
+  -----
+  Action: "Look at" (#0, layer: Customer, state: night)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0017]
+   "Some waiting area chairs."
+
+  -----
+  Action: "Talk to" (#1, layer: Customer, state: night)
+
+  -----
+  Action: "Use" (#2, layer: Customer, state: night)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0018]
+   "I don't think the guard will like me sitting down."
+
+ --------------------------------------------------
+ State: Day (layer: Customer)
+ title: "Customer"
+
+  -----
+  Action: "Look at" (#0, layer: Customer, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0019]
+   "Just a customer."
+
+  -----
+  Action: "Talk to" (#1, layer: Customer, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0020]
+   "Hi."
+
+   - Dialog [puppet: Customer, voice::FT_Reception0021]
+   "Huh?"
+
+  -----
+  Action: "Use" (#2, layer: Customer, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0022]
+   "I don't feel like using that person, for now."
+
+
+--------------------------------------------------
+- Layer: Storm
+--------------------------------------------------
+ --------------------------------------------------
+ State: Day (layer: Storm)
+ title: "Storm"
+
+  -----
+  Action: "Look at" (#0, layer: Storm, state: Day)
+
+  -----
+  Action: "Talk to" (#1, layer: Storm, state: Day)
+
+  -----
+  Action: "Use" (#2, layer: Storm, state: Day)
+
+ --------------------------------------------------
+ State: night (layer: Storm)
+ title: "Storm"
+
+  -----
+  Action: "Look at" (#0, layer: Storm, state: night)
+
+  -----
+  Action: "Talk to" (#1, layer: Storm, state: night)
+
+  -----
+  Action: "Use" (#2, layer: Storm, state: night)
+
+
+--------------------------------------------------
+- Layer: Paul
+--------------------------------------------------
+ --------------------------------------------------
+ State: Day (layer: Paul)
+ title: "Paul"
+
+  -----
+  Action: "Look at" (#0, layer: Paul, state: Day)
+
+  -----
+  Action: "Talk to" (#1, layer: Paul, state: Day)
+
+  -----
+  Action: "Use" (#2, layer: Paul, state: Day)
+
+ --------------------------------------------------
+ State: night (layer: Paul)
+ title: "Paul"
+
+  -----
+  Action: "Look at" (#0, layer: Paul, state: night)
+
+  -----
+  Action: "Talk to" (#1, layer: Paul, state: night)
+
+  -----
+  Action: "Use" (#2, layer: Paul, state: night)
+
+
+--------------------------------------------------
+- Layer: PS
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: PS)
+ title: "Seat"
+
+  -----
+  Action: "Look at" (#0, layer: PS, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0023]
+   "It's the waiting area."
+
+  -----
+  Action: "Talk to" (#1, layer: PS, state: main)
+
+  -----
+  Action: "Use" (#2, layer: PS, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0024]
+   "I don't think the guard will like me sitting down."
+
+ --------------------------------------------------
+ State: Day (layer: PS)
+ title: "Paul And Storm"
+
+  -----
+  Action: "Look at" (#0, layer: PS, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0025]
+   "Hey, it's Paul and Storm!"
+
+   - Dialog [puppet: ego, voice::FT_Reception0218]
+   "You sound like a fan, don't bother them, they won't apperciate being bothered by you."
+
+  -----
+  Action: "Talk to" (#1, layer: PS, state: Day)
+
+  -----
+  Action: "Use" (#2, layer: PS, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0026]
+   "I don't feel like using that person, for now."
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+
+
+TREES
+--------------------------------------------------
+- Tree: PS
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "_root" (tree: PS)
+
+ --------------------------------------------------
+ Tier: "_start" (tree: PS)
+
+ --------------------------------------------------
+ Tier: "" (tree: PS)
+
+  -----
+  Topic: "_32" (tree: PS, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0034]
+   "What does gestault mean?"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0035]
+   "Die Gestalt is a German word for form or shape. It is used in English to refer to a concept of 'wholeness'"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0036]
+   "We mean we are going to become one person."
+
+  -----
+  Topic: "_3" (tree: PS, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0037]
+   "What do your wives think of the operation?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0038]
+   "I don't know, we haven't told them."
+
+  -----
+  Topic: "_4" (tree: PS, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0039]
+   "Won't that be a little weird?"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0040]
+   "In what way?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0041]
+   "Well how will you...."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0042]
+   "What about when you..."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0043]
+   "Never mind."
+
+ --------------------------------------------------
+ Tier: "_34" (tree: PS)
+
+  -----
+  Topic: "_37" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0204]
+   "We'd be awesome at arm wrestling, is my 'Madonna' cover band."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0207]
+   "Hey, that's our joke premise!"
+
+  -----
+  Topic: "_36" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0200]
+   "Sounds like you need to think this through a little more."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0201]
+   "No, I think we have done that enough."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0202]
+   "Well, there is still the issue with whose junk we are keeping."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0203]
+   "There is still the issue with whose junk we are keeping, is the name of my 'N-Sync' cover band."
+
+  -----
+  Topic: "_38" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0205]
+   "Surely your going to have to many body parts?"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0206]
+   "We're going to have too many body parts, is the name of my 'Osmonds' cover band."
+
+  -----
+  Topic: "_39" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0208]
+   "Aren't you going to be short a few things?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0209]
+   "Aren't you going to be short a few things? is the name of my 'Prince' cover band."
+
+  -----
+  Topic: "_42" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0216]
+   "Aren't you too old for this?"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0217]
+   "Aren't you too old for this? is my 'Rollingstones' cover band."
+
+  -----
+  Topic: "_40" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0211]
+   "This isn't funny anymore, I really have to pee."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0212]
+   "This isn't funny anymore, I really have to pee, is the name of my 'R. Kelly' cover band."
+
+  -----
+  Topic: "_34" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0044]
+   "What are you going to call your self?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0045]
+   "Paul Storm"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0046]
+   "I thought we were going to be Storm Paul?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0047]
+   "Nah, that sounds like there will be other kinds of Paul. Like Sunny Paul"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0048]
+   "Well how come your name gets to be first?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0049]
+   "Come on we've talked about this. You get the left side, I get the right. It's the way it's always been."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0050]
+   "Exactly, isn't it my turn to go first? And I'm right handed!"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0051]
+   "So am I!"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0052]
+   "Well how about we have two arms on one side."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0053]
+   "Hey! That's not a bad idea! Plus we'd be awesome at arm wrestling!"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0054]
+   "Exactly!"
+
+  -----
+  Topic: "_41" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0213]
+   "Have you thought about whose house you will live in?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0214]
+   "Well mine obviously."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0215]
+   "What do you mean yours?"
+
+  -----
+  Topic: "_35" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0055]
+   "You guys going to have two heads?"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0056]
+   "No"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0057]
+   "Yes"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0058]
+   "What? Well who's head do we keep then? And what happens to the other persons head? Does it get thrown away? Are you still really you without your head?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0059]
+   "Hmmm, I guess two heads are better than one."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0060]
+   "Yeah, double brain power!"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0061]
+   "Oh my god!"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0062]
+   "So intense."
+
+  -----
+  Topic: "_5" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0063]
+   "I don't want to discuss the operation anymore."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0173]
+   "I'm starting to feel queezy."
+
+  -----
+  Topic: "_2" (tree: PS, tier: _34)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0030]
+   "What are you doing here?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0031]
+   "We decided to go for the operation?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0032]
+   "You don't mean?"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0033]
+   "We're becoming a guesalt entity."
+
+ --------------------------------------------------
+ Tier: "" (tree: PS)
+
+ --------------------------------------------------
+ Tier: "_7" (tree: PS)
+
+ --------------------------------------------------
+ Tier: "" (tree: PS)
+
+ --------------------------------------------------
+ Tier: "_11" (tree: PS)
+
+  -----
+  Topic: "_20" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0078]
+   "StAR!wars."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0079]
+   "So we need more pirate jokes."
+
+  -----
+  Topic: "_11" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0075]
+   "BendAR!"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0076]
+   "You went with that instead of R2D2?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0077]
+   "Your favourite film?"
+
+  -----
+  Topic: "_12" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0080]
+   "AR! 2D2"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0081]
+   "Your favourite film?"
+
+  -----
+  Topic: "_13" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0082]
+   "AR!4-P17"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0083]
+   "You went with that instead of R2D2?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0084]
+   "Your favourite film?"
+
+  -----
+  Topic: "_14" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0085]
+   "Optimus Prime"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0086]
+   "You went with that instead of R2D2?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0087]
+   "Your favourite film?"
+
+  -----
+  Topic: "_15" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0088]
+   "CybAR!man"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0089]
+   "You went with that instead of R2D2?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0090]
+   "Your favourite film?"
+
+  -----
+  Topic: "_18" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0091]
+   "iDog"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0092]
+   "You went with that instead of R2D2?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0093]
+   "Your favourite film?"
+
+  -----
+  Topic: "_19" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0094]
+   "Tod T-1000"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0095]
+   "You went with that instead of R2D2?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0096]
+   "Your favourite film?"
+
+  -----
+  Topic: "_8" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0071]
+   "What then?"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0072]
+   "We are looking for new pirate jokes."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0073]
+   "You know the ones."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0074]
+   "What is a pirates favourite Droid?"
+
+  -----
+  Topic: "_7" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0069]
+   "Talk you out of the operation?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0070]
+   "No"
+
+  -----
+  Topic: "_9" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0097]
+   "Play ukelele on stage with you?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0098]
+   "No that is Molly's job."
+
+  -----
+  Topic: "_10" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0099]
+   "What could I possibly do for you?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0100]
+   "That wasn't a very funny quip."
+
+  -----
+  Topic: "_6" (tree: PS, tier: _11)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0064]
+   "I love your songs."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0065]
+   "Espcecially the one about pirates."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0066]
+   "The Captain's Wife's Lament"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0067]
+   "Yeah"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0068]
+   "Well, you might be able to do us a favour."
+
+ --------------------------------------------------
+ Tier: "_21" (tree: PS)
+
+ --------------------------------------------------
+ Tier: "_22" (tree: PS)
+
+  -----
+  Topic: "_23" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0106]
+   "Is that enough?"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0107]
+   "No, we need more."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0108]
+   "Yes, that is loads."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0109]
+   "As a reward, here is a USB key."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0110]
+   "It has a picture of our friend Jonathan on."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0111]
+   "It used to have all his music on, until someone over wrote it with a Tina T-1337 personality file. Naming no names..Paul!"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0112]
+   "It sounded like it would be fun to have an artificial intelligence to talk to, but she only ever wanted to talk about robot things."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0113]
+   "Thanks, that sounds....useful?"
+
+   - Dialog [puppet: ego, voice::FT_Reception0114]
+   "Yeah, I bet you are really glad you did all that work for them!"
+
+  -----
+  Topic: "_22" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0103]
+   "What do robot pirates drink?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0104]
+   "Bottles of RAM."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0105]
+   "Funny"
+
+  -----
+  Topic: "_25" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0115]
+   "What is a pirates favourite sock?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0116]
+   "AR!gile."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0117]
+   "Funny"
+
+  -----
+  Topic: "_26" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0118]
+   "What is a pirates favourite crime?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0119]
+   "AR!son."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0120]
+   "Funny"
+
+  -----
+  Topic: "_28" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0121]
+   "What is a pirates favourite crime?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0122]
+   "Grand LAR!sony."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0123]
+   "Funny"
+
+  -----
+  Topic: "_29" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0124]
+   "What do you call a parrot saying, 'Pieces of seven! Pieces of seven!'?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0125]
+   "A parroty error."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0126]
+   "Funny"
+
+  -----
+  Topic: "_33" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0127]
+   "You fight like a cow!"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0128]
+   "Haha! Yeah!"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0129]
+   "That isn't funny on it's own."
+
+   - Dialog [puppet: Storm, voice::FT_Reception0130]
+   "It's a referance, not a joke."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0175]
+   "We need jokes! New ones!"
+
+  -----
+  Topic: "_30" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0131]
+   "I'm out of jokes."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0132]
+   "Come back when you have more."
+
+  -----
+  Topic: "_21" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0101]
+   "I have a pirate joke for you."
+
+   - Dialog [puppet: Paul, voice::FT_Reception0102]
+   "Ok, lets hear it."
+
+  -----
+  Topic: "_31" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0133]
+   "Bye"
+
+  -----
+  Topic: "_0" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0027]
+   "Hi"
+
+   - Dialog [puppet: Paul, voice::FT_Reception0028]
+   "Hi"
+
+   - Dialog [puppet: Storm, voice::FT_Reception0029]
+   "Hi"
+
+  -----
+  Topic: "_1" (tree: PS, tier: _22)
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0134]
+   "Bye"
+
+--------------------------------------------------
+- Tree: Receptionist
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: Receptionist)
+
+ --------------------------------------------------
+ Tier: "" (tree: Receptionist)
+
+ --------------------------------------------------
+ Tier: "" (tree: Receptionist)
+
+  -----
+  Topic: "_3" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0146]
+   "Yes"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0147]
+   "But Dr Martin....you make comments about the patients in their files that you really wouldn't want them to see."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0148]
+   "Fine."
+
+  -----
+  Topic: "_4" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0149]
+   "No"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0150]
+   "So why would it be ok to let you see your file?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0151]
+   "Fine."
+
+  -----
+  Topic: "_2" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0138]
+   "Could I have the files you have on me?"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0139]
+   "Oh I'm sorry, I can't give out personal information about our practioners. It wouldn't be professional."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0140]
+   "But it's about me."
+
+   - Dialog [puppet: Reception, voice::FT_Reception0141]
+   "Surely you know everything their is to know about you?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0142]
+   "I'm suffering memory loss at the moment."
+
+   - Dialog [puppet: Reception, voice::FT_Reception0143]
+   "I'm not falling for that one again."
+
+   - Dialog [puppet: Reception, voice::FT_Reception0144]
+   "No one has ever told me it is ok to give people files on themselves, under any circumstances."
+
+   - Dialog [puppet: Reception, voice::FT_Reception0145]
+   "So are you saying it is ok for me to give patients their files too?"
+
+  -----
+  Topic: "_7" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0152]
+   "What clients do I have today?"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0153]
+   "I'm too busy to talk right now."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0154]
+   "You don't look busy. It looks like your playing mine sweeper on your computer!"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0176]
+   " No this is important work, it just looks like mine sweeper."
+
+   - Dialog [puppet: Reception, voice::FT_Reception0177]
+   "Ah! Now look what you made me do I set off all the mines...I mean...er...I lost the document."
+
+  -----
+  Topic: "_8" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0178]
+   "Are you still too busy?"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0179]
+   "Yes"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0180]
+   "Still player minesweeper?"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0181]
+   "No, I’m playing solitaire now....er...I mean no I’m working now...er...I was always working, I mean I’m checking customer records now."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0182]
+   "I didn’t know we had the king and queen of hearts as clients."
+
+   - Dialog [puppet: Reception, voice::FT_Reception0183]
+   "Please doctor, I’m trying to work."
+
+  -----
+  Topic: "_9" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0184]
+   "Still busy?"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0185]
+   "Yes!"
+
+  -----
+  Topic: "_6" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0155]
+   "Why are Paul and Storm here?"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0156]
+   "They're here for a consultation. They want a gustualt entity installed or something."
+
+  -----
+  Topic: "_5" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0157]
+   "Bye"
+
+  -----
+  Topic: "_0" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0135]
+   "Hi"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0136]
+   "How can I help you?"
+
+   - Dialog [puppet: Reception, voice::FT_Reception0137]
+   "Oh, sorry Dr Martin, I didn't realise it was you."
+
+  -----
+  Topic: "_1" (tree: Receptionist, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0158]
+   "Bye"
+
+--------------------------------------------------
+- Tree: Customer
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: Customer)
+
+ --------------------------------------------------
+ Tier: "" (tree: Customer)
+
+  -----
+  Topic: "_1" (tree: Customer, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0161]
+   "What are you having done?"
+
+   - Dialog [puppet: Customer, voice::FT_Reception0162]
+   "Um...that's private."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0186]
+   "I work here."
+
+   - Dialog [puppet: Customer, voice::FT_Reception0187]
+   "Oh right."
+
+   - Dialog [puppet: Customer, voice::FT_Reception0188]
+   "I'm here for laser eye surgery"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0189]
+   "You should see an optician for that."
+
+   - Dialog [puppet: Customer, voice::FT_Reception0190]
+   "No, having laser beams coming out my eyes!"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0191]
+   "Oh, that sounds dangerous."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0192]
+   "Does it?"
+
+   - Dialog [puppet: Customer, voice::FT_Reception0193]
+   "Maybe I should think about it some more."
+
+  -----
+  Topic: "_2" (tree: Customer, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0163]
+   "I'm your doctor, what can I do for you today?"
+
+   - Dialog [puppet: Customer, voice::FT_Reception0164]
+   "Er, well, um."
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0165]
+   "Oh, hold on, you are not the correct person."
+
+   - Dialog [puppet: Customer, voice::FT_Reception0166]
+   "How do you know you haven't asked my name?"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0167]
+   "What is your name?"
+
+   - Dialog [puppet: Customer, voice::FT_Reception0168]
+   "Billy"
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0169]
+   "No, I'm looking for Arnold."
+
+  -----
+  Topic: "_4" (tree: Customer, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0170]
+   "Is that backpack surgically attached?"
+
+   - Dialog [puppet: Customer, voice::FT_Reception0171]
+   "Yeah, it was done to fix my asthma. It did a great job."
+
+   - Dialog [puppet: Customer, voice::FT_Reception0194]
+   "It pumps oxygen directly in to my lungs. I just need to change the oxygen cylinder once a week."
+
+   - Dialog [puppet: Customer, voice::FT_Reception0195]
+   "Now I can play sports, run and you know...with a woman."
+
+   - Dialog [puppet: Customer, voice::FT_Reception0196]
+   "Not that I do any of that, but it good to know I could if the situation arose."
+
+  -----
+  Topic: "_3" (tree: Customer, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0172]
+   "Bye"
+
+  -----
+  Topic: "_0" (tree: Customer, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Reception0159]
+   "Hi"
+
+   - Dialog [puppet: Customer, voice::FT_Reception0160]
+   "Um..hi"
+
+
+
+
+_avatar,"It's the door to the hallway. You need a keycard to get through.",:FT_Reception0000
+_avatar,"I don't think the guard will like me going back there.",:FT_Reception0001
+_avatar,"It's the door to the hallway. You need a keycard to get through.",:FT_Reception0002
+_avatar,"You need a keycard to get through.",:FT_Reception0003
+_avatar,"It's the door to the hallway.",:FT_Reception0004
+_avatar,"It's a poster advertising the cybernetic enhanchments they perform here at Future tech.",:FT_Reception0005
+_avatar,"The slogan is, &quot;It's gonna be the Future Soon. Lets get ready for it.&quot;",:FT_Reception0006
+_avatar,"I don't want it.",:FT_Reception0007
+_avatar,"It's a reception desk.",:FT_Reception0008
+_avatar,"Nothing of interest.",:FT_Reception0009
+_avatar,"It's the company receptionist",:FT_Reception0010
+_avatar,"I don't feel like using that person, for now.",:FT_Reception0011
+_avatar,"It's the door to get outside.",:FT_Reception0012
+_avatar,"Hey, I just remembered something. I think its my address...",:FT_Reception0013
+ego,"How convenient.",:FT_Reception0014
+_avatar,"It's a lot of Future Tech brochures.",:FT_Reception0015
+_avatar,"There is one for every augmentation you can think of.",:FT_Reception0197
+_avatar,"New eyes, new arms and legs, improve your lung capacity, new improved blood replacement that makes you able to do exercise 5 times as long!",:FT_Reception0198
+_avatar,"And here is one for male enhancments...if you know what I mean.",:FT_Reception0199
+_avatar,"I don't want that.",:FT_Reception0016
+_avatar,"Some waiting area chairs.",:FT_Reception0017
+_avatar,"I don't think the guard will like me sitting down.",:FT_Reception0018
+_avatar,"Just a customer.",:FT_Reception0019
+_avatar,"Hi.",:FT_Reception0020
+Customer,"Huh?",:FT_Reception0021
+_avatar,"I don't feel like using that person, for now.",:FT_Reception0022
+_avatar,"It's the waiting area.",:FT_Reception0023
+_avatar,"I don't think the guard will like me sitting down.",:FT_Reception0024
+_avatar,"Hey, it's Paul and Storm!",:FT_Reception0025
+ego,"You sound like a fan, don't bother them, they won't apperciate being bothered by you.",:FT_Reception0218
+_avatar,"I don't feel like using that person, for now.",:FT_Reception0026
+_avatar,"What does gestault mean?",:FT_Reception0034
+Storm,"Die Gestalt is a German word for form or shape. It is used in English to refer to a concept of 'wholeness'",:FT_Reception0035
+Paul,"We mean we are going to become one person.",:FT_Reception0036
+_avatar,"What do your wives think of the operation?",:FT_Reception0037
+Paul,"I don't know, we haven't told them.",:FT_Reception0038
+_avatar,"Won't that be a little weird?",:FT_Reception0039
+Storm,"In what way?",:FT_Reception0040
+_avatar,"Well how will you....",:FT_Reception0041
+_avatar,"What about when you...",:FT_Reception0042
+_avatar,"Never mind.",:FT_Reception0043
+_avatar,"We'd be awesome at arm wrestling, is my 'Madonna' cover band.",:FT_Reception0204
+Paul,"Hey, that's our joke premise!",:FT_Reception0207
+_avatar,"Sounds like you need to think this through a little more.",:FT_Reception0200
+Paul,"No, I think we have done that enough.",:FT_Reception0201
+Storm,"Well, there is still the issue with whose junk we are keeping.",:FT_Reception0202
+Paul,"There is still the issue with whose junk we are keeping, is the name of my 'N-Sync' cover band.",:FT_Reception0203
+_avatar,"Surely your going to have to many body parts?",:FT_Reception0205
+Storm,"We're going to have too many body parts, is the name of my 'Osmonds' cover band.",:FT_Reception0206
+_avatar,"Aren't you going to be short a few things?",:FT_Reception0208
+Paul,"Aren't you going to be short a few things? is the name of my 'Prince' cover band.",:FT_Reception0209
+_avatar,"Aren't you too old for this?",:FT_Reception0216
+Storm,"Aren't you too old for this? is my 'Rollingstones' cover band.",:FT_Reception0217
+_avatar,"This isn't funny anymore, I really have to pee.",:FT_Reception0211
+Storm,"This isn't funny anymore, I really have to pee, is the name of my 'R. Kelly' cover band.",:FT_Reception0212
+_avatar,"What are you going to call your self?",:FT_Reception0044
+Paul,"Paul Storm",:FT_Reception0045
+Storm,"I thought we were going to be Storm Paul?",:FT_Reception0046
+Paul,"Nah, that sounds like there will be other kinds of Paul. Like Sunny Paul",:FT_Reception0047
+Storm,"Well how come your name gets to be first?",:FT_Reception0048
+Paul,"Come on we've talked about this. You get the left side, I get the right. It's the way it's always been.",:FT_Reception0049
+Storm,"Exactly, isn't it my turn to go first? And I'm right handed!",:FT_Reception0050
+Paul,"So am I!",:FT_Reception0051
+Storm,"Well how about we have two arms on one side.",:FT_Reception0052
+Paul,"Hey! That's not a bad idea! Plus we'd be awesome at arm wrestling!",:FT_Reception0053
+Storm,"Exactly!",:FT_Reception0054
+_avatar,"Have you thought about whose house you will live in?",:FT_Reception0213
+Paul,"Well mine obviously.",:FT_Reception0214
+Storm,"What do you mean yours?",:FT_Reception0215
+_avatar,"You guys going to have two heads?",:FT_Reception0055
+Storm,"No",:FT_Reception0056
+Paul,"Yes",:FT_Reception0057
+Storm,"What? Well who's head do we keep then? And what happens to the other persons head? Does it get thrown away? Are you still really you without your head?",:FT_Reception0058
+Paul,"Hmmm, I guess two heads are better than one.",:FT_Reception0059
+Storm,"Yeah, double brain power!",:FT_Reception0060
+Paul,"Oh my god!",:FT_Reception0061
+Paul,"So intense.",:FT_Reception0062
+_avatar,"I don't want to discuss the operation anymore.",:FT_Reception0063
+_avatar,"I'm starting to feel queezy.",:FT_Reception0173
+_avatar,"What are you doing here?",:FT_Reception0030
+Paul,"We decided to go for the operation?",:FT_Reception0031
+_avatar,"You don't mean?",:FT_Reception0032
+Storm,"We're becoming a guesalt entity.",:FT_Reception0033
+_avatar,"StAR!wars.",:FT_Reception0078
+Paul,"So we need more pirate jokes.",:FT_Reception0079
+_avatar,"BendAR!",:FT_Reception0075
+Storm,"You went with that instead of R2D2?",:FT_Reception0076
+Paul,"Your favourite film?",:FT_Reception0077
+_avatar,"AR! 2D2",:FT_Reception0080
+Paul,"Your favourite film?",:FT_Reception0081
+_avatar,"AR!4-P17",:FT_Reception0082
+Storm,"You went with that instead of R2D2?",:FT_Reception0083
+Paul,"Your favourite film?",:FT_Reception0084
+_avatar,"Optimus Prime",:FT_Reception0085
+Storm,"You went with that instead of R2D2?",:FT_Reception0086
+Paul,"Your favourite film?",:FT_Reception0087
+_avatar,"CybAR!man",:FT_Reception0088
+Storm,"You went with that instead of R2D2?",:FT_Reception0089
+Paul,"Your favourite film?",:FT_Reception0090
+_avatar,"iDog",:FT_Reception0091
+Storm,"You went with that instead of R2D2?",:FT_Reception0092
+Paul,"Your favourite film?",:FT_Reception0093
+_avatar,"Tod T-1000",:FT_Reception0094
+Storm,"You went with that instead of R2D2?",:FT_Reception0095
+Paul,"Your favourite film?",:FT_Reception0096
+_avatar,"What then?",:FT_Reception0071
+Storm,"We are looking for new pirate jokes.",:FT_Reception0072
+Paul,"You know the ones.",:FT_Reception0073
+Paul,"What is a pirates favourite Droid?",:FT_Reception0074
+_avatar,"Talk you out of the operation?",:FT_Reception0069
+Paul,"No",:FT_Reception0070
+_avatar,"Play ukelele on stage with you?",:FT_Reception0097
+Paul,"No that is Molly's job.",:FT_Reception0098
+_avatar,"What could I possibly do for you?",:FT_Reception0099
+Paul,"That wasn't a very funny quip.",:FT_Reception0100
+_avatar,"I love your songs.",:FT_Reception0064
+_avatar,"Espcecially the one about pirates.",:FT_Reception0065
+Paul,"The Captain's Wife's Lament",:FT_Reception0066
+_avatar,"Yeah",:FT_Reception0067
+Storm,"Well, you might be able to do us a favour.",:FT_Reception0068
+_avatar,"Is that enough?",:FT_Reception0106
+Paul,"No, we need more.",:FT_Reception0107
+Paul,"Yes, that is loads.",:FT_Reception0108
+Storm,"As a reward, here is a USB key.",:FT_Reception0109
+Paul,"It has a picture of our friend Jonathan on.",:FT_Reception0110
+Storm,"It used to have all his music on, until someone over wrote it with a Tina T-1337 personality file. Naming no names..Paul!",:FT_Reception0111
+Paul,"It sounded like it would be fun to have an artificial intelligence to talk to, but she only ever wanted to talk about robot things.",:FT_Reception0112
+_avatar,"Thanks, that sounds....useful?",:FT_Reception0113
+ego,"Yeah, I bet you are really glad you did all that work for them!",:FT_Reception0114
+_avatar,"What do robot pirates drink?",:FT_Reception0103
+_avatar,"Bottles of RAM.",:FT_Reception0104
+Storm,"Funny",:FT_Reception0105
+_avatar,"What is a pirates favourite sock?",:FT_Reception0115
+_avatar,"AR!gile.",:FT_Reception0116
+Storm,"Funny",:FT_Reception0117
+_avatar,"What is a pirates favourite crime?",:FT_Reception0118
+_avatar,"AR!son.",:FT_Reception0119
+Storm,"Funny",:FT_Reception0120
+_avatar,"What is a pirates favourite crime?",:FT_Reception0121
+_avatar,"Grand LAR!sony.",:FT_Reception0122
+Storm,"Funny",:FT_Reception0123
+_avatar,"What do you call a parrot saying, 'Pieces of seven! Pieces of seven!'?",:FT_Reception0124
+_avatar,"A parroty error.",:FT_Reception0125
+Storm,"Funny",:FT_Reception0126
+_avatar,"You fight like a cow!",:FT_Reception0127
+_avatar,"Haha! Yeah!",:FT_Reception0128
+Paul,"That isn't funny on it's own.",:FT_Reception0129
+Storm,"It's a referance, not a joke.",:FT_Reception0130
+Paul,"We need jokes! New ones!",:FT_Reception0175
+_avatar,"I'm out of jokes.",:FT_Reception0131
+Paul,"Come back when you have more.",:FT_Reception0132
+_avatar,"I have a pirate joke for you.",:FT_Reception0101
+Paul,"Ok, lets hear it.",:FT_Reception0102
+_avatar,"Bye",:FT_Reception0133
+_avatar,"Hi",:FT_Reception0027
+Paul,"Hi",:FT_Reception0028
+Storm,"Hi",:FT_Reception0029
+_avatar,"Bye",:FT_Reception0134
+_avatar,"Yes",:FT_Reception0146
+Reception,"But Dr Martin....you make comments about the patients in their files that you really wouldn't want them to see.",:FT_Reception0147
+_avatar,"Fine.",:FT_Reception0148
+_avatar,"No",:FT_Reception0149
+Reception,"So why would it be ok to let you see your file?",:FT_Reception0150
+_avatar,"Fine.",:FT_Reception0151
+_avatar,"Could I have the files you have on me?",:FT_Reception0138
+Reception,"Oh I'm sorry, I can't give out personal information about our practioners. It wouldn't be professional.",:FT_Reception0139
+_avatar,"But it's about me.",:FT_Reception0140
+Reception,"Surely you know everything their is to know about you?",:FT_Reception0141
+_avatar,"I'm suffering memory loss at the moment.",:FT_Reception0142
+Reception,"I'm not falling for that one again.",:FT_Reception0143
+Reception,"No one has ever told me it is ok to give people files on themselves, under any circumstances.",:FT_Reception0144
+Reception,"So are you saying it is ok for me to give patients their files too?",:FT_Reception0145
+_avatar,"What clients do I have today?",:FT_Reception0152
+Reception,"I'm too busy to talk right now.",:FT_Reception0153
+_avatar,"You don't look busy. It looks like your playing mine sweeper on your computer!",:FT_Reception0154
+Reception," No this is important work, it just looks like mine sweeper.",:FT_Reception0176
+Reception,"Ah! Now look what you made me do I set off all the mines...I mean...er...I lost the document.",:FT_Reception0177
+_avatar,"Are you still too busy?",:FT_Reception0178
+Reception,"Yes",:FT_Reception0179
+_avatar,"Still player minesweeper?",:FT_Reception0180
+Reception,"No, I’m playing solitaire now....er...I mean no I’m working now...er...I was always working, I mean I’m checking customer records now.",:FT_Reception0181
+_avatar,"I didn’t know we had the king and queen of hearts as clients.",:FT_Reception0182
+Reception,"Please doctor, I’m trying to work.",:FT_Reception0183
+_avatar,"Still busy?",:FT_Reception0184
+Reception,"Yes!",:FT_Reception0185
+_avatar,"Why are Paul and Storm here?",:FT_Reception0155
+Reception,"They're here for a consultation. They want a gustualt entity installed or something.",:FT_Reception0156
+_avatar,"Bye",:FT_Reception0157
+_avatar,"Hi",:FT_Reception0135
+Reception,"How can I help you?",:FT_Reception0136
+Reception,"Oh, sorry Dr Martin, I didn't realise it was you.",:FT_Reception0137
+_avatar,"Bye",:FT_Reception0158
+_avatar,"What are you having done?",:FT_Reception0161
+Customer,"Um...that's private.",:FT_Reception0162
+_avatar,"I work here.",:FT_Reception0186
+Customer,"Oh right.",:FT_Reception0187
+Customer,"I'm here for laser eye surgery",:FT_Reception0188
+_avatar,"You should see an optician for that.",:FT_Reception0189
+Customer,"No, having laser beams coming out my eyes!",:FT_Reception0190
+_avatar,"Oh, that sounds dangerous.",:FT_Reception0191
+_avatar,"Does it?",:FT_Reception0192
+Customer,"Maybe I should think about it some more.",:FT_Reception0193
+_avatar,"I'm your doctor, what can I do for you today?",:FT_Reception0163
+Customer,"Er, well, um.",:FT_Reception0164
+_avatar,"Oh, hold on, you are not the correct person.",:FT_Reception0165
+Customer,"How do you know you haven't asked my name?",:FT_Reception0166
+_avatar,"What is your name?",:FT_Reception0167
+Customer,"Billy",:FT_Reception0168
+_avatar,"No, I'm looking for Arnold.",:FT_Reception0169
+_avatar,"Is that backpack surgically attached?",:FT_Reception0170
+Customer,"Yeah, it was done to fix my asthma. It did a great job.",:FT_Reception0171
+Customer,"It pumps oxygen directly in to my lungs. I just need to change the oxygen cylinder once a week.",:FT_Reception0194
+Customer,"Now I can play sports, run and you know...with a woman.",:FT_Reception0195
+Customer,"Not that I do any of that, but it good to know I could if the situation arose.",:FT_Reception0196
+_avatar,"Bye",:FT_Reception0172
+_avatar,"Hi",:FT_Reception0159
+Customer,"Um..hi",:FT_Reception0160
+
+
+

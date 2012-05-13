@@ -1,0 +1,988 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: Door
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Door)
+ title: "Door"
+
+  -----
+  Action: "Look at" (#0, layer: Door, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0000]
+   "It's a door."
+
+  -----
+  Action: "Talk to" (#1, layer: Door, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Door, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0001]
+   "No. The guard is out there."
+
+ --------------------------------------------------
+ State: OpenGuard (layer: Door)
+ title: "Door"
+
+  -----
+  Action: "Look at" (#0, layer: Door, state: OpenGuard)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0002]
+   "It's a door."
+
+  -----
+  Action: "Talk to" (#1, layer: Door, state: OpenGuard)
+
+  -----
+  Action: "Use" (#2, layer: Door, state: OpenGuard)
+
+ --------------------------------------------------
+ State: OpenDay (layer: Door)
+ title: "Door"
+
+  -----
+  Action: "Look at" (#0, layer: Door, state: OpenDay)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0003]
+   "It's a door."
+
+  -----
+  Action: "Talk to" (#1, layer: Door, state: OpenDay)
+
+  -----
+  Action: "Use" (#2, layer: Door, state: OpenDay)
+
+
+--------------------------------------------------
+- Layer: OTTable
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: OTTable)
+ title: "Table"
+
+  -----
+  Action: "Look at" (#0, layer: OTTable, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0004]
+   "It's an operating table. Looks very clean."
+
+   - Dialog [puppet: ego, voice::FT_OT0005]
+   "Why are their straps on it? Don't they use anesthetic here?"
+
+  -----
+  Action: "Talk to" (#1, layer: OTTable, state: main)
+
+  -----
+  Action: "Use" (#2, layer: OTTable, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0006]
+   "I don't think that will fool the guard."
+
+ --------------------------------------------------
+ State: Day (layer: OTTable)
+ title: "Table"
+
+  -----
+  Action: "Look at" (#0, layer: OTTable, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0007]
+   "It's an operating table. Looks very clean."
+
+   - Dialog [puppet: ego, voice::FT_OT0008]
+   "Why are their straps on it? Don't they use anesthetic here?"
+
+  -----
+  Action: "Talk to" (#1, layer: OTTable, state: Day)
+
+  -----
+  Action: "Use" (#2, layer: OTTable, state: Day)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0009]
+   "There is no one to operate on."
+
+
+--------------------------------------------------
+- Layer: Cabnet
+--------------------------------------------------
+ --------------------------------------------------
+ State: locked (layer: Cabnet)
+ title: "Medical Cabinet"
+
+  -----
+  Action: "Look at" (#0, layer: Cabnet, state: locked)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0010]
+   "That is securely locked."
+
+  -----
+  Action: "Talk to" (#1, layer: Cabnet, state: locked)
+
+  -----
+  Action: "Use" (#2, layer: Cabnet, state: locked)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0011]
+   "That is securely locked."
+
+   - Dialog [puppet: ego, voice::FT_OT0012]
+   "Why would you want anything in there?"
+
+  -----
+  Item: "MedicalKey", "" (layer: Cabnet, state: locked)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0013]
+   "That unlocked it."
+
+ --------------------------------------------------
+ State: unlocked (layer: Cabnet)
+ title: "Open Medical Cabinet"
+
+  -----
+  Action: "Look at" (#0, layer: Cabnet, state: unlocked)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0014]
+   "It's full of medical supplies."
+
+  -----
+  Action: "Talk to" (#1, layer: Cabnet, state: unlocked)
+
+  -----
+  Action: "Use" (#2, layer: Cabnet, state: unlocked)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0015]
+   "There is some hayfever pills in here. I'll just take them."
+
+   - Dialog [puppet: ego, voice::FT_OT0016]
+   "Isn't that stealling?"
+
+   - Dialog [puppet: _avatar, voice::FT_OT0017]
+   "No...I work here a a doctor."
+
+   - Dialog [puppet: ego, voice::FT_OT0018]
+   "Why are there hayfever tables in a cyborg operating theater?"
+
+   - Dialog [puppet: _avatar, voice::FT_OT0019]
+   "Maybe I have hayfever and I put them there to keep them safe?"
+
+   - Dialog [puppet: ego, voice::FT_OT0020]
+   "Hmm, I still think it's a bit convenient."
+
+ --------------------------------------------------
+ State: open (layer: Cabnet)
+ title: "Open Medical Cabinet"
+
+  -----
+  Action: "Look at" (#0, layer: Cabnet, state: open)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0021]
+   "That is open."
+
+  -----
+  Action: "Talk to" (#1, layer: Cabnet, state: open)
+
+  -----
+  Action: "Use" (#2, layer: Cabnet, state: open)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0022]
+   "The guard isn't going to let me do that."
+
+ --------------------------------------------------
+ State: unlockedEmpty (layer: Cabnet)
+ title: "Open Medical Cabinet"
+
+  -----
+  Action: "Look at" (#0, layer: Cabnet, state: unlockedEmpty)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0023]
+   "It's full of medical supplies."
+
+   - Dialog [puppet: ego, voice::FT_OT0133]
+   "Locked away, so only Doctors can get to them."
+
+  -----
+  Action: "Talk to" (#1, layer: Cabnet, state: unlockedEmpty)
+
+  -----
+  Action: "Use" (#2, layer: Cabnet, state: unlockedEmpty)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0024]
+   "Nothing else I want in here."
+
+   - Dialog [puppet: _avatar, voice::FT_OT0025]
+   "I'd like to keep my stealing from work to a minimum."
+
+   - Dialog [puppet: ego, voice::FT_OT0026]
+   "Oh, so you do admit it was stealling?"
+
+
+--------------------------------------------------
+- Layer: o2
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: o2)
+ title: "O2 Tank"
+
+  -----
+  Action: "Look at" (#0, layer: o2, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0027]
+   "It's a small tank of O2. Otherwise known as oxygen."
+
+   - Dialog [puppet: ego, voice::FT_OT0132]
+   "That looks really heavy. I'm glad you aren't carrying it. It would really tire you out."
+
+  -----
+  Action: "Talk to" (#1, layer: o2, state: main)
+
+  -----
+  Action: "Use" (#2, layer: o2, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0028]
+   "It's tank of oxygen, always handy!"
+
+   - Dialog [puppet: ego, voice::FT_OT0029]
+   "What makes you think that?"
+
+   - Dialog [puppet: _avatar, voice::FT_OT0030]
+   "I just have a feeling."
+
+   - Dialog [puppet: ego, voice::FT_OT0031]
+   "How did you fit that in your pocket?"
+
+   - Dialog [puppet: _avatar, voice::FT_OT0032]
+   "It's not as big as it appeared."
+
+   - Dialog [puppet: ego, voice::FT_OT0033]
+   "Is that a TARDIS in your pants or are you just happy to see me?"
+
+ --------------------------------------------------
+ State: hidden (layer: o2)
+ title: "O2 Tank"
+
+  -----
+  Action: "Look at" (#0, layer: o2, state: hidden)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0034]
+   "It's a small tank of O2. Otherwise known as oxygen."
+
+  -----
+  Action: "Talk to" (#1, layer: o2, state: hidden)
+
+  -----
+  Action: "Use" (#2, layer: o2, state: hidden)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0035]
+   "It's tank of oxygen, always handy!"
+
+
+--------------------------------------------------
+- Layer: eyechart
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: eyechart)
+ title: "Eye Chart"
+
+  -----
+  Action: "Look at" (#0, layer: eyechart, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0036]
+   "It's one of those eye charts opticians use."
+
+   - Dialog [puppet: ego, voice::FT_OT0037]
+   "Is that what it said last time? I think you need your eyes checking."
+
+  -----
+  Action: "Talk to" (#1, layer: eyechart, state: main)
+
+  -----
+  Action: "Use" (#2, layer: eyechart, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0038]
+   "I don't want it."
+
+
+--------------------------------------------------
+- Layer: light
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: light)
+ title: "Powerful Light"
+
+  -----
+  Action: "Look at" (#0, layer: light, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0039]
+   "It's a light. Nice and powerfull, so the surgeon can see what he is doing."
+
+  -----
+  Action: "Talk to" (#1, layer: light, state: main)
+
+  -----
+  Action: "Use" (#2, layer: light, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0040]
+   "I like the light being on."
+
+   - Dialog [puppet: ego, voice::FT_OT0041]
+   "Scared of the dark?"
+
+   - Dialog [puppet: _avatar, voice::FT_OT0042]
+   "No"
+
+   - Dialog [puppet: _avatar, voice::FT_OT0043]
+   "At least I don't think so."
+
+
+--------------------------------------------------
+- Layer: Guard
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Guard)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Guard, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Guard, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Guard, state: main)
+
+ --------------------------------------------------
+ State: Visible (layer: Guard)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Guard, state: Visible)
+
+  -----
+  Action: "Talk to" (#1, layer: Guard, state: Visible)
+
+  -----
+  Action: "Use" (#2, layer: Guard, state: Visible)
+
+ --------------------------------------------------
+ State: CabinetKey (layer: Guard)
+ title: "Guard"
+
+  -----
+  Action: "Look at" (#0, layer: Guard, state: CabinetKey)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0044]
+   "It's the guard I asked to come in here."
+
+  -----
+  Action: "Talk to" (#1, layer: Guard, state: CabinetKey)
+
+  -----
+  Action: "Use" (#2, layer: Guard, state: CabinetKey)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0045]
+   "I'm not using people!"
+
+ --------------------------------------------------
+ State: CabinetNoKey (layer: Guard)
+ title: "Guard"
+
+  -----
+  Action: "Look at" (#0, layer: Guard, state: CabinetNoKey)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0046]
+   "It's the guard I asked to come in here."
+
+  -----
+  Action: "Talk to" (#1, layer: Guard, state: CabinetNoKey)
+
+  -----
+  Action: "Use" (#2, layer: Guard, state: CabinetNoKey)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0047]
+   "I'm not using people!"
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
+
+
+
+
+TREES
+--------------------------------------------------
+- Tree: Guard
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: Guard)
+
+ --------------------------------------------------
+ Tier: "_0" (tree: Guard)
+
+ --------------------------------------------------
+ Tier: "_0_3" (tree: Guard)
+
+ --------------------------------------------------
+ Tier: "" (tree: Guard)
+
+  -----
+  Topic: "_9" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0054]
+   "I work here."
+
+   - Dialog [puppet: Guard, voice::FT_OT0055]
+   "That's just what a trespasser would say! If you really work here, what is it that you do?"
+
+  -----
+  Topic: "_11" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0056]
+   "I'm lost and looking for the way out."
+
+   - Dialog [puppet: Guard, voice::FT_OT0057]
+   "What do you mean, lost? Are you trying to tell me that you got lost here while you were sneaking around? Now, really, what are you doing here?"
+
+  -----
+  Topic: "_12" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0058]
+   "You murdered my family and I'm on a quest for vengeance."
+
+   - Dialog [puppet: Guard, voice::FT_OT0059]
+   "Do you really expect me to believe that?"
+
+  -----
+  Topic: "_7" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0052]
+   "Well I was kinda hoping..."
+
+   - Dialog [puppet: Guard, voice::FT_OT0053]
+   "You know damn well that you're on the top floor of the Future Tech building. Now tell me what you're doing here."
+
+  -----
+  Topic: "_8" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0060]
+   "Of course not! I was just joking around."
+
+   - Dialog [puppet: Guard, voice::FT_OT0061]
+   "Ha ha, very funny... Now tell me what you're doing here."
+
+  -----
+  Topic: "_3" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0050]
+   "This may seem like a stupid question, but where am I?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0051]
+   "You don't seriously expect me to believe that you unwittingly opened a locked door and just stumbled in here by accident, do you?"
+
+ --------------------------------------------------
+ Tier: "_0_4" (tree: Guard)
+
+  -----
+  Topic: "_10" (tree: Guard, tier: _0_4)
+
+   - Dialog [puppet: _avatar, voice::FT_OT0064]
+   "I'm a mad scientist!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0065]
+   "Mad, I'll buy. Scientist? In an Opperating Theatre? I don't think so."
+
+ --------------------------------------------------
+ Tier: "" (tree: Guard)
+
+  -----
+  Topic: "_15" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0068]
+   "My keycard? Err… I think I left it in my other pants."
+
+   - Dialog [puppet: Guard, voice::FT_OT0069]
+   "Heh, Nice try."
+
+ --------------------------------------------------
+ Tier: "" (tree: Guard)
+
+  -----
+  Topic: "_18" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0072]
+   "What? Nope, that's uh, that's mine. Totally."
+
+   - Dialog [puppet: Guard, voice::FT_OT0073]
+   "Nope, that's not yours. Totally."
+
+  -----
+  Topic: "_19" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0074]
+   "I did get a haircut.."
+
+   - Dialog [puppet: Guard, voice::FT_OT0075]
+   "There's more wrong here than just hair Ms Bio..."
+
+ --------------------------------------------------
+ Tier: "" (tree: Guard)
+
+ --------------------------------------------------
+ Tier: "" (tree: Guard)
+
+  -----
+  Topic: "_24" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0080]
+   "Brian Dennehy."
+
+   - Dialog [puppet: Guard, voice::FT_OT0081]
+   "Who?"
+
+  -----
+  Topic: "_25" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0082]
+   "Jonathan Coulton."
+
+   - Dialog [puppet: Guard, voice::FT_OT0083]
+   "You think breaking the forth wall will help?"
+
+ --------------------------------------------------
+ Tier: "" (tree: Guard)
+
+  -----
+  Topic: "_28" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0086]
+   "Ok, you got me, I lost my key card, and Sarah lent me one of her old ones."
+
+   - Dialog [puppet: Guard, voice::FT_OT0087]
+   "Well, that may be the case, but with out a correct ID, I can't let you stay. Come with me please."
+
+  -----
+  Topic: "_29" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0088]
+   "I found it."
+
+   - Dialog [puppet: Guard, voice::FT_OT0089]
+   "I've had enough of you. Get out!"
+
+  -----
+  Topic: "_30" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0090]
+   "Yes, don't you know who I am? I'm the CEO around here."
+
+   - Dialog [puppet: Guard, voice::FT_OT0091]
+   "Enough of this, follow me."
+
+  -----
+  Topic: "_26" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0084]
+   "Sarah Bio"
+
+   - Dialog [puppet: Guard, voice::FT_OT0085]
+   "According to your ID, that would be you."
+
+  -----
+  Topic: "_27" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0092]
+   "I know a guy."
+
+   - Dialog [puppet: Guard, voice::FT_OT0093]
+   "What a coincidence! I know a guy too! He likes throwing people out of places they shouldn't be. Why don't you tell me who your guy is before I introduce you to him?"
+
+  -----
+  Topic: "_21" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0078]
+   "Is the fact that I could have you lose your job good enough?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0079]
+   "Well... uh... Who's the person you'll need to talk to to have that happen?"
+
+  -----
+  Topic: "_22" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0094]
+   "Look, that patient might lose his life!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0095]
+   "Look, I understand that, and I hope you understand that I'm just doing my job. Now, why do you have someone elses key card?"
+
+  -----
+  Topic: "_23" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0096]
+   "Don't make me force you to leave."
+
+   - Dialog [puppet: Guard, voice::FT_OT0097]
+   "Do you think I'm afraid of you?"
+
+  -----
+  Topic: "_20" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0076]
+   "Look, I have to hurry to prepare the operating room. We just got another late patient in."
+
+   - Dialog [puppet: Guard, voice::FT_OT0077]
+   "I still have to have proof you're a surgeon."
+
+  -----
+  Topic: "_16" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0070]
+   "Do you mean this key card?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0071]
+   "Hmm... I'm not convinced this is your card."
+
+  -----
+  Topic: "_17" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0098]
+   "Keycard? Keycard? I don't need no stinkin' keycard!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0099]
+   "Yes, you do."
+
+  -----
+  Topic: "_13" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0066]
+   "I'm a surgeon!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0067]
+   "Surgeons aren't supposed to be here this late. If you just show me your keycard, I'll escort you to the foyer."
+
+  -----
+  Topic: "_14" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0100]
+   "I'm a fashion designer!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0101]
+   "With those shoes? Please. You'll have to tell me a more convincing lie than that."
+
+  -----
+  Topic: "_4" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0062]
+   "I work here."
+
+   - Dialog [puppet: Guard, voice::FT_OT0063]
+   "Oh really? What is it that you do?"
+
+  -----
+  Topic: "_5" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0102]
+   "I'll go wherever I please!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0103]
+   "Sure. Just show me your security keycard and you can be on your way. Of course I'll also need authorised night shift documents signed by your superious to allow you to be working this late. But you all ready know that. Don't you?"
+
+  -----
+  Topic: "_6" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0104]
+   "Where do you think YOU'RE going?!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0105]
+   "With you. To the police station. Without a security keycard the only way you're leaving this building is in cuffs."
+
+  -----
+  Topic: "_0" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0048]
+   "Er... Hi"
+
+   - Dialog [puppet: Guard, voice::FT_OT0049]
+   "What do you think you're doing here?"
+
+  -----
+  Topic: "_2" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0106]
+   "I've lost my memory, just woke up in a locked room and I have no idea where I am."
+
+   - Dialog [puppet: Guard, voice::FT_OT0107]
+   "Must of been one hell of a party. Now what are you doing in here?"
+
+  -----
+  Topic: "_1" (tree: Guard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0108]
+   "Gah! Look behind you! A three headed monkey!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0109]
+   "I'll have you know there hasn't been a mutant monkey escape for over three months! Now what are you doing in here this late?"
+
+--------------------------------------------------
+- Tree: MedicalGuard
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: MedicalGuard)
+
+ --------------------------------------------------
+ Tier: "" (tree: MedicalGuard)
+
+  -----
+  Topic: "_2" (tree: MedicalGuard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0112]
+   "Can I just quickly get something out while you have it open?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0113]
+   "No sorry, I'd lose my job if I let you."
+
+  -----
+  Topic: "_3" (tree: MedicalGuard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0114]
+   "Can I just borrow your key for the cabnet, I've misplaced mine?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0115]
+   "You've misplaced your key?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0116]
+   "Please tell me you are joking, I'll have to change all the locks, get new keys cut, reassign all the keys, do a full inventory! Do you know how much work that would be?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0117]
+   "I suggest you find your key, and quick, or you'll put me in a bad mood. And you wouldn't like me when I'm angry."
+
+   - Dialog [puppet: _avatar, voice::FT_OT0118]
+   "Why? Do you turn green and start breaking things?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0119]
+   "Huh?"
+
+   - Dialog [puppet: _avatar, voice::FT_OT0120]
+   "Never mind."
+
+   - Dialog [puppet: _avatar, voice::FT_OT0121]
+   "It's ok, I just remembered where I put it."
+
+  -----
+  Topic: "_6" (tree: MedicalGuard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0122]
+   "Can I just borrow your key for the cabinet, I've misplaced mine?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0123]
+   "I appear to have misplaced mine too."
+
+   - Dialog [puppet: Guard, voice::FT_OT0124]
+   "I'll have to change all the locks, get new keys cut, reassign all the keys, do a full inventory!"
+
+   - Dialog [puppet: Guard, voice::FT_OT0125]
+   "Unless I can find it soon."
+
+  -----
+  Topic: "_5" (tree: MedicalGuard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0126]
+   "Should you not be getting back to your office?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0127]
+   "Not unless something more important comes up."
+
+   - Dialog [puppet: _avatar, voice::FT_OT0128]
+   "Like what?"
+
+   - Dialog [puppet: Guard, voice::FT_OT0129]
+   "Something like an attempted break in. Both me the the other guard would need to study the security cameras closely."
+
+  -----
+  Topic: "_4" (tree: MedicalGuard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0130]
+   "Bye"
+
+  -----
+  Topic: "_0" (tree: MedicalGuard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0110]
+   "Hi"
+
+   - Dialog [puppet: Guard, voice::FT_OT0111]
+   "Hi"
+
+  -----
+  Topic: "_1" (tree: MedicalGuard, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_OT0131]
+   "Bye"
+
+
+
+
+_avatar,"It's a door.",:FT_OT0000
+_avatar,"No. The guard is out there.",:FT_OT0001
+_avatar,"It's a door.",:FT_OT0002
+_avatar,"It's a door.",:FT_OT0003
+_avatar,"It's an operating table. Looks very clean.",:FT_OT0004
+ego,"Why are their straps on it? Don't they use anesthetic here?",:FT_OT0005
+_avatar,"I don't think that will fool the guard.",:FT_OT0006
+_avatar,"It's an operating table. Looks very clean.",:FT_OT0007
+ego,"Why are their straps on it? Don't they use anesthetic here?",:FT_OT0008
+_avatar,"There is no one to operate on.",:FT_OT0009
+_avatar,"That is securely locked.",:FT_OT0010
+_avatar,"That is securely locked.",:FT_OT0011
+ego,"Why would you want anything in there?",:FT_OT0012
+_avatar,"That unlocked it.",:FT_OT0013
+_avatar,"It's full of medical supplies.",:FT_OT0014
+_avatar,"There is some hayfever pills in here. I'll just take them.",:FT_OT0015
+ego,"Isn't that stealling?",:FT_OT0016
+_avatar,"No...I work here a a doctor.",:FT_OT0017
+ego,"Why are there hayfever tables in a cyborg operating theater?",:FT_OT0018
+_avatar,"Maybe I have hayfever and I put them there to keep them safe?",:FT_OT0019
+ego,"Hmm, I still think it's a bit convenient.",:FT_OT0020
+_avatar,"That is open.",:FT_OT0021
+_avatar,"The guard isn't going to let me do that.",:FT_OT0022
+_avatar,"It's full of medical supplies.",:FT_OT0023
+ego,"Locked away, so only Doctors can get to them.",:FT_OT0133
+_avatar,"Nothing else I want in here.",:FT_OT0024
+_avatar,"I'd like to keep my stealing from work to a minimum.",:FT_OT0025
+ego,"Oh, so you do admit it was stealling?",:FT_OT0026
+_avatar,"It's a small tank of O2. Otherwise known as oxygen.",:FT_OT0027
+ego,"That looks really heavy. I'm glad you aren't carrying it. It would really tire you out.",:FT_OT0132
+_avatar,"It's tank of oxygen, always handy!",:FT_OT0028
+ego,"What makes you think that?",:FT_OT0029
+_avatar,"I just have a feeling.",:FT_OT0030
+ego,"How did you fit that in your pocket?",:FT_OT0031
+_avatar,"It's not as big as it appeared.",:FT_OT0032
+ego,"Is that a TARDIS in your pants or are you just happy to see me?",:FT_OT0033
+_avatar,"It's a small tank of O2. Otherwise known as oxygen.",:FT_OT0034
+_avatar,"It's tank of oxygen, always handy!",:FT_OT0035
+_avatar,"It's one of those eye charts opticians use.",:FT_OT0036
+ego,"Is that what it said last time? I think you need your eyes checking.",:FT_OT0037
+_avatar,"I don't want it.",:FT_OT0038
+_avatar,"It's a light. Nice and powerfull, so the surgeon can see what he is doing.",:FT_OT0039
+_avatar,"I like the light being on.",:FT_OT0040
+ego,"Scared of the dark?",:FT_OT0041
+_avatar,"No",:FT_OT0042
+_avatar,"At least I don't think so.",:FT_OT0043
+_avatar,"It's the guard I asked to come in here.",:FT_OT0044
+_avatar,"I'm not using people!",:FT_OT0045
+_avatar,"It's the guard I asked to come in here.",:FT_OT0046
+_avatar,"I'm not using people!",:FT_OT0047
+_avatar,"I work here.",:FT_OT0054
+Guard,"That's just what a trespasser would say! If you really work here, what is it that you do?",:FT_OT0055
+_avatar,"I'm lost and looking for the way out.",:FT_OT0056
+Guard,"What do you mean, lost? Are you trying to tell me that you got lost here while you were sneaking around? Now, really, what are you doing here?",:FT_OT0057
+_avatar,"You murdered my family and I'm on a quest for vengeance.",:FT_OT0058
+Guard,"Do you really expect me to believe that?",:FT_OT0059
+_avatar,"Well I was kinda hoping...",:FT_OT0052
+Guard,"You know damn well that you're on the top floor of the Future Tech building. Now tell me what you're doing here.",:FT_OT0053
+_avatar,"Of course not! I was just joking around.",:FT_OT0060
+Guard,"Ha ha, very funny... Now tell me what you're doing here.",:FT_OT0061
+_avatar,"This may seem like a stupid question, but where am I?",:FT_OT0050
+Guard,"You don't seriously expect me to believe that you unwittingly opened a locked door and just stumbled in here by accident, do you?",:FT_OT0051
+_avatar,"I'm a mad scientist!",:FT_OT0064
+Guard,"Mad, I'll buy. Scientist? In an Opperating Theatre? I don't think so.",:FT_OT0065
+_avatar,"My keycard? Err… I think I left it in my other pants.",:FT_OT0068
+Guard,"Heh, Nice try.",:FT_OT0069
+_avatar,"What? Nope, that's uh, that's mine. Totally.",:FT_OT0072
+Guard,"Nope, that's not yours. Totally.",:FT_OT0073
+_avatar,"I did get a haircut..",:FT_OT0074
+Guard,"There's more wrong here than just hair Ms Bio...",:FT_OT0075
+_avatar,"Brian Dennehy.",:FT_OT0080
+Guard,"Who?",:FT_OT0081
+_avatar,"Jonathan Coulton.",:FT_OT0082
+Guard,"You think breaking the forth wall will help?",:FT_OT0083
+_avatar,"Ok, you got me, I lost my key card, and Sarah lent me one of her old ones.",:FT_OT0086
+Guard,"Well, that may be the case, but with out a correct ID, I can't let you stay. Come with me please.",:FT_OT0087
+_avatar,"I found it.",:FT_OT0088
+Guard,"I've had enough of you. Get out!",:FT_OT0089
+_avatar,"Yes, don't you know who I am? I'm the CEO around here.",:FT_OT0090
+Guard,"Enough of this, follow me.",:FT_OT0091
+_avatar,"Sarah Bio",:FT_OT0084
+Guard,"According to your ID, that would be you.",:FT_OT0085
+_avatar,"I know a guy.",:FT_OT0092
+Guard,"What a coincidence! I know a guy too! He likes throwing people out of places they shouldn't be. Why don't you tell me who your guy is before I introduce you to him?",:FT_OT0093
+_avatar,"Is the fact that I could have you lose your job good enough?",:FT_OT0078
+Guard,"Well... uh... Who's the person you'll need to talk to to have that happen?",:FT_OT0079
+_avatar,"Look, that patient might lose his life!",:FT_OT0094
+Guard,"Look, I understand that, and I hope you understand that I'm just doing my job. Now, why do you have someone elses key card?",:FT_OT0095
+_avatar,"Don't make me force you to leave.",:FT_OT0096
+Guard,"Do you think I'm afraid of you?",:FT_OT0097
+_avatar,"Look, I have to hurry to prepare the operating room. We just got another late patient in.",:FT_OT0076
+Guard,"I still have to have proof you're a surgeon.",:FT_OT0077
+_avatar,"Do you mean this key card?",:FT_OT0070
+Guard,"Hmm... I'm not convinced this is your card.",:FT_OT0071
+_avatar,"Keycard? Keycard? I don't need no stinkin' keycard!",:FT_OT0098
+Guard,"Yes, you do.",:FT_OT0099
+_avatar,"I'm a surgeon!",:FT_OT0066
+Guard,"Surgeons aren't supposed to be here this late. If you just show me your keycard, I'll escort you to the foyer.",:FT_OT0067
+_avatar,"I'm a fashion designer!",:FT_OT0100
+Guard,"With those shoes? Please. You'll have to tell me a more convincing lie than that.",:FT_OT0101
+_avatar,"I work here.",:FT_OT0062
+Guard,"Oh really? What is it that you do?",:FT_OT0063
+_avatar,"I'll go wherever I please!",:FT_OT0102
+Guard,"Sure. Just show me your security keycard and you can be on your way. Of course I'll also need authorised night shift documents signed by your superious to allow you to be working this late. But you all ready know that. Don't you?",:FT_OT0103
+_avatar,"Where do you think YOU'RE going?!",:FT_OT0104
+Guard,"With you. To the police station. Without a security keycard the only way you're leaving this building is in cuffs.",:FT_OT0105
+_avatar,"Er... Hi",:FT_OT0048
+Guard,"What do you think you're doing here?",:FT_OT0049
+_avatar,"I've lost my memory, just woke up in a locked room and I have no idea where I am.",:FT_OT0106
+Guard,"Must of been one hell of a party. Now what are you doing in here?",:FT_OT0107
+_avatar,"Gah! Look behind you! A three headed monkey!",:FT_OT0108
+Guard,"I'll have you know there hasn't been a mutant monkey escape for over three months! Now what are you doing in here this late?",:FT_OT0109
+_avatar,"Can I just quickly get something out while you have it open?",:FT_OT0112
+Guard,"No sorry, I'd lose my job if I let you.",:FT_OT0113
+_avatar,"Can I just borrow your key for the cabnet, I've misplaced mine?",:FT_OT0114
+Guard,"You've misplaced your key?",:FT_OT0115
+Guard,"Please tell me you are joking, I'll have to change all the locks, get new keys cut, reassign all the keys, do a full inventory! Do you know how much work that would be?",:FT_OT0116
+Guard,"I suggest you find your key, and quick, or you'll put me in a bad mood. And you wouldn't like me when I'm angry.",:FT_OT0117
+_avatar,"Why? Do you turn green and start breaking things?",:FT_OT0118
+Guard,"Huh?",:FT_OT0119
+_avatar,"Never mind.",:FT_OT0120
+_avatar,"It's ok, I just remembered where I put it.",:FT_OT0121
+_avatar,"Can I just borrow your key for the cabinet, I've misplaced mine?",:FT_OT0122
+Guard,"I appear to have misplaced mine too.",:FT_OT0123
+Guard,"I'll have to change all the locks, get new keys cut, reassign all the keys, do a full inventory!",:FT_OT0124
+Guard,"Unless I can find it soon.",:FT_OT0125
+_avatar,"Should you not be getting back to your office?",:FT_OT0126
+Guard,"Not unless something more important comes up.",:FT_OT0127
+_avatar,"Like what?",:FT_OT0128
+Guard,"Something like an attempted break in. Both me the the other guard would need to study the security cameras closely.",:FT_OT0129
+_avatar,"Bye",:FT_OT0130
+_avatar,"Hi",:FT_OT0110
+Guard,"Hi",:FT_OT0111
+_avatar,"Bye",:FT_OT0131
+
+
+

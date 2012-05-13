@@ -1,0 +1,36 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: StrollerTown
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: StrollerTown)
+ title: "Stroller Town by Jonathan Coulton"
+
+  -----
+  Action: "Look at" (#0, layer: StrollerTown, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: StrollerTown, state: main)
+
+  -----
+  Action: "Use" (#2, layer: StrollerTown, state: main)
+
+
+
+
+TREES
+
+
+
+
+
+

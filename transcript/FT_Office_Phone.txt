@@ -1,0 +1,1383 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: Exit
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Exit)
+ title: "Exit"
+
+  -----
+  Action: "Look at" (#0, layer: Exit, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Exit, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Exit, state: main)
+
+
+--------------------------------------------------
+- Layer: PhoneKeyPad
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: PhoneKeyPad)
+ title: "Phone Key Pad"
+
+  -----
+  Action: "Look at" (#0, layer: PhoneKeyPad, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0000]
+   "It's the phone dial pad."
+
+  -----
+  Action: "Talk to" (#1, layer: PhoneKeyPad, state: main)
+
+  -----
+  Action: "Use" (#2, layer: PhoneKeyPad, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0001]
+   "The phone has no dial tone."
+
+ --------------------------------------------------
+ State: Usable (layer: PhoneKeyPad)
+ title: "Phone Key Pad"
+
+  -----
+  Action: "Look at" (#0, layer: PhoneKeyPad, state: Usable)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0002]
+   "It's the phone keypad"
+
+  -----
+  Action: "Talk to" (#1, layer: PhoneKeyPad, state: Usable)
+
+  -----
+  Action: "Use" (#2, layer: PhoneKeyPad, state: Usable)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0003]
+   "I need to decide who to call."
+
+
+--------------------------------------------------
+- Layer: FobSocket
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: FobSocket)
+ title: "Socket For Something"
+
+  -----
+  Action: "Look at" (#0, layer: FobSocket, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0004]
+   "It looks like something plugs in to it."
+
+  -----
+  Action: "Talk to" (#1, layer: FobSocket, state: main)
+
+  -----
+  Action: "Use" (#2, layer: FobSocket, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0005]
+   "I need to plug something in to it."
+
+  -----
+  Item: "DigitalFob", "" (layer: FobSocket, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0006]
+   "It fits"
+
+ --------------------------------------------------
+ State: hasFob (layer: FobSocket)
+ title: "Digital Fob in Socket"
+
+  -----
+  Action: "Look at" (#0, layer: FobSocket, state: hasFob)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0007]
+   "It looks like something plugs in to it."
+
+  -----
+  Action: "Talk to" (#1, layer: FobSocket, state: hasFob)
+
+  -----
+  Action: "Use" (#2, layer: FobSocket, state: hasFob)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0008]
+   "I need to plug something in to it."
+
+  -----
+  Item: "DigitalFob", "" (layer: FobSocket, state: hasFob)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0009]
+   "It fits"
+
+
+--------------------------------------------------
+- Layer: Reception
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Reception)
+ title: "Reception"
+
+  -----
+  Action: "Look at" (#0, layer: Reception, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Reception, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Reception, state: main)
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0010]
+   "Hello. You have reach Future Tech: Cyborgs are the future."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0168]
+   "I am afraid we unable to take your call at the moment, please leave a message after the tone."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0011]
+   "Beep!"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0169]
+   "I know you are there, I just saw you in reception."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0012]
+   "Thank you for you message, goodbye."
+
+
+--------------------------------------------------
+- Layer: Security
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Security)
+ title: "Security"
+
+  -----
+  Action: "Look at" (#0, layer: Security, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Security, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Security, state: main)
+
+
+--------------------------------------------------
+- Layer: ItSupport
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ItSupport)
+ title: "IT Support"
+
+  -----
+  Action: "Look at" (#0, layer: ItSupport, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ItSupport, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ItSupport, state: main)
+
+
+--------------------------------------------------
+- Layer: SarahBio
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SarahBio)
+ title: "Reception"
+
+  -----
+  Action: "Look at" (#0, layer: SarahBio, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: SarahBio, state: main)
+
+  -----
+  Action: "Use" (#2, layer: SarahBio, state: main)
+
+ --------------------------------------------------
+ State: On (layer: SarahBio)
+ title: "Sarah Bio"
+
+  -----
+  Action: "Look at" (#0, layer: SarahBio, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: SarahBio, state: On)
+
+  -----
+  Action: "Use" (#2, layer: SarahBio, state: On)
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0013]
+   "I'm sorry, I'm not available at the moment. If you leave a message, I will get back to you.&lt;beep&gt;"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0014]
+   "I guess I'll try another time."
+
+
+--------------------------------------------------
+- Layer: Bill
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Bill)
+ title: "Reception"
+
+  -----
+  Action: "Look at" (#0, layer: Bill, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Bill, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Bill, state: main)
+
+ --------------------------------------------------
+ State: On (layer: Bill)
+ title: "Bill"
+
+  -----
+  Action: "Look at" (#0, layer: Bill, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Bill, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Bill, state: On)
+
+
+--------------------------------------------------
+- Layer: Jenny
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Jenny)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Jenny, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Jenny, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Jenny, state: main)
+
+ --------------------------------------------------
+ State: On (layer: Jenny)
+ title: "Jenny"
+
+  -----
+  Action: "Look at" (#0, layer: Jenny, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Jenny, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Jenny, state: On)
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0015]
+   "Hi Jen here, you know what to do.&lt;beep&gt;"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0016]
+   "I guess I'll try another time."
+
+
+--------------------------------------------------
+- Layer: Tom
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Tom)
+ title: "Reception"
+
+  -----
+  Action: "Look at" (#0, layer: Tom, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Tom, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Tom, state: main)
+
+ --------------------------------------------------
+ State: On (layer: Tom)
+ title: "Tom"
+
+  -----
+  Action: "Look at" (#0, layer: Tom, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Tom, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Tom, state: On)
+
+ --------------------------------------------------
+ State: OnSpoken (layer: Tom)
+ title: "Tom"
+
+  -----
+  Action: "Look at" (#0, layer: Tom, state: OnSpoken)
+
+  -----
+  Action: "Talk to" (#1, layer: Tom, state: OnSpoken)
+
+  -----
+  Action: "Use" (#2, layer: Tom, state: OnSpoken)
+
+ --------------------------------------------------
+ State: OnMet (layer: Tom)
+ title: "Tom"
+
+  -----
+  Action: "Look at" (#0, layer: Tom, state: OnMet)
+
+  -----
+  Action: "Talk to" (#1, layer: Tom, state: OnMet)
+
+  -----
+  Action: "Use" (#2, layer: Tom, state: OnMet)
+
+
+--------------------------------------------------
+- Layer: Sam
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Sam)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Sam, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Sam, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Sam, state: main)
+
+ --------------------------------------------------
+ State: On (layer: Sam)
+ title: "Sam"
+
+  -----
+  Action: "Look at" (#0, layer: Sam, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Sam, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Sam, state: On)
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0017]
+   "This is the voice mail of 555-4772. You can leave a message after the tone.&lt;beep&gt;"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0018]
+   "I guess I'll try another time."
+
+
+--------------------------------------------------
+- Layer: Unknown
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Unknown)
+ title: "Reception"
+
+  -----
+  Action: "Look at" (#0, layer: Unknown, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Unknown, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Unknown, state: main)
+
+ --------------------------------------------------
+ State: On (layer: Unknown)
+ title: "555-123-456"
+
+  -----
+  Action: "Look at" (#0, layer: Unknown, state: On)
+
+  -----
+  Action: "Talk to" (#1, layer: Unknown, state: On)
+
+  -----
+  Action: "Use" (#2, layer: Unknown, state: On)
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0019]
+   "Hi Jonathan Coulton."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0020]
+   "Wow! Not the Jonathan Coulton?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0170]
+   "Oh great, it's another one of those people from that silly adventure game!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0172]
+   "Just hang up on them."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0171]
+   "Yes, this is the Jonathan Coulton. I can't talk now, I have a song to write."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0173]
+   "Yeah, like that is believable!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0021]
+   "&lt;click&gt;"
+
+   - Dialog [puppet: ego, voice::FT_Office_Phone0174]
+   "I don't believe it was really him."
+
+
+--------------------------------------------------
+- Layer: PhoneBook
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: PhoneBook)
+ title: "Note Pad"
+
+  -----
+  Action: "Look at" (#0, layer: PhoneBook, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0022]
+   "It's a phone book"
+
+  -----
+  Action: "Talk to" (#1, layer: PhoneBook, state: main)
+
+  -----
+  Action: "Use" (#2, layer: PhoneBook, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0023]
+   "The phone has no dial tone."
+
+ --------------------------------------------------
+ State: On (layer: PhoneBook)
+ title: "Phone Book"
+
+  -----
+  Action: "Look at" (#0, layer: PhoneBook, state: On)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0024]
+   "It's a phone book"
+
+  -----
+  Action: "Talk to" (#1, layer: PhoneBook, state: On)
+
+  -----
+  Action: "Use" (#2, layer: PhoneBook, state: On)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0025]
+   "The phone has no dial tone."
+
+
+--------------------------------------------------
+- Layer: Phone
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Phone)
+ title: "Phone"
+
+  -----
+  Action: "Look at" (#0, layer: Phone, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Phone, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Phone, state: main)
+
+
+
+
+TREES
+--------------------------------------------------
+- Tree: Security
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: Security)
+
+ --------------------------------------------------
+ Tier: "" (tree: Security)
+
+  -----
+  Topic: "_2" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0028]
+   "There is something up with my computer."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0029]
+   "You want IT Support."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0030]
+   "Have a nice day."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0031]
+   "&lt;click&gt;"
+
+  -----
+  Topic: "_3" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0032]
+   "Could you come to my office please?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0033]
+   "What is the problem?"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0034]
+   "I hear you have some fancy pants."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0035]
+   "I'll send someone right there!"
+
+  -----
+  Topic: "_7" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0036]
+   "Could you come to my office please?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0037]
+   "What is the problem?"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0038]
+   "Er, I don't know."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0039]
+   "Sorry, unless you have a specific problem we are unable to leave the office."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0040]
+   "&lt;click&gt;"
+
+  -----
+  Topic: "_4" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0041]
+   "I think someone has been stealing from the medical cabnet."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0042]
+   "Ok, I'll get someone to investigate."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0043]
+   "&lt;click&gt;"
+
+  -----
+  Topic: "_6" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0044]
+   "I think I hear someone trying to break in!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0045]
+   "Ok, we'll keep a close eye on the security cameras."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0046]
+   "Thanks for the info."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0047]
+   "Bye"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0048]
+   "&lt;click&gt;"
+
+  -----
+  Topic: "_5" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0049]
+   "Er, nothing."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0050]
+   "Er, ok bye."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0051]
+   "&lt;click&gt;"
+
+  -----
+  Topic: "_8" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0052]
+   "Do you guys actually do anything?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0053]
+   "Of course, if it wasn't for us this place would be overrun with...errr"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0054]
+   "People with other peoples ID cards and people using photos to fool the iris scanners?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0055]
+   "Er...yeah."
+
+  -----
+  Topic: "_0" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0026]
+   "Hi"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0027]
+   "Hi, Security. How can I help?"
+
+  -----
+  Topic: "_1" (tree: Security, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0056]
+   "Bye"
+
+--------------------------------------------------
+- Tree: ITSupport
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "root" (tree: ITSupport)
+
+ --------------------------------------------------
+ Tier: "_0" (tree: ITSupport)
+
+ --------------------------------------------------
+ Tier: "_0_2" (tree: ITSupport)
+
+  -----
+  Topic: "_3" (tree: ITSupport, tier: _0_2)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0061]
+   "Yes"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0062]
+   "Ok, what is the problem?"
+
+  -----
+  Topic: "_16" (tree: ITSupport, tier: _0_2)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0063]
+   "Don't you want to know what my problem is first?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0064]
+   "Hmm. Fine, what is the problem?"
+
+  -----
+  Topic: "_17" (tree: ITSupport, tier: _0_2)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0065]
+   "I don't see how this is relevant to my problem?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0066]
+   "Hmm. Fine, what is the problem?"
+
+  -----
+  Topic: "_4" (tree: ITSupport, tier: _0_2)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0067]
+   "Bye"
+
+  -----
+  Topic: "_2" (tree: ITSupport, tier: _0_2)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0059]
+   "Yes"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0060]
+   "Is it plugged in?"
+
+ --------------------------------------------------
+ Tier: "_10" (tree: ITSupport)
+
+ --------------------------------------------------
+ Tier: "_0_10_11" (tree: ITSupport)
+
+  -----
+  Topic: "_12" (tree: ITSupport, tier: _0_10_11)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0076]
+   "Thanks. Bye."
+
+  -----
+  Topic: "_13" (tree: ITSupport, tier: _0_10_11)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0077]
+   "Your not making fun of me with the weet code are you?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0078]
+   "I would never do such a thing. I'm a professional."
+
+  -----
+  Topic: "_11" (tree: ITSupport, tier: _0_10_11)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0072]
+   "I have forgotten my password."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0073]
+   "Ok, Dr Martin. I've reset the password to a random new one. Change it when you login."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0074]
+   "The password is:"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0075]
+   "I m 4 n 1 d 1 0 7"
+
+  -----
+  Topic: "_22" (tree: ITSupport, tier: _0_10_11)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0079]
+   "I don't have a problem."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0080]
+   "Don't you think I'm busy?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0081]
+   "&lt;click&gt;"
+
+  -----
+  Topic: "_10" (tree: ITSupport, tier: _0_10_11)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0068]
+   "Don't you want to know what my problem is first?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0069]
+   "Ok email it to me and I'll deal with it when i have time. Probably late next month."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0070]
+   "I can't access my email, that is part of the problem!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0071]
+   "Fine! What is the problem?"
+
+ --------------------------------------------------
+ Tier: "_18" (tree: ITSupport)
+
+  -----
+  Topic: "_20" (tree: ITSupport, tier: _18)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0084]
+   "I haven't got a clue."
+
+  -----
+  Topic: "_18" (tree: ITSupport, tier: _18)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0082]
+   "I appear to have Jonathan Coulton's phone number."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0083]
+   "Very funny. Why would you have that?"
+
+  -----
+  Topic: "_5" (tree: ITSupport, tier: _18)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0085]
+   "Bye"
+
+  -----
+  Topic: "_0" (tree: ITSupport, tier: _18)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0057]
+   "Hi"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0058]
+   "Hi, IT Support. Have you tried turning off and on again?"
+
+ --------------------------------------------------
+ Tier: "_14" (tree: ITSupport)
+
+  -----
+  Topic: "_15" (tree: ITSupport, tier: _14)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0088]
+   "I've forgotten my password."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0089]
+   "Ok, Dr Martin. I've reset the password to a random new one. Change it when you login."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0090]
+   "The password is:"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0091]
+   "J 0 c 0 R 0 c k 5"
+
+  -----
+  Topic: "_19" (tree: ITSupport, tier: _14)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0092]
+   "I appear to have Jonathan Coulton's phone number."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0093]
+   "Very funny. Why would you have that?"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0175]
+   "That is a good question. Alas I have lost my memory, so I don't know."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0176]
+   "Convenient."
+
+  -----
+  Topic: "_21" (tree: ITSupport, tier: _14)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0094]
+   "Don't suppose you know any pirate jokes?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0095]
+   "I do, What does a robot pirate drink?"
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0096]
+   "Oh yeah, I know that one! Thanks."
+
+  -----
+  Topic: "_23" (tree: ITSupport, tier: _14)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0097]
+   "Bye"
+
+  -----
+  Topic: "_14" (tree: ITSupport, tier: _14)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0086]
+   "Hey Chris"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0087]
+   "Er, Hi Ted?"
+
+  -----
+  Topic: "_1" (tree: ITSupport, tier: _14)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0098]
+   "Bye"
+
+--------------------------------------------------
+- Tree: Bill
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: Bill)
+
+ --------------------------------------------------
+ Tier: "" (tree: Bill)
+
+  -----
+  Topic: "_2" (tree: Bill, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0101]
+   "I think someone is trying to silence me!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0102]
+   "Sorry, I need to mute you for a minute."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0103]
+   "Just kidding."
+
+  -----
+  Topic: "_3" (tree: Bill, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0104]
+   "I woke up in a locked room."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0105]
+   "Have you been arrested?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0106]
+   "I knew Mr goody to shoes would get arrested. It's always the quite ones."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0107]
+   "No, not that."
+
+  -----
+  Topic: "_4" (tree: Bill, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0108]
+   "I have lost my memory."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0109]
+   "Great, you owe me loads of money."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0110]
+   "Really?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0111]
+   "Haha."
+
+  -----
+  Topic: "_5" (tree: Bill, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0112]
+   "Who am I?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0113]
+   "Well, who are we all?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0114]
+   "I wonder the same thing all the time."
+
+  -----
+  Topic: "_6" (tree: Bill, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0115]
+   "Bye"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0116]
+   "It was good to speak Ted. Later."
+
+  -----
+  Topic: "_0" (tree: Bill, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0099]
+   "Hi"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0100]
+   "Hey Ted. What's up?"
+
+  -----
+  Topic: "_1" (tree: Bill, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0117]
+   "Bye"
+
+--------------------------------------------------
+- Tree: Tom
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: Tom)
+
+ --------------------------------------------------
+ Tier: "" (tree: Tom)
+
+ --------------------------------------------------
+ Tier: "_3" (tree: Tom)
+
+ --------------------------------------------------
+ Tier: "_9" (tree: Tom)
+
+  -----
+  Topic: "_9" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0123]
+   "Talk about what?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0124]
+   "Meet me at the coffee shop in town in half hour."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0125]
+   "Ok. I remember that at least."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0126]
+   "Bye"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0127]
+   "&lt;click&gt;"
+
+  -----
+  Topic: "_3" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0121]
+   "Who?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0122]
+   "We need to talk Ted."
+
+  -----
+  Topic: "_10" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0128]
+   "What are you talking about?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0129]
+   "We need to talk Ted."
+
+  -----
+  Topic: "_11" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0130]
+   "Am I in danger?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0131]
+   "We need to talk Ted."
+
+  -----
+  Topic: "_12" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0132]
+   "I can't deal with this right now. Good bye!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0133]
+   "Bye"
+
+  -----
+  Topic: "_2" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0119]
+   "I don't know who I am!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0120]
+   "Wow, she must be getting desperate!"
+
+  -----
+  Topic: "_4" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0134]
+   "I woke up in a locked room!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0135]
+   "Blimey! She must be in serious trouble."
+
+  -----
+  Topic: "_5" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0136]
+   "I think someone is trying to silence me!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0137]
+   "She has gone too far."
+
+  -----
+  Topic: "_6" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0138]
+   "Who am I?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0139]
+   "Ted Martin! That is a strange question. You ok Ted?"
+
+  -----
+  Topic: "_7" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0140]
+   "Who are you?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0141]
+   "Tom! That is a strange question. You ok Ted?"
+
+  -----
+  Topic: "_8" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0142]
+   "Bye"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0143]
+   "Bye"
+
+  -----
+  Topic: "_0" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0118]
+   "Hi"
+
+  -----
+  Topic: "_1" (tree: Tom, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0144]
+   "Bye"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0145]
+   "Bye"
+
+--------------------------------------------------
+- Tree: TomSpoken
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: TomSpoken)
+
+ --------------------------------------------------
+ Tier: "" (tree: TomSpoken)
+
+ --------------------------------------------------
+ Tier: "_3" (tree: TomSpoken)
+
+ --------------------------------------------------
+ Tier: "_9" (tree: TomSpoken)
+
+  -----
+  Topic: "_9" (tree: TomSpoken, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0152]
+   "Talk about what?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0153]
+   "Meet me at the coffee shop in town."
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0154]
+   "Ok. I remember that at least."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0155]
+   "Bye"
+
+  -----
+  Topic: "_3" (tree: TomSpoken, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0150]
+   "I'm confused."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0151]
+   "We need to talk Ted."
+
+  -----
+  Topic: "_11" (tree: TomSpoken, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0156]
+   "Am I in danger?"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0157]
+   "We need to talk Ted."
+
+  -----
+  Topic: "_12" (tree: TomSpoken, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0158]
+   "I can't deal with this right now. Good bye!"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0159]
+   "Bye"
+
+  -----
+  Topic: "_2" (tree: TomSpoken, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0148]
+   "I don't know where the coffee shop is."
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0149]
+   "It's in the south west of town."
+
+  -----
+  Topic: "_8" (tree: TomSpoken, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0160]
+   "Ok, Bye"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0161]
+   "Bye"
+
+  -----
+  Topic: "_0" (tree: TomSpoken, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0146]
+   "Hi Again"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0147]
+   "Hi Ted. I'm at the coffee shop waiting."
+
+  -----
+  Topic: "_1" (tree: TomSpoken, tier: _9)
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0162]
+   "Bye"
+
+--------------------------------------------------
+- Tree: TomMet
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: TomMet)
+
+ --------------------------------------------------
+ Tier: "" (tree: TomMet)
+
+  -----
+  Topic: "_8" (tree: TomMet, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0165]
+   "Ok, Bye"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0166]
+   "See ya soon."
+
+  -----
+  Topic: "_0" (tree: TomMet, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0163]
+   "Hi Again"
+
+   - Dialog [puppet: Phone, voice::FT_Office_Phone0164]
+   "Hi Tom. I'm still at the coffee shop if you want to speak again."
+
+  -----
+  Topic: "_1" (tree: TomMet, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office_Phone0167]
+   "Bye"
+
+
+
+
+_avatar,"It's the phone dial pad.",:FT_Office_Phone0000
+_avatar,"The phone has no dial tone.",:FT_Office_Phone0001
+_avatar,"It's the phone keypad",:FT_Office_Phone0002
+_avatar,"I need to decide who to call.",:FT_Office_Phone0003
+_avatar,"It looks like something plugs in to it.",:FT_Office_Phone0004
+_avatar,"I need to plug something in to it.",:FT_Office_Phone0005
+_avatar,"It fits",:FT_Office_Phone0006
+_avatar,"It looks like something plugs in to it.",:FT_Office_Phone0007
+_avatar,"I need to plug something in to it.",:FT_Office_Phone0008
+_avatar,"It fits",:FT_Office_Phone0009
+Phone,"Hello. You have reach Future Tech: Cyborgs are the future.",:FT_Office_Phone0010
+Phone,"I am afraid we unable to take your call at the moment, please leave a message after the tone.",:FT_Office_Phone0168
+Phone,"Beep!",:FT_Office_Phone0011
+_avatar,"I know you are there, I just saw you in reception.",:FT_Office_Phone0169
+Phone,"Thank you for you message, goodbye.",:FT_Office_Phone0012
+Phone,"I'm sorry, I'm not available at the moment. If you leave a message, I will get back to you.&lt;beep&gt;",:FT_Office_Phone0013
+_avatar,"I guess I'll try another time.",:FT_Office_Phone0014
+Phone,"Hi Jen here, you know what to do.&lt;beep&gt;",:FT_Office_Phone0015
+_avatar,"I guess I'll try another time.",:FT_Office_Phone0016
+Phone,"This is the voice mail of 555-4772. You can leave a message after the tone.&lt;beep&gt;",:FT_Office_Phone0017
+_avatar,"I guess I'll try another time.",:FT_Office_Phone0018
+Phone,"Hi Jonathan Coulton.",:FT_Office_Phone0019
+_avatar,"Wow! Not the Jonathan Coulton?",:FT_Office_Phone0020
+Phone,"Oh great, it's another one of those people from that silly adventure game!",:FT_Office_Phone0170
+Phone,"Just hang up on them.",:FT_Office_Phone0172
+Phone,"Yes, this is the Jonathan Coulton. I can't talk now, I have a song to write.",:FT_Office_Phone0171
+Phone,"Yeah, like that is believable!",:FT_Office_Phone0173
+Phone,"&lt;click&gt;",:FT_Office_Phone0021
+ego,"I don't believe it was really him.",:FT_Office_Phone0174
+_avatar,"It's a phone book",:FT_Office_Phone0022
+_avatar,"The phone has no dial tone.",:FT_Office_Phone0023
+_avatar,"It's a phone book",:FT_Office_Phone0024
+_avatar,"The phone has no dial tone.",:FT_Office_Phone0025
+_avatar,"There is something up with my computer.",:FT_Office_Phone0028
+Phone,"You want IT Support.",:FT_Office_Phone0029
+Phone,"Have a nice day.",:FT_Office_Phone0030
+Phone,"&lt;click&gt;",:FT_Office_Phone0031
+_avatar,"Could you come to my office please?",:FT_Office_Phone0032
+Phone,"What is the problem?",:FT_Office_Phone0033
+_avatar,"I hear you have some fancy pants.",:FT_Office_Phone0034
+Phone,"I'll send someone right there!",:FT_Office_Phone0035
+_avatar,"Could you come to my office please?",:FT_Office_Phone0036
+Phone,"What is the problem?",:FT_Office_Phone0037
+_avatar,"Er, I don't know.",:FT_Office_Phone0038
+Phone,"Sorry, unless you have a specific problem we are unable to leave the office.",:FT_Office_Phone0039
+Phone,"&lt;click&gt;",:FT_Office_Phone0040
+_avatar,"I think someone has been stealing from the medical cabnet.",:FT_Office_Phone0041
+Phone,"Ok, I'll get someone to investigate.",:FT_Office_Phone0042
+Phone,"&lt;click&gt;",:FT_Office_Phone0043
+_avatar,"I think I hear someone trying to break in!",:FT_Office_Phone0044
+Phone,"Ok, we'll keep a close eye on the security cameras.",:FT_Office_Phone0045
+Phone,"Thanks for the info.",:FT_Office_Phone0046
+Phone,"Bye",:FT_Office_Phone0047
+Phone,"&lt;click&gt;",:FT_Office_Phone0048
+_avatar,"Er, nothing.",:FT_Office_Phone0049
+Phone,"Er, ok bye.",:FT_Office_Phone0050
+Phone,"&lt;click&gt;",:FT_Office_Phone0051
+_avatar,"Do you guys actually do anything?",:FT_Office_Phone0052
+Phone,"Of course, if it wasn't for us this place would be overrun with...errr",:FT_Office_Phone0053
+_avatar,"People with other peoples ID cards and people using photos to fool the iris scanners?",:FT_Office_Phone0054
+Phone,"Er...yeah.",:FT_Office_Phone0055
+_avatar,"Hi",:FT_Office_Phone0026
+Phone,"Hi, Security. How can I help?",:FT_Office_Phone0027
+_avatar,"Bye",:FT_Office_Phone0056
+_avatar,"Yes",:FT_Office_Phone0061
+Phone,"Ok, what is the problem?",:FT_Office_Phone0062
+_avatar,"Don't you want to know what my problem is first?",:FT_Office_Phone0063
+Phone,"Hmm. Fine, what is the problem?",:FT_Office_Phone0064
+_avatar,"I don't see how this is relevant to my problem?",:FT_Office_Phone0065
+Phone,"Hmm. Fine, what is the problem?",:FT_Office_Phone0066
+_avatar,"Bye",:FT_Office_Phone0067
+_avatar,"Yes",:FT_Office_Phone0059
+Phone,"Is it plugged in?",:FT_Office_Phone0060
+_avatar,"Thanks. Bye.",:FT_Office_Phone0076
+_avatar,"Your not making fun of me with the weet code are you?",:FT_Office_Phone0077
+Phone,"I would never do such a thing. I'm a professional.",:FT_Office_Phone0078
+_avatar,"I have forgotten my password.",:FT_Office_Phone0072
+Phone,"Ok, Dr Martin. I've reset the password to a random new one. Change it when you login.",:FT_Office_Phone0073
+Phone,"The password is:",:FT_Office_Phone0074
+Phone,"I m 4 n 1 d 1 0 7",:FT_Office_Phone0075
+_avatar,"I don't have a problem.",:FT_Office_Phone0079
+Phone,"Don't you think I'm busy?",:FT_Office_Phone0080
+Phone,"&lt;click&gt;",:FT_Office_Phone0081
+_avatar,"Don't you want to know what my problem is first?",:FT_Office_Phone0068
+Phone,"Ok email it to me and I'll deal with it when i have time. Probably late next month.",:FT_Office_Phone0069
+_avatar,"I can't access my email, that is part of the problem!",:FT_Office_Phone0070
+Phone,"Fine! What is the problem?",:FT_Office_Phone0071
+_avatar,"I haven't got a clue.",:FT_Office_Phone0084
+_avatar,"I appear to have Jonathan Coulton's phone number.",:FT_Office_Phone0082
+Phone,"Very funny. Why would you have that?",:FT_Office_Phone0083
+_avatar,"Bye",:FT_Office_Phone0085
+_avatar,"Hi",:FT_Office_Phone0057
+Phone,"Hi, IT Support. Have you tried turning off and on again?",:FT_Office_Phone0058
+_avatar,"I've forgotten my password.",:FT_Office_Phone0088
+Phone,"Ok, Dr Martin. I've reset the password to a random new one. Change it when you login.",:FT_Office_Phone0089
+Phone,"The password is:",:FT_Office_Phone0090
+Phone,"J 0 c 0 R 0 c k 5",:FT_Office_Phone0091
+_avatar,"I appear to have Jonathan Coulton's phone number.",:FT_Office_Phone0092
+Phone,"Very funny. Why would you have that?",:FT_Office_Phone0093
+_avatar,"That is a good question. Alas I have lost my memory, so I don't know.",:FT_Office_Phone0175
+Phone,"Convenient.",:FT_Office_Phone0176
+_avatar,"Don't suppose you know any pirate jokes?",:FT_Office_Phone0094
+Phone,"I do, What does a robot pirate drink?",:FT_Office_Phone0095
+_avatar,"Oh yeah, I know that one! Thanks.",:FT_Office_Phone0096
+_avatar,"Bye",:FT_Office_Phone0097
+_avatar,"Hey Chris",:FT_Office_Phone0086
+Phone,"Er, Hi Ted?",:FT_Office_Phone0087
+_avatar,"Bye",:FT_Office_Phone0098
+_avatar,"I think someone is trying to silence me!",:FT_Office_Phone0101
+Phone,"Sorry, I need to mute you for a minute.",:FT_Office_Phone0102
+Phone,"Just kidding.",:FT_Office_Phone0103
+_avatar,"I woke up in a locked room.",:FT_Office_Phone0104
+Phone,"Have you been arrested?",:FT_Office_Phone0105
+Phone,"I knew Mr goody to shoes would get arrested. It's always the quite ones.",:FT_Office_Phone0106
+_avatar,"No, not that.",:FT_Office_Phone0107
+_avatar,"I have lost my memory.",:FT_Office_Phone0108
+Phone,"Great, you owe me loads of money.",:FT_Office_Phone0109
+_avatar,"Really?",:FT_Office_Phone0110
+Phone,"Haha.",:FT_Office_Phone0111
+_avatar,"Who am I?",:FT_Office_Phone0112
+Phone,"Well, who are we all?",:FT_Office_Phone0113
+Phone,"I wonder the same thing all the time.",:FT_Office_Phone0114
+_avatar,"Bye",:FT_Office_Phone0115
+Phone,"It was good to speak Ted. Later.",:FT_Office_Phone0116
+_avatar,"Hi",:FT_Office_Phone0099
+Phone,"Hey Ted. What's up?",:FT_Office_Phone0100
+_avatar,"Bye",:FT_Office_Phone0117
+_avatar,"Talk about what?",:FT_Office_Phone0123
+Phone,"Meet me at the coffee shop in town in half hour.",:FT_Office_Phone0124
+_avatar,"Ok. I remember that at least.",:FT_Office_Phone0125
+Phone,"Bye",:FT_Office_Phone0126
+Phone,"&lt;click&gt;",:FT_Office_Phone0127
+_avatar,"Who?",:FT_Office_Phone0121
+Phone,"We need to talk Ted.",:FT_Office_Phone0122
+_avatar,"What are you talking about?",:FT_Office_Phone0128
+Phone,"We need to talk Ted.",:FT_Office_Phone0129
+_avatar,"Am I in danger?",:FT_Office_Phone0130
+Phone,"We need to talk Ted.",:FT_Office_Phone0131
+_avatar,"I can't deal with this right now. Good bye!",:FT_Office_Phone0132
+Phone,"Bye",:FT_Office_Phone0133
+_avatar,"I don't know who I am!",:FT_Office_Phone0119
+Phone,"Wow, she must be getting desperate!",:FT_Office_Phone0120
+_avatar,"I woke up in a locked room!",:FT_Office_Phone0134
+Phone,"Blimey! She must be in serious trouble.",:FT_Office_Phone0135
+_avatar,"I think someone is trying to silence me!",:FT_Office_Phone0136
+Phone,"She has gone too far.",:FT_Office_Phone0137
+_avatar,"Who am I?",:FT_Office_Phone0138
+Phone,"Ted Martin! That is a strange question. You ok Ted?",:FT_Office_Phone0139
+_avatar,"Who are you?",:FT_Office_Phone0140
+Phone,"Tom! That is a strange question. You ok Ted?",:FT_Office_Phone0141
+_avatar,"Bye",:FT_Office_Phone0142
+Phone,"Bye",:FT_Office_Phone0143
+_avatar,"Hi",:FT_Office_Phone0118
+_avatar,"Bye",:FT_Office_Phone0144
+Phone,"Bye",:FT_Office_Phone0145
+_avatar,"Talk about what?",:FT_Office_Phone0152
+Phone,"Meet me at the coffee shop in town.",:FT_Office_Phone0153
+_avatar,"Ok. I remember that at least.",:FT_Office_Phone0154
+Phone,"Bye",:FT_Office_Phone0155
+_avatar,"I'm confused.",:FT_Office_Phone0150
+Phone,"We need to talk Ted.",:FT_Office_Phone0151
+_avatar,"Am I in danger?",:FT_Office_Phone0156
+Phone,"We need to talk Ted.",:FT_Office_Phone0157
+_avatar,"I can't deal with this right now. Good bye!",:FT_Office_Phone0158
+Phone,"Bye",:FT_Office_Phone0159
+_avatar,"I don't know where the coffee shop is.",:FT_Office_Phone0148
+Phone,"It's in the south west of town.",:FT_Office_Phone0149
+_avatar,"Ok, Bye",:FT_Office_Phone0160
+Phone,"Bye",:FT_Office_Phone0161
+_avatar,"Hi Again",:FT_Office_Phone0146
+Phone,"Hi Ted. I'm at the coffee shop waiting.",:FT_Office_Phone0147
+_avatar,"Bye",:FT_Office_Phone0162
+_avatar,"Ok, Bye",:FT_Office_Phone0165
+Phone,"See ya soon.",:FT_Office_Phone0166
+_avatar,"Hi Again",:FT_Office_Phone0163
+Phone,"Hi Tom. I'm still at the coffee shop if you want to speak again.",:FT_Office_Phone0164
+_avatar,"Bye",:FT_Office_Phone0167
+
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<mediaBaseURL></mediaBaseURL>
+	<xmlBaseURL></xmlBaseURL>
+	<allowXMLCache>0</allowXMLCache>
+	<staticWindow>0</staticWindow>
+	<language></language>
+	<fileIOType>sharedObject</fileIOType>
+	<fileIOService>save/fileio.php</fileIOService>
+	<tweenEngine>tweenLite</tweenEngine>
+	<invenMode>dynamic</invenMode>
+	<invenShow>0.4</invenShow>
+	<invenHide>0.25</invenHide>
+	<actionMode>disc</actionMode>
+	<actionShow>0.35</actionShow>
+	<actionHide>0.35</actionHide>
+	<skipControl>tab</skipControl>
+	<skipDiaControl>mouse</skipDiaControl>
+	<subtitleShow>0.5</subtitleShow>
+	<subtitleHide>0.3</subtitleHide>
+	<subtitleOverhead>15</subtitleOverhead>
+	<subtitlePadding>10</subtitlePadding>
+	<contextOff>0xFFFFFF</contextOff>
+	<contextOn>0xFF3300</contextOn>
+	<treeOff>0xFFFFFF</treeOff>
+	<treeOn>0xFF3300</treeOn>
+	<curtainColor>0x000000</curtainColor>
+	<menuSubtitle>1</menuSubtitle>
+	<menuSubtitleSpeed>1</menuSubtitleSpeed>
+	<menuVoice>1</menuVoice>
+	<menuFullscreen>1</menuFullscreen>
+	<menuGraphicsQuality>1</menuGraphicsQuality>
+	<menuQuit>1</menuQuit>
+	<menuHelp>1</menuHelp>
+	<menuHelpText><![CDATA[Instructions:<br><br><li>Press 'm' to open the game menu.</li><li>Press 'i' to open the inventory.</li><li>Click and hold on an object to select an interaction.</li><li>Click an inventory item to set it as the game cursor.</li><li>Use item cursors with objects around the world</li><li>Double-click to clear an item cursor.</li>]]></menuHelpText>
+	<legal><en><![CDATA[]]></en></legal>
+</system>

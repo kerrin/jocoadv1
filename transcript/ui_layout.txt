@@ -1,0 +1,55 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: inventory
+--------------------------------------------------
+ --------------------------------------------------
+ State: show (layer: inventory)
+ title: "Inventory"
+
+  -----
+  Action: "Look at" (#0, layer: inventory, state: show)
+
+  -----
+  Action: "Talk to" (#1, layer: inventory, state: show)
+
+  -----
+  Action: "Use" (#2, layer: inventory, state: show)
+
+  -----
+  Action: "Inventory" (#3, layer: inventory, state: show)
+
+ --------------------------------------------------
+ State: hide (layer: inventory)
+ title: "Inventory"
+
+  -----
+  Action: "Look at" (#0, layer: inventory, state: hide)
+
+  -----
+  Action: "Talk to" (#1, layer: inventory, state: hide)
+
+  -----
+  Action: "Use" (#2, layer: inventory, state: hide)
+
+  -----
+  Action: "Inventory" (#3, layer: inventory, state: hide)
+
+
+
+
+TREES
+
+
+
+
+
+

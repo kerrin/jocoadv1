@@ -1,0 +1,941 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: Scrubs1
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Scrubs1)
+ title: "Scrubs"
+
+  -----
+  Action: "Look at" (#0, layer: Scrubs1, state: main)
+
+   - Dialog [puppet: _avatar, voice:PocketKey]
+   "One of the pockets has a key in it."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0000]
+   "It won't fit any of the locks in here, don't bother trying."
+
+  -----
+  Action: "Talk to" (#1, layer: Scrubs1, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Scrubs1, state: main)
+
+   - Dialog [puppet: _avatar, voice:WearOldScubs]
+   "I'm not wearing old scrubs!"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0001]
+   "A few blood stains never hurt anyone, wimp!"
+
+ --------------------------------------------------
+ State: found (layer: Scrubs1)
+ title: "Scrubs"
+
+  -----
+  Action: "Look at" (#0, layer: Scrubs1, state: found)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0002]
+   "Looks like old medical scrubs"
+
+  -----
+  Action: "Talk to" (#1, layer: Scrubs1, state: found)
+
+  -----
+  Action: "Use" (#2, layer: Scrubs1, state: found)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0003]
+   "I'm not wearing old scrubs!"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0004]
+   "A few blood stains never hurt anyone, wimp!"
+
+
+--------------------------------------------------
+- Layer: Scrubs2
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Scrubs2)
+ title: "Scrubs"
+
+  -----
+  Action: "Look at" (#0, layer: Scrubs2, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0005]
+   "Looks like old medical scrubs."
+
+  -----
+  Action: "Talk to" (#1, layer: Scrubs2, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Scrubs2, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0006]
+   "I'm not wearing old scrubs!"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0007]
+   "A few blood stains never hurt anyone, wimp!"
+
+
+--------------------------------------------------
+- Layer: Scrubs3
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Scrubs3)
+ title: "Scrubs"
+
+  -----
+  Action: "Look at" (#0, layer: Scrubs3, state: main)
+
+   - Dialog [puppet: _avatar, voice:IdCard]
+   "There is a ID card in here."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0008]
+   "It's not yours, put it back!"
+
+  -----
+  Action: "Talk to" (#1, layer: Scrubs3, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Scrubs3, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0009]
+   "I'm not wearing old scrubs!"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0010]
+   "A few blood stains never hurt anyone, wimp!"
+
+ --------------------------------------------------
+ State: found (layer: Scrubs3)
+ title: "Scrubs"
+
+  -----
+  Action: "Look at" (#0, layer: Scrubs3, state: found)
+
+   - Dialog [puppet: _avatar, voice:LooksOldScrubs]
+   "Looks like old medical scrubs"
+
+  -----
+  Action: "Talk to" (#1, layer: Scrubs3, state: found)
+
+  -----
+  Action: "Use" (#2, layer: Scrubs3, state: found)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0011]
+   "I'm not wearing old scrubs!"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0012]
+   "A few blood stains never hurt anyone, wimp!"
+
+
+--------------------------------------------------
+- Layer: Cabinet
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Cabinet)
+ title: "Cabinet"
+
+  -----
+  Action: "Look at" (#0, layer: Cabinet, state: main)
+
+   - Dialog [puppet: _avatar, voice:LockedCabenet]
+   "It's a filling cabinet and it appears to be locked."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0013]
+   "I doubt there is anything important in there."
+
+  -----
+  Action: "Talk to" (#1, layer: Cabinet, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Cabinet, state: main)
+
+   - Dialog [puppet: _avatar, voice:LockedShut]
+   "It's locked firmly shut."
+
+  -----
+  Item: "Key", "" (layer: Cabinet, state: main)
+
+   - Dialog [puppet: _avatar, voice:DoesntFitLock]
+   "It doesn't fit the lock."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0014]
+   "Maybe you aren't trying hard enough."
+
+  -----
+  Item: "WireHanger", "" (layer: Cabinet, state: main)
+
+   - Dialog [puppet: _avatar, voice:PickLock]
+   "Lets try and pick the lock."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0015]
+   "That worked! I wonder what's inside?"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0016]
+   "I doubt there is anything important in there."
+
+ --------------------------------------------------
+ State: Unlocked (layer: Cabinet)
+ title: "Unlocked Cabinet"
+
+  -----
+  Action: "Look at" (#0, layer: Cabinet, state: Unlocked)
+
+   - Dialog [puppet: _avatar, voice:UnlockedCabenet]
+   "It's a unlocked filing cabinet."
+
+  -----
+  Action: "Talk to" (#1, layer: Cabinet, state: Unlocked)
+
+  -----
+  Action: "Use" (#2, layer: Cabinet, state: Unlocked)
+
+   - Dialog [puppet: _avatar, voice:FTDocs]
+   "It's a lot of Future Tech company documents in here. Employee personal files. Shame there are no photo on them. It looks like the CEO is a Ms. Sarah Bio."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0017]
+   "That isn't worth remembering."
+
+
+--------------------------------------------------
+- Layer: SecureDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SecureDoor)
+ title: "Security Door"
+
+  -----
+  Action: "Look at" (#0, layer: SecureDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:NoHandle]
+   "The handel doesn't work, and there is no lock on the door."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0018]
+   "Try giving it a push."
+
+  -----
+  Action: "Talk to" (#1, layer: SecureDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:AnyoneThere]
+   "Is anyone there?"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0019]
+   "I'm here. I'm your sub-conscience."
+
+  -----
+  Action: "Use" (#2, layer: SecureDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:NotPushDoor]
+   "I don't think it is a push door."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0020]
+   "Try the handle."
+
+  -----
+  Item: "Key", "" (layer: SecureDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:NoKeyHole]
+   "There is no key hole."
+
+ --------------------------------------------------
+ State: Open (layer: SecureDoor)
+ title: "Security Door"
+
+  -----
+  Action: "Look at" (#0, layer: SecureDoor, state: Open)
+
+   - Dialog [puppet: _avatar, voice:OpenNow]
+   "It's open now."
+
+  -----
+  Action: "Talk to" (#1, layer: SecureDoor, state: Open)
+
+   - Dialog [puppet: _avatar, voice:AnyoneThere]
+   "Is anyone there?"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0021]
+   "I'm here. I'm your sub-conscience."
+
+  -----
+  Action: "Use" (#2, layer: SecureDoor, state: Open)
+
+  -----
+  Item: "Key", "" (layer: SecureDoor, state: Open)
+
+   - Dialog [puppet: _avatar, voice:NoKeyHole]
+   "There is no key hole."
+
+ --------------------------------------------------
+ State: OpenDay (layer: SecureDoor)
+ title: "Security Door"
+
+  -----
+  Action: "Look at" (#0, layer: SecureDoor, state: OpenDay)
+
+   - Dialog [puppet: _avatar, voice:OpenNow]
+   "It's open."
+
+  -----
+  Action: "Talk to" (#1, layer: SecureDoor, state: OpenDay)
+
+   - Dialog [puppet: _avatar, voice:AnyoneThere]
+   "Is anyone there?"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0022]
+   "I'm here. I'm your sub-conscience."
+
+  -----
+  Action: "Use" (#2, layer: SecureDoor, state: OpenDay)
+
+  -----
+  Item: "Key", "" (layer: SecureDoor, state: OpenDay)
+
+   - Dialog [puppet: _avatar, voice:NoKeyHole]
+   "There is no key hole."
+
+
+--------------------------------------------------
+- Layer: IrisScanner
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: IrisScanner)
+ title: "Gizmo"
+
+  -----
+  Action: "Look at" (#0, layer: IrisScanner, state: main)
+
+   - Dialog [puppet: _avatar, voice:LooksScanner]
+   "Looks a bit hi-tech, I think it may be a scanner of some sort. There is a slot that looks like it is a credit card reader."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0023]
+   "Looks broken to me."
+
+  -----
+  Action: "Talk to" (#1, layer: IrisScanner, state: main)
+
+  -----
+  Action: "Use" (#2, layer: IrisScanner, state: main)
+
+   - Dialog [puppet: _avatar, voice:NoStartButton]
+   "There is nothing to press to start it, just a slot and a scanner."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0024]
+   "I'd try to find the start button if I were you."
+
+  -----
+  Item: "KeyCard", "" (layer: IrisScanner, state: main)
+
+   - Dialog [puppet: _avatar, voice:ScannedIris]
+   "It scanned my iris, but didn't open the door."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0025]
+   "You clearly don't work here."
+
+  -----
+  Item: "FramedPhoto", "" (layer: IrisScanner, state: main)
+
+   - Dialog [puppet: _avatar, voice:MightWork]
+   "That might work, I need to activate the scanner and I'll try that."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0026]
+   "You think a photo will fool an iris scanner. Ha!"
+
+ --------------------------------------------------
+ State: TriedPhoto (layer: IrisScanner)
+ title: "Gizmo"
+
+  -----
+  Action: "Look at" (#0, layer: IrisScanner, state: TriedPhoto)
+
+   - Dialog [puppet: _avatar, voice:ScannerAndSlot]
+   "It's a scanner and a slot for an key card."
+
+  -----
+  Action: "Talk to" (#1, layer: IrisScanner, state: TriedPhoto)
+
+  -----
+  Action: "Use" (#2, layer: IrisScanner, state: TriedPhoto)
+
+   - Dialog [puppet: _avatar, voice:NoStartButton]
+   "There is nothing to press to start it, just a slot and a scanner."
+
+  -----
+  Item: "KeyCard", "" (layer: IrisScanner, state: TriedPhoto)
+
+   - Dialog [puppet: _avatar, voice:CheapScanner]
+   "It must be a cheap iris scanner to be fooled by a photo."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0027]
+   "Yeah. I guess it must."
+
+  -----
+  Item: "FramedPhoto", "" (layer: IrisScanner, state: TriedPhoto)
+
+   - Dialog [puppet: _avatar, voice:NeedToActivate]
+   "I need to activate the scanner and I'll try that."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0028]
+   "Find that start button."
+
+
+--------------------------------------------------
+- Layer: LockedDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: LockedDoor)
+ title: "Locked Door"
+
+  -----
+  Action: "Look at" (#0, layer: LockedDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:KeyHole]
+   "There is a key hole in the door."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0029]
+   "You could always trying using your finger to pick the lock."
+
+  -----
+  Action: "Talk to" (#1, layer: LockedDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:AnyoneThere]
+   "Is anyone there?"
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0030]
+   "I'm here. I'm your sub-conscience."
+
+  -----
+  Action: "Use" (#2, layer: LockedDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:LockedShut]
+   "It's is locked firmly shut."
+
+  -----
+  Item: "Key", "" (layer: LockedDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:DoesntFitLock]
+   "It doesn't fit the lock."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0031]
+   "Maybe you aren't trying hard enough."
+
+
+--------------------------------------------------
+- Layer: SealedBoxes
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SealedBoxes)
+ title: "Sealed Boxes"
+
+  -----
+  Action: "Look at" (#0, layer: SealedBoxes, state: main)
+
+   - Dialog [puppet: _avatar, voice:SealedBoxes]
+   "Some sealed boxes, from MedialSupplies.com. I wonder what is inside? If only I could break the tape with something pointy."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0032]
+   "It's probably just more scrubs."
+
+  -----
+  Action: "Talk to" (#1, layer: SealedBoxes, state: main)
+
+  -----
+  Action: "Use" (#2, layer: SealedBoxes, state: main)
+
+   - Dialog [puppet: _avatar, voice:TapeSealing]
+   "The tape is sealling these firmly shut."
+
+  -----
+  Item: "Key", "" (layer: SealedBoxes, state: main)
+
+   - Dialog [puppet: _avatar, voice:BreakTape]
+   "That should break the tape sealing these. There are scrubs on hangers in here, I'll take one."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0033]
+   "See, told you it was just more scrubs."
+
+ --------------------------------------------------
+ State: Open (layer: SealedBoxes)
+ title: "Open Boxes"
+
+  -----
+  Action: "Look at" (#0, layer: SealedBoxes, state: Open)
+
+   - Dialog [puppet: _avatar, voice:MoreScubs]
+   "Just more scrubs, I have enough of those."
+
+  -----
+  Action: "Talk to" (#1, layer: SealedBoxes, state: Open)
+
+  -----
+  Action: "Use" (#2, layer: SealedBoxes, state: Open)
+
+   - Dialog [puppet: _avatar, voice:HaveEnough]
+   "I don't need any more of those."
+
+
+--------------------------------------------------
+- Layer: OpenBoxes
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: OpenBoxes)
+ title: "Open Boxes"
+
+  -----
+  Action: "Look at" (#0, layer: OpenBoxes, state: main)
+
+   - Dialog [puppet: _avatar, voice:FramedPhotos]
+   "A box of framed photos."
+
+  -----
+  Action: "Talk to" (#1, layer: OpenBoxes, state: main)
+
+  -----
+  Action: "Use" (#2, layer: OpenBoxes, state: main)
+
+   - Dialog [puppet: _avatar, voice:TooMany]
+   "There are too many to take them all, I'll take one if I need one later."
+
+ --------------------------------------------------
+ State: KnowCEO (layer: OpenBoxes)
+ title: "Open Boxes"
+
+  -----
+  Action: "Look at" (#0, layer: OpenBoxes, state: KnowCEO)
+
+   - Dialog [puppet: _avatar, voice:BoxFramedPhotos]
+   "A box of employee photos in frames."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0034]
+   "What a load of junk."
+
+  -----
+  Action: "Talk to" (#1, layer: OpenBoxes, state: KnowCEO)
+
+  -----
+  Action: "Use" (#2, layer: OpenBoxes, state: KnowCEO)
+
+   - Dialog [puppet: _avatar, voice:CeoUseful]
+   "This one of the CEO might be useful."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0035]
+   "What makes you think that?"
+
+ --------------------------------------------------
+ State: GotCEO (layer: OpenBoxes)
+ title: "Open Boxes"
+
+  -----
+  Action: "Look at" (#0, layer: OpenBoxes, state: GotCEO)
+
+   - Dialog [puppet: _avatar, voice:BoxFramedPhotos]
+   "A box of employee photos in frames."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0036]
+   "What a load of junk."
+
+  -----
+  Action: "Talk to" (#1, layer: OpenBoxes, state: GotCEO)
+
+  -----
+  Action: "Use" (#2, layer: OpenBoxes, state: GotCEO)
+
+   - Dialog [puppet: _avatar, voice:HaveEnough]
+   "I don't need any more of those."
+
+
+--------------------------------------------------
+- Layer: WaterBottle
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: WaterBottle)
+ title: "Water Bottle"
+
+  -----
+  Action: "Look at" (#0, layer: WaterBottle, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0037]
+   "It's a full bottle of water for one of those water dispensers."
+
+  -----
+  Action: "Talk to" (#1, layer: WaterBottle, state: main)
+
+  -----
+  Action: "Use" (#2, layer: WaterBottle, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0038]
+   "What with?"
+
+
+--------------------------------------------------
+- Layer: Sign
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Sign)
+ title: "Sign"
+
+  -----
+  Action: "Look at" (#0, layer: Sign, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0039]
+   "You have just started a short tutorial."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0040]
+   "You have just learnt how to look at anything in the room. Looking at an item will find more details about it, and you may find useful details about it."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0041]
+   "By pressing and holding the mouse button and selecting the other two symbols on the pop up menu"
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0042]
+   "you can also attempt to use or pick up an item by selecting the hand symbol."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0043]
+   "You can try talking to items as people by selecting the mouth symbol."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0044]
+   "If you start a conversation with someone, a list of possible things you can say will appear in the lower left of the screen."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0045]
+   "Select the one you want to say by moving the mouse over the option and pressing the mouse button."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0046]
+   "In the lower right of the screen is a chest icon. Selecting it with the mouse will open your inventory of items you have picked up."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0047]
+   "You can also open it by pressing the &quot;i&quot; button on your keyboard. You can interact with items in you inventory the same as items in the room."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0048]
+   "If you press and release the mouse button on an inventory item, it will be come your mouse pointer, you can now try using it with items in the room by pressing the mouse button on them."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0049]
+   "If you do this with a person, it will attempt to give the item to them."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0050]
+   "You can put the item back in you inventory by quickly pressing the mouse button twice while it is not over any object."
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0051]
+   "You can open the main menu by pressing the &quot;m&quot; on the keyboard at anytime. From there you can save or load your game."
+
+  -----
+  Action: "Talk to" (#1, layer: Sign, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0052]
+   "I'm not talking to that!"
+
+  -----
+  Action: "Use" (#2, layer: Sign, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0053]
+   "I see no use for that."
+
+   - Dialog [puppet: ego, voice::FT_StorageRoom0054]
+   "Yeah, it's not like it's a chicken with a pully in the middle."
+
+
+--------------------------------------------------
+- Layer: CheatHall
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatHall)
+ title: "Cheat Hall"
+
+  -----
+  Action: "Look at" (#0, layer: CheatHall, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatHall, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatHall, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0055]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatOT
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatOT)
+ title: "Cheat OT"
+
+  -----
+  Action: "Look at" (#0, layer: CheatOT, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatOT, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatOT, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0056]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatMap
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatMap)
+ title: "Cheat Map"
+
+  -----
+  Action: "Look at" (#0, layer: CheatMap, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatMap, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatMap, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0057]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatMapDay
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatMapDay)
+ title: "Cheat Map Day"
+
+  -----
+  Action: "Look at" (#0, layer: CheatMapDay, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatMapDay, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatMapDay, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0058]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatOffice
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatOffice)
+ title: "Cheat Office"
+
+  -----
+  Action: "Look at" (#0, layer: CheatOffice, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatOffice, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatOffice, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0059]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatCoffeeShop
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatCoffeeShop)
+ title: "Cheat Coffee Shop"
+
+  -----
+  Action: "Look at" (#0, layer: CheatCoffeeShop, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatCoffeeShop, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatCoffeeShop, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0060]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatHomeComputer
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatHomeComputer)
+ title: "Cheat Home Computer"
+
+  -----
+  Action: "Look at" (#0, layer: CheatHomeComputer, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatHomeComputer, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatHomeComputer, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0061]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatSecretLair
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatSecretLair)
+ title: "Cheat Secret Lair"
+
+  -----
+  Action: "Look at" (#0, layer: CheatSecretLair, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatSecretLair, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatSecretLair, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_StorageRoom0062]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
+
+
+
+
+TREES
+
+
+
+_avatar,"One of the pockets has a key in it.",PocketKey
+ego,"It won't fit any of the locks in here, don't bother trying.",:FT_StorageRoom0000
+_avatar,"I'm not wearing old scrubs!",WearOldScubs
+ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0001
+_avatar,"Looks like old medical scrubs",:FT_StorageRoom0002
+_avatar,"I'm not wearing old scrubs!",:FT_StorageRoom0003
+ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0004
+_avatar,"Looks like old medical scrubs.",:FT_StorageRoom0005
+_avatar,"I'm not wearing old scrubs!",:FT_StorageRoom0006
+ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0007
+_avatar,"There is a ID card in here.",IdCard
+ego,"It's not yours, put it back!",:FT_StorageRoom0008
+_avatar,"I'm not wearing old scrubs!",:FT_StorageRoom0009
+ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0010
+_avatar,"Looks like old medical scrubs",LooksOldScrubs
+_avatar,"I'm not wearing old scrubs!",:FT_StorageRoom0011
+ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0012
+_avatar,"It's a filling cabinet and it appears to be locked.",LockedCabenet
+ego,"I doubt there is anything important in there.",:FT_StorageRoom0013
+_avatar,"It's locked firmly shut.",LockedShut
+_avatar,"It doesn't fit the lock.",DoesntFitLock
+ego,"Maybe you aren't trying hard enough.",:FT_StorageRoom0014
+_avatar,"Lets try and pick the lock.",PickLock
+_avatar,"That worked! I wonder what's inside?",:FT_StorageRoom0015
+ego,"I doubt there is anything important in there.",:FT_StorageRoom0016
+_avatar,"It's a unlocked filing cabinet.",UnlockedCabenet
+_avatar,"It's a lot of Future Tech company documents in here. Employee personal files. Shame there are no photo on them. It looks like the CEO is a Ms. Sarah Bio.",FTDocs
+ego,"That isn't worth remembering.",:FT_StorageRoom0017
+_avatar,"The handel doesn't work, and there is no lock on the door.",NoHandle
+ego,"Try giving it a push.",:FT_StorageRoom0018
+_avatar,"Is anyone there?",AnyoneThere
+ego,"I'm here. I'm your sub-conscience.",:FT_StorageRoom0019
+_avatar,"I don't think it is a push door.",NotPushDoor
+ego,"Try the handle.",:FT_StorageRoom0020
+_avatar,"There is no key hole.",NoKeyHole
+_avatar,"It's open now.",OpenNow
+_avatar,"Is anyone there?",AnyoneThere
+ego,"I'm here. I'm your sub-conscience.",:FT_StorageRoom0021
+_avatar,"There is no key hole.",NoKeyHole
+_avatar,"It's open.",OpenNow
+_avatar,"Is anyone there?",AnyoneThere
+ego,"I'm here. I'm your sub-conscience.",:FT_StorageRoom0022
+_avatar,"There is no key hole.",NoKeyHole
+_avatar,"Looks a bit hi-tech, I think it may be a scanner of some sort. There is a slot that looks like it is a credit card reader.",LooksScanner
+ego,"Looks broken to me.",:FT_StorageRoom0023
+_avatar,"There is nothing to press to start it, just a slot and a scanner.",NoStartButton
+ego,"I'd try to find the start button if I were you.",:FT_StorageRoom0024
+_avatar,"It scanned my iris, but didn't open the door.",ScannedIris
+ego,"You clearly don't work here.",:FT_StorageRoom0025
+_avatar,"That might work, I need to activate the scanner and I'll try that.",MightWork
+ego,"You think a photo will fool an iris scanner. Ha!",:FT_StorageRoom0026
+_avatar,"It's a scanner and a slot for an key card.",ScannerAndSlot
+_avatar,"There is nothing to press to start it, just a slot and a scanner.",NoStartButton
+_avatar,"It must be a cheap iris scanner to be fooled by a photo.",CheapScanner
+ego,"Yeah. I guess it must.",:FT_StorageRoom0027
+_avatar,"I need to activate the scanner and I'll try that.",NeedToActivate
+ego,"Find that start button.",:FT_StorageRoom0028
+_avatar,"There is a key hole in the door.",KeyHole
+ego,"You could always trying using your finger to pick the lock.",:FT_StorageRoom0029
+_avatar,"Is anyone there?",AnyoneThere
+ego,"I'm here. I'm your sub-conscience.",:FT_StorageRoom0030
+_avatar,"It's is locked firmly shut.",LockedShut
+_avatar,"It doesn't fit the lock.",DoesntFitLock
+ego,"Maybe you aren't trying hard enough.",:FT_StorageRoom0031
+_avatar,"Some sealed boxes, from MedialSupplies.com. I wonder what is inside? If only I could break the tape with something pointy.",SealedBoxes
+ego,"It's probably just more scrubs.",:FT_StorageRoom0032
+_avatar,"The tape is sealling these firmly shut.",TapeSealing
+_avatar,"That should break the tape sealing these. There are scrubs on hangers in here, I'll take one.",BreakTape
+ego,"See, told you it was just more scrubs.",:FT_StorageRoom0033
+_avatar,"Just more scrubs, I have enough of those.",MoreScubs
+_avatar,"I don't need any more of those.",HaveEnough
+_avatar,"A box of framed photos.",FramedPhotos
+_avatar,"There are too many to take them all, I'll take one if I need one later.",TooMany
+_avatar,"A box of employee photos in frames.",BoxFramedPhotos
+ego,"What a load of junk.",:FT_StorageRoom0034
+_avatar,"This one of the CEO might be useful.",CeoUseful
+ego,"What makes you think that?",:FT_StorageRoom0035
+_avatar,"A box of employee photos in frames.",BoxFramedPhotos
+ego,"What a load of junk.",:FT_StorageRoom0036
+_avatar,"I don't need any more of those.",HaveEnough
+_avatar,"It's a full bottle of water for one of those water dispensers.",:FT_StorageRoom0037
+_avatar,"What with?",:FT_StorageRoom0038
+_avatar,"You have just started a short tutorial.",:FT_StorageRoom0039
+_avatar,"You have just learnt how to look at anything in the room. Looking at an item will find more details about it, and you may find useful details about it.",:FT_StorageRoom0040
+_avatar,"By pressing and holding the mouse button and selecting the other two symbols on the pop up menu",:FT_StorageRoom0041
+_avatar,"you can also attempt to use or pick up an item by selecting the hand symbol.",:FT_StorageRoom0042
+_avatar,"You can try talking to items as people by selecting the mouth symbol.",:FT_StorageRoom0043
+_avatar,"If you start a conversation with someone, a list of possible things you can say will appear in the lower left of the screen.",:FT_StorageRoom0044
+_avatar,"Select the one you want to say by moving the mouse over the option and pressing the mouse button.",:FT_StorageRoom0045
+_avatar,"In the lower right of the screen is a chest icon. Selecting it with the mouse will open your inventory of items you have picked up.",:FT_StorageRoom0046
+_avatar,"You can also open it by pressing the &quot;i&quot; button on your keyboard. You can interact with items in you inventory the same as items in the room.",:FT_StorageRoom0047
+_avatar,"If you press and release the mouse button on an inventory item, it will be come your mouse pointer, you can now try using it with items in the room by pressing the mouse button on them.",:FT_StorageRoom0048
+_avatar,"If you do this with a person, it will attempt to give the item to them.",:FT_StorageRoom0049
+_avatar,"You can put the item back in you inventory by quickly pressing the mouse button twice while it is not over any object.",:FT_StorageRoom0050
+_avatar,"You can open the main menu by pressing the &quot;m&quot; on the keyboard at anytime. From there you can save or load your game.",:FT_StorageRoom0051
+_avatar,"I'm not talking to that!",:FT_StorageRoom0052
+_avatar,"I see no use for that.",:FT_StorageRoom0053
+ego,"Yeah, it's not like it's a chicken with a pully in the middle.",:FT_StorageRoom0054
+_avatar,"Cheat",:FT_StorageRoom0055
+_avatar,"Cheat",:FT_StorageRoom0056
+_avatar,"Cheat",:FT_StorageRoom0057
+_avatar,"Cheat",:FT_StorageRoom0058
+_avatar,"Cheat",:FT_StorageRoom0059
+_avatar,"Cheat",:FT_StorageRoom0060
+_avatar,"Cheat",:FT_StorageRoom0061
+_avatar,"Cheat",:FT_StorageRoom0062
+
+
+

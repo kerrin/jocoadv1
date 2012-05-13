@@ -1,0 +1,741 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: SecureDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SecureDoor)
+ title: "Door"
+
+  -----
+  Action: "Look at" (#0, layer: SecureDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0000]
+   "It's a door."
+
+  -----
+  Action: "Talk to" (#1, layer: SecureDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: SecureDoor, state: main)
+
+
+--------------------------------------------------
+- Layer: CoatHooks
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CoatHooks)
+ title: "Coat Hooks"
+
+  -----
+  Action: "Look at" (#0, layer: CoatHooks, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0001]
+   "It's a place to hang my hat...or coat and stethoscope."
+
+   - Dialog [puppet: ego, voice::FT_Office0079]
+   "Where ever I lay my hat, that's my home."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0080]
+   "I didn't know I could sing."
+
+   - Dialog [puppet: ego, voice::FT_Office0081]
+   "You can't!"
+
+  -----
+  Action: "Talk to" (#1, layer: CoatHooks, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CoatHooks, state: main)
+
+
+--------------------------------------------------
+- Layer: Stethoscope
+--------------------------------------------------
+ --------------------------------------------------
+ State: visible (layer: Stethoscope)
+ title: "Stethoscope"
+
+  -----
+  Action: "Look at" (#0, layer: Stethoscope, state: visible)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0076]
+   "It's my stethoscope"
+
+   - Dialog [puppet: ego, voice::FT_Office0077]
+   "Good for listening to quite things."
+
+   - Dialog [puppet: ego, voice::FT_Office0078]
+   "I mean, it's completely useless."
+
+  -----
+  Action: "Talk to" (#1, layer: Stethoscope, state: visible)
+
+  -----
+  Action: "Use" (#2, layer: Stethoscope, state: visible)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0002]
+   "Sure, I'll take that."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0003]
+   "I am a doctor after all."
+
+   - Dialog [puppet: ego, voice::FT_Office0004]
+   "Well, I guess that isn't stealling...unless you take it off Future Tech premises."
+
+ --------------------------------------------------
+ State: taken (layer: Stethoscope)
+ title: "Stethoscope"
+
+  -----
+  Action: "Look at" (#0, layer: Stethoscope, state: taken)
+
+  -----
+  Action: "Talk to" (#1, layer: Stethoscope, state: taken)
+
+  -----
+  Action: "Use" (#2, layer: Stethoscope, state: taken)
+
+
+--------------------------------------------------
+- Layer: GuardJacket
+--------------------------------------------------
+ --------------------------------------------------
+ State: hidden (layer: GuardJacket)
+ title: "Guard Jacket"
+
+  -----
+  Action: "Look at" (#0, layer: GuardJacket, state: hidden)
+
+  -----
+  Action: "Talk to" (#1, layer: GuardJacket, state: hidden)
+
+  -----
+  Action: "Use" (#2, layer: GuardJacket, state: hidden)
+
+ --------------------------------------------------
+ State: visibleGuard (layer: GuardJacket)
+ title: "Guards Jacket"
+
+  -----
+  Action: "Look at" (#0, layer: GuardJacket, state: visibleGuard)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0005]
+   "It's the security guards jacket"
+
+  -----
+  Action: "Talk to" (#1, layer: GuardJacket, state: visibleGuard)
+
+  -----
+  Action: "Use" (#2, layer: GuardJacket, state: visibleGuard)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0006]
+   "I don't think the guard would like that."
+
+ --------------------------------------------------
+ State: visibleNoGuardKey (layer: GuardJacket)
+ title: "Guards Jacket"
+
+  -----
+  Action: "Look at" (#0, layer: GuardJacket, state: visibleNoGuardKey)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0007]
+   "It's the security guards jacket"
+
+   - Dialog [puppet: ego, voice::FT_Office0075]
+   "Yeah, it's the guards! Don't touch."
+
+  -----
+  Action: "Talk to" (#1, layer: GuardJacket, state: visibleNoGuardKey)
+
+  -----
+  Action: "Use" (#2, layer: GuardJacket, state: visibleNoGuardKey)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0008]
+   "There is a key in here. I'll just borrow it."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0009]
+   "There is an iPod in here. I'll just borrow it."
+
+   - Dialog [puppet: ego, voice::FT_Office0010]
+   "You seem very happy to &quot'borrow&quot; things that aren't yours! Have you considered you might just be a character in an aventure game...or a theif?"
+
+   - Dialog [puppet: _avatar, voice::FT_Office0011]
+   "Nothing here."
+
+   - Dialog [puppet: ego, voice::FT_Office0012]
+   "That's because you stole it all already."
+
+ --------------------------------------------------
+ State: visibleNoGuardNoKey (layer: GuardJacket)
+ title: "Guards Jacket"
+
+  -----
+  Action: "Look at" (#0, layer: GuardJacket, state: visibleNoGuardNoKey)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0013]
+   "It's the security guards jacket"
+
+  -----
+  Action: "Talk to" (#1, layer: GuardJacket, state: visibleNoGuardNoKey)
+
+  -----
+  Action: "Use" (#2, layer: GuardJacket, state: visibleNoGuardNoKey)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0014]
+   "There is a key in here. I'll just borrow it."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0015]
+   "There is an iPod in here. I'll just borrow it."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0016]
+   "Nothing here"
+
+
+--------------------------------------------------
+- Layer: AC
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: AC)
+ title: "Air Con Control"
+
+  -----
+  Action: "Look at" (#0, layer: AC, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0017]
+   "It's the air conditioning control panel."
+
+  -----
+  Action: "Talk to" (#1, layer: AC, state: main)
+
+  -----
+  Action: "Use" (#2, layer: AC, state: main)
+
+
+--------------------------------------------------
+- Layer: Phone
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Phone)
+ title: "Phone"
+
+  -----
+  Action: "Look at" (#0, layer: Phone, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0018]
+   "It's my work phone."
+
+   - Dialog [puppet: ego, voice::FT_Office0074]
+   "It doesn't work, so that is a bit misleading."
+
+  -----
+  Action: "Talk to" (#1, layer: Phone, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Phone, state: main)
+
+  -----
+  Item: "DigitalFob", "" (layer: Phone, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0019]
+   "Maybe later"
+
+
+--------------------------------------------------
+- Layer: Computer
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Computer)
+ title: "Computer"
+
+  -----
+  Action: "Look at" (#0, layer: Computer, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0020]
+   "It's my work computer"
+
+  -----
+  Action: "Talk to" (#1, layer: Computer, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Computer, state: main)
+
+
+--------------------------------------------------
+- Layer: Desk
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Desk)
+ title: "Desk"
+
+  -----
+  Action: "Look at" (#0, layer: Desk, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0021]
+   "It's a desk and draws."
+
+  -----
+  Action: "Talk to" (#1, layer: Desk, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Desk, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0022]
+   "It's locked"
+
+  -----
+  Item: "Key", "" (layer: Desk, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0023]
+   "It fits! I wondered if I'd ever find the real use for this!"
+
+ --------------------------------------------------
+ State: Unlocked (layer: Desk)
+ title: "Desk"
+
+  -----
+  Action: "Look at" (#0, layer: Desk, state: Unlocked)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0024]
+   "It's a desk and draws."
+
+  -----
+  Action: "Talk to" (#1, layer: Desk, state: Unlocked)
+
+  -----
+  Action: "Use" (#2, layer: Desk, state: Unlocked)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0025]
+   "There is a digital device in here. I wonder what it's for?"
+
+ --------------------------------------------------
+ State: UnlockedEmpty (layer: Desk)
+ title: "Desk"
+
+  -----
+  Action: "Look at" (#0, layer: Desk, state: UnlockedEmpty)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0026]
+   "It's a desk and draws."
+
+  -----
+  Action: "Talk to" (#1, layer: Desk, state: UnlockedEmpty)
+
+  -----
+  Action: "Use" (#2, layer: Desk, state: UnlockedEmpty)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0027]
+   "There's nothing else in here."
+
+
+--------------------------------------------------
+- Layer: BlueChair
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: BlueChair)
+ title: "Blue Chair"
+
+  -----
+  Action: "Look at" (#0, layer: BlueChair, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0028]
+   "It a chair for the client."
+
+  -----
+  Action: "Talk to" (#1, layer: BlueChair, state: main)
+
+  -----
+  Action: "Use" (#2, layer: BlueChair, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0029]
+   "I'm not tired."
+
+
+--------------------------------------------------
+- Layer: BrownChair
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: BrownChair)
+ title: "Brown Chair"
+
+  -----
+  Action: "Look at" (#0, layer: BrownChair, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0030]
+   "It's my chair."
+
+   - Dialog [puppet: ego, voice::FT_Office0031]
+   "Are you just saying that so if you take it, I won't say you are stealling it?"
+
+  -----
+  Action: "Talk to" (#1, layer: BrownChair, state: main)
+
+  -----
+  Action: "Use" (#2, layer: BrownChair, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0032]
+   "I'm not tired."
+
+
+--------------------------------------------------
+- Layer: picturehula
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: picturehula)
+ title: "Picture"
+
+  -----
+  Action: "Look at" (#0, layer: picturehula, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0033]
+   "It's a painting of a hula woman."
+
+  -----
+  Action: "Talk to" (#1, layer: picturehula, state: main)
+
+  -----
+  Action: "Use" (#2, layer: picturehula, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0034]
+   "I don't want it"
+
+
+--------------------------------------------------
+- Layer: mysterydoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: mysterydoor)
+ title: "Door"
+
+  -----
+  Action: "Look at" (#0, layer: mysterydoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0035]
+   "It's a door."
+
+  -----
+  Action: "Talk to" (#1, layer: mysterydoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: mysterydoor, state: main)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0036]
+   "It's not a very big room. I don't think there is space for you in here."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0037]
+   "Not with the 3 pirates as well."
+
+   - Dialog [puppet: pirates, voice::FT_Office0038]
+   "Who be you talkin' to boy?"
+
+   - Dialog [puppet: _avatar, voice::FT_Office0039]
+   "Oh, er..I don't know. Why are you in here?"
+
+   - Dialog [puppet: pirates, voice::FT_Office0040]
+   "Do yar wanna become a swashbuckleing pirate, boy?"
+
+
+--------------------------------------------------
+- Layer: Guard
+--------------------------------------------------
+ --------------------------------------------------
+ State: hidden (layer: Guard)
+ title: "Guard"
+
+  -----
+  Action: "Look at" (#0, layer: Guard, state: hidden)
+
+  -----
+  Action: "Talk to" (#1, layer: Guard, state: hidden)
+
+  -----
+  Action: "Use" (#2, layer: Guard, state: hidden)
+
+ --------------------------------------------------
+ State: visible (layer: Guard)
+ title: "Guard"
+
+  -----
+  Action: "Look at" (#0, layer: Guard, state: visible)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0041]
+   "It the security guard I asked to come to my office."
+
+  -----
+  Action: "Talk to" (#1, layer: Guard, state: visible)
+
+  -----
+  Action: "Use" (#2, layer: Guard, state: visible)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0042]
+   "I'm not using people!"
+
+
+--------------------------------------------------
+- Layer: pirates
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: pirates)
+ title: "Pirates"
+
+  -----
+  Action: "Look at" (#0, layer: pirates, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: pirates, state: main)
+
+  -----
+  Action: "Use" (#2, layer: pirates, state: main)
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+
+
+TREES
+--------------------------------------------------
+- Tree: Guard
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: Guard)
+
+ --------------------------------------------------
+ Tier: "_0" (tree: Guard)
+
+  -----
+  Topic: "_2" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0045]
+   "Can I have the key to the medical cabinet in the operting theater?"
+
+   - Dialog [puppet: Guard, voice::FT_Office0046]
+   "Sorry doctor, I'd lose my job if i gave it to you."
+
+  -----
+  Topic: "_4" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0047]
+   "I can't get my draw open."
+
+   - Dialog [puppet: Guard, voice::FT_Office0048]
+   "That would be because it is locked."
+
+  -----
+  Topic: "_5" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0049]
+   "I can't unlock my computer."
+
+   - Dialog [puppet: Guard, voice::FT_Office0050]
+   "That is an IT issue. Call them for that one."
+
+  -----
+  Topic: "_7" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0051]
+   "It's cold in here."
+
+   - Dialog [puppet: Guard, voice::FT_Office0052]
+   "Yeah, is there something up with your air con?"
+
+   - Dialog [puppet: _avatar, voice::FT_Office0053]
+   "No"
+
+   - Dialog [puppet: Guard, voice::FT_Office0054]
+   "I need my jacket on in here."
+
+  -----
+  Topic: "_6" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0055]
+   "It's warm in here."
+
+   - Dialog [puppet: Guard, voice::FT_Office0056]
+   "Yeah now you mention it. It is."
+
+   - Dialog [puppet: Guard, voice::FT_Office0057]
+   "Do you mind if I take my jacket off?"
+
+   - Dialog [puppet: _avatar, voice::FT_Office0058]
+   "No, go ahead."
+
+   - Dialog [puppet: Guard, voice::FT_Office0059]
+   "Thanks."
+
+  -----
+  Topic: "_8" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0060]
+   "Should you not be getting back to your office?"
+
+   - Dialog [puppet: Guard, voice::FT_Office0061]
+   "Not unless something more important comes up."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0062]
+   "Like what?"
+
+   - Dialog [puppet: Guard, voice::FT_Office0063]
+   "Something like an attempted break in. Both me the the other guard would need to study the security cameras closely."
+
+  -----
+  Topic: "_3" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0064]
+   "Bye"
+
+  -----
+  Topic: "_0" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0043]
+   "Hi"
+
+   - Dialog [puppet: Guard, voice::FT_Office0044]
+   "Hi Dr Martin"
+
+  -----
+  Topic: "_1" (tree: Guard, tier: _0)
+
+   - Dialog [puppet: _avatar, voice::FT_Office0065]
+   "Bye"
+
+--------------------------------------------------
+- Tree: pirates
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: pirates)
+
+  -----
+  Topic: "_0" (tree: pirates, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office0066]
+   "Yes"
+
+   - Dialog [puppet: pirates, voice::FT_Office0067]
+   "Then Ye'll have to complete three tasks for us."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0068]
+   "Sounds like too much work."
+
+  -----
+  Topic: "_1" (tree: pirates, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office0069]
+   "No"
+
+   - Dialog [puppet: pirates, voice::FT_Office0070]
+   "Then Ye'll have to complete three tasks for us."
+
+   - Dialog [puppet: _avatar, voice::FT_Office0071]
+   "Wait, I said no!"
+
+  -----
+  Topic: "_2" (tree: pirates, tier: )
+
+   - Dialog [puppet: _avatar, voice::FT_Office0072]
+   "I'm a surgeon!"
+
+   - Dialog [puppet: pirates, voice::FT_Office0073]
+   "That don't be an answer."
+
+
+
+
+_avatar,"It's a door.",:FT_Office0000
+_avatar,"It's a place to hang my hat...or coat and stethoscope.",:FT_Office0001
+ego,"Where ever I lay my hat, that's my home.",:FT_Office0079
+_avatar,"I didn't know I could sing.",:FT_Office0080
+ego,"You can't!",:FT_Office0081
+_avatar,"It's my stethoscope",:FT_Office0076
+ego,"Good for listening to quite things.",:FT_Office0077
+ego,"I mean, it's completely useless.",:FT_Office0078
+_avatar,"Sure, I'll take that.",:FT_Office0002
+_avatar,"I am a doctor after all.",:FT_Office0003
+ego,"Well, I guess that isn't stealling...unless you take it off Future Tech premises.",:FT_Office0004
+_avatar,"It's the security guards jacket",:FT_Office0005
+_avatar,"I don't think the guard would like that.",:FT_Office0006
+_avatar,"It's the security guards jacket",:FT_Office0007
+ego,"Yeah, it's the guards! Don't touch.",:FT_Office0075
+_avatar,"There is a key in here. I'll just borrow it.",:FT_Office0008
+_avatar,"There is an iPod in here. I'll just borrow it.",:FT_Office0009
+ego,"You seem very happy to &quot'borrow&quot; things that aren't yours! Have you considered you might just be a character in an aventure game...or a theif?",:FT_Office0010
+_avatar,"Nothing here.",:FT_Office0011
+ego,"That's because you stole it all already.",:FT_Office0012
+_avatar,"It's the security guards jacket",:FT_Office0013
+_avatar,"There is a key in here. I'll just borrow it.",:FT_Office0014
+_avatar,"There is an iPod in here. I'll just borrow it.",:FT_Office0015
+_avatar,"Nothing here",:FT_Office0016
+_avatar,"It's the air conditioning control panel.",:FT_Office0017
+_avatar,"It's my work phone.",:FT_Office0018
+ego,"It doesn't work, so that is a bit misleading.",:FT_Office0074
+_avatar,"Maybe later",:FT_Office0019
+_avatar,"It's my work computer",:FT_Office0020
+_avatar,"It's a desk and draws.",:FT_Office0021
+_avatar,"It's locked",:FT_Office0022
+_avatar,"It fits! I wondered if I'd ever find the real use for this!",:FT_Office0023
+_avatar,"It's a desk and draws.",:FT_Office0024
+_avatar,"There is a digital device in here. I wonder what it's for?",:FT_Office0025
+_avatar,"It's a desk and draws.",:FT_Office0026
+_avatar,"There's nothing else in here.",:FT_Office0027
+_avatar,"It a chair for the client.",:FT_Office0028
+_avatar,"I'm not tired.",:FT_Office0029
+_avatar,"It's my chair.",:FT_Office0030
+ego,"Are you just saying that so if you take it, I won't say you are stealling it?",:FT_Office0031
+_avatar,"I'm not tired.",:FT_Office0032
+_avatar,"It's a painting of a hula woman.",:FT_Office0033
+_avatar,"I don't want it",:FT_Office0034
+_avatar,"It's a door.",:FT_Office0035
+_avatar,"It's not a very big room. I don't think there is space for you in here.",:FT_Office0036
+_avatar,"Not with the 3 pirates as well.",:FT_Office0037
+pirates,"Who be you talkin' to boy?",:FT_Office0038
+_avatar,"Oh, er..I don't know. Why are you in here?",:FT_Office0039
+pirates,"Do yar wanna become a swashbuckleing pirate, boy?",:FT_Office0040
+_avatar,"It the security guard I asked to come to my office.",:FT_Office0041
+_avatar,"I'm not using people!",:FT_Office0042
+_avatar,"Can I have the key to the medical cabinet in the operting theater?",:FT_Office0045
+Guard,"Sorry doctor, I'd lose my job if i gave it to you.",:FT_Office0046
+_avatar,"I can't get my draw open.",:FT_Office0047
+Guard,"That would be because it is locked.",:FT_Office0048
+_avatar,"I can't unlock my computer.",:FT_Office0049
+Guard,"That is an IT issue. Call them for that one.",:FT_Office0050
+_avatar,"It's cold in here.",:FT_Office0051
+Guard,"Yeah, is there something up with your air con?",:FT_Office0052
+_avatar,"No",:FT_Office0053
+Guard,"I need my jacket on in here.",:FT_Office0054
+_avatar,"It's warm in here.",:FT_Office0055
+Guard,"Yeah now you mention it. It is.",:FT_Office0056
+Guard,"Do you mind if I take my jacket off?",:FT_Office0057
+_avatar,"No, go ahead.",:FT_Office0058
+Guard,"Thanks.",:FT_Office0059
+_avatar,"Should you not be getting back to your office?",:FT_Office0060
+Guard,"Not unless something more important comes up.",:FT_Office0061
+_avatar,"Like what?",:FT_Office0062
+Guard,"Something like an attempted break in. Both me the the other guard would need to study the security cameras closely.",:FT_Office0063
+_avatar,"Bye",:FT_Office0064
+_avatar,"Hi",:FT_Office0043
+Guard,"Hi Dr Martin",:FT_Office0044
+_avatar,"Bye",:FT_Office0065
+_avatar,"Yes",:FT_Office0066
+pirates,"Then Ye'll have to complete three tasks for us.",:FT_Office0067
+_avatar,"Sounds like too much work.",:FT_Office0068
+_avatar,"No",:FT_Office0069
+pirates,"Then Ye'll have to complete three tasks for us.",:FT_Office0070
+_avatar,"Wait, I said no!",:FT_Office0071
+_avatar,"I'm a surgeon!",:FT_Office0072
+pirates,"That don't be an answer.",:FT_Office0073
+
+
+

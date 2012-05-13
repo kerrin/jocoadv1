@@ -1,0 +1,1986 @@
+<room id="FT_Reception" coreLibs="lib/FT_Foyer.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="92" y="631" w="803" h="106" nodes="n0,n1"/>
+      </boxes>
+      <nodes>
+        <node id="n0" x="879" y="669" join="n1" trap="0" name="SecureDoor"/>
+        <node id="n1" x="98" y="673" join="n0" trap="0" name="StreetDoor"/>
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="SecureDoor" turn="4" x="879" y="669"/>
+    <position id="StreetDoor" turn="4" x="98" y="673"/>
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="531" y="631" scale="1.5" rate="1.5" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="531" y="738" scale="2" rate="2" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/FT_Foyer.swf:BG_FT_Foyer" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="SecureDoor" type="puppet" asset="" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="878" y="135" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="115" hitH="545" shape="rect">
+          <param mapX="180" mapY="466" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Secure Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's the door to the hallway. You need a keycard to get through.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[I don't think the guard will like me going back there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="DayLocked" x="877" y="132" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="119" hitH="547" shape="rect">
+          <param mapX="878" mapY="671" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Secure Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's the door to the hallway. You need a keycard to get through.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[You need a keycard to get through.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <layer target="_current:SecureDoor" state="DayOpen"/>
+                <game room="FT_HallDay:Reception"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="DayOpen" x="876" y="131" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="118" hitH="555" shape="rect">
+          <param mapX="878" mapY="670" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Secure Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's the door to the hallway.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_HallDay"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_HallDay:Reception"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="poster" type="puppet" asset="lib/FT_Foyer.swf:Picture" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="423" y="71" img="1" imgX="0" imgY="0" imgW="0.2" imgH="0.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="170" hitH="231" shape="rect">
+          <param mapX="508" mapY="668" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Poster]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's a poster advertising the cybernetic enhanchments they perform here at Future tech.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[The slogan is, &quot;It's gonna be the Future Soon. Lets get ready for it.&quot;]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[I don't want it.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Reception" type="puppet" asset="lib/FT_Foyer.swf:ReceptionDesk" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="340" y="430" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="302" hitH="200" shape="rect">
+          <param mapX="499" mapY="656" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Reception Desk]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's a reception desk.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[Nothing of interest.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Day" x="340" y="430" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="-150" hitW="302" hitH="350" shape="rect">
+          <param mapX="452" mapY="650" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xCCFF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Receptionist]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's the company receptionist]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <tree load="Receptionist"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[I don't feel like using that person, for now.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="StreetDoor" type="puppet" asset="" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="35" y="165" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="72" hitH="528" shape="rect">
+          <param mapX="98" mapY="673" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's the door to get outside.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[Hey, I just remembered something. I think its my address...]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="">
+                  <en><![CDATA[How convenient.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[first_leave] EQ start">
+                    <dialogue playlist="0,1"/>
+                  </if>
+                </logic>
+                <game room="Map:Office"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Brochures" type="puppet" asset="lib/FT_Foyer.swf:Brocheurs" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="142" y="255" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="196" hitH="345" shape="rect">
+          <param mapX="270" mapY="649" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Brochures]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's a lot of Future Tech brochures.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[There is one for every augmentation you can think of.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[New eyes, new arms and legs, improve your lung capacity, new improved blood replacement that makes you able to do exercise 5 times as long!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[And here is one for male enhancments...if you know what I mean.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[I don't want that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Customer" type="puppet" asset="lib/FT_Foyer.swf:Customer" depth="6" visible="1" state="night">
+      <states>
+        <state id="night" x="167" y="394" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="91" hitH="136" shape="rect">
+          <param mapX="627" mapY="472" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Seat]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[Some waiting area chairs.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[I don't think the guard will like me sitting down.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Day" x="138" y="296" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="127" hitH="369" shape="rect">
+          <param mapX="325" mapY="656" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00CC00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Customer]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[Just a customer.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[Hi.]]></en>
+                </dia>
+                <dia puppet="Customer" frame="" sound="">
+                  <en><![CDATA[Huh?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <tree load="Customer"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[I don't feel like using that person, for now.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Storm" type="puppet" asset="lib/FT_Foyer.swf:Storm" depth="7" visible="1" state="night">
+      <states>
+        <state id="Day" x="751" y="232" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="8" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="109" hitH="382" shape="rect">
+          <param mapX="615" mapY="642" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFF9900" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Storm]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="night" x="752" y="232" img="0" imgX="0" imgY="0" imgW="2" imgH="2" frame="8" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="109" hitH="382" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Storm]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Paul" type="puppet" asset="lib/FT_Foyer.swf:Paul" depth="8" visible="1" state="night">
+      <states>
+        <state id="Day" x="643" y="245" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="120" hitH="366" shape="rect">
+          <param mapX="617" mapY="645" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFF0000" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Paul]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="night" x="643" y="245" img="0" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="120" hitH="366" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Paul]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="PS" type="puppet" asset="" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="423" y="484" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="94" hitH="137" shape="rect">
+          <param mapX="772" mapY="651" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Seat]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[It's the waiting area.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[I don't think the guard will like me sitting down.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Day" x="643" y="230" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="230" hitH="389" shape="rect">
+          <param mapX="638" mapY="655" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Paul And Storm]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[Hey, it's Paul and Storm!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="">
+                  <en><![CDATA[You sound like a fan, don't bother them, they won't apperciate being bothered by you.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <tree load="PS"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="">
+                  <en><![CDATA[I don't feel like using that person, for now.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="10" visible="1" state="main">
+      <states>
+        <state id="main" x="497" y="657" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="PS">
+      <tier key="r_t0_t0_t4" id="_34">
+        <topic key="t1" id="_37" enabled="0" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[We'd be awesome at arm wrestling, is my 'Madonna' cover band.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[We'd be awesome at arm wrestling, is my 'Madonna' cover band.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Hey, that's our joke premise!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t0" id="_36" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Sounds like you need to think this through a little more.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Sounds like you need to think this through a little more.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[No, I think we have done that enough.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Well, there is still the issue with whose junk we are keeping.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[There is still the issue with whose junk we are keeping, is the name of my 'N-Sync' cover band.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_38" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Surely your going to have to many body parts?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Surely your going to have to many body parts?]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[We're going to have too many body parts, is the name of my 'Osmonds' cover band.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_39" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Aren't you going to be short a few things?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Aren't you going to be short a few things?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Aren't you going to be short a few things? is the name of my 'Prince' cover band.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_42" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Aren't you too old for this?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Aren't you too old for this?]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Aren't you too old for this? is my 'Rollingstones' cover band.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_40" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[This isn't funny anymore, I really have to pee.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[This isn't funny anymore, I really have to pee.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[This isn't funny anymore, I really have to pee, is the name of my 'R. Kelly' cover band.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <tree enableTopic="_current:PS:_37:0"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t0" id="">
+        <topic key="t3" id="_32" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[What does gestault mean?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What does gestault mean?]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Die Gestalt is a German word for form or shape. It is used in English to refer to a concept of 'wholeness']]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[We mean we are going to become one person.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t0" id="_3" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[What do your wives think of the operation?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What do your wives think of the operation?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[I don't know, we haven't told them.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_4" enabled="1" hold="0" expose="" go="_34">
+          <title>
+            <en><![CDATA[Won't that be a little weird?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Won't that be a little weird?]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[In what way?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Well how will you....]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What about when you...]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Never mind.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_34" enabled="1" hold="0" expose="" go="1">
+          <title>
+            <en><![CDATA[What are you going to call your self?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What are you going to call your self?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Paul Storm]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[I thought we were going to be Storm Paul?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Nah, that sounds like there will be other kinds of Paul. Like Sunny Paul]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Well how come your name gets to be first?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Come on we've talked about this. You get the left side, I get the right. It's the way it's always been.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Exactly, isn't it my turn to go first? And I'm right handed!]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[So am I!]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Well how about we have two arms on one side.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Hey! That's not a bad idea! Plus we'd be awesome at arm wrestling!]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Exactly!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <tree enableTopic="_current:PS:_37:1"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_41" enabled="1" hold="1" expose="" go="_34">
+          <title>
+            <en><![CDATA[Have you thought about whose house you will live in?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Have you thought about whose house you will live in?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Well mine obviously.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[What do you mean yours?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_35" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[You guys going to have two heads?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[You guys going to have two heads?]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[No]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[What? Well who's head do we keep then? And what happens to the other persons head? Does it get thrown away? Are you still really you without your head?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Hmmm, I guess two heads are better than one.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Yeah, double brain power!]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Oh my god!]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[So intense.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_5" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[I don't want to discuss the operation anymore.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I don't want to discuss the operation anymore.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I'm starting to feel queezy.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1_t0_t0_t0" id="_11">
+        <topic key="t0" id="_20" enabled="1" hold="1" expose="" go="_start">
+          <title>
+            <en><![CDATA[StAR!wars.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[StAR!wars.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[So we need more pirate jokes.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <tree enableTopic="_current:PS:_21:1"/>
+            <cache field="find_jokes" value="yes"/>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1_t0_t0" id="">
+        <topic key="t0" id="_11" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[BendAR!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[BendAR!]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[You went with that instead of R2D2?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Your favourite film?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_12" enabled="1" hold="1" expose="" go="_11">
+          <title>
+            <en><![CDATA[AR! 2D2]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[AR! 2D2]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Your favourite film?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_13" enabled="1" hold="1" expose="" go="_11">
+          <title>
+            <en><![CDATA[AR!4-P17]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[AR!4-P17]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[You went with that instead of R2D2?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Your favourite film?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_14" enabled="1" hold="1" expose="" go="_11">
+          <title>
+            <en><![CDATA[Optimus Prime]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Optimus Prime]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[You went with that instead of R2D2?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Your favourite film?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_15" enabled="1" hold="1" expose="" go="_11">
+          <title>
+            <en><![CDATA[CybAR!man]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[CybAR!man]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[You went with that instead of R2D2?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Your favourite film?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t7" id="_18" enabled="1" hold="1" expose="" go="_11">
+          <title>
+            <en><![CDATA[iDog]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[iDog]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[You went with that instead of R2D2?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Your favourite film?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t8" id="_19" enabled="1" hold="1" expose="" go="_11">
+          <title>
+            <en><![CDATA[Tod T-1000]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Tod T-1000]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[You went with that instead of R2D2?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Your favourite film?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1_t0" id="_7">
+        <topic key="t0" id="_8" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What then?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What then?]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[We are looking for new pirate jokes.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[You know the ones.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[What is a pirates favourite Droid?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1" id="">
+        <topic key="t0" id="_7" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Talk you out of the operation?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Talk you out of the operation?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[No]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_9" enabled="1" hold="1" expose="" go="_7">
+          <title>
+            <en><![CDATA[Play ukelele on stage with you?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Play ukelele on stage with you?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[No that is Molly's job.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_10" enabled="1" hold="1" expose="" go="_7">
+          <title>
+            <en><![CDATA[What could I possibly do for you?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What could I possibly do for you?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[That wasn't a very funny quip.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t2_t0" id="_22">
+        <topic key="t0" id="_23" enabled="1" hold="1" expose="" go="_start">
+          <title>
+            <en><![CDATA[Is that enough?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Is that enough?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[No, we need more.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Yes, that is loads.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[As a reward, here is a USB key.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[It has a picture of our friend Jonathan on.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[It used to have all his music on, until someone over wrote it with a Tina T-1337 personality file. Naming no names..Paul!]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[It sounded like it would be fun to have an artificial intelligence to talk to, but she only ever wanted to talk about robot things.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Thanks, that sounds....useful?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="">
+              <en><![CDATA[Yeah, I bet you are really glad you did all that work for them!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue playList="0"/>
+            <cache field="pirate_jokes_left" math="-1"/>
+            <logic eval="[pirate_jokes_left] EQ 0">
+              <inventory add="USB"/>
+              <tree enableTopic="_current:PS:_21:0"/>
+              <dialogue playList="2,3,4,5,6"/>
+            </logic>
+            <logic eval="[pirate_jokes_left] NE 0">
+              <dialogue playList="1"/>
+            </logic>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t2" id="_21">
+        <topic key="t0" id="_22" enabled="0" hold="0" expose="" go="1">
+          <title>
+            <en><![CDATA[What do robot pirates drink?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What do robot pirates drink?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Bottles of RAM.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Funny]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_25" enabled="0" hold="0" expose="" go="_22">
+          <title>
+            <en><![CDATA[What is a pirates favourite sock?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What is a pirates favourite sock?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[AR!gile.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Funny]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_26" enabled="0" hold="0" expose="" go="_22">
+          <title>
+            <en><![CDATA[What is a pirates favourite crime?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What is a pirates favourite crime?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[AR!son.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Funny]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_28" enabled="0" hold="0" expose="" go="_22">
+          <title>
+            <en><![CDATA[What is a pirates favourite crime?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What is a pirates favourite crime?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Grand LAR!sony.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Funny]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_29" enabled="0" hold="0" expose="" go="_22">
+          <title>
+            <en><![CDATA[What do you call a parrot saying, 'Pieces of seven! Pieces of seven!'?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What do you call a parrot saying, 'Pieces of seven! Pieces of seven!'?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[A parroty error.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Funny]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t7" id="_33" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[You fight like a cow!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[You fight like a cow!]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Haha! Yeah!]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[That isn't funny on it's own.]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[It's a referance, not a joke.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[We need jokes! New ones!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_30" enabled="1" hold="1" expose="" go="_start">
+          <title>
+            <en><![CDATA[I'm out of jokes.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I'm out of jokes.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Come back when you have more.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0" id="_start">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What are you doing here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What are you doing here?]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[We decided to go for the operation?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[You don't mean?]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[We're becoming a guesalt entity.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_6" enabled="1" hold="0" expose="" go="1">
+          <title>
+            <en><![CDATA[I love your songs.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I love your songs.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Espcecially the one about pirates.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[The Captain's Wife's Lament]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Yeah]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Well, you might be able to do us a favour.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_21" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[I have a pirate joke for you.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I have a pirate joke for you.]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Ok, lets hear it.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_31" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="_root">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hi]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+            <dia puppet="Paul" frame="" sound="">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+            <dia puppet="Storm" frame="" sound="">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="Receptionist">
+      <tier key="r_t0_t0" id="">
+        <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Yes]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[But Dr Martin....you make comments about the patients in their files that you really wouldn't want them to see.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Fine.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_4" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[No]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[No]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[So why would it be ok to let you see your file?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Fine.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Could I have the files you have on me?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Could I have the files you have on me?]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[Oh I'm sorry, I can't give out personal information about our practioners. It wouldn't be professional.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[But it's about me.]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[Surely you know everything their is to know about you?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I'm suffering memory loss at the moment.]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[I'm not falling for that one again.]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[No one has ever told me it is ok to give people files on themselves, under any circumstances.]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[So are you saying it is ok for me to give patients their files too?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_7" enabled="1" hold="0" expose="_8" go="0">
+          <title>
+            <en><![CDATA[What clients do I have today?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What clients do I have today?]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[I'm too busy to talk right now.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[You don't look busy. It looks like your playing mine sweeper on your computer!]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[ No this is important work, it just looks like mine sweeper.]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[Ah! Now look what you made me do I set off all the mines...I mean...er...I lost the document.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_8" enabled="1" hold="0" expose="_9" go="0">
+          <title>
+            <en><![CDATA[Are you still too busy?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Are you still too busy?]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Still player minesweeper?]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[No, I’m playing solitaire now....er...I mean no I’m working now...er...I was always working, I mean I’m checking customer records now.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I didn’t know we had the king and queen of hearts as clients.]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[Please doctor, I’m trying to work.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_9" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Still busy?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Still busy?]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[Yes!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_6" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Why are Paul and Storm here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Why are Paul and Storm here?]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[They're here for a consultation. They want a gustualt entity installed or something.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_5" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hi]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[How can I help you?]]></en>
+            </dia>
+            <dia puppet="Reception" frame="" sound="">
+              <en><![CDATA[Oh, sorry Dr Martin, I didn't realise it was you.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="Customer">
+      <tier key="r_t0" id="">
+        <topic key="t0" id="_1" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[What are you having done?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What are you having done?]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Um...that's private.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I work here.]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Oh right.]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[I'm here for laser eye surgery]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[You should see an optician for that.]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[No, having laser beams coming out my eyes!]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Oh, that sounds dangerous.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Does it?]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Maybe I should think about it some more.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_2" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I'm your doctor, what can I do for you today?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[I'm your doctor, what can I do for you today?]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Er, well, um.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Oh, hold on, you are not the correct person.]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[How do you know you haven't asked my name?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[What is your name?]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Billy]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[No, I'm looking for Arnold.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_4" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Is that backpack surgically attached?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Is that backpack surgically attached?]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Yeah, it was done to fix my asthma. It did a great job.]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[It pumps oxygen directly in to my lungs. I just need to change the oxygen cylinder once a week.]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Now I can play sports, run and you know...with a woman.]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Not that I do any of that, but it good to know I could if the situation arose.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_3" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hi]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+            <dia puppet="Customer" frame="" sound="">
+              <en><![CDATA[Um..hi]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>
