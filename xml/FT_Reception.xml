@@ -1,4 +1,4 @@
-<room id="FT_Reception" coreLibs="lib/FT_Foyer.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+<room id="FT_Reception" coreLibs="lib/FT_Foyer.swf,lib/BG_Office.swf" voiceLibs="voice/V_FT_Foyer.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
   <grids>
     <grid id="main">
       <boxes>
@@ -23,6 +23,7 @@
   <scripts>
     <script id="_enter">
       <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Office.swf:MyMonkey"/>
     </script>
     <script id="_exit">
       <curtain blackout="1"/>
@@ -45,7 +46,7 @@
     <layer id="SecureDoor" type="puppet" asset="" depth="1" visible="1" state="main">
       <states>
         <state id="main" x="878" y="135" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="115" hitH="545" shape="rect">
-          <param mapX="180" mapY="466" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <param mapX="885" mapY="663" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
             <en><![CDATA[Secure Door]]></en>
@@ -56,7 +57,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0000">
                   <en><![CDATA[It's the door to the hallway. You need a keycard to get through.]]></en>
                 </dia>
               </dialog>
@@ -78,7 +79,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0001">
                   <en><![CDATA[I don't think the guard will like me going back there.]]></en>
                 </dia>
               </dialog>
@@ -101,7 +102,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0002">
                   <en><![CDATA[It's the door to the hallway. You need a keycard to get through.]]></en>
                 </dia>
               </dialog>
@@ -123,7 +124,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0003">
                   <en><![CDATA[You need a keycard to get through.]]></en>
                 </dia>
               </dialog>
@@ -139,8 +140,10 @@
               </title>
               <dialog/>
               <script>
+                <dialogue play="none"/>
                 <layer target="_current:SecureDoor" state="DayOpen"/>
                 <game room="FT_HallDay:Reception"/>
+                <tree enableTopic="FT_Reception:HelpMe:_7:0"/>
               </script>
             </action>
           </items>
@@ -157,7 +160,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0004">
                   <en><![CDATA[It's the door to the hallway.]]></en>
                 </dia>
               </dialog>
@@ -191,6 +194,7 @@
               </title>
               <dialog/>
               <script>
+                <dialogue play="none"/>
                 <game room="FT_HallDay:Reception"/>
               </script>
             </action>
@@ -200,7 +204,7 @@
     </layer>
     <layer id="poster" type="puppet" asset="lib/FT_Foyer.swf:Picture" depth="2" visible="1" state="main">
       <states>
-        <state id="main" x="423" y="71" img="1" imgX="0" imgY="0" imgW="0.2" imgH="0.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="170" hitH="231" shape="rect">
+        <state id="main" x="424" y="72" img="1" imgX="0" imgY="0" imgW="0.2" imgH="0.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="170" hitH="231" shape="rect">
           <param mapX="508" mapY="668" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
@@ -212,10 +216,10 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
-                  <en><![CDATA[It's a poster advertising the cybernetic enhanchments they perform here at Future tech.]]></en>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0005">
+                  <en><![CDATA[It's a poster advertising the cybernetic enhancements they perform here at Future Tech.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0006">
                   <en><![CDATA[The slogan is, &quot;It's gonna be the Future Soon. Lets get ready for it.&quot;]]></en>
                 </dia>
               </dialog>
@@ -237,7 +241,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0007">
                   <en><![CDATA[I don't want it.]]></en>
                 </dia>
               </dialog>
@@ -250,9 +254,9 @@
         </state>
       </states>
     </layer>
-    <layer id="Reception" type="puppet" asset="lib/FT_Foyer.swf:ReceptionDesk" depth="3" visible="1" state="main">
+    <layer id="Receptionist" type="puppet" asset="lib/FT_Foyer.swf:Receptionist" depth="3" visible="1" state="main">
       <states>
-        <state id="main" x="340" y="430" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="302" hitH="200" shape="rect">
+        <state id="main" x="340" y="430" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="302" hitH="200" shape="rect">
           <param mapX="499" mapY="656" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
@@ -263,8 +267,106 @@
               <title>
                 <en><![CDATA[Look at]]></en>
               </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Day" x="347" y="266" img="1" imgX="153" imgY="-11" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="302" hitH="350" shape="rect">
+          <param mapX="463" mapY="644" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xCCFF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Receptionist]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0010">
+                  <en><![CDATA[It's the company receptionist]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0135">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0136">
+                  <en><![CDATA[How can I help you?]]></en>
+                </dia>
+                <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0137">
+                  <en><![CDATA[Oh, sorry Dr Martin, I didn't realise it was you.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="Receptionist"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0011">
+                  <en><![CDATA[I don't feel like using that person, for now.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ReceptionDesk" type="puppet" asset="lib/FT_Foyer.swf:ReceptionDesk" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="347" y="416" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="303" hitH="201" shape="rect">
+          <param mapX="513" mapY="637" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Reception Desk]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0008">
                   <en><![CDATA[It's a reception desk.]]></en>
                 </dia>
               </dialog>
@@ -286,8 +388,8 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
-                  <en><![CDATA[Nothing of interest.]]></en>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0009">
+                  <en><![CDATA[Nothing of interest]]></en>
                 </dia>
               </dialog>
               <script>
@@ -297,11 +399,11 @@
           </actions>
           <items/>
         </state>
-        <state id="Day" x="340" y="430" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="-150" hitW="302" hitH="350" shape="rect">
-          <param mapX="452" mapY="650" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xCCFF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+        <state id="Day" x="347" y="416" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="303" hitH="201" shape="rect">
+          <param mapX="506" mapY="641" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
-            <en><![CDATA[Receptionist]]></en>
+            <en><![CDATA[Reception Desk]]></en>
           </title>
           <actions>
             <action id="act0">
@@ -309,8 +411,8 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
-                  <en><![CDATA[It's the company receptionist]]></en>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0008">
+                  <en><![CDATA[It's a reception desk.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -323,8 +425,7 @@
               </title>
               <dialog/>
               <script>
-                <scriptCall global="beforeDialogue"/>
-                <tree load="Receptionist"/>
+                <dialogue play="*"/>
               </script>
             </action>
             <action id="act2">
@@ -332,8 +433,8 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
-                  <en><![CDATA[I don't feel like using that person, for now.]]></en>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0009">
+                  <en><![CDATA[Nothing of interest]]></en>
                 </dia>
               </dialog>
               <script>
@@ -345,7 +446,7 @@
         </state>
       </states>
     </layer>
-    <layer id="StreetDoor" type="puppet" asset="" depth="4" visible="1" state="main">
+    <layer id="StreetDoor" type="puppet" asset="" depth="5" visible="1" state="main">
       <states>
         <state id="main" x="35" y="165" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="72" hitH="528" shape="rect">
           <param mapX="98" mapY="673" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -359,7 +460,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0012">
                   <en><![CDATA[It's the door to get outside.]]></en>
                 </dia>
               </dialog>
@@ -381,10 +482,10 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
-                  <en><![CDATA[Hey, I just remembered something. I think its my address...]]></en>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0013">
+                  <en><![CDATA[Hey, I just remembered something. I think it's my address...]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0014">
                   <en><![CDATA[How convenient.]]></en>
                 </dia>
               </dialog>
@@ -402,7 +503,7 @@
         </state>
       </states>
     </layer>
-    <layer id="Brochures" type="puppet" asset="lib/FT_Foyer.swf:Brocheurs" depth="5" visible="1" state="main">
+    <layer id="Brochures" type="puppet" asset="lib/FT_Foyer.swf:Brocheurs" depth="6" visible="1" state="main">
       <states>
         <state id="main" x="142" y="255" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="196" hitH="345" shape="rect">
           <param mapX="270" mapY="649" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -416,16 +517,16 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0015">
                   <en><![CDATA[It's a lot of Future Tech brochures.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0197">
                   <en><![CDATA[There is one for every augmentation you can think of.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0198">
                   <en><![CDATA[New eyes, new arms and legs, improve your lung capacity, new improved blood replacement that makes you able to do exercise 5 times as long!]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0199">
                   <en><![CDATA[And here is one for male enhancments...if you know what I mean.]]></en>
                 </dia>
               </dialog>
@@ -447,7 +548,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0016">
                   <en><![CDATA[I don't want that.]]></en>
                 </dia>
               </dialog>
@@ -460,7 +561,7 @@
         </state>
       </states>
     </layer>
-    <layer id="Customer" type="puppet" asset="lib/FT_Foyer.swf:Customer" depth="6" visible="1" state="night">
+    <layer id="Customer" type="puppet" asset="lib/FT_Foyer.swf:Customer" depth="7" visible="1" state="night">
       <states>
         <state id="night" x="167" y="394" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="91" hitH="136" shape="rect">
           <param mapX="627" mapY="472" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -474,7 +575,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0017">
                   <en><![CDATA[Some waiting area chairs.]]></en>
                 </dia>
               </dialog>
@@ -496,7 +597,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0018">
                   <en><![CDATA[I don't think the guard will like me sitting down.]]></en>
                 </dia>
               </dialog>
@@ -519,7 +620,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0019">
                   <en><![CDATA[Just a customer.]]></en>
                 </dia>
               </dialog>
@@ -532,15 +633,16 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0159">
                   <en><![CDATA[Hi.]]></en>
                 </dia>
-                <dia puppet="Customer" frame="" sound="">
-                  <en><![CDATA[Huh?]]></en>
+                <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0160">
+                  <en><![CDATA[Um...hi]]></en>
                 </dia>
               </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
                 <tree load="Customer"/>
               </script>
             </action>
@@ -549,7 +651,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0022">
                   <en><![CDATA[I don't feel like using that person, for now.]]></en>
                 </dia>
               </dialog>
@@ -562,10 +664,10 @@
         </state>
       </states>
     </layer>
-    <layer id="Storm" type="puppet" asset="lib/FT_Foyer.swf:Storm" depth="7" visible="1" state="night">
+    <layer id="Storm" type="puppet" asset="lib/FT_Foyer.swf:Storm" depth="8" visible="1" state="night">
       <states>
-        <state id="Day" x="751" y="232" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="8" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="109" hitH="382" shape="rect">
-          <param mapX="615" mapY="642" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFF9900" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+        <state id="Day" x="760" y="232" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="8" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="109" hitH="382" shape="rect">
+          <param mapX="600" mapY="641" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFF9900" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
             <en><![CDATA[Storm]]></en>
@@ -640,10 +742,10 @@
         </state>
       </states>
     </layer>
-    <layer id="Paul" type="puppet" asset="lib/FT_Foyer.swf:Paul" depth="8" visible="1" state="night">
+    <layer id="Paul" type="puppet" asset="lib/FT_Foyer.swf:Paul" depth="9" visible="1" state="night">
       <states>
-        <state id="Day" x="643" y="245" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="120" hitH="366" shape="rect">
-          <param mapX="617" mapY="645" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFF0000" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+        <state id="Day" x="650" y="244" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="120" hitH="366" shape="rect">
+          <param mapX="600" mapY="640" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFF0000" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
             <en><![CDATA[Paul]]></en>
@@ -718,10 +820,10 @@
         </state>
       </states>
     </layer>
-    <layer id="PS" type="puppet" asset="" depth="9" visible="1" state="main">
+    <layer id="PS" type="puppet" asset="" depth="10" visible="1" state="main">
       <states>
         <state id="main" x="423" y="484" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="94" hitH="137" shape="rect">
-          <param mapX="772" mapY="651" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <param mapX="619" mapY="643" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
             <en><![CDATA[Seat]]></en>
@@ -732,7 +834,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0023">
                   <en><![CDATA[It's the waiting area.]]></en>
                 </dia>
               </dialog>
@@ -754,7 +856,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0024">
                   <en><![CDATA[I don't think the guard will like me sitting down.]]></en>
                 </dia>
               </dialog>
@@ -766,7 +868,7 @@
           <items/>
         </state>
         <state id="Day" x="643" y="230" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="230" hitH="389" shape="rect">
-          <param mapX="638" mapY="655" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <param mapX="613" mapY="638" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
             <en><![CDATA[Paul And Storm]]></en>
@@ -777,11 +879,11 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0025">
                   <en><![CDATA[Hey, it's Paul and Storm!]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
-                  <en><![CDATA[You sound like a fan, don't bother them, they won't apperciate being bothered by you.]]></en>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0218">
+                  <en><![CDATA[You sound like a fan, don't bother them, they won't appreciate being bothered by you.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -792,9 +894,20 @@
               <title>
                 <en><![CDATA[Talk to]]></en>
               </title>
-              <dialog/>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0027">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0028">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0029">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+              </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
                 <tree load="PS"/>
               </script>
             </action>
@@ -803,7 +916,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0026">
                   <en><![CDATA[I don't feel like using that person, for now.]]></en>
                 </dia>
               </dialog>
@@ -816,9 +929,9 @@
         </state>
       </states>
     </layer>
-    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="10" visible="1" state="main">
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="11" visible="1" state="main">
       <states>
-        <state id="main" x="497" y="657" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+        <state id="main" x="432" y="660" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
           <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="" blur=""/>
           <vars/>
           <title>
@@ -829,19 +942,60 @@
         </state>
       </states>
     </layer>
+    <layer id="ego" type="puppet" asset="" depth="12" visible="0" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="657" mapY="82" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x3300FF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
   </layers>
   <trees>
     <tree id="PS">
-      <tier key="r_t0_t0_t4" id="_34">
-        <topic key="t1" id="_37" enabled="0" hold="0" expose="" go="0">
+      <tier key="r_t2_t3" id="_34">
+        <topic key="t0" id="_37" enabled="0" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[We'd be awesome at arm wrestling, is my 'Madonna' cover band.]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0204">
               <en><![CDATA[We'd be awesome at arm wrestling, is my 'Madonna' cover band.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0207">
               <en><![CDATA[Hey, that's our joke premise!]]></en>
             </dia>
           </dialog>
@@ -849,42 +1003,44 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t0" id="_36" enabled="1" hold="0" expose="" go="0">
+        <topic key="t1" id="_36" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Sounds like you need to think this through a little more.]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0200">
               <en><![CDATA[Sounds like you need to think this through a little more.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0201">
               <en><![CDATA[No, I think we have done that enough.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0202">
               <en><![CDATA[Well, there is still the issue with whose junk we are keeping.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0203">
               <en><![CDATA[There is still the issue with whose junk we are keeping, is the name of my 'N-Sync' cover band.]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
+            <tree enableTopic="_current:PS:_37:0"/>
           </script>
         </topic>
         <topic key="t2" id="_38" enabled="1" hold="0" expose="" go="0">
           <title>
-            <en><![CDATA[Surely your going to have to many body parts?]]></en>
+            <en><![CDATA[Surely you're going to have too many body parts?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Surely your going to have to many body parts?]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0205">
+              <en><![CDATA[Surely you're going to have too many body parts?]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0206">
               <en><![CDATA[We're going to have too many body parts, is the name of my 'Osmonds' cover band.]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
+            <tree enableTopic="_current:PS:_37:0"/>
           </script>
         </topic>
         <topic key="t3" id="_39" enabled="1" hold="0" expose="" go="0">
@@ -892,43 +1048,59 @@
             <en><![CDATA[Aren't you going to be short a few things?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0208">
               <en><![CDATA[Aren't you going to be short a few things?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0209">
               <en><![CDATA[Aren't you going to be short a few things? is the name of my 'Prince' cover band.]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
+            <tree enableTopic="_current:PS:_37:0"/>
           </script>
         </topic>
-        <topic key="t5" id="_42" enabled="1" hold="0" expose="" go="0">
+        <topic key="t4" id="_42" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Aren't you too old for this?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0216">
               <en><![CDATA[Aren't you too old for this?]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
-              <en><![CDATA[Aren't you too old for this? is my 'Rollingstones' cover band.]]></en>
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0217">
+              <en><![CDATA[Aren't you too old for this? is my 'Rolling Stones' cover band.]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
+            <tree enableTopic="_current:PS:_37:0"/>
           </script>
         </topic>
-        <topic key="t4" id="_40" enabled="1" hold="1" expose="" go="-1">
+        <topic key="t5" id="_40" enabled="1" hold="0" expose="_43" go="-1">
           <title>
             <en><![CDATA[This isn't funny anymore, I really have to pee.]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0211">
               <en><![CDATA[This isn't funny anymore, I really have to pee.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
-              <en><![CDATA[This isn't funny anymore, I really have to pee, is the name of my 'R. Kelly' cover band.]]></en>
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0212">
+              <en><![CDATA[This isn't funny anymore, I really have to pee, is my 'R. Kelly' cover band.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <tree enableTopic="_current:PS:_37:0"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_43" enabled="0" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Nevermind]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0043">
+              <en><![CDATA[Nevermind]]></en>
             </dia>
           </dialog>
           <script>
@@ -937,19 +1109,19 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0_t0" id="">
-        <topic key="t3" id="_32" enabled="1" hold="0" expose="" go="0">
+      <tier key="r_t2" id="">
+        <topic key="t0" id="_32" enabled="1" hold="0" expose="" go="0">
           <title>
-            <en><![CDATA[What does gestault mean?]]></en>
+            <en><![CDATA[What does gestalt mean?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[What does gestault mean?]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0034">
+              <en><![CDATA[What does gestalt mean?]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0035">
               <en><![CDATA[Die Gestalt is a German word for form or shape. It is used in English to refer to a concept of 'wholeness']]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0036">
               <en><![CDATA[We mean we are going to become one person.]]></en>
             </dia>
           </dialog>
@@ -957,15 +1129,15 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t0" id="_3" enabled="1" hold="0" expose="" go="0">
+        <topic key="t1" id="_3" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[What do your wives think of the operation?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0037">
               <en><![CDATA[What do your wives think of the operation?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0038">
               <en><![CDATA[I don't know, we haven't told them.]]></en>
             </dia>
           </dialog>
@@ -973,67 +1145,67 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t1" id="_4" enabled="1" hold="0" expose="" go="_34">
+        <topic key="t2" id="_4" enabled="1" hold="0" expose="" go="_34">
           <title>
             <en><![CDATA[Won't that be a little weird?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0039">
               <en><![CDATA[Won't that be a little weird?]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0040">
               <en><![CDATA[In what way?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0041">
               <en><![CDATA[Well how will you....]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0042">
               <en><![CDATA[What about when you...]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Never mind.]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0043">
+              <en><![CDATA[Nevermind]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t4" id="_34" enabled="1" hold="0" expose="" go="1">
+        <topic key="t3" id="_34" enabled="1" hold="0" expose="" go="1">
           <title>
-            <en><![CDATA[What are you going to call your self?]]></en>
+            <en><![CDATA[What are you going to call yourself?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[What are you going to call your self?]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0044">
+              <en><![CDATA[What are you going to call yourself?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0045">
               <en><![CDATA[Paul Storm]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0046">
               <en><![CDATA[I thought we were going to be Storm Paul?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0047">
               <en><![CDATA[Nah, that sounds like there will be other kinds of Paul. Like Sunny Paul]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0048">
               <en><![CDATA[Well how come your name gets to be first?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0049">
               <en><![CDATA[Come on we've talked about this. You get the left side, I get the right. It's the way it's always been.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0050">
               <en><![CDATA[Exactly, isn't it my turn to go first? And I'm right handed!]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0051">
               <en><![CDATA[So am I!]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0052">
               <en><![CDATA[Well how about we have two arms on one side.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0053">
               <en><![CDATA[Hey! That's not a bad idea! Plus we'd be awesome at arm wrestling!]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0054">
               <en><![CDATA[Exactly!]]></en>
             </dia>
           </dialog>
@@ -1042,18 +1214,18 @@
             <tree enableTopic="_current:PS:_37:1"/>
           </script>
         </topic>
-        <topic key="t6" id="_41" enabled="1" hold="1" expose="" go="_34">
+        <topic key="t4" id="_41" enabled="1" hold="0" expose="" go="_34">
           <title>
             <en><![CDATA[Have you thought about whose house you will live in?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0213">
               <en><![CDATA[Have you thought about whose house you will live in?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0214">
               <en><![CDATA[Well mine obviously.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0215">
               <en><![CDATA[What do you mean yours?]]></en>
             </dia>
           </dialog>
@@ -1066,28 +1238,28 @@
             <en><![CDATA[You guys going to have two heads?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0055">
               <en><![CDATA[You guys going to have two heads?]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0056">
               <en><![CDATA[No]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0057">
               <en><![CDATA[Yes]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
-              <en><![CDATA[What? Well who's head do we keep then? And what happens to the other persons head? Does it get thrown away? Are you still really you without your head?]]></en>
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0058">
+              <en><![CDATA[What? Well whose head do we keep then? And what happens to the other person's head? Does it get thrown away? Are you still really you without your head?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0059">
               <en><![CDATA[Hmmm, I guess two heads are better than one.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0060">
               <en><![CDATA[Yeah, double brain power!]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0061">
               <en><![CDATA[Oh my god!]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0062">
               <en><![CDATA[So intense.]]></en>
             </dia>
           </dialog>
@@ -1095,16 +1267,16 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t2" id="_5" enabled="1" hold="1" expose="" go="-1">
+        <topic key="t6" id="_5" enabled="1" hold="1" expose="" go="-1">
           <title>
             <en><![CDATA[I don't want to discuss the operation anymore.]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0063">
               <en><![CDATA[I don't want to discuss the operation anymore.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[I'm starting to feel queezy.]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0173">
+              <en><![CDATA[I'm starting to feel queasy.]]></en>
             </dia>
           </dialog>
           <script>
@@ -1112,39 +1284,45 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0_t1_t0_t0_t0" id="_11">
-        <topic key="t0" id="_20" enabled="1" hold="1" expose="" go="_start">
+      <tier key="r_t3_t0_t0_t0" id="_11">
+        <topic key="t0" id="_20" enabled="1" hold="1" expose="" go="_root">
           <title>
             <en><![CDATA[StAR!wars.]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0078">
               <en><![CDATA[StAR!wars.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0079">
               <en><![CDATA[So we need more pirate jokes.]]></en>
             </dia>
           </dialog>
           <script>
             <tree enableTopic="_current:PS:_21:1"/>
+            <tree enableTopic="CoffeeShop:HelpMe:_2:1"/>
+            <tree enableTopic="FT_Reception:HelpMe:_1:0"/>
+            <tree enableTopic="FT_Reception:HelpMe:_5:1"/>
+            <tree enableTopic="CoffeeShop:HelpMe:_2:1"/>
+            <tree enableTopic="Home_Bedroom:HelpMe:_2:1"/>
+            <tree enableTopic="Home_Computer:HelpMe:_2:1"/>
             <cache field="find_jokes" value="yes"/>
             <dialogue play="*"/>
           </script>
         </topic>
       </tier>
-      <tier key="r_t0_t1_t0_t0" id="">
+      <tier key="r_t3_t0_t0" id="">
         <topic key="t0" id="_11" enabled="1" hold="1" expose="" go="1">
           <title>
             <en><![CDATA[BendAR!]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0075">
               <en><![CDATA[BendAR!]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0076">
               <en><![CDATA[You went with that instead of R2D2?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0077">
               <en><![CDATA[Your favourite film?]]></en>
             </dia>
           </dialog>
@@ -1157,10 +1335,10 @@
             <en><![CDATA[AR! 2D2]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0080">
               <en><![CDATA[AR! 2D2]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0077">
               <en><![CDATA[Your favourite film?]]></en>
             </dia>
           </dialog>
@@ -1173,13 +1351,13 @@
             <en><![CDATA[AR!4-P17]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0082">
               <en><![CDATA[AR!4-P17]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0076">
               <en><![CDATA[You went with that instead of R2D2?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0077">
               <en><![CDATA[Your favourite film?]]></en>
             </dia>
           </dialog>
@@ -1192,13 +1370,13 @@
             <en><![CDATA[Optimus Prime]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0085">
               <en><![CDATA[Optimus Prime]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0076">
               <en><![CDATA[You went with that instead of R2D2?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0077">
               <en><![CDATA[Your favourite film?]]></en>
             </dia>
           </dialog>
@@ -1211,13 +1389,13 @@
             <en><![CDATA[CybAR!man]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0088">
               <en><![CDATA[CybAR!man]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0076">
               <en><![CDATA[You went with that instead of R2D2?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0077">
               <en><![CDATA[Your favourite film?]]></en>
             </dia>
           </dialog>
@@ -1225,18 +1403,18 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t7" id="_18" enabled="1" hold="1" expose="" go="_11">
+        <topic key="t5" id="_18" enabled="1" hold="1" expose="" go="_11">
           <title>
             <en><![CDATA[iDog]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0091">
               <en><![CDATA[iDog]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0076">
               <en><![CDATA[You went with that instead of R2D2?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0077">
               <en><![CDATA[Your favourite film?]]></en>
             </dia>
           </dialog>
@@ -1244,18 +1422,18 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t8" id="_19" enabled="1" hold="1" expose="" go="_11">
+        <topic key="t6" id="_71" enabled="1" hold="1" expose="" go="_11">
           <title>
-            <en><![CDATA[Tod T-1000]]></en>
+            <en><![CDATA[Todd T-1000]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Tod T-1000]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0094">
+              <en><![CDATA[Todd T-1000]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0076">
               <en><![CDATA[You went with that instead of R2D2?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0077">
               <en><![CDATA[Your favourite film?]]></en>
             </dia>
           </dialog>
@@ -1264,22 +1442,22 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0_t1_t0" id="_7">
+      <tier key="r_t3_t0" id="_7">
         <topic key="t0" id="_8" enabled="1" hold="1" expose="" go="1">
           <title>
             <en><![CDATA[What then?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0071">
               <en><![CDATA[What then?]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0072">
               <en><![CDATA[We are looking for new pirate jokes.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0073">
               <en><![CDATA[You know the ones.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0074">
               <en><![CDATA[What is a pirates favourite Droid?]]></en>
             </dia>
           </dialog>
@@ -1288,16 +1466,16 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0_t1" id="">
+      <tier key="r_t3" id="">
         <topic key="t0" id="_7" enabled="1" hold="1" expose="" go="1">
           <title>
             <en><![CDATA[Talk you out of the operation?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0069">
               <en><![CDATA[Talk you out of the operation?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0070">
               <en><![CDATA[No]]></en>
             </dia>
           </dialog>
@@ -1310,10 +1488,10 @@
             <en><![CDATA[Play ukelele on stage with you?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0097">
               <en><![CDATA[Play ukelele on stage with you?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0098">
               <en><![CDATA[No that is Molly's job.]]></en>
             </dia>
           </dialog>
@@ -1326,10 +1504,10 @@
             <en><![CDATA[What could I possibly do for you?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0099">
               <en><![CDATA[What could I possibly do for you?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0100">
               <en><![CDATA[That wasn't a very funny quip.]]></en>
             </dia>
           </dialog>
@@ -1338,37 +1516,37 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0_t2_t0" id="_22">
-        <topic key="t0" id="_23" enabled="1" hold="1" expose="" go="_start">
+      <tier key="r_t4_t0" id="_22">
+        <topic key="t0" id="_23" enabled="1" hold="1" expose="" go="_root">
           <title>
             <en><![CDATA[Is that enough?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0106">
               <en><![CDATA[Is that enough?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0107">
               <en><![CDATA[No, we need more.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0108">
               <en><![CDATA[Yes, that is loads.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0109">
               <en><![CDATA[As a reward, here is a USB key.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0110">
               <en><![CDATA[It has a picture of our friend Jonathan on.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
-              <en><![CDATA[It used to have all his music on, until someone over wrote it with a Tina T-1337 personality file. Naming no names..Paul!]]></en>
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0111">
+              <en><![CDATA[It used to have all his music on, until someone overwrote it with a Tina T-1337 personality file. Naming no names..Paul!]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0112">
               <en><![CDATA[It sounded like it would be fun to have an artificial intelligence to talk to, but she only ever wanted to talk about robot things.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0113">
               <en><![CDATA[Thanks, that sounds....useful?]]></en>
             </dia>
-            <dia puppet="ego" frame="" sound="">
+            <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0114">
               <en><![CDATA[Yeah, I bet you are really glad you did all that work for them!]]></en>
             </dia>
           </dialog>
@@ -1378,6 +1556,10 @@
             <logic eval="[pirate_jokes_left] EQ 0">
               <inventory add="USB"/>
               <tree enableTopic="_current:PS:_21:0"/>
+              <tree enableTopic="CoffeeShop:HelpMe:_2:0"/>
+              <tree enableTopic="CoffeeShop:HelpMe:_21:0"/>
+              <tree enableTopic="CoffeeShop:HelpMe:_22:1"/>
+              <tree enableTopic="FT_Reception:HelpMe:_5:0"/>
               <dialogue playList="2,3,4,5,6"/>
             </logic>
             <logic eval="[pirate_jokes_left] NE 0">
@@ -1386,19 +1568,19 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0_t2" id="_21">
+      <tier key="r_t4" id="_21">
         <topic key="t0" id="_22" enabled="0" hold="0" expose="" go="1">
           <title>
             <en><![CDATA[What do robot pirates drink?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0103">
               <en><![CDATA[What do robot pirates drink?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0104">
               <en><![CDATA[Bottles of RAM.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0105">
               <en><![CDATA[Funny]]></en>
             </dia>
           </dialog>
@@ -1408,16 +1590,16 @@
         </topic>
         <topic key="t1" id="_25" enabled="0" hold="0" expose="" go="_22">
           <title>
-            <en><![CDATA[What is a pirates favourite sock?]]></en>
+            <en><![CDATA[What is a pirate's favourite sock?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[What is a pirates favourite sock?]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0115">
+              <en><![CDATA[What is a pirate's favourite sock?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[AR!gile.]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0116">
+              <en><![CDATA[AR!gyle.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0105">
               <en><![CDATA[Funny]]></en>
             </dia>
           </dialog>
@@ -1427,16 +1609,16 @@
         </topic>
         <topic key="t2" id="_26" enabled="0" hold="0" expose="" go="_22">
           <title>
-            <en><![CDATA[What is a pirates favourite crime?]]></en>
+            <en><![CDATA[What is a pirate's favourite crime?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[What is a pirates favourite crime?]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0118">
+              <en><![CDATA[What is a pirate's favourite crime?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0119">
               <en><![CDATA[AR!son.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0105">
               <en><![CDATA[Funny]]></en>
             </dia>
           </dialog>
@@ -1444,18 +1626,18 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t4" id="_28" enabled="0" hold="0" expose="" go="_22">
+        <topic key="t3" id="_28" enabled="0" hold="0" expose="" go="_22">
           <title>
-            <en><![CDATA[What is a pirates favourite crime?]]></en>
+            <en><![CDATA[What is a pirate's favourite crime?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[What is a pirates favourite crime?]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0121">
+              <en><![CDATA[What is a pirate's favourite crime?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0122">
               <en><![CDATA[Grand LAR!sony.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0105">
               <en><![CDATA[Funny]]></en>
             </dia>
           </dialog>
@@ -1463,18 +1645,18 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t5" id="_29" enabled="0" hold="0" expose="" go="_22">
+        <topic key="t4" id="_29" enabled="0" hold="0" expose="" go="_22">
           <title>
             <en><![CDATA[What do you call a parrot saying, 'Pieces of seven! Pieces of seven!'?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0124">
               <en><![CDATA[What do you call a parrot saying, 'Pieces of seven! Pieces of seven!'?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0125">
               <en><![CDATA[A parroty error.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0105">
               <en><![CDATA[Funny]]></en>
             </dia>
           </dialog>
@@ -1482,24 +1664,24 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t7" id="_33" enabled="1" hold="0" expose="" go="0">
+        <topic key="t5" id="_33" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[You fight like a cow!]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0127">
               <en><![CDATA[You fight like a cow!]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0128">
               <en><![CDATA[Haha! Yeah!]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0129">
               <en><![CDATA[That isn't funny on it's own.]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
-              <en><![CDATA[It's a referance, not a joke.]]></en>
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0130">
+              <en><![CDATA[It's a reference, not a joke.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0175">
               <en><![CDATA[We need jokes! New ones!]]></en>
             </dia>
           </dialog>
@@ -1507,15 +1689,15 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t6" id="_30" enabled="1" hold="1" expose="" go="_start">
+        <topic key="t6" id="_30" enabled="1" hold="1" expose="" go="_root">
           <title>
             <en><![CDATA[I'm out of jokes.]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0131">
               <en><![CDATA[I'm out of jokes.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0132">
               <en><![CDATA[Come back when you have more.]]></en>
             </dia>
           </dialog>
@@ -1524,47 +1706,47 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0" id="_start">
-        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1">
+      <tier key="r" id="_root">
+        <topic key="t2" id="_2" enabled="1" hold="1" expose="" go="1">
           <title>
             <en><![CDATA[What are you doing here?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0030">
               <en><![CDATA[What are you doing here?]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
-              <en><![CDATA[We decided to go for the operation?]]></en>
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0031">
+              <en><![CDATA[We decided to go for the operation]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0032">
               <en><![CDATA[You don't mean?]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
-              <en><![CDATA[We're becoming a guesalt entity.]]></en>
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0033">
+              <en><![CDATA[We're becoming a gestalt entity.]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t1" id="_6" enabled="1" hold="0" expose="" go="1">
+        <topic key="t3" id="_6" enabled="1" hold="0" expose="" go="1">
           <title>
             <en><![CDATA[I love your songs.]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0064">
               <en><![CDATA[I love your songs.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0065">
               <en><![CDATA[Espcecially the one about pirates.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0066">
               <en><![CDATA[The Captain's Wife's Lament]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0067">
               <en><![CDATA[Yeah]]></en>
             </dia>
-            <dia puppet="Storm" frame="" sound="">
+            <dia puppet="Storm" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0068">
               <en><![CDATA[Well, you might be able to do us a favour.]]></en>
             </dia>
           </dialog>
@@ -1572,51 +1754,16 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t2" id="_21" enabled="0" hold="1" expose="" go="1">
+        <topic key="t4" id="_21" enabled="0" hold="1" expose="" go="1">
           <title>
             <en><![CDATA[I have a pirate joke for you.]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0101">
               <en><![CDATA[I have a pirate joke for you.]]></en>
             </dia>
-            <dia puppet="Paul" frame="" sound="">
+            <dia puppet="Paul" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0102">
               <en><![CDATA[Ok, lets hear it.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t3" id="_31" enabled="1" hold="1" expose="" go="-2">
-          <title>
-            <en><![CDATA[Bye]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Bye]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-            <scriptCall global="afterDialogue"/>
-          </script>
-        </topic>
-      </tier>
-      <tier key="r" id="_root">
-        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
-          <title>
-            <en><![CDATA[Hi]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Hi]]></en>
-            </dia>
-            <dia puppet="Paul" frame="" sound="">
-              <en><![CDATA[Hi]]></en>
-            </dia>
-            <dia puppet="Storm" frame="" sound="">
-              <en><![CDATA[Hi]]></en>
             </dia>
           </dialog>
           <script>
@@ -1628,7 +1775,7 @@
             <en><![CDATA[Bye]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0134">
               <en><![CDATA[Bye]]></en>
             </dia>
           </dialog>
@@ -1640,19 +1787,19 @@
       </tier>
     </tree>
     <tree id="Receptionist">
-      <tier key="r_t0_t0" id="">
+      <tier key="r_t2" id="">
         <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="-1">
           <title>
             <en><![CDATA[Yes]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0146">
               <en><![CDATA[Yes]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0147">
               <en><![CDATA[But Dr Martin....you make comments about the patients in their files that you really wouldn't want them to see.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0148">
               <en><![CDATA[Fine.]]></en>
             </dia>
           </dialog>
@@ -1660,18 +1807,18 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t1" id="_4" enabled="1" hold="1" expose="" go="-1">
+        <topic key="t1" id="_16" enabled="1" hold="1" expose="" go="-1">
           <title>
             <en><![CDATA[No]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0149">
               <en><![CDATA[No]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0150">
               <en><![CDATA[So why would it be ok to let you see your file?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0151">
               <en><![CDATA[Fine.]]></en>
             </dia>
           </dialog>
@@ -1680,34 +1827,34 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0" id="">
-        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1">
+      <tier key="r" id="">
+        <topic key="t2" id="_2" enabled="1" hold="1" expose="" go="1">
           <title>
             <en><![CDATA[Could I have the files you have on me?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0138">
               <en><![CDATA[Could I have the files you have on me?]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0139">
               <en><![CDATA[Oh I'm sorry, I can't give out personal information about our practioners. It wouldn't be professional.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0140">
               <en><![CDATA[But it's about me.]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
-              <en><![CDATA[Surely you know everything their is to know about you?]]></en>
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0141">
+              <en><![CDATA[Surely you know everything there is to know about you?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0142">
               <en><![CDATA[I'm suffering memory loss at the moment.]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0143">
               <en><![CDATA[I'm not falling for that one again.]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0144">
               <en><![CDATA[No one has ever told me it is ok to give people files on themselves, under any circumstances.]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0145">
               <en><![CDATA[So are you saying it is ok for me to give patients their files too?]]></en>
             </dia>
           </dialog>
@@ -1720,19 +1867,19 @@
             <en><![CDATA[What clients do I have today?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0152">
               <en><![CDATA[What clients do I have today?]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0153">
               <en><![CDATA[I'm too busy to talk right now.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[You don't look busy. It looks like your playing mine sweeper on your computer!]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0154">
+              <en><![CDATA[You don't look busy. It looks like you're playing minesweeper on you're computer!]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
-              <en><![CDATA[ No this is important work, it just looks like mine sweeper.]]></en>
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0176">
+              <en><![CDATA[ No this is important work, it just looks like minesweeper.]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0177">
               <en><![CDATA[Ah! Now look what you made me do I set off all the mines...I mean...er...I lost the document.]]></en>
             </dia>
           </dialog>
@@ -1740,27 +1887,27 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t4" id="_8" enabled="1" hold="0" expose="_9" go="0">
+        <topic key="t4" id="_8" enabled="0" hold="0" expose="_9" go="0">
           <title>
-            <en><![CDATA[Are you still too busy?]]></en>
+            <en><![CDATA[Are you still busy?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Are you still too busy?]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0178">
+              <en><![CDATA[Are you still busy?]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0179">
               <en><![CDATA[Yes]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Still player minesweeper?]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0180">
+              <en><![CDATA[Still playing minesweeper?]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0181">
               <en><![CDATA[No, I’m playing solitaire now....er...I mean no I’m working now...er...I was always working, I mean I’m checking customer records now.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0182">
               <en><![CDATA[I didn’t know we had the king and queen of hearts as clients.]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0183">
               <en><![CDATA[Please doctor, I’m trying to work.]]></en>
             </dia>
           </dialog>
@@ -1768,15 +1915,15 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t5" id="_9" enabled="1" hold="1" expose="" go="0">
+        <topic key="t5" id="_9" enabled="0" hold="1" expose="" go="0">
           <title>
             <en><![CDATA[Still busy?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0184">
               <en><![CDATA[Still busy?]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0185">
               <en><![CDATA[Yes!]]></en>
             </dia>
           </dialog>
@@ -1784,50 +1931,16 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t2" id="_6" enabled="1" hold="1" expose="" go="0">
+        <topic key="t6" id="_6" enabled="1" hold="1" expose="" go="0">
           <title>
             <en><![CDATA[Why are Paul and Storm here?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0155">
               <en><![CDATA[Why are Paul and Storm here?]]></en>
             </dia>
-            <dia puppet="Reception" frame="" sound="">
+            <dia puppet="Receptionist" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0156">
               <en><![CDATA[They're here for a consultation. They want a gustualt entity installed or something.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t1" id="_5" enabled="1" hold="1" expose="" go="-2">
-          <title>
-            <en><![CDATA[Bye]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Bye]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-      </tier>
-      <tier key="r" id="">
-        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
-          <title>
-            <en><![CDATA[Hi]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Hi]]></en>
-            </dia>
-            <dia puppet="Reception" frame="" sound="">
-              <en><![CDATA[How can I help you?]]></en>
-            </dia>
-            <dia puppet="Reception" frame="" sound="">
-              <en><![CDATA[Oh, sorry Dr Martin, I didn't realise it was you.]]></en>
             </dia>
           </dialog>
           <script>
@@ -1839,7 +1952,7 @@
             <en><![CDATA[Bye]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0158">
               <en><![CDATA[Bye]]></en>
             </dia>
           </dialog>
@@ -1851,40 +1964,37 @@
       </tier>
     </tree>
     <tree id="Customer">
-      <tier key="r_t0" id="">
-        <topic key="t0" id="_1" enabled="1" hold="0" expose="" go="0">
+      <tier key="r" id="">
+        <topic key="t1" id="_1" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[What are you having done?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0161">
               <en><![CDATA[What are you having done?]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0162">
               <en><![CDATA[Um...that's private.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0186">
               <en><![CDATA[I work here.]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0187">
               <en><![CDATA[Oh right.]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0188">
               <en><![CDATA[I'm here for laser eye surgery]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0189">
               <en><![CDATA[You should see an optician for that.]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0190">
               <en><![CDATA[No, having laser beams coming out my eyes!]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0191">
               <en><![CDATA[Oh, that sounds dangerous.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Does it?]]></en>
-            </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0193">
               <en><![CDATA[Maybe I should think about it some more.]]></en>
             </dia>
           </dialog>
@@ -1892,30 +2002,30 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t1" id="_2" enabled="1" hold="0" expose="" go="0">
+        <topic key="t2" id="_2" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[I'm your doctor, what can I do for you today?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0163">
               <en><![CDATA[I'm your doctor, what can I do for you today?]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0164">
               <en><![CDATA[Er, well, um.]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0165">
               <en><![CDATA[Oh, hold on, you are not the correct person.]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0166">
               <en><![CDATA[How do you know you haven't asked my name?]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0167">
               <en><![CDATA[What is your name?]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0168">
               <en><![CDATA[Billy]]></en>
             </dia>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0169">
               <en><![CDATA[No, I'm looking for Arnold.]]></en>
             </dia>
           </dialog>
@@ -1923,37 +2033,37 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t3" id="_4" enabled="1" hold="0" expose="" go="0">
+        <topic key="t4" id="_4" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Is that backpack surgically attached?]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0170">
               <en><![CDATA[Is that backpack surgically attached?]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0171">
               <en><![CDATA[Yeah, it was done to fix my asthma. It did a great job.]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
-              <en><![CDATA[It pumps oxygen directly in to my lungs. I just need to change the oxygen cylinder once a week.]]></en>
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0194">
+              <en><![CDATA[It pumps oxygen directly into my lungs. I just need to change the oxygen cylinder once a week.]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
-              <en><![CDATA[Now I can play sports, run and you know...with a woman.]]></en>
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0195">
+              <en><![CDATA[Now I can play sports, run and you know.]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
-              <en><![CDATA[Not that I do any of that, but it good to know I could if the situation arose.]]></en>
+            <dia puppet="Customer" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0196">
+              <en><![CDATA[Not that I do any of that, but it's good to know I could if the situation arose.]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t2" id="_3" enabled="1" hold="1" expose="" go="-2">
+        <topic key="t3" id="_3" enabled="1" hold="1" expose="" go="-2">
           <title>
             <en><![CDATA[Bye]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0172">
               <en><![CDATA[Bye]]></en>
             </dia>
           </dialog>
@@ -1963,17 +2073,132 @@
           </script>
         </topic>
       </tier>
-      <tier key="r" id="">
-        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+    </tree>
+    <tree id="HelpMe">
+      <tier key="r_t1" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="-1">
           <title>
-            <en><![CDATA[Hi]]></en>
+            <en><![CDATA[You have told me enough]]></en>
           </title>
           <dialog>
-            <dia puppet="_avatar" frame="" sound="">
-              <en><![CDATA[Hi]]></en>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0226">
+              <en><![CDATA[You have told me enough]]></en>
             </dia>
-            <dia puppet="Customer" frame="" sound="">
-              <en><![CDATA[Um..hi]]></en>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_3" enabled="1" hold="1" expose="_4" go="0">
+          <title>
+            <en><![CDATA[Who do I need to talk to?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0228">
+              <en><![CDATA[Who do I need to talk to?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0229">
+              <en><![CDATA[Talk to Paul and Storm]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_4" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Why do I need to talk to Paul and Storm?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0230">
+              <en><![CDATA[Why do I need to talk to Paul and Storm?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0231">
+              <en><![CDATA[They give you a task to do.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0223">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What do I need to do here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0224">
+              <en><![CDATA[What do I need to do here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0225">
+              <en><![CDATA[Talk to people]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_5" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[I need more pirate jokes]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0232">
+              <en><![CDATA[I need more pirate jokes]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0233">
+              <en><![CDATA[Try examining everything in all the rooms]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0234">
+              <en><![CDATA[If you need to discover a joke in a room, the help system will help you find it]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_6" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[What do I need to do here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0235">
+              <en><![CDATA[What do I need to do here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0236">
+              <en><![CDATA[Just leave]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_7" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[What else can I do here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0238">
+              <en><![CDATA[What else can I do here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Foyer.swf:FT_Reception0239">
+              <en><![CDATA[You might be able to get through that secure door now.]]></en>
             </dia>
           </dialog>
           <script>

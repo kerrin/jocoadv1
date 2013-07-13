@@ -1,4 +1,4 @@
-<room id="FT_Hall" coreLibs="lib/FT_Hall.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+<room id="FT_Hall" coreLibs="lib/FT_Hall.swf,lib/BG_Office.swf" voiceLibs="voice/V_FT_Hall.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
   <grids>
     <grid id="main">
       <boxes>
@@ -32,10 +32,12 @@
   <scripts>
     <script id="_enter">
       <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Office.swf:MyMonkey"/>
       <puppet target="Guard" callAction="0"/>
     </script>
     <script id="_exit">
       <curtain blackout="1"/>
+      <data deleteRooms="FT_Hall"/>
     </script>
   </scripts>
   <layers>
@@ -66,10 +68,10 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0000">
                   <en><![CDATA[Who is this handsome guy? He looks familar.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0001">
                   <en><![CDATA[I've never seen him.]]></en>
                 </dia>
               </dialog>
@@ -82,7 +84,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0002">
                   <en><![CDATA[It is just a photo.]]></en>
                 </dia>
               </dialog>
@@ -95,7 +97,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0003">
                   <en><![CDATA[I don't need any more photos.]]></en>
                 </dia>
               </dialog>
@@ -122,7 +124,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0004">
                   <en><![CDATA[I think a guard is in there and heard me. I better hide quick!]]></en>
                 </dia>
               </dialog>
@@ -144,7 +146,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0005">
                   <en><![CDATA[I don't want to go that way!]]></en>
                 </dia>
               </dialog>
@@ -159,8 +161,21 @@
                 <en><![CDATA[]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0006">
                   <en><![CDATA[I don't want to go that way!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="FramedPhoto">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0102">
+                  <en><![CDATA[That might work, I need to activate the scanner and I'll try that.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -185,13 +200,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
-                  <en><![CDATA[It's Dr Martins' door.]]></en>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0007">
+                  <en><![CDATA[It's Dr Martin's door.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0008">
                   <en><![CDATA[It has a security card reader and iris scanner.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0009">
                   <en><![CDATA[I think you got lucky before, that same trick will never work again!]]></en>
                 </dia>
               </dialog>
@@ -213,13 +228,13 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0010">
                   <en><![CDATA[It's locked.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0011">
                   <en><![CDATA[Try kicking it down.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0012">
                   <en><![CDATA[The guard would hear me!]]></en>
                 </dia>
               </dialog>
@@ -234,8 +249,21 @@
                 <en><![CDATA[]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0013">
                   <en><![CDATA[It didn't work.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="FramedPhoto">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0102">
+                  <en><![CDATA[That might work, I need to activate the scanner and I'll try that.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -246,10 +274,10 @@
         </state>
       </states>
     </layer>
-    <layer id="FredMcCoy" type="puppet" asset="" depth="4" visible="1" state="main">
+    <layer id="JillMcCoy" type="puppet" asset="" depth="4" visible="1" state="main">
       <states>
         <state id="main" x="2175" y="22" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="112" hitH="168" shape="rect">
-          <param mapX="2225" mapY="693" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <param mapX="2221" mapY="680" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
             <en><![CDATA[Photo]]></en>
@@ -260,8 +288,8 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
-                  <en><![CDATA[It's a photo of Fred McCoy. He appears to be a Nurse.]]></en>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0014">
+                  <en><![CDATA[It's a photo of Jill McCoy. She appears to be the receptionist.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -273,7 +301,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0015">
                   <en><![CDATA[It is just a photo.]]></en>
                 </dia>
               </dialog>
@@ -286,7 +314,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0016">
                   <en><![CDATA[I don't need any more photos.]]></en>
                 </dia>
               </dialog>
@@ -313,13 +341,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0017">
                   <en><![CDATA[It's a room for geeks.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0018">
                   <en><![CDATA[It has a security card reader and iris scanner.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0019">
                   <en><![CDATA[I think you got lucky before, that same trick will never work again!]]></en>
                 </dia>
               </dialog>
@@ -341,13 +369,13 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0020">
                   <en><![CDATA[It's locked.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0021">
                   <en><![CDATA[Try kicking it down.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0022">
                   <en><![CDATA[The guard would hear me!]]></en>
                 </dia>
               </dialog>
@@ -357,12 +385,25 @@
             </action>
           </actions>
           <items>
+            <action id="FramedPhoto">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0102">
+                  <en><![CDATA[That might work, I need to activate the scanner and I'll try that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
             <action id="KeyCard">
               <title>
                 <en><![CDATA[]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0038">
                   <en><![CDATA[It didn't work.]]></en>
                 </dia>
               </dialog>
@@ -388,7 +429,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0024">
                   <en><![CDATA[It's a picture of Roger Wilco. He appears to be a janitor.]]></en>
                 </dia>
               </dialog>
@@ -401,7 +442,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0025">
                   <en><![CDATA[It is just a photo.]]></en>
                 </dia>
               </dialog>
@@ -414,7 +455,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0026">
                   <en><![CDATA[I don't need any more photos.]]></en>
                 </dia>
               </dialog>
@@ -441,13 +482,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0027">
                   <en><![CDATA[It's a door to the CEO's office.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0028">
                   <en><![CDATA[It has a security card reader and iris scanner.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0029">
                   <en><![CDATA[I think you got lucky before, that same trick will never work again!]]></en>
                 </dia>
               </dialog>
@@ -469,13 +510,13 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0030">
                   <en><![CDATA[It's locked.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0031">
                   <en><![CDATA[Try kicking it down.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0032">
                   <en><![CDATA[The guard would hear me!]]></en>
                 </dia>
               </dialog>
@@ -490,7 +531,7 @@
                 <en><![CDATA[]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0033">
                   <en><![CDATA[It didn't work.]]></en>
                 </dia>
               </dialog>
@@ -516,7 +557,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0034">
                   <en><![CDATA[It's the storage room I was locked in.]]></en>
                 </dia>
               </dialog>
@@ -538,13 +579,13 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0035">
                   <en><![CDATA[It's locked. It must have locked after I left.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0036">
                   <en><![CDATA[Try kicking it down.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0037">
                   <en><![CDATA[The guard would hear me!]]></en>
                 </dia>
               </dialog>
@@ -559,11 +600,24 @@
                 <en><![CDATA[]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0038">
                   <en><![CDATA[It didn't work.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0039">
                   <en><![CDATA[Strange it let me out, but not back in.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="FramedPhoto">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0102">
+                  <en><![CDATA[That might work, I need to activate the scanner and I'll try that.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -588,12 +642,15 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0040">
                   <en><![CDATA[It's a picture of Chris Landers. He appears to be IT Support.]]></en>
                 </dia>
               </dialog>
               <script>
                 <tree enableTopic="FT_Office_Phone:ITSupport:_14:1"/>
+                <tree enableTopic="FT_HallDay:helpMe:_7:0"/>
+                <tree enableTopic="FT_HallDay:helpMe:_8:0"/>
+                <tree enableTopic="FT_HallDay:helpMe:_9:0"/>
                 <dialogue play="*"/>
               </script>
             </action>
@@ -602,7 +659,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0041">
                   <en><![CDATA[It is just a photo.]]></en>
                 </dia>
               </dialog>
@@ -615,7 +672,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0042">
                   <en><![CDATA[I don't need any more photos.]]></en>
                 </dia>
               </dialog>
@@ -642,13 +699,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
-                  <en><![CDATA[It's the door for the O. T. I'm guessing an operating theather.]]></en>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0043">
+                  <en><![CDATA[It's the door for the O. T. I'm guessing an operating theatre.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0044">
                   <en><![CDATA[It has a security card reader and iris scanner.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0045">
                   <en><![CDATA[I think you got lucky before, that same trick will never work again!]]></en>
                 </dia>
               </dialog>
@@ -670,13 +727,13 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0046">
                   <en><![CDATA[It's locked.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0047">
                   <en><![CDATA[Try kicking it down.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0048">
                   <en><![CDATA[The guard would hear me!]]></en>
                 </dia>
               </dialog>
@@ -691,12 +748,25 @@
                 <en><![CDATA[]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0049">
                   <en><![CDATA[It worked. I better get inside quick, before the guard comes out his office!]]></en>
                 </dia>
               </dialog>
               <script>
                 <layer target="_current:OTDoor" state="Unlocked"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="FramedPhoto">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0102">
+                  <en><![CDATA[That might work, I need to activate the scanner and I'll try that.]]></en>
+                </dia>
+              </dialog>
+              <script>
                 <dialogue play="*"/>
               </script>
             </action>
@@ -714,7 +784,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0050">
                   <en><![CDATA[It's open. I better get inside before the guard sees me.]]></en>
                 </dia>
               </dialog>
@@ -747,7 +817,7 @@
                 <en><![CDATA[]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0051">
                   <en><![CDATA[It's open already.]]></en>
                 </dia>
               </dialog>
@@ -773,7 +843,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0052">
                   <en><![CDATA[It's a picture of Rob Smith. He appears to be a security guard.]]></en>
                 </dia>
               </dialog>
@@ -786,7 +856,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0053">
                   <en><![CDATA[It is just a photo.]]></en>
                 </dia>
               </dialog>
@@ -799,7 +869,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0054">
                   <en><![CDATA[I don't need any more photos.]]></en>
                 </dia>
               </dialog>
@@ -826,13 +896,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0055">
                   <en><![CDATA[It's a picture of Bill Jones. He appears to be a security guard.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0094">
                   <en><![CDATA[Doesn't he look familiar?]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0057">
                   <en><![CDATA[Yeah, I can't quite remember where I have seen him before.]]></en>
                 </dia>
               </dialog>
@@ -845,7 +915,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0058">
                   <en><![CDATA[It is just a photo.]]></en>
                 </dia>
               </dialog>
@@ -858,7 +928,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0059">
                   <en><![CDATA[I don't need any more photos.]]></en>
                 </dia>
               </dialog>
@@ -885,7 +955,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0060">
                   <en><![CDATA[It's a picture of Sam Froggert He appears to be a researcher.]]></en>
                 </dia>
               </dialog>
@@ -898,7 +968,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0061">
                   <en><![CDATA[It is just a photo.]]></en>
                 </dia>
               </dialog>
@@ -911,7 +981,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0062">
                   <en><![CDATA[I don't need any more photos.]]></en>
                 </dia>
               </dialog>
@@ -938,13 +1008,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0063">
                   <en><![CDATA[It's the door to reception.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0064">
                   <en><![CDATA[It has a security card reader and iris scanner.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0056">
                   <en><![CDATA[I think you got lucky before, that same trick will never work again!]]></en>
                 </dia>
               </dialog>
@@ -966,13 +1036,13 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0066">
                   <en><![CDATA[It's locked.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0067">
                   <en><![CDATA[Try kicking it down.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0068">
                   <en><![CDATA[The guard would hear me!]]></en>
                 </dia>
               </dialog>
@@ -987,8 +1057,21 @@
                 <en><![CDATA[]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0069">
                   <en><![CDATA[It didn't work.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="FramedPhoto">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0102">
+                  <en><![CDATA[That might work, I need to activate the scanner and I'll try that.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -1013,7 +1096,7 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0070">
                   <en><![CDATA[It's a picture like the one I am carrying. It looks more recent though.]]></en>
                 </dia>
               </dialog>
@@ -1026,7 +1109,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0071">
                   <en><![CDATA[It is just a photo.]]></en>
                 </dia>
               </dialog>
@@ -1039,7 +1122,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0072">
                   <en><![CDATA[I don't need any more photos.]]></en>
                 </dia>
               </dialog>
@@ -1066,16 +1149,16 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="Guard" frame="" sound="">
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0073">
                   <en><![CDATA[Hello?]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0074">
                   <en><![CDATA[I better hide quick, before the guard sees me. I have a feeling I'm not meant to be out here.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0075">
                   <en><![CDATA[He'll never look for you in the guard room.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0093">
                   <en><![CDATA[I think maybe a different room would be better.]]></en>
                 </dia>
               </dialog>
@@ -1120,13 +1203,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0076">
                   <en><![CDATA[It's a plant.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0088">
                   <en><![CDATA['No magician, I have never met you before, honest.']]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0090">
                   <en><![CDATA[No, not that kind of plant!]]></en>
                 </dia>
               </dialog>
@@ -1139,7 +1222,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0077">
                   <en><![CDATA[Hello little fella.]]></en>
                 </dia>
               </dialog>
@@ -1152,7 +1235,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0078">
                   <en><![CDATA[What with?]]></en>
                 </dia>
               </dialog>
@@ -1171,7 +1254,7 @@
           <param mapX="1664" mapY="695" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
-            <en><![CDATA[Plant]]></en>
+            <en><![CDATA[Chuck the Plant]]></en>
           </title>
           <actions>
             <action id="act0">
@@ -1179,13 +1262,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0079">
                   <en><![CDATA[It's a plant.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0087">
                   <en><![CDATA['No magician, I have never met you before, honest.']]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0089">
                   <en><![CDATA[No, not that kind of plant!]]></en>
                 </dia>
               </dialog>
@@ -1198,7 +1281,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0080">
                   <en><![CDATA[Hello little fella.]]></en>
                 </dia>
               </dialog>
@@ -1211,7 +1294,7 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0081">
                   <en><![CDATA[What with?]]></en>
                 </dia>
               </dialog>
@@ -1238,13 +1321,13 @@
                 <en><![CDATA[Look at]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0082">
                   <en><![CDATA[It's a plant.]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0085">
                   <en><![CDATA['No magician, I have never met you before, honest.']]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0086">
                   <en><![CDATA[No, not that kind of plant!]]></en>
                 </dia>
               </dialog>
@@ -1257,7 +1340,7 @@
                 <en><![CDATA[Talk to]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0083">
                   <en><![CDATA[Hello little fella.]]></en>
                 </dia>
               </dialog>
@@ -1270,13 +1353,13 @@
                 <en><![CDATA[Use]]></en>
               </title>
               <dialog>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0084">
                   <en><![CDATA[What with?]]></en>
                 </dia>
-                <dia puppet="ego" frame="" sound="">
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0091">
                   <en><![CDATA[I think you should push your face on to it, really quickly.]]></en>
                 </dia>
-                <dia puppet="_avatar" frame="" sound="">
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0092">
                   <en><![CDATA[Er...no.]]></en>
                 </dia>
               </dialog>
@@ -1344,5 +1427,88 @@
       </states>
     </layer>
   </layers>
-  <trees/>
+  <trees>
+    <tree id="HelpMe">
+      <tier key="r_t1" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Enough help]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0097">
+              <en><![CDATA[Enough help]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_3" enabled="1" hold="1" expose="_4" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0098">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0099">
+              <en><![CDATA[There are lots of doors, you must be able to get through one of them!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_4" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Just tell me what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0100">
+              <en><![CDATA[Just tell me what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0101">
+              <en><![CDATA[Try using the key card on the doors]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0094">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Where do I go?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0095">
+              <en><![CDATA[Where do I go?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_Hall0096">
+              <en><![CDATA[Hide in one of the rooms]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
 </room>

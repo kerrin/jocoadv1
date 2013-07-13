@@ -1,1 +1,419 @@
-<room id="FT_Office_AC" coreLibs="lib/FT_Office_AC.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="base" sound1="" sound2=""><grids><grid id="base"><boxes/><nodes/></grid></grids><positions/><filters><filter id="_main" axis="y" enabled="1"><pole x="-1" y="-1" scale="0.5" rate="0.5" blur="1" color="0x000000" tint="0.5"/><pole x="-1" y="-1" scale="1" rate="1" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><curtain blackout="0"/></script><script id="_exit"><curtain blackout="1"/></script></scripts><layers><layer id="_bg" type="background" asset="lib/FT_Office_AC.swf:BG_FT_Office_AC" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1024" hitH="768" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title><en><![CDATA[]]></en></title><actions/><items/></state></states></layer><layer id="Exit" type="puppet" asset="" depth="1" visible="1" state="main"><states><state id="main" x="0" y="1" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect"><param mapX="502" mapY="372" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Exit]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_Office"/></script></action></actions><items/></state></states></layer><layer id="Cold" type="puppet" asset="" depth="2" visible="1" state="main"><states><state id="main" x="341" y="465" img="1" imgX="25" imgY="25" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="142" hitH="177" shape="rect"><param mapX="499" mapY="372" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cold]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Wow, that quickly made it cold in here!]]></en></dia></dialog><script><tree enableTopic="FT_Office:Guard:_6:0"/><tree enableTopic="FT_Office:Guard:_7:1"/><layer target="_current:Knob" state="cold"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Hot" type="puppet" asset="" depth="3" visible="1" state="main"><states><state id="main" x="59" y="464" img="1" imgX="27" imgY="25" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="136" hitH="180" shape="rect"><param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Hot]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That soon made it hot in here!]]></en></dia></dialog><script><tree enableTopic="FT_Office:Guard:_6:1"/><tree enableTopic="FT_Office:Guard:_7:0"/><layer target="_current:Knob" state="hot"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Tepid" type="puppet" asset="" depth="4" visible="1" state="main"><states><state id="main" x="194" y="464" img="1" imgX="20" imgY="25" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="148" hitH="179" shape="rect"><param mapX="501" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Nice]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ah, nice.]]></en></dia></dialog><script><tree enableTopic="FT_Office:Guard:_6:0"/><tree enableTopic="FT_Office:Guard:_7:0"/><layer target="_current:Knob" state="nice"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Knob" type="puppet" asset="lib/FT_Office_AC.swf:Knob" depth="5" visible="1" state="nice"><states><state id="nice" x="216" y="491" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="99" hitH="73" shape="rect"><param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state><state id="hot" x="91" y="490" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="99" hitH="73" shape="rect"><param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state><state id="cold" x="370" y="490" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="99" hitH="73" shape="rect"><param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer></layers><trees/></room>
+<room id="FT_Office_AC" coreLibs="lib/FT_Office_AC.swf,lib/BG_Office.swf" voiceLibs="voice/V_FT_Office_AC.swf" enterScript="_enter" exitScript="_exit" grid="base" sound1="" sound2="">
+  <grids>
+    <grid id="base">
+      <boxes/>
+      <nodes/>
+    </grid>
+  </grids>
+  <positions/>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="-1" y="-1" scale="0.5" rate="0.5" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="-1" y="-1" scale="1" rate="1" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Office.swf:MyMonkey"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/FT_Office_AC.swf:BG_FT_Office_AC" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1024" hitH="768" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Exit" type="puppet" asset="" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="1" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect">
+          <param mapX="502" mapY="372" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Exit]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_Office"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Cold" type="puppet" asset="" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="341" y="465" img="1" imgX="25" imgY="25" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="142" hitH="177" shape="rect">
+          <param mapX="499" mapY="372" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cold]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_AC.swf:FT_Office_AC0000">
+                  <en><![CDATA[Wow, that quickly made it cold in here!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <tree enableTopic="FT_Office:Guard:_6:0"/>
+                <tree enableTopic="FT_Office:Guard:_7:1"/>
+                <layer target="_current:Knob" state="cold"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Hot" type="puppet" asset="" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="59" y="464" img="1" imgX="27" imgY="25" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="136" hitH="180" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Hot]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_AC.swf:FT_Office_AC0001">
+                  <en><![CDATA[That soon made it hot in here!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <tree enableTopic="FT_Office:Guard:_6:1"/>
+                <tree enableTopic="FT_Office:Guard:_7:0"/>
+                <layer target="_current:Knob" state="hot"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Tepid" type="puppet" asset="" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="194" y="464" img="1" imgX="20" imgY="25" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="148" hitH="179" shape="rect">
+          <param mapX="501" mapY="370" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Nice]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_AC.swf:FT_Office_AC0002">
+                  <en><![CDATA[Ah, nice.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <tree enableTopic="FT_Office:Guard:_6:0"/>
+                <tree enableTopic="FT_Office:Guard:_7:0"/>
+                <layer target="_current:Knob" state="nice"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Knob" type="puppet" asset="lib/FT_Office_AC.swf:Knob" depth="5" visible="1" state="nice">
+      <states>
+        <state id="nice" x="216" y="491" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="99" hitH="73" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="hot" x="91" y="490" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="99" hitH="73" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="cold" x="370" y="490" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="99" hitH="73" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ego" type="puppet" asset="" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF33" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="HelpMe">
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_AC.swf:FT_Office_AC0003">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[What can I do here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_AC.swf:FT_Office_AC0005">
+              <en><![CDATA[What can I do here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_AC.swf:FT_Office_AC0006">
+              <en><![CDATA[You can set the temperature to hot, normal or cold]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_AC.swf:FT_Office_AC0007">
+              <en><![CDATA[Not much else to do]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

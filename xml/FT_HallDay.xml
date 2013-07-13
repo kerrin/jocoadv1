@@ -1,1 +1,2045 @@
-<room id="FT_HallDay" coreLibs="lib/FT_Hall.swf,lib/V_FT_Hall.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2=""><grids><grid id="main"><boxes><box x="98" y="647" w="2393" h="95" nodes="n10,n12,n13,n14,n15,n16"/></boxes><nodes><node id="n10" x="1844" y="679" join="n12,n13,n14,n15,n16" trap="0" name="ITSupport"/><node id="n12" x="257" y="665" join="n10,n13,n14,n15,n16" trap="0" name="OT"/><node id="n13" x="669" y="665" join="n10,n12,n14,n15,n16" trap="0" name="StorageRoom"/><node id="n14" x="1070" y="665" join="n10,n12,n13,n15,n16" trap="0" name="Office"/><node id="n15" x="1473" y="664" join="n10,n12,n13,n14,n16" trap="0" name="Security"/><node id="n16" x="2228" y="673" join="n10,n12,n13,n14,n15" trap="0" name="Reception"/></nodes></grid></grids><positions><position id="ITSupport" turn="4" x="1844" y="679"/><position id="OT" turn="4" x="257" y="665"/><position id="StorageRoom" turn="4" x="669" y="665"/><position id="Office" turn="4" x="1070" y="665"/><position id="Security" turn="4" x="1473" y="664"/><position id="Reception" turn="4" x="2228" y="673"/></positions><filters><filter id="_main" axis="y" enabled="1"><pole x="501" y="651" scale="1.7" rate="1.7" blur="1" color="0x000000" tint="0.5"/><pole x="501" y="735" scale="1.9" rate="1.9" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><curtain blackout="0"/></script><script id="_exit"><curtain blackout="1"/></script></scripts><layers><layer id="_bg" type="background" asset="lib/FT_Hall.swf:BG_FT_Hall" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="2580" hitH="740" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title><en><![CDATA[]]></en></title><actions/><items/></state></states></layer><layer id="DrMartinPhoto" type="puppet" asset="" depth="1" visible="1" state="main"><states><state id="main" x="1011" y="19" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="119" hitH="178" shape="rect"><param mapX="1059" mapY="678" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Who is this handsome guy? He looks familar.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I've never seen him.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It is just a photo.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more photos.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="SecurityDoor" type="puppet" asset="" depth="2" visible="1" state="main"><states><state id="main" x="1354" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect"><param mapX="1451" mapY="669" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Security Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's where the security guards drink coffee and chat.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Oh and keep an eye on the security monitors.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I don't see any cameras.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:SecurityDrinkCoffee" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think the security guards would like me to go in there.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:SecurityNotGo" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It didn't work.]]></en></dia></dialog><script><sound effect="lib/V_global.swf:DidNotWork" waitForComplete="0"/><dialogue play="*"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="Guard" frame="" sound=""><en><![CDATA[And that is when she said &quot;Don't pull it that hard or it will change colour!&quot;]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[I don't blame her! Don't touch mine.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Ha! Ha!]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[Ha! Ha!]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[You know, I was sure that Dr Martin found out last night about Project Pants after you came back saying he was nosing about in the operating theater.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Yeah, that would be a disaster!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[I felt a right idiot not knowing who he was though after you told me who he was.]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[Oh! Be quite, Oprah is about to start!]]></en></dia><dia puppet="Oprah" frame="" sound=""><en><![CDATA[Today we are talking to upcoming musician Jonathan Coulton.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok, I've heard enough.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:Stethoscope1" waitForComplete="0"/><dialogue play="*"/><tree enableTopic="FT_Office_Phone:Security:_3:1"/><tree enableTopic="FT_Office_Phone:Security:_7:0"/><cache field="stethoscope" value="2"/><layer target="_current:SecurityDoor" state="stethoscope2"/><cursor item=""/></script></action></items></state><state id="stethoscope2" x="1354" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect"><param mapX="1451" mapY="669" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Security Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's where the security guards drink coffee and chat.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Oh and keep an eye on the security monitors.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I don't see any cameras.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:SecurityDrinkCoffee" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think the security guards would like me to go in there.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:SecurityNotGo" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It didn't work.]]></en></dia></dialog><script><sound effect="lib/V_global.swf:DidNotWork" waitForComplete="0"/><dialogue play="*"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="Guard2" frame="" sound=""><en><![CDATA[And that is when he said &quot;If you stick it up there it will hurt!&quot;]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Ha! Ha!]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[Ha! Ha!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[You know, I was sure that Dr Martin found out last night about Project Pants when I caught him nosing about in the operating theater.]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[We said that earlier. You're very forgetful.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Yeah, I'm terrible! I'm always losing my keys.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[That is actually why I lost my last job. Apparently, leaving keys to highly secure areas laying around is a bad thing for a security guard to do.]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[Oh....er. Oprah is starting again.]]></en></dia><dia puppet="Oprah" frame="" sound=""><en><![CDATA[So where do you get the ideas for all you songs?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok, I've heard enough.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:Stethoscope2" waitForComplete="0"/><dialogue play="*"/><cache field="stethoscope" value="3"/><layer target="_current:SecurityDoor" state="stethoscope3"/><cursor item=""/></script></action></items></state><state id="stethoscope3" x="1354" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect"><param mapX="1451" mapY="669" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Security Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's where the security guards drink coffee and chat.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Oh and keep an eye on the security monitors.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I don't see any cameras.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:SecurityDrinkCoffee" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think the security guards would like me to go in there.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:SecurityNotGo" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It didn't work.]]></en></dia></dialog><script><sound effect="lib/V_global.swf:DidNotWork" waitForComplete="0"/><dialogue play="*"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="Guard" frame="" sound=""><en><![CDATA[You know, I was sure that Dr Martin found out last night about]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[Wow, you really are forgetful!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Yeah, I'm terrible! I'm always losing my keys.]]></en></dia><dia puppet="Guard2" frame="" sound=""><en><![CDATA[We had this conversation already. Be quite, Oprah is back!]]></en></dia><dia puppet="Oprah" frame="" sound=""><en><![CDATA[Just before the break we heard Jonathan play a song...]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok, I've heard enough.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:Stethoscope3" waitForComplete="0"/><dialogue play="*"/><cursor item=""/></script></action></items></state><state id="oneGuard" x="1354" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect"><param mapX="1451" mapY="669" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Security Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's where the security guards drink coffee and chat.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Oh and keep an eye on the security monitors.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I don't see any cameras.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:SecurityDrinkCoffee" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think the security guards would like me to go in there.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:SecurityNotGo" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It didn't work.]]></en></dia></dialog><script><sound effect="lib/V_global.swf:DidNotWork" waitForComplete="0"/><dialogue play="*"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't hear anything apart from the TV.]]></en></dia></dialog><script><sound effect="lib/V_FT_Hall.swf:HearNothing" waitForComplete="0"/><dialogue play="*"/><cursor item=""/></script></action></items></state></states></layer><layer id="BillJonesPhoto" type="puppet" asset="" depth="3" visible="1" state="main"><states><state id="main" x="10" y="22" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="83" hitH="189" shape="rect"><param mapX="117" mapY="696" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a picture of Bill Jones. He appears to be a security guard.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Doesn't he look familiar?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Yeah, I can't quite remember where I have seen him before.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It is just a photo.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more photos.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="OfficeDoor" type="puppet" asset="" depth="4" visible="1" state="main"><states><state id="main" x="967" y="202" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="446" shape="rect"><param mapX="1069" mapY="666" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Dr Martin Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's Dr Martins' door.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's locked.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog/><script><layer target="_current:OfficeDoor" state="Unlocked"/><game room="FT_Office:SecureDoor"/></script></action></items></state><state id="Unlocked" x="968" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect"><param mapX="1056" mapY="667" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Dr Martin Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's Dr Martins' door.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_Office:SecureDoor"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's open already.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't hear anything interesting.]]></en></dia></dialog><script><dialogue play="*"/></script></action></items></state></states></layer><layer id="FredMcCoy" type="puppet" asset="" depth="5" visible="1" state="main"><states><state id="main" x="2172" y="20" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="118" hitH="173" shape="rect"><param mapX="2243" mapY="689" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a photo of Fred McCoy. He appears to be a Nurse.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It is just a photo.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more photos.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="ITSupportDoor" type="puppet" asset="" depth="6" visible="1" state="main"><states><state id="main" x="1745" y="200" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="449" shape="rect"><param mapX="1844" mapY="680" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[IT Support Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a room for geeks.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[You can't call them that anymore, they're called intelligence enhanched superiors now.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ah yeah, it became an insult after George Bush the third claimed he was a geek.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's locked.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It didn't work.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Sounds like someone is playing Portal 2]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Steve Merchant is in there trying to help them escape.]]></en></dia></dialog><script><dialogue play="*"/></script></action></items></state></states></layer><layer id="RogerWilco" type="puppet" asset="" depth="7" visible="1" state="main"><states><state id="main" x="1401" y="20" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="118" hitH="176" shape="rect"><param mapX="1443" mapY="684" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a picture of Roger Wilco. He appears to be a janitor.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It is just a photo.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more photos.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="CEODoor" type="puppet" asset="" depth="8" visible="1" state="main"><states><state id="main" x="17" y="206" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="140" hitH="517" shape="rect"><param mapX="120" mapY="700" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[CEO Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a door to the CEO's office.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[She looks pretty.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's locked.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It didn't work.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't hear anything interesting.]]></en></dia></dialog><script><dialogue play="*"/></script></action></items></state></states></layer><layer id="SamFroggertPhoto" type="puppet" asset="" depth="9" visible="1" state="main"><states><state id="main" x="2501" y="25" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="75" hitH="207" shape="rect"><param mapX="2464" mapY="697" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a photo of Sam Frogert. He appears to be a researcher.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It is just a photo.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more photos.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="StorageRoomDoor" type="puppet" asset="" depth="10" visible="1" state="main"><states><state id="main" x="565" y="200" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="214" hitH="450" shape="rect"><param mapX="667" mapY="663" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Storage Room Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the storage room I was locked in.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's locked.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog/><script><layer target="_current:StorageRoomDoor" state="Unlocked"/><game room="FT_StorageRoom:SecureDoor"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't hear anything interesting.]]></en></dia></dialog><script><dialogue play="*"/></script></action></items></state><state id="Unlocked" x="565" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="214" hitH="447" shape="rect"><param mapX="676" mapY="666" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Storage Room Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the storage room I was locked in.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_StorageRoom:SecureDoor"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog/><script><game room="FT_StorageRoom:SecureDoor"/></script></action></items></state></states></layer><layer id="ChrisLanders" type="puppet" asset="" depth="11" visible="1" state="main"><states><state id="main" x="1796" y="18" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="114" hitH="176" shape="rect"><param mapX="1845" mapY="686" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a picture of Chris Landers. He appears to be IT Support.]]></en></dia></dialog><script><tree enableTopic="FT_Office_Phone:ITSupport:_14:1"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It is just a photo.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more photos.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="OTDoor" type="puppet" asset="" depth="12" visible="1" state="main"><states><state id="main" x="172" y="202" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect"><param mapX="256" mapY="665" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[O.T. Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the door for the Operating Theather.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's locked.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog/><script><layer target="_current:OTDoor" state="Unlocked"/><game room="FT_OT:SecureDoor"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't hear anything interesting.]]></en></dia></dialog><script><dialogue play="*"/></script></action></items></state><state id="Unlocked" x="173" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="210" hitH="447" shape="rect"><param mapX="269" mapY="666" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[O.T. Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the door to the Operating Theater.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_OT:SecureDoor"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog/><script><game room="FT_OT:SecureDoor"/></script></action></items></state></states></layer><layer id="RobSmith" type="puppet" asset="" depth="13" visible="1" state="main"><states><state id="main" x="618" y="21" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="117" hitH="173" shape="rect"><param mapX="649" mapY="678" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a picture of Rob Smith. He appears to be a security guard.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It is just a photo.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more photos.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="ReceptionDoor" type="puppet" asset="" depth="14" visible="1" state="Unlocked"><states><state id="Unlocked" x="2123" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="211" hitH="449" shape="rect"><param mapX="2219" mapY="675" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Reception Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the door to reception.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_Reception:SecureDoor"/></script></action></actions><items><action id="MyKeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's open already.]]></en></dia></dialog><script><game room="FT_Reception:SecureDoor"/></script></action><action id="Stethoscope"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't hear anything interesting.]]></en></dia></dialog><script><dialogue play="*"/></script></action></items></state></states></layer><layer id="SarahBio" type="puppet" asset="" depth="15" visible="1" state="main"><states><state id="main" x="229" y="19" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="117" hitH="176" shape="rect"><param mapX="274" mapY="676" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a picture like they one I am carrying. It looks more recent though.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It is just a photo.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more photos.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Guard" type="puppet" asset="" depth="16" visible="1" state="main"><states><state id="main" x="1399" y="273" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect"><param mapX="1471" mapY="665" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x66FF00" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Guard]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Guard2" type="puppet" asset="" depth="17" visible="1" state="main"><states><state id="main" x="1484" y="271" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect"><param mapX="1473" mapY="665" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x990000" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Guard]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Oprah" type="puppet" asset="" depth="18" visible="1" state="main"><states><state id="main" x="1455" y="443" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect"><param mapX="1473" mapY="664" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00FF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Oprah]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="plant2" type="puppet" asset="lib/FT_Hall.swf:Flower2" depth="19" visible="1" state="main"><states><state id="main" x="2400" y="364" img="1" imgX="1" imgY="3" imgW="0.3" imgH="0.3" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="112" hitH="314" shape="rect"><param mapX="2434" mapY="693" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Plant]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a plant]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA['No magician, I have never met you before, honest.']]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No, not that kind of plant!]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hello little fella.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[What with?]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="plant1" type="puppet" asset="lib/FT_Hall.swf:Flower1" depth="20" visible="1" state="main"><states><state id="main" x="1633" y="366" img="1" imgX="0" imgY="0" imgW="0.3" imgH="0.3" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="102" hitH="313" shape="rect"><param mapX="1689" mapY="679" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Plant]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a plant]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA['No magician, I have never met you before, honest.']]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No, not that kind of plant!]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hello little fella.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[What with?]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="cactus" type="puppet" asset="lib/FT_Hall.swf:Cactus" depth="21" visible="1" state="main"><states><state id="main" x="845" y="438" img="1" imgX="2" imgY="1" imgW="0.3" imgH="0.3" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="103" hitH="244" shape="rect"><param mapX="898" mapY="691" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cactus]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a plant]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA['No magician, I have never met you before, honest.']]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No, not that kind of plant!]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hello little fella.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[What with?]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="22" visible="1" state="main"><states><state id="main" x="636" y="693" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/><vars/><title><en><![CDATA[ted]]></en></title><actions/><items/></state></states></layer><layer id="ego" type="puppet" asset="" depth="23" visible="0" state="main"><states><state id="main" x="1331" y="277" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="1474" mapY="666" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer></layers><trees/></room>
+<room id="FT_HallDay" coreLibs="lib/FT_Hall.swf,lib/BG_Office.swf" voiceLibs="voice/V_FT_Hall.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="98" y="647" w="2393" h="95" nodes="n10,n12,n13,n14,n15,n16"/>
+      </boxes>
+      <nodes>
+        <node id="n10" x="1844" y="679" join="n12,n13,n14,n15,n16" trap="0" name="ITSupport"/>
+        <node id="n12" x="257" y="665" join="n10,n13,n14,n15,n16" trap="0" name="OT"/>
+        <node id="n13" x="669" y="665" join="n10,n12,n14,n15,n16" trap="0" name="StorageRoom"/>
+        <node id="n14" x="1070" y="665" join="n10,n12,n13,n15,n16" trap="0" name="Office"/>
+        <node id="n15" x="1473" y="664" join="n10,n12,n13,n14,n16" trap="0" name="Security"/>
+        <node id="n16" x="2228" y="673" join="n10,n12,n13,n14,n15" trap="0" name="Reception"/>
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="ITSupport" turn="4" x="1844" y="679"/>
+    <position id="OT" turn="4" x="257" y="665"/>
+    <position id="StorageRoom" turn="4" x="669" y="665"/>
+    <position id="Office" turn="4" x="1070" y="665"/>
+    <position id="Security" turn="4" x="1473" y="664"/>
+    <position id="Reception" turn="4" x="2228" y="673"/>
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="501" y="651" scale="1.7" rate="1.7" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="501" y="735" scale="1.9" rate="1.9" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Office.swf:MyMonkey"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/FT_Hall.swf:BG_FT_Hall" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="2580" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="DrMartinPhoto" type="puppet" asset="" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="1011" y="19" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="119" hitH="178" shape="rect">
+          <param mapX="1059" mapY="678" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0000">
+                  <en><![CDATA[Who is this handsome guy? He looks familar.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0001">
+                  <en><![CDATA[I've never seen him.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0002">
+                  <en><![CDATA[It is just a photo.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0003">
+                  <en><![CDATA[I don't need any more photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="SecurityDoor" type="puppet" asset="" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="1354" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect">
+          <param mapX="1451" mapY="669" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Security Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0004">
+                  <en><![CDATA[It's where the security guards drink coffee and chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0005">
+                  <en><![CDATA[Oh and keep an eye on the security monitors.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0006">
+                  <en><![CDATA[I don't see any cameras.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_Hall.swf:SecurityDrinkCoffee" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0007">
+                  <en><![CDATA[I don't think the security guards would like me to go in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_Hall.swf:SecurityNotGo" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0008">
+                  <en><![CDATA[It didn't work.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_global.swf:DidNotWork" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0009">
+                  <en><![CDATA[And that is when she said &quot;Don't pull it that hard or it will change colour!&quot;]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0010">
+                  <en><![CDATA[I don't blame her! Don't touch mine.]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0011">
+                  <en><![CDATA[Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0012">
+                  <en><![CDATA[Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0013">
+                  <en><![CDATA[You know, I was sure that Dr Martin found out last night about Project Pants after you came back saying he was nosing about in the operating theater.]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0014">
+                  <en><![CDATA[Yeah, that would be a disaster!]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0015">
+                  <en><![CDATA[I felt a right idiot not knowing who he was though after you told me who he was.]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0016">
+                  <en><![CDATA[Oh! Be quiet, Oprah is about to start!]]></en>
+                </dia>
+                <dia puppet="Oprah" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0017">
+                  <en><![CDATA[Today we are talking to upcoming musician Jonathan Coulton.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0018">
+                  <en><![CDATA[Ok, I've heard enough.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+                <tree enableTopic="FT_Office_Phone:Security:_3:1"/>
+                <tree enableTopic="FT_Office_Phone:Security:_7:0"/>
+                <tree enableTopic="_current:HelpMe:_3:0"/>
+                <tree enableTopic="_current:HelpMe:_1:0"/>
+                <cache field="stethoscope" value="2"/>
+                <layer target="_current:SecurityDoor" state="stethoscope2"/>
+                <cursor item=""/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="stethoscope2" x="1354" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect">
+          <param mapX="1451" mapY="669" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Security Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0019">
+                  <en><![CDATA[It's where the security guards drink coffee and chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0020">
+                  <en><![CDATA[Oh and keep an eye on the security monitors.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0021">
+                  <en><![CDATA[I don't see any cameras.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_Hall.swf:SecurityDrinkCoffee" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0022">
+                  <en><![CDATA[I don't think the security guards would like me to go in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_Hall.swf:SecurityNotGo" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0023">
+                  <en><![CDATA[It didn't work.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_global.swf:DidNotWork" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0024">
+                  <en><![CDATA[And that is when he said &quot;If you stick it up there it will hurt!&quot;]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0011">
+                  <en><![CDATA[Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0026">
+                  <en><![CDATA[Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0027">
+                  <en><![CDATA[You know, I was sure that Dr Martin found out last night about Project Pants when I caught him nosing about in the operating theater.]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0028">
+                  <en><![CDATA[We said that earlier. You're very forgetful.]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0029">
+                  <en><![CDATA[Yeah, I'm terrible! I'm always losing my keys.]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0030">
+                  <en><![CDATA[That is actually why I lost my last job. Apparently, leaving keys to highly secure areas laying around is a bad thing for a security guard to do.]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0031">
+                  <en><![CDATA[Oh....er. Oprah is starting again.]]></en>
+                </dia>
+                <dia puppet="Oprah" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0032">
+                  <en><![CDATA[So where do your get the ideas for all you songs?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0033">
+                  <en><![CDATA[Ok, I've heard enough.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+                <cache field="stethoscope" value="3"/>
+                <layer target="_current:SecurityDoor" state="stethoscope3"/>
+                <cursor item=""/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="stethoscope3" x="1354" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect">
+          <param mapX="1451" mapY="669" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Security Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0034">
+                  <en><![CDATA[It's where the security guards drink coffee and chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0035">
+                  <en><![CDATA[Oh and keep an eye on the security monitors.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0036">
+                  <en><![CDATA[I don't see any cameras.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_Hall.swf:SecurityDrinkCoffee" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0037">
+                  <en><![CDATA[I don't think the security guards would like me to go in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_Hall.swf:SecurityNotGo" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0038">
+                  <en><![CDATA[It didn't work.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_global.swf:DidNotWork" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0039">
+                  <en><![CDATA[You know, I was sure that Dr Martin found out last night about]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0040">
+                  <en><![CDATA[Wow, you really are forgetful!]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0029">
+                  <en><![CDATA[Yeah, I'm terrible! I'm always losing my keys.]]></en>
+                </dia>
+                <dia puppet="Guard2" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0042">
+                  <en><![CDATA[We had this conversation already. Be quiet, Oprah is back!]]></en>
+                </dia>
+                <dia puppet="Oprah" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0043">
+                  <en><![CDATA[Alright, Just before the break we heard Jonathan play a song about the first of May. That was an interesting one.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0044">
+                  <en><![CDATA[Ok, I've heard enough.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+                <cursor item=""/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="oneGuard" x="1354" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect">
+          <param mapX="1451" mapY="669" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Security Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0045">
+                  <en><![CDATA[It's where the security guards drink coffee and chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0046">
+                  <en><![CDATA[Oh and keep an eye on the security monitors.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0047">
+                  <en><![CDATA[I don't see any cameras.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_Hall.swf:SecurityDrinkCoffee" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0048">
+                  <en><![CDATA[I don't think the security guards would like me to go in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_Hall.swf:SecurityNotGo" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0049">
+                  <en><![CDATA[It didn't work.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_global.swf:DidNotWork" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0050">
+                  <en><![CDATA[I can't hear anything apart from the TV.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+                <cursor item=""/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="BillJonesPhoto" type="puppet" asset="" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="10" y="22" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="83" hitH="189" shape="rect">
+          <param mapX="117" mapY="696" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0051">
+                  <en><![CDATA[It's a picture of Bill Jones. He appears to be a security guard.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0052">
+                  <en><![CDATA[Doesn't he look familiar?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0053">
+                  <en><![CDATA[Yeah, I can't quite remember where I have seen him before.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0054">
+                  <en><![CDATA[It is just a photo.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0055">
+                  <en><![CDATA[I don't need any more photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="OfficeDoor" type="puppet" asset="" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="967" y="202" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="446" shape="rect">
+          <param mapX="1069" mapY="666" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Dr Martin Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0056">
+                  <en><![CDATA[It's Dr Martin's door.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0057">
+                  <en><![CDATA[It's locked.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="none"/>
+                <layer target="_current:OfficeDoor" state="Unlocked"/>
+                <tree enableTopic="_current:HelpMe:_6:0"/>
+                <game room="FT_Office:SecureDoor"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="Unlocked" x="968" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect">
+          <param mapX="1071" mapY="664" turnTo="1" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Dr Martin Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0058">
+                  <en><![CDATA[It's Dr Martins' door.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_Office:SecureDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0059">
+                  <en><![CDATA[It's open already.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="none"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0107">
+                  <en><![CDATA[I can't hear anything interesting.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="JillMcCoy" type="puppet" asset="" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="2173" y="21" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="118" hitH="173" shape="rect">
+          <param mapX="2228" mapY="675" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0060">
+                  <en><![CDATA[It's a photo of Jill McCoy. She appears to be the receptionist.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0061">
+                  <en><![CDATA[It is just a photo.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0062">
+                  <en><![CDATA[I don't need any more photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ITSupportDoor" type="puppet" asset="" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="1745" y="200" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="449" shape="rect">
+          <param mapX="1844" mapY="680" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[IT Support Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0063">
+                  <en><![CDATA[It's a room for geeks.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0064">
+                  <en><![CDATA[You can't call them that anymore, they're called intelligence enhanched superiors now.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0065">
+                  <en><![CDATA[Ah yeah, it became an insult after George Bush the third claimed he was a geek.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0066">
+                  <en><![CDATA[It's locked.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0067">
+                  <en><![CDATA[It didn't work.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0104">
+                  <en><![CDATA[Sounds like someone is playing Portal 2]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0105">
+                  <en><![CDATA[Steve Merchant is in there trying to help them escape.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="RogerWilco" type="puppet" asset="" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="1401" y="20" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="118" hitH="176" shape="rect">
+          <param mapX="1443" mapY="684" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0068">
+                  <en><![CDATA[It's a picture of Roger Wilco. He appears to be a janitor.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0069">
+                  <en><![CDATA[It is just a photo.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0070">
+                  <en><![CDATA[I don't need any more photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CEODoor" type="puppet" asset="" depth="8" visible="1" state="main">
+      <states>
+        <state id="main" x="17" y="206" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="140" hitH="517" shape="rect">
+          <param mapX="120" mapY="700" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[CEO Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0071">
+                  <en><![CDATA[It's a door to the CEO's office.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0072">
+                  <en><![CDATA[She looks pretty.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0073">
+                  <en><![CDATA[It's locked.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0074">
+                  <en><![CDATA[It didn't work.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0110">
+                  <en><![CDATA[I can't hear anything interesting.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="SamFroggertPhoto" type="puppet" asset="" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="2501" y="25" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="75" hitH="207" shape="rect">
+          <param mapX="2464" mapY="697" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0075">
+                  <en><![CDATA[It's a photo of Sam Frogert. He appears to be a researcher.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0076">
+                  <en><![CDATA[It is just a photo.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0077">
+                  <en><![CDATA[I don't need any more photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="StorageRoomDoor" type="puppet" asset="" depth="10" visible="1" state="main">
+      <states>
+        <state id="main" x="565" y="200" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="214" hitH="450" shape="rect">
+          <param mapX="667" mapY="663" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Storage Room Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0078">
+                  <en><![CDATA[It's the storage room I was locked in.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0079">
+                  <en><![CDATA[It's locked.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="none"/>
+                <layer target="_current:StorageRoomDoor" state="Unlocked"/>
+                <game room="FT_StorageRoom:SecureDoor"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0108">
+                  <en><![CDATA[I can't hear anything interesting.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="Unlocked" x="565" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="214" hitH="447" shape="rect">
+          <param mapX="676" mapY="666" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Storage Room Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0080">
+                  <en><![CDATA[It's the storage room I was locked in.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_StorageRoom:SecureDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="none"/>
+                <game room="FT_StorageRoom:SecureDoor"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="ChrisLanders" type="puppet" asset="" depth="11" visible="1" state="main">
+      <states>
+        <state id="main" x="1796" y="18" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="114" hitH="176" shape="rect">
+          <param mapX="1845" mapY="686" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0081">
+                  <en><![CDATA[It's a picture of Chris Landers. He appears to be IT Support.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <tree enableTopic="FT_Office_Phone:ITSupport:_14:1"/>
+                <tree enableTopic="FT_HallDay:helpMe:_7:0"/>
+                <tree enableTopic="FT_HallDay:helpMe:_8:0"/>
+                <tree enableTopic="FT_HallDay:helpMe:_9:0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0082">
+                  <en><![CDATA[It is just a photo.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0083">
+                  <en><![CDATA[I don't need any more photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="OTDoor" type="puppet" asset="" depth="12" visible="1" state="main">
+      <states>
+        <state id="main" x="172" y="202" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="213" hitH="448" shape="rect">
+          <param mapX="256" mapY="665" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[O.T. Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0084">
+                  <en><![CDATA[It's the door for the Operating Theatre.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0085">
+                  <en><![CDATA[It's locked.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="none"/>
+                <layer target="_current:OTDoor" state="Unlocked"/>
+                <game room="FT_OT:SecureDoor"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0109">
+                  <en><![CDATA[I can't hear anything interesting.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="Unlocked" x="173" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="210" hitH="447" shape="rect">
+          <param mapX="257" mapY="666" turnTo="1" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[O.T. Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0086">
+                  <en><![CDATA[It's the door to the Operating Theater.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_OT:SecureDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="none"/>
+                <game room="FT_OT:SecureDoor"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="RobSmith" type="puppet" asset="" depth="13" visible="1" state="main">
+      <states>
+        <state id="main" x="618" y="21" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="117" hitH="173" shape="rect">
+          <param mapX="649" mapY="678" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0087">
+                  <en><![CDATA[It's a picture of Rob Smith. He appears to be a security guard.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0088">
+                  <en><![CDATA[It is just a photo.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0089">
+                  <en><![CDATA[I don't need any more photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ReceptionDoor" type="puppet" asset="" depth="14" visible="1" state="Unlocked">
+      <states>
+        <state id="Unlocked" x="2123" y="201" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="211" hitH="449" shape="rect">
+          <param mapX="2227" mapY="672" turnTo="1" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Reception Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0090">
+                  <en><![CDATA[It's the door to reception.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_Reception:SecureDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MyKeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0091">
+                  <en><![CDATA[It's open already.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="none"/>
+                <game room="FT_Reception:SecureDoor"/>
+              </script>
+            </action>
+            <action id="Stethoscope">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0106">
+                  <en><![CDATA[I can't hear anything interesting.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="SarahBio" type="puppet" asset="" depth="15" visible="1" state="main">
+      <states>
+        <state id="main" x="229" y="19" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="117" hitH="176" shape="rect">
+          <param mapX="274" mapY="676" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0092">
+                  <en><![CDATA[It's a picture like they one I am carrying. It looks more recent though.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0093">
+                  <en><![CDATA[It is just a photo.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0094">
+                  <en><![CDATA[I don't need any more photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Guard" type="puppet" asset="" depth="16" visible="1" state="main">
+      <states>
+        <state id="main" x="1399" y="273" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect">
+          <param mapX="1471" mapY="665" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x0099FF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Guard]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Guard2" type="puppet" asset="" depth="17" visible="1" state="main">
+      <states>
+        <state id="main" x="1484" y="271" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect">
+          <param mapX="1473" mapY="665" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x990000" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Guard]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Oprah" type="puppet" asset="" depth="18" visible="1" state="main">
+      <states>
+        <state id="main" x="1455" y="443" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect">
+          <param mapX="1473" mapY="664" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00FF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Oprah]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="plant2" type="puppet" asset="lib/FT_Hall.swf:Flower2" depth="19" visible="1" state="main">
+      <states>
+        <state id="main" x="2400" y="364" img="1" imgX="1" imgY="3" imgW="0.3" imgH="0.3" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="112" hitH="314" shape="rect">
+          <param mapX="2434" mapY="693" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Plant]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0095">
+                  <en><![CDATA[It's a plant]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0114">
+                  <en><![CDATA['No magician, I have never met you before, honest.']]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0116">
+                  <en><![CDATA[No, not that kind of plant!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0096">
+                  <en><![CDATA[Hello little fella.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0097">
+                  <en><![CDATA[What with?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="plant1" type="puppet" asset="lib/FT_Hall.swf:Flower1" depth="20" visible="1" state="main">
+      <states>
+        <state id="main" x="1633" y="366" img="1" imgX="0" imgY="0" imgW="0.3" imgH="0.3" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="102" hitH="313" shape="rect">
+          <param mapX="1689" mapY="679" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Chuck the Plant]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0098">
+                  <en><![CDATA[It's a plant]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0113">
+                  <en><![CDATA['No magician, I have never met you before, honest.']]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0115">
+                  <en><![CDATA[No, not that kind of plant!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0099">
+                  <en><![CDATA[Hello little fella.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0100">
+                  <en><![CDATA[What with?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="cactus" type="puppet" asset="lib/FT_Hall.swf:Cactus" depth="21" visible="1" state="main">
+      <states>
+        <state id="main" x="845" y="438" img="1" imgX="2" imgY="1" imgW="0.3" imgH="0.3" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="103" hitH="244" shape="rect">
+          <param mapX="898" mapY="691" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cactus]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0101">
+                  <en><![CDATA[It's a plant]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0112">
+                  <en><![CDATA['No magician, I have never met you before, honest.']]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0111">
+                  <en><![CDATA[No, not that kind of plant!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0102">
+                  <en><![CDATA[Hello little fella.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0103">
+                  <en><![CDATA[What with?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="22" visible="1" state="main">
+      <states>
+        <state id="main" x="636" y="693" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ego" type="puppet" asset="" depth="23" visible="0" state="main">
+      <states>
+        <state id="main" x="1331" y="277" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="1474" mapY="666" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="HelpMe">
+      <tier key="r_t1" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Enough Help]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0121">
+              <en><![CDATA[Enough Help]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_3" enabled="0" hold="1" expose="_4" go="0">
+          <title>
+            <en><![CDATA[What can I do in here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0122">
+              <en><![CDATA[What can I do in here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0123">
+              <en><![CDATA[You need to get some insight in to someone on the other side of one of these doors]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_4" enabled="0" hold="1" expose="_5" go="0">
+          <title>
+            <en><![CDATA[How do I listen to people?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0124">
+              <en><![CDATA[How do I listen to people?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0125">
+              <en><![CDATA[You need a listening device]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_5" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Tell me what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0126">
+              <en><![CDATA[Tell me what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0127">
+              <en><![CDATA[Use the stethoscope on the guards door.]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0128">
+              <en><![CDATA[You may need to do it multiple times]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_7" enabled="1" hold="1" expose="_8" go="0">
+          <title>
+            <en><![CDATA[Do I need to find something here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0132">
+              <en><![CDATA[Do I need to find something here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0133">
+              <en><![CDATA[Yes. You need to find something out here.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_8" enabled="0" hold="1" expose="_9" go="0">
+          <title>
+            <en><![CDATA[What do I need to find out?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0134">
+              <en><![CDATA[What do I need to find out?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0135">
+              <en><![CDATA[You need to remember one of your work colleague's names]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_9" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I remember their name?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0136">
+              <en><![CDATA[How do I remember their name?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0137">
+              <en><![CDATA[Look at all the photos on the walls]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0117">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Do I need to do anything in this room?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0119">
+              <en><![CDATA[Do I need to do anything in this room?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0120">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_6" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[What can I do here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0129">
+              <en><![CDATA[What can I do here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0130">
+              <en><![CDATA[You have a new key card]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Hall.swf:FT_HallDay0131">
+              <en><![CDATA[Maybe that one works on more doors?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

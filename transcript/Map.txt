@@ -1,6 +1,36 @@
 LAYERS
 
 --------------------------------------------------
+- Layer: day
+--------------------------------------------------
+ --------------------------------------------------
+ State: night (layer: day)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: day, state: night)
+
+  -----
+  Action: "Talk to" (#1, layer: day, state: night)
+
+  -----
+  Action: "Use" (#2, layer: day, state: night)
+
+ --------------------------------------------------
+ State: day (layer: day)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: day, state: day)
+
+  -----
+  Action: "Talk to" (#1, layer: day, state: day)
+
+  -----
+  Action: "Use" (#2, layer: day, state: day)
+
+
+--------------------------------------------------
 - Layer: _bg
 --------------------------------------------------
  --------------------------------------------------
@@ -110,12 +140,124 @@ LAYERS
  title: "ted"
 
 
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
+
+
 
 
 TREES
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Map.swf:Map0000]
+   "No More Help Please"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_2" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Map.swf:Map0004]
+   "Enough help"
+
+  -----
+  Topic: "_3" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Map.swf:Map0005]
+   "Where is the office?"
+
+   - Dialog [puppet: ego, voice:voice/V_Map.swf:Map0006]
+   "The building at the top"
+
+  -----
+  Topic: "_4" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Map.swf:Map0008]
+   "Where is my home?"
+
+   - Dialog [puppet: ego, voice:voice/V_Map.swf:Map0009]
+   "The biggest house at the bottom"
+
+  -----
+  Topic: "_5" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Map.swf:Map0010]
+   "Where is the coffee shop"
+
+   - Dialog [puppet: ego, voice:voice/V_Map.swf:Map0011]
+   "It is the rightmost building"
+
+   - Dialog [puppet: ego, voice:voice/V_Map.swf:Map0012]
+   "With the coffee cup on"
+
+  -----
+  Topic: "_6" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Map.swf:Map0013]
+   "Where is the secret lair?"
+
+   - Dialog [puppet: ego, voice:voice/V_Map.swf:Map0014]
+   "It's in the mountain in the top left"
+
+  -----
+  Topic: "_1" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Map.swf:Map0002]
+   "Where can I go?"
+
+   - Dialog [puppet: ego, voice:voice/V_Map.swf:Map0003]
+   "Here, there, and everywhere"
 
 
 
 
+_avatar,"No More Help Please",voice/V_Map.swf:Map0000
+_avatar,"Enough help",voice/V_Map.swf:Map0004
+_avatar,"Where is the office?",voice/V_Map.swf:Map0005
+ego,"The building at the top",voice/V_Map.swf:Map0006
+_avatar,"Where is my home?",voice/V_Map.swf:Map0008
+ego,"The biggest house at the bottom",voice/V_Map.swf:Map0009
+_avatar,"Where is the coffee shop",voice/V_Map.swf:Map0010
+ego,"It is the rightmost building",voice/V_Map.swf:Map0011
+ego,"With the coffee cup on",voice/V_Map.swf:Map0012
+_avatar,"Where is the secret lair?",voice/V_Map.swf:Map0013
+ego,"It's in the mountain in the top left",voice/V_Map.swf:Map0014
+_avatar,"Where can I go?",voice/V_Map.swf:Map0002
+ego,"Here, there, and everywhere",voice/V_Map.swf:Map0003
 
 
+
+addSound( Map0000 );
+addSound( Map0004 );
+addSound( Map0005 );
+addSound( Map0006 );
+addSound( Map0008 );
+addSound( Map0009 );
+addSound( Map0010 );
+addSound( Map0011 );
+addSound( Map0012 );
+addSound( Map0013 );
+addSound( Map0014 );
+addSound( Map0002 );
+addSound( Map0003 );

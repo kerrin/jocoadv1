@@ -1,4 +1,4 @@
-<room id="CoffeeShop" coreLibs="lib/CoffeeShop.swf" voiceLibs="voice/V_CoffeeShop.swf,voice/V_global.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+<room id="CoffeeShop" coreLibs="lib/CoffeeShop.swf" voiceLibs="voice/V_CoffeeShop.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
   <grids>
     <grid id="main">
       <boxes>
@@ -17,6 +17,7 @@
   <scripts>
     <script id="_enter">
       <curtain blackout="0"/>
+      <sound soundtrack1="voice/V_CoffeeShop.swf:YouRuinedEverything"/>
     </script>
     <script id="_exit">
       <curtain blackout="1"/>
@@ -490,7 +491,7 @@
     <layer id="iDog" type="puppet" asset="lib/CoffeeShop.swf:iDog" depth="12" visible="1" state="main">
       <states>
         <state id="main" x="332" y="342" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="109" hitH="135" shape="rect">
-          <param mapX="467" mapY="649" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x0000FF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <param mapX="467" mapY="649" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00CCFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
             <en><![CDATA[iDog]]></en>
@@ -513,10 +514,107 @@
               <title>
                 <en><![CDATA[Talk to]]></en>
               </title>
-              <dialog/>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0360">
+                  <en><![CDATA[Hi, is this the robo-therapy group meetup?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0361">
+                  <en><![CDATA[Are you implying that we are bunch of robo-losers?]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0362">
+                  <en><![CDATA[Good day, how can I help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0421">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0420">
+                  <en><![CDATA[To leave us alone, we're busy!]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0417">
+                  <en><![CDATA[Yeah! We're too busy to chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0531">
+                  <en><![CDATA[Don't you know who I am?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0532">
+                  <en><![CDATA[No, who are you?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0533">
+                  <en><![CDATA[Oh. No one really, just hoped you’d know.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0363">
+                  <en><![CDATA[Hi, I do know you.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0364">
+                  <en><![CDATA[Fine! We do know you.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0418">
+                  <en><![CDATA[We were just pulling your leg earlier. Woof!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0365">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0419">
+                  <en><![CDATA[I have some information that might help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0366">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0422">
+                  <en><![CDATA[But I'm not going to tell you what it is! Ha! Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0406">
+                  <en><![CDATA[I guess you want to know where Sarah is?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0407">
+                  <en><![CDATA[Yeah.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0414">
+                  <en><![CDATA[She's in her secret lair! Ha Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0408">
+                  <en><![CDATA[We can't tell you where that is though!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0409">
+                  <en><![CDATA[We promised we'd tell him.]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0410">
+                  <en><![CDATA[We also promised Sarah not to say where her secret lair is.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0411">
+                  <en><![CDATA[The one on the top of the mountain or the one in her office?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0412">
+                  <en><![CDATA[The mountain one dummy, she's not hiding in her office is she?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0413">
+                  <en><![CDATA[Guys! Shh!]]></en>
+                </dia>
+              </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
-                <tree load="Robots"/>
+                <logic eval="[robots] EQ ignoring">
+                  <dialogue playList="0,1,2,3,4,5,6,7,8"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
+                <logic eval="[robots] EQ stillknowyou">
+                  <dialogue playList="12,13,14,15"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ knowyou">
+                  <cache field="robots" value="stillknowyou"/>
+                  <dialogue playList="9,10,11"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ allfriends">
+                  <layer target="Map:SecretLair" state="Know"/>
+                  <tree enableTopic="Map:HelpMe:_3:0"/>
+                  <tree enableTopic="Map:HelpMe:_4:0"/>
+                  <tree enableTopic="Map:HelpMe:_5:0"/>
+                  <tree enableTopic="Map:HelpMe:_6:1"/>
+                  <dialogue playList="12,16,17,18,19,20,21,22,23,24"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
               </script>
             </action>
             <action id="act2">
@@ -558,12 +656,12 @@
               <script>
                 <logic eval="[laptop_song] EQ synced">
                   <cache field="iDog" value="friend"/>
-                  <tree enableTopic="_current:iDog:_3:0"/>
-                  <tree enableTopic="_current:iDog:_8:0"/>
-                  <tree enableTopic="_current:iDog:_9:1"/>
+                  <tree enableTopic="_current:Robots:_16:0"/>
+                  <tree enableTopic="_current:HelpMe:_9:0"/>
                   <logic eval="[Optimus] EQ friend AND [iDog] EQ friend AND [Cyberman] EQ friend AND [Tod] EQ friend">
-                    <tree enableTopic="_current:Optimus:_9:0"/>
-                    <tree enableTopic="_current:Optimus:_10:1"/>
+                    <tree enableTopic="_current:Robots:_3:0"/>
+                    <tree enableTopic="_current:Robots:_10:1"/>
+                    <cache field="robots" value="allfriends"/>
                   </logic>
                   <dialogue playList="1,2,3,4"/>
                 </logic>
@@ -603,10 +701,107 @@
               <title>
                 <en><![CDATA[Talk to]]></en>
               </title>
-              <dialog/>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0360">
+                  <en><![CDATA[Hi, is this the robo-therapy group meetup?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0361">
+                  <en><![CDATA[Are you implying that we are bunch of robo-losers?]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0362">
+                  <en><![CDATA[Good day, how can I help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0421">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0420">
+                  <en><![CDATA[To leave us alone, we're busy!]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0417">
+                  <en><![CDATA[Yeah! We're too busy to chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0531">
+                  <en><![CDATA[Don't you know who I am?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0532">
+                  <en><![CDATA[No, who are you?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0533">
+                  <en><![CDATA[Oh. No one really, just hoped you’d know.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0363">
+                  <en><![CDATA[Hi, I do know you.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0364">
+                  <en><![CDATA[Fine! We do know you.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0418">
+                  <en><![CDATA[We were just pulling your leg earlier. Woof!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0365">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0419">
+                  <en><![CDATA[I have some information that might help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0366">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0422">
+                  <en><![CDATA[But I'm not going to tell you what it is! Ha! Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0406">
+                  <en><![CDATA[I guess you want to know where Sarah is?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0407">
+                  <en><![CDATA[Yeah.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0414">
+                  <en><![CDATA[She's in her secret lair! Ha Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0408">
+                  <en><![CDATA[We can't tell you where that is though!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0409">
+                  <en><![CDATA[We promised we'd tell him.]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0410">
+                  <en><![CDATA[We also promised Sarah not to say where her secret lair is.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0411">
+                  <en><![CDATA[The one on the top of the mountain or the one in her office?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0412">
+                  <en><![CDATA[The mountain one dummy, she's not hiding in her office is she?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0413">
+                  <en><![CDATA[Guys! Shh!]]></en>
+                </dia>
+              </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
-                <tree load="Robots"/>
+                <logic eval="[robots] EQ ignoring">
+                  <dialogue playList="0,1,2,3,4,5,6,7,8"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
+                <logic eval="[robots] EQ stillknowyou">
+                  <dialogue playList="12,13,14,15"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ knowyou">
+                  <cache field="robots" value="stillknowyou"/>
+                  <dialogue playList="9,10,11"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ allfriends">
+                  <layer target="Map:SecretLair" state="Know"/>
+                  <tree enableTopic="Map:HelpMe:_3:0"/>
+                  <tree enableTopic="Map:HelpMe:_4:0"/>
+                  <tree enableTopic="Map:HelpMe:_5:0"/>
+                  <tree enableTopic="Map:HelpMe:_6:1"/>
+                  <dialogue playList="12,16,17,18,19,20,21,22,23,24"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
               </script>
             </action>
             <action id="act2">
@@ -633,13 +828,13 @@
                   <en><![CDATA[A parcel?]]></en>
                 </dia>
                 <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0011">
-                  <en><![CDATA[Oh, it's for a Doctor...The Doctor?]]></en>
+                  <en><![CDATA[Oh, it's for The Doctor?]]></en>
                 </dia>
                 <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0012">
                   <en><![CDATA[What is it?]]></en>
                 </dia>
                 <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0013">
-                  <en><![CDATA[It's a Sonic Hedghog!]]></en>
+                  <en><![CDATA[It's a Sonic Hedgehog!]]></en>
                 </dia>
                 <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0014">
                   <en><![CDATA[Er, yes....that is what I wanted. I think.]]></en>
@@ -650,12 +845,12 @@
               </dialog>
               <script>
                 <cache field="Cyberman" value="friend"/>
-                <tree enableTopic="_current:Cyberman:_3:0"/>
-                <tree enableTopic="_current:Cyberman:_8:0"/>
-                <tree enableTopic="_current:Cyberman:_9:1"/>
+                <tree enableTopic="_current:Robots:_17:0"/>
+                <tree enableTopic="_current:HelpMe:_13:0"/>
                 <logic eval="[Optimus] EQ friend AND [iDog] EQ friend AND [Cyberman] EQ friend AND [Tod] EQ friend">
-                  <tree enableTopic="_current:Optimus:_9:0"/>
-                  <tree enableTopic="_current:Optimus:_10:1"/>
+                  <tree enableTopic="_current:Robots:_3:0"/>
+                  <tree enableTopic="_current:Robots:_10:1"/>
+                  <cache field="robots" value="allfriends"/>
                 </logic>
                 <inventory remove="SonicParcel"/>
                 <cursor item=""/>
@@ -692,10 +887,107 @@
               <title>
                 <en><![CDATA[Talk to]]></en>
               </title>
-              <dialog/>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0360">
+                  <en><![CDATA[Hi, is this the robo-therapy group meetup?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0361">
+                  <en><![CDATA[Are you implying that we are bunch of robo-losers?]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0362">
+                  <en><![CDATA[Good day, how can I help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0421">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0420">
+                  <en><![CDATA[To leave us alone, we're busy!]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0417">
+                  <en><![CDATA[Yeah! We're too busy to chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0531">
+                  <en><![CDATA[Don't you know who I am?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0532">
+                  <en><![CDATA[No, who are you?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0533">
+                  <en><![CDATA[Oh. No one really, just hoped you’d know.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0363">
+                  <en><![CDATA[Hi, I do know you.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0364">
+                  <en><![CDATA[Fine! We do know you.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0418">
+                  <en><![CDATA[We were just pulling your leg earlier. Woof!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0365">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0419">
+                  <en><![CDATA[I have some information that might help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0366">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0422">
+                  <en><![CDATA[But I'm not going to tell you what it is! Ha! Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0406">
+                  <en><![CDATA[I guess you want to know where Sarah is?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0407">
+                  <en><![CDATA[Yeah.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0414">
+                  <en><![CDATA[She's in her secret lair! Ha Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0408">
+                  <en><![CDATA[We can't tell you where that is though!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0409">
+                  <en><![CDATA[We promised we'd tell him.]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0410">
+                  <en><![CDATA[We also promised Sarah not to say where her secret lair is.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0411">
+                  <en><![CDATA[The one on the top of the mountain or the one in her office?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0412">
+                  <en><![CDATA[The mountain one dummy, she's not hiding in her office is she?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0413">
+                  <en><![CDATA[Guys! Shh!]]></en>
+                </dia>
+              </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
-                <tree load="Robots"/>
+                <logic eval="[robots] EQ ignoring">
+                  <dialogue playList="0,1,2,3,4,5,6,7,8"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
+                <logic eval="[robots] EQ stillknowyou">
+                  <dialogue playList="12,13,14,15"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ knowyou">
+                  <cache field="robots" value="stillknowyou"/>
+                  <dialogue playList="9,10,11"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ allfriends">
+                  <layer target="Map:SecretLair" state="Know"/>
+                  <tree enableTopic="Map:HelpMe:_3:0"/>
+                  <tree enableTopic="Map:HelpMe:_4:0"/>
+                  <tree enableTopic="Map:HelpMe:_5:0"/>
+                  <tree enableTopic="Map:HelpMe:_6:1"/>
+                  <dialogue playList="12,16,17,18,19,20,21,22,23,24"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
               </script>
             </action>
             <action id="act2">
@@ -704,7 +996,7 @@
               </title>
               <dialog>
                 <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0017">
-                  <en><![CDATA[I don't feel like using that person, for now.]]></en>
+                  <en><![CDATA[I don't feel like using this person, for now.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -729,6 +1021,7 @@
                 <cache field="o2" value="given"/>
                 <cursor item=""/>
                 <layer target="_current:Optimus" state="HaveO2"/>
+                <tree enableTopic="_current:HelpMe:_7:0"/>
                 <dialogue play="*"/>
               </script>
             </action>
@@ -772,10 +1065,107 @@
               <title>
                 <en><![CDATA[Talk to]]></en>
               </title>
-              <dialog/>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0360">
+                  <en><![CDATA[Hi, is this the robo-therapy group meetup?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0361">
+                  <en><![CDATA[Are you implying that we are bunch of robo-losers?]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0362">
+                  <en><![CDATA[Good day, how can I help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0421">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0420">
+                  <en><![CDATA[To leave us alone, we're busy!]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0417">
+                  <en><![CDATA[Yeah! We're too busy to chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0531">
+                  <en><![CDATA[Don't you know who I am?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0532">
+                  <en><![CDATA[No, who are you?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0533">
+                  <en><![CDATA[Oh. No one really, just hoped you’d know.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0363">
+                  <en><![CDATA[Hi, I do know you.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0364">
+                  <en><![CDATA[Fine! We do know you.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0418">
+                  <en><![CDATA[We were just pulling your leg earlier. Woof!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0365">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0419">
+                  <en><![CDATA[I have some information that might help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0366">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0422">
+                  <en><![CDATA[But I'm not going to tell you what it is! Ha! Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0406">
+                  <en><![CDATA[I guess you want to know where Sarah is?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0407">
+                  <en><![CDATA[Yeah.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0414">
+                  <en><![CDATA[She's in her secret lair! Ha Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0408">
+                  <en><![CDATA[We can't tell you where that is though!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0409">
+                  <en><![CDATA[We promised we'd tell him.]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0410">
+                  <en><![CDATA[We also promised Sarah not to say where her secret lair is.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0411">
+                  <en><![CDATA[The one on the top of the mountain or the one in her office?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0412">
+                  <en><![CDATA[The mountain one dummy, she's not hiding in her office is she?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0413">
+                  <en><![CDATA[Guys! Shh!]]></en>
+                </dia>
+              </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
-                <tree load="Robots"/>
+                <logic eval="[robots] EQ ignoring">
+                  <dialogue playList="0,1,2,3,4,5,6,7,8"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
+                <logic eval="[robots] EQ stillknowyou">
+                  <dialogue playList="12,13,14,15"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ knowyou">
+                  <cache field="robots" value="stillknowyou"/>
+                  <dialogue playList="9,10,11"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ allfriends">
+                  <layer target="Map:SecretLair" state="Know"/>
+                  <tree enableTopic="Map:HelpMe:_3:0"/>
+                  <tree enableTopic="Map:HelpMe:_4:0"/>
+                  <tree enableTopic="Map:HelpMe:_5:0"/>
+                  <tree enableTopic="Map:HelpMe:_6:1"/>
+                  <dialogue playList="12,16,17,18,19,20,21,22,23,24"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
               </script>
             </action>
             <action id="act2">
@@ -799,7 +1189,7 @@
               </title>
               <dialog>
                 <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0023">
-                  <en><![CDATA[Thanks I don't need anymore.]]></en>
+                  <en><![CDATA[Thanks I don't need any more.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -819,15 +1209,15 @@
               <script>
                 <cursor item=""/>
                 <cache field="Optimus" value="friend"/>
-                <tree enableTopic="_current:Optimus:_3:0"/>
-                <tree enableTopic="_current:Optimus:_8:0"/>
-                <tree enableTopic="_current:Optimus:_9:1"/>
+                <tree enableTopic="_current:Robots:_6:0"/>
+                <tree enableTopic="_current:HelpMe:_5:0"/>
                 <layer target="_current:Optimus" state="Done"/>
                 <inventory remove="Pills"/>
                 <dialogue playList="0"/>
                 <logic eval="[Optimus] EQ friend AND [iDog] EQ friend AND [Cyberman] EQ friend AND [Tod] EQ friend">
-                  <tree enableTopic="_current:Optimus:_9:0"/>
-                  <tree enableTopic="_current:Optimus:_10:1"/>
+                  <tree enableTopic="_current:Robots:_3:0"/>
+                  <tree enableTopic="_current:Robots:_10:1"/>
+                  <cache field="robots" value="allfriends"/>
                 </logic>
               </script>
             </action>
@@ -857,10 +1247,107 @@
               <title>
                 <en><![CDATA[Talk to]]></en>
               </title>
-              <dialog/>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0360">
+                  <en><![CDATA[Hi, is this the robo-therapy group meetup?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0361">
+                  <en><![CDATA[Are you implying that we are bunch of robo-losers?]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0362">
+                  <en><![CDATA[Good day, how can I help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0421">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0420">
+                  <en><![CDATA[To leave us alone, we're busy!]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0417">
+                  <en><![CDATA[Yeah! We're too busy to chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0531">
+                  <en><![CDATA[Don't you know who I am?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0532">
+                  <en><![CDATA[No, who are you?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0533">
+                  <en><![CDATA[Oh. No one really, just hoped you’d know.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0363">
+                  <en><![CDATA[Hi, I do know you.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0364">
+                  <en><![CDATA[Fine! We do know you.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0418">
+                  <en><![CDATA[We were just pulling your leg earlier. Woof!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0365">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0419">
+                  <en><![CDATA[I have some information that might help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0366">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0422">
+                  <en><![CDATA[But I'm not going to tell you what it is! Ha! Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0406">
+                  <en><![CDATA[I guess you want to know where Sarah is?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0407">
+                  <en><![CDATA[Yeah.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0414">
+                  <en><![CDATA[She's in her secret lair! Ha Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0408">
+                  <en><![CDATA[We can't tell you where that is though!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0409">
+                  <en><![CDATA[We promised we'd tell him.]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0410">
+                  <en><![CDATA[We also promised Sarah not to say where her secret lair is.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0411">
+                  <en><![CDATA[The one on the top of the mountain or the one in her office?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0412">
+                  <en><![CDATA[The mountain one dummy, she's not hiding in her office is she?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0413">
+                  <en><![CDATA[Guys! Shh!]]></en>
+                </dia>
+              </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
-                <tree load="Robots"/>
+                <logic eval="[robots] EQ ignoring">
+                  <dialogue playList="0,1,2,3,4,5,6,7,8"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
+                <logic eval="[robots] EQ stillknowyou">
+                  <dialogue playList="12,13,14,15"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ knowyou">
+                  <cache field="robots" value="stillknowyou"/>
+                  <dialogue playList="9,10,11"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ allfriends">
+                  <layer target="Map:SecretLair" state="Know"/>
+                  <tree enableTopic="Map:HelpMe:_3:0"/>
+                  <tree enableTopic="Map:HelpMe:_4:0"/>
+                  <tree enableTopic="Map:HelpMe:_5:0"/>
+                  <tree enableTopic="Map:HelpMe:_6:1"/>
+                  <dialogue playList="12,16,17,18,19,20,21,22,23,24"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
               </script>
             </action>
             <action id="act2">
@@ -922,10 +1409,107 @@
               <title>
                 <en><![CDATA[Talk to]]></en>
               </title>
-              <dialog/>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0360">
+                  <en><![CDATA[Hi, is this the robo-therapy group meetup?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0361">
+                  <en><![CDATA[Are you implying that we are bunch of robo-losers?]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0362">
+                  <en><![CDATA[Good day, how can I help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0421">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0420">
+                  <en><![CDATA[To leave us alone, we're busy!]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0417">
+                  <en><![CDATA[Yeah! We're too busy to chat.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0531">
+                  <en><![CDATA[Don't you know who I am?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0532">
+                  <en><![CDATA[No, who are you?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0533">
+                  <en><![CDATA[Oh. No one really, just hoped you’d know.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0363">
+                  <en><![CDATA[Hi, I do know you.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0364">
+                  <en><![CDATA[Fine! We do know you.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0418">
+                  <en><![CDATA[We were just pulling your leg earlier. Woof!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0365">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0419">
+                  <en><![CDATA[I have some information that might help you]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0366">
+                  <en><![CDATA[&lt;huf-huf&gt;]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0422">
+                  <en><![CDATA[But I'm not going to tell you what it is! Ha! Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0406">
+                  <en><![CDATA[I guess you want to know where Sarah is?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0407">
+                  <en><![CDATA[Yeah.]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0414">
+                  <en><![CDATA[She's in her secret lair! Ha Ha! Ha!]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0408">
+                  <en><![CDATA[We can't tell you where that is though!]]></en>
+                </dia>
+                <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0409">
+                  <en><![CDATA[We promised we'd tell him.]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0410">
+                  <en><![CDATA[We also promised Sarah not to say where her secret lair is.]]></en>
+                </dia>
+                <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0411">
+                  <en><![CDATA[The one on the top of the mountain or the one in her office?]]></en>
+                </dia>
+                <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0412">
+                  <en><![CDATA[The mountain one dummy, she's not hiding in her office is she?]]></en>
+                </dia>
+                <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0413">
+                  <en><![CDATA[Guys! Shh!]]></en>
+                </dia>
+              </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
-                <tree load="Robots"/>
+                <logic eval="[robots] EQ ignoring">
+                  <dialogue playList="0,1,2,3,4,5,6,7,8"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
+                <logic eval="[robots] EQ stillknowyou">
+                  <dialogue playList="12,13,14,15"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ knowyou">
+                  <cache field="robots" value="stillknowyou"/>
+                  <dialogue playList="9,10,11"/>
+                  <tree load="Robots"/>
+                </logic>
+                <logic eval="[robots] EQ allfriends">
+                  <layer target="Map:SecretLair" state="Know"/>
+                  <tree enableTopic="Map:HelpMe:_3:0"/>
+                  <tree enableTopic="Map:HelpMe:_4:0"/>
+                  <tree enableTopic="Map:HelpMe:_5:0"/>
+                  <tree enableTopic="Map:HelpMe:_6:1"/>
+                  <dialogue playList="12,16,17,18,19,20,21,22,23,24"/>
+                  <scriptCall global="afterDialogue"/>
+                </logic>
               </script>
             </action>
             <action id="act2">
@@ -1006,12 +1590,12 @@
               </dialog>
               <script>
                 <cache field="Tod" value="friend"/>
-                <tree enableTopic="_current:Tod:_3:0"/>
-                <tree enableTopic="_current:Tod:_8:0"/>
-                <tree enableTopic="_current:Tod:_9:1"/>
+                <tree enableTopic="_current:Robots:_18:0"/>
+                <tree enableTopic="_current:HelpMe:_18:0"/>
                 <logic eval="[Optimus] EQ friend AND [iDog] EQ friend AND [Cyberman] EQ friend AND [Tod] EQ friend">
-                  <tree enableTopic="_current:Optimus:_9:0"/>
-                  <tree enableTopic="_current:Optimus:_10:1"/>
+                  <tree enableTopic="_current:Robots:_3:0"/>
+                  <tree enableTopic="_current:Robots:_10:1"/>
+                  <cache field="robots" value="allfriends"/>
                 </logic>
                 <dialogue play="*"/>
                 <cursor item=""/>
@@ -1021,7 +1605,48 @@
         </state>
       </states>
     </layer>
-    <layer id="TableRobots" type="puppet" asset="lib/CoffeeShop.swf:Table" depth="16" visible="1" state="main">
+    <layer id="Tina" type="puppet" asset="" depth="16" visible="1" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="272" mapY="394" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x9900FF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="TableRobots" type="puppet" asset="lib/CoffeeShop.swf:Table" depth="17" visible="1" state="main">
       <states>
         <state id="main" x="311" y="475" img="1" imgX="0" imgY="0" imgW="4" imgH="3" frame="2" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="400" hitH="200" shape="rect">
           <param mapX="455" mapY="658" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -1062,7 +1687,7 @@
         </state>
       </states>
     </layer>
-    <layer id="Seating" type="puppet" asset="" depth="17" visible="1" state="main">
+    <layer id="Seating" type="puppet" asset="" depth="18" visible="1" state="main">
       <states>
         <state id="main" x="871" y="473" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="405" hitH="204" shape="rect">
           <param mapX="1075" mapY="687" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -1114,10 +1739,10 @@
         </state>
       </states>
     </layer>
-    <layer id="Friend" type="puppet" asset="lib/CoffeeShop.swf:Friend" depth="18" visible="1" state="main">
+    <layer id="Friend" type="puppet" asset="lib/CoffeeShop.swf:Friend" depth="19" visible="1" state="main">
       <states>
-        <state id="main" x="1264" y="353" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="196" hitH="297" shape="rect">
-          <param mapX="1525" mapY="683" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xCC00FF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+        <state id="main" x="1265" y="353" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="196" hitH="297" shape="rect">
+          <param mapX="1525" mapY="683" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xCC66FF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
             <en><![CDATA[Tom]]></en>
@@ -1143,9 +1768,17 @@
               <title>
                 <en><![CDATA[Talk to]]></en>
               </title>
-              <dialog/>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0118">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0119">
+                  <en><![CDATA[Hi Ted]]></en>
+                </dia>
+              </dialog>
               <script>
                 <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
                 <tree load="Friend"/>
                 <layer target="FT_Office_Phone:Tom" state="OnMet"/>
               </script>
@@ -1168,7 +1801,7 @@
         </state>
       </states>
     </layer>
-    <layer id="Photo" type="puppet" asset="lib/CoffeeShop.swf:ParrotPhoto" depth="19" visible="1" state="main">
+    <layer id="Photo" type="puppet" asset="lib/CoffeeShop.swf:ParrotPhoto" depth="20" visible="1" state="main">
       <states>
         <state id="main" x="1087" y="38" img="1" imgX="8" imgY="8" imgW="1.5" imgH="1.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="92" hitH="121" shape="rect">
           <param mapX="1152" mapY="686" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -1194,6 +1827,7 @@
                 <logic eval="[find_jokes] EQ yes AND [found_parrot] NE yes">
                   <cache field="found_parrot" value="yes"/>
                   <tree enableTopic="FT_Reception:PS:_29:1"/>
+                  <tree enableTopic="CoffeeShop:HelpMe:_2:0"/>
                   <dialogue playList="1"/>
                 </logic>
               </script>
@@ -1228,7 +1862,7 @@
         </state>
       </states>
     </layer>
-    <layer id="KitchenDoor" type="puppet" asset="" depth="20" visible="1" state="main">
+    <layer id="KitchenDoor" type="puppet" asset="" depth="21" visible="1" state="main">
       <states>
         <state id="main" x="1659" y="91" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="82" hitH="607" shape="rect">
           <param mapX="1633" mapY="683" turnTo="3" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -1271,7 +1905,7 @@
               </title>
               <dialog>
                 <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0054">
-                  <en><![CDATA[I'll get in to trouble.]]></en>
+                  <en><![CDATA[I'll get into trouble.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -1283,7 +1917,7 @@
         </state>
       </states>
     </layer>
-    <layer id="Blackboard" type="puppet" asset="lib/CoffeeShop.swf:Blackboard" depth="21" visible="1" state="main">
+    <layer id="Blackboard" type="puppet" asset="lib/CoffeeShop.swf:Blackboard" depth="22" visible="1" state="main">
       <states>
         <state id="main" x="1058" y="207" img="1" imgX="0" imgY="0" imgW="0.65" imgH="0.65" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="160" hitH="113" shape="rect">
           <param mapX="1130" mapY="702" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -1304,7 +1938,7 @@
                   <en><![CDATA[I don't like fish.]]></en>
                 </dia>
                 <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0057">
-                  <en><![CDATA[I once got servered a herring, that was red.]]></en>
+                  <en><![CDATA[I once got served a herring, that was red.]]></en>
                 </dia>
                 <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0534">
                   <en><![CDATA[Careful. If you make too many references to that game, you might get sued.]]></en>
@@ -1337,13 +1971,13 @@
         </state>
       </states>
     </layer>
-    <layer id="window1" type="puppet" asset="" depth="22" visible="1" state="main">
+    <layer id="window1" type="puppet" asset="" depth="23" visible="1" state="main">
       <states>
         <state id="main" x="221" y="113" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="319" hitH="223" shape="rect">
           <param mapX="458" mapY="661" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
-            <en><![CDATA[Win dow]]></en>
+            <en><![CDATA[Window]]></en>
           </title>
           <actions>
             <action id="act0">
@@ -1352,7 +1986,7 @@
               </title>
               <dialog>
                 <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0058">
-                  <en><![CDATA[It a window. I can see the street outside from here.]]></en>
+                  <en><![CDATA[It's a window. I can see the street outside from here.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -1395,13 +2029,13 @@
         </state>
       </states>
     </layer>
-    <layer id="window2" type="puppet" asset="" depth="23" visible="1" state="main">
+    <layer id="window2" type="puppet" asset="" depth="24" visible="1" state="main">
       <states>
         <state id="main" x="733" y="109" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="319" hitH="223" shape="rect">
           <param mapX="884" mapY="679" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
-            <en><![CDATA[Win dow]]></en>
+            <en><![CDATA[Window]]></en>
           </title>
           <actions>
             <action id="act0">
@@ -1410,7 +2044,7 @@
               </title>
               <dialog>
                 <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0063">
-                  <en><![CDATA[It a window. I can see the street outside from here.]]></en>
+                  <en><![CDATA[It's a window. I can see the street outside from here.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -1453,13 +2087,13 @@
         </state>
       </states>
     </layer>
-    <layer id="window3" type="puppet" asset="" depth="24" visible="1" state="main">
+    <layer id="window3" type="puppet" asset="" depth="25" visible="1" state="main">
       <states>
         <state id="main" x="1225" y="112" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="319" hitH="223" shape="rect">
           <param mapX="1385" mapY="674" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
           <vars/>
           <title>
-            <en><![CDATA[Win dow]]></en>
+            <en><![CDATA[Window]]></en>
           </title>
           <actions>
             <action id="act0">
@@ -1468,7 +2102,7 @@
               </title>
               <dialog>
                 <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0068">
-                  <en><![CDATA[It a window. I can see the street outside from here.]]></en>
+                  <en><![CDATA[It's a window. I can see the street outside from here.]]></en>
                 </dia>
               </dialog>
               <script>
@@ -1511,7 +2145,7 @@
         </state>
       </states>
     </layer>
-    <layer id="shelves" type="puppet" asset="" depth="25" visible="1" state="main">
+    <layer id="shelves" type="puppet" asset="" depth="26" visible="1" state="main">
       <states>
         <state id="main" x="567" y="117" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="129" hitH="194" shape="rect">
           <param mapX="654" mapY="675" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -1548,7 +2182,7 @@
               </title>
               <dialog>
                 <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0074">
-                  <en><![CDATA[There is nothing of interest on them. And even if there was, that would be stealling.]]></en>
+                  <en><![CDATA[There is nothing of interest on them. And even if there was, that would be stealing.]]></en>
                 </dia>
                 <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0075">
                   <en><![CDATA[I'm sure that book would come in really useful, you should take it.]]></en>
@@ -1566,7 +2200,7 @@
         </state>
       </states>
     </layer>
-    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="26" visible="1" state="main">
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="27" visible="1" state="main">
       <states>
         <state id="main" x="127" y="659" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
           <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/>
@@ -1579,7 +2213,7 @@
         </state>
       </states>
     </layer>
-    <layer id="ego" type="puppet" asset="" depth="27" visible="0" state="main">
+    <layer id="ego" type="puppet" asset="" depth="28" visible="0" state="main">
       <states>
         <state id="main" x="450" y="320" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
           <param mapX="991" mapY="217" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
@@ -1623,323 +2257,7 @@
   </layers>
   <trees>
     <tree id="Friend">
-      <tier key="r_t0_t0_t0_t0_t0" id="_16">
-        <topic key="t0" id="_17" enabled="1" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[What upgrades has she had?]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0130">
-              <en><![CDATA[What upgrades has she had?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0131">
-              <en><![CDATA[Well it started with infrared eyes.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0132">
-              <en><![CDATA[Some gills and some wings and a few extra thumbsr]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0133">
-              <en><![CDATA[Now she is thirteen feet tall]]></en>
-            </dia>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0134">
-              <en><![CDATA[When she's asleep her machinery hums.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0135">
-              <en><![CDATA[Really?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0136">
-              <en><![CDATA[That's..er...interesting.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t1" id="_18" enabled="1" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[Is she dangerous?]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0137">
-              <en><![CDATA[Is she dangerous?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0138">
-              <en><![CDATA[Well]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0139">
-              <en><![CDATA[Given that you have lost your memory and everything the same night you were going to confront her about her illegal activities.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0140">
-              <en><![CDATA[Maybe.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t2" id="_19" enabled="1" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[What should I do?]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0141">
-              <en><![CDATA[What should I do?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0142">
-              <en><![CDATA[I don't know!]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0143">
-              <en><![CDATA[I suggest you get your memory back before you see her again.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0144">
-              <en><![CDATA[You could try talking to her robot friends over there.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <logic eval="[knowRobots] NE 1">
-              <cache field="knowRobots" value="1"/>
-              <tree enableTopic="_current:Robots:_0:0"/>
-              <tree enableTopic="_current:Robots:_2:1"/>
-            </logic>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t5" id="_24" enabled="0" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[I don't suppose I told you what my password is for my home computer.]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0145">
-              <en><![CDATA[I don't suppose I told you what my password is for my home computer.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0146">
-              <en><![CDATA[No, sorry. It's probably something important to you though.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0147">
-              <en><![CDATA[Have you tried your familys names or you were a big fan of Battlestar Galactica? ]]></en>
-            </dia>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0148">
-              <en><![CDATA[Thanks, I'll give them a try.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <tree enableTopic="Home_Computer:GuessPassword:_11:1"/>
-            <tree enableTopic="Home_Computer:GuessPassword:_13:1"/>
-            <tree enableTopic="Home_Computer:GuessPassword:_14:1"/>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t4" id="_23" enabled="1" hold="1" expose="" go="0">
-          <title>
-            <en><![CDATA[I don't know what else to ask.]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0149">
-              <en><![CDATA[I don't know what else to ask.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0150">
-              <en><![CDATA[I don't know what else to tell you.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t3" id="_20" enabled="1" hold="1" expose="" go="-2">
-          <title>
-            <en><![CDATA[Ok, I've heard enough.]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0151">
-              <en><![CDATA[Ok, I've heard enough.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0152">
-              <en><![CDATA[Just glad I could help.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0153">
-              <en><![CDATA[Be careful!]]></en>
-            </dia>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0154">
-              <en><![CDATA[Thanks Tom. Bye.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <tree enableTopic="_current:Friend:_2:0"/>
-            <tree enableTopic="_current:Friend:_22:1"/>
-            <dialogue play="*"/>
-            <scriptCall global="afterDialogue"/>
-          </script>
-        </topic>
-      </tier>
-      <tier key="r_t0_t0_t0_t0" id="">
-        <topic key="t0" id="_16" enabled="1" hold="1" expose="" go="1">
-          <title>
-            <en><![CDATA[What did I say?]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0126">
-              <en><![CDATA[What did I say?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0127">
-              <en><![CDATA[You said you had found files on here computer, and she was in to illegal practices to fund her obbession with her surgeory.]]></en>
-            </dia>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0128">
-              <en><![CDATA[What surgeory?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0129">
-              <en><![CDATA[Her cyborg upgrades.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-      </tier>
-      <tier key="r_t0_t0_t0" id="_8">
-        <topic key="t0" id="_12" enabled="1" hold="1" expose="" go="1">
-          <title>
-            <en><![CDATA[What makes you think Sarah is to blame?]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0124">
-              <en><![CDATA[What makes you think Sarah is to blame?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0125">
-              <en><![CDATA[Well we met yesterday, and you told me where you were going.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t1" id="_15" enabled="1" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[Do you think I've gone crazy?]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0155">
-              <en><![CDATA[Do you think I've gone crazy?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0156">
-              <en><![CDATA[Well....]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0157">
-              <en><![CDATA[It's possible.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0158">
-              <en><![CDATA[But I don't think so.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-      </tier>
-      <tier key="r_t0_t0" id="">
-        <topic key="t0" id="_8" enabled="1" hold="1" expose="" go="1">
-          <title>
-            <en><![CDATA[I remember waking up in a locked storage closet!]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0122">
-              <en><![CDATA[I remember waking up in a locked storage closet!]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0123">
-              <en><![CDATA[Sarah is clearly more dangerous than we thought.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t1" id="_9" enabled="1" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[I remember where I live.]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0159">
-              <en><![CDATA[I remember where I live.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0160">
-              <en><![CDATA[Well that is a good sign.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t2" id="_10" enabled="0" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[I remember Sarah is my girlfriend.]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0161">
-              <en><![CDATA[I remember Sarah is my girlfriend.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0162">
-              <en><![CDATA[Well that is a good sign.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t3" id="_11" enabled="1" hold="1" expose="" go="_8">
-          <title>
-            <en><![CDATA[I know I have an annoying inner voice that won't shut up!]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0163">
-              <en><![CDATA[I know I have an annoying inner voice that won't shut up!]]></en>
-            </dia>
-            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0164">
-              <en><![CDATA[Hey, I'm just trying to be helpful.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0165">
-              <en><![CDATA[That just sounds like you are going crazy.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0166">
-              <en><![CDATA[Maybe Sarah isn't to blame after all.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t5" id="_14" enabled="1" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[I remember where I work.]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0167">
-              <en><![CDATA[I remember where I work.]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0168">
-              <en><![CDATA[Well that is a good sign.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t4" id="_13" enabled="1" hold="0" expose="" go="0">
-          <title>
-            <en><![CDATA[I don't remember anything!]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0169">
-              <en><![CDATA[I don't remember anything!]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0170">
-              <en><![CDATA[How did you phone me then?]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-      </tier>
-      <tier key="r_t0_t1_t0" id="_4">
+      <tier key="r_t2_t0" id="_4">
         <topic key="t0" id="_5" enabled="1" hold="1" expose="" go="_0">
           <title>
             <en><![CDATA[Who is Sarah?]]></en>
@@ -1952,7 +2270,7 @@
               <en><![CDATA[Wow, you really have lost your memory!]]></en>
             </dia>
             <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0177">
-              <en><![CDATA[She is your girlfriend.]]></en>
+              <en><![CDATA[She's your girlfriend.]]></en>
             </dia>
           </dialog>
           <script>
@@ -1986,7 +2304,7 @@
           </script>
         </topic>
       </tier>
-      <tier key="r_t0_t1" id="">
+      <tier key="r_t2" id="">
         <topic key="t0" id="_4" enabled="1" hold="1" expose="" go="1">
           <title>
             <en><![CDATA[No. Should I?]]></en>
@@ -1996,15 +2314,10 @@
               <en><![CDATA[No. Should I?]]></en>
             </dia>
             <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0174">
-              <en><![CDATA[They are Sarahs friends.]]></en>
+              <en><![CDATA[They're Sarah's friends.]]></en>
             </dia>
           </dialog>
           <script>
-            <logic eval="[knowRobots] NE 1">
-              <cache field="knowRobots" value="1"/>
-              <tree enableTopic="_current:Robots:_0:0"/>
-              <tree enableTopic="_current:Robots:_2:1"/>
-            </logic>
             <dialogue play="*"/>
           </script>
         </topic>
@@ -2016,22 +2329,353 @@
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0182">
               <en><![CDATA[They look like a toy shop rejection bin!]]></en>
             </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0183">
-              <en><![CDATA[They are Sarahs friends.]]></en>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0174">
+              <en><![CDATA[They're Sarahs friends.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t4_t0_t0_t0" id="_16">
+        <topic key="t0" id="_17" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[What upgrades has she had?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0130">
+              <en><![CDATA[What upgrades has she had?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0131">
+              <en><![CDATA[Well it started with infrared eyes.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0132">
+              <en><![CDATA[Some gills and some wings and a few extra thumbs]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0133">
+              <en><![CDATA[Now she's thirteen feet tall]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0134">
+              <en><![CDATA[When she's asleep her machinery hums.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0135">
+              <en><![CDATA[Really?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0136">
+              <en><![CDATA[That's..er...interesting.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_18" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Is she dangerous?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0137">
+              <en><![CDATA[Is she dangerous?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0138">
+              <en><![CDATA[Well...]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0139">
+              <en><![CDATA[Given that you have lost your memory and everything, the same night you were going to confront her about her illegal activities.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0140">
+              <en><![CDATA[Maybe.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_19" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[What should I do?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0141">
+              <en><![CDATA[What should I do?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0142">
+              <en><![CDATA[I don't know!]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0143">
+              <en><![CDATA[I suggest you get your memory back before you see her again.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0144">
+              <en><![CDATA[You could try talking to her robot friends over there.]]></en>
             </dia>
           </dialog>
           <script>
             <logic eval="[knowRobots] NE 1">
               <cache field="knowRobots" value="1"/>
+              <cache field="robots" value="knowyou"/>
               <tree enableTopic="_current:Robots:_0:0"/>
               <tree enableTopic="_current:Robots:_2:1"/>
             </logic>
             <dialogue play="*"/>
           </script>
         </topic>
+        <topic key="t3" id="_23" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[I don't know what else to ask.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0149">
+              <en><![CDATA[I don't know what else to ask.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0150">
+              <en><![CDATA[I don't know what else to tell you.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_20" enabled="1" hold="1" expose="" go="_0">
+          <title>
+            <en><![CDATA[Ok, I've heard enough.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0151">
+              <en><![CDATA[Ok, I've heard enough.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0152">
+              <en><![CDATA[Just glad I could help.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0153">
+              <en><![CDATA[Be careful!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <tree enableTopic="_current:Friend:_2:0"/>
+            <tree enableTopic="_current:Friend:_22:1"/>
+            <dialogue play="*"/>
+          </script>
+        </topic>
       </tier>
-      <tier key="r_t0" id="_0">
-        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1">
+      <tier key="r_t4_t0_t0" id="">
+        <topic key="t0" id="_16" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What did I say?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0126">
+              <en><![CDATA[What did I say?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0127">
+              <en><![CDATA[You said you had found files on her computer, and she was into illegal practices to fund her obsession with her surgery.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0128">
+              <en><![CDATA[What surgery?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0129">
+              <en><![CDATA[Her cyborg upgrades.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t4_t0" id="_8">
+        <topic key="t1" id="_15" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Do you think I've gone crazy?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0155">
+              <en><![CDATA[Do you think I've gone crazy?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0156">
+              <en><![CDATA[Well....]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0157">
+              <en><![CDATA[It's possible.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0158">
+              <en><![CDATA[But I don't think so.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t0" id="_12" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What makes you think Sarah is to blame?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0124">
+              <en><![CDATA[What makes you think Sarah is to blame?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0125">
+              <en><![CDATA[Well we met yesterday, and you told me where you were going.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t4" id="">
+        <topic key="t1" id="_9" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I remember where I live.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0159">
+              <en><![CDATA[I remember where I live.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0160">
+              <en><![CDATA[Well that is a good sign.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_10" enabled="0" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I remember Sarah is my girlfriend.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0161">
+              <en><![CDATA[I remember Sarah is my girlfriend.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0160">
+              <en><![CDATA[Well that is a good sign.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_14" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I remember where I work.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0167">
+              <en><![CDATA[I remember where I work.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0160">
+              <en><![CDATA[Well that is a good sign.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_13" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I don't remember anything!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0169">
+              <en><![CDATA[I don't remember anything!]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0170">
+              <en><![CDATA[How did you phone me then?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_11" enabled="1" hold="1" expose="" go="_8">
+          <title>
+            <en><![CDATA[I know I have an annoying inner voice that won't shut up!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0163">
+              <en><![CDATA[I know I have an annoying inner voice that won't shut up!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0164">
+              <en><![CDATA[Hey, I'm just trying to be helpful.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0165">
+              <en><![CDATA[That just sounds like you are going crazy.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0166">
+              <en><![CDATA[Maybe Sarah isn't to blame after all.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t0" id="_8" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[I remember waking up in a locked storage closet!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0122">
+              <en><![CDATA[I remember waking up in a locked storage closet!]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0123">
+              <en><![CDATA[Sarah is clearly more dangerous than we thought.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="_0">
+        <topic key="t2" id="_3" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Why are there robots in a coffee shop?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0171">
+              <en><![CDATA[Why are there robots in a coffee shop?]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0172">
+              <en><![CDATA[You don't recognise them?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <logic eval="[knowRobots] NE 1">
+              <cache field="knowRobots" value="1"/>
+              <cache field="robots" value="knowyou"/>
+              <tree enableTopic="_current:Robots:_0:0"/>
+              <tree enableTopic="_current:Robots:_2:1"/>
+            </logic>
+            <tree enableTopic="CoffeeShop:HelpMe:_1:0"/>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_24" enabled="0" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I don't suppose I told you what my password is for my home computer.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0145">
+              <en><![CDATA[I don't suppose I told you what my password is for my home computer.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0146">
+              <en><![CDATA[No, sorry. It's probably something important to you though.]]></en>
+            </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0147">
+              <en><![CDATA[Have you tried your family's names or you were a big fan of Battlestar Galactica? ]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0148">
+              <en><![CDATA[Thanks, I'll give them a try.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <tree enableTopic="Home_Computer:GuessPassword:_11:1"/>
+            <tree enableTopic="Home_Computer:GuessPassword:_13:1"/>
+            <tree enableTopic="Home_Computer:GuessPassword:_14:1"/>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_2" enabled="1" hold="1" expose="" go="1">
           <title>
             <en><![CDATA[So what is it that you have to tell me?]]></en>
           </title>
@@ -2047,67 +2691,16 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t1" id="_3" enabled="1" hold="1" expose="" go="1">
+        <topic key="t5" id="_22" enabled="0" hold="1" expose="" go="_16">
           <title>
-            <en><![CDATA[Why are there robots in a coffee shop?]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0171">
-              <en><![CDATA[Why are there robots in a coffee shop?]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0172">
-              <en><![CDATA[You don't recognise them?]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t3" id="_22" enabled="0" hold="1" expose="" go="_16">
-          <title>
-            <en><![CDATA[Is there anymore you can tell me?]]></en>
+            <en><![CDATA[Is there any more you can tell me?]]></en>
           </title>
           <dialog>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0184">
-              <en><![CDATA[Is there anymore you can tell me?]]></en>
+              <en><![CDATA[Is there any more you can tell me?]]></en>
             </dia>
             <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0185">
               <en><![CDATA[What do you want to know?]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t2" id="_21" enabled="1" hold="1" expose="" go="-2">
-          <title>
-            <en><![CDATA[Bye]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0186">
-              <en><![CDATA[Bye]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0187">
-              <en><![CDATA[Take care.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-            <scriptCall global="afterDialogue"/>
-          </script>
-        </topic>
-      </tier>
-      <tier key="r" id="">
-        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
-          <title>
-            <en><![CDATA[Hi]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0118">
-              <en><![CDATA[Hi]]></en>
-            </dia>
-            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0119">
-              <en><![CDATA[Hey Ted.]]></en>
             </dia>
           </dialog>
           <script>
@@ -2122,6 +2715,9 @@
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0188">
               <en><![CDATA[Bye]]></en>
             </dia>
+            <dia puppet="Friend" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0187">
+              <en><![CDATA[Take care.]]></en>
+            </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
@@ -2131,8 +2727,8 @@
       </tier>
     </tree>
     <tree id="Robots">
-      <tier key="r_t3" id="_3">
-        <topic key="t0" id="_4" enabled="1" hold="0" expose="" go="0">
+      <tier key="r" id="_3">
+        <topic key="t7" id="_4" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Optimus: So who are you again?]]></en>
           </title>
@@ -2187,7 +2783,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t6" id="_12" enabled="1" hold="0" expose="" go="0">
+        <topic key="t8" id="_12" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Lappy: So who are you again?]]></en>
           </title>
@@ -2203,7 +2799,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t7" id="_13" enabled="1" hold="0" expose="" go="0">
+        <topic key="t9" id="_13" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Cyberman: So who are you again?]]></en>
           </title>
@@ -2224,13 +2820,13 @@
               <en><![CDATA[The Doctor! You are the Doctor!]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0435">
-              <en><![CDATA[ Impending critical failure, rebooting!]]></en>
+              <en><![CDATA[Impending critical failure, rebooting!]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0436">
               <en><![CDATA[Restoring from last back up.]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0437">
-              <en><![CDATA[Hello, what just happend]]></en>
+              <en><![CDATA[Hello, what just happened]]></en>
             </dia>
             <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0438">
               <en><![CDATA[Oh, nothing.]]></en>
@@ -2243,7 +2839,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t8" id="_14" enabled="1" hold="0" expose="" go="0">
+        <topic key="t10" id="_14" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Todd: So who are you again?]]></en>
           </title>
@@ -2255,17 +2851,17 @@
               <en><![CDATA[Todd T-1000. Or 'T' to my friends.]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0430">
-              <en><![CDATA[Ok Mr T. Do you pitty the fool?]]></en>
+              <en><![CDATA[Ok Mr T. Do you pity the fool?]]></en>
             </dia>
             <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0431">
-              <en><![CDATA[Your not my friend. And it's just 'T'.]]></en>
+              <en><![CDATA[You're not my friend. And it's just 'T'.]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t1" id="_5" enabled="1" hold="1" expose="" go="0">
+        <topic key="t11" id="_5" enabled="1" hold="1" expose="" go="0">
           <title>
             <en><![CDATA[Where is Sarah? I can't find her.]]></en>
           </title>
@@ -2280,7 +2876,7 @@
               <en><![CDATA[&lt;huf-huf&gt;]]></en>
             </dia>
             <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0385">
-              <en><![CDATA[but I'm not going to! Ha! Ha! Ha!]]></en>
+              <en><![CDATA[But I'm not going to! Ha! Ha! Ha!]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0386">
               <en><![CDATA[I thought we were friends.]]></en>
@@ -2301,7 +2897,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t9" id="_15" enabled="1" hold="0" expose="" go="0">
+        <topic key="t12" id="_15" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Can you tell me anything about Sarah? It might jog my memory.]]></en>
           </title>
@@ -2316,7 +2912,7 @@
               <en><![CDATA[&lt;huf-huf&gt;]]></en>
             </dia>
             <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0443">
-              <en><![CDATA[shame she had no taste in men!]]></en>
+              <en><![CDATA[Shame she had no taste in men!]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0444">
               <en><![CDATA[Thanks for that.]]></en>
@@ -2326,7 +2922,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t2" id="_6" enabled="0" hold="1" expose="" go="0">
+        <topic key="t13" id="_6" enabled="0" hold="1" expose="" go="0">
           <title>
             <en><![CDATA[Optimus, you want a favour?]]></en>
           </title>
@@ -2335,7 +2931,7 @@
               <en><![CDATA[Optimus, you want a favour?]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0472">
-              <en><![CDATA[What do I need to do to for you to tell me where Sarah is?]]></en>
+              <en><![CDATA[What do I need to do for you to tell me where Sarah is?]]></en>
             </dia>
             <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0390">
               <en><![CDATA[Well, I've been having breathing problems recently, so I had an oxygen tank installed, but it need refilling.]]></en>
@@ -2345,10 +2941,11 @@
             </dia>
           </dialog>
           <script>
+            <tree enableTopic="CoffeeShop:HelpMe:_5:1"/>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t10" id="_16" enabled="0" hold="1" expose="" go="0">
+        <topic key="t14" id="_16" enabled="0" hold="1" expose="" go="0">
           <title>
             <en><![CDATA[Lappy, you want a favour?]]></en>
           </title>
@@ -2357,20 +2954,21 @@
               <en><![CDATA[Lappy, you want a favour?]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0474">
-              <en><![CDATA[What do I need to do to for you to tell me where Sarah is?]]></en>
+              <en><![CDATA[What do I need to do for you to tell me where Sarah is?]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0447">
-              <en><![CDATA[I love music. I’ve listened to all my music so much, I need a new song to listen too! Make it good though! Woof!]]></en>
+              <en><![CDATA[I love music. I’ve listened to all my music so much, I need a new song to listen to! Make it good though! Woof!]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0475">
               <en><![CDATA[Oh a parrot, come play with me parrot, I want to be your friend.]]></en>
             </dia>
           </dialog>
           <script>
+            <tree enableTopic="CoffeeShop:HelpMe:_9:1"/>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t11" id="_17" enabled="0" hold="1" expose="" go="0">
+        <topic key="t15" id="_17" enabled="0" hold="1" expose="" go="0">
           <title>
             <en><![CDATA[Cyberman, you want a favour?]]></en>
           </title>
@@ -2379,7 +2977,7 @@
               <en><![CDATA[Cyberman, you want a favour?]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0455">
-              <en><![CDATA[What do I need to do to for you to tell me where Sarah is?]]></en>
+              <en><![CDATA[What do I need to do for you to tell me where Sarah is?]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0457">
               <en><![CDATA[I'm looking for The Doctor.]]></en>
@@ -2388,14 +2986,18 @@
               <en><![CDATA[The Doctor must be stopped!]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0459">
-              <en><![CDATA[My memory has been corrupted, but I know he uses a sonic something. Get me The Doctors sonic thingamy.]]></en>
+              <en><![CDATA[My memory has been corrupted, but I know he uses a sonic something. Get me The Doctor's sonic thingamy.]]></en>
             </dia>
           </dialog>
           <script>
+            <tree enableTopic="CoffeeShop:HelpMe:_13:1"/>
+            <logic eval="[bought_sonic] EQ start">
+              <tree enableTopic="Home_Computer:HelpMe:_11:1"/>
+            </logic>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t12" id="_18" enabled="0" hold="1" expose="" go="0">
+        <topic key="t16" id="_18" enabled="0" hold="1" expose="" go="0">
           <title>
             <en><![CDATA[Todd, you want a favour?]]></en>
           </title>
@@ -2404,7 +3006,7 @@
               <en><![CDATA[Todd, you want a favour?]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0464">
-              <en><![CDATA[What do I need to do to for you to tell me where Sarah is?]]></en>
+              <en><![CDATA[What do I need to do for you to tell me where Sarah is?]]></en>
             </dia>
             <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0469">
               <en><![CDATA[I’m so handsome all the girl robots are scared to be near me.]]></en>
@@ -2419,14 +3021,15 @@
               <en><![CDATA[Like that one I said how large her chest cavities were.]]></en>
             </dia>
             <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0482">
-              <en><![CDATA[I liked it, but she thought I was saying he was large structured.]]></en>
+              <en><![CDATA[I liked it, but she thought I was saying she was large structured.]]></en>
             </dia>
           </dialog>
           <script>
+            <tree enableTopic="CoffeeShop:HelpMe:_18:1"/>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t14" id="_20" enabled="1" hold="0" expose="" go="0">
+        <topic key="t17" id="_20" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Todd, you look big.]]></en>
           </title>
@@ -2438,10 +3041,10 @@
               <en><![CDATA[Bow at my feet! Tremble at my massive muscles!]]></en>
             </dia>
             <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0479">
-              <en><![CDATA[Well their quite big, I guess they could always be improved on.]]></en>
+              <en><![CDATA[Well they're quite big, I guess they could always be improved on.]]></en>
             </dia>
             <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0480">
-              <en><![CDATA[I need to work on my pectorals more don’t I? I can tell your unimpressed.]]></en>
+              <en><![CDATA[I need to work on my pectorals more don’t I? I can tell you're unimpressed.]]></en>
             </dia>
             <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0529">
               <en><![CDATA[Quiver at my stupendous intellect! Actually, that sounds like I’m saying I’m stupid doesn’t it?]]></en>
@@ -2451,7 +3054,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t5" id="_11" enabled="1" hold="0" expose="" go="0">
+        <topic key="t18" id="_11" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Why are you all in this coffee shop?]]></en>
           </title>
@@ -2460,13 +3063,13 @@
               <en><![CDATA[Why are you all in this coffee shop?]]></en>
             </dia>
             <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0401">
-              <en><![CDATA[It's the only place in town that will let us in since Barry Bots eye incident.]]></en>
+              <en><![CDATA[It's the only place in town that will let us in since Barry Bot's eye incident.]]></en>
             </dia>
             <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0483">
               <en><![CDATA[Where he accidently burnt down that shop.]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0484">
-              <en><![CDATA[Yeah it's the only place in town that allows still allows robots.]]></en>
+              <en><![CDATA[Yeah it's the only place in town that still allows robots.]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0485">
               <en><![CDATA[Is that a new cape Optimus?]]></en>
@@ -2479,7 +3082,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t15" id="_21" enabled="1" hold="0" expose="" go="0">
+        <topic key="t19" id="_21" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Is there a big market demand for music loving dogs these days?]]></en>
           </title>
@@ -2497,14 +3100,14 @@
               <en><![CDATA[Additionally, I can express various emotions, grow through learning, and communicate with human beings to bring an entirely new form of entertainment into the home.]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0491">
-              <en><![CDATA[I think you emotion setting is stuck on happy!]]></en>
+              <en><![CDATA[I think your emotion setting is stuck on happy!]]></en>
             </dia>
           </dialog>
           <script>
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t16" id="_22" enabled="1" hold="0" expose="" go="0">
+        <topic key="t20" id="_22" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Can't you give me at least one clue about Sarah's location?]]></en>
           </title>
@@ -2513,13 +3116,13 @@
               <en><![CDATA[Can't you give me at least one clue about Sarah's location?]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0492">
-              <en><![CDATA[You gotta be crazy, you gotta have a real need (singing)]]></en>
+              <en><![CDATA[You gotta be crazy, you gotta have a real need]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0494">
-              <en><![CDATA[I'm just a man who's Circumstances went beyond his control  (singing)]]></en>
+              <en><![CDATA[I'm just a man who's Circumstances went beyond his control]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0495">
-              <en><![CDATA[Give my umbrella to the rain dogs. For I am a rain dog too  (singing)]]></en>
+              <en><![CDATA[Give my umbrella to the rain dogs. For I am a rain dog too]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0496">
               <en><![CDATA[Pink Floyd, Mr Roboto and Tom Waits? Are you trying to impress me with you musical knowledge?]]></en>
@@ -2532,7 +3135,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t17" id="_23" enabled="1" hold="0" expose="" go="0">
+        <topic key="t21" id="_23" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Be a good iDog, why can't you tell me where Sarah is?]]></en>
           </title>
@@ -2541,19 +3144,19 @@
               <en><![CDATA[Be a good iDog, why can't you tell me where Sarah is?]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0499">
-              <en><![CDATA[It's been a hard day's night, and I've been working like a dog  (singing)]]></en>
+              <en><![CDATA[It's been a hard day's night, and I've been working like a dog]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0500">
-              <en><![CDATA[There's nothing you can sing that can't be sung (singing)]]></en>
+              <en><![CDATA[There's nothing you can sing that can't be sung]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0501">
-              <en><![CDATA[The answer, my friend, is blowing in the wind (singing)]]></en>
+              <en><![CDATA[The answer, my friend, is blowin' in the wind]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0502">
-              <en><![CDATA[You ain't never caught a rabbit and you ain't no friend of mine (singing)]]></en>
+              <en><![CDATA[You ain't never caught a rabbit and you ain't no friend of mine]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0503">
-              <en><![CDATA[You've got a friend in me. Yeah, you've got a friend in me (singing)]]></en>
+              <en><![CDATA[You've got a friend in me. Yeah, you've got a friend in me]]></en>
             </dia>
             <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0504">
               <en><![CDATA[But I'm not telling you anything.]]></en>
@@ -2563,7 +3166,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t18" id="_24" enabled="1" hold="0" expose="" go="0">
+        <topic key="t22" id="_24" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Cyberman, how come you don't remember anything?]]></en>
           </title>
@@ -2572,10 +3175,10 @@
               <en><![CDATA[Cyberman, how come you don't remember anything?]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0506">
-              <en><![CDATA[Can robot forget?]]></en>
+              <en><![CDATA[Can robots forget?]]></en>
             </dia>
-            <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0507">
-              <en><![CDATA[My HD has a few bad sectors. I've bought it in the 70's!]]></en>
+            <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0507">
+              <en><![CDATA[My HD has a few bad sectors. I bought it in the 70's!]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0508">
               <en><![CDATA[Have you tried SCANDISK /autofix ?]]></en>
@@ -2596,7 +3199,7 @@
               <en><![CDATA[510423 KB in bad sectors]]></en>
             </dia>
             <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0514">
-              <en><![CDATA[That doesn't sound good.Maybe you need to see a Doctor.]]></en>
+              <en><![CDATA[That doesn't sound good. Maybe you need to see a Doctor.]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0515">
               <en><![CDATA[Yes I need to find The Doctor!]]></en>
@@ -2618,7 +3221,7 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t19" id="_25" enabled="1" hold="0" expose="" go="0">
+        <topic key="t23" id="_25" enabled="1" hold="0" expose="" go="0">
           <title>
             <en><![CDATA[Memories are not that important]]></en>
           </title>
@@ -2636,7 +3239,7 @@
               <en><![CDATA[Or buy a big black motorcycle and travel the world.]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0524">
-              <en><![CDATA[I can't, I've got a mortgage to pay.]]></en>
+              <en><![CDATA[I can't, I've got a mortgage to repay.]]></en>
             </dia>
             <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0525">
               <en><![CDATA[And I need to kill the Doctor first. ]]></en>
@@ -2655,145 +3258,6 @@
             <dialogue play="*"/>
           </script>
         </topic>
-        <topic key="t3" id="_7" enabled="1" hold="1" expose="" go="-2">
-          <title>
-            <en><![CDATA[Bye]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0402">
-              <en><![CDATA[Bye]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-            <scriptCall global="afterDialogue"/>
-          </script>
-        </topic>
-      </tier>
-      <tier key="r" id="">
-        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
-          <title>
-            <en><![CDATA[Hi, is this the robo-therapy group meetup?]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0360">
-              <en><![CDATA[Hi, is this the robo-therapy group meetup?]]></en>
-            </dia>
-            <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0361">
-              <en><![CDATA[Are you implying that we are bunch of robo-loosers?]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0362">
-              <en><![CDATA[Good day, how can I help you]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0421">
-              <en><![CDATA[&lt;huf-huf&gt;]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0420">
-              <en><![CDATA[to leave us alone, we're busy!]]></en>
-            </dia>
-            <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0417">
-              <en><![CDATA[Yeah! We're too busy to chat.]]></en>
-            </dia>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0531">
-              <en><![CDATA[Don't you know who I am?]]></en>
-            </dia>
-            <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0532">
-              <en><![CDATA[No, who are you?]]></en>
-            </dia>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0533">
-              <en><![CDATA[Oh. No one really, just hoped you’d know.]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-            <scriptCall global="afterDialogue"/>
-          </script>
-        </topic>
-        <topic key="t2" id="_2" enabled="0" hold="1" expose="" go="_3">
-          <title>
-            <en><![CDATA[Hi, I do know you.]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0363">
-              <en><![CDATA[Hi, I do know you.]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0364">
-              <en><![CDATA[Fine! We do know you.]]></en>
-            </dia>
-            <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0418">
-              <en><![CDATA[We were just pulling your leg earlier. Woof!]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <tree enableTopic="_current:Robots:_2:0"/>
-            <tree enableTopic="_current:Robots:_3:1"/>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t3" id="_3" enabled="0" hold="1" expose="" go="1">
-          <title>
-            <en><![CDATA[Hi]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0365">
-              <en><![CDATA[Hi]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0419">
-              <en><![CDATA[I have some information that might help you]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0366">
-              <en><![CDATA[&lt;huf-huf&gt;]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0422">
-              <en><![CDATA[But I'm not going to tell you what it is! Ha! Ha! Ha!]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <dialogue play="*"/>
-          </script>
-        </topic>
-        <topic key="t5" id="_10" enabled="0" hold="1" expose="" go="-2">
-          <title>
-            <en><![CDATA[Hi]]></en>
-          </title>
-          <dialog>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0405">
-              <en><![CDATA[Hi]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0406">
-              <en><![CDATA[I guess you want to know where Sarah is?]]></en>
-            </dia>
-            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0407">
-              <en><![CDATA[Yeah.]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0414">
-              <en><![CDATA[She's in her secret lair! Ha Ha! Ha!]]></en>
-            </dia>
-            <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0408">
-              <en><![CDATA[We can't tell you where that is though!]]></en>
-            </dia>
-            <dia puppet="Optimus" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0409">
-              <en><![CDATA[We promised we'd tell him.]]></en>
-            </dia>
-            <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0410">
-              <en><![CDATA[We also promised Sarah not to say where her secret lair is.]]></en>
-            </dia>
-            <dia puppet="iDog" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0411">
-              <en><![CDATA[The one on the top of the mountain or the one in her office?]]></en>
-            </dia>
-            <dia puppet="Todd" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0412">
-              <en><![CDATA[The mountain one dummy, she's not hiding in her office is she?]]></en>
-            </dia>
-            <dia puppet="Cyberman" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0413">
-              <en><![CDATA[Guys! Shh!]]></en>
-            </dia>
-          </dialog>
-          <script>
-            <layer target="Map:SecretLair" state="Know"/>
-            <dialogue play="*"/>
-            <scriptCall global="afterDialogue"/>
-          </script>
-        </topic>
         <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
           <title>
             <en><![CDATA[Bye]]></en>
@@ -2806,6 +3270,392 @@
           <script>
             <dialogue play="*"/>
             <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="HelpMe">
+      <tier key="r_t2" id="">
+        <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Don't tell me where it is.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0544">
+              <en><![CDATA[Don't tell me where it is.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_4" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Where is the pirate joke?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0545">
+              <en><![CDATA[Where is the pirate joke?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0546">
+              <en><![CDATA[Look at the parrot photo]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t3" id="">
+        <topic key="t0" id="_6" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough help with Optimus]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0549">
+              <en><![CDATA[Enough help with Optimus]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_7" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I get Oxygen?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0550">
+              <en><![CDATA[How do I get Oxygen?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0551">
+              <en><![CDATA[Have you tried a medical facility?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_8" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I get medicine?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0552">
+              <en><![CDATA[How do I get medicine?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0553">
+              <en><![CDATA[Medicine is usally locked away.]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0554">
+              <en><![CDATA[Have you tried a medical facility?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t4" id="">
+        <topic key="t0" id="_10" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough help with Lappy]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0557">
+              <en><![CDATA[Enough help with Lappy]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_11" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Where can I get a song?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0558">
+              <en><![CDATA[Where can I get a song?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0559">
+              <en><![CDATA[I hear you can download music from the internet]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_12" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I get the song to Lappy?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0560">
+              <en><![CDATA[How do I get the song to Lappy?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0561">
+              <en><![CDATA[I hear that mp3 players are a good way to do that.]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0562">
+              <en><![CDATA[Maybe you could find someone with one you could borrow.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t5" id="">
+        <topic key="t0" id="_14" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough help with Cyberman]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0565">
+              <en><![CDATA[Enough help with Cyberman]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_15" enabled="1" hold="1" expose="_16" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0566">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0567">
+              <en><![CDATA[He does not really know what he wants from The Doctor]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0568">
+              <en><![CDATA[You are a doctor, maybe you could trick him into thinking that something you own is what he wants]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_16" enabled="0" hold="1" expose="_17" go="0">
+          <title>
+            <en><![CDATA[Bigger Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0569">
+              <en><![CDATA[Bigger Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0570">
+              <en><![CDATA[I'd get a parcel delivered with a Sonic something in]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_17" enabled="0" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Just tell me what to do]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0571">
+              <en><![CDATA[Just tell me what to do]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0572">
+              <en><![CDATA[I hear iBay is good for buying stuff]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0573">
+              <en><![CDATA[You will need a computer though, you have one at home you could use]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t6" id="">
+        <topic key="t0" id="_19" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough Help with Todd]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0576">
+              <en><![CDATA[Enough Help with Todd]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_20" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0577">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0578">
+              <en><![CDATA[Robots probably want electronic girlfriends]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_21" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Tell me what to do]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0579">
+              <en><![CDATA[Tell me what to do]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0580">
+              <en><![CDATA[I would try doing other things first, you can't do this yet.]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0583">
+              <en><![CDATA[Maybe someone will give you one later]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_22" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Tell me what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0581">
+              <en><![CDATA[Tell me what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0582">
+              <en><![CDATA[You have a female AI on a USB stick, try giving Todd that]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0537">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[The robots won't talk to me]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0538">
+              <en><![CDATA[The robots won't talk to me]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0539">
+              <en><![CDATA[They claim you don't know them]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0540">
+              <en><![CDATA[You don't remember if you know them.]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0541">
+              <en><![CDATA[Maybe there is someone who would know if you do know them]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_2" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Are there any pirate jokes in here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0542">
+              <en><![CDATA[Are there any pirate jokes in here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0543">
+              <en><![CDATA[Yes, make sure you look at everything]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_5" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[How do I help Optimus?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0547">
+              <en><![CDATA[How do I help Optimus?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0548">
+              <en><![CDATA[He wants oxygen and hayfeaver medicine]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_9" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[How do I help Lappy (iDog)?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0555">
+              <en><![CDATA[How do I help Lappy (iDog)?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0556">
+              <en><![CDATA[Lappy wants a good song.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_13" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[How do I help Cyberman?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0563">
+              <en><![CDATA[How do I help Cyberman?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0564">
+              <en><![CDATA[He wants something belonging to The Doctor]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_18" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[How do I help Todd?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0574">
+              <en><![CDATA[How do I help Todd?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_CoffeeShop.swf:CoffeeShop0575">
+              <en><![CDATA[Todd wants a girlfriend]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
           </script>
         </topic>
       </tier>

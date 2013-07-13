@@ -41,7 +41,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Cold, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_Office_AC0000]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Office_AC.swf:FT_Office_AC0000]
    "Wow, that quickly made it cold in here!"
 
 
@@ -61,7 +61,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Hot, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_Office_AC0001]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Office_AC.swf:FT_Office_AC0001]
    "That soon made it hot in here!"
 
 
@@ -81,7 +81,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Tepid, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_Office_AC0002]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Office_AC.swf:FT_Office_AC0002]
    "Ah, nice."
 
 
@@ -128,15 +128,67 @@ LAYERS
   Action: "Use" (#2, layer: Knob, state: cold)
 
 
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
+
+
 
 
 TREES
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Office_AC.swf:FT_Office_AC0003]
+   "No More Help Please"
+
+  -----
+  Topic: "_1" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Office_AC.swf:FT_Office_AC0005]
+   "What can I do here?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Office_AC.swf:FT_Office_AC0006]
+   "You can set the temperature to hot, normal or cold"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Office_AC.swf:FT_Office_AC0007]
+   "Not much else to do"
 
 
 
-_avatar,"Wow, that quickly made it cold in here!",:FT_Office_AC0000
-_avatar,"That soon made it hot in here!",:FT_Office_AC0001
-_avatar,"Ah, nice.",:FT_Office_AC0002
+
+_avatar,"Wow, that quickly made it cold in here!",voice/V_FT_Office_AC.swf:FT_Office_AC0000
+_avatar,"That soon made it hot in here!",voice/V_FT_Office_AC.swf:FT_Office_AC0001
+_avatar,"Ah, nice.",voice/V_FT_Office_AC.swf:FT_Office_AC0002
+_avatar,"No More Help Please",voice/V_FT_Office_AC.swf:FT_Office_AC0003
+_avatar,"What can I do here?",voice/V_FT_Office_AC.swf:FT_Office_AC0005
+ego,"You can set the temperature to hot, normal or cold",voice/V_FT_Office_AC.swf:FT_Office_AC0006
+ego,"Not much else to do",voice/V_FT_Office_AC.swf:FT_Office_AC0007
 
 
 
+addSound( FT_Office_AC0000 );
+addSound( FT_Office_AC0001 );
+addSound( FT_Office_AC0002 );
+addSound( FT_Office_AC0003 );
+addSound( FT_Office_AC0005 );
+addSound( FT_Office_AC0006 );
+addSound( FT_Office_AC0007 );

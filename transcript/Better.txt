@@ -1,0 +1,142 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: BedroomDoor
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: BedroomDoor)
+ title: "Bedroom"
+
+  -----
+  Action: "Look at" (#0, layer: BedroomDoor, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: BedroomDoor, state: main)
+
+  -----
+  Action: "Use" (#2, layer: BedroomDoor, state: main)
+
+
+--------------------------------------------------
+- Layer: Degrees
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Degrees)
+ title: "Degrees"
+
+  -----
+  Action: "Look at" (#0, layer: Degrees, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Degrees, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Degrees, state: main)
+
+
+--------------------------------------------------
+- Layer: PhotoCollection
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: PhotoCollection)
+ title: "Photos"
+
+  -----
+  Action: "Look at" (#0, layer: PhotoCollection, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: PhotoCollection, state: main)
+
+  -----
+  Action: "Use" (#2, layer: PhotoCollection, state: main)
+
+
+--------------------------------------------------
+- Layer: Computer
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Computer)
+ title: "Computer"
+
+  -----
+  Action: "Look at" (#0, layer: Computer, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Computer, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Computer, state: main)
+
+
+--------------------------------------------------
+- Layer: Sofa
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Sofa)
+ title: "Sofa"
+
+  -----
+  Action: "Look at" (#0, layer: Sofa, state: main)
+
+   - Dialog [puppet: _avatar, voice::Better0017]
+   "It's my sofa."
+
+  -----
+  Action: "Talk to" (#1, layer: Sofa, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Sofa, state: main)
+
+   - Dialog [puppet: _avatar, voice::Better0018]
+   "I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though."
+
+ --------------------------------------------------
+ State: rested (layer: Sofa)
+ title: "Sofa"
+
+  -----
+  Action: "Look at" (#0, layer: Sofa, state: rested)
+
+  -----
+  Action: "Talk to" (#1, layer: Sofa, state: rested)
+
+  -----
+  Action: "Use" (#2, layer: Sofa, state: rested)
+
+
+--------------------------------------------------
+- Layer: TV
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: TV)
+ title: "TV"
+
+  -----
+  Action: "Look at" (#0, layer: TV, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: TV, state: main)
+
+  -----
+  Action: "Use" (#2, layer: TV, state: main)
+
+
+
+
+TREES
+
+
+
+_avatar,"It's my sofa.",:Better0017
+_avatar,"I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though.",:Better0018
+
+
+

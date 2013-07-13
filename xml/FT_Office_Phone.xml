@@ -1,1 +1,2853 @@
-<room id="FT_Office_Phone" coreLibs="lib/FT_Office_Phone.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2=""><grids><grid id="main"><boxes/><nodes/></grid></grids><positions/><filters><filter id="_main" axis="y" enabled="1"><pole x="521" y="583" scale="1" rate="1" blur="1" color="0x000000" tint="0.5"/><pole x="521" y="584" scale="1.5" rate="1.5" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><curtain blackout="0"/></script><script id="_exit"><curtain blackout="1"/></script></scripts><layers><layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="0" visible="1" state="main"><states><state id="main" x="512" y="384" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[ted]]></en></title><actions/><items/></state></states></layer><layer id="_bg" type="background" asset="lib/FT_Office_Phone.swf:BG_FT_Office_Phone" depth="1" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1024" hitH="768" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title><en><![CDATA[]]></en></title><actions/><items/></state></states></layer><layer id="Exit" type="puppet" asset="" depth="2" visible="1" state="main"><states><state id="main" x="-3" y="2" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="739" shape="rect"><param mapX="512" mapY="384" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Exit]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_Office:Phone"/></script></action></actions><items/></state></states></layer><layer id="PhoneKeyPad" type="puppet" asset="" depth="3" visible="1" state="main"><states><state id="main" x="292" y="280" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="243" hitH="212" shape="rect"><param mapX="411" mapY="381" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Phone Key Pad]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the phone dial pad.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[The phone has no dial tone.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="Usable" x="287" y="278" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="245" hitH="216" shape="rect"><param mapX="413" mapY="381" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Phone Key Pad]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the phone keypad]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I need to decide who to call.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="FobSocket" type="puppet" asset="lib/FT_Office_Phone.swf:Fob" depth="4" visible="1" state="main"><states><state id="main" x="464" y="530" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="80" hitH="40" shape="rect"><param mapX="506" mapY="551" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Socket For Something]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It looks like something plugs in to it.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I need to plug something in to it.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items><action id="DigitalFob"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It fits]]></en></dia></dialog><script><layer target="_current:PhoneBook" state="Usable"/><layer target="_current:PhoneKeyPad" state="Usable"/><layer target="_current:FobSocket" state="hasFob"/><cursor item=""/><dialogue play="*"/></script></action></items></state><state id="hasFob" x="464" y="530" img="1" imgX="4" imgY="4" imgW="1.1" imgH="1.2" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="80" hitH="40" shape="rect"><param mapX="506" mapY="551" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Digital Fob in Socket]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It looks like something plugs in to it.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I need to plug something in to it.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items><action id="DigitalFob"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It fits]]></en></dia></dialog><script><layer target="_current:PhoneBook" state="Usable"/><layer target="_current:PhoneKeyPad" state="Usable"/><cursor item=""/><dialogue play="*"/></script></action></items></state></states></layer><layer id="Reception" type="puppet" asset="" depth="5" visible="1" state="main"><states><state id="main" x="635" y="45" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="188" hitH="53" shape="rect"><param mapX="711" mapY="81" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Reception]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hello. You have reach Future Tech: Cyborgs are the future.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[I am afraid we unable to take your call at the moment, please leave a message after the tone.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Beep!]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I know you are there, I just saw you in reception.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Thank you for you message, goodbye.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Security" type="puppet" asset="" depth="6" visible="1" state="main"><states><state id="main" x="632" y="91" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="180" hitH="41" shape="rect"><param mapX="730" mapY="115" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Security]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><scriptCall global="beforeDialogue"/><tree load="Security"/></script></action></actions><items/></state></states></layer><layer id="ItSupport" type="puppet" asset="" depth="7" visible="1" state="main"><states><state id="main" x="625" y="128" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="212" hitH="58" shape="rect"><param mapX="741" mapY="165" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[IT Support]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><scriptCall global="beforeDialogue"/><tree load="ITSupport"/></script></action></actions><items/></state></states></layer><layer id="SarahBio" type="puppet" asset="lib/FT_Office_Phone.swf:Sarah" depth="8" visible="1" state="main"><states><state id="main" x="60" y="326" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect"><param mapX="183" mapY="348" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Reception]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><tree load="Reception"/></script></action></actions><items/></state><state id="On" x="619" y="188" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="211" hitH="67" shape="rect"><param mapX="712" mapY="219" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Sarah Bio]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="Phone" frame="" sound=""><en><![CDATA[I'm sorry, I'm not available at the moment. If you leave a message, I will get back to you.&lt;beep&gt;]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I guess I'll try another time.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Bill" type="puppet" asset="lib/FT_Office_Phone.swf:Bill" depth="9" visible="1" state="main"><states><state id="main" x="60" y="368" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect"><param mapX="184" mapY="388" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Reception]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><tree load="Reception"/></script></action></actions><items/></state><state id="On" x="614" y="250" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="178" hitH="64" shape="rect"><param mapX="758" mapY="420" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Bill]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><scriptCall global="beforeDialogue"/><tree load="Bill"/></script></action></actions><items/></state></states></layer><layer id="Jenny" type="puppet" asset="lib/FT_Office_Phone.swf:Jenny" depth="10" visible="1" state="main"><states><state id="main" x="60" y="451" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect"><param mapX="178" mapY="467" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><tree load="Reception"/></script></action></actions><items/></state><state id="On" x="606" y="312" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="210" hitH="66" shape="rect"><param mapX="726" mapY="426" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Jenny]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hi Jen here, you know what to do.&lt;beep&gt;]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I guess I'll try another time.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Tom" type="puppet" asset="lib/FT_Office_Phone.swf:Tom" depth="11" visible="1" state="main"><states><state id="main" x="61" y="409" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect"><param mapX="768" mapY="279" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Reception]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><tree load="Reception"/></script></action></actions><items/></state><state id="On" x="600" y="370" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="190" hitH="70" shape="rect"><param mapX="703" mapY="409" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Tom]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><scriptCall global="beforeDialogue"/><tree load="Tom"/></script></action></actions><items/></state><state id="OnSpoken" x="600" y="370" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="190" hitH="70" shape="rect"><param mapX="702" mapY="409" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Tom]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><tree load="TomSpoken"/></script></action></actions><items/></state><state id="OnMet" x="600" y="370" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="190" hitH="70" shape="rect"><param mapX="694" mapY="410" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Tom]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><tree load="TomMet"/></script></action></actions><items/></state></states></layer><layer id="Sam" type="puppet" asset="lib/FT_Office_Phone.swf:Sam" depth="12" visible="1" state="main"><states><state id="main" x="60" y="492" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect"><param mapX="180" mapY="515" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><tree load="Reception"/></script></action></actions><items/></state><state id="On" x="599" y="436" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="189" hitH="60" shape="rect"><param mapX="180" mapY="515" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Sam]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="Phone" frame="" sound=""><en><![CDATA[This is the voice mail of 555-4772. You can leave a message after the tone.&lt;beep&gt;]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I guess I'll try another time.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Unknown" type="puppet" asset="lib/FT_Office_Phone.swf:Unknown" depth="13" visible="1" state="main"><states><state id="main" x="60" y="533" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect"><param mapX="180" mapY="557" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Reception]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><tree load="Reception"/></script></action></actions><items/></state><state id="On" x="585" y="529" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="324" hitH="145" shape="rect"><param mapX="180" mapY="557" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[555-123-456]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hi Jonathan Coulton.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Wow! Not the Jonathan Coulton?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Oh great, it's another one of those people from that silly adventure game!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Just hang up on them.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Yes, this is the Jonathan Coulton. I can't talk now, I have a song to write.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Yeah, like that is believable!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[&lt;click&gt;]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I don't believe it was really him.]]></en></dia></dialog><script><tree enableTopic="FT_Office_Phone:ITSupport:_18:1"/><tree enableTopic="FT_Office_Phone:ITSupport:_19:1"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="PhoneBook" type="puppet" asset="" depth="14" visible="1" state="main"><states><state id="main" x="569" y="20" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="408" hitH="694" shape="rect"><param mapX="760" mapY="435" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Note Pad]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a phone book]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[The phone has no dial tone.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="On" x="639" y="253" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="270" hitH="383" shape="rect"><param mapX="772" mapY="436" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Phone Book]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a phone book]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[The phone has no dial tone.]]></en></dia></dialog><script><game room="FT_Office:Phone"/></script></action></actions><items/></state></states></layer><layer id="Phone" type="puppet" asset="" depth="15" visible="1" state="main"><states><state id="main" x="382" y="253" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect"><param mapX="512" mapY="384" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00FFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Phone]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer></layers><trees><tree id="Security"><tier key="r_t0" id=""><topic key="t0" id="_2" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[There is something up with my computer.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is something up with my computer.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[You want IT Support.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Have a nice day.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[&lt;click&gt;]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic><topic key="t1" id="_3" enabled="0" hold="1" expose="" go="-2"><title><en><![CDATA[Could you come to my office please?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Could you come to my office please?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[What is the problem?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I hear you have some fancy pants.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[I'll send someone right there!]]></en></dia></dialog><script><layer target="FT_OT:Guard" state="hidden"/><layer target="FT_OT:Cabnet" state="locked"/><layer target="FT_Office:Guard" state="visible"/><logic eval="[guard_jacket] EQ guard"><layerSprite target="FT_Office:Guard" frameOffset="0"/><layer target="FT_Office:GuardJacket" state="hidden"/></logic><logic eval="[guard_jacket] NE guard"><layerSprite target="FT_Office:Guard" frameOffset="29"/><layer target="FT_Office:GuardJacket" state="visibleGuard"/></logic><layer target="FT_HallDay:SecurityDoor" state="oneGuard"/><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic><topic key="t5" id="_7" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Could you come to my office please?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Could you come to my office please?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[What is the problem?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Er, I don't know.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Sorry, unless you have a specific problem we are unable to leave the office.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[&lt;click&gt;]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic><topic key="t2" id="_4" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[I think someone has been stealing from the medical cabnet.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I think someone has been stealing from the medical cabnet.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Ok, I'll get someone to investigate.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[&lt;click&gt;]]></en></dia></dialog><script><layer target="FT_Office:Guard" state="hidden"/><layer target="FT_OT:Guard" state="CabinetKey"/><scriptParse><![CDATA[<debug echo="guard_jacket:%*[guard_jacket]*%"/>]]><![CDATA[<debug echo="guard_key:%*[guard_key]*%"/>]]></scriptParse><logic eval="[guard_key] EQ in_jacket"><logic eval="[guard_jacket] EQ guard"><layer target="FT_OT:Cabnet" state="open"/><tree enableTopic="FT_OT:MedicalGuard:_2:1"/><tree enableTopic="FT_OT:MedicalGuard:_3:1"/><tree enableTopic="FT_OT:MedicalGuard:_6:0"/><debug echo="Guard Has Key"/></logic></logic><logic eval="[guard_jacket] EQ coat_hook"><logic eval="[guard_key] EQ in_jacket"><layer target="FT_Office:Guard" state="CabinetNoKey"/><tree enableTopic="FT_OT:MedicalGuard:_2:0"/><tree enableTopic="FT_OT:MedicalGuard:_3:0"/><tree enableTopic="FT_OT:MedicalGuard:_6:1"/><debug echo="Guard Has Not Got Key"/></logic></logic><layer target="FT_HallDay:SecurityDoor" state="oneGuard"/><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic><topic key="t4" id="_6" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[I think I hear someone trying to break in!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I think I hear someone trying to break in!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Ok, we'll keep a close eye on the security cameras.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Thanks for the info.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Bye]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[&lt;click&gt;]]></en></dia></dialog><script><layer target="FT_OT:GuardCabnet" state="hidden"/><layer target="FT_Office:Guard" state="hidden"/><layer target="FT_OT:Cabnet" state="locked"/><logic eval="[guard_jacket] EQ coat_hook"><logic eval="[guard_key] EQ in_jacket"><layer target="FT_Office:GuardJacket" state="visibleNoGuardKey"/></logic><logic eval="[guard_key] NE in_jacket"><layer target="FT_Office:GuardJacket" state="visibleNoGuardNoKey"/></logic></logic><logic eval="[stethoscope] EQ 1"><layer target="FT_HallDay:SecurityDoor" state="main"/></logic><logic eval="[stethoscope] EQ 2"><layer target="FT_HallDay:SecurityDoor" state="stethoscope2"/></logic><logic eval="[stethoscope] EQ 3"><layer target="FT_HallDay:SecurityDoor" state="stethoscope3"/></logic><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic><topic key="t3" id="_5" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Er, nothing.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Er, nothing.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Er, ok bye.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[&lt;click&gt;]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic><topic key="t6" id="_8" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Do you guys actually do anything?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Do you guys actually do anything?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Of course, if it wasn't for us this place would be overrun with...errr]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[People with other peoples ID cards and people using photos to fool the iris scanners?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Er...yeah.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r" id=""><topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Hi]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hi]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hi, Security. How can I help?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier></tree><tree id="ITSupport"><tier key="r_t0_t0" id="_0_2"><topic key="t0" id="_3" enabled="1" hold="1" expose="" go="_10"><title><en><![CDATA[Yes]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Yes]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Ok, what is the problem?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_16" enabled="1" hold="1" expose="" go="_10"><title><en><![CDATA[Don't you want to know what my problem is first?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Don't you want to know what my problem is first?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hmm. Fine, what is the problem?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_17" enabled="1" hold="1" expose="" go="_10"><title><en><![CDATA[I don't see how this is relevant to my problem?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't see how this is relevant to my problem?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hmm. Fine, what is the problem?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_4" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r_t0_t2_t0" id="_0_10_11"><topic key="t0" id="_12" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Thanks. Bye.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Thanks. Bye.]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic><topic key="t1" id="_13" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Your not making fun of me with the weet code are you?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Your not making fun of me with the weet code are you?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[I would never do such a thing. I'm a professional.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0_t2" id="_10"><topic key="t0" id="_11" enabled="0" hold="0" expose="" go="1"><title><en><![CDATA[I have forgotten my password.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I have forgotten my password.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Ok, Dr Martin. I've reset the password to a random new one. Change it when you login.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[The password is:]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[I m 4 n 1 d 1 0 7]]></en></dia></dialog><script><layer target="FT_Office_Computer:Keyboard" state="HavePassword"/><dialogue play="*"/></script></topic><topic key="t1" id="_22" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[I don't have a problem.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't have a problem.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Don't you think I'm busy?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[&lt;click&gt;]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r_t0_t3" id="_18"><topic key="t0" id="_20" enabled="1" hold="1" expose="" go="-1"><title><en><![CDATA[I haven't got a clue.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I haven't got a clue.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0" id="_0"><topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Yes]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Yes]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Is it plugged in?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_10" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Don't you want to know what my problem is first?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Don't you want to know what my problem is first?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Ok email it to me and I'll deal with it when i have time. Probably late next month.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't access my email, that is part of the problem!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Fine! What is the problem?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_18" enabled="0" hold="1" expose="" go="1"><title><en><![CDATA[I appear to have Jonathan Coulton's phone number.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I appear to have Jonathan Coulton's phone number.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Very funny. Why would you have that?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_5" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r_t3" id="_14"><topic key="t0" id="_15" enabled="1" hold="1" expose="" go="_0_10_11"><title><en><![CDATA[I've forgotten my password.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I've forgotten my password.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Ok, Dr Martin. I've reset the password to a random new one. Change it when you login.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[The password is:]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[J 0 c 0 R 0 c k 5]]></en></dia></dialog><script><layer target="FT_Office_Computer:Keyboard" state="HavePassword"/><dialogue play="*"/></script></topic><topic key="t1" id="_19" enabled="0" hold="1" expose="" go="_18"><title><en><![CDATA[I appear to have Jonathan Coulton's phone number.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I appear to have Jonathan Coulton's phone number.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Very funny. Why would you have that?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That is a good question. Alas I have lost my memory, so I don't know.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Convenient.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_21" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Don't suppose you know any pirate jokes?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Don't suppose you know any pirate jokes?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[I do, What does a robot pirate drink?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Oh yeah, I know that one! Thanks.]]></en></dia></dialog><script><logic eval="[find_jokes] EQ yes AND [found_ram] NE yes"><cache field="found_ram" value="yes"/><tree enableTopic="FT_Reception:PS:_22:1"/></logic><dialogue play="*"/></script></topic><topic key="t3" id="_23" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r" id="root"><topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Hi]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hi]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hi, IT Support. Have you tried turning off and on again?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_14" enabled="0" hold="1" expose="" go="1"><title><en><![CDATA[Hey Chris]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hey Chris]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Er, Hi Ted?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier></tree><tree id="Bill"><tier key="r_t0" id=""><topic key="t0" id="_2" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[I think someone is trying to silence me!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I think someone is trying to silence me!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Sorry, I need to mute you for a minute.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Just kidding.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_3" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[I woke up in a locked room.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I woke up in a locked room.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Have you been arrested?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[I knew Mr goody to shoes would get arrested. It's always the quite ones.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No, not that.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_4" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[I have lost my memory.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I have lost my memory.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Great, you owe me loads of money.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Really?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Haha.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_5" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Who am I?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Who am I?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Well, who are we all?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[I wonder the same thing all the time.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t4" id="_6" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[It was good to speak Ted. Later.]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r" id=""><topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Hi]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hi]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hey Ted. What's up?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier></tree><tree id="Tom"><tier key="r_t0_t0_t0" id="_9"><topic key="t0" id="_9" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Talk about what?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Talk about what?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Meet me at the coffee shop in town in half hour.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok. I remember that at least.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Bye]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[&lt;click&gt;]]></en></dia></dialog><script><layer target="Map:CoffeeShop" state="Know"/><layer target="_current:Tom" state="OnSpoken"/><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r_t0_t0" id="_3"><topic key="t0" id="_3" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Who?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Who?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[We need to talk Ted.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_10" enabled="1" hold="1" expose="" go="_9"><title><en><![CDATA[What are you talking about?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[What are you talking about?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[We need to talk Ted.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_11" enabled="1" hold="1" expose="" go="_9"><title><en><![CDATA[Am I in danger?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Am I in danger?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[We need to talk Ted.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_12" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[I can't deal with this right now. Good bye!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't deal with this right now. Good bye!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r_t0" id=""><topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[I don't know who I am!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't know who I am!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Wow, she must be getting desperate!]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_4" enabled="1" hold="1" expose="" go="_3"><title><en><![CDATA[I woke up in a locked room!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I woke up in a locked room!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Blimey! She must be in serious trouble.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_5" enabled="1" hold="1" expose="" go="_3"><title><en><![CDATA[I think someone is trying to silence me!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I think someone is trying to silence me!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[She has gone too far.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_6" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Who am I?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Who am I?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Ted Martin! That is a strange question. You ok Ted?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t4" id="_7" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Who are you?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Who are you?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Tom! That is a strange question. You ok Ted?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t5" id="_8" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r" id=""><topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Hi]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hi]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier></tree><tree id="TomSpoken"><tier key="r_t0_t0_t0" id="_9"><topic key="t0" id="_9" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Talk about what?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Talk about what?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Meet me at the coffee shop in town.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok. I remember that at least.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><layer target="Map:CoffeeShop" state="Know"/><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r_t0_t0" id="_3"><topic key="t0" id="_3" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[I'm confused.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm confused.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[We need to talk Ted.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_11" enabled="1" hold="1" expose="" go="_9"><title><en><![CDATA[Am I in danger?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Am I in danger?]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[We need to talk Ted.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_12" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[I can't deal with this right now. Good bye!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I can't deal with this right now. Good bye!]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r_t0" id=""><topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[I don't know where the coffee shop is.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't know where the coffee shop is.]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[It's in the south west of town.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t5" id="_8" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Ok, Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok, Bye]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r" id=""><topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Hi Again]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hi Again]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hi Ted. I'm at the coffee shop waiting.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier></tree><tree id="TomMet"><tier key="r_t0" id=""><topic key="t5" id="_8" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Ok, Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok, Bye]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[See ya soon.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r" id=""><topic key="t0" id="_0" enabled="1" hold="1" expose="" go="0"><title><en><![CDATA[Hi Again]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hi Again]]></en></dia><dia puppet="Phone" frame="" sound=""><en><![CDATA[Hi Tom. I'm still at the coffee shop if you want to speak again.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier></tree></trees></room>
+<room id="FT_Office_Phone" coreLibs="lib/FT_Office_Phone.swf,lib/BG_Office.swf" voiceLibs="voice/V_FT_Office_Phone.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes/>
+      <nodes/>
+    </grid>
+  </grids>
+  <positions/>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="521" y="583" scale="1" rate="1" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="521" y="584" scale="1.5" rate="1.5" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Office.swf:MyMonkey"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="512" y="384" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_bg" type="background" asset="lib/FT_Office_Phone.swf:BG_FT_Office_Phone" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1024" hitH="768" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Exit" type="puppet" asset="" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="-3" y="2" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="739" shape="rect">
+          <param mapX="512" mapY="384" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Exit]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_Office:Phone"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="PhoneKeyPad" type="puppet" asset="" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="292" y="280" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="243" hitH="212" shape="rect">
+          <param mapX="411" mapY="381" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Phone Key Pad]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0000">
+                  <en><![CDATA[It's the phone dial pad.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0001">
+                  <en><![CDATA[The phone has no dial tone.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Usable" x="287" y="278" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="245" hitH="216" shape="rect">
+          <param mapX="413" mapY="381" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Phone Key Pad]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0002">
+                  <en><![CDATA[It's the phone keypad]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0003">
+                  <en><![CDATA[I need to decide who to call.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="FobSocket" type="puppet" asset="lib/FT_Office_Phone.swf:Fob" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="464" y="530" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="80" hitH="40" shape="rect">
+          <param mapX="506" mapY="551" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Socket For Something]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0004">
+                  <en><![CDATA[It looks like something plugs into it.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0005">
+                  <en><![CDATA[I need to plug something into it.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="DigitalFob">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0006">
+                  <en><![CDATA[It fits]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:PhoneBook" state="Usable"/>
+                <layer target="_current:PhoneKeyPad" state="Usable"/>
+                <layer target="_current:FobSocket" state="hasFob"/>
+                <tree enableTopic="FT_Office_Phone:HelpMe:_9:0"/>
+                <cursor item=""/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="hasFob" x="464" y="530" img="1" imgX="4" imgY="4" imgW="1.1" imgH="1.2" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="80" hitH="40" shape="rect">
+          <param mapX="506" mapY="551" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Digital Fob in Socket]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0007">
+                  <en><![CDATA[It looks like something plugs into it.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0008">
+                  <en><![CDATA[I need to plug something into it.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="DigitalFob">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0009">
+                  <en><![CDATA[It fits]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:PhoneBook" state="Usable"/>
+                <layer target="_current:PhoneKeyPad" state="Usable"/>
+                <tree enableTopic="FT_Office_Phone:HelpMe:_9:0"/>
+                <cursor item=""/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="Reception" type="puppet" asset="" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="635" y="45" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="188" hitH="53" shape="rect">
+          <param mapX="711" mapY="81" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Reception]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0010">
+                  <en><![CDATA[Hello. You have reached Future Tech: Cyborgs are the future.]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0168">
+                  <en><![CDATA[I am afraid we are unable to take your call at the moment, please leave a message after the tone.]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0011">
+                  <en><![CDATA[Beep!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0169">
+                  <en><![CDATA[I know you are there, I just saw you in reception.]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0012">
+                  <en><![CDATA[Thank your for you message, goodbye.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Security" type="puppet" asset="" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="632" y="91" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="180" hitH="41" shape="rect">
+          <param mapX="729" mapY="120" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Security]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0222">
+                  <en><![CDATA[Hi Security.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="Security"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ItSupport" type="puppet" asset="" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="625" y="128" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="212" hitH="58" shape="rect">
+          <param mapX="738" mapY="161" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[IT Support]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0223">
+                  <en><![CDATA[Hi. IT Support.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="ITSupport"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="SarahBio" type="puppet" asset="lib/FT_Office_Phone.swf:Sarah" depth="8" visible="1" state="main">
+      <states>
+        <state id="main" x="60" y="326" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect">
+          <param mapX="183" mapY="348" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Reception]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <tree load="Reception"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="On" x="619" y="188" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="211" hitH="67" shape="rect">
+          <param mapX="710" mapY="224" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Sarah Bio]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0013">
+                  <en><![CDATA[I'm sorry, I'm not available at the moment. If you leave a message, I will get back to you.&lt;beep&gt;]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0014">
+                  <en><![CDATA[I guess I'll try another time.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Bill" type="puppet" asset="lib/FT_Office_Phone.swf:Bill" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="60" y="368" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect">
+          <param mapX="184" mapY="388" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Reception]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <tree load="Reception"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="On" x="614" y="250" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="178" hitH="64" shape="rect">
+          <param mapX="692" mapY="289" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Bill]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0224">
+                  <en><![CDATA[Hey]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="Bill"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Jenny" type="puppet" asset="lib/FT_Office_Phone.swf:Jenny" depth="10" visible="1" state="main">
+      <states>
+        <state id="main" x="60" y="451" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect">
+          <param mapX="178" mapY="467" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <tree load="Reception"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="On" x="606" y="312" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="210" hitH="66" shape="rect">
+          <param mapX="709" mapY="348" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Jenny]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0015">
+                  <en><![CDATA[Hi Jen here, you know what to do.&lt;beep&gt;]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0016">
+                  <en><![CDATA[I guess I'll try another time.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Tom" type="puppet" asset="lib/FT_Office_Phone.swf:Tom" depth="11" visible="1" state="main">
+      <states>
+        <state id="main" x="61" y="409" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect">
+          <param mapX="768" mapY="279" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Reception]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <tree load="Reception"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="On" x="600" y="370" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="190" hitH="70" shape="rect">
+          <param mapX="703" mapY="409" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Tom]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0225">
+                  <en><![CDATA[Hi Ted]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="Tom"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="OnSpoken" x="600" y="370" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="190" hitH="70" shape="rect">
+          <param mapX="702" mapY="409" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Tom]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0225">
+                  <en><![CDATA[Hi Ted]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="TomSpoken"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="OnMet" x="600" y="370" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="190" hitH="70" shape="rect">
+          <param mapX="694" mapY="410" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Tom]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0225">
+                  <en><![CDATA[Hi Ted]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="TomMet"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Sam" type="puppet" asset="lib/FT_Office_Phone.swf:Sam" depth="12" visible="1" state="main">
+      <states>
+        <state id="main" x="60" y="492" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect">
+          <param mapX="180" mapY="515" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <tree load="Reception"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="On" x="600" y="435" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="189" hitH="60" shape="rect">
+          <param mapX="693" mapY="467" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Sam]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0017">
+                  <en><![CDATA[This is the voice mail of 555-4772. You can leave a message after the tone.&lt;beep&gt;]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0018">
+                  <en><![CDATA[I guess I'll try another time.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Unknown" type="puppet" asset="lib/FT_Office_Phone.swf:Unknown" depth="13" visible="1" state="main">
+      <states>
+        <state id="main" x="60" y="533" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="253" hitH="41" shape="rect">
+          <param mapX="180" mapY="557" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Reception]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <tree load="Reception"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="On" x="585" y="529" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="324" hitH="145" shape="rect">
+          <param mapX="719" mapY="591" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[555-123-456]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0226">
+                  <en><![CDATA[&lt;ring&gt;]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0019">
+                  <en><![CDATA[Helloe, this is Jonathan Coulton.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0020">
+                  <en><![CDATA[Wow! Not the Jonathan Coulton?]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0170">
+                  <en><![CDATA[Hang on. Yeah, it's another..it's another person from that stupid adventure game that I never should have agreed to.]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0172">
+                  <en><![CDATA[Just hang up on them.]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0171">
+                  <en><![CDATA[Yep, this is THE Jonathan Coulton. Er, but I...I can't talk right now, because I have to...write a song. Bye.]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0173">
+                  <en><![CDATA[Yeah, like that is believable!]]></en>
+                </dia>
+                <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0021">
+                  <en><![CDATA[&lt;click&gt;]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0174">
+                  <en><![CDATA[I don't believe it was really him.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <tree enableTopic="FT_Office_Phone:ITSupport:_18:1"/>
+                <tree enableTopic="FT_Office_Phone:ITSupport:_19:1"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="PhoneBook" type="puppet" asset="" depth="14" visible="1" state="main">
+      <states>
+        <state id="main" x="569" y="20" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="408" hitH="694" shape="rect">
+          <param mapX="760" mapY="435" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Note Pad]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0022">
+                  <en><![CDATA[It's a phone book]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0023">
+                  <en><![CDATA[The phone has no dial tone.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="On" x="639" y="253" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="270" hitH="383" shape="rect">
+          <param mapX="772" mapY="436" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Phone Book]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0024">
+                  <en><![CDATA[It's a phone book]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0025">
+                  <en><![CDATA[The phone has no dial tone.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <game room="FT_Office:Phone"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Phone" type="puppet" asset="" depth="15" visible="1" state="main">
+      <states>
+        <state id="main" x="382" y="253" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect">
+          <param mapX="512" mapY="384" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00FFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Phone]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ego" type="puppet" asset="" depth="16" visible="1" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF33" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="Security">
+      <tier key="r_t0" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[There is something up with my computer.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0028">
+              <en><![CDATA[There is something up with my computer.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0029">
+              <en><![CDATA[You want IT Support.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0030">
+              <en><![CDATA[Have a nice day.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0031">
+              <en><![CDATA[&lt;click&gt;]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_3" enabled="0" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Could you come to my office please?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0032">
+              <en><![CDATA[Could you come to my office please?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0033">
+              <en><![CDATA[What is the problem?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0034">
+              <en><![CDATA[I hear you have some fancy pants.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0035">
+              <en><![CDATA[I'll send someone right there!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <cache field="guard_in_ot" value="false"/>
+            <layer target="FT_OT:Guard" state="hidden"/>
+            <logic eval="[guard_key] EQ in_jacket">
+              <logic eval="[guard_jacket] EQ guard">
+                <layer target="FT_OT:Cabnet" state="locked"/>
+              </logic>
+            </logic>
+            <layer target="FT_Office:Guard" state="visible"/>
+            <tree enableTopic="FT_Office_Phone:HelpMe:_1:0"/>
+            <tree enableTopic="FT_Office_Phone:HelpMe:_3:0"/>
+            <logic eval="[guard_jacket] EQ guard">
+              <layerSprite target="FT_Office:Guard" frameOffset="0"/>
+              <layer target="FT_Office:GuardJacket" state="hidden"/>
+            </logic>
+            <logic eval="[guard_jacket] NE guard">
+              <layerSprite target="FT_Office:Guard" frameOffset="29"/>
+              <layer target="FT_Office:GuardJacket" state="visibleGuard"/>
+            </logic>
+            <layer target="FT_HallDay:SecurityDoor" state="oneGuard"/>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_7" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Could you come to my office please?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0036">
+              <en><![CDATA[Could you come to my office please?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0037">
+              <en><![CDATA[What is the problem?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0038">
+              <en><![CDATA[Er, I don't know.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0039">
+              <en><![CDATA[Sorry, unless you have a specific problem we are unable to leave the office.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0040">
+              <en><![CDATA[&lt;click&gt;]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_4" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[I think someone has been stealing from the medical cabinet.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0041">
+              <en><![CDATA[I think someone has been stealing from the medical cabinet.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0042">
+              <en><![CDATA[Ok, I'll get someone to investigate.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0043">
+              <en><![CDATA[&lt;click&gt;]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <cache field="guard_in_ot" value="true"/>
+            <layer target="FT_Office:Guard" state="hidden"/>
+            <layer target="FT_OT:Guard" state="CabinetKey"/>
+            <scriptParse>
+              <![CDATA[<debug echo="guard_jacket:%*[guard_jacket]*%"/>]]>
+              <![CDATA[<debug echo="guard_key:%*[guard_key]*%"/>]]>
+            </scriptParse>
+            <logic eval="[guard_key] EQ in_jacket">
+              <logic eval="[guard_jacket] EQ guard">
+                <layer target="FT_OT:Cabnet" state="open"/>
+                <tree enableTopic="FT_OT:MedicalGuard:_2:1"/>
+                <tree enableTopic="FT_OT:MedicalGuard:_3:1"/>
+                <tree enableTopic="FT_OT:MedicalGuard:_6:0"/>
+                <debug echo="Guard Has Key"/>
+              </logic>
+            </logic>
+            <logic eval="[guard_jacket] EQ coat_hook">
+              <logic eval="[guard_key] EQ in_jacket">
+                <layer target="FT_OT:Guard" state="CabinetNoKey"/>
+                <tree enableTopic="FT_OT:MedicalGuard:_2:0"/>
+                <tree enableTopic="FT_OT:MedicalGuard:_3:0"/>
+                <tree enableTopic="FT_OT:MedicalGuard:_6:1"/>
+                <debug echo="Guard Has Not Got Key"/>
+              </logic>
+            </logic>
+            <logic eval="[guard_jacket] EQ coat_hook">
+              <logic eval="[guard_key] EQ in_jacket">
+                <layer target="FT_Office:GuardJacket" state="visibleNoGuardKey"/>
+              </logic>
+              <logic eval="[guard_key] NE in_jacket">
+                <layer target="FT_Office:GuardJacket" state="visibleNoGuardNoKey"/>
+              </logic>
+            </logic>
+            <layer target="FT_HallDay:SecurityDoor" state="oneGuard"/>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_6" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[I think I hear someone trying to break in!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0044">
+              <en><![CDATA[I think I hear someone trying to break in!]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0045">
+              <en><![CDATA[Ok, we'll keep a close eye on the security cameras.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0046">
+              <en><![CDATA[Thanks for the info.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0047">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0048">
+              <en><![CDATA[&lt;click&gt;]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <cache field="guard_in_ot" value="false"/>
+            <layer target="FT_OT:Guard" state="hidden"/>
+            <layer target="FT_Office:Guard" state="hidden"/>
+            <logic eval="[guard_key] EQ in_jacket">
+              <logic eval="[guard_jacket] EQ guard">
+                <layer target="FT_OT:Cabnet" state="locked"/>
+              </logic>
+            </logic>
+            <logic eval="[guard_jacket] EQ coat_hook">
+              <logic eval="[guard_key] EQ in_jacket">
+                <layer target="FT_Office:GuardJacket" state="visibleNoGuardKey"/>
+              </logic>
+              <logic eval="[guard_key] NE in_jacket">
+                <layer target="FT_Office:GuardJacket" state="visibleNoGuardNoKey"/>
+              </logic>
+            </logic>
+            <logic eval="[stethoscope] EQ 1">
+              <layer target="FT_HallDay:SecurityDoor" state="main"/>
+            </logic>
+            <logic eval="[stethoscope] EQ 2">
+              <layer target="FT_HallDay:SecurityDoor" state="stethoscope2"/>
+            </logic>
+            <logic eval="[stethoscope] EQ 3">
+              <layer target="FT_HallDay:SecurityDoor" state="stethoscope3"/>
+            </logic>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_5" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Er, nothing.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0049">
+              <en><![CDATA[Er, nothing.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0050">
+              <en><![CDATA[Er, ok bye.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0051">
+              <en><![CDATA[&lt;click&gt;]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_8" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Do you guys actually do anything?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0052">
+              <en><![CDATA[Do you guys actually do anything?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0053">
+              <en><![CDATA[Of course, if it wasn't for us this place would be overrun with...errr]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0054">
+              <en><![CDATA[People with other people's ID cards and people using photos to fool the iris scanners?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0055">
+              <en><![CDATA[Er...yeah.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hi]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0026">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0027">
+              <en><![CDATA[How can I help?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0056">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="ITSupport">
+      <tier key="r_t0_t0" id="_0_2">
+        <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="_10">
+          <title>
+            <en><![CDATA[Yes]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0061">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0062">
+              <en><![CDATA[Ok, what is the problem?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_16" enabled="1" hold="1" expose="" go="_10">
+          <title>
+            <en><![CDATA[Don't you want to know what my problem is first?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0063">
+              <en><![CDATA[Don't you want to know what my problem is first?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0064">
+              <en><![CDATA[Hmm. Fine, what is the problem?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_17" enabled="1" hold="1" expose="" go="_10">
+          <title>
+            <en><![CDATA[I don't see how this is relevant to my problem?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0065">
+              <en><![CDATA[I don't see how this is relevant to my problem?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0066">
+              <en><![CDATA[Hmm. Fine, what is the problem?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_4" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0067">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t2_t0" id="_0_10_11">
+        <topic key="t0" id="_12" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Thanks. Bye.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0076">
+              <en><![CDATA[Thanks. Bye.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_13" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[You're not making fun of me with the weet code are you?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0077">
+              <en><![CDATA[You're not making fun of me with the weet code are you?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0078">
+              <en><![CDATA[I would never do such a thing. I'm a professional.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t2" id="_10">
+        <topic key="t0" id="_11" enabled="0" hold="0" expose="" go="1">
+          <title>
+            <en><![CDATA[I have forgotten my password.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0072">
+              <en><![CDATA[I have forgotten my password.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0073">
+              <en><![CDATA[Ok, Dr Martin. I've reset the password to a random new one. Change it when you login.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0074">
+              <en><![CDATA[The password is:]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0075">
+              <en><![CDATA[I m 4 n 1 d 1 0 7]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <layer target="FT_Office_Computer:Keyboard" state="HavePassword"/>
+            <tree enableTopic="FT_Office:HelpMe:_1:0"/>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_22" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[I don't have a problem.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0079">
+              <en><![CDATA[I don't have a problem.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0080">
+              <en><![CDATA[Don't you think I'm busy?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0081">
+              <en><![CDATA[&lt;click&gt;]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t3" id="_18">
+        <topic key="t0" id="_20" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[I haven't got a clue.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0084">
+              <en><![CDATA[I haven't got a clue.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0" id="_0">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Yes]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0059">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0060">
+              <en><![CDATA[Is it plugged in?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_10" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Don't you want to know what my problem is first?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0068">
+              <en><![CDATA[Don't you want to know what my problem is first?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0069">
+              <en><![CDATA[Ok email it to me and I'll deal with it when I have some time. Probably late next month.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0070">
+              <en><![CDATA[I can't access my email, that is part of the problem!]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0071">
+              <en><![CDATA[Fine! What is the problem?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_18" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[I appear to have Jonathan Coulton's phone number.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0082">
+              <en><![CDATA[I appear to have Jonathan Coulton's phone number.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0083">
+              <en><![CDATA[Very funny. Why would you have that?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0084">
+              <en><![CDATA[I haven't got a clue.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_5" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0085">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t3" id="_14">
+        <topic key="t0" id="_15" enabled="1" hold="1" expose="" go="_0_10_11">
+          <title>
+            <en><![CDATA[I've forgotten my password.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0088">
+              <en><![CDATA[I've forgotten my password.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0089">
+              <en><![CDATA[Ok, Dr Martin. I've reset the password to a random new one. Change it when you login.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0090">
+              <en><![CDATA[The password is:]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0091">
+              <en><![CDATA[J 0 c 0 R 0 c k 5]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <layer target="FT_Office_Computer:Keyboard" state="HavePassword"/>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_19" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[I appear to have Jonathan Coulton's phone number.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0092">
+              <en><![CDATA[I appear to have Jonathan Coulton's phone number.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0093">
+              <en><![CDATA[Very funny. Why would you have that?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0175">
+              <en><![CDATA[That is a good question. Alas I have lost my memory, so I don't know.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0176">
+              <en><![CDATA[Convenient.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_21" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Don't suppose you know any pirate jokes?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0094">
+              <en><![CDATA[Don't suppose you know any pirate jokes?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0095">
+              <en><![CDATA[I do, What does a robot pirate drink?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0096">
+              <en><![CDATA[Oh yeah, I know that one! Thanks.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <logic eval="[find_jokes] EQ yes AND [found_ram] NE yes">
+              <cache field="found_ram" value="yes"/>
+              <tree enableTopic="FT_Reception:PS:_22:1"/>
+              <tree enableTopic="FT_Office_Phone:HelpMe:_13:0"/>
+            </logic>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_23" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0097">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="root">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hi]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0057">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0058">
+              <en><![CDATA[Have you tried turning it off and on again?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_14" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hey Chris]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0086">
+              <en><![CDATA[Hey Chris]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0087">
+              <en><![CDATA[Er, Hi Ted?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0098">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="Bill">
+      <tier key="r_t0" id="">
+        <topic key="t0" id="_2" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I think someone is trying to silence me!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0101">
+              <en><![CDATA[I think someone is trying to silence me!]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0102">
+              <en><![CDATA[Sorry, I need to mute you for a minute.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0103">
+              <en><![CDATA[Just kidding.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_3" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I woke up in a locked room.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0104">
+              <en><![CDATA[I woke up in a locked room.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0105">
+              <en><![CDATA[Have you been arrested?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0106">
+              <en><![CDATA[I knew Mr Goody Two-Shoes would get arrested. It's always the quiet ones.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0107">
+              <en><![CDATA[No, not that.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_4" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I have lost my memory.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0108">
+              <en><![CDATA[I have lost my memory.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0109">
+              <en><![CDATA[Great, you owe me loads of money.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0110">
+              <en><![CDATA[Really?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0111">
+              <en><![CDATA[Haha.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_5" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Who am I?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0112">
+              <en><![CDATA[Who am I?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0113">
+              <en><![CDATA[Well, who are we all?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0114">
+              <en><![CDATA[I wonder the same thing all the time.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_6" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0115">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0144">
+              <en><![CDATA[It was good to speak Ted. Later.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hi]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0057">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0100">
+              <en><![CDATA[Hey Ted. What's up?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0144">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="Tom">
+      <tier key="r_t0_t0_t0" id="_9">
+        <topic key="t0" id="_9" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Talk to me about what?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0123">
+              <en><![CDATA[Talk to me about what?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0124">
+              <en><![CDATA[Meet me at the coffee shop in town in half an hour.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0125">
+              <en><![CDATA[Ok. I remember that at least.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0127">
+              <en><![CDATA[&lt;click&gt;]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <layer target="Map:CoffeeShop" state="Know"/>
+            <layer target="_current:Tom" state="OnSpoken"/>
+            <tree enableTopic="FT_Office_Phone:HelpMe:_6:0"/>
+            <tree enableTopic="Map:HelpMe:_5:1"/>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t0" id="_3">
+        <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Who?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0121">
+              <en><![CDATA[Who?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0122">
+              <en><![CDATA[We need to talk Ted.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_10" enabled="1" hold="1" expose="" go="_3">
+          <title>
+            <en><![CDATA[What are you talking about?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0128">
+              <en><![CDATA[What are you talking about?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0122">
+              <en><![CDATA[We need to talk Ted.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_11" enabled="1" hold="1" expose="" go="_3">
+          <title>
+            <en><![CDATA[Am I in danger?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0130">
+              <en><![CDATA[Am I in danger?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0122">
+              <en><![CDATA[We need to talk Ted.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_12" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[I can't deal with this right now. Good bye!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0132">
+              <en><![CDATA[I can't deal with this right now. Good bye!]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[I don't know who I am!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0119">
+              <en><![CDATA[I don't know who I am!]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0120">
+              <en><![CDATA[Wow, she must be getting desperate!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_4" enabled="1" hold="1" expose="" go="_3">
+          <title>
+            <en><![CDATA[I woke up in a locked room!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0134">
+              <en><![CDATA[I woke up in a locked room!]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0135">
+              <en><![CDATA[Blimey! She must be in serious trouble.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_5" enabled="1" hold="1" expose="" go="_3">
+          <title>
+            <en><![CDATA[I think someone is trying to silence me!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0136">
+              <en><![CDATA[I think someone is trying to silence me!]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0137">
+              <en><![CDATA[She's gone too far.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_6" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Who am I?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0138">
+              <en><![CDATA[Who am I?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0139">
+              <en><![CDATA[Ted Martin! That is a strange question. You ok Ted?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_7" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Who are you?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0140">
+              <en><![CDATA[Who are you?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0141">
+              <en><![CDATA[Tom! That is a strange question. You ok Ted?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_8" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0142">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hi]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0118">
+              <en><![CDATA[Hi]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0144">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="TomSpoken">
+      <tier key="r_t0_t0_t0" id="_9">
+        <topic key="t0" id="_9" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Talk about what?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0152">
+              <en><![CDATA[Talk about what?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0153">
+              <en><![CDATA[Meet me at the coffee shop in town.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0154">
+              <en><![CDATA[Ok. I remember that at least.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <layer target="Map:CoffeeShop" state="Know"/>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t0" id="_3">
+        <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[I'm confused.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0150">
+              <en><![CDATA[I'm confused.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0122">
+              <en><![CDATA[We need to talk Ted.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_11" enabled="1" hold="1" expose="" go="_3">
+          <title>
+            <en><![CDATA[Am I in danger?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0156">
+              <en><![CDATA[Am I in danger?]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0122">
+              <en><![CDATA[We need to talk Ted.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_12" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[I can't deal with this right now. Good bye!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0158">
+              <en><![CDATA[I can't deal with this right now. Good bye!]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[I don't know where the coffee shop is.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0148">
+              <en><![CDATA[I don't know where the coffee shop is.]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0149">
+              <en><![CDATA[It's in the south west of the town.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_8" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Ok, Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0160">
+              <en><![CDATA[Ok, Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Hi Again]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0146">
+              <en><![CDATA[Hi Again]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0147">
+              <en><![CDATA[I'm at the coffee shop waiting.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0162">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="TomMet">
+      <tier key="r_t0" id="">
+        <topic key="t5" id="_8" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Ok, Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0165">
+              <en><![CDATA[Ok, Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0166">
+              <en><![CDATA[See ya soon.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Hi Again]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0146">
+              <en><![CDATA[Hi Again]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0164">
+              <en><![CDATA[I'm still at the coffee shop if you want to speak again.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0167">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+            <dia puppet="Phone" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0126">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="HelpMe">
+      <tier key="r_t3" id="">
+        <topic key="t0" id="_10" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough help with the phone]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0194">
+              <en><![CDATA[Enough help with the phone]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_11" enabled="1" hold="1" expose="_12" go="0">
+          <title>
+            <en><![CDATA[Is it broken?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0196">
+              <en><![CDATA[Is it broken?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0197">
+              <en><![CDATA[No, you just need something to enable it]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_12" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[What do I need?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0198">
+              <en><![CDATA[What do I need?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0199">
+              <en><![CDATA[You need to find it. Have you checked the drawers.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t1" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough help with the guards]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0180">
+              <en><![CDATA[Enough help with the guards]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_3" enabled="1" hold="1" expose="_4" go="0">
+          <title>
+            <en><![CDATA[How do I convince the guard to come?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0181">
+              <en><![CDATA[How do I convince the guard to come?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0182">
+              <en><![CDATA[Have you tried listening to what they are talking about in their office]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_4" enabled="0" hold="1" expose="_5" go="0">
+          <title>
+            <en><![CDATA[I can't hear through the door]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0183">
+              <en><![CDATA[I can't hear through the door]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0184">
+              <en><![CDATA[You need to enhance your hearing]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_5" enabled="0" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Just tell me what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0185">
+              <en><![CDATA[Just tell me what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0186">
+              <en><![CDATA[Pick up the stethoscope and use it on the security office door in the hall]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t2" id="">
+        <topic key="t0" id="_7" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Keep it from me]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0189">
+              <en><![CDATA[Keep it from me]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_8" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Tell me who?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0190">
+              <en><![CDATA[Tell me who?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0191">
+              <en><![CDATA[Tom]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t4" id="">
+        <topic key="t0" id="_14" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Keep it from me]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0202">
+              <en><![CDATA[Keep it from me]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_15" enabled="1" hold="1" expose="_16" go="0">
+          <title>
+            <en><![CDATA[Tell me who]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0203">
+              <en><![CDATA[Tell me who]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0204">
+              <en><![CDATA[It is the IT guy, but you'll need to make him like you first]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_16" enabled="0" hold="1" expose="_17" go="0">
+          <title>
+            <en><![CDATA[How do I make the IT guy like me?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0205">
+              <en><![CDATA[How do I make the IT guy like me?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0206">
+              <en><![CDATA[I bet he'd love you if you gave him the number of his idol!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0213">
+              <en><![CDATA[Or maybe just knowing his name would be enough]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <tree enableTopic="FT_Office_Phone:HelpMe:_19:1"/>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_17" enabled="0" hold="1" expose="_18" go="0">
+          <title>
+            <en><![CDATA[How do I get his idols phone number?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0207">
+              <en><![CDATA[How do I get his idols phone number?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0208">
+              <en><![CDATA[I hear that you had it before you lost your memory]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_19" enabled="0" hold="1" expose="_20" go="0">
+          <title>
+            <en><![CDATA[How do I find out his name?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0214">
+              <en><![CDATA[How do I find out his name?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0215">
+              <en><![CDATA[I bet that is shown somewhere in the building?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_18" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Just tell me how to get the phone number]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0209">
+              <en><![CDATA[Just tell me how to get the phone number]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0210">
+              <en><![CDATA[It's on a piece of paper used as a bookmark in a book]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0211">
+              <en><![CDATA[The book is in the bed side cabinet in your bed room]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0212">
+              <en><![CDATA[Find the book, get the book mark, look at it, and phone the number to find out who it is.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_20" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Just tell me how to find out his name.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0216">
+              <en><![CDATA[Just tell me how to find out his name.]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0217">
+              <en><![CDATA[Look at all the photos in the hall]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0218">
+              <en><![CDATA[One of them is of him, and they all have names on them]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0177">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_9" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[The phone is not working]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0192">
+              <en><![CDATA[The phone is not working]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0193">
+              <en><![CDATA[Maybe it is broken]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[The guard refuses to come to the office]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0178">
+              <en><![CDATA[The guard refuses to come to the office]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0179">
+              <en><![CDATA[Maybe you need to know more about them]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_6" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Do I need to phone anyone?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0187">
+              <en><![CDATA[Do I need to phone anyone?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0188">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_13" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Are there any pirate jokes to be found?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0200">
+              <en><![CDATA[Are there any pirate jokes to be found?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_Office_Phone.swf:FT_Office_Phone0201">
+              <en><![CDATA[Yes someone has a joke.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

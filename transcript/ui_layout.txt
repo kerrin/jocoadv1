@@ -44,6 +44,69 @@ LAYERS
   Action: "Inventory" (#3, layer: inventory, state: hide)
 
 
+--------------------------------------------------
+- Layer: menu
+--------------------------------------------------
+ --------------------------------------------------
+ State: show (layer: menu)
+ title: "Menu"
+
+  -----
+  Action: "Look at" (#0, layer: menu, state: show)
+
+  -----
+  Action: "Talk to" (#1, layer: menu, state: show)
+
+  -----
+  Action: "Use" (#2, layer: menu, state: show)
+
+  -----
+  Action: "Menu" (#3, layer: menu, state: show)
+
+ --------------------------------------------------
+ State: hide (layer: menu)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: menu, state: hide)
+
+  -----
+  Action: "Talk to" (#1, layer: menu, state: hide)
+
+  -----
+  Action: "Use" (#2, layer: menu, state: hide)
+
+
+--------------------------------------------------
+- Layer: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ State: show (layer: HelpMe)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: HelpMe, state: show)
+
+  -----
+  Action: "Talk to" (#1, layer: HelpMe, state: show)
+
+  -----
+  Action: "Use" (#2, layer: HelpMe, state: show)
+
+ --------------------------------------------------
+ State: hide (layer: HelpMe)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: HelpMe, state: hide)
+
+  -----
+  Action: "Talk to" (#1, layer: HelpMe, state: hide)
+
+  -----
+  Action: "Use" (#2, layer: HelpMe, state: hide)
+
+
 
 
 TREES

@@ -9,19 +9,19 @@ RESPONSES
   -----
   Action: "act1" (response: main)
 
-   - Dialog [puppet: _avatar, voice:lib/V_global.swf:ICantTalkToThat]
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0047]
    "I can't talk to that!"
 
   -----
   Action: "act2" (response: main)
 
-   - Dialog [puppet: _avatar, voice:lib/V_global.swf:DontKnowWhatToDoWithThat]
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0048]
    "I don't know what to do with that!"
 
   -----
   Action: "item" (response: main)
 
-   - Dialog [puppet: _avatar, voice:lib/V_global.swf:ICantDoThat]
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0049]
    "I can't do that"
 
 
@@ -60,7 +60,7 @@ title: "Book"
   Action: "Look at" (item: Book)
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0003]
-   "It's a book called 'Intervine' that tells you how to help friends and family that are addicted."
+   "It's a book called 'Intervene' that tells you how to help friends and family that are addicted."
 
   -----
   Action: "Talk to" (item: Book)
@@ -83,7 +83,7 @@ title: "Book"
   Action: "Look at" (item: BookEnv)
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0005]
-   "It's a book called 'Intervine' that tells you how to help friends and family that are addicted. There is a used envelope book marking the chapter on helpping girlfriends and boyfriends."
+   "It's a book called 'Intervene' that tells you how to help friends and family that are addicted. There is a used envelope bookmarking the chapter on helping girlfriends and boyfriends."
 
   -----
   Action: "Talk to" (item: BookEnv)
@@ -96,6 +96,26 @@ title: "Book"
 
   -----
   Action: "_default" (item: BookEnv)
+
+
+--------------------------------------------------
+- Item: DampSquib
+--------------------------------------------------
+title: "Damp Squib"
+  -----
+  Action: "Look at" (item: DampSquib)
+
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0052]
+   "It's a damp squib"
+
+  -----
+  Action: "Talk to" (item: DampSquib)
+
+  -----
+  Action: "Use" (item: DampSquib)
+
+  -----
+  Action: "_default" (item: DampSquib)
 
 
 --------------------------------------------------
@@ -115,7 +135,7 @@ title: "Digital Device"
   Action: "Use" (item: DigitalFob)
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0008]
-   "I think it's needs to be plugged in to something."
+   "I think it's needs to be plugged into something."
 
   -----
   Action: "_default" (item: DigitalFob)
@@ -152,7 +172,7 @@ title: "Framed Photo of CEO"
   Action: "Look at" (item: FramedPhoto)
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0011]
-   "Its a portrait photo of the Sarah Bio, the CEO of Future Tech"
+   "It's a portrait photo of the Sarah Bio, the CEO of Future Tech"
 
   -----
   Action: "Talk to" (item: FramedPhoto)
@@ -168,6 +188,26 @@ title: "Framed Photo of CEO"
 
 
 --------------------------------------------------
+- Item: Help
+--------------------------------------------------
+title: "Help Me"
+  -----
+  Action: "Look at" (item: Help)
+
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0047]
+   "Use this if you get stuck"
+
+  -----
+  Action: "Talk to" (item: Help)
+
+  -----
+  Action: "Use" (item: Help)
+
+  -----
+  Action: "_default" (item: Help)
+
+
+--------------------------------------------------
 - Item: IPod
 --------------------------------------------------
 title: "iPod"
@@ -175,7 +215,7 @@ title: "iPod"
   Action: "Look at" (item: IPod)
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0013]
-   "It the iPod I borrowed from the guard."
+   "It's the iPod I borrowed from the guard."
 
   -----
   Action: "Talk to" (item: IPod)
@@ -239,7 +279,7 @@ title: "Key Card"
 --------------------------------------------------
 - Item: MedicalKey
 --------------------------------------------------
-title: "Key"
+title: "Another Key"
   -----
   Action: "Look at" (item: MedicalKey)
 
@@ -267,7 +307,7 @@ title: "My Key Card"
   Action: "Look at" (item: MyKeyCard)
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0021]
-   "It's my key card"
+   "It's my keycard"
 
   -----
   Action: "Talk to" (item: MyKeyCard)
@@ -293,7 +333,7 @@ title: "O2 Tank"
    "It's full of gas."
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0024]
-   "O2 that is.r"
+   "O2 that is."
 
   -----
   Action: "Talk to" (item: O2Tank)
@@ -385,7 +425,7 @@ title: "Parcel"
   Action: "Look at" (item: SonicParcel)
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0032]
-   "It's a parcel from iBay address to me, Dr Martin."
+   "It's a parcel from iBay addressed to me, Dr Martin."
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0033]
    "It will be Sonic the Hedgehog"
@@ -404,11 +444,34 @@ title: "Parcel"
 
 
 --------------------------------------------------
+- Item: Squib
+--------------------------------------------------
+title: "Squib"
+  -----
+  Action: "Look at" (item: Squib)
+
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0051]
+   "It's a squib"
+
+  -----
+  Action: "Talk to" (item: Squib)
+
+  -----
+  Action: "Use" (item: Squib)
+
+  -----
+  Action: "_default" (item: Squib)
+
+
+--------------------------------------------------
 - Item: Stethoscope
 --------------------------------------------------
 title: "Stethoscope"
   -----
   Action: "Look at" (item: Stethoscope)
+
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0046]
+   "It's my stethoscope"
 
   -----
   Action: "Talk to" (item: Stethoscope)
@@ -421,6 +484,29 @@ title: "Stethoscope"
 
   -----
   Action: "_default" (item: Stethoscope)
+
+
+--------------------------------------------------
+- Item: TutorialBook
+--------------------------------------------------
+title: "Book"
+  -----
+  Action: "Look at" (item: TutorialBook)
+
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0050]
+   "It's a book called 'Intervine'."
+
+  -----
+  Action: "Talk to" (item: TutorialBook)
+
+  -----
+  Action: "Use" (item: TutorialBook)
+
+   - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0004]
+   "On what?"
+
+  -----
+  Action: "_default" (item: TutorialBook)
 
 
 --------------------------------------------------
@@ -466,7 +552,7 @@ title: "Manual"
    "It's a manual for 'The Armed Defense System Over 9000'"
 
    - Dialog [puppet: _avatar, voice:voice/V_global.swf:global0041]
-   "The system is voice controled. And can be accessed via a microphone that is built in, or remotely via a phone."
+   "The system is voice-controlled. And can be accessed via a microphone that is built-in, or remotely via a phone."
 
   -----
   Action: "Talk to" (item: WeaponSystemManual)
@@ -517,22 +603,24 @@ COMBOS
 
 
 
-_avatar,"I can't talk to that!",lib/V_global.swf:ICantTalkToThat
-_avatar,"I don't know what to do with that!",lib/V_global.swf:DontKnowWhatToDoWithThat
-_avatar,"I can't do that",lib/V_global.swf:ICantDoThat
+_avatar,"I can't talk to that!",voice/V_global.swf:global0047
+_avatar,"I don't know what to do with that!",voice/V_global.swf:global0048
+_avatar,"I can't do that",voice/V_global.swf:global0049
 _avatar,"It's a wire hanger....well it was before I bent it out of shape",voice/V_global.swf:global0001
 _avatar,"On what?",voice/V_global.swf:global0002
-_avatar,"It's a book called 'Intervine' that tells you how to help friends and family that are addicted.",voice/V_global.swf:global0003
+_avatar,"It's a book called 'Intervene' that tells you how to help friends and family that are addicted.",voice/V_global.swf:global0003
 _avatar,"On what?",voice/V_global.swf:global0004
-_avatar,"It's a book called 'Intervine' that tells you how to help friends and family that are addicted. There is a used envelope book marking the chapter on helpping girlfriends and boyfriends.",voice/V_global.swf:global0005
+_avatar,"It's a book called 'Intervene' that tells you how to help friends and family that are addicted. There is a used envelope bookmarking the chapter on helping girlfriends and boyfriends.",voice/V_global.swf:global0005
 _avatar,"On what?",voice/V_global.swf:global0006
+_avatar,"It's a damp squib",voice/V_global.swf:global0052
 _avatar,"It's some sort of digital device. I found it in my office desk draw.",voice/V_global.swf:global0007
-_avatar,"I think it's needs to be plugged in to something.",voice/V_global.swf:global0008
+_avatar,"I think it's needs to be plugged into something.",voice/V_global.swf:global0008
 _avatar,"It has a phone number scribbled on it.",voice/V_global.swf:global0009
 _avatar,"On what?",voice/V_global.swf:global0010
-_avatar,"Its a portrait photo of the Sarah Bio, the CEO of Future Tech",voice/V_global.swf:global0011
+_avatar,"It's a portrait photo of the Sarah Bio, the CEO of Future Tech",voice/V_global.swf:global0011
 _avatar,"On what?",voice/V_global.swf:global0012
-_avatar,"It the iPod I borrowed from the guard.",voice/V_global.swf:global0013
+_avatar,"Use this if you get stuck",voice/V_global.swf:global0047
+_avatar,"It's the iPod I borrowed from the guard.",voice/V_global.swf:global0013
 _avatar,"I have more important things to do than listen to music at the moment.",voice/V_global.swf:global0014
 _avatar,"It's a key",voice/V_global.swf:global0015
 _avatar,"On what?",voice/V_global.swf:global0016
@@ -540,10 +628,10 @@ _avatar,"It is an ID card",voice/V_global.swf:global0017
 _avatar,"On what?",voice/V_global.swf:global0018
 _avatar,"It's a key",voice/V_global.swf:global0019
 _avatar,"On what?",voice/V_global.swf:global0020
-_avatar,"It's my key card",voice/V_global.swf:global0021
+_avatar,"It's my keycard",voice/V_global.swf:global0021
 _avatar,"On what?",voice/V_global.swf:global0022
 _avatar,"It's full of gas.",voice/V_global.swf:global0023
-_avatar,"O2 that is.r",voice/V_global.swf:global0024
+_avatar,"O2 that is.",voice/V_global.swf:global0024
 _avatar,"On what?",voice/V_global.swf:global0025
 _avatar,"Heyfever tablets. I wonder if these are the ones that make me tired?",voice/V_global.swf:global0026
 _avatar,"On what?",voice/V_global.swf:global0027
@@ -551,17 +639,21 @@ _avatar,"It's a new set of scrubs",voice/V_global.swf:global0028
 _avatar,"I don't want to wear that now",voice/V_global.swf:global0029
 _avatar,"It's a new scrub on a wire hanger",voice/V_global.swf:global0030
 _avatar,"This wire hanger might be useful",voice/V_global.swf:global0031
-_avatar,"It's a parcel from iBay address to me, Dr Martin.",voice/V_global.swf:global0032
+_avatar,"It's a parcel from iBay addressed to me, Dr Martin.",voice/V_global.swf:global0032
 _avatar,"It will be Sonic the Hedgehog",voice/V_global.swf:global0033
 _avatar,"I don't want to open it just now.",voice/V_global.swf:global0034
+_avatar,"It's a squib",voice/V_global.swf:global0051
+_avatar,"It's my stethoscope",voice/V_global.swf:global0046
 _avatar,"I can't hear anything interesting.",voice/V_global.swf:global0045
+_avatar,"It's a book called 'Intervine'.",voice/V_global.swf:global0050
+_avatar,"On what?",voice/V_global.swf:global0004
 _avatar,"It is a USB memory stick.",voice/V_global.swf:global0035
 _avatar,"It has the drawing of some guy on the side.",voice/V_global.swf:global0036
 _avatar,"Paul and Storm said it had a robot personality on.",voice/V_global.swf:global0037
 _avatar,"It would need to be installed on a robot first.",voice/V_global.swf:global0038
 _avatar,"On what?",voice/V_global.swf:global0039
 _avatar,"It's a manual for 'The Armed Defense System Over 9000'",voice/V_global.swf:global0040
-_avatar,"The system is voice controled. And can be accessed via a microphone that is built in, or remotely via a phone.",voice/V_global.swf:global0041
+_avatar,"The system is voice-controlled. And can be accessed via a microphone that is built-in, or remotely via a phone.",voice/V_global.swf:global0041
 _avatar,"On what?",voice/V_global.swf:global0042
 _avatar,"It's a wire hanger from the scrub I found in the box",voice/V_global.swf:global0043
 _avatar,"On what?",voice/V_global.swf:global0044
@@ -569,21 +661,23 @@ _avatar,"Not sure that will do much at the moment.",voice/V_global.swf:global000
 
 
 
-addSound( lib/V_global.swf:ICantTalkToThat );
-addSound( lib/V_global.swf:DontKnowWhatToDoWithThat );
-addSound( lib/V_global.swf:ICantDoThat );
+addSound( global0047 );
+addSound( global0048 );
+addSound( global0049 );
 addSound( global0001 );
 addSound( global0002 );
 addSound( global0003 );
 addSound( global0004 );
 addSound( global0005 );
 addSound( global0006 );
+addSound( global0052 );
 addSound( global0007 );
 addSound( global0008 );
 addSound( global0009 );
 addSound( global0010 );
 addSound( global0011 );
 addSound( global0012 );
+addSound( global0047 );
 addSound( global0013 );
 addSound( global0014 );
 addSound( global0015 );
@@ -606,7 +700,11 @@ addSound( global0031 );
 addSound( global0032 );
 addSound( global0033 );
 addSound( global0034 );
+addSound( global0051 );
+addSound( global0046 );
 addSound( global0045 );
+addSound( global0050 );
+addSound( global0004 );
 addSound( global0035 );
 addSound( global0036 );
 addSound( global0037 );

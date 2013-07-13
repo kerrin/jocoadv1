@@ -1,1 +1,1450 @@
-<room id="Home_LivingRoom" coreLibs="lib/Home_LivingRoom.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2=""><grids><grid id="main"><boxes><box x="124" y="608" w="1656" h="123" nodes="n0,n16,n17"/></boxes><nodes><node id="n0" x="1769" y="683" join="n16,n17" trap="0" name="StreetDoor"/><node id="n16" x="879" y="652" join="n0,n17" trap="0" name="Computer"/><node id="n17" x="131" y="672" join="n0,n16" trap="0" name="BedroomDoor"/></nodes></grid></grids><positions><position id="StreetDoor" turn="4" x="1769" y="683"/><position id="Computer" turn="4" x="879" y="652"/><position id="BedroomDoor" turn="4" x="131" y="672"/></positions><filters><filter id="_main" axis="y" enabled="1"><pole x="565" y="613" scale="1.5" rate="1.5" blur="1" color="0x000000" tint="0.5"/><pole x="565" y="736" scale="2" rate="2" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><curtain blackout="0"/></script><script id="_exit"><curtain blackout="1"/></script></scripts><layers><layer id="_bg" type="background" asset="lib/Home_LivingRoom.swf:BG_Home_LivingRoom" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1905" hitH="740" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title><en><![CDATA[]]></en></title><actions/><items/></state></states></layer><layer id="StreetDoor" type="puppet" asset="" depth="1" visible="1" state="main"><states><state id="main" x="1788" y="125" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="89" hitH="594" shape="rect"><param mapX="1809" mapY="711" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Front Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It goes outside.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think I'm done here.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="Day" x="1783" y="107" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="98" hitH="613" shape="rect"><param mapX="1768" mapY="683" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Front Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It goes outside.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Make sure you wrap up warm.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok, now you're starting to sound like my mum.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="Map:Home"/></script></action></actions><items/></state></states></layer><layer id="BathroomDoor" type="puppet" asset="" depth="2" visible="1" state="main"><states><state id="main" x="1421" y="141" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="199" hitH="470" shape="rect"><param mapX="1527" mapY="635" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Bathroom]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It goes to the bath, shower and toilet.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Do you need to go before we set off?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Er, no, I'm fine thanks.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need to go at the moment thanks. Especially with you watching!]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="BedroomDoor" type="puppet" asset="" depth="3" visible="1" state="main"><states><state id="main" x="23" y="114" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="89" hitH="604" shape="rect"><param mapX="131" mapY="674" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Bedroom]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It goes to my bedroom.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I bet no woman has ever been in there.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="Home_Bedroom:Door"/></script></action></actions><items/></state></states></layer><layer id="KitchenDoor" type="puppet" asset="" depth="4" visible="1" state="main"><states><state id="main" x="1067" y="139" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="201" hitH="471" shape="rect"><param mapX="1153" mapY="643" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Kitchen]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It goes to the kitchen.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Aren't you hungery?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hmmm, I seem to have an irrational fear of going in there.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not hungry. And I have a unexplainable fear of going into that room.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Degrees" type="puppet" asset="lib/Home_LivingRoom.swf:Diplomas" depth="5" visible="1" state="main"><states><state id="main" x="411" y="82" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="215" hitH="215" shape="rect"><param mapX="523" mapY="657" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Degrees]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a medical degree for Dr Ted Martin. I guess that must be me.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Dr Martin? You don't seem intellegent enough to be a doctor.]]></en></dia></dialog><script><cache field="KnowName" value="1"/><logic eval="[Slept] EQ 1"><layer target="_current:StreetDoor" state="Day"/></logic><tree enableTopic="Home_Computer:GuessPassword:_7:1"/><tree enableTopic="Home_Computer:GuessPassword:_8:1"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't want that.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Photos" type="puppet" asset="lib/global.swf:FramedPhoto" depth="6" visible="1" state="main"><states><state id="main" x="1296" y="139" img="1" imgX="0" imgY="0" imgW="1" imgH="1.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="96" hitH="118" shape="rect"><param mapX="1343" mapY="637" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Photos]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a picture of me and Sarah Bio...we have our arms around each other...the CEO is my girlfriend!]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Yeah, right! Like she'd go out with a loser like you.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No, I remember, she is my girlfriend.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think she looks like that now, but I can't remember any more at the moment.]]></en></dia></dialog><script><cache field="KnowGirlfriend" value="1"/><tree enableTopic="CoffeeShop:Friend:_5:0"/><tree enableTopic="CoffeeShop:Friend:_6:1"/><tree enableTopic="CoffeeShop:Friend:_3:0"/><tree enableTopic="Home_Computer:GuessPassword:_6:1"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't want that.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Computer" type="puppet" asset="lib/Home_LivingRoom.swf:ComputerAndTable" depth="7" visible="1" state="main"><states><state id="main" x="735" y="375" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="246" hitH="122" shape="rect"><param mapX="879" mapY="654" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Computer]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's my home computer.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Wow look at how old it is!]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[It looks like it's from 2012.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I think it's just meant to look retro.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="Home_Computer"/></script></action></actions><items/></state></states></layer><layer id="Phone" type="puppet" asset="" depth="8" visible="1" state="main"><states><state id="main" x="934" y="460" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="91" hitH="31" shape="rect"><param mapX="980" mapY="655" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Phone]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's my phone.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Ha, ha. You still have a landline phone.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[All the cool people have the eyePhone installed in their eye.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't know any phone numbers.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="Fault" x="944" y="456" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="95" hitH="45" shape="rect"><param mapX="973" mapY="646" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Phone]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's my phone.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Oh, there must be a fault, I don't have a dialing tone.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Sofa" type="puppet" asset="lib/Home_LivingRoom.swf:Sofa" depth="9" visible="1" state="main"><states><state id="main" x="355" y="482" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="353" hitH="164" shape="rect"><param mapX="558" mapY="677" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Sofa]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's my sofa.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="rested" x="355" y="481" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="353" hitH="164" shape="rect"><param mapX="558" mapY="677" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Sofa]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's my sofa.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I'd just take a rest and watch TV.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think sitting down is the top of my priorities at the moment.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="TV" type="puppet" asset="lib/Home_LivingRoom.swf:TV" depth="10" visible="1" state="main"><states><state id="main" x="179" y="422" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="127" hitH="203" shape="rect"><param mapX="264" mapY="641" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[TV]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a TV.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I wonder what's on? I'd just take a rest and watch TV.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Lets see what is on.]]></en></dia></dialog><script><dialogue play="*"/><game room="StrollerTown:main"/></script></action></actions><items/></state></states></layer><layer id="SonicParcel" type="puppet" asset="lib/global.swf:Parcel" depth="11" visible="1" state="Off"><states><state id="Off" x="138" y="572" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state><state id="On" x="1657" y="625" img="1" imgX="0" imgY="-23" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="101" hitH="55" shape="rect"><param mapX="1621" mapY="660" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Parcel]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It a parcel for me...Dr Martin.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Dr Who?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No, me.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I love receiving parcels.]]></en></dia></dialog><script><inventory add="SonicParcel"/><layer target="_current:SonicParcel" state="Off"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="LightSwitches" type="puppet" asset="" depth="12" visible="1" state="main"><states><state id="main" x="1696" y="330" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="63" hitH="78" shape="rect"><param mapX="1710" mapY="629" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Light Switches]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="ego" frame="" sound=""><en><![CDATA[What is this modern art installation?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It the light switches]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I prefer to see.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="picture" type="puppet" asset="lib/Home_LivingRoom.swf:Picture" depth="13" visible="1" state="main"><states><state id="main" x="772" y="86" img="1" imgX="0" imgY="0" imgW="0.7" imgH="0.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="203" hitH="246" shape="rect"><param mapX="839" mapY="649" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Picture]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It a picture of a man being attacked by a giant octopus.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I really like it. I guess that is why I have a poster of it in my house.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I always thought it was a little scary for the living room.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I must say, my ego nags like a girlfriend would.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Erm....oh look at that nice rug.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="14" visible="1" state="main"><states><state id="main" x="443" y="687" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/><vars/><title><en><![CDATA[ted]]></en></title><actions/><items/></state></states></layer><layer id="ego" type="puppet" asset="" depth="15" visible="1" state="main"><states><state id="main" x="852" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="902" mapY="361" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer></layers><trees/></room>
+<room id="Home_LivingRoom" coreLibs="lib/Home_LivingRoom.swf,lib/BG_Home.swf" voiceLibs="voice/V_Home_LivingRoom.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="125" y="608" w="1656" h="123" nodes="n0,n16,n17"/>
+      </boxes>
+      <nodes>
+        <node id="n0" x="1769" y="683" join="n16,n17" trap="0" name="StreetDoor"/>
+        <node id="n16" x="879" y="652" join="n0,n17" trap="0" name="Computer"/>
+        <node id="n17" x="131" y="672" join="n0,n16" trap="0" name="BedroomDoor"/>
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="StreetDoor" turn="4" x="1769" y="683"/>
+    <position id="Computer" turn="4" x="879" y="652"/>
+    <position id="BedroomDoor" turn="4" x="131" y="672"/>
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="565" y="613" scale="1.5" rate="1.5" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="565" y="736" scale="2" rate="2" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Home.swf:IMYourMoon"/>
+      <logic eval="[endGame] EQ endGame">
+        <puppet target="endGame" callAction="1"/>
+      </logic>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/Home_LivingRoom.swf:BG_Home_LivingRoom" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1905" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="StreetDoor" type="puppet" asset="" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="1788" y="125" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="89" hitH="594" shape="rect">
+          <param mapX="1809" mapY="711" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Front Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0000">
+                  <en><![CDATA[It goes outside.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0001">
+                  <en><![CDATA[I don't think I'm done here.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Day" x="1783" y="107" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="98" hitH="613" shape="rect">
+          <param mapX="1768" mapY="683" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Front Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0002">
+                  <en><![CDATA[It goes outside.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0051">
+                  <en><![CDATA[Make sure you wrap up warm.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0052">
+                  <en><![CDATA[Ok, now you're starting to sound like my mum.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="Map:Home"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="EndGame" x="1783" y="107" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="98" hitH="613" shape="rect">
+          <param mapX="1768" mapY="683" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Front Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0002">
+                  <en><![CDATA[It goes outside.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0051">
+                  <en><![CDATA[Make sure you wrap up warm.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0052">
+                  <en><![CDATA[Ok, now you're starting to sound like my mum.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0054">
+                  <en><![CDATA[I'm really hungry]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="BathroomDoor" type="puppet" asset="" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="1421" y="141" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="199" hitH="470" shape="rect">
+          <param mapX="1527" mapY="635" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Bathroom]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0003">
+                  <en><![CDATA[It goes to the bath, shower and toilet.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0049">
+                  <en><![CDATA[Do you need to go before we set off?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0050">
+                  <en><![CDATA[Er, no, I'm fine thanks.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0004">
+                  <en><![CDATA[I don't need to go at the moment thanks. Especially with you watching!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="BedroomDoor" type="puppet" asset="" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="23" y="114" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="89" hitH="604" shape="rect">
+          <param mapX="131" mapY="674" turnTo="7" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Bedroom]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0005">
+                  <en><![CDATA[It goes to my bedroom.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0048">
+                  <en><![CDATA[I bet no woman has ever been in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="Home_Bedroom:Door"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="EndGame" x="23" y="114" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="89" hitH="604" shape="rect">
+          <param mapX="131" mapY="674" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Bedroom]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0005">
+                  <en><![CDATA[It goes to my bedroom.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0048">
+                  <en><![CDATA[I bet no woman has ever been in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0072">
+                  <en><![CDATA[No]]></en>
+                </dia>
+              </dialog>
+              <script/>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="KitchenDoor" type="puppet" asset="" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="1067" y="139" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="201" hitH="471" shape="rect">
+          <param mapX="1153" mapY="643" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Kitchen]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0006">
+                  <en><![CDATA[It goes to the kitchen.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0046">
+                  <en><![CDATA[Aren't you hungry?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0047">
+                  <en><![CDATA[Hmmm, I seem to have an irrational fear of going in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0007">
+                  <en><![CDATA[I'm not hungry. And I have a unexplainable fear of going into that room.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="EndGame" x="1067" y="139" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="201" hitH="471" shape="rect">
+          <param mapX="1153" mapY="643" turnTo="1" turn="0" cursor="exit1" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Kitchen]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0006">
+                  <en><![CDATA[It goes to the kitchen.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0046">
+                  <en><![CDATA[Aren't you hungery?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0047">
+                  <en><![CDATA[Hmmm, I seem to have an irrational fear of going in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+                <cursor visible="0" gameMouse="0"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0069">
+                  <en><![CDATA[Oh no!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0070">
+                  <en><![CDATA[Now I remember why I don't come in here!]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0071">
+                  <en><![CDATA[Gophers!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <cursor gameMouse="0" visible="0"/>
+                <layerSprite target="_avatar" visible="0"/>
+                <dialogue play="*"/>
+                <game room="Credits:_default"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Degrees" type="puppet" asset="lib/Home_LivingRoom.swf:Diplomas" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="449" y="110" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="215" hitH="215" shape="rect">
+          <param mapX="551" mapY="657" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Degrees]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0008">
+                  <en><![CDATA[It's a medical degree for Dr Ted Martin. I guess that must be me.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0045">
+                  <en><![CDATA[Dr Martin? You don't seem intelligent enough to be a doctor.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <cache field="KnowName" value="1"/>
+                <logic eval="[Slept] EQ 1">
+                  <layer target="_current:StreetDoor" state="Day"/>
+                </logic>
+                <tree enableTopic="Home_Computer:GuessPassword:_7:1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_8:1"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0009">
+                  <en><![CDATA[I don't want that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="PhotoCollection" type="puppet" asset="lib/Home_LivingRoom.swf:PhotoCollection" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="157" y="119" img="1" imgX="0" imgY="0" imgW="0.7" imgH="0.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="242" hitH="212" shape="rect">
+          <param mapX="311" mapY="661" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photos]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0067">
+                  <en><![CDATA[It's a picture of me and Sarah Bio....the CEO is my girlfriend!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <cache field="KnowGirlfriend" value="1"/>
+                <tree enableTopic="CoffeeShop:Friend:_5:0"/>
+                <tree enableTopic="CoffeeShop:Friend:_6:1"/>
+                <tree enableTopic="CoffeeShop:Friend:_3:0"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_6:1"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0011">
+                  <en><![CDATA[I don't want that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Photos" type="puppet" asset="lib/global.swf:FramedPhoto" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="1296" y="139" img="1" imgX="0" imgY="0" imgW="1" imgH="1.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="96" hitH="118" shape="rect">
+          <param mapX="1343" mapY="637" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Photos]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0010">
+                  <en><![CDATA[It's a picture of me and Sarah Bio...we have our arms around each other...the CEO is my girlfriend!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0042">
+                  <en><![CDATA[Yeah, right! Like she'd go out with a loser like you.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0043">
+                  <en><![CDATA[No, I remember, she is my girlfriend.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0044">
+                  <en><![CDATA[I don't think she looks like that now, but I can't remember any more at the moment.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <cache field="KnowGirlfriend" value="1"/>
+                <tree enableTopic="CoffeeShop:Friend:_5:0"/>
+                <tree enableTopic="CoffeeShop:Friend:_6:1"/>
+                <tree enableTopic="CoffeeShop:Friend:_3:0"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_6:1"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0011">
+                  <en><![CDATA[I don't want that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Computer" type="puppet" asset="lib/Home_LivingRoom.swf:ComputerAndTable" depth="8" visible="1" state="main">
+      <states>
+        <state id="main" x="735" y="375" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="246" hitH="122" shape="rect">
+          <param mapX="879" mapY="654" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Computer]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0012">
+                  <en><![CDATA[It's my home computer.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0039">
+                  <en><![CDATA[Wow look at how old it is!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0040">
+                  <en><![CDATA[It looks like it's from 2012.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0041">
+                  <en><![CDATA[I think it's just meant to look retro.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="Home_Computer"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Phone" type="puppet" asset="" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="934" y="461" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="91" hitH="31" shape="rect">
+          <param mapX="968" mapY="649" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Phone]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0013">
+                  <en><![CDATA[It's my phone.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0037">
+                  <en><![CDATA[Ha, ha. You still have a landline phone.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0038">
+                  <en><![CDATA[All the cool people have the eyePhone installed in their eye.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0014">
+                  <en><![CDATA[The phone has no dial tone.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0075">
+                  <en><![CDATA[I had your phone cut off...]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0076">
+                  <en><![CDATA[Er, I mean, you probably forgot to pay your phone bill]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Fault" x="944" y="456" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="95" hitH="45" shape="rect">
+          <param mapX="973" mapY="646" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Phone]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0015">
+                  <en><![CDATA[It's my phone.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0016">
+                  <en><![CDATA[Oh, there must be a fault, I don't have a dialing tone.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Sofa" type="puppet" asset="lib/Home_LivingRoom.swf:Sofa" depth="10" visible="1" state="main">
+      <states>
+        <state id="main" x="355" y="482" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="353" hitH="164" shape="rect">
+          <param mapX="558" mapY="677" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Sofa]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0017">
+                  <en><![CDATA[It's my sofa.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0018">
+                  <en><![CDATA[I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="rested" x="355" y="481" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="353" hitH="164" shape="rect">
+          <param mapX="558" mapY="677" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Sofa]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0019">
+                  <en><![CDATA[It's my sofa.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0036">
+                  <en><![CDATA[I'd just take a rest and watch TV.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0020">
+                  <en><![CDATA[I don't think sitting down is the top of my priorities at the moment.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="TV" type="puppet" asset="lib/Home_LivingRoom.swf:TV" depth="11" visible="1" state="main">
+      <states>
+        <state id="main" x="179" y="422" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="127" hitH="203" shape="rect">
+          <param mapX="251" mapY="668" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[TV]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0021">
+                  <en><![CDATA[It's a TV.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0035">
+                  <en><![CDATA[I wonder what's on? I'd just take a rest and watch TV.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0022">
+                  <en><![CDATA[Let's see what is on.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+                <game room="StrollerTown:main"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="SonicParcel" type="puppet" asset="lib/global.swf:Parcel" depth="12" visible="1" state="Off">
+      <states>
+        <state id="Off" x="138" y="572" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="On" x="1657" y="625" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="101" hitH="55" shape="rect">
+          <param mapX="1621" mapY="660" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Parcel]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0023">
+                  <en><![CDATA[It's a parcel for me...Dr Martin.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0033">
+                  <en><![CDATA[Dr Who?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0034">
+                  <en><![CDATA[No, me.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0024">
+                  <en><![CDATA[I love receiving parcels.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory add="SonicParcel"/>
+                <layer target="_current:SonicParcel" state="Off"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="LightSwitches" type="puppet" asset="" depth="13" visible="1" state="main">
+      <states>
+        <state id="main" x="1696" y="330" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="63" hitH="78" shape="rect">
+          <param mapX="1710" mapY="629" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Light Switches]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0032">
+                  <en><![CDATA[What is this modern art installation?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0025">
+                  <en><![CDATA[It's the light switches]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0026">
+                  <en><![CDATA[I prefer to see.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="picture" type="puppet" asset="lib/Home_LivingRoom.swf:Picture" depth="14" visible="1" state="main">
+      <states>
+        <state id="main" x="772" y="86" img="1" imgX="0" imgY="0" imgW="0.7" imgH="0.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="203" hitH="246" shape="rect">
+          <param mapX="839" mapY="649" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Picture]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0027">
+                  <en><![CDATA[It's a picture of a man being attacked by a giant octopus.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0028">
+                  <en><![CDATA[I really like it. I guess that is why I have a poster of it in my house.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0029">
+                  <en><![CDATA[I always thought it was a little scary for the living room.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0030">
+                  <en><![CDATA[I must say, my ego nags like a girlfriend would.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0031">
+                  <en><![CDATA[Erm....oh look at that nice rug.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="endGame" type="puppet" asset="" depth="15" visible="0" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="441" mapY="679" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[hidden]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0053">
+                  <en><![CDATA[I just realised, I haven't eaten all day.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0054">
+                  <en><![CDATA[I'm really hungry]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="16" visible="1" state="main">
+      <states>
+        <state id="main" x="443" y="687" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ego" type="puppet" asset="" depth="17" visible="1" state="main">
+      <states>
+        <state id="main" x="852" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="902" mapY="361" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="HelpMe">
+      <tier key="r_t4" id="">
+        <topic key="t0" id="_5" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough with the hints]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0062">
+              <en><![CDATA[Enough with the hints]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_6" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I find out who I am?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0063">
+              <en><![CDATA[How do I find out who I am?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0064">
+              <en><![CDATA[Look at the photos and diplomas on the wall]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_7" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How else can I find out more about me?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0065">
+              <en><![CDATA[How else can I find out more about me?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0066">
+              <en><![CDATA[Have you looked in the bedroom?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t5" id="">
+        <topic key="t0" id="_9" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Enough hints]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0079">
+              <en><![CDATA[Enough hints]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_10" enabled="1" hold="1" expose="_11" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0080">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0081">
+              <en><![CDATA[You're hungry.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_11" enabled="0" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Tell me what to do.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0083">
+              <en><![CDATA[Tell me what to do.]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0084">
+              <en><![CDATA[Go to the kitchen]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0053">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[What can I do here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0054">
+              <en><![CDATA[What can I do here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0055">
+              <en><![CDATA[Have you tried using the TV, sofa, Computer or Phone?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_2" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I get in the kitchen or the toilet?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0056">
+              <en><![CDATA[How do I get in the kitchen or the toilet?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0057">
+              <en><![CDATA[You can't]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_3" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I leave the house?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0058">
+              <en><![CDATA[How do I leave the house?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0059">
+              <en><![CDATA[You are really tired!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_4" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[How do I leave the house?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0060">
+              <en><![CDATA[How do I leave the house?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0061">
+              <en><![CDATA[You don't know where else to go!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_8" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Now what?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0077">
+              <en><![CDATA[Now what?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_LivingRoom.swf:Home_LivingRoom0078">
+              <en><![CDATA[You can go somewhere you couldn't before.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

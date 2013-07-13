@@ -1,1 +1,1930 @@
-<room id="FT_OT" coreLibs="lib/FT_OT.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2=""><grids><grid id="main"><boxes><box x="110" y="604" w="773" h="134" nodes="n0"/></boxes><nodes><node id="n0" x="143" y="682" join="" trap="0" name="Door"/></nodes></grid></grids><positions><position id="Door" turn="4" x="143" y="682"/></positions><filters><filter id="_main" axis="y" enabled="1"><pole x="487" y="604" scale="1.3" rate="1.3" blur="1" color="0x000000" tint="0.5"/><pole x="487" y="736" scale="2" rate="2" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><logic eval="{getLayerProp:_current,Guard,state} NE main"><logic eval="[guard_jacket] EQ guard"><layerSprite target="Guard" frameOffset="0"/></logic><logic eval="[guard_jacket] NE guard"><layerSprite target="Guard" frameOffset="29"/></logic></logic><curtain blackout="0"/></script><script id="_exit"><curtain blackout="1"/></script></scripts><layers><layer id="_bg" type="background" asset="lib/FT_OT.swf:BG_FT_OT" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title><en><![CDATA[]]></en></title><actions/><items/></state></states></layer><layer id="Door" type="puppet" asset="" depth="1" visible="1" state="main"><states><state id="main" x="34" y="166" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="75" hitH="529" shape="rect"><param mapX="143" mapY="683" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a door.]]></en></dia></dialog><script><sound effect="lib/V_global.swf:ItsADoor" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No. The guard is out there.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="OpenGuard" x="36" y="163" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="70" hitH="538" shape="rect"><param mapX="143" mapY="684" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a door.]]></en></dia></dialog><script><sound effect="lib/V_global.swf:ItsADoor" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game actor="ted"/><game room="FT_Reception:SecureDoor"/></script></action></actions><items/></state><state id="OpenDay" x="35" y="165" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="76" hitH="524" shape="rect"><param mapX="143" mapY="683" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a door.]]></en></dia></dialog><script><sound effect="lib/V_global.swf:ItsADoor" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_HallDay"/></script></action></actions><items/></state></states></layer><layer id="OTTable" type="puppet" asset="lib/FT_OT.swf:OTTable" depth="2" visible="1" state="main"><states><state id="main" x="285" y="395" img="1" imgX="-100" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="244" hitH="253" shape="round"><param mapX="406" mapY="662" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Table]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's an operating table. Looks very clean.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Why are their straps on it? Don't they use anesthetic here?]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think that will fool the guard.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="Day" x="285" y="395" img="1" imgX="-100" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="244" hitH="252" shape="round"><param mapX="405" mapY="660" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Table]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's an operating table. Looks very clean.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Why are their straps on it? Don't they use anesthetic here?]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is no one to operate on.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Cabnet" type="puppet" asset="lib/FT_OT.swf:MedicalCabinet" depth="3" visible="1" state="locked"><states><state id="locked" x="652" y="261" img="1" imgX="0" imgY="0" imgW="1.9" imgH="1.9" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="166" hitH="336" shape="rect"><param mapX="748" mapY="630" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Medical Cabinet]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That is securely locked.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That is securely locked.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Why would you want anything in there?]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items><action id="MedicalKey"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That unlocked it.]]></en></dia></dialog><script><layer target="_current:Cabnet" state="unlocked"/><dialogue play="*"/><cursor item=""/></script></action></items></state><state id="unlocked" x="652" y="262" img="1" imgX="0" imgY="0" imgW="1.9" imgH="1.9" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="747" mapY="622" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Open Medical Cabinet]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's full of medical supplies.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is some hayfever pills in here. I'll just take them.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Isn't that stealling?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No...I work here a a doctor.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Why are there hayfever tables in a cyborg operating theater?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Maybe I have hayfever and I put them there to keep them safe?]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Hmm, I still think it's a bit convenient.]]></en></dia></dialog><script><inventory target="main" add="Pills"/><layer target="_current:Cabnet:unlockedEmpty"/><dialogue play="*"/></script></action></actions><items/></state><state id="open" x="652" y="262" img="1" imgX="0" imgY="0" imgW="1.9" imgH="1.9" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="149" hitH="224" shape="rect"><param mapX="740" mapY="624" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Open Medical Cabinet]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That is open.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[The guard isn't going to let me do that.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="unlockedEmpty" x="652" y="262" img="1" imgX="0" imgY="0" imgW="1.9" imgH="1.9" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="149" hitH="224" shape="rect"><param mapX="736" mapY="624" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Open Medical Cabinet]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's full of medical supplies.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Locked away, so only Doctors can get to them.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Nothing else I want in here.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'd like to keep my stealing from work to a minimum.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Oh, so you do admit it was stealling?]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="o2" type="puppet" asset="lib/global.swf:O2" depth="4" visible="1" state="main"><states><state id="main" x="826" y="475" img="1" imgX="-44" imgY="0" imgW="1.2" imgH="1.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="37" hitH="117" shape="rect"><param mapX="844" mapY="627" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[O2 Tank]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a small tank of O2. Otherwise known as oxygen.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[That looks really heavy. I'm glad you aren't carrying it. It would really tire you out.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's tank of oxygen, always handy!]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[What makes you think that?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I just have a feeling.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[How did you fit that in your pocket?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's not as big as it appeared.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Is that a TARDIS in your pants or are you just happy to see me?]]></en></dia></dialog><script><layer target="_current:o2" state="hidden"/><inventory add="O2Tank"/><dialogue play="*"/></script></action></actions><items/></state><state id="hidden" x="682" y="265" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="73" hitH="170" shape="rect"><param mapX="512" mapY="384" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[O2 Tank]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a small tank of O2. Otherwise known as oxygen.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's tank of oxygen, always handy!]]></en></dia></dialog><script><layer target="_current:o2" state="hidden"/><inventory add="O2Tank"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="eyechart" type="puppet" asset="lib/FT_OT.swf:EyeChart" depth="5" visible="1" state="main"><states><state id="main" x="164" y="178" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="113" hitH="176" shape="rect"><param mapX="192" mapY="620" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Eye Chart]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's one of those eye charts opticians use.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Is that what it said last time? I think you need your eyes checking.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't want it.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="light" type="puppet" asset="" depth="6" visible="1" state="main"><states><state id="main" x="283" y="84" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="256" hitH="96" shape="rect"><param mapX="436" mapY="664" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Powerful Light]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a light. Nice and powerfull, so the surgeon can see what he is doing.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I like the light being on.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Scared of the dark?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[No]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[At least I don't think so.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Guard" type="puppet" asset="lib/global.swf:Guard" depth="7" visible="1" state="main"><states><state id="main" x="139" y="388" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="95" hitH="211" shape="rect"><param mapX="293" mapY="596" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state><state id="Visible" x="72" y="265" img="1" imgX="0" imgY="0" imgW="1.7" imgH="1.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="152" hitH="402" shape="rect"><param mapX="303" mapY="672" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x000099" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><puppetTween target="_avatar" type="moveThenTurn" to="layer:Guard"/><scriptCall global="beforeDialogue"/><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state><state id="CabinetKey" x="550" y="250" img="1" imgX="0" imgY="0" imgW="1.7" imgH="1.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="145" hitH="400" shape="rect"><param mapX="730" mapY="649" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x66FF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Guard]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the guard I asked to come in here.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><scriptCall global="beforeDialogue"/><dialogue play="*"/><tree load="MedicalGuard"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not using people!]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state><state id="CabinetNoKey" x="550" y="250" img="1" imgX="0" imgY="0" imgW="1.7" imgH="1.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="145" hitH="400" shape="rect"><param mapX="718" mapY="646" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x000099" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Guard]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's the guard I asked to come in here.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><scriptCall global="beforeDialogue"/><dialogue play="*"/><tree load="MedicalGuard"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not using people!]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="8" visible="1" state="main"><states><state id="main" x="315" y="665" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/><vars/><title><en><![CDATA[ted]]></en></title><actions/><items/></state></states></layer><layer id="ego" type="puppet" asset="" depth="9" visible="1" state="main"><states><state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="424" mapY="648" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer></layers><trees><tree id="Guard"><tier key="r_t0_t0_t0" id=""><topic key="t0" id="_9" enabled="1" hold="1" expose="" go="_0_4"><title><en><![CDATA[I work here.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I work here.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[That's just what a trespasser would say! If you really work here, what is it that you do?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_11" enabled="1" hold="1" expose="" go="_0_4"><title><en><![CDATA[I'm lost and looking for the way out.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm lost and looking for the way out.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[What do you mean, lost? Are you trying to tell me that you got lost here while you were sneaking around? Now, really, what are you doing here?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_12" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[You murdered my family and I'm on a quest for vengeance.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[You murdered my family and I'm on a quest for vengeance.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Do you really expect me to believe that?]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0_t0" id="_0_3"><topic key="t0" id="_7" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Well I was kinda hoping...]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Well I was kinda hoping...]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[You know damn well that you're on the top floor of the Future Tech building. Now tell me what you're doing here.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_8" enabled="1" hold="1" expose="" go="_0_3_7"><title><en><![CDATA[Of course not! I was just joking around.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Of course not! I was just joking around.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Ha ha, very funny... Now tell me what you're doing here.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0_t1_t1_t1_t2_t0_t2" id=""><topic key="t0" id="_28" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Ok, you got me, I lost my key card, and Sarah lent me one of her old ones.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok, you got me, I lost my key card, and Sarah lent me one of her old ones.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Well, that may be the case, but with out a correct ID, I can't let you stay. Come with me please.]]></en></dia></dialog><script><layer target="_current:Door" state="OpenGuard"/><dialogue play="*"/><layer target="_current:Guard" state="main"/><inventory target="main" remove="KeyCard"/><scriptCall global="afterDialogue"/><cache field="solvedOT" value="yes"/></script></topic><topic key="t1" id="_29" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[I found it.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I found it.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[I've had enough of you. Get out!]]></en></dia></dialog><script><layer target="_current:Door" state="OpenGuard"/><dialogue play="*"/><layer target="_current:Guard" state="main"/><inventory target="main" remove="KeyCard"/><scriptCall global="afterDialogue"/></script></topic><topic key="t2" id="_30" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Yes, don't you know who I am? I'm the CEO around here.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Yes, don't you know who I am? I'm the CEO around here.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Enough of this, follow me.]]></en></dia></dialog><script><layer target="_current:Door" state="OpenGuard"/><dialogue play="*"/><layer target="_current:Guard" state="main"/><inventory target="main" remove="KeyCard"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r_t0_t1_t1_t1_t2_t0" id=""><topic key="t0" id="_24" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Brian Dennehy.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Brian Dennehy.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Who?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_25" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Jonathan Coulton.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Jonathan Coulton.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[You think breaking the forth wall will help?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_26" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Sarah Bio]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Sarah Bio]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[According to your ID, that would be you.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_27" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[I know a guy.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I know a guy.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[What a coincidence! I know a guy too! He likes throwing people out of places they shouldn't be. Why don't you tell me who your guy is before I introduce you to him?]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0_t1_t1_t1_t2" id=""><topic key="t0" id="_21" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Is the fact that I could have you lose your job good enough?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Is the fact that I could have you lose your job good enough?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Well... uh... Who's the person you'll need to talk to to have that happen?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_22" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Look, that patient might lose his life!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Look, that patient might lose his life!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Look, I understand that, and I hope you understand that I'm just doing my job. Now, why do you have someone elses key card?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_23" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Don't make me force you to leave.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Don't make me force you to leave.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Do you think I'm afraid of you?]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0_t1_t1_t1" id=""><topic key="t0" id="_18" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[What? Nope, that's uh, that's mine. Totally.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[What? Nope, that's uh, that's mine. Totally.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Nope, that's not yours. Totally.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_19" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[I did get a haircut..]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I did get a haircut..]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[There's more wrong here than just hair Ms Bio...]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_20" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Look, I have to hurry to prepare the operating room. We just got another late patient in.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Look, I have to hurry to prepare the operating room. We just got another late patient in.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[I still have to have proof you're a surgeon.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0_t1_t1" id=""><topic key="t0" id="_15" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[My keycard? Err… I think I left it in my other pants.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[My keycard? Err… I think I left it in my other pants.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Heh, Nice try.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_16" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Do you mean this key card?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Do you mean this key card?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Hmm... I'm not convinced this is your card.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_17" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Keycard? Keycard? I don't need no stinkin' keycard!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Keycard? Keycard? I don't need no stinkin' keycard!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Yes, you do.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0_t1" id="_0_4"><topic key="t0" id="_10" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[I'm a mad scientist!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm a mad scientist!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Mad, I'll buy. Scientist? In an Opperating Theatre? I don't think so.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_13" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[I'm a surgeon!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm a surgeon!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Surgeons aren't supposed to be here this late. If you just show me your keycard, I'll escort you to the foyer.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_14" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[I'm a fashion designer!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm a fashion designer!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[With those shoes? Please. You'll have to tell me a more convincing lie than that.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r_t0" id="_0"><topic key="t0" id="_3" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[This may seem like a stupid question, but where am I?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[This may seem like a stupid question, but where am I?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[You don't seriously expect me to believe that you unwittingly opened a locked door and just stumbled in here by accident, do you?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_4" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[I work here.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I work here.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Oh really? What is it that you do?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_5" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[I'll go wherever I please!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'll go wherever I please!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Sure. Just show me your security keycard and you can be on your way. Of course I'll also need authorised night shift documents signed by your superious to allow you to be working this late. But you all ready know that. Don't you?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_6" enabled="1" hold="0" expose="" go="0"><title><en><![CDATA[Where do you think YOU'RE going?!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Where do you think YOU'RE going?!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[With you. To the police station. Without a security keycard the only way you're leaving this building is in cuffs.]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier><tier key="r" id=""><topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Er... Hi]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Er... Hi]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[What do you think you're doing here?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_2" enabled="1" hold="1" expose="" go="_0"><title><en><![CDATA[I've lost my memory, just woke up in a locked room and I have no idea where I am.]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I've lost my memory, just woke up in a locked room and I have no idea where I am.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Must of been one hell of a party. Now what are you doing in here?]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_1" enabled="1" hold="1" expose="" go="_0"><title><en><![CDATA[Gah! Look behind you! A three headed monkey!]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Gah! Look behind you! A three headed monkey!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[I'll have you know there hasn't been a mutant monkey escape for over three months! Now what are you doing in here this late?]]></en></dia></dialog><script><dialogue play="*"/></script></topic></tier></tree><tree id="MedicalGuard"><tier key="r_t0" id=""><topic key="t0" id="_2" enabled="1" hold="1" expose="" go="0"><title><en><![CDATA[Can I just quickly get something out while you have it open?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Can I just quickly get something out while you have it open?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[No sorry, I'd lose my job if I let you.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_3" enabled="1" hold="1" expose="" go="0"><title><en><![CDATA[Can I just borrow your key for the cabnet, I've misplaced mine?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Can I just borrow your key for the cabnet, I've misplaced mine?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[You've misplaced your key?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Please tell me you are joking, I'll have to change all the locks, get new keys cut, reassign all the keys, do a full inventory! Do you know how much work that would be?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[I suggest you find your key, and quick, or you'll put me in a bad mood. And you wouldn't like me when I'm angry.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Why? Do you turn green and start breaking things?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Huh?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Never mind.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's ok, I just remembered where I put it.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t4" id="_6" enabled="0" hold="1" expose="" go="0"><title><en><![CDATA[Can I just borrow your key for the cabinet, I've misplaced mine?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Can I just borrow your key for the cabinet, I've misplaced mine?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[I appear to have misplaced mine too.]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[I'll have to change all the locks, get new keys cut, reassign all the keys, do a full inventory!]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Unless I can find it soon.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t3" id="_5" enabled="1" hold="1" expose="" go="0"><title><en><![CDATA[Should you not be getting back to your office?]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Should you not be getting back to your office?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Not unless something more important comes up.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Like what?]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Something like an attempted break in. Both me the the other guard would need to study the security cameras closely.]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t2" id="_4" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier><tier key="r" id=""><topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1"><title><en><![CDATA[Hi]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Hi]]></en></dia><dia puppet="Guard" frame="" sound=""><en><![CDATA[Hi]]></en></dia></dialog><script><dialogue play="*"/></script></topic><topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2"><title><en><![CDATA[Bye]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Bye]]></en></dia></dialog><script><dialogue play="*"/><scriptCall global="afterDialogue"/></script></topic></tier></tree></trees></room>
+<room id="FT_OT" coreLibs="lib/FT_OT.swf,lib/BG_Office.swf" voiceLibs="voice/V_FT_OT.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="110" y="604" w="773" h="134" nodes="n0"/>
+      </boxes>
+      <nodes>
+        <node id="n0" x="143" y="682" join="" trap="0" name="Door"/>
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="Door" turn="4" x="143" y="682"/>
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="487" y="604" scale="1.3" rate="1.3" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="487" y="736" scale="2" rate="2" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <logic eval="{getLayerProp:_current,Guard,state} NE main">
+        <logic eval="[guard_jacket] EQ guard">
+          <layerSprite target="Guard" frameOffset="0"/>
+        </logic>
+        <logic eval="[guard_jacket] NE guard">
+          <layerSprite target="Guard" frameOffset="29"/>
+        </logic>
+      </logic>
+      <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Office.swf:MyMonkey"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/FT_OT.swf:BG_FT_OT" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Door" type="puppet" asset="" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="34" y="166" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="75" hitH="529" shape="rect">
+          <param mapX="143" mapY="683" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0000">
+                  <en><![CDATA[It's a door.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_global.swf:ItsADoor" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0001">
+                  <en><![CDATA[No. The guard is out there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="OpenGuard" x="36" y="163" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="70" hitH="538" shape="rect">
+          <param mapX="143" mapY="684" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0002">
+                  <en><![CDATA[It's a door.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_global.swf:ItsADoor" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game actor="ted"/>
+                <game room="FT_Reception:SecureDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="OpenDay" x="35" y="165" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="76" hitH="524" shape="rect">
+          <param mapX="143" mapY="683" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0003">
+                  <en><![CDATA[It's a door.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_global.swf:ItsADoor" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_HallDay"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="OTTable" type="puppet" asset="lib/FT_OT.swf:OTTable" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="285" y="395" img="1" imgX="-100" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="244" hitH="253" shape="round">
+          <param mapX="406" mapY="662" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Table]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0004">
+                  <en><![CDATA[It's an operating table. Looks very clean.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0005">
+                  <en><![CDATA[Why are their straps on it? Don't they use anesthetic here?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0006">
+                  <en><![CDATA[I don't think that will fool the guard.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Day" x="285" y="395" img="1" imgX="-100" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="244" hitH="252" shape="round">
+          <param mapX="405" mapY="660" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Table]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0007">
+                  <en><![CDATA[It's an operating table. Looks very clean.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0008">
+                  <en><![CDATA[Why are there straps on it? Don't they use anaesthetic here?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0009">
+                  <en><![CDATA[There is no one to operate on.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Cabnet" type="puppet" asset="lib/FT_OT.swf:MedicalCabinet" depth="3" visible="1" state="locked">
+      <states>
+        <state id="locked" x="653" y="262" img="1" imgX="0" imgY="0" imgW="1.9" imgH="1.9" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="166" hitH="336" shape="rect">
+          <param mapX="748" mapY="630" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Medical Cabinet]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0010">
+                  <en><![CDATA[That is securely locked.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0011">
+                  <en><![CDATA[That is securely locked.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0012">
+                  <en><![CDATA[Why would you want anything in there?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="MedicalKey">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0013">
+                  <en><![CDATA[That unlocked it.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0166">
+                  <en><![CDATA[I don't think the guard would like that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <logic eval="[guard_in_ot] EQ false">
+                  <logic eval="[havePills] EQ false">
+                    <layer target="_current:Cabnet" state="unlocked"/>
+                  </logic>
+                  <logic eval="[havePills] EQ true">
+                    <layer target="_current:Cabnet" state="unlockedEmpty"/>
+                  </logic>
+                  <tree enableTopic="_current:HelpMe:_6:0"/>
+                  <dialogue playList="0"/>
+                </logic>
+                <logic eval="[guard_in_ot] EQ true">
+                  <dialogue playList="1"/>
+                </logic>
+                <cursor item=""/>
+              </script>
+            </action>
+            <action id="Key">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0134">
+                  <en><![CDATA[It doesn't fit the lock]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="unlocked" x="652" y="262" img="1" imgX="0" imgY="0" imgW="1.9" imgH="1.9" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="166" hitH="336" shape="rect">
+          <param mapX="747" mapY="622" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Open Medical Cabinet]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0014">
+                  <en><![CDATA[It's full of medical supplies.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0015">
+                  <en><![CDATA[There is some hayfever pills in here. I'll just take them.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0016">
+                  <en><![CDATA[Isn't that stealling?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0017">
+                  <en><![CDATA[No....I work here as a doctor.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0018">
+                  <en><![CDATA[Why are there hayfever tablets in a cyborg operating theater?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0019">
+                  <en><![CDATA[Maybe I have hayfever and I put them there to keep them safe?]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0020">
+                  <en><![CDATA[Hmm, I still think it's a bit convenient.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Pills"/>
+                <layer target="_current:Cabnet" state="unlockedEmpty"/>
+                <cache field="havePills" value="true"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="open" x="652" y="262" img="1" imgX="0" imgY="0" imgW="1.9" imgH="1.9" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="166" hitH="336" shape="rect">
+          <param mapX="740" mapY="624" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Open Medical Cabinet]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0021">
+                  <en><![CDATA[That is open.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0022">
+                  <en><![CDATA[The guard isn't going to let me do that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="unlockedEmpty" x="652" y="262" img="1" imgX="0" imgY="0" imgW="1.9" imgH="1.9" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="166" hitH="336" shape="rect">
+          <param mapX="736" mapY="624" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Open Medical Cabinet]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0023">
+                  <en><![CDATA[It's full of medical supplies.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0133">
+                  <en><![CDATA[Locked away, so only Doctors can get to them.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0024">
+                  <en><![CDATA[Nothing else I want in here.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0025">
+                  <en><![CDATA[I'd like to keep my stealing from work to a minimum.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0026">
+                  <en><![CDATA[Oh, so you do admit it was stealing?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="o2" type="puppet" asset="lib/global.swf:O2" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="826" y="475" img="1" imgX="0" imgY="0" imgW="1.2" imgH="1.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="37" hitH="117" shape="rect">
+          <param mapX="773" mapY="625" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[O2 Tank]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0027">
+                  <en><![CDATA[It's a small tank of O2. Otherwise known as oxygen.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0132">
+                  <en><![CDATA[That looks really heavy. I'm glad you aren't carrying it. It would really tire you out.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0028">
+                  <en><![CDATA[It's tank of oxygen, always handy!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0029">
+                  <en><![CDATA[What makes you think that?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0030">
+                  <en><![CDATA[I just have a feeling.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0031">
+                  <en><![CDATA[How did you fit that in your pocket?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0032">
+                  <en><![CDATA[It's not as big as it appeared.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0033">
+                  <en><![CDATA[Is that a TARDIS in your pants or are you just happy to see me?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:o2" state="hidden"/>
+                <inventory add="O2Tank"/>
+                <tree enableTopic="_current:HelpMe:_13:0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="hidden" x="682" y="265" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="73" hitH="170" shape="rect">
+          <param mapX="512" mapY="384" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[O2 Tank]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0034">
+                  <en><![CDATA[It's a small tank of O2. Otherwise known as oxygen.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0035">
+                  <en><![CDATA[It's tank of oxygen, always handy!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:o2" state="hidden"/>
+                <inventory add="O2Tank"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="eyechart" type="puppet" asset="lib/FT_OT.swf:EyeChart" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="164" y="178" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="113" hitH="176" shape="rect">
+          <param mapX="192" mapY="620" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Eye Chart]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0036">
+                  <en><![CDATA[It's one of those eye charts opticians use.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0037">
+                  <en><![CDATA[Is that what it said last time? I think you need your eyes checking.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0038">
+                  <en><![CDATA[I don't want it.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="light" type="puppet" asset="" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="283" y="84" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="256" hitH="96" shape="rect">
+          <param mapX="436" mapY="664" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Powerful Light]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0039">
+                  <en><![CDATA[It's a light. Nice and powerfull, so the surgeon can see what he is doing.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0040">
+                  <en><![CDATA[I like the light being on.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0041">
+                  <en><![CDATA[Scared of the dark?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0042">
+                  <en><![CDATA[No]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0043">
+                  <en><![CDATA[At least I don't think so.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Guard" type="puppet" asset="lib/global.swf:Guard" depth="7" visible="1" state="hidden">
+      <states>
+        <state id="hidden" x="0" y="0" img="0" imgX="1000" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="95" hitH="211" shape="rect">
+          <param mapX="296" mapY="664" turnTo="7" turn="0" cursor="" onclick="-1" prefix="none_" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Visible" x="72" y="265" img="1" imgX="0" imgY="0" imgW="1.7" imgH="1.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="152" hitH="402" shape="rect">
+          <param mapX="340" mapY="660" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x33FF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <puppetTween target="_avatar" type="moveThenTurn" to="layer:Guard"/>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="none"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="CabinetKey" x="550" y="250" img="1" imgX="0" imgY="0" imgW="1.7" imgH="1.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="145" hitH="400" shape="rect">
+          <param mapX="794" mapY="626" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00FF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Guard]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0044">
+                  <en><![CDATA[It's the guard I asked to come in here.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0110">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0111">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="MedicalGuard"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0045">
+                  <en><![CDATA[I'm not using people!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="CabinetNoKey" x="550" y="250" img="1" imgX="0" imgY="0" imgW="1.7" imgH="1.7" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="145" hitH="400" shape="rect">
+          <param mapX="783" mapY="631" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00FF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Guard]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0046">
+                  <en><![CDATA[It's the guard I asked to come in here.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0110">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0111">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <tree load="MedicalGuard"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0047">
+                  <en><![CDATA[I'm not using people!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="8" visible="1" state="main">
+      <states>
+        <state id="main" x="315" y="665" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ego" type="puppet" asset="" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="424" mapY="648" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="Guard">
+      <tier key="r_t0_t0_t0" id="">
+        <topic key="t0" id="_9" enabled="1" hold="1" expose="" go="_0_4">
+          <title>
+            <en><![CDATA[I work here.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0054">
+              <en><![CDATA[I work here.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0055">
+              <en><![CDATA[That's just what a trespasser would say! If you really work here, what is it that you do?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_11" enabled="1" hold="1" expose="" go="_0_4">
+          <title>
+            <en><![CDATA[I'm lost and looking for the way out.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0056">
+              <en><![CDATA[I'm lost and looking for the way out.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0057">
+              <en><![CDATA[What do you mean, lost? Are you trying to tell me that you got lost here while you were sneaking around? Now, really, what are you doing here?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_12" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[You murdered my family and I'm on a quest for vengeance.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0058">
+              <en><![CDATA[You murdered my family and I'm on a quest for vengeance.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0059">
+              <en><![CDATA[Do you really expect me to believe that?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t0" id="_0_3">
+        <topic key="t0" id="_7" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Well I was kinda hoping...]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0052">
+              <en><![CDATA[Well I was kinda hoping...]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0053">
+              <en><![CDATA[You know damn well that you're on the top floor of the Future Tech building. Now tell me what you're doing here.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_8" enabled="1" hold="1" expose="" go="_0_3_7">
+          <title>
+            <en><![CDATA[Of course not! I was just joking around.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0060">
+              <en><![CDATA[Of course not! I was just joking around.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0061">
+              <en><![CDATA[Ha ha, very funny... Now tell me what you're doing here.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1_t1_t1_t2_t0_t2" id="">
+        <topic key="t0" id="_28" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Ok, you got me, I lost my keycard, and Sarah lent me one of her old ones.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0086">
+              <en><![CDATA[Ok, you got me, I lost my keycard, and Sarah lent me one of her old ones.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0087">
+              <en><![CDATA[Well, that may be the case, but with out a correct ID, I can't let you stay. Come with me please.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <layer target="_current:Door" state="OpenGuard"/>
+            <dialogue play="*"/>
+            <layer target="_current:Guard" state="hidden"/>
+            <inventory target="main" remove="KeyCard"/>
+            <tree enableTopic="FT_OT:HelpMe:_1:0"/>
+            <scriptCall global="afterDialogue"/>
+            <cache field="solvedOT" value="yes"/>
+            <game actor="ted"/>
+            <game room="FT_Reception:SecureDoor"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_29" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[I found it.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0088">
+              <en><![CDATA[I found it.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0089">
+              <en><![CDATA[I've had enough of you. Get out!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <layer target="_current:Door" state="OpenGuard"/>
+            <dialogue play="*"/>
+            <layer target="_current:Guard" state="hidden"/>
+            <inventory target="main" remove="KeyCard"/>
+            <tree enableTopic="FT_OT:HelpMe:_1:0"/>
+            <scriptCall global="afterDialogue"/>
+            <cache field="solvedOT" value="yes"/>
+            <game actor="ted"/>
+            <game room="FT_Reception:SecureDoor"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_30" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Yes, don't you know who I am? I'm the CEO around here.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0090">
+              <en><![CDATA[Yes, don't you know who I am? I'm the CEO around here.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0091">
+              <en><![CDATA[Enough of this, follow me.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <layer target="_current:Door" state="OpenGuard"/>
+            <dialogue play="*"/>
+            <layer target="_current:Guard" state="hidden"/>
+            <inventory target="main" remove="KeyCard"/>
+            <tree enableTopic="FT_OT:HelpMe:_1:0"/>
+            <scriptCall global="afterDialogue"/>
+            <cache field="solvedOT" value="yes"/>
+            <game actor="ted"/>
+            <game room="FT_Reception:SecureDoor"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1_t1_t1_t2_t0" id="">
+        <topic key="t0" id="_24" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Brian Dennehy.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0080">
+              <en><![CDATA[Brian Dennehy.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0081">
+              <en><![CDATA[Who?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_25" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Jonathan Coulton.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0082">
+              <en><![CDATA[Jonathan Coulton.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0083">
+              <en><![CDATA[You think breaking the forth wall will help?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_26" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Sarah Bio]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0084">
+              <en><![CDATA[Sarah Bio]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0085">
+              <en><![CDATA[According to your ID, that would be you.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_27" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I know a guy.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0092">
+              <en><![CDATA[I know a guy.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0093">
+              <en><![CDATA[What a coincidence! I know a guy too! And he likes throwing people out of places they shouldn't be. Why don't you tell me who your guy is before I introduce you to him?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1_t1_t1_t2" id="">
+        <topic key="t0" id="_21" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Is the fact that I could have you lose your job good enough?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0078">
+              <en><![CDATA[Is the fact that I could have you lose your job good enough?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0079">
+              <en><![CDATA[Well... uh... Who's the person you'll need to talk to to have that happen?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_22" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Look, that patient might lose his life!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0094">
+              <en><![CDATA[Look, that patient might lose his life!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0095">
+              <en><![CDATA[Look, I understand that, and I hope you understand that I'm just doing my job. Now, why do you have someone else's keycard?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_23" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Don't make me force you to leave.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0096">
+              <en><![CDATA[Don't make me force you to leave.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0097">
+              <en><![CDATA[Do you think I'm afraid of you?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1_t1_t1" id="">
+        <topic key="t0" id="_18" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[What? Nope, that's uh, that's mine. Totally.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0072">
+              <en><![CDATA[What? Nope, that's uh, that's mine. Totally.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0073">
+              <en><![CDATA[Nope, that's not yours. Totally.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_19" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I did get a haircut..]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0074">
+              <en><![CDATA[I did get a haircut..]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0075">
+              <en><![CDATA[There's more wrong here than just hair Ms Bio...]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_20" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Look, I have to hurry to prepare the operating room. We just got another late patient in.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0076">
+              <en><![CDATA[Look, I have to hurry to prepare the operating room. We just got another late patient in.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0077">
+              <en><![CDATA[I still need to have proof you're a surgeon.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1_t1" id="">
+        <topic key="t0" id="_15" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[My keycard? Err… I think I left it in my other pants.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0068">
+              <en><![CDATA[My keycard? Err… I think I left it in my other pants.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0069">
+              <en><![CDATA[Heh, Nice try.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_16" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Do you mean this keycard?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0070">
+              <en><![CDATA[Do you mean this keycard?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0071">
+              <en><![CDATA[Hmm... I'm not convinced this is your card.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_17" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Keycard? Keycard? I don't need no stinkin' keycard!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0098">
+              <en><![CDATA[Keycard? Keycard? I don't need no stinkin' keycard!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0099">
+              <en><![CDATA[Yes, you do.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0_t1" id="_0_4">
+        <topic key="t0" id="_10" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I'm a mad scientist!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0064">
+              <en><![CDATA[I'm a mad scientist!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0065">
+              <en><![CDATA[Mad, I'll buy. Scientist? In an Operating Theatre? I don't think so.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_13" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[I'm a surgeon!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0066">
+              <en><![CDATA[I'm a surgeon!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0067">
+              <en><![CDATA[Surgeons aren't supposed to be here this late. If you just show me your keycard, I'll escort you to the foyer.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_14" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I'm a fashion designer!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0100">
+              <en><![CDATA[I'm a fashion designer!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0101">
+              <en><![CDATA[With those shoes? Please. You'll have to tell me a more convincing lie than that.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t0" id="_0">
+        <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[This may seem like a stupid question, but where am I?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0050">
+              <en><![CDATA[This may seem like a stupid question, but where am I?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0051">
+              <en><![CDATA[You don't seriously expect me to believe that you unwittingly opened a locked door and just stumbled in here by accident, do you?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_4" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[I work here.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0062">
+              <en><![CDATA[I work here.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0063">
+              <en><![CDATA[Oh really? What is it that you do?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_5" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[I'll go wherever I please!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0102">
+              <en><![CDATA[I'll go wherever I please!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0103">
+              <en><![CDATA[Sure. Just show me your security keycard and you can be on your way. Of course I'll also need authorised night shift documents signed by your superiors to allow you to be working this late. But you all ready know that. Didn't you?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_6" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Where do you think YOU'RE going?!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0104">
+              <en><![CDATA[Where do you think YOU'RE going?!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0105">
+              <en><![CDATA[With you. To the police station. Without a security keycard the only way you're leaving this building is in cuffs.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Er... Hi]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0048">
+              <en><![CDATA[Er... Hi]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0049">
+              <en><![CDATA[What do you think you're doing here?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_2" enabled="1" hold="1" expose="" go="_0">
+          <title>
+            <en><![CDATA[I've lost my memory, just woke up in a locked room and I have no idea where I am.]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0106">
+              <en><![CDATA[I've lost my memory, just woke up in a locked room and I have no idea where I am.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0107">
+              <en><![CDATA[Must of been one hell of a party. Now what are you doing in here?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="_0">
+          <title>
+            <en><![CDATA[Gah! Look behind you! A three-headed monkey!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0108">
+              <en><![CDATA[Gah! Look behind you! A three-headed monkey!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0109">
+              <en><![CDATA[I'll have you know there hasn't been a mutant monkey escape for over three months! Now what are you doing here this late?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="MedicalGuard">
+      <tier key="r" id="">
+        <topic key="t2" id="_2" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Can I just quickly get something out while you have it open?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0112">
+              <en><![CDATA[Can I just quickly get something out while you have it open?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0113">
+              <en><![CDATA[No sorry, I'd lose my job if I let you.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_3" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Can I just borrow your key for the cabinet, I've misplaced mine?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0114">
+              <en><![CDATA[Can I just borrow your key for the cabinet, I've misplaced mine?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0115">
+              <en><![CDATA[You've misplaced your key?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0116">
+              <en><![CDATA[Please tell me you are joking, I'll have to change all the locks, get new keys cut, reassign all the keys, do a full inventory! Do you know how much work that would be?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0117">
+              <en><![CDATA[I suggest you find your key, and quick, or you'll put me in a bad mood. And you wouldn't like me when I'm angry.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0118">
+              <en><![CDATA[Why? Do you turn green and start breaking things?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0119">
+              <en><![CDATA[Huh?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0120">
+              <en><![CDATA[Never mind.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0121">
+              <en><![CDATA[It's ok, I just remembered where I put it.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_6" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Can I just borrow your key for the cabinet, I've misplaced mine?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0122">
+              <en><![CDATA[Can I just borrow your key for the cabinet, I've misplaced mine?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0123">
+              <en><![CDATA[I appear to have misplaced mine too.]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0124">
+              <en><![CDATA[I'll have to change all the locks, get new keys cut, reassign all the keys, do a full inventory!]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0125">
+              <en><![CDATA[Unless I can find it soon.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_5" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Should you not be getting back to your office?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0126">
+              <en><![CDATA[Should you not be getting back to your office?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0127">
+              <en><![CDATA[Not unless something more important comes up.]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0128">
+              <en><![CDATA[Like what?]]></en>
+            </dia>
+            <dia puppet="Guard" frame="" sound="voice/V_FT_OT.swf:FT_OT0129">
+              <en><![CDATA[Something like an attempted break in. Both me the the other guard would need to study the security cameras closely.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Bye]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0131">
+              <en><![CDATA[Bye]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="HelpMe">
+      <tier key="r_t1" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Enough help]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0138">
+              <en><![CDATA[Enough help]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_3" enabled="1" hold="1" expose="_4" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0140">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0141">
+              <en><![CDATA[You better look like you are meant to be here]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_4" enabled="0" hold="1" expose="_5" go="0">
+          <title>
+            <en><![CDATA[Bigger hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0142">
+              <en><![CDATA[Bigger hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0143">
+              <en><![CDATA[The must be something around or in your inventory you can use]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_5" enabled="0" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Tell me what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0144">
+              <en><![CDATA[Tell me what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0145">
+              <en><![CDATA[Use the scrubs in your inventory to make yourself look like a surgeon]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t2" id="">
+        <topic key="t0" id="_7" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough help with the locked cabinet]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0148">
+              <en><![CDATA[Enough help with the locked cabinet]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_8" enabled="1" hold="1" expose="_9" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0150">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0151">
+              <en><![CDATA[Maybe someone has a key for this securely locked cabinet]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_9" enabled="0" hold="1" expose="_10" go="0">
+          <title>
+            <en><![CDATA[Bigger hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0152">
+              <en><![CDATA[Bigger hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0153">
+              <en><![CDATA[The guard has a key]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_10" enabled="0" hold="1" expose="_11" go="0">
+          <title>
+            <en><![CDATA[How do I get anything while the guard is there]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0154">
+              <en><![CDATA[How do I get anything while the guard is there]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0155">
+              <en><![CDATA[You can't, he needs to be out of the room]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_11" enabled="0" hold="1" expose="_12" go="0">
+          <title>
+            <en><![CDATA[But the guard locks it when he leaves]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0156">
+              <en><![CDATA[But the guard locks it when he leaves]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0157">
+              <en><![CDATA[You need to get his key somehow]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_12" enabled="0" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[How do I get the key?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0158">
+              <en><![CDATA[How do I get the key?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0159">
+              <en><![CDATA[You need to make him forget it.]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0160">
+              <en><![CDATA[Although he always remebers to take it with him in here, so try another room]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t3" id="">
+        <topic key="t0" id="_14" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Don't tell me what]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0163">
+              <en><![CDATA[Don't tell me what]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_15" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[No, I can't find it. Just tell me!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0164">
+              <en><![CDATA[No, I can't find it. Just tell me!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0165">
+              <en><![CDATA[The gas tank by the cabinet]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0135">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Help, I am trapped in the room]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0136">
+              <en><![CDATA[Help, I am trapped in the room]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0137">
+              <en><![CDATA[I think the guard is about to enter, you better do something]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_6" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[How do I open the locked cabinet?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0146">
+              <en><![CDATA[How do I open the locked cabinet?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0147">
+              <en><![CDATA[You need a key]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_13" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Can I pick anything else up in here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_OT.swf:FT_OT0161">
+              <en><![CDATA[Can I pick anything else up in here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_OT.swf:FT_OT0162">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

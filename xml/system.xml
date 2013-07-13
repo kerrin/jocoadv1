@@ -20,9 +20,9 @@
 	<subtitleHide>0.3</subtitleHide>
 	<subtitleOverhead>15</subtitleOverhead>
 	<subtitlePadding>10</subtitlePadding>
-	<contextOff>0xFFFFFF</contextOff>
+	<contextOff>0xFFFFCC</contextOff>
 	<contextOn>0xFF3300</contextOn>
-	<treeOff>0xFFFFFF</treeOff>
+	<treeOff>0xFFFFCC</treeOff>
 	<treeOn>0xFF3300</treeOn>
 	<curtainColor>0x000000</curtainColor>
 	<menuSubtitle>1</menuSubtitle>
@@ -33,5 +33,53 @@
 	<menuQuit>1</menuQuit>
 	<menuHelp>1</menuHelp>
 	<menuHelpText><![CDATA[Instructions:<br><br><li>Press 'm' to open the game menu.</li><li>Press 'i' to open the inventory.</li><li>Click and hold on an object to select an interaction.</li><li>Click an inventory item to set it as the game cursor.</li><li>Use item cursors with objects around the world</li><li>Double-click to clear an item cursor.</li>]]></menuHelpText>
-	<legal><en><![CDATA[]]></en></legal>
+	<legal><en><![CDATA[]]>
+    PLEASE READ CAREFULLY BEFORE USING THIS PRODUCT:
+    <br/>
+    This End-User License Agreement ("EULA") is a legal agreement between (a) you and (b) Jonathan Coulton Adventures ("JCA") that governs your use of this game.
+    <br/>
+    <br/>
+    BY CHECKING THE AGREE CHECKBOX AND PRESSING CONTINUE, YOU (1) REPRESENT THAT YOU ARE OF THE LEGAL AGE OF MAJORITY IN YOUR STATE, PROVINCE JURISDICTION OF RESIDENCE AND, IF APPLICABLE, YOU ARE DULY AUTHORIZED BY YOUR EMPLOYER TO ENTER INTO THIS CONTRACT AND (2) YOU AGREE TO BE BOUND BY THE TERMS OF THIS EULA. IF YOU DO NOT ACCEPT THE EULA TERMS, DO NOT PLAU THE GAME.
+    <br/>
+    <br/>
+    GRANT OF LICENSE. The Software Product includes two types of computer software (1) software that is owned by JCA (and may include associated media, and "online" or electronic documentation) (collectively the "Software Product") and (2) other software provided by third parties and used with the Software Product ("Third Party Software"). JCA grants you the following non-exclusive rights provided you agree to and comply with all terms and conditions of this EULA:
+    <br/>
+    <OL>
+      <LI>Use. You may use the Software Product on your computer. You do not have the right to distribute the Software Product. You agree to only use the Software Product as expressly permitted herein.</LI>
+      <LI>Reservation of Rights. The Software Product is licensed, not sold, to you by JCA. JCA and its suppliers own all right, title and interest in and to the Software Product and reserve all rights not expressly granted to you in this EULA. You agree to refrain from any action that would diminish such rights or would call them into question.</LI>
+      <LI>Third Party Software. Notwithstanding the terms and conditions of this EULA, all or any portion of the Software Product which constitutes Third Party Software, is licensed to you subject to the terms and conditions of the software license agreement accompanying such Third Party Software whether in the form of a discrete agreement, shrink wrap license or electronic license terms accepted at time of download. Use of the Third Party Software by you shall be governed entirely by the terms and conditions of such license.</LI>
+      <LI>Support. No technical support is provided. JCA may provide assistance at its discretion.</LI>
+    </OL>
+    <br/>
+    UPGRADES. The software may be upgraded at anytime. Any save games may no longer work. JCA is not responsible for loss of progress in the game.
+    <br/>
+    ADDITIONAL SOFTWARE. This EULA applies to updates or supplements to the original Software Product provided by JCA unless JCA provides other terms along with the update or supplement. In case of a conflict between such terms, the other terms will prevail.
+    <br/>
+    PROPRIETARY RIGHTS. All intellectual property rights in the Software Product and user documentation are owned by JCA or its suppliers and are protected by law, including but not limited to copyright, creative commons, trade secret, and trademark law, as well as other applicable laws and international treaty provisions. The structure, organization and code of the Software Product are the valuable trade secrets and confidential information of JCA and its suppliers. You shall not remove any product identification, copyright notices or proprietary restrictions from the Software Product.
+    <br/>
+    LIMITATION ON REVERSE ENGINEERING. Except to the extent that such restriction is not permitted under applicable law, you are not permitted (and you agree not to) reverse engineer, decompile, disassemble or create derivative works of or modify the Software Product. Nothing contained herein shall be construed, expressly or implicitly, as transferring any right, license or title to you other than those explicitly granted under this EULA. JCA reserves all rights in its intellectual property rights not expressly agreed to herein. Unauthorized copying of the Software Product or failure to comply with the restrictions in this EULA (or other breach of the license herein) will result in automatic termination of this Agreement and you agree that it will constitute immediate, irreparable harm to JCA for which monetary damages would be an inadequate remedy, and that injunctive relief will be an appropriate remedy for such breach.
+    <br/>
+    TERM. This EULA is effective unless terminated or rejected. This EULA will also terminate immediately and without additional notice in the event you breach this EULA and/or fail to comply with any term or condition of this EULA.
+    <br/>
+    CONSENT TO USE OF DATA. You agree that JCA and its affiliates or suppliers may collect and use statistics on your use of the Software Product in performing backup operations and technical information you provide in relation to support services related to the Software Product. JCA and its suppliers agree not to use this information in a form that personally identifies you except to the extent necessary to provide such services.
+    <br/>
+    DISCLAIMER OF WARRANTIES.
+    <br/>
+    EXCEPT AS MAY BE SET OUT IN A SPECIFIC WARRANTY ACCOMPANYING THE SOFTWARE PRODUCT, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, JCA AND ITS SUPPLIERS PROVIDE THE SOFTWARE PRODUCT AND THIRD PARTY SOFTWARE "AS IS" AND WITH ALL FAULTS AND WITHOUT ANY OTHER WARRANTY OF ANY KIND, AND HEREBY DISCLAIM ALL OTHER WARRANTIES AND CONDITIONS, EITHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE AND NON-INFRINGEMENT, ANY IMPLIED WARRANTIES, DUTIES OR CONDITIONS OF MERCHANTABILITY, OF FITNESS FOR A PARTICULAR PURPOSE, AND OF LACK OF VIRUSES ALL WITH REGARD TO THE SOFTWARE PRODUCT ANDTHIRD PARTY SOFTWARE. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY JCA OR A JCA AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. Some states/jurisdictions do not allow exclusion of implied warranties or limitations on the duration of implied warranties, so the above disclaimer may not apply to you in its entirety. To the extent applicable law requires JCA to provide warranties, you agree that the scope and duration of such warranty shall be to the minimum extent permitted under such applicable law.
+    <br/>
+    IN NO EVENT DOES JCA PROVIDE ANY WARRANTY OR REPRESENTATIONS WITH RESPECT TO ANY THIRD PARTY HARDWARE OR SOFTWARE WITH WHICH THE SOFTWARE PRODUCT IS DESIGNED TO BE USED, AND JCA DISCLAIMS ALL LIABILITY WITH RESPECT TO ANY FAILURES THEREOF.
+    <br/>
+    LIMITATION OF LIABILITY. Notwithstanding any damages that you might incur, the entire liability of JCA and any of its suppliers under any provision of this EULA and your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by you for the Software Product. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL SAC OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, FOR LOSS OF DATA OR OTHER INFORMATION, FOR BUSINESS INTERRUPTION, FOR PERSONAL INJURY, FOR LOSS OF PRIVACY ARISING OUT OF OR IN ANY WAY RELATED TO THE USE OF OR INABILITY TO USE THE SOFTWARE PRODUCT, THIRD PARTY SOFTWARE AND/OR THIRD PARTY HARDWARE USED WITH THE SOFTWARE PRODUCT, OR OTHERWISE IN CONNECTION WITH ANY PROVISION OF THIS EULA), EVEN IF JCA OR ANY SUPPLIER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND EVEN IF THE REMEDY FAILS OF ITS ESSENTIAL PURPOSE. Some states/jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so the above limitation or exclusion may not apply to you.
+    <br/>
+    INDEMNITY. You agree to indemnify and hold JCA and its officers, directors, employees and licensors harmless from any claim or demand (including but not limited to reasonable legal fees) made by a third party due to or arising out of or related to your violation of the terms and conditions of this Agreement, your violation of any laws, regulations or third party rights or your negligent act, omission or willful misconduct.
+    <br/>
+    U.S. GOVERNMENT CUSTOMERS. The Software Product is a "Non-Commercial Item". Unpublished rights are reserved under the copyrights of the United States.
+    <br/>
+    COMPLIANCE WITH LAWS. You shall comply with all laws and regulations of the United States and other countries ("Export Laws") to ensure that the Software Product is not (1) exported, directly or indirectly, in violation of Export Laws, or (2) used for any purpose prohibited by Export Laws, including, without limitation, nuclear, chemical, or biological weapons proliferation. You further agree that you will not use the Software Product for any purpose prohibited under applicable law.
+    <br/>
+    APPLICABLE LAW. This EULA is governed by the laws of the United Kingdom exclusive of conflict of law provisions and you attorn to the jurisdiction of the courts of the country of the United Kingdom with respect to any proceedings arising from this EULA. The parties hereby agree that this Agreement is not governed by the United Nations Convention on Contracts for the International Sale of Goods.
+    <br/>
+    ENTIRE AGREEMENT. This EULA is the entire agreement between you and JCA relating to the Software Product and it supersedes all prior or contemporaneous oral or written communications, proposals and representations with respect to the Software Product or any other subject matter covered by this EULA. To the extent the terms of any JCA policies or programs for support services conflict with the terms of this EULA, the terms of this EULA shall control. In the event of a conflict between the English and any non-English versions of this EULA, the English version shall govern. If any provision of this EULA is held by a court of competent jurisdiction to be contrary to law, such provision will be changed and interpreted so as to best accomplish the objectives of the original provision to the fullest extent allowed by law and the remaining provision of the EULA will remain in force and effect. Sections 5, 6, 9, 10, 11, 14 and 15 shall survive termination of this EULA.
+    <br/>
+  </en></legal>
 </system>

@@ -1,0 +1,1546 @@
+<room id="Tutorial" coreLibs="lib/FT_StorageRoom.swf,lib/BG_Office.swf" voiceLibs="voice/V_Tutorial.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="194" y="625" w="364" h="112" nodes="n1,n7"/>
+        <box x="558" y="624" w="320" h="114" nodes="n2,n3,n4,n6"/>
+        <box x="879" y="672" w="70" h="67" nodes="n5"/>
+        <box x="111" y="654" w="83" h="83" nodes="n0"/>
+      </boxes>
+      <nodes>
+        <node id="n0" x="189" y="680" join="n1" trap="0"/>
+        <node id="n1" x="208" y="681" join="n0,n2,n7" trap="0"/>
+        <node id="n2" x="719" y="684" join="n1,n3,n6,n4" trap="0"/>
+        <node id="n3" x="739" y="684" join="n2,n4,n6" trap="0"/>
+        <node id="n4" x="868" y="697" join="n3,n5,n2,n6" trap="0"/>
+        <node id="n5" x="904" y="697" join="n4" trap="0" name="secure_door"/>
+        <node id="n6" x="579" y="641" join="n7,n2,n3,n4" trap="0" name="start"/>
+        <node id="n7" x="547" y="642" join="n6,n1" trap="0"/>
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="secure_door" turn="4" x="904" y="697"/>
+    <position id="start" turn="4" x="579" y="641"/>
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="525" y="536" scale="1" rate="1" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="525" y="750" scale="2" rate="1.5" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Office.swf:MyMonkey"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/FT_StorageRoom.swf:BG_FT_StorageRoom" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="WaterBottle" type="puppet" asset="lib/FT_StorageRoom.swf:WaterBottle" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="696" y="454" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="99" hitH="160" shape="rect">
+          <param mapX="632" mapY="631" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Water Bottle]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0037">
+                  <en><![CDATA[It's a full bottle of water for one of those water dispensers.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0038">
+                  <en><![CDATA[Hmm, water.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0120">
+                  <en><![CDATA[I was thirsty.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0121">
+                  <en><![CDATA[Now let's try talking to the guy that just came in.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0125">
+                  <en><![CDATA[Bring up the pop-up menu like previously]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0126">
+                  <en><![CDATA[This time select the mouth icon]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0127">
+                  <en><![CDATA[At the left hand bottom of the screen will be a list of things you can say]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0128">
+                  <en><![CDATA[Select the one you want to say]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:Guy" state="show"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Sign" type="puppet" asset="lib/FT_StorageRoom.swf:Sign" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="240" y="236" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="105" hitH="150" shape="rect">
+          <param mapX="277" mapY="649" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Sign]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0039">
+                  <en><![CDATA[You have just started a short tutorial.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0040">
+                  <en><![CDATA[You have just learnt how to look at anything in the room. Looking at an item will find more details about it, and you may find useful details about it.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0115">
+                  <en><![CDATA[Let's try using the water bottle]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0116">
+                  <en><![CDATA[Move the mouse over the bottle]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0117">
+                  <en><![CDATA[Hold the mouse button down]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0118">
+                  <en><![CDATA[Select the hand Icon]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0119">
+                  <en><![CDATA[Release the mouse button]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0052">
+                  <en><![CDATA[I'm not talking to that!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0053">
+                  <en><![CDATA[I see no use for that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="SignNoAction" type="puppet" asset="lib/FT_StorageRoom.swf:SignNoAction" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="410" y="237" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="105" hitH="150" shape="rect">
+          <param mapX="444" mapY="641" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Sign]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0036">
+                  <en><![CDATA[Nothing of interest]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0052">
+                  <en><![CDATA[I'm not talking to that!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0053">
+                  <en><![CDATA[I see no use for that.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="NoEntry" type="puppet" asset="lib/FT_StorageRoom.swf:NoEntry" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="37" y="290" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="287" mapY="655" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[No Entry]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0195">
+                  <en><![CDATA[I can't go that way]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0196">
+                  <en><![CDATA[I'm not disobeying that sign]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Guy" type="puppet" asset="lib/global.swf:Guard" depth="5" visible="1" state="hide">
+      <states>
+        <state id="hide" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="231" mapY="658" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="show" x="87" y="225" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="169" hitH="472" shape="rect">
+          <param mapX="335" mapY="684" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x00FF00" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Some Guy]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0123">
+                  <en><![CDATA[It's just some guy]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0143">
+                  <en><![CDATA[Hi]]></en>
+                </dia>
+                <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0144">
+                  <en><![CDATA[Hi, I'm your tutor]]></en>
+                </dia>
+                <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0145">
+                  <en><![CDATA[Tell me what you want to learn about.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+                <tree load="SomeGuy"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0122">
+                  <en><![CDATA[I can't use people]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="TutorialBook">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0177">
+                  <en><![CDATA[Thanks, I wanted something to read]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+                <cursor item=""/>
+                <inventory target="main" remove="TutorialBook"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="SkipTutorial" type="puppet" asset="lib/FT_StorageRoom.swf:SkipTutorial" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="860" y="306" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="815" mapY="654" turnTo="3" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Leave" type="puppet" asset="" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="863" y="175" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="93" hitH="521" shape="rect">
+          <param mapX="841" mapY="670" turnTo="3" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Skip Tutorial]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0129">
+                  <en><![CDATA[You are skipping the tutorial]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0130">
+                  <en><![CDATA[I hope you know what you are doing!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+                <inventory target="main" remove="TutorialBook"/>
+                <game room="StartMovie:start"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="book" type="puppet" asset="lib/global.swf:Book" depth="8" visible="1" state="hide">
+      <states>
+        <state id="show" x="414" y="559" img="1" imgX="0" imgY="0" imgW="0.5" imgH="0.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="53" hitH="52" shape="rect">
+          <param mapX="387" mapY="636" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Book]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0197">
+                  <en><![CDATA[It's a book]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0193">
+                  <en><![CDATA[I'll just take this book]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0194">
+                  <en><![CDATA[I put it in the inventory]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:book" state="hidePickedUp"/>
+                <inventory target="main" add="TutorialBook"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="hide" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="306" mapY="632" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="hidePickedUp" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="306" mapY="632" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatHall" type="puppet" asset="" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="184" y="4" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="292" mapY="716" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat Hall]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0055">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="KeyCard"/>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <dialogue play="*"/>
+                <game room="FT_Hall"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatOT" type="puppet" asset="" depth="10" visible="1" state="main">
+      <states>
+        <state id="main" x="285" y="6" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="387" mapY="720" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat OT]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0056">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="KeyCard"/>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <dialogue play="*"/>
+                <game room="FT_OT"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatMap" type="puppet" asset="" depth="11" visible="1" state="main">
+      <states>
+        <state id="main" x="385" y="7" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="483" mapY="659" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat Map]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0057">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <dialogue play="*"/>
+                <game room="Map:Office"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatMapDay" type="puppet" asset="" depth="12" visible="1" state="main">
+      <states>
+        <state id="main" x="486" y="7" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="587" mapY="656" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat Map Day]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0058">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <cache field="Slept" value="1"/>
+                <cache field="KnowName" value="1"/>
+                <cache field="KnowWork" value="1"/>
+                <cache field="KnowGirlfriend" value="1"/>
+                <inventory target="main" add="MyKeyCard"/>
+                <inventory target="main" add="BookEnv"/>
+                <layer target="Home_Bedroom:Cabnet" state="Found"/>
+                <layer target="Home_Bedroom:Bed" state="Slept"/>
+                <layer target="FT_Reception:PS" state="Day"/>
+                <layer target="FT_Reception:Paul" state="Day"/>
+                <layer target="FT_Reception:Storm" state="Day"/>
+                <layer target="FT_Reception:Receptionist" state="Day"/>
+                <layer target="FT_Reception:ReceptionDesk" state="Day"/>
+                <layer target="FT_Reception:Customer" state="Day"/>
+                <layer target="FT_Reception:SecureDoor" state="DayLocked"/>
+                <layer target="FT_OT:Door" state="OpenDay"/>
+                <layer target="Home_LivingRoom:StreetDoor" state="Day"/>
+                <dialogue play="*"/>
+                <game room="Map:Office"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatOffice" type="puppet" asset="" depth="13" visible="1" state="main">
+      <states>
+        <state id="main" x="184" y="105" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="693" mapY="664" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat Office]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0059">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <cache field="Slept" value="1"/>
+                <cache field="KnowName" value="1"/>
+                <cache field="KnowWork" value="1"/>
+                <cache field="KnowGirlfriend" value="1"/>
+                <inventory target="main" add="MyKeyCard"/>
+                <inventory target="main" add="BookEnv"/>
+                <layer target="Home_Bedroom:Cabnet" state="Found"/>
+                <layer target="Home_Bedroom:Bed" state="Slept"/>
+                <layer target="FT_Reception:PS" state="Day"/>
+                <layer target="FT_Reception:Paul" state="Day"/>
+                <layer target="FT_Reception:Storm" state="Day"/>
+                <layer target="FT_Reception:Receptionist" state="Day"/>
+                <layer target="FT_Reception:ReceptionDesk" state="Day"/>
+                <layer target="FT_Reception:Customer" state="Day"/>
+                <layer target="FT_Reception:SecureDoor" state="DayLocked"/>
+                <layer target="FT_OT:Door" state="OpenDay"/>
+                <layer target="Home_LivingRoom:StreetDoor" state="Day"/>
+                <dialogue play="*"/>
+                <game room="FT_Office"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatCoffeeShop" type="puppet" asset="" depth="14" visible="1" state="main">
+      <states>
+        <state id="main" x="283" y="107" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="693" mapY="664" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat Coffee Shop]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0060">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <cache field="Slept" value="1"/>
+                <cache field="KnowName" value="1"/>
+                <cache field="KnowWork" value="1"/>
+                <cache field="KnowGirlfriend" value="1"/>
+                <inventory target="main" add="MyKeyCard"/>
+                <inventory target="main" add="BookEnv"/>
+                <layer target="Home_Bedroom:Cabnet" state="Found"/>
+                <layer target="Home_Bedroom:Bed" state="Slept"/>
+                <layer target="FT_Reception:PS" state="Day"/>
+                <layer target="FT_Reception:Paul" state="Day"/>
+                <layer target="FT_Reception:Storm" state="Day"/>
+                <layer target="FT_Reception:Receptionist" state="Day"/>
+                <layer target="FT_Reception:ReceptionDesk" state="Day"/>
+                <layer target="FT_Reception:Customer" state="Day"/>
+                <layer target="FT_Reception:SecureDoor" state="DayLocked"/>
+                <layer target="FT_OT:Door" state="OpenDay"/>
+                <layer target="Home_LivingRoom:StreetDoor" state="Day"/>
+                <layer target="Map:CoffeeShop" state="Know"/>
+                <dialogue play="*"/>
+                <game room="CoffeeShop"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatHomeComputer" type="puppet" asset="" depth="15" visible="1" state="main">
+      <states>
+        <state id="main" x="382" y="106" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="774" mapY="657" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat Home Computer]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0061">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <cache field="Slept" value="1"/>
+                <cache field="KnowName" value="1"/>
+                <cache field="KnowWork" value="1"/>
+                <cache field="KnowGirlfriend" value="1"/>
+                <inventory target="main" add="MyKeyCard"/>
+                <inventory target="main" add="BookEnv"/>
+                <layer target="Home_Bedroom:Cabnet" state="Found"/>
+                <layer target="Home_Bedroom:Bed" state="Slept"/>
+                <layer target="FT_Reception:PS" state="Day"/>
+                <layer target="FT_Reception:Paul" state="Day"/>
+                <layer target="FT_Reception:Storm" state="Day"/>
+                <layer target="FT_Reception:Receptionist" state="Day"/>
+                <layer target="FT_Reception:ReceptionDesk" state="Day"/>
+                <layer target="FT_Reception:Customer" state="Day"/>
+                <layer target="FT_Reception:SecureDoor" state="DayLocked"/>
+                <layer target="FT_OT:Door" state="OpenDay"/>
+                <layer target="Home_LivingRoom:StreetDoor" state="Day"/>
+                <layer target="Map:CoffeeShop" state="Know"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_11:1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_13:1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_14:1"/>
+                <dialogue play="*"/>
+                <game room="Home_Computer"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatCoffeeEnd" type="puppet" asset="" depth="16" visible="1" state="main">
+      <states>
+        <state id="main" x="484" y="107" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="774" mapY="657" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat Coffee End]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0061">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <inventory target="main" add="O2Tank"/>
+                <inventory target="main" add="Pills"/>
+                <inventory target="main" add="IPod"/>
+                <cache field="laptop_song" value="synced"/>
+                <inventory target="main" add="USB"/>
+                <inventory target="main" add="SonicParcel"/>
+                <inventory target="main" add="DigitalFob"/>
+                <inventory target="main" add="Stethoscope"/>
+                <cache field="Slept" value="1"/>
+                <cache field="KnowName" value="1"/>
+                <cache field="KnowWork" value="1"/>
+                <cache field="KnowGirlfriend" value="1"/>
+                <inventory target="main" add="MyKeyCard"/>
+                <inventory target="main" add="BookEnv"/>
+                <layer target="Home_Bedroom:Cabnet" state="Found"/>
+                <layer target="Home_Bedroom:Bed" state="Slept"/>
+                <layer target="FT_Reception:PS" state="Day"/>
+                <layer target="FT_Reception:Paul" state="Day"/>
+                <layer target="FT_Reception:Storm" state="Day"/>
+                <layer target="FT_Reception:Receptionist" state="Day"/>
+                <layer target="FT_Reception:ReceptionDesk" state="Day"/>
+                <layer target="FT_Reception:Customer" state="Day"/>
+                <layer target="FT_Reception:SecureDoor" state="DayLocked"/>
+                <layer target="FT_OT:Door" state="OpenDay"/>
+                <layer target="Home_LivingRoom:StreetDoor" state="Day"/>
+                <layer target="Map:CoffeeShop" state="Know"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_11:1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_13:1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_14:1"/>
+                <dialogue play="*"/>
+                <game room="CoffeeShop"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatSecretLair" type="puppet" asset="" depth="17" visible="1" state="main">
+      <states>
+        <state id="main" x="589" y="110" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="794" mapY="664" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat Secret Lair]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0062">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Key"/>
+                <inventory target="main" add="Scrub"/>
+                <inventory target="main" add="BentWireHanger"/>
+                <inventory target="main" add="FramedPhoto"/>
+                <inventory target="main" add="MyKeyCard"/>
+                <inventory target="main" add="BookEnv"/>
+                <inventory target="main" add="O2Tank"/>
+                <inventory target="main" add="DigitalFob"/>
+                <inventory target="main" add="Stethoscope"/>
+                <dialogue play="*"/>
+                <game room="SecretLair:Door"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CheatEndGame" type="puppet" asset="" depth="18" visible="1" state="main">
+      <states>
+        <state id="main" x="695" y="110" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="794" mapY="664" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cheat End Game]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0062">
+                  <en><![CDATA[Cheat]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <dialogue play="*"/>
+                <game room="BetterMovie:_default"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="19" visible="1" state="main">
+      <states>
+        <state id="main" x="525" y="674" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="HelpMe">
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0265">
+              <en><![CDATA[No More Help Please!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t10" id="_25" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Help me!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0188">
+              <en><![CDATA[Help me!]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0189">
+              <en><![CDATA[This is the tutorial, you don't need any more help]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t11" id="_26" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I stop the help?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0190">
+              <en><![CDATA[How do I stop the help?]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0191">
+              <en><![CDATA[The first option is always the way to either close the help]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0192">
+              <en><![CDATA[Or leave the in-depth section of the help]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+    <tree id="SomeGuy">
+      <tier key="r" id="">
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[I've learnt enough!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0146">
+              <en><![CDATA[I've learnt enough!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_8" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I know what I can interact with in the room?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0164">
+              <en><![CDATA[How do I know what I can interact with in the room?]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0165">
+              <en><![CDATA[When you move your mouse pointer around the room.]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0166">
+              <en><![CDATA[When the mouse is over something you can interact with]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0167">
+              <en><![CDATA[At the bottom of the screen you will see a text description of what the mouse is over.]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0168">
+              <en><![CDATA[Note, you can not interact with your character like this.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_3" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Tell me how to pick things up]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0148">
+              <en><![CDATA[Tell me how to pick things up]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0198">
+              <en><![CDATA[Lift with your legs, not your back....oh, you mean in the game!]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0152">
+              <en><![CDATA[If you see something in the room you think you can pick up]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0153">
+              <en><![CDATA[Just use it like you would any other item]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0154">
+              <en><![CDATA[If it can be picked up, you will.]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0155">
+              <en><![CDATA[It will appear in your inventory]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0161">
+              <en><![CDATA[Try picking up that book]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0203">
+              <en><![CDATA[You must end the conversation before you can interact with anything else]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <logic eval="{getLayerProp:_current,book,state} EQ hide">
+              <layer target="_current:book" state="show"/>
+            </logic>
+            <logic>
+              <if eval="{getLayerProp:_current,book,state} EQ show">
+                <dialogue play="*"/>
+              </if>
+              <else>
+                <dialogue playList="0,1,2,3,4,5"/>
+              </else>
+            </logic>
+          </script>
+        </topic>
+        <topic key="t4" id="_4" enabled="1" hold="1" expose="_7,_10" go="0">
+          <title>
+            <en><![CDATA[Tell me how to use my inventory]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0149">
+              <en><![CDATA[Tell me how to use my inventory]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0156">
+              <en><![CDATA[Any item you pick up appears in your inventory]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0157">
+              <en><![CDATA[You can view your inventory by pressing the chest icon]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0158">
+              <en><![CDATA[Which is at the bottom right of the screen]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0159">
+              <en><![CDATA[Or you can press 'i' on your keyboard]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0161">
+              <en><![CDATA[Try picking up that book]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <logic eval="{getLayerProp:_current,book,state} EQ hide">
+              <layer target="_current:book" state="show"/>
+            </logic>
+            <logic>
+              <if eval="{getLayerProp:_current,book,state} EQ show">
+                <dialogue play="*"/>
+              </if>
+              <else>
+                <dialogue playList="0,1,2,3,4"/>
+              </else>
+            </logic>
+          </script>
+        </topic>
+        <topic key="t5" id="_7" enabled="0" hold="1" expose="_9,_10" go="0">
+          <title>
+            <en><![CDATA[Tell me how to use things in my inventory]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0160">
+              <en><![CDATA[Tell me how to use things in my inventory]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0162">
+              <en><![CDATA[You can look at and use items while they are still in you inventory]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0163">
+              <en><![CDATA[This works exactly the same as items in the room]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_9" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[How do I use things from my inventory on things in the room?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0170">
+              <en><![CDATA[How do I use things from my inventory on things in the room?]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0171">
+              <en><![CDATA[A single click on an item in your inventory will make it your cursor]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0172">
+              <en><![CDATA[You can now single click any interactive item and it will attempt to use the item on it.]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0173">
+              <en><![CDATA[If you no longer want the item on your cursor]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0174">
+              <en><![CDATA[Double click on an area with no interactive items to return it to your inventory]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0175">
+              <en><![CDATA[Try using the book on me]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0176">
+              <en><![CDATA[This is how you give items to people]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t7" id="_10" enabled="0" hold="0" expose="" go="0">
+          <title>
+            <en><![CDATA[Press the bright yellow arrow to see more dialogue options]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0199">
+              <en><![CDATA[Press the bright yellow arrow to see more dialogue options]]></en>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0202">
+              <en><![CDATA[]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue playList="1"/>
+          </script>
+        </topic>
+        <topic key="t8" id="_5" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Tell me about the help system]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0150">
+              <en><![CDATA[Tell me about the help system]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0178">
+              <en><![CDATA[In the top right of the screen is a small image of your character]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0179">
+              <en><![CDATA[A single press on this will open a dialog, just like if you were speaking to someone]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0180">
+              <en><![CDATA[From this you can get help on the room you are currently in]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0181">
+              <en><![CDATA[Try it now]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t9" id="_6" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Tell me about the menu]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Tutorial.swf:Tutorial0151">
+              <en><![CDATA[Tell me about the menu]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0182">
+              <en><![CDATA[In the top left of the screen is a menu]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0183">
+              <en><![CDATA[You can press it, or use the 'M' on your keyboard]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0184">
+              <en><![CDATA[From the menu you can save your game]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0185">
+              <en><![CDATA[Load a game]]></en>
+            </dia>
+            <dia puppet="Guy" frame="" sound="voice/V_Tutorial.swf:Tutorial0186">
+              <en><![CDATA[Or turn off the audio]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

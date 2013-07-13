@@ -1,1 +1,1779 @@
-<room id="FT_StorageRoom" coreLibs="lib/FT_StorageRoom.swf,lib/V_FT_StorageRoom.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2=""><grids><grid id="main"><boxes><box x="197" y="626" w="364" h="112" nodes="n1,n7"/><box x="558" y="624" w="316" h="114" nodes="n2,n3,n4,n6"/><box x="879" y="672" w="70" h="67" nodes="n5"/><box x="111" y="654" w="83" h="83" nodes="n0"/></boxes><nodes><node id="n0" x="189" y="680" join="n1" trap="0"/><node id="n1" x="208" y="681" join="n0,n2,n7" trap="0"/><node id="n2" x="719" y="684" join="n1,n3,n6,n4" trap="0"/><node id="n3" x="739" y="684" join="n2,n4,n6" trap="0"/><node id="n4" x="868" y="697" join="n3,n5,n2,n6" trap="0"/><node id="n5" x="904" y="697" join="n4" trap="0" name="secure_door"/><node id="n6" x="579" y="641" join="n7,n2,n3,n4" trap="0" name="start"/><node id="n7" x="547" y="642" join="n6,n1" trap="0"/></nodes></grid></grids><positions><position id="secure_door" turn="4" x="904" y="697"/><position id="start" turn="4" x="579" y="641"/></positions><filters><filter id="_main" axis="y" enabled="1"><pole x="532" y="546" scale="1" rate="1" blur="1" color="0x000000" tint="0.5"/><pole x="532" y="750" scale="1.5" rate="1.5" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><curtain blackout="0"/></script><script id="_exit"><curtain blackout="1"/></script></scripts><layers><layer id="_bg" type="background" asset="lib/FT_StorageRoom.swf:BG_FT_StorageRoom" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title><en><![CDATA[]]></en></title><actions/><items/></state></states></layer><layer id="Scrubs1" type="puppet" asset="lib/FT_StorageRoom.swf:Scrubs" depth="1" visible="1" state="main"><states><state id="main" x="581" y="217" img="1" imgX="0" imgY="0" imgW="1.6" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="78" hitH="291" shape="rect"><param mapX="629" mapY="605" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Scrubs]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[One of the pockets has a key in it.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[It won't fit any of the locks in here, don't bother trying.]]></en></dia></dialog><script><inventory target="main" add="Key"/><layer target="_current:Scrubs1" state="found"/><sound effect="lib/V_FT_StorageRoom.swf:PocketKey" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not wearing old scrubs!]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:WearOldScubs" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state><state id="found" x="581" y="217" img="1" imgX="0" imgY="0" imgW="1.6" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="80" hitH="289" shape="rect"><param mapX="638" mapY="629" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Scrubs]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Looks like old medical scrubs]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:LooksOldScrubs" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not wearing old scrubs!]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:WearOldScubs" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Scrubs2" type="puppet" asset="lib/FT_StorageRoom.swf:Scrubs2" depth="2" visible="1" state="main"><states><state id="main" x="650" y="214" img="1" imgX="0" imgY="0" imgW="1.9" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="97" hitH="280" shape="rect"><param mapX="722" mapY="631" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Scrubs]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Looks like old medical scrubs.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:LooksOldScrubs" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not wearing old scrubs!]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:WearOldScubs" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Scrubs3" type="puppet" asset="" depth="3" visible="1" state="main"><states><state id="main" x="729" y="215" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="95" hitH="288" shape="rect"><param mapX="809" mapY="602" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Scrubs]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is a ID card in here.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[It's not yours, put it back!]]></en></dia></dialog><script><inventory target="main" add="KeyCard"/><layer target="_current:Scrubs3" state="found"/><sound effect="lib/V_FT_StorageRoom.swf:IdCard" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not wearing old scrubs!]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:WearOldScubs" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state><state id="found" x="742" y="229" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="77" hitH="274" shape="rect"><param mapX="801" mapY="644" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Scrubs]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Looks like old medical scrubs]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:LooksOldScrubs" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not wearing old scrubs!]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:WearOldScubs" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Cabinet" type="puppet" asset="lib/FT_StorageRoom.swf:Cabinet" depth="4" visible="1" state="main"><states><state id="main" x="400" y="370" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="150" hitH="259" shape="rect"><param mapX="476" mapY="629" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cabinet]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a filling cabinet and it appears to be locked.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I doubt there is anything important in there.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:LockedCabenet" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's locked firmly shut.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:LockedShut" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="Key"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It doesn't fit the lock.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Maybe you aren't trying hard enough.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:DoesntFitLock" waitForComplete="0"/><dialogue play="*"/></script></action><action id="WireHanger"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Lets try and pick the lock.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That worked! I wonder what's inside?]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I doubt there is anything important in there.]]></en></dia></dialog><script><inventory target="main" replace="WireHanger:BentWireHanger"/><layer target="_current:Cabinet" state="Unlocked"/><cursor item=""/><sound effect="lib/V_FT_StorageRoom.swf:PickLock" waitForComplete="0"/><dialogue play="*"/></script></action></items></state><state id="Unlocked" x="400" y="370" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="165" hitH="324" shape="rect"><param mapX="474" mapY="655" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Unlocked Cabinet]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a unlocked filing cabinet.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:UnlockedCabenet" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a lot of Future Tech company documents in here. Employee personal files. Shame there are no photo on them. It looks like the CEO is a Ms. Sarah Bio.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[That isn't worth remembering.]]></en></dia></dialog><script><layer target="_current:OpenBoxes" state="KnowCEO"/><sound effect="lib/V_FT_StorageRoom.swf:FTDocs" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="SecureDoor" type="puppet" asset="" depth="5" visible="1" state="main"><states><state id="main" x="908" y="163" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="74" hitH="545" shape="rect"><param mapX="913" mapY="673" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Security Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[The handel doesn't work, and there is no lock on the door.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Try giving it a push.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:NoHandle" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Is anyone there?]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I'm here. I'm your sub-conscience.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:AnyoneThere" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't think it is a push door.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Try the handle.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:NotPushDoor" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="Key"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is no key hole.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:NoKeyHole" waitForComplete="0"/><dialogue play="*"/></script></action></items></state><state id="Open" x="872" y="168" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="91" hitH="529" shape="rect"><param mapX="904" mapY="697" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Security Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's open now.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:OpenNow" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Is anyone there?]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I'm here. I'm your sub-conscience.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:AnyoneThere" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_Hall:StorageRoom"/></script></action></actions><items><action id="Key"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is no key hole.]]></en></dia></dialog><script><dialogue play="*"/></script></action></items></state><state id="OpenDay" x="872" y="168" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="91" hitH="529" shape="rect"><param mapX="904" mapY="697" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Security Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's open.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:OpenNow" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Is anyone there?]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I'm here. I'm your sub-conscience.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:AnyoneThere" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_HallDay:StorageRoom"/></script></action></actions><items><action id="Key"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is no key hole.]]></en></dia></dialog><script><dialogue play="*"/></script></action></items></state></states></layer><layer id="IrisScanner" type="puppet" asset="lib/FT_StorageRoom.swf:Scanner" depth="6" visible="1" state="main"><states><state id="main" x="935" y="320" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="50" hitH="99" shape="rect"><param mapX="944" mapY="727" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Gizmo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Looks a bit hi-tech, I think it may be a scanner of some sort. There is a slot that looks like it is a credit card reader.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Looks broken to me.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:LooksScanner" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is nothing to press to start it, just a slot and a scanner.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I'd try to find the start button if I were you.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:NoStartButton" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="KeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It scanned my iris, but didn't open the door.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[You clearly don't work here.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:ScannedIris" waitForComplete="0"/><dialogue play="*"/></script></action><action id="FramedPhoto"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That might work, I need to activate the scanner and I'll try that.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[You think a photo will fool an iris scanner. Ha!]]></en></dia></dialog><script><layer target="_current:IrisScanner" state="TriedPhoto"/><sound effect="lib/V_FT_StorageRoom.swf:MightWork" waitForComplete="0"/><dialogue play="*"/></script></action></items></state><state id="TriedPhoto" x="935" y="320" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="52" hitH="98" shape="rect"><param mapX="944" mapY="727" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Gizmo]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a scanner and a slot for an key card.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:ScannerAndSlot" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is nothing to press to start it, just a slot and a scanner.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:NoStartButton" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="KeyCard"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It must be a cheap iris scanner to be fooled by a photo.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Yeah. I guess it must.]]></en></dia></dialog><script><layer target="_current:SecureDoor" state="Open"/><cursor item=""/><sound effect="lib/V_FT_StorageRoom.swf:CheapScanner" waitForComplete="0"/><dialogue play="*"/></script></action><action id="FramedPhoto"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I need to activate the scanner and I'll try that.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Find that start button.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:NeedToActivate" waitForComplete="0"/><dialogue play="*"/></script></action></items></state></states></layer><layer id="LockedDoor" type="puppet" asset="" depth="7" visible="1" state="main"><states><state id="main" x="42" y="138" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="108" hitH="568" shape="rect"><param mapX="119" mapY="686" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Locked Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There is a key hole in the door.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[You could always trying using your finger to pick the lock.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:KeyHole" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Is anyone there?]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I'm here. I'm your sub-conscience.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:AnyoneThere" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's is locked firmly shut.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:LockedShut" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="Key"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It doesn't fit the lock.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Maybe you aren't trying hard enough.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:DoesntFitLock" waitForComplete="0"/><dialogue play="*"/></script></action></items></state></states></layer><layer id="SealedBoxes" type="puppet" asset="lib/FT_StorageRoom.swf:Boxes" depth="8" visible="1" state="main"><states><state id="main" x="157" y="476" img="1" imgX="0" imgY="0" imgW="2" imgH="1.97" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="244" hitH="159" shape="rect"><param mapX="298" mapY="655" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Sealed Boxes]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Some sealed boxes, from MedialSupplies.com. I wonder what is inside? If only I could break the tape with something pointy.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[It's probably just more scrubs.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:SealedBoxes" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[The tape is sealling these firmly shut.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:TapeSealing" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items><action id="Key"><title><en><![CDATA[]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That should break the tape sealing these. There are scrubs on hangers in here, I'll take one.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[See, told you it was just more scrubs.]]></en></dia></dialog><script><inventory target="main" add="ScrubHanger"/><layer target="_current:SealedBoxes" state="Open"/><cursor item=""/><sound effect="lib/V_FT_StorageRoom.swf:BreakTape" waitForComplete="0"/><dialogue play="*"/></script></action></items></state><state id="Open" x="145" y="473" img="1" imgX="0" imgY="0" imgW="2" imgH="1.93" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="241" hitH="154" shape="rect"><param mapX="290" mapY="633" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Open Boxes]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Just more scrubs, I have enough of those.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:MoreScubs" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more of those.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:HaveEnough" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="OpenBoxes" type="puppet" asset="lib/FT_StorageRoom.swf:Boxes" depth="9" visible="1" state="main"><states><state id="main" x="580" y="502" img="1" imgX="0" imgY="0" imgW="2" imgH="1.5" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="247" hitH="121" shape="rect"><param mapX="710" mapY="641" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Open Boxes]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[A box of framed photos.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:FramedPhotos" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There are too many to take them all, I'll take one if I need one later.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:TooMany" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state><state id="KnowCEO" x="580" y="502" img="1" imgX="0" imgY="0" imgW="2" imgH="1.5" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="247" hitH="120" shape="rect"><param mapX="708" mapY="625" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Open Boxes]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[A box of employee photos in frames.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[What a load of junk.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:BoxFramedPhotos" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[This one of the CEO might be useful.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[What makes you think that?]]></en></dia></dialog><script><inventory target="main" add="FramedPhoto"/><layer target="_current:OpenBoxes" state="GotCEO"/><sound effect="lib/V_FT_StorageRoom.swf:CeoUseful" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state><state id="GotCEO" x="580" y="502" img="1" imgX="0" imgY="0" imgW="2" imgH="1.5" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="246" hitH="123" shape="rect"><param mapX="667" mapY="632" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Open Boxes]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[A box of employee photos in frames.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[What a load of junk.]]></en></dia></dialog><script><sound effect="lib/V_FT_StorageRoom.swf:BoxFramedPhotos" waitForComplete="0"/><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need any more of those.]]></en></dia></dialog><script><inventory target="main" add="FramedPhoto"/><layer target="_current:OpenBoxes" state="GotCEO"/><sound effect="lib/V_FT_StorageRoom.swf:HaveEnough" waitForComplete="0"/><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="WaterBottle" type="puppet" asset="lib/FT_StorageRoom.swf:WaterBottle" depth="10" visible="1" state="main"><states><state id="main" x="418" y="212" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="99" hitH="160" shape="rect"><param mapX="479" mapY="657" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Water Bottle]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a full bottle of water for one of those water dispensers.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[What with?]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Sign" type="puppet" asset="lib/FT_StorageRoom.swf:Sign" depth="11" visible="1" state="main"><states><state id="main" x="240" y="236" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="105" hitH="150" shape="rect"><param mapX="277" mapY="649" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Sign]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[You have just started a short tutorial.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[You have just learnt how to look at anything in the room. Looking at an item will find more details about it, and you may find useful details about it.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[By pressing and holding the mouse button and selecting the other two symbols on the pop up menu]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[you can also attempt to use or pick up an item by selecting the hand symbol.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[You can try talking to items as people by selecting the mouth symbol.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[If you start a conversation with someone, a list of possible things you can say will appear in the lower left of the screen.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Select the one you want to say by moving the mouse over the option and pressing the mouse button.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[In the lower right of the screen is a chest icon. Selecting it with the mouse will open your inventory of items you have picked up.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[You can also open it by pressing the &quot;i&quot; button on your keyboard. You can interact with items in you inventory the same as items in the room.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[If you press and release the mouse button on an inventory item, it will be come your mouse pointer, you can now try using it with items in the room by pressing the mouse button on them.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[If you do this with a person, it will attempt to give the item to them.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[You can put the item back in you inventory by quickly pressing the mouse button twice while it is not over any object.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[You can open the main menu by pressing the &quot;m&quot; on the keyboard at anytime. From there you can save or load your game.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm not talking to that!]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I see no use for that.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Yeah, it's not like it's a chicken with a pully in the middle.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="CheatHall" type="puppet" asset="" depth="12" visible="1" state="main"><states><state id="main" x="184" y="4" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="292" mapY="716" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cheat Hall]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Cheat]]></en></dia></dialog><script><inventory target="main" add="KeyCard"/><inventory target="main" add="Key"/><inventory target="main" add="Scrub"/><inventory target="main" add="BentWireHanger"/><inventory target="main" add="FramedPhoto"/><dialogue play="*"/><game room="FT_Hall"/></script></action></actions><items/></state></states></layer><layer id="CheatOT" type="puppet" asset="" depth="13" visible="1" state="main"><states><state id="main" x="285" y="6" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="387" mapY="720" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cheat OT]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Cheat]]></en></dia></dialog><script><inventory target="main" add="KeyCard"/><inventory target="main" add="Key"/><inventory target="main" add="Scrub"/><inventory target="main" add="BentWireHanger"/><inventory target="main" add="FramedPhoto"/><dialogue play="*"/><game room="FT_OT"/></script></action></actions><items/></state></states></layer><layer id="CheatMap" type="puppet" asset="" depth="14" visible="1" state="main"><states><state id="main" x="385" y="7" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="483" mapY="659" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cheat Map]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Cheat]]></en></dia></dialog><script><inventory target="main" add="Key"/><inventory target="main" add="Scrub"/><inventory target="main" add="BentWireHanger"/><inventory target="main" add="FramedPhoto"/><dialogue play="*"/><game room="Map:Office"/></script></action></actions><items/></state></states></layer><layer id="CheatMapDay" type="puppet" asset="" depth="15" visible="1" state="main"><states><state id="main" x="486" y="7" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="587" mapY="656" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cheat Map Day]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Cheat]]></en></dia></dialog><script><inventory target="main" add="Key"/><inventory target="main" add="Scrub"/><inventory target="main" add="BentWireHanger"/><inventory target="main" add="FramedPhoto"/><cache field="Slept" value="1"/><cache field="KnowName" value="1"/><cache field="KnowWork" value="1"/><cache field="KnowGirlfriend" value="1"/><inventory target="main" add="MyKeyCard"/><inventory target="main" add="BookEnv"/><layer target="Home_Bedroom:Cabnet" state="Found"/><layer target="Home_Bedroom:Bed" state="Slept"/><layer target="FT_Reception:PS" state="Day"/><layer target="FT_Reception:Paul" state="Day"/><layer target="FT_Reception:Storm" state="Day"/><layer target="FT_Reception:Reception" state="Day"/><layer target="FT_Reception:Customer" state="Day"/><layer target="FT_Reception:SecureDoor" state="DayLocked"/><layer target="FT_OT:Door" state="OpenDay"/><layer target="Home_LivingRoom:StreetDoor" state="Day"/><dialogue play="*"/><game room="Map:Office"/></script></action></actions><items/></state></states></layer><layer id="CheatOffice" type="puppet" asset="" depth="16" visible="1" state="main"><states><state id="main" x="588" y="7" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="693" mapY="664" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cheat Office]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Cheat]]></en></dia></dialog><script><inventory target="main" add="Key"/><inventory target="main" add="Scrub"/><inventory target="main" add="BentWireHanger"/><inventory target="main" add="FramedPhoto"/><cache field="Slept" value="1"/><cache field="KnowName" value="1"/><cache field="KnowWork" value="1"/><cache field="KnowGirlfriend" value="1"/><inventory target="main" add="MyKeyCard"/><inventory target="main" add="BookEnv"/><layer target="Home_Bedroom:Cabnet" state="Found"/><layer target="Home_Bedroom:Bed" state="Slept"/><layer target="FT_Reception:PS" state="Day"/><layer target="FT_Reception:Paul" state="Day"/><layer target="FT_Reception:Storm" state="Day"/><layer target="FT_Reception:Reception" state="Day"/><layer target="FT_Reception:Customer" state="Day"/><layer target="FT_Reception:SecureDoor" state="DayLocked"/><layer target="FT_OT:Door" state="OpenDay"/><layer target="Home_LivingRoom:StreetDoor" state="Day"/><dialogue play="*"/><game room="FT_Office"/></script></action></actions><items/></state></states></layer><layer id="CheatCoffeeShop" type="puppet" asset="" depth="17" visible="1" state="main"><states><state id="main" x="689" y="7" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="693" mapY="664" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cheat Coffee Shop]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Cheat]]></en></dia></dialog><script><inventory target="main" add="Key"/><inventory target="main" add="Scrub"/><inventory target="main" add="BentWireHanger"/><inventory target="main" add="FramedPhoto"/><cache field="Slept" value="1"/><cache field="KnowName" value="1"/><cache field="KnowWork" value="1"/><cache field="KnowGirlfriend" value="1"/><inventory target="main" add="MyKeyCard"/><inventory target="main" add="BookEnv"/><layer target="Home_Bedroom:Cabnet" state="Found"/><layer target="Home_Bedroom:Bed" state="Slept"/><layer target="FT_Reception:PS" state="Day"/><layer target="FT_Reception:Paul" state="Day"/><layer target="FT_Reception:Storm" state="Day"/><layer target="FT_Reception:Reception" state="Day"/><layer target="FT_Reception:Customer" state="Day"/><layer target="FT_Reception:SecureDoor" state="DayLocked"/><layer target="FT_OT:Door" state="OpenDay"/><layer target="Home_LivingRoom:StreetDoor" state="Day"/><layer target="Map:CoffeeShop" state="Know"/><dialogue play="*"/><game room="CoffeeShop"/></script></action></actions><items/></state></states></layer><layer id="CheatHomeComputer" type="puppet" asset="" depth="18" visible="1" state="main"><states><state id="main" x="791" y="8" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="774" mapY="657" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cheat Home Computer]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Cheat]]></en></dia></dialog><script><inventory target="main" add="Key"/><inventory target="main" add="Scrub"/><inventory target="main" add="BentWireHanger"/><inventory target="main" add="FramedPhoto"/><cache field="Slept" value="1"/><cache field="KnowName" value="1"/><cache field="KnowWork" value="1"/><cache field="KnowGirlfriend" value="1"/><inventory target="main" add="MyKeyCard"/><inventory target="main" add="BookEnv"/><layer target="Home_Bedroom:Cabnet" state="Found"/><layer target="Home_Bedroom:Bed" state="Slept"/><layer target="FT_Reception:PS" state="Day"/><layer target="FT_Reception:Paul" state="Day"/><layer target="FT_Reception:Storm" state="Day"/><layer target="FT_Reception:Reception" state="Day"/><layer target="FT_Reception:Customer" state="Day"/><layer target="FT_Reception:SecureDoor" state="DayLocked"/><layer target="FT_OT:Door" state="OpenDay"/><layer target="Home_LivingRoom:StreetDoor" state="Day"/><layer target="Map:CoffeeShop" state="Know"/><tree enableTopic="Home_Computer:GuessPassword:_11:1"/><tree enableTopic="Home_Computer:GuessPassword:_13:1"/><tree enableTopic="Home_Computer:GuessPassword:_14:1"/><dialogue play="*"/><game room="Home_Computer"/></script></action></actions><items/></state></states></layer><layer id="CheatSecretLair" type="puppet" asset="" depth="19" visible="1" state="main"><states><state id="main" x="892" y="7" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="794" mapY="664" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cheat Secret Lair]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Cheat]]></en></dia></dialog><script><inventory target="main" add="Key"/><inventory target="main" add="Scrub"/><inventory target="main" add="BentWireHanger"/><inventory target="main" add="FramedPhoto"/><inventory target="main" add="MyKeyCard"/><inventory target="main" add="BookEnv"/><inventory target="main" add="O2Tank"/><inventory target="main" add="DigitalFob"/><inventory target="main" add="Stethoscope"/><dialogue play="*"/><game room="SecretLair:Door"/></script></action></actions><items/></state></states></layer><layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="20" visible="1" state="main"><states><state id="main" x="518" y="652" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/><vars/><title><en><![CDATA[ted]]></en></title><actions/><items/></state></states></layer><layer id="ego" type="puppet" asset="" depth="21" visible="0" state="main"><states><state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="462" mapY="200" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer></layers><trees/></room>
+<room id="FT_StorageRoom" coreLibs="lib/FT_StorageRoom.swf,lib/BG_Office.swf" voiceLibs="voice/V_FT_StorageRoom.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="197" y="626" w="364" h="112" nodes="n1,n7"/>
+        <box x="558" y="624" w="316" h="114" nodes="n2,n3,n4,n6"/>
+        <box x="879" y="672" w="70" h="67" nodes="n5"/>
+        <box x="111" y="654" w="83" h="83" nodes="n0"/>
+      </boxes>
+      <nodes>
+        <node id="n0" x="189" y="680" join="n1" trap="0"/>
+        <node id="n1" x="208" y="681" join="n0,n2,n7" trap="0"/>
+        <node id="n2" x="719" y="684" join="n1,n3,n6,n4" trap="0"/>
+        <node id="n3" x="739" y="684" join="n2,n4,n6" trap="0"/>
+        <node id="n4" x="868" y="697" join="n3,n5,n2,n6" trap="0"/>
+        <node id="n5" x="904" y="697" join="n4" trap="0" name="secure_door"/>
+        <node id="n6" x="579" y="641" join="n7,n2,n3,n4" trap="0" name="start"/>
+        <node id="n7" x="547" y="642" join="n6,n1" trap="0"/>
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="secure_door" turn="4" x="904" y="697"/>
+    <position id="start" turn="4" x="579" y="641"/>
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="532" y="546" scale="1" rate="1" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="532" y="750" scale="2" rate="1.5" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Office.swf:MyMonkey"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/FT_StorageRoom.swf:BG_FT_StorageRoom" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Scrubs1" type="puppet" asset="lib/FT_StorageRoom.swf:Scrubs" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="581" y="217" img="1" imgX="0" imgY="0" imgW="1.6" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="78" hitH="291" shape="rect">
+          <param mapX="632" mapY="631" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Smelly Scrubs]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0127">
+                  <en><![CDATA[One of the pockets has a key in it.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0000">
+                  <en><![CDATA[It won't fit any of the locks in here, don't bother trying.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="Key"/>
+                <layer target="_current:Scrubs1" state="found"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_1:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_2:1"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0134">
+                  <en><![CDATA[I'm not wearing old scrubs!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0001">
+                  <en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="found" x="581" y="217" img="1" imgX="0" imgY="0" imgW="1.6" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="80" hitH="289" shape="rect">
+          <param mapX="638" mapY="629" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Smelly Scrubs]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0002">
+                  <en><![CDATA[Looks like old medical scrubs]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0003">
+                  <en><![CDATA[I'm not wearing old scrubs!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0004">
+                  <en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Scrubs2" type="puppet" asset="lib/FT_StorageRoom.swf:Scrubs2" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="650" y="214" img="1" imgX="0" imgY="0" imgW="1.9" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="97" hitH="280" shape="rect">
+          <param mapX="722" mapY="631" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Blood Stained Scrubs]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0005">
+                  <en><![CDATA[Looks like old medical scrubs.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0006">
+                  <en><![CDATA[I'm not wearing old scrubs!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0007">
+                  <en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Scrubs3" type="puppet" asset="" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="729" y="215" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="95" hitH="288" shape="rect">
+          <param mapX="798" mapY="634" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Almost Clean Scrubs]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0112">
+                  <en><![CDATA[There is a ID card in here.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0008">
+                  <en><![CDATA[It's not yours, put it back!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="KeyCard"/>
+                <layer target="_current:Scrubs3" state="found"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_1:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_6:1"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_14:1"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_15:1"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_16:0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0009">
+                  <en><![CDATA[I'm not wearing old scrubs!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0010">
+                  <en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="found" x="742" y="229" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="77" hitH="274" shape="rect">
+          <param mapX="801" mapY="644" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Almost Clean Scrubs]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0116">
+                  <en><![CDATA[Looks like old medical scrubs]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0011">
+                  <en><![CDATA[I'm not wearing old scrubs!]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0012">
+                  <en><![CDATA[A few blood stains never hurt anyone, wimp!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Cabinet" type="puppet" asset="lib/FT_StorageRoom.swf:Cabinet" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="400" y="370" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="150" hitH="259" shape="rect">
+          <param mapX="476" mapY="651" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cabinet]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0114">
+                  <en><![CDATA[It's a filling cabinet and it appears to be locked.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0013">
+                  <en><![CDATA[I doubt there is anything important in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0115">
+                  <en><![CDATA[It's locked firmly shut.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="Key">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0105">
+                  <en><![CDATA[It doesn't fit the lock.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0014">
+                  <en><![CDATA[Maybe you aren't trying hard enough.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="WireHanger">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0126">
+                  <en><![CDATA[Lets try and pick the lock.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0015">
+                  <en><![CDATA[That worked! I wonder what's inside?]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0016">
+                  <en><![CDATA[I doubt there is anything important in there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" replace="WireHanger:BentWireHanger"/>
+                <layer target="_current:Cabinet" state="Unlocked"/>
+                <cursor item=""/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_18:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_22:1"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="Unlocked" x="400" y="370" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="165" hitH="324" shape="rect">
+          <param mapX="474" mapY="655" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Unlocked Cabinet]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0133">
+                  <en><![CDATA[It's a unlocked filing cabinet.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0108">
+                  <en><![CDATA[It's a lot of Future Tech company documents in here. Employee personal files. Shame there are no photo on them. It looks like the CEO is a Ms. Sarah Bio.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0017">
+                  <en><![CDATA[That isn't worth remembering.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <logic eval="{getLayerProp:_current,OpenBoxes,state} EQ main">
+                  <layer target="_current:OpenBoxes" state="KnowCEO"/>
+                  <tree enableTopic="FT_StorageRoom:HelpMe:_22:0"/>
+                  <tree enableTopic="FT_StorageRoom:HelpMe:_23:1"/>
+                </logic>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="SecureDoor" type="puppet" asset="" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="873" y="172" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="74" hitH="545" shape="rect">
+          <param mapX="913" mapY="673" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Security Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0121">
+                  <en><![CDATA[The handel doesn't work, and there is no lock on the door.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0018">
+                  <en><![CDATA[Try giving it a push.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0100">
+                  <en><![CDATA[Is anyone there?]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0019">
+                  <en><![CDATA[I'm here. I'm your sub-conscience.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_StorageRoom.swf:AnyoneThere" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0124">
+                  <en><![CDATA[I don't think it is a push door.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0020">
+                  <en><![CDATA[Try the handle.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="Key">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0122">
+                  <en><![CDATA[There is no key hole.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_StorageRoom.swf:NoKeyHole" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="Open" x="872" y="168" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="91" hitH="529" shape="rect">
+          <param mapX="904" mapY="697" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Security Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0125">
+                  <en><![CDATA[It's open now.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="AnyoneThere">
+                  <en><![CDATA[Is anyone there?]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0021">
+                  <en><![CDATA[I'm here. I'm your sub-conscience.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_StorageRoom.swf:AnyoneThere" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_Hall:StorageRoom"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="Key">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="NoKeyHole">
+                  <en><![CDATA[There is no key hole.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="OpenDay" x="872" y="168" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="91" hitH="529" shape="rect">
+          <param mapX="904" mapY="697" turnTo="5" turn="0" cursor="exit3" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Security Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0125">
+                  <en><![CDATA[It's open.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="AnyoneThere">
+                  <en><![CDATA[Is anyone there?]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0022">
+                  <en><![CDATA[I'm here. I'm your sub-conscience.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_StorageRoom.swf:AnyoneThere" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_HallDay:StorageRoom"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="Key">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="NoKeyHole">
+                  <en><![CDATA[There is no key hole.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="IrisScanner" type="puppet" asset="lib/FT_StorageRoom.swf:Scanner" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="890" y="310" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="60" hitH="98" shape="rect">
+          <param mapX="944" mapY="727" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Gizmo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0117">
+                  <en><![CDATA[Looks a bit hi-tech, I think it may be a scanner of some sort. There is a slot that looks like it is a credit card reader.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0023">
+                  <en><![CDATA[Looks broken to me.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0123">
+                  <en><![CDATA[There is nothing to press to start it, just a slot and a scanner.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0024">
+                  <en><![CDATA[I'd try to find the start button if I were you.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="KeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0128">
+                  <en><![CDATA[It scanned my iris, but didn't open the door.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0025">
+                  <en><![CDATA[You clearly don't work here.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="FramedPhoto">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0118">
+                  <en><![CDATA[That might work, I need to activate the scanner and I'll try that.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0026">
+                  <en><![CDATA[You think a photo will fool an iris scanner. Ha!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:IrisScanner" state="TriedPhoto"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_23:0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="TriedPhoto" x="890" y="310" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="60" hitH="98" shape="rect">
+          <param mapX="944" mapY="727" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Gizmo]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0129">
+                  <en><![CDATA[It's a scanner and a slot for an key card.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0123">
+                  <en><![CDATA[There is nothing to press to start it, just a slot and a scanner.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="KeyCard">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0104">
+                  <en><![CDATA[It must be a cheap iris scanner to be fooled by a photo.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0027">
+                  <en><![CDATA[Yeah. I guess it must.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:SecureDoor" state="Open"/>
+                <cursor item=""/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_2:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_6:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_12:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_17:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_18:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_22:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_23:0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="FramedPhoto">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0120">
+                  <en><![CDATA[I need to activate the scanner and I'll try that.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0028">
+                  <en><![CDATA[Find that start button.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="LockedDoor" type="puppet" asset="" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="43" y="138" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="108" hitH="568" shape="rect">
+          <param mapX="119" mapY="686" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Locked Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0113">
+                  <en><![CDATA[There is a key hole in the door.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0029">
+                  <en><![CDATA[You could always trying using your finger to pick the lock.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0100">
+                  <en><![CDATA[Is anyone there?]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0030">
+                  <en><![CDATA[I'm here. I'm your sub-conscience.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_StorageRoom.swf:AnyoneThere" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0115">
+                  <en><![CDATA[It's is locked firmly shut.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="Key">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0105">
+                  <en><![CDATA[It doesn't fit the lock.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0031">
+                  <en><![CDATA[Maybe you aren't trying hard enough.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <sound effect="lib/V_FT_StorageRoom.swf:DoesntFitLock" waitForComplete="0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="WireHanger">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0126">
+                  <en><![CDATA[Let's try and pick the lock.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0110">
+                  <en><![CDATA[I can't do that]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+      </states>
+    </layer>
+    <layer id="SealedBoxes" type="puppet" asset="lib/FT_StorageRoom.swf:Boxes" depth="8" visible="1" state="main">
+      <states>
+        <state id="main" x="157" y="476" img="1" imgX="0" imgY="0" imgW="2" imgH="1.97" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="244" hitH="159" shape="rect">
+          <param mapX="298" mapY="655" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Sealed Boxes]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0130">
+                  <en><![CDATA[Some sealed boxes, from MedicalSupplies.com. I wonder what is inside? If only I could break the tape with something pointy.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0032">
+                  <en><![CDATA[It's probably just more scrubs.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0131">
+                  <en><![CDATA[The tape is sealling these firmly shut.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="Key">
+              <title>
+                <en><![CDATA[]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0102">
+                  <en><![CDATA[That should break the tape sealing these. There are scrubs on hangers in here, I'll take one.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0033">
+                  <en><![CDATA[See, told you it was just more scrubs.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="ScrubHanger"/>
+                <layer target="_current:SealedBoxes" state="Open"/>
+                <cursor item=""/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_2:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_17:1"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="Open" x="145" y="473" img="1" imgX="0" imgY="0" imgW="2" imgH="1.93" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="241" hitH="154" shape="rect">
+          <param mapX="290" mapY="633" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Open Boxes]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0119">
+                  <en><![CDATA[Just more scrubs, I have enough of those.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0109">
+                  <en><![CDATA[I don't need any more of those.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="OpenBoxes" type="puppet" asset="lib/FT_StorageRoom.swf:Boxes" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="580" y="502" img="1" imgX="0" imgY="0" imgW="2" imgH="1.5" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="247" hitH="121" shape="rect">
+          <param mapX="710" mapY="641" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Open Boxes]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0107">
+                  <en><![CDATA[A box of framed photos.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0132">
+                  <en><![CDATA[There are too many to take them all, I'll take one if I need one later.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="KnowCEO" x="580" y="502" img="1" imgX="0" imgY="0" imgW="2" imgH="1.5" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="247" hitH="120" shape="rect">
+          <param mapX="708" mapY="625" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Open Boxes]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0101">
+                  <en><![CDATA[A box of employee photos in frames.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0034">
+                  <en><![CDATA[What a load of junk.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0103">
+                  <en><![CDATA[This one of the CEO might be useful.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0035">
+                  <en><![CDATA[What makes you think that?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <inventory target="main" add="FramedPhoto"/>
+                <layer target="_current:OpenBoxes" state="GotCEO"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_9:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_10:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_11:1"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_12:1"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_22:0"/>
+                <tree enableTopic="FT_StorageRoom:HelpMe:_23:0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="GotCEO" x="580" y="502" img="1" imgX="0" imgY="0" imgW="2" imgH="1.5" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="246" hitH="123" shape="rect">
+          <param mapX="667" mapY="632" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Open Boxes]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0101">
+                  <en><![CDATA[A box of employee photos in frames.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0036">
+                  <en><![CDATA[What a load of junk.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0109">
+                  <en><![CDATA[I don't need any more of those.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="WaterBottle" type="puppet" asset="lib/FT_StorageRoom.swf:WaterBottle" depth="10" visible="1" state="main">
+      <states>
+        <state id="main" x="418" y="212" img="1" imgX="0" imgY="0" imgW="2" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="99" hitH="160" shape="rect">
+          <param mapX="479" mapY="657" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Water Bottle]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0037">
+                  <en><![CDATA[It's a full bottle of water for one of those water dispensers.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0038">
+                  <en><![CDATA[What with?]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Sign" type="puppet" asset="lib/FT_StorageRoom.swf:Sign" depth="11" visible="1" state="main">
+      <states>
+        <state id="main" x="240" y="236" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="105" hitH="150" shape="rect">
+          <param mapX="277" mapY="649" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Sign]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0135">
+                  <en><![CDATA[Nothing of interest]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0052">
+                  <en><![CDATA[I'm not talking to that!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0053">
+                  <en><![CDATA[I see no use for that.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0054">
+                  <en><![CDATA[Yeah, it's not like it's a chicken with a pully in the middle.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="12" visible="1" state="main">
+      <states>
+        <state id="main" x="523" y="651" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_main" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ego" type="puppet" asset="" depth="13" visible="0" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="462" mapY="200" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="HelpMe">
+      <tier key="r_t2" id="">
+        <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough hints on the key]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0272">
+              <en><![CDATA[Enough hints on the key]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_4" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[More hints on the key]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0274">
+              <en><![CDATA[More hints on the key]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0275">
+              <en><![CDATA[Have you thought outside the box?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_5" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Just tell me exactly what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0276">
+              <en><![CDATA[Just tell me exactly what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0277">
+              <en><![CDATA[Use the key on the sealed boxes]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t3" id="">
+        <topic key="t0" id="_7" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough hints on the key card]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0279">
+              <en><![CDATA[Enough hints on the key card]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_8" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[More hints]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0281">
+              <en><![CDATA[More hints]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0282">
+              <en><![CDATA[Key Cards usually need to be used on a device that reads the digital data]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_9" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Just tell me exactly what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0283">
+              <en><![CDATA[Just tell me exactly what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0284">
+              <en><![CDATA[Use the key card on the Gizmo]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_10" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[I'm still stuck]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0285">
+              <en><![CDATA[I'm still stuck]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0286">
+              <en><![CDATA[You need to use it with something else too]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_11" enabled="0" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Just tell me exactly what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0287">
+              <en><![CDATA[Just tell me exactly what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0288">
+              <en><![CDATA[Use the key card on the Gizmo]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0289">
+              <en><![CDATA[And then use the photo on the gizmo]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t4" id="">
+        <topic key="t0" id="_13" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough hints on the Photo]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0292">
+              <en><![CDATA[Enough hints on the Photo]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_16" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0298">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0299">
+              <en><![CDATA[You may need to look around the room some more first]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_14" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0294">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0295">
+              <en><![CDATA[Do you want to be someone else?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_15" enabled="0" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Just tell me what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0296">
+              <en><![CDATA[Just tell me what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0297">
+              <en><![CDATA[Use the key card and the photo on the gizmo]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r_t6" id="">
+        <topic key="t0" id="_19" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Enough hints on the wire hanger]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0206">
+              <en><![CDATA[Enough hints on the wire hanger]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_20" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0207">
+              <en><![CDATA[Hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0208">
+              <en><![CDATA[You don't need to be picky about what items you try using this on.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_21" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Just tell me what to do!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0209">
+              <en><![CDATA[Just tell me what to do!]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0210">
+              <en><![CDATA[Use the wire hanger to pick the lock on the cabinet]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please!]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0265">
+              <en><![CDATA[No More Help Please!]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[What do I do first?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0266">
+              <en><![CDATA[What do I do first?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0267">
+              <en><![CDATA[Well you figure out how to interact with inventory items]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0268">
+              <en><![CDATA[Try Looking at things in the room]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_2" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What is the key for?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0270">
+              <en><![CDATA[What is the key for?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0269">
+              <en><![CDATA[Try using the key on things in the room]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0271">
+              <en><![CDATA[Doors, locked things.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_6" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What is the key card for?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0278">
+              <en><![CDATA[What is the key card for?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0280">
+              <en><![CDATA[Have you tried using it on things in the room?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_12" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What is the photo for?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0290">
+              <en><![CDATA[What is the photo for?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0291">
+              <en><![CDATA[Have you tried using it on things in the room?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t5" id="_17" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[What are the scrubs on hanger for?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0200">
+              <en><![CDATA[What are the scrubs on hanger for?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0201">
+              <en><![CDATA[Have you had a closer look at them?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0202">
+              <en><![CDATA[Scubs on Hanger....that sounds like two items really]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0203">
+              <en><![CDATA[You could try using them in the inventory]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t6" id="_18" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[What is the wire hanger for?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0204">
+              <en><![CDATA[What is the wire hanger for?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0205">
+              <en><![CDATA[Have you tried using it on things in the room?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t7" id="_22" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[I'm stuck]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0211">
+              <en><![CDATA[I'm stuck]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0212">
+              <en><![CDATA[You just opened the cabinet, take a look]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t8" id="_23" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[I'm stuck]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0213">
+              <en><![CDATA[I'm stuck]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_FT_StorageRoom.swf:FT_StorageRoom0214">
+              <en><![CDATA[Now you know who the CEO is, maybe you can make use of those photos in a box]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

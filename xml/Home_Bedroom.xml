@@ -1,1 +1,1003 @@
-<room id="Home_Bedroom" coreLibs="lib/Home_Bedroom.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2=""><grids><grid id="main"><boxes><box x="99" y="657" w="1115" h="81" nodes=""/></boxes><nodes/></grid></grids><positions/><filters><filter id="_main" axis="y" enabled="1"><pole x="573" y="661" scale="1.5" rate="1.5" blur="1" color="0x000000" tint="0.5"/><pole x="573" y="734" scale="2" rate="2" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><curtain blackout="0"/></script><script id="_exit"><curtain blackout="1"/></script></scripts><layers><layer id="_bg" type="background" asset="lib/Home_Bedroom.swf:BG_Home_Bedroom" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1322" hitH="740" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title><en><![CDATA[]]></en></title><actions/><items/></state></states></layer><layer id="Door" type="puppet" asset="" depth="1" visible="1" state="main"><states><state id="main" x="16" y="133" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="86" hitH="591" shape="rect"><param mapX="113" mapY="704" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Door]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a door.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="Home_LivingRoom:BedroomDoor"/></script></action></actions><items/></state></states></layer><layer id="boxes" type="puppet" asset="lib/Home_Bedroom.swf:Boxes" depth="2" visible="1" state="main"><states><state id="main" x="630" y="598" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="697" mapY="685" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Bed" type="puppet" asset="lib/Home_Bedroom.swf:Bed" depth="3" visible="1" state="main"><states><state id="main" x="495" y="195" img="1" imgX="0" imgY="0" imgW="2.5" imgH="2.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="395" hitH="445" shape="rect"><param mapX="711" mapY="707" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Bed]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a bed, and it looks mighty inviting.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[All the best decissions are made when you haven't had enough sleep.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I could do with a rest.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[That is better.]]></en></dia></dialog><script><cache field="Slept" value="1"/><layer target="_current:Bed" state="Slept"/><layer target="FT_Reception:PS" state="Day"/><layer target="FT_Reception:Paul" state="Day"/><layer target="FT_Reception:Storm" state="Day"/><layer target="FT_Reception:Reception" state="Day"/><layer target="FT_Reception:Customer" state="Day"/><layer target="FT_Reception:SecureDoor" state="DayLocked"/><layer target="FT_OT:Door" state="OpenDay"/><layer target="FT_StorageRoom:SecureDoor" state="OpenDay"/><logic eval="[KnowName] EQ '1'"><layer target="Home_LivingRoom:StreetDoor" state="Day"/></logic><dialogue playList="0"/><layerSprite target="_avatar" visible="0"/><wait seconds="5"/><layerSprite target="_avatar" visible="1"/><dialogue playList="1"/></script></action></actions><items/></state><state id="Slept" x="495" y="195" img="1" imgX="0" imgY="0" imgW="2.5" imgH="2.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="395" hitH="445" shape="rect"><param mapX="714" mapY="711" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Used Bed]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a messy bed.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I'm all rested now.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="UnderBed" type="puppet" asset="" depth="4" visible="1" state="main"><states><state id="main" x="505" y="634" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="369" hitH="58" shape="rect"><param mapX="696" mapY="710" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Under Bed]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There are some boxes and other junk.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[The box has papers in. Here is my passport and birth certificate, I am Dr Ted Martin, my parents names are Robert and Mary Martin, some wage slips, I work for Future Tech. Nothing else of interest.]]></en></dia></dialog><script><cache field="KnowName" value="1"/><cache field="KnowWork" value="1"/><tree enableTopic="Home_Computer:GuessPassword:_7:1"/><tree enableTopic="Home_Computer:GuessPassword:_8:1"/><tree enableTopic="Home_Computer:GuessPassword:_9:1"/><tree enableTopic="Home_Computer:GuessPassword:_10:1"/><layer target="_cuurent:UnderBed" state="Found"/><dialogue play="*"/></script></action></actions><items/></state><state id="Found" x="504" y="641" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="372" hitH="47" shape="rect"><param mapX="691" mapY="714" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Under Bed]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[There are some boxes and other junk.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I suppose your going to spend the rest of the day in your bedroom playing with yout junk.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Nothing else of interest there.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Cabnet" type="puppet" asset="lib/Home_Bedroom.swf:Cabinet" depth="5" visible="1" state="main"><states><state id="main" x="340" y="435" img="1" imgX="0" imgY="0" imgW="1.7" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="145" hitH="235" shape="rect"><param mapX="421" mapY="695" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cabnet]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a bed side cabnet.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Looks like I am reading a book called, 'Intervene: How to help people with addiction'. There is also a key card for Future Tech this one is for Dr Ted Martin.]]></en></dia></dialog><script><cache field="KnowName" value="1"/><inventory target="main" add="MyKeyCard"/><inventory target="main" add="BookEnv"/><layer target="_current:Cabnet" state="Found"/><dialogue play="*"/></script></action></actions><items/></state><state id="Found" x="340" y="435" img="1" imgX="0" imgY="0" imgW="1.7" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="145" hitH="235" shape="rect"><param mapX="423" mapY="690" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Cabnet]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a bed side cabnet.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I wouldn't look in there, you could find anything!]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Nothing else of interest there.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="Wardrobe" type="puppet" asset="lib/Home_Bedroom.swf:Wardrobe" depth="6" visible="1" state="main"><states><state id="main" x="984" y="255" img="1" imgX="0" imgY="0" imgW="2.5" imgH="2.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="225" hitH="415" shape="rect"><param mapX="1108" mapY="703" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Wardrobe]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths like socks. I wear Argile socks.]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Oh, that reminds me of a pirate joke.]]></en></dia></dialog><script><dialogue playList="0"/><logic eval="[find_jokes] EQ yes AND [found_argile] NE yes"><cache field="found_argile" value="yes"/><tree enableTopic="FT_Reception:PS:_25:1"/><dialogue playList="1"/></logic></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Ok, I'll change my cloths, who knows how long I've been wearing these for.]]></en></dia></dialog><script><layer target="_current:Wardrobe" state="Used"/><dialogue play="*"/></script></action></actions><items/></state><state id="Used" x="985" y="257" img="1" imgX="0" imgY="0" imgW="2.5" imgH="2.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="225" hitH="415" shape="rect"><param mapX="1067" mapY="702" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Wardrobe]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths.]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[You stink! I'd change your clothes.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't need to change again yet.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="basketball" type="puppet" asset="lib/Home_Bedroom.swf:Basketball" depth="7" visible="1" state="main"><states><state id="main" x="906" y="603" img="1" imgX="0" imgY="0" imgW="0.5" imgH="0.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="61" hitH="66" shape="rect"><param mapX="935" mapY="694" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Basket Ball]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a basket ball]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[I think you should have a game.]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a bit big to carry around, and I don't think I'll need it.]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="picturemoon" type="puppet" asset="lib/Home_Bedroom.swf:PictureMoon" depth="8" visible="1" state="main"><states><state id="main" x="616" y="11" img="1" imgX="0" imgY="0" imgW="0.2" imgH="0.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="185" hitH="169" shape="rect"><param mapX="708" mapY="723" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Picture]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a painting of Chiron and it's moon]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't want it]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="pictureseahorse" type="puppet" asset="lib/Home_Bedroom.swf:PictureSeaHorse" depth="9" visible="1" state="main"><states><state id="main" x="279" y="122" img="1" imgX="0" imgY="0" imgW="0.2" imgH="0.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="152" hitH="183" shape="rect"><param mapX="346" mapY="674" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Picture]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[It's a picture of a sea horse looking after it's babies]]></en></dia><dia puppet="ego" frame="" sound=""><en><![CDATA[Doesn't that make it the mother?]]></en></dia><dia puppet="_avatar" frame="" sound=""><en><![CDATA[Well the female gave birth I would assume]]></en></dia></dialog><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog><dia puppet="_avatar" frame="" sound=""><en><![CDATA[I don't want it]]></en></dia></dialog><script><dialogue play="*"/></script></action></actions><items/></state></states></layer><layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="10" visible="1" state="main"><states><state id="main" x="146" y="703" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="" blur=""/><vars/><title><en><![CDATA[ted]]></en></title><actions/><items/></state></states></layer></layers><trees/></room>
+<room id="Home_Bedroom" coreLibs="lib/Home_Bedroom.swf,lib/BG_Home.swf" voiceLibs="voice/V_Home_Bedroom.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="99" y="657" w="1122" h="81" nodes=""/>
+      </boxes>
+      <nodes/>
+    </grid>
+  </grids>
+  <positions/>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="573" y="661" scale="1.5" rate="1.5" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="573" y="734" scale="2" rate="2" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+      <sound soundtrack1="lib/BG_Home.swf:IMYourMoon"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/Home_Bedroom.swf:BG_Home_Bedroom" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1322" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Door" type="puppet" asset="" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="16" y="133" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="86" hitH="591" shape="rect">
+          <param mapX="113" mapY="704" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Door]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0000">
+                  <en><![CDATA[It's a door.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="Home_LivingRoom:BedroomDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="boxes" type="puppet" asset="lib/Home_Bedroom.swf:Boxes" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="630" y="598" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="697" mapY="685" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Bed" type="puppet" asset="lib/Home_Bedroom.swf:Bed" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="495" y="195" img="1" imgX="0" imgY="0" imgW="2.5" imgH="2.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="395" hitH="445" shape="rect">
+          <param mapX="711" mapY="707" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Bed]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0001">
+                  <en><![CDATA[It's a bed, and it looks mighty inviting.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0031">
+                  <en><![CDATA[All the best decisions are made when you haven't had enough sleep.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0002">
+                  <en><![CDATA[I could do with a rest.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0032">
+                  <en><![CDATA[zzzz]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0033">
+                  <en><![CDATA[zzz]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0003">
+                  <en><![CDATA[That is better.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <scriptCall global="beforeDialogue"/>
+                <cursor gameMouse="0" visible="0"/>
+                <cache field="Slept" value="1"/>
+                <layer target="_current:Bed" state="Slept"/>
+                <layer target="FT_Reception:PS" state="Day"/>
+                <layer target="FT_Reception:Paul" state="Day"/>
+                <layer target="FT_Reception:Storm" state="Day"/>
+                <layer target="FT_Reception:Receptionist" state="Day"/>
+                <layer target="FT_Reception:ReceptionDesk" state="Day"/>
+                <layer target="FT_Reception:Customer" state="Day"/>
+                <layer target="FT_Reception:SecureDoor" state="DayLocked"/>
+                <layer target="FT_OT:Door" state="OpenDay"/>
+                <layer target="FT_StorageRoom:SecureDoor" state="OpenDay"/>
+                <layer target="Map:day" state="day"/>
+                <tree enableTopic="FT_OT:HelpMe:_6:1"/>
+                <tree enableTopic="Home_Bedroom:HelpMe:_1:0"/>
+                <tree enableTopic="Home_LivingRoom:HelpMe:_3:0"/>
+                <tree enableTopic="Home_LivingRoom:HelpMe:_4:1"/>
+                <tree enableTopic="FT_Reception:HelpMe:_1:1"/>
+                <tree enableTopic="FT_Reception:HelpMe:_6:0"/>
+                <tree enableTopic="FT_Reception:HelpMe:_7:1"/>
+                <logic eval="[KnowName] EQ '1'">
+                  <layer target="Home_LivingRoom:StreetDoor" state="Day"/>
+                  <tree enableTopic="Home_LivingRoom:HelpMe:_4:0"/>
+                </logic>
+                <dialogue playList="0"/>
+                <layerSprite target="_avatar" visible="0"/>
+                <layer target="_current:TedSleep" state="sleeping"/>
+                <dialogue playList="1"/>
+                <wait seconds="1"/>
+                <dialogue playList="2"/>
+                <wait seconds="1"/>
+                <dialogue playList="1"/>
+                <wait seconds="1"/>
+                <layer target="_current:TedSleep" state="hidden"/>
+                <layerSprite target="_avatar" visible="1"/>
+                <dialogue playList="3"/>
+                <scriptCall global="afterDialogue"/>
+                <cursor gameMouse="1" visible="1"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Slept" x="495" y="195" img="1" imgX="0" imgY="0" imgW="2.5" imgH="2.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="395" hitH="445" shape="rect">
+          <param mapX="714" mapY="711" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Used Bed]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0004">
+                  <en><![CDATA[It's a messy bed.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0005">
+                  <en><![CDATA[I'm all rested now.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="UnderBed" type="puppet" asset="" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="503" y="623" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="376" hitH="73" shape="rect">
+          <param mapX="696" mapY="710" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Under Bed]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0006">
+                  <en><![CDATA[There are some boxes and other junk.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0007">
+                  <en><![CDATA[The box has papers in. Here is my passport and birth certificate, I am Dr Ted Martin, my parent's names are Robert and Mary Martin, some wage slips, and I work for Future Tech. Nothing else of interest.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <cache field="KnowName" value="1"/>
+                <cache field="KnowWork" value="1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_7:1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_8:1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_9:1"/>
+                <tree enableTopic="Home_Computer:GuessPassword:_10:1"/>
+                <logic eval="[Slept] EQ 1">
+                  <layer target="_current:StreetDoor" state="Day"/>
+                  <tree enableTopic="Home_Livingroom:HelpMe:_7:0"/>
+                </logic>
+                <layer target="_cuurent:UnderBed" state="Found"/>
+                <tree enableTopic="Home_Bedroom:HelpMe:_6:0"/>
+                <tree enableTopic="Home_Livingroom:HelpMe:_6:0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Found" x="504" y="641" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="372" hitH="47" shape="rect">
+          <param mapX="691" mapY="714" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Under Bed]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0008">
+                  <en><![CDATA[There are some boxes and other junk.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0030">
+                  <en><![CDATA[I suppose you're going to spend the rest of the day in your bedroom playing with your junk.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0009">
+                  <en><![CDATA[Nothing else of interest there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Cabnet" type="puppet" asset="lib/Home_Bedroom.swf:Cabinet" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="340" y="435" img="1" imgX="0" imgY="0" imgW="1.7" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="145" hitH="235" shape="rect">
+          <param mapX="421" mapY="695" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cabinet]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0010">
+                  <en><![CDATA[It's a bedside cabinet.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0011">
+                  <en><![CDATA[Looks like I am reading a book called, 'Intervene: How to help people with addiction'. There is also a keycard for Future Tech this one is for Dr Ted Martin.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <cache field="KnowName" value="1"/>
+                <inventory target="main" add="MyKeyCard"/>
+                <inventory target="main" add="BookEnv"/>
+                <layer target="_current:Cabnet" state="Found"/>
+                <tree enableTopic="Home_Bedroom:HelpMe:_5:0"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Found" x="340" y="435" img="1" imgX="0" imgY="0" imgW="1.7" imgH="2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="145" hitH="235" shape="rect">
+          <param mapX="423" mapY="690" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Cabinet]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0012">
+                  <en><![CDATA[It's a bedside cabinet.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0029">
+                  <en><![CDATA[I wouldn't look in there, you could find anything!]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0013">
+                  <en><![CDATA[Nothing else of interest there.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Wardrobe" type="puppet" asset="lib/Home_Bedroom.swf:Wardrobe" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="984" y="255" img="1" imgX="0" imgY="0" imgW="2.5" imgH="2.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="225" hitH="415" shape="rect">
+          <param mapX="1108" mapY="703" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Wardrobe]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0014">
+                  <en><![CDATA[A wardrobe with clothes in. There are suits, and scrubs as well as everyday clothes like socks. I wear Argyle socks.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0015">
+                  <en><![CDATA[Oh, that reminds me of a pirate joke.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue playList="0"/>
+                <logic eval="[find_jokes] EQ yes AND [found_argile] NE yes">
+                  <cache field="found_argile" value="yes"/>
+                  <tree enableTopic="FT_Reception:PS:_25:1"/>
+                  <tree enableTopic="_current:HelpMe:_2:0"/>
+                  <dialogue playList="1"/>
+                </logic>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0016">
+                  <en><![CDATA[Ok, I'll change my clothes, who knows how long I've been wearing these for.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <layer target="_current:Wardrobe" state="Used"/>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Used" x="985" y="257" img="1" imgX="0" imgY="0" imgW="2.5" imgH="2.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="225" hitH="415" shape="rect">
+          <param mapX="1067" mapY="702" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Wardrobe]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0014">
+                  <en><![CDATA[A wardrobe with clothes in. There are suits, and scrubs as well as everyday clothes like socks. I wear Argyle socks.]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0015">
+                  <en><![CDATA[Oh, that reminds me of a pirate joke.]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0028">
+                  <en><![CDATA[You stink! I'd change your clothes.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue playList="0"/>
+                <logic eval="[find_jokes] EQ yes AND [found_argile] NE yes">
+                  <cache field="found_argile" value="yes"/>
+                  <tree enableTopic="FT_Reception:PS:_25:1"/>
+                  <tree enableTopic="_current:HelpMe:_2:0"/>
+                  <dialogue playList="1"/>
+                </logic>
+                <dialogue playList="2"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0018">
+                  <en><![CDATA[I don't need to change again yet.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="basketball" type="puppet" asset="lib/Home_Bedroom.swf:Basketball" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="906" y="603" img="1" imgX="0" imgY="0" imgW="0.5" imgH="0.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="61" hitH="66" shape="rect">
+          <param mapX="935" mapY="694" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Basket Ball]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0019">
+                  <en><![CDATA[It's a basketball]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0027">
+                  <en><![CDATA[I think you should have a game.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0020">
+                  <en><![CDATA[It's a bit big to carry around, and I don't think I'll need it.]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="picturemoon" type="puppet" asset="lib/Home_Bedroom.swf:PictureMoon" depth="8" visible="1" state="main">
+      <states>
+        <state id="main" x="616" y="11" img="1" imgX="0" imgY="0" imgW="0.2" imgH="0.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="185" hitH="169" shape="rect">
+          <param mapX="708" mapY="723" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Picture]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0021">
+                  <en><![CDATA[It's a painting of Chiron and it's moon]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0022">
+                  <en><![CDATA[I don't want it]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="pictureseahorse" type="puppet" asset="lib/Home_Bedroom.swf:PictureSeaHorse" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="279" y="122" img="1" imgX="0" imgY="0" imgW="0.2" imgH="0.2" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="152" hitH="183" shape="rect">
+          <param mapX="346" mapY="674" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Picture]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0023">
+                  <en><![CDATA[It's a picture of a seahorse looking after his babies]]></en>
+                </dia>
+                <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0024">
+                  <en><![CDATA[Doesn't that make it the mother?]]></en>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0025">
+                  <en><![CDATA[Well the female gave birth I would assume]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0026">
+                  <en><![CDATA[I don't want it]]></en>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="TedSleep" type="puppet" asset="lib/Home_Bedroom.swf:TedSleep" depth="10" visible="1" state="hidden">
+      <states>
+        <state id="hidden" x="721" y="342" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="798" mapY="703" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="sleeping" x="634" y="339" img="1" imgX="0" imgY="0" imgW="1.5" imgH="1.5" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="798" mapY="703" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="11" visible="1" state="main">
+      <states>
+        <state id="main" x="146" y="703" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ego" type="puppet" asset="" depth="12" visible="1" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="549" mapY="56" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x33FFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="HelpMe">
+      <tier key="r_t2" id="">
+        <topic key="t0" id="_3" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[I will find it myself]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0037">
+              <en><![CDATA[I will find it myself]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_4" enabled="1" hold="1" expose="" go="-1">
+          <title>
+            <en><![CDATA[Where is it?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0038">
+              <en><![CDATA[Where is it?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0039">
+              <en><![CDATA[Look in the wardrobe]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0034">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_2" enabled="0" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Are there any pirate jokes to be found here?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0035">
+              <en><![CDATA[Are there any pirate jokes to be found here?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0036">
+              <en><![CDATA[Yes]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[I need a hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0040">
+              <en><![CDATA[I need a hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0041">
+              <en><![CDATA[I'd get some rest.]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_5" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[I want a hint]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0042">
+              <en><![CDATA[I want a hint]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0043">
+              <en><![CDATA[Check in all the cupboards]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_6" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[May I have a hint please sir?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0044">
+              <en><![CDATA[May I have a hint please sir?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Home_Bedroom.swf:Home_Bedroom0045">
+              <en><![CDATA[Have you looked under the bed?]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

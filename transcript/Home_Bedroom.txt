@@ -18,7 +18,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Door, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0000]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0000]
    "It's a door."
 
   -----
@@ -55,11 +55,11 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Bed, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0001]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0001]
    "It's a bed, and it looks mighty inviting."
 
-   - Dialog [puppet: ego, voice::Home_Bedroom0031]
-   "All the best decissions are made when you haven't had enough sleep."
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0031]
+   "All the best decisions are made when you haven't had enough sleep."
 
   -----
   Action: "Talk to" (#1, layer: Bed, state: main)
@@ -67,10 +67,16 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Bed, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0002]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0002]
    "I could do with a rest."
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0003]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0032]
+   "zzzz"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0033]
+   "zzz"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0003]
    "That is better."
 
  --------------------------------------------------
@@ -80,7 +86,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Bed, state: Slept)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0004]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0004]
    "It's a messy bed."
 
   -----
@@ -89,7 +95,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Bed, state: Slept)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0005]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0005]
    "I'm all rested now."
 
 
@@ -103,7 +109,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: UnderBed, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0006]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0006]
    "There are some boxes and other junk."
 
   -----
@@ -112,8 +118,8 @@ LAYERS
   -----
   Action: "Use" (#2, layer: UnderBed, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0007]
-   "The box has papers in. Here is my passport and birth certificate, I am Dr Ted Martin, my parents names are Robert and Mary Martin, some wage slips, I work for Future Tech. Nothing else of interest."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0007]
+   "The box has papers in. Here is my passport and birth certificate, I am Dr Ted Martin, my parent's names are Robert and Mary Martin, some wage slips, and I work for Future Tech. Nothing else of interest."
 
  --------------------------------------------------
  State: Found (layer: UnderBed)
@@ -122,11 +128,11 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: UnderBed, state: Found)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0008]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0008]
    "There are some boxes and other junk."
 
-   - Dialog [puppet: ego, voice::Home_Bedroom0030]
-   "I suppose your going to spend the rest of the day in your bedroom playing with yout junk."
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0030]
+   "I suppose you're going to spend the rest of the day in your bedroom playing with your junk."
 
   -----
   Action: "Talk to" (#1, layer: UnderBed, state: Found)
@@ -134,7 +140,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: UnderBed, state: Found)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0009]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0009]
    "Nothing else of interest there."
 
 
@@ -143,13 +149,13 @@ LAYERS
 --------------------------------------------------
  --------------------------------------------------
  State: main (layer: Cabnet)
- title: "Cabnet"
+ title: "Cabinet"
 
   -----
   Action: "Look at" (#0, layer: Cabnet, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0010]
-   "It's a bed side cabnet."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0010]
+   "It's a bedside cabinet."
 
   -----
   Action: "Talk to" (#1, layer: Cabnet, state: main)
@@ -157,20 +163,20 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Cabnet, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0011]
-   "Looks like I am reading a book called, 'Intervene: How to help people with addiction'. There is also a key card for Future Tech this one is for Dr Ted Martin."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0011]
+   "Looks like I am reading a book called, 'Intervene: How to help people with addiction'. There is also a keycard for Future Tech this one is for Dr Ted Martin."
 
  --------------------------------------------------
  State: Found (layer: Cabnet)
- title: "Cabnet"
+ title: "Cabinet"
 
   -----
   Action: "Look at" (#0, layer: Cabnet, state: Found)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0012]
-   "It's a bed side cabnet."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0012]
+   "It's a bedside cabinet."
 
-   - Dialog [puppet: ego, voice::Home_Bedroom0029]
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0029]
    "I wouldn't look in there, you could find anything!"
 
   -----
@@ -179,7 +185,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Cabnet, state: Found)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0013]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0013]
    "Nothing else of interest there."
 
 
@@ -193,10 +199,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Wardrobe, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0014]
-   "A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths like socks. I wear Argile socks."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0014]
+   "A wardrobe with clothes in. There are suits, and scrubs as well as everyday clothes like socks. I wear Argyle socks."
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0015]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0015]
    "Oh, that reminds me of a pirate joke."
 
   -----
@@ -205,8 +211,8 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Wardrobe, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0016]
-   "Ok, I'll change my cloths, who knows how long I've been wearing these for."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0016]
+   "Ok, I'll change my clothes, who knows how long I've been wearing these for."
 
  --------------------------------------------------
  State: Used (layer: Wardrobe)
@@ -215,10 +221,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Wardrobe, state: Used)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0017]
-   "A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0014]
+   "A wardrobe with clothes in. There are suits, and scrubs as well as everyday clothes like socks. I wear Argyle socks."
 
-   - Dialog [puppet: ego, voice::Home_Bedroom0028]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0015]
+   "Oh, that reminds me of a pirate joke."
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0028]
    "You stink! I'd change your clothes."
 
   -----
@@ -227,7 +236,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Wardrobe, state: Used)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0018]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0018]
    "I don't need to change again yet."
 
 
@@ -241,10 +250,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: basketball, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0019]
-   "It's a basket ball"
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0019]
+   "It's a basketball"
 
-   - Dialog [puppet: ego, voice::Home_Bedroom0027]
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0027]
    "I think you should have a game."
 
   -----
@@ -253,7 +262,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: basketball, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0020]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0020]
    "It's a bit big to carry around, and I don't think I'll need it."
 
 
@@ -267,7 +276,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: picturemoon, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0021]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0021]
    "It's a painting of Chiron and it's moon"
 
   -----
@@ -276,7 +285,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: picturemoon, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0022]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0022]
    "I don't want it"
 
 
@@ -290,13 +299,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: pictureseahorse, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0023]
-   "It's a picture of a sea horse looking after it's babies"
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0023]
+   "It's a picture of a seahorse looking after his babies"
 
-   - Dialog [puppet: ego, voice::Home_Bedroom0024]
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0024]
    "Doesn't that make it the mother?"
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0025]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0025]
    "Well the female gave birth I would assume"
 
   -----
@@ -305,8 +314,38 @@ LAYERS
   -----
   Action: "Use" (#2, layer: pictureseahorse, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Bedroom0026]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0026]
    "I don't want it"
+
+
+--------------------------------------------------
+- Layer: TedSleep
+--------------------------------------------------
+ --------------------------------------------------
+ State: hidden (layer: TedSleep)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: TedSleep, state: hidden)
+
+  -----
+  Action: "Talk to" (#1, layer: TedSleep, state: hidden)
+
+  -----
+  Action: "Use" (#2, layer: TedSleep, state: hidden)
+
+ --------------------------------------------------
+ State: sleeping (layer: TedSleep)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: TedSleep, state: sleeping)
+
+  -----
+  Action: "Talk to" (#1, layer: TedSleep, state: sleeping)
+
+  -----
+  Action: "Use" (#2, layer: TedSleep, state: sleeping)
 
 
 --------------------------------------------------
@@ -317,44 +356,189 @@ LAYERS
  title: "ted"
 
 
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
+
+
 
 
 TREES
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0034]
+   "No More Help Please"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_3" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0037]
+   "I will find it myself"
+
+  -----
+  Topic: "_4" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0038]
+   "Where is it?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0039]
+   "Look in the wardrobe"
+
+  -----
+  Topic: "_2" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0035]
+   "Are there any pirate jokes to be found here?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0036]
+   "Yes"
+
+  -----
+  Topic: "_1" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0040]
+   "I need a hint"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0041]
+   "I'd get some rest."
+
+  -----
+  Topic: "_5" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0042]
+   "I want a hint"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0043]
+   "Check in all the cupboards"
+
+  -----
+  Topic: "_6" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0044]
+   "May I have a hint please sir?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Bedroom.swf:Home_Bedroom0045]
+   "Have you looked under the bed?"
 
 
 
-_avatar,"It's a door.",:Home_Bedroom0000
-_avatar,"It's a bed, and it looks mighty inviting.",:Home_Bedroom0001
-ego,"All the best decissions are made when you haven't had enough sleep.",:Home_Bedroom0031
-_avatar,"I could do with a rest.",:Home_Bedroom0002
-_avatar,"That is better.",:Home_Bedroom0003
-_avatar,"It's a messy bed.",:Home_Bedroom0004
-_avatar,"I'm all rested now.",:Home_Bedroom0005
-_avatar,"There are some boxes and other junk.",:Home_Bedroom0006
-_avatar,"The box has papers in. Here is my passport and birth certificate, I am Dr Ted Martin, my parents names are Robert and Mary Martin, some wage slips, I work for Future Tech. Nothing else of interest.",:Home_Bedroom0007
-_avatar,"There are some boxes and other junk.",:Home_Bedroom0008
-ego,"I suppose your going to spend the rest of the day in your bedroom playing with yout junk.",:Home_Bedroom0030
-_avatar,"Nothing else of interest there.",:Home_Bedroom0009
-_avatar,"It's a bed side cabnet.",:Home_Bedroom0010
-_avatar,"Looks like I am reading a book called, 'Intervene: How to help people with addiction'. There is also a key card for Future Tech this one is for Dr Ted Martin.",:Home_Bedroom0011
-_avatar,"It's a bed side cabnet.",:Home_Bedroom0012
-ego,"I wouldn't look in there, you could find anything!",:Home_Bedroom0029
-_avatar,"Nothing else of interest there.",:Home_Bedroom0013
-_avatar,"A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths like socks. I wear Argile socks.",:Home_Bedroom0014
-_avatar,"Oh, that reminds me of a pirate joke.",:Home_Bedroom0015
-_avatar,"Ok, I'll change my cloths, who knows how long I've been wearing these for.",:Home_Bedroom0016
-_avatar,"A wardrobe with clothes in. There are suits, and scrubs as well as everyday cloths.",:Home_Bedroom0017
-ego,"You stink! I'd change your clothes.",:Home_Bedroom0028
-_avatar,"I don't need to change again yet.",:Home_Bedroom0018
-_avatar,"It's a basket ball",:Home_Bedroom0019
-ego,"I think you should have a game.",:Home_Bedroom0027
-_avatar,"It's a bit big to carry around, and I don't think I'll need it.",:Home_Bedroom0020
-_avatar,"It's a painting of Chiron and it's moon",:Home_Bedroom0021
-_avatar,"I don't want it",:Home_Bedroom0022
-_avatar,"It's a picture of a sea horse looking after it's babies",:Home_Bedroom0023
-ego,"Doesn't that make it the mother?",:Home_Bedroom0024
-_avatar,"Well the female gave birth I would assume",:Home_Bedroom0025
-_avatar,"I don't want it",:Home_Bedroom0026
+
+_avatar,"It's a door.",voice/V_Home_Bedroom.swf:Home_Bedroom0000
+_avatar,"It's a bed, and it looks mighty inviting.",voice/V_Home_Bedroom.swf:Home_Bedroom0001
+ego,"All the best decisions are made when you haven't had enough sleep.",voice/V_Home_Bedroom.swf:Home_Bedroom0031
+_avatar,"I could do with a rest.",voice/V_Home_Bedroom.swf:Home_Bedroom0002
+_avatar,"zzzz",voice/V_Home_Bedroom.swf:Home_Bedroom0032
+_avatar,"zzz",voice/V_Home_Bedroom.swf:Home_Bedroom0033
+_avatar,"That is better.",voice/V_Home_Bedroom.swf:Home_Bedroom0003
+_avatar,"It's a messy bed.",voice/V_Home_Bedroom.swf:Home_Bedroom0004
+_avatar,"I'm all rested now.",voice/V_Home_Bedroom.swf:Home_Bedroom0005
+_avatar,"There are some boxes and other junk.",voice/V_Home_Bedroom.swf:Home_Bedroom0006
+_avatar,"The box has papers in. Here is my passport and birth certificate, I am Dr Ted Martin, my parent's names are Robert and Mary Martin, some wage slips, and I work for Future Tech. Nothing else of interest.",voice/V_Home_Bedroom.swf:Home_Bedroom0007
+_avatar,"There are some boxes and other junk.",voice/V_Home_Bedroom.swf:Home_Bedroom0008
+ego,"I suppose you're going to spend the rest of the day in your bedroom playing with your junk.",voice/V_Home_Bedroom.swf:Home_Bedroom0030
+_avatar,"Nothing else of interest there.",voice/V_Home_Bedroom.swf:Home_Bedroom0009
+_avatar,"It's a bedside cabinet.",voice/V_Home_Bedroom.swf:Home_Bedroom0010
+_avatar,"Looks like I am reading a book called, 'Intervene: How to help people with addiction'. There is also a keycard for Future Tech this one is for Dr Ted Martin.",voice/V_Home_Bedroom.swf:Home_Bedroom0011
+_avatar,"It's a bedside cabinet.",voice/V_Home_Bedroom.swf:Home_Bedroom0012
+ego,"I wouldn't look in there, you could find anything!",voice/V_Home_Bedroom.swf:Home_Bedroom0029
+_avatar,"Nothing else of interest there.",voice/V_Home_Bedroom.swf:Home_Bedroom0013
+_avatar,"A wardrobe with clothes in. There are suits, and scrubs as well as everyday clothes like socks. I wear Argyle socks.",voice/V_Home_Bedroom.swf:Home_Bedroom0014
+_avatar,"Oh, that reminds me of a pirate joke.",voice/V_Home_Bedroom.swf:Home_Bedroom0015
+_avatar,"Ok, I'll change my clothes, who knows how long I've been wearing these for.",voice/V_Home_Bedroom.swf:Home_Bedroom0016
+_avatar,"A wardrobe with clothes in. There are suits, and scrubs as well as everyday clothes like socks. I wear Argyle socks.",voice/V_Home_Bedroom.swf:Home_Bedroom0014
+_avatar,"Oh, that reminds me of a pirate joke.",voice/V_Home_Bedroom.swf:Home_Bedroom0015
+ego,"You stink! I'd change your clothes.",voice/V_Home_Bedroom.swf:Home_Bedroom0028
+_avatar,"I don't need to change again yet.",voice/V_Home_Bedroom.swf:Home_Bedroom0018
+_avatar,"It's a basketball",voice/V_Home_Bedroom.swf:Home_Bedroom0019
+ego,"I think you should have a game.",voice/V_Home_Bedroom.swf:Home_Bedroom0027
+_avatar,"It's a bit big to carry around, and I don't think I'll need it.",voice/V_Home_Bedroom.swf:Home_Bedroom0020
+_avatar,"It's a painting of Chiron and it's moon",voice/V_Home_Bedroom.swf:Home_Bedroom0021
+_avatar,"I don't want it",voice/V_Home_Bedroom.swf:Home_Bedroom0022
+_avatar,"It's a picture of a seahorse looking after his babies",voice/V_Home_Bedroom.swf:Home_Bedroom0023
+ego,"Doesn't that make it the mother?",voice/V_Home_Bedroom.swf:Home_Bedroom0024
+_avatar,"Well the female gave birth I would assume",voice/V_Home_Bedroom.swf:Home_Bedroom0025
+_avatar,"I don't want it",voice/V_Home_Bedroom.swf:Home_Bedroom0026
+_avatar,"No More Help Please",voice/V_Home_Bedroom.swf:Home_Bedroom0034
+_avatar,"I will find it myself",voice/V_Home_Bedroom.swf:Home_Bedroom0037
+_avatar,"Where is it?",voice/V_Home_Bedroom.swf:Home_Bedroom0038
+ego,"Look in the wardrobe",voice/V_Home_Bedroom.swf:Home_Bedroom0039
+_avatar,"Are there any pirate jokes to be found here?",voice/V_Home_Bedroom.swf:Home_Bedroom0035
+ego,"Yes",voice/V_Home_Bedroom.swf:Home_Bedroom0036
+_avatar,"I need a hint",voice/V_Home_Bedroom.swf:Home_Bedroom0040
+ego,"I'd get some rest.",voice/V_Home_Bedroom.swf:Home_Bedroom0041
+_avatar,"I want a hint",voice/V_Home_Bedroom.swf:Home_Bedroom0042
+ego,"Check in all the cupboards",voice/V_Home_Bedroom.swf:Home_Bedroom0043
+_avatar,"May I have a hint please sir?",voice/V_Home_Bedroom.swf:Home_Bedroom0044
+ego,"Have you looked under the bed?",voice/V_Home_Bedroom.swf:Home_Bedroom0045
 
 
 
+addSound( Home_Bedroom0000 );
+addSound( Home_Bedroom0001 );
+addSound( Home_Bedroom0031 );
+addSound( Home_Bedroom0002 );
+addSound( Home_Bedroom0032 );
+addSound( Home_Bedroom0033 );
+addSound( Home_Bedroom0003 );
+addSound( Home_Bedroom0004 );
+addSound( Home_Bedroom0005 );
+addSound( Home_Bedroom0006 );
+addSound( Home_Bedroom0007 );
+addSound( Home_Bedroom0008 );
+addSound( Home_Bedroom0030 );
+addSound( Home_Bedroom0009 );
+addSound( Home_Bedroom0010 );
+addSound( Home_Bedroom0011 );
+addSound( Home_Bedroom0012 );
+addSound( Home_Bedroom0029 );
+addSound( Home_Bedroom0013 );
+addSound( Home_Bedroom0014 );
+addSound( Home_Bedroom0015 );
+addSound( Home_Bedroom0016 );
+addSound( Home_Bedroom0014 );
+addSound( Home_Bedroom0015 );
+addSound( Home_Bedroom0028 );
+addSound( Home_Bedroom0018 );
+addSound( Home_Bedroom0019 );
+addSound( Home_Bedroom0027 );
+addSound( Home_Bedroom0020 );
+addSound( Home_Bedroom0021 );
+addSound( Home_Bedroom0022 );
+addSound( Home_Bedroom0023 );
+addSound( Home_Bedroom0024 );
+addSound( Home_Bedroom0025 );
+addSound( Home_Bedroom0026 );
+addSound( Home_Bedroom0034 );
+addSound( Home_Bedroom0037 );
+addSound( Home_Bedroom0038 );
+addSound( Home_Bedroom0039 );
+addSound( Home_Bedroom0035 );
+addSound( Home_Bedroom0036 );
+addSound( Home_Bedroom0040 );
+addSound( Home_Bedroom0041 );
+addSound( Home_Bedroom0042 );
+addSound( Home_Bedroom0043 );
+addSound( Home_Bedroom0044 );
+addSound( Home_Bedroom0045 );

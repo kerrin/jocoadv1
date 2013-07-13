@@ -18,7 +18,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: StreetDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0000]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0000]
    "It goes outside."
 
   -----
@@ -27,7 +27,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: StreetDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0001]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0001]
    "I don't think I'm done here."
 
  --------------------------------------------------
@@ -37,13 +37,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: StreetDoor, state: Day)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0002]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0002]
    "It goes outside."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0051]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0051]
    "Make sure you wrap up warm."
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0052]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0052]
    "Ok, now you're starting to sound like my mum."
 
   -----
@@ -51,6 +51,31 @@ LAYERS
 
   -----
   Action: "Use" (#2, layer: StreetDoor, state: Day)
+
+ --------------------------------------------------
+ State: EndGame (layer: StreetDoor)
+ title: "Front Door"
+
+  -----
+  Action: "Look at" (#0, layer: StreetDoor, state: EndGame)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0002]
+   "It goes outside."
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0051]
+   "Make sure you wrap up warm."
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0052]
+   "Ok, now you're starting to sound like my mum."
+
+  -----
+  Action: "Talk to" (#1, layer: StreetDoor, state: EndGame)
+
+  -----
+  Action: "Use" (#2, layer: StreetDoor, state: EndGame)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0054]
+   "I'm really hungry"
 
 
 --------------------------------------------------
@@ -63,13 +88,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: BathroomDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0003]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0003]
    "It goes to the bath, shower and toilet."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0049]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0049]
    "Do you need to go before we set off?"
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0050]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0050]
    "Er, no, I'm fine thanks."
 
   -----
@@ -78,7 +103,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: BathroomDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0004]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0004]
    "I don't need to go at the moment thanks. Especially with you watching!"
 
 
@@ -92,10 +117,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: BedroomDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0005]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0005]
    "It goes to my bedroom."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0048]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0048]
    "I bet no woman has ever been in there."
 
   -----
@@ -103,6 +128,28 @@ LAYERS
 
   -----
   Action: "Use" (#2, layer: BedroomDoor, state: main)
+
+ --------------------------------------------------
+ State: EndGame (layer: BedroomDoor)
+ title: "Bedroom"
+
+  -----
+  Action: "Look at" (#0, layer: BedroomDoor, state: EndGame)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0005]
+   "It goes to my bedroom."
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0048]
+   "I bet no woman has ever been in there."
+
+  -----
+  Action: "Talk to" (#1, layer: BedroomDoor, state: EndGame)
+
+  -----
+  Action: "Use" (#2, layer: BedroomDoor, state: EndGame)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0072]
+   "No"
 
 
 --------------------------------------------------
@@ -115,13 +162,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: KitchenDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0006]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0006]
    "It goes to the kitchen."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0046]
-   "Aren't you hungery?"
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0046]
+   "Aren't you hungry?"
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0047]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0047]
    "Hmmm, I seem to have an irrational fear of going in there."
 
   -----
@@ -130,8 +177,39 @@ LAYERS
   -----
   Action: "Use" (#2, layer: KitchenDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0007]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0007]
    "I'm not hungry. And I have a unexplainable fear of going into that room."
+
+ --------------------------------------------------
+ State: EndGame (layer: KitchenDoor)
+ title: "Kitchen"
+
+  -----
+  Action: "Look at" (#0, layer: KitchenDoor, state: EndGame)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0006]
+   "It goes to the kitchen."
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0046]
+   "Aren't you hungery?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0047]
+   "Hmmm, I seem to have an irrational fear of going in there."
+
+  -----
+  Action: "Talk to" (#1, layer: KitchenDoor, state: EndGame)
+
+  -----
+  Action: "Use" (#2, layer: KitchenDoor, state: EndGame)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0069]
+   "Oh no!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0070]
+   "Now I remember why I don't come in here!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0071]
+   "Gophers!"
 
 
 --------------------------------------------------
@@ -144,11 +222,11 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Degrees, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0008]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0008]
    "It's a medical degree for Dr Ted Martin. I guess that must be me."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0045]
-   "Dr Martin? You don't seem intellegent enough to be a doctor."
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0045]
+   "Dr Martin? You don't seem intelligent enough to be a doctor."
 
   -----
   Action: "Talk to" (#1, layer: Degrees, state: main)
@@ -156,7 +234,30 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Degrees, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0009]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0009]
+   "I don't want that."
+
+
+--------------------------------------------------
+- Layer: PhotoCollection
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: PhotoCollection)
+ title: "Photos"
+
+  -----
+  Action: "Look at" (#0, layer: PhotoCollection, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0067]
+   "It's a picture of me and Sarah Bio....the CEO is my girlfriend!"
+
+  -----
+  Action: "Talk to" (#1, layer: PhotoCollection, state: main)
+
+  -----
+  Action: "Use" (#2, layer: PhotoCollection, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0011]
    "I don't want that."
 
 
@@ -170,16 +271,16 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Photos, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0010]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0010]
    "It's a picture of me and Sarah Bio...we have our arms around each other...the CEO is my girlfriend!"
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0042]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0042]
    "Yeah, right! Like she'd go out with a loser like you."
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0043]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0043]
    "No, I remember, she is my girlfriend."
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0044]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0044]
    "I don't think she looks like that now, but I can't remember any more at the moment."
 
   -----
@@ -188,7 +289,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Photos, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0011]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0011]
    "I don't want that."
 
 
@@ -202,16 +303,16 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Computer, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0012]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0012]
    "It's my home computer."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0039]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0039]
    "Wow look at how old it is!"
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0040]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0040]
    "It looks like it's from 2012."
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0041]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0041]
    "I think it's just meant to look retro."
 
   -----
@@ -231,13 +332,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Phone, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0013]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0013]
    "It's my phone."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0037]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0037]
    "Ha, ha. You still have a landline phone."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0038]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0038]
    "All the cool people have the eyePhone installed in their eye."
 
   -----
@@ -246,8 +347,14 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Phone, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0014]
-   "I don't know any phone numbers."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0014]
+   "The phone has no dial tone."
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0075]
+   "I had your phone cut off..."
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0076]
+   "Er, I mean, you probably forgot to pay your phone bill"
 
  --------------------------------------------------
  State: Fault (layer: Phone)
@@ -256,7 +363,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Phone, state: Fault)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0015]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0015]
    "It's my phone."
 
   -----
@@ -265,7 +372,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Phone, state: Fault)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0016]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0016]
    "Oh, there must be a fault, I don't have a dialing tone."
 
 
@@ -279,7 +386,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Sofa, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0017]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0017]
    "It's my sofa."
 
   -----
@@ -288,7 +395,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Sofa, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0018]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0018]
    "I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though."
 
  --------------------------------------------------
@@ -298,10 +405,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Sofa, state: rested)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0019]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0019]
    "It's my sofa."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0036]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0036]
    "I'd just take a rest and watch TV."
 
   -----
@@ -310,7 +417,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Sofa, state: rested)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0020]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0020]
    "I don't think sitting down is the top of my priorities at the moment."
 
 
@@ -324,10 +431,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: TV, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0021]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0021]
    "It's a TV."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0035]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0035]
    "I wonder what's on? I'd just take a rest and watch TV."
 
   -----
@@ -336,8 +443,8 @@ LAYERS
   -----
   Action: "Use" (#2, layer: TV, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0022]
-   "Lets see what is on."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0022]
+   "Let's see what is on."
 
 
 --------------------------------------------------
@@ -363,13 +470,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SonicParcel, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0023]
-   "It a parcel for me...Dr Martin."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0023]
+   "It's a parcel for me...Dr Martin."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0033]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0033]
    "Dr Who?"
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0034]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0034]
    "No, me."
 
   -----
@@ -378,7 +485,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: SonicParcel, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0024]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0024]
    "I love receiving parcels."
 
 
@@ -392,11 +499,11 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: LightSwitches, state: main)
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0032]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0032]
    "What is this modern art installation?"
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0025]
-   "It the light switches"
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0025]
+   "It's the light switches"
 
   -----
   Action: "Talk to" (#1, layer: LightSwitches, state: main)
@@ -404,7 +511,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: LightSwitches, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0026]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0026]
    "I prefer to see."
 
 
@@ -418,19 +525,19 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: picture, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0027]
-   "It a picture of a man being attacked by a giant octopus."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0027]
+   "It's a picture of a man being attacked by a giant octopus."
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0028]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0028]
    "I really like it. I guess that is why I have a poster of it in my house."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0029]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0029]
    "I always thought it was a little scary for the living room."
 
-   - Dialog [puppet: _avatar, voice::Home_LivingRoom0030]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0030]
    "I must say, my ego nags like a girlfriend would."
 
-   - Dialog [puppet: ego, voice::Home_LivingRoom0031]
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0031]
    "Erm....oh look at that nice rug."
 
   -----
@@ -438,6 +545,29 @@ LAYERS
 
   -----
   Action: "Use" (#2, layer: picture, state: main)
+
+
+--------------------------------------------------
+- Layer: endGame
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: endGame)
+ title: "hidden"
+
+  -----
+  Action: "Look at" (#0, layer: endGame, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: endGame, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0053]
+   "I just realised, I haven't eaten all day."
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0054]
+   "I'm really hungry"
+
+  -----
+  Action: "Use" (#2, layer: endGame, state: main)
 
 
 --------------------------------------------------
@@ -468,62 +598,306 @@ LAYERS
 
 
 TREES
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0053]
+   "No More Help Please"
+
+  -----
+  Topic: "_1" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0054]
+   "What can I do here?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0055]
+   "Have you tried using the TV, sofa, Computer or Phone?"
+
+  -----
+  Topic: "_2" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0056]
+   "How do I get in the kitchen or the toilet?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0057]
+   "You can't"
+
+  -----
+  Topic: "_3" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0058]
+   "How do I leave the house?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0059]
+   "You are really tired!"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_5" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0062]
+   "Enough with the hints"
+
+  -----
+  Topic: "_6" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0063]
+   "How do I find out who I am?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0064]
+   "Look at the photos and diplomas on the wall"
+
+  -----
+  Topic: "_7" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0065]
+   "How else can I find out more about me?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0066]
+   "Have you looked in the bedroom?"
+
+  -----
+  Topic: "_4" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0060]
+   "How do I leave the house?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0061]
+   "You don't know where else to go!"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_9" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0079]
+   "Enough hints"
+
+  -----
+  Topic: "_10" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0080]
+   "Hint"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0081]
+   "You're hungry."
+
+  -----
+  Topic: "_11" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0083]
+   "Tell me what to do."
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0084]
+   "Go to the kitchen"
+
+  -----
+  Topic: "_8" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0077]
+   "Now what?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_LivingRoom.swf:Home_LivingRoom0078]
+   "You can go somewhere you couldn't before."
 
 
 
-_avatar,"It goes outside.",:Home_LivingRoom0000
-_avatar,"I don't think I'm done here.",:Home_LivingRoom0001
-_avatar,"It goes outside.",:Home_LivingRoom0002
-ego,"Make sure you wrap up warm.",:Home_LivingRoom0051
-_avatar,"Ok, now you're starting to sound like my mum.",:Home_LivingRoom0052
-_avatar,"It goes to the bath, shower and toilet.",:Home_LivingRoom0003
-ego,"Do you need to go before we set off?",:Home_LivingRoom0049
-_avatar,"Er, no, I'm fine thanks.",:Home_LivingRoom0050
-_avatar,"I don't need to go at the moment thanks. Especially with you watching!",:Home_LivingRoom0004
-_avatar,"It goes to my bedroom.",:Home_LivingRoom0005
-ego,"I bet no woman has ever been in there.",:Home_LivingRoom0048
-_avatar,"It goes to the kitchen.",:Home_LivingRoom0006
-ego,"Aren't you hungery?",:Home_LivingRoom0046
-_avatar,"Hmmm, I seem to have an irrational fear of going in there.",:Home_LivingRoom0047
-_avatar,"I'm not hungry. And I have a unexplainable fear of going into that room.",:Home_LivingRoom0007
-_avatar,"It's a medical degree for Dr Ted Martin. I guess that must be me.",:Home_LivingRoom0008
-ego,"Dr Martin? You don't seem intellegent enough to be a doctor.",:Home_LivingRoom0045
-_avatar,"I don't want that.",:Home_LivingRoom0009
-_avatar,"It's a picture of me and Sarah Bio...we have our arms around each other...the CEO is my girlfriend!",:Home_LivingRoom0010
-ego,"Yeah, right! Like she'd go out with a loser like you.",:Home_LivingRoom0042
-_avatar,"No, I remember, she is my girlfriend.",:Home_LivingRoom0043
-_avatar,"I don't think she looks like that now, but I can't remember any more at the moment.",:Home_LivingRoom0044
-_avatar,"I don't want that.",:Home_LivingRoom0011
-_avatar,"It's my home computer.",:Home_LivingRoom0012
-ego,"Wow look at how old it is!",:Home_LivingRoom0039
-ego,"It looks like it's from 2012.",:Home_LivingRoom0040
-_avatar,"I think it's just meant to look retro.",:Home_LivingRoom0041
-_avatar,"It's my phone.",:Home_LivingRoom0013
-ego,"Ha, ha. You still have a landline phone.",:Home_LivingRoom0037
-ego,"All the cool people have the eyePhone installed in their eye.",:Home_LivingRoom0038
-_avatar,"I don't know any phone numbers.",:Home_LivingRoom0014
-_avatar,"It's my phone.",:Home_LivingRoom0015
-_avatar,"Oh, there must be a fault, I don't have a dialing tone.",:Home_LivingRoom0016
-_avatar,"It's my sofa.",:Home_LivingRoom0017
-_avatar,"I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though.",:Home_LivingRoom0018
-_avatar,"It's my sofa.",:Home_LivingRoom0019
-ego,"I'd just take a rest and watch TV.",:Home_LivingRoom0036
-_avatar,"I don't think sitting down is the top of my priorities at the moment.",:Home_LivingRoom0020
-_avatar,"It's a TV.",:Home_LivingRoom0021
-ego,"I wonder what's on? I'd just take a rest and watch TV.",:Home_LivingRoom0035
-_avatar,"Lets see what is on.",:Home_LivingRoom0022
-_avatar,"It a parcel for me...Dr Martin.",:Home_LivingRoom0023
-ego,"Dr Who?",:Home_LivingRoom0033
-_avatar,"No, me.",:Home_LivingRoom0034
-_avatar,"I love receiving parcels.",:Home_LivingRoom0024
-ego,"What is this modern art installation?",:Home_LivingRoom0032
-_avatar,"It the light switches",:Home_LivingRoom0025
-_avatar,"I prefer to see.",:Home_LivingRoom0026
-_avatar,"It a picture of a man being attacked by a giant octopus.",:Home_LivingRoom0027
-_avatar,"I really like it. I guess that is why I have a poster of it in my house.",:Home_LivingRoom0028
-ego,"I always thought it was a little scary for the living room.",:Home_LivingRoom0029
-_avatar,"I must say, my ego nags like a girlfriend would.",:Home_LivingRoom0030
-ego,"Erm....oh look at that nice rug.",:Home_LivingRoom0031
+
+_avatar,"It goes outside.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0000
+_avatar,"I don't think I'm done here.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0001
+_avatar,"It goes outside.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0002
+ego,"Make sure you wrap up warm.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0051
+_avatar,"Ok, now you're starting to sound like my mum.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0052
+_avatar,"It goes outside.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0002
+ego,"Make sure you wrap up warm.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0051
+_avatar,"Ok, now you're starting to sound like my mum.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0052
+_avatar,"I'm really hungry",voice/V_Home_LivingRoom.swf:Home_LivingRoom0054
+_avatar,"It goes to the bath, shower and toilet.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0003
+ego,"Do you need to go before we set off?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0049
+_avatar,"Er, no, I'm fine thanks.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0050
+_avatar,"I don't need to go at the moment thanks. Especially with you watching!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0004
+_avatar,"It goes to my bedroom.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0005
+ego,"I bet no woman has ever been in there.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0048
+_avatar,"It goes to my bedroom.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0005
+ego,"I bet no woman has ever been in there.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0048
+_avatar,"No",voice/V_Home_LivingRoom.swf:Home_LivingRoom0072
+_avatar,"It goes to the kitchen.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0006
+ego,"Aren't you hungry?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0046
+_avatar,"Hmmm, I seem to have an irrational fear of going in there.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0047
+_avatar,"I'm not hungry. And I have a unexplainable fear of going into that room.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0007
+_avatar,"It goes to the kitchen.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0006
+ego,"Aren't you hungery?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0046
+_avatar,"Hmmm, I seem to have an irrational fear of going in there.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0047
+_avatar,"Oh no!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0069
+_avatar,"Now I remember why I don't come in here!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0070
+_avatar,"Gophers!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0071
+_avatar,"It's a medical degree for Dr Ted Martin. I guess that must be me.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0008
+ego,"Dr Martin? You don't seem intelligent enough to be a doctor.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0045
+_avatar,"I don't want that.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0009
+_avatar,"It's a picture of me and Sarah Bio....the CEO is my girlfriend!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0067
+_avatar,"I don't want that.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0011
+_avatar,"It's a picture of me and Sarah Bio...we have our arms around each other...the CEO is my girlfriend!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0010
+ego,"Yeah, right! Like she'd go out with a loser like you.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0042
+_avatar,"No, I remember, she is my girlfriend.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0043
+_avatar,"I don't think she looks like that now, but I can't remember any more at the moment.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0044
+_avatar,"I don't want that.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0011
+_avatar,"It's my home computer.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0012
+ego,"Wow look at how old it is!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0039
+ego,"It looks like it's from 2012.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0040
+_avatar,"I think it's just meant to look retro.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0041
+_avatar,"It's my phone.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0013
+ego,"Ha, ha. You still have a landline phone.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0037
+ego,"All the cool people have the eyePhone installed in their eye.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0038
+_avatar,"The phone has no dial tone.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0014
+ego,"I had your phone cut off...",voice/V_Home_LivingRoom.swf:Home_LivingRoom0075
+ego,"Er, I mean, you probably forgot to pay your phone bill",voice/V_Home_LivingRoom.swf:Home_LivingRoom0076
+_avatar,"It's my phone.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0015
+_avatar,"Oh, there must be a fault, I don't have a dialing tone.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0016
+_avatar,"It's my sofa.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0017
+_avatar,"I don't think sitting down is the top of my priorities at the moment, I do feel a little tired though.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0018
+_avatar,"It's my sofa.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0019
+ego,"I'd just take a rest and watch TV.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0036
+_avatar,"I don't think sitting down is the top of my priorities at the moment.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0020
+_avatar,"It's a TV.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0021
+ego,"I wonder what's on? I'd just take a rest and watch TV.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0035
+_avatar,"Let's see what is on.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0022
+_avatar,"It's a parcel for me...Dr Martin.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0023
+ego,"Dr Who?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0033
+_avatar,"No, me.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0034
+_avatar,"I love receiving parcels.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0024
+ego,"What is this modern art installation?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0032
+_avatar,"It's the light switches",voice/V_Home_LivingRoom.swf:Home_LivingRoom0025
+_avatar,"I prefer to see.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0026
+_avatar,"It's a picture of a man being attacked by a giant octopus.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0027
+_avatar,"I really like it. I guess that is why I have a poster of it in my house.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0028
+ego,"I always thought it was a little scary for the living room.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0029
+_avatar,"I must say, my ego nags like a girlfriend would.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0030
+ego,"Erm....oh look at that nice rug.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0031
+_avatar,"I just realised, I haven't eaten all day.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0053
+_avatar,"I'm really hungry",voice/V_Home_LivingRoom.swf:Home_LivingRoom0054
+_avatar,"No More Help Please",voice/V_Home_LivingRoom.swf:Home_LivingRoom0053
+_avatar,"What can I do here?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0054
+ego,"Have you tried using the TV, sofa, Computer or Phone?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0055
+_avatar,"How do I get in the kitchen or the toilet?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0056
+ego,"You can't",voice/V_Home_LivingRoom.swf:Home_LivingRoom0057
+_avatar,"How do I leave the house?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0058
+ego,"You are really tired!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0059
+_avatar,"Enough with the hints",voice/V_Home_LivingRoom.swf:Home_LivingRoom0062
+_avatar,"How do I find out who I am?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0063
+ego,"Look at the photos and diplomas on the wall",voice/V_Home_LivingRoom.swf:Home_LivingRoom0064
+_avatar,"How else can I find out more about me?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0065
+ego,"Have you looked in the bedroom?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0066
+_avatar,"How do I leave the house?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0060
+ego,"You don't know where else to go!",voice/V_Home_LivingRoom.swf:Home_LivingRoom0061
+_avatar,"Enough hints",voice/V_Home_LivingRoom.swf:Home_LivingRoom0079
+_avatar,"Hint",voice/V_Home_LivingRoom.swf:Home_LivingRoom0080
+ego,"You're hungry.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0081
+_avatar,"Tell me what to do.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0083
+ego,"Go to the kitchen",voice/V_Home_LivingRoom.swf:Home_LivingRoom0084
+_avatar,"Now what?",voice/V_Home_LivingRoom.swf:Home_LivingRoom0077
+ego,"You can go somewhere you couldn't before.",voice/V_Home_LivingRoom.swf:Home_LivingRoom0078
 
 
 
+addSound( Home_LivingRoom0000 );
+addSound( Home_LivingRoom0001 );
+addSound( Home_LivingRoom0002 );
+addSound( Home_LivingRoom0051 );
+addSound( Home_LivingRoom0052 );
+addSound( Home_LivingRoom0002 );
+addSound( Home_LivingRoom0051 );
+addSound( Home_LivingRoom0052 );
+addSound( Home_LivingRoom0054 );
+addSound( Home_LivingRoom0003 );
+addSound( Home_LivingRoom0049 );
+addSound( Home_LivingRoom0050 );
+addSound( Home_LivingRoom0004 );
+addSound( Home_LivingRoom0005 );
+addSound( Home_LivingRoom0048 );
+addSound( Home_LivingRoom0005 );
+addSound( Home_LivingRoom0048 );
+addSound( Home_LivingRoom0072 );
+addSound( Home_LivingRoom0006 );
+addSound( Home_LivingRoom0046 );
+addSound( Home_LivingRoom0047 );
+addSound( Home_LivingRoom0007 );
+addSound( Home_LivingRoom0006 );
+addSound( Home_LivingRoom0046 );
+addSound( Home_LivingRoom0047 );
+addSound( Home_LivingRoom0069 );
+addSound( Home_LivingRoom0070 );
+addSound( Home_LivingRoom0071 );
+addSound( Home_LivingRoom0008 );
+addSound( Home_LivingRoom0045 );
+addSound( Home_LivingRoom0009 );
+addSound( Home_LivingRoom0067 );
+addSound( Home_LivingRoom0011 );
+addSound( Home_LivingRoom0010 );
+addSound( Home_LivingRoom0042 );
+addSound( Home_LivingRoom0043 );
+addSound( Home_LivingRoom0044 );
+addSound( Home_LivingRoom0011 );
+addSound( Home_LivingRoom0012 );
+addSound( Home_LivingRoom0039 );
+addSound( Home_LivingRoom0040 );
+addSound( Home_LivingRoom0041 );
+addSound( Home_LivingRoom0013 );
+addSound( Home_LivingRoom0037 );
+addSound( Home_LivingRoom0038 );
+addSound( Home_LivingRoom0014 );
+addSound( Home_LivingRoom0075 );
+addSound( Home_LivingRoom0076 );
+addSound( Home_LivingRoom0015 );
+addSound( Home_LivingRoom0016 );
+addSound( Home_LivingRoom0017 );
+addSound( Home_LivingRoom0018 );
+addSound( Home_LivingRoom0019 );
+addSound( Home_LivingRoom0036 );
+addSound( Home_LivingRoom0020 );
+addSound( Home_LivingRoom0021 );
+addSound( Home_LivingRoom0035 );
+addSound( Home_LivingRoom0022 );
+addSound( Home_LivingRoom0023 );
+addSound( Home_LivingRoom0033 );
+addSound( Home_LivingRoom0034 );
+addSound( Home_LivingRoom0024 );
+addSound( Home_LivingRoom0032 );
+addSound( Home_LivingRoom0025 );
+addSound( Home_LivingRoom0026 );
+addSound( Home_LivingRoom0027 );
+addSound( Home_LivingRoom0028 );
+addSound( Home_LivingRoom0029 );
+addSound( Home_LivingRoom0030 );
+addSound( Home_LivingRoom0031 );
+addSound( Home_LivingRoom0053 );
+addSound( Home_LivingRoom0054 );
+addSound( Home_LivingRoom0053 );
+addSound( Home_LivingRoom0054 );
+addSound( Home_LivingRoom0055 );
+addSound( Home_LivingRoom0056 );
+addSound( Home_LivingRoom0057 );
+addSound( Home_LivingRoom0058 );
+addSound( Home_LivingRoom0059 );
+addSound( Home_LivingRoom0062 );
+addSound( Home_LivingRoom0063 );
+addSound( Home_LivingRoom0064 );
+addSound( Home_LivingRoom0065 );
+addSound( Home_LivingRoom0066 );
+addSound( Home_LivingRoom0060 );
+addSound( Home_LivingRoom0061 );
+addSound( Home_LivingRoom0079 );
+addSound( Home_LivingRoom0080 );
+addSound( Home_LivingRoom0081 );
+addSound( Home_LivingRoom0083 );
+addSound( Home_LivingRoom0084 );
+addSound( Home_LivingRoom0077 );
+addSound( Home_LivingRoom0078 );

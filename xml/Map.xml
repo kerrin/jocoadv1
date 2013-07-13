@@ -1,1 +1,586 @@
-<room id="Map" coreLibs="lib/Map.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2=""><grids><grid id="main"><boxes><box x="660" y="285" w="26" h="21" nodes="n0"/><box x="883" y="502" w="23" h="27" nodes="n1"/><box x="155" y="629" w="22" h="17" nodes="n4"/><box x="280" y="232" w="23" h="26" nodes="n3"/></boxes><nodes><node id="n0" x="674" y="293" join="n34" trap="0" name="Office"/><node id="n1" x="894" y="516" join="n6" trap="0" name="CoffeeShop"/><node id="n2" x="509" y="449" join="n9,n13" trap="0"/><node id="n3" x="297" y="240" join="n28" trap="0" name="SecretLair"/><node id="n4" x="169" y="638" join="n38" trap="0" name="Home"/><node id="n5" x="544" y="648" join="n7,n14,n35,n36" trap="0"/><node id="n6" x="758" y="516" join="n1,n7,n35" trap="0"/><node id="n7" x="629" y="535" join="n6,n5,n13" trap="0"/><node id="n8" x="485" y="715" join="n36,n37" trap="0"/><node id="n9" x="611" y="412" join="n2,n34" trap="0"/><node id="n10" x="370" y="579" join="n12,n14,n44" trap="0"/><node id="n11" x="166" y="510" join="n33,n43" trap="0"/><node id="n12" x="269" y="599" join="n10,n43" trap="0"/><node id="n13" x="545" y="566" join="n14,n7,n2" trap="0"/><node id="n14" x="474" y="624" join="n5,n10,n13" trap="0"/><node id="n15" x="257" y="280" join="n16,n28" trap="0"/><node id="n16" x="198" y="273" join="n15,n27" trap="0"/><node id="n17" x="163" y="353" join="n27,n29,n41" trap="0"/><node id="n18" x="126" y="406" join="n29,n33" trap="0"/><node id="n19" x="281" y="329" join="n26,n20,n39" trap="0"/><node id="n20" x="326" y="317" join="n19,n21" trap="0"/><node id="n21" x="371" y="334" join="n20,n22" trap="0"/><node id="n22" x="413" y="314" join="n21" trap="0"/><node id="n23" x="448" y="247" join="n42" trap="0"/><node id="n24" x="364" y="253" join="n25,n42" trap="0"/><node id="n25" x="332" y="284" join="n24,n26" trap="0"/><node id="n26" x="296" y="299" join="n25,n19" trap="0"/><node id="n27" x="168" y="306" join="n16,n17" trap="0"/><node id="n28" x="267" y="251" join="n15,n3" trap="0"/><node id="n29" x="135" y="375" join="n17,n18" trap="0"/><node id="n30" x="195" y="462" join="n33,n45" trap="0"/><node id="n33" x="165" y="453" join="n11,n18,n30" trap="0"/><node id="n34" x="642" y="324" join="n9,n0" trap="0"/><node id="n35" x="792" y="590" join="n6,n5" trap="0"/><node id="n36" x="538" y="699" join="n8,n5" trap="0"/><node id="n37" x="245" y="652" join="n38,n8" trap="0"/><node id="n38" x="191" y="655" join="n4,n37" trap="0"/><node id="n39" x="250" y="333" join="n40,n19" trap="0"/><node id="n40" x="220" y="345" join="n41,n39" trap="0"/><node id="n41" x="187" y="343" join="n17,n40" trap="0"/><node id="n42" x="411" y="245" join="n24,n23" trap="0"/><node id="n43" x="228" y="584" join="n12,n11" trap="0"/><node id="n44" x="373" y="540" join="n10,n45" trap="0"/><node id="n45" x="296" y="474" join="n30,n44" trap="0"/></nodes></grid></grids><positions><position id="Office" turn="4" x="674" y="293"/><position id="CoffeeShop" turn="4" x="894" y="516"/><position id="SecretLair" turn="4" x="297" y="240"/><position id="Home" turn="4" x="169" y="638"/></positions><filters><filter id="_main" axis="y" enabled="1"><pole x="472" y="225" scale="0.2" rate="0.2" blur="1" color="0x000000" tint="0.5"/><pole x="472" y="725" scale="0.2" rate="0.2" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><curtain blackout="0"/></script><script id="_exit"><curtain blackout="1"/></script></scripts><layers><layer id="_bg" type="background" asset="lib/Map.swf:BG_Map" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title><en><![CDATA[]]></en></title><actions/><items/></state></states></layer><layer id="Office" type="puppet" asset="" depth="1" visible="1" state="main"><states><state id="main" x="595" y="109" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="241" hitH="181" shape="rect"><param mapX="673" mapY="293" turnTo="5" turn="0" cursor="exit5" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Office]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="FT_Reception:StreetDoor"/></script></action></actions><items/></state></states></layer><layer id="Home" type="puppet" asset="" depth="2" visible="1" state="main"><states><state id="main" x="43" y="528" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="143" hitH="123" shape="rect"><param mapX="168" mapY="639" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Home]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="Home_LivingRoom:StreetDoor"/></script></action></actions><items/></state></states></layer><layer id="CoffeeShop" type="puppet" asset="" depth="3" visible="1" state="main"><states><state id="main" x="122" y="423" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="893" mapY="518" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Coffee Shop]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state><state id="Know" x="798" y="406" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="185" hitH="99" shape="rect"><param mapX="894" mapY="515" turnTo="5" turn="0" cursor="exit5" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Coffee Shop]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="CoffeeShop:StreetDoor"/></script></action></actions><items/></state></states></layer><layer id="SecretLair" type="puppet" asset="" depth="4" visible="1" state="main"><states><state id="main" x="707" y="424" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mapX="296" mapY="241" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Nothing of Interest]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><dialogue play="*"/></script></action></actions><items/></state><state id="Know" x="201" y="97" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="183" hitH="144" shape="rect"><param mapX="302" mapY="227" turnTo="5" turn="0" cursor="exit5" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title><en><![CDATA[Secret Lair]]></en></title><actions><action id="act0"><title><en><![CDATA[Look at]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act1"><title><en><![CDATA[Talk to]]></en></title><dialog/><script><dialogue play="*"/></script></action><action id="act2"><title><en><![CDATA[Use]]></en></title><dialog/><script><game room="SecretLair:Door"/></script></action></actions><items/></state></states></layer><layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="5" visible="1" state="main"><states><state id="main" x="650" y="301" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_grid" blur=""/><vars/><title><en><![CDATA[ted]]></en></title><actions/><items/></state></states></layer></layers><trees/></room>
+<room id="Map" coreLibs="lib/Map.swf" voiceLibs="voice/V_Map.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="660" y="285" w="26" h="21" nodes="n0"/>
+        <box x="677" y="502" w="306" h="21" nodes="n1,n6"/>
+        <box x="155" y="629" w="22" h="17" nodes="n4"/>
+        <box x="280" y="232" w="23" h="26" nodes="n3"/>
+        <box x="398" y="305" w="24" h="18" nodes="n22"/>
+        <box x="399" y="236" w="65" h="15" nodes="n23,n42"/>
+        <box x="590" y="530" w="70" h="19" nodes="n7"/>
+      </boxes>
+      <nodes>
+        <node id="n0" x="674" y="293" join="n34" trap="0" name="Office"/>
+        <node id="n1" x="894" y="516" join="n6" trap="0" name="CoffeeShop"/>
+        <node id="n2" x="509" y="449" join="n9,n13,n44" trap="0"/>
+        <node id="n3" x="297" y="240" join="n28" trap="0" name="SecretLair"/>
+        <node id="n4" x="169" y="638" join="n38" trap="0" name="Home"/>
+        <node id="n5" x="544" y="648" join="n7,n14,n35,n36" trap="0"/>
+        <node id="n6" x="758" y="516" join="n1,n7,n35" trap="0"/>
+        <node id="n7" x="629" y="535" join="n6,n5,n13" trap="0"/>
+        <node id="n8" x="485" y="715" join="n36,n37" trap="0"/>
+        <node id="n9" x="611" y="412" join="n2,n34" trap="0"/>
+        <node id="n10" x="370" y="579" join="n12,n14,n44" trap="0"/>
+        <node id="n11" x="166" y="510" join="n33,n43" trap="0"/>
+        <node id="n12" x="269" y="599" join="n10,n43" trap="0"/>
+        <node id="n13" x="545" y="566" join="n14,n7,n2" trap="0"/>
+        <node id="n14" x="474" y="624" join="n5,n10,n13" trap="0"/>
+        <node id="n15" x="257" y="280" join="n16,n28" trap="0"/>
+        <node id="n16" x="198" y="273" join="n15,n27" trap="0"/>
+        <node id="n17" x="163" y="353" join="n27,n29,n41" trap="0"/>
+        <node id="n18" x="126" y="406" join="n29,n33" trap="0"/>
+        <node id="n19" x="281" y="329" join="n26,n20,n39" trap="0"/>
+        <node id="n20" x="326" y="317" join="n19,n21" trap="0"/>
+        <node id="n21" x="371" y="334" join="n20,n22" trap="0"/>
+        <node id="n22" x="413" y="314" join="n21" trap="0"/>
+        <node id="n23" x="448" y="247" join="n42" trap="0"/>
+        <node id="n24" x="364" y="253" join="n25,n42" trap="0"/>
+        <node id="n25" x="332" y="284" join="n24,n26" trap="0"/>
+        <node id="n26" x="296" y="299" join="n25,n19" trap="0"/>
+        <node id="n27" x="168" y="306" join="n16,n17" trap="0"/>
+        <node id="n28" x="267" y="251" join="n15,n3" trap="0"/>
+        <node id="n29" x="135" y="375" join="n17,n18" trap="0"/>
+        <node id="n30" x="195" y="462" join="n33,n45" trap="0"/>
+        <node id="n33" x="165" y="453" join="n11,n18,n30" trap="0"/>
+        <node id="n34" x="642" y="324" join="n9,n0" trap="0"/>
+        <node id="n35" x="792" y="590" join="n6,n5" trap="0"/>
+        <node id="n36" x="538" y="699" join="n8,n5" trap="0"/>
+        <node id="n37" x="245" y="652" join="n38,n8" trap="0"/>
+        <node id="n38" x="191" y="655" join="n4,n37" trap="0"/>
+        <node id="n39" x="250" y="333" join="n40,n19" trap="0"/>
+        <node id="n40" x="220" y="345" join="n41,n39" trap="0"/>
+        <node id="n41" x="187" y="343" join="n17,n40" trap="0"/>
+        <node id="n42" x="411" y="245" join="n24,n23" trap="0"/>
+        <node id="n43" x="228" y="584" join="n12,n11" trap="0"/>
+        <node id="n44" x="373" y="540" join="n10,n45,n2" trap="0"/>
+        <node id="n45" x="296" y="474" join="n30,n44" trap="0"/>
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="Office" turn="4" x="674" y="293"/>
+    <position id="CoffeeShop" turn="4" x="894" y="516"/>
+    <position id="SecretLair" turn="4" x="297" y="240"/>
+    <position id="Home" turn="4" x="169" y="638"/>
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="472" y="225" scale="0.2" rate="0.2" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="472" y="725" scale="0.2" rate="0.2" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="day" type="puppet" asset="lib/Map.swf:DaySky" depth="0" visible="1" state="night">
+      <states>
+        <state id="night" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="day" x="1" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_bg" type="background" asset="lib/Map.swf:BG_Map" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Office" type="puppet" asset="" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="595" y="109" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="241" hitH="181" shape="rect">
+          <param mapX="673" mapY="293" turnTo="5" turn="0" cursor="exit5" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Office]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="FT_Reception:StreetDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="Home" type="puppet" asset="" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="43" y="528" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="143" hitH="123" shape="rect">
+          <param mapX="168" mapY="639" turnTo="5" turn="0" cursor="exit7" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Home]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="Home_LivingRoom:StreetDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="CoffeeShop" type="puppet" asset="" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="122" y="423" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="893" mapY="518" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Coffee Shop]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Know" x="798" y="406" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="185" hitH="99" shape="rect">
+          <param mapX="894" mapY="515" turnTo="5" turn="0" cursor="exit5" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Coffee Shop]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="CoffeeShop:StreetDoor"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="SecretLair" type="puppet" asset="" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="707" y="424" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="296" mapY="241" turnTo="5" turn="0" cursor="" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Nothing of Interest]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+        <state id="Know" x="201" y="97" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="183" hitH="144" shape="rect">
+          <param mapX="302" mapY="227" turnTo="5" turn="0" cursor="exit5" onclick="2" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[Secret Lair]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <game room="SecretLair:Door"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/global.swf:Patrick" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="650" y="301" img="1" imgX="-1" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="_grid" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[ted]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+    <layer id="ego" type="puppet" asset="" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="450" y="320" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mapX="500" mapY="370" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFF33" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Look at]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <en><![CDATA[Talk to]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <en><![CDATA[Use]]></en>
+              </title>
+              <dialog/>
+              <script>
+                <dialogue play="*"/>
+              </script>
+            </action>
+          </actions>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="HelpMe">
+      <tier key="r_t1" id="">
+        <topic key="t0" id="_2" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Enough help]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Map.swf:Map0004">
+              <en><![CDATA[Enough help]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_3" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Where is the office?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Map.swf:Map0005">
+              <en><![CDATA[Where is the office?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Map.swf:Map0006">
+              <en><![CDATA[The building at the top]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t2" id="_4" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Where is my home?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Map.swf:Map0008">
+              <en><![CDATA[Where is my home?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Map.swf:Map0009">
+              <en><![CDATA[The biggest house at the bottom]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t3" id="_5" enabled="0" hold="1" expose="" go="0">
+          <title>
+            <en><![CDATA[Where is the coffee shop]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Map.swf:Map0010">
+              <en><![CDATA[Where is the coffee shop]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Map.swf:Map0011">
+              <en><![CDATA[It is the rightmost building]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Map.swf:Map0012">
+              <en><![CDATA[With the coffee cup on]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+        <topic key="t4" id="_6" enabled="0" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[Where is the secret lair?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Map.swf:Map0013">
+              <en><![CDATA[Where is the secret lair?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Map.swf:Map0014">
+              <en><![CDATA[It's in the mountain in the top left]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+      </tier>
+      <tier key="r" id="">
+        <topic key="t0" id="_0" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <en><![CDATA[No More Help Please]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Map.swf:Map0000">
+              <en><![CDATA[No More Help Please]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+            <scriptCall global="afterDialogue"/>
+          </script>
+        </topic>
+        <topic key="t1" id="_1" enabled="1" hold="1" expose="" go="1">
+          <title>
+            <en><![CDATA[Where can I go?]]></en>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="voice/V_Map.swf:Map0002">
+              <en><![CDATA[Where can I go?]]></en>
+            </dia>
+            <dia puppet="ego" frame="" sound="voice/V_Map.swf:Map0003">
+              <en><![CDATA[Here, there, and everywhere]]></en>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*"/>
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

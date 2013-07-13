@@ -1,0 +1,883 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: WaterBottle
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: WaterBottle)
+ title: "Water Bottle"
+
+  -----
+  Action: "Look at" (#0, layer: WaterBottle, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0037]
+   "It's a full bottle of water for one of those water dispensers."
+
+  -----
+  Action: "Talk to" (#1, layer: WaterBottle, state: main)
+
+  -----
+  Action: "Use" (#2, layer: WaterBottle, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0038]
+   "Hmm, water."
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0120]
+   "I was thirsty."
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0121]
+   "Now let's try talking to the guy that just came in."
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0125]
+   "Bring up the pop-up menu like previously"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0126]
+   "This time select the mouth icon"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0127]
+   "At the left hand bottom of the screen will be a list of things you can say"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0128]
+   "Select the one you want to say"
+
+
+--------------------------------------------------
+- Layer: Sign
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Sign)
+ title: "Sign"
+
+  -----
+  Action: "Look at" (#0, layer: Sign, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0039]
+   "You have just started a short tutorial."
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0040]
+   "You have just learnt how to look at anything in the room. Looking at an item will find more details about it, and you may find useful details about it."
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0115]
+   "Let's try using the water bottle"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0116]
+   "Move the mouse over the bottle"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0117]
+   "Hold the mouse button down"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0118]
+   "Select the hand Icon"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0119]
+   "Release the mouse button"
+
+  -----
+  Action: "Talk to" (#1, layer: Sign, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0052]
+   "I'm not talking to that!"
+
+  -----
+  Action: "Use" (#2, layer: Sign, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0053]
+   "I see no use for that."
+
+
+--------------------------------------------------
+- Layer: SignNoAction
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SignNoAction)
+ title: "Sign"
+
+  -----
+  Action: "Look at" (#0, layer: SignNoAction, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0036]
+   "Nothing of interest"
+
+  -----
+  Action: "Talk to" (#1, layer: SignNoAction, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0052]
+   "I'm not talking to that!"
+
+  -----
+  Action: "Use" (#2, layer: SignNoAction, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0053]
+   "I see no use for that."
+
+
+--------------------------------------------------
+- Layer: NoEntry
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: NoEntry)
+ title: "No Entry"
+
+  -----
+  Action: "Look at" (#0, layer: NoEntry, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0195]
+   "I can't go that way"
+
+  -----
+  Action: "Talk to" (#1, layer: NoEntry, state: main)
+
+  -----
+  Action: "Use" (#2, layer: NoEntry, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0196]
+   "I'm not disobeying that sign"
+
+
+--------------------------------------------------
+- Layer: Guy
+--------------------------------------------------
+ --------------------------------------------------
+ State: hide (layer: Guy)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Guy, state: hide)
+
+  -----
+  Action: "Talk to" (#1, layer: Guy, state: hide)
+
+  -----
+  Action: "Use" (#2, layer: Guy, state: hide)
+
+ --------------------------------------------------
+ State: show (layer: Guy)
+ title: "Some Guy"
+
+  -----
+  Action: "Look at" (#0, layer: Guy, state: show)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0123]
+   "It's just some guy"
+
+  -----
+  Action: "Talk to" (#1, layer: Guy, state: show)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0143]
+   "Hi"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0144]
+   "Hi, I'm your tutor"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0145]
+   "Tell me what you want to learn about."
+
+  -----
+  Action: "Use" (#2, layer: Guy, state: show)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0122]
+   "I can't use people"
+
+  -----
+  Item: "TutorialBook", "" (layer: Guy, state: show)
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0177]
+   "Thanks, I wanted something to read"
+
+
+--------------------------------------------------
+- Layer: SkipTutorial
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: SkipTutorial)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: SkipTutorial, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: SkipTutorial, state: main)
+
+  -----
+  Action: "Use" (#2, layer: SkipTutorial, state: main)
+
+
+--------------------------------------------------
+- Layer: Leave
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Leave)
+ title: "Skip Tutorial"
+
+  -----
+  Action: "Look at" (#0, layer: Leave, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Leave, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Leave, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0129]
+   "You are skipping the tutorial"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0130]
+   "I hope you know what you are doing!"
+
+
+--------------------------------------------------
+- Layer: book
+--------------------------------------------------
+ --------------------------------------------------
+ State: show (layer: book)
+ title: "Book"
+
+  -----
+  Action: "Look at" (#0, layer: book, state: show)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0197]
+   "It's a book"
+
+  -----
+  Action: "Talk to" (#1, layer: book, state: show)
+
+  -----
+  Action: "Use" (#2, layer: book, state: show)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0193]
+   "I'll just take this book"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0194]
+   "I put it in the inventory"
+
+ --------------------------------------------------
+ State: hide (layer: book)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: book, state: hide)
+
+  -----
+  Action: "Talk to" (#1, layer: book, state: hide)
+
+  -----
+  Action: "Use" (#2, layer: book, state: hide)
+
+ --------------------------------------------------
+ State: hidePickedUp (layer: book)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: book, state: hidePickedUp)
+
+  -----
+  Action: "Talk to" (#1, layer: book, state: hidePickedUp)
+
+  -----
+  Action: "Use" (#2, layer: book, state: hidePickedUp)
+
+
+--------------------------------------------------
+- Layer: CheatHall
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatHall)
+ title: "Cheat Hall"
+
+  -----
+  Action: "Look at" (#0, layer: CheatHall, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatHall, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatHall, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0055]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatOT
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatOT)
+ title: "Cheat OT"
+
+  -----
+  Action: "Look at" (#0, layer: CheatOT, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatOT, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatOT, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0056]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatMap
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatMap)
+ title: "Cheat Map"
+
+  -----
+  Action: "Look at" (#0, layer: CheatMap, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatMap, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatMap, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0057]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatMapDay
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatMapDay)
+ title: "Cheat Map Day"
+
+  -----
+  Action: "Look at" (#0, layer: CheatMapDay, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatMapDay, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatMapDay, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0058]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatOffice
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatOffice)
+ title: "Cheat Office"
+
+  -----
+  Action: "Look at" (#0, layer: CheatOffice, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatOffice, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatOffice, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0059]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatCoffeeShop
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatCoffeeShop)
+ title: "Cheat Coffee Shop"
+
+  -----
+  Action: "Look at" (#0, layer: CheatCoffeeShop, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatCoffeeShop, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatCoffeeShop, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0060]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatHomeComputer
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatHomeComputer)
+ title: "Cheat Home Computer"
+
+  -----
+  Action: "Look at" (#0, layer: CheatHomeComputer, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatHomeComputer, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatHomeComputer, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0061]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatCoffeeEnd
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatCoffeeEnd)
+ title: "Cheat Coffee End"
+
+  -----
+  Action: "Look at" (#0, layer: CheatCoffeeEnd, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatCoffeeEnd, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatCoffeeEnd, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0061]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatSecretLair
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatSecretLair)
+ title: "Cheat Secret Lair"
+
+  -----
+  Action: "Look at" (#0, layer: CheatSecretLair, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatSecretLair, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatSecretLair, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0062]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: CheatEndGame
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: CheatEndGame)
+ title: "Cheat End Game"
+
+  -----
+  Action: "Look at" (#0, layer: CheatEndGame, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: CheatEndGame, state: main)
+
+  -----
+  Action: "Use" (#2, layer: CheatEndGame, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0062]
+   "Cheat"
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "ted"
+
+
+
+
+TREES
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0265]
+   "No More Help Please!"
+
+  -----
+  Topic: "_25" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0188]
+   "Help me!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0189]
+   "This is the tutorial, you don't need any more help"
+
+  -----
+  Topic: "_26" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0190]
+   "How do I stop the help?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0191]
+   "The first option is always the way to either close the help"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0192]
+   "Or leave the in-depth section of the help"
+
+--------------------------------------------------
+- Tree: SomeGuy
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: SomeGuy)
+
+  -----
+  Topic: "_1" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0146]
+   "I've learnt enough!"
+
+  -----
+  Topic: "_8" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0164]
+   "How do I know what I can interact with in the room?"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0165]
+   "When you move your mouse pointer around the room."
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0166]
+   "When the mouse is over something you can interact with"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0167]
+   "At the bottom of the screen you will see a text description of what the mouse is over."
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0168]
+   "Note, you can not interact with your character like this."
+
+  -----
+  Topic: "_3" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0148]
+   "Tell me how to pick things up"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0198]
+   "Lift with your legs, not your back....oh, you mean in the game!"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0152]
+   "If you see something in the room you think you can pick up"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0153]
+   "Just use it like you would any other item"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0154]
+   "If it can be picked up, you will."
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0155]
+   "It will appear in your inventory"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0161]
+   "Try picking up that book"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0203]
+   "You must end the conversation before you can interact with anything else"
+
+  -----
+  Topic: "_4" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0149]
+   "Tell me how to use my inventory"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0156]
+   "Any item you pick up appears in your inventory"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0157]
+   "You can view your inventory by pressing the chest icon"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0158]
+   "Which is at the bottom right of the screen"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0159]
+   "Or you can press 'i' on your keyboard"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0161]
+   "Try picking up that book"
+
+  -----
+  Topic: "_7" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0160]
+   "Tell me how to use things in my inventory"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0162]
+   "You can look at and use items while they are still in you inventory"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0163]
+   "This works exactly the same as items in the room"
+
+  -----
+  Topic: "_9" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0170]
+   "How do I use things from my inventory on things in the room?"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0171]
+   "A single click on an item in your inventory will make it your cursor"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0172]
+   "You can now single click any interactive item and it will attempt to use the item on it."
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0173]
+   "If you no longer want the item on your cursor"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0174]
+   "Double click on an area with no interactive items to return it to your inventory"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0175]
+   "Try using the book on me"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0176]
+   "This is how you give items to people"
+
+  -----
+  Topic: "_10" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0199]
+   "Press the bright yellow arrow to see more dialogue options"
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0202]
+   ""
+
+  -----
+  Topic: "_5" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0150]
+   "Tell me about the help system"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0178]
+   "In the top right of the screen is a small image of your character"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0179]
+   "A single press on this will open a dialog, just like if you were speaking to someone"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0180]
+   "From this you can get help on the room you are currently in"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0181]
+   "Try it now"
+
+  -----
+  Topic: "_6" (tree: SomeGuy, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Tutorial.swf:Tutorial0151]
+   "Tell me about the menu"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0182]
+   "In the top left of the screen is a menu"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0183]
+   "You can press it, or use the 'M' on your keyboard"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0184]
+   "From the menu you can save your game"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0185]
+   "Load a game"
+
+   - Dialog [puppet: Guy, voice:voice/V_Tutorial.swf:Tutorial0186]
+   "Or turn off the audio"
+
+
+
+
+_avatar,"It's a full bottle of water for one of those water dispensers.",voice/V_Tutorial.swf:Tutorial0037
+_avatar,"Hmm, water.",voice/V_Tutorial.swf:Tutorial0038
+_avatar,"I was thirsty.",voice/V_Tutorial.swf:Tutorial0120
+_avatar,"Now let's try talking to the guy that just came in.",voice/V_Tutorial.swf:Tutorial0121
+_avatar,"Bring up the pop-up menu like previously",voice/V_Tutorial.swf:Tutorial0125
+_avatar,"This time select the mouth icon",voice/V_Tutorial.swf:Tutorial0126
+_avatar,"At the left hand bottom of the screen will be a list of things you can say",voice/V_Tutorial.swf:Tutorial0127
+_avatar,"Select the one you want to say",voice/V_Tutorial.swf:Tutorial0128
+_avatar,"You have just started a short tutorial.",voice/V_Tutorial.swf:Tutorial0039
+_avatar,"You have just learnt how to look at anything in the room. Looking at an item will find more details about it, and you may find useful details about it.",voice/V_Tutorial.swf:Tutorial0040
+_avatar,"Let's try using the water bottle",voice/V_Tutorial.swf:Tutorial0115
+_avatar,"Move the mouse over the bottle",voice/V_Tutorial.swf:Tutorial0116
+_avatar,"Hold the mouse button down",voice/V_Tutorial.swf:Tutorial0117
+_avatar,"Select the hand Icon",voice/V_Tutorial.swf:Tutorial0118
+_avatar,"Release the mouse button",voice/V_Tutorial.swf:Tutorial0119
+_avatar,"I'm not talking to that!",voice/V_Tutorial.swf:Tutorial0052
+_avatar,"I see no use for that.",voice/V_Tutorial.swf:Tutorial0053
+_avatar,"Nothing of interest",voice/V_Tutorial.swf:Tutorial0036
+_avatar,"I'm not talking to that!",voice/V_Tutorial.swf:Tutorial0052
+_avatar,"I see no use for that.",voice/V_Tutorial.swf:Tutorial0053
+_avatar,"I can't go that way",voice/V_Tutorial.swf:Tutorial0195
+_avatar,"I'm not disobeying that sign",voice/V_Tutorial.swf:Tutorial0196
+_avatar,"It's just some guy",voice/V_Tutorial.swf:Tutorial0123
+_avatar,"Hi",voice/V_Tutorial.swf:Tutorial0143
+Guy,"Hi, I'm your tutor",voice/V_Tutorial.swf:Tutorial0144
+Guy,"Tell me what you want to learn about.",voice/V_Tutorial.swf:Tutorial0145
+_avatar,"I can't use people",voice/V_Tutorial.swf:Tutorial0122
+Guy,"Thanks, I wanted something to read",voice/V_Tutorial.swf:Tutorial0177
+_avatar,"You are skipping the tutorial",voice/V_Tutorial.swf:Tutorial0129
+_avatar,"I hope you know what you are doing!",voice/V_Tutorial.swf:Tutorial0130
+_avatar,"It's a book",voice/V_Tutorial.swf:Tutorial0197
+_avatar,"I'll just take this book",voice/V_Tutorial.swf:Tutorial0193
+_avatar,"I put it in the inventory",voice/V_Tutorial.swf:Tutorial0194
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0055
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0056
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0057
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0058
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0059
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0060
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0061
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0061
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0062
+_avatar,"Cheat",voice/V_Tutorial.swf:Tutorial0062
+_avatar,"No More Help Please!",voice/V_Tutorial.swf:Tutorial0265
+_avatar,"Help me!",voice/V_Tutorial.swf:Tutorial0188
+_avatar,"This is the tutorial, you don't need any more help",voice/V_Tutorial.swf:Tutorial0189
+_avatar,"How do I stop the help?",voice/V_Tutorial.swf:Tutorial0190
+_avatar,"The first option is always the way to either close the help",voice/V_Tutorial.swf:Tutorial0191
+_avatar,"Or leave the in-depth section of the help",voice/V_Tutorial.swf:Tutorial0192
+_avatar,"I've learnt enough!",voice/V_Tutorial.swf:Tutorial0146
+_avatar,"How do I know what I can interact with in the room?",voice/V_Tutorial.swf:Tutorial0164
+Guy,"When you move your mouse pointer around the room.",voice/V_Tutorial.swf:Tutorial0165
+Guy,"When the mouse is over something you can interact with",voice/V_Tutorial.swf:Tutorial0166
+Guy,"At the bottom of the screen you will see a text description of what the mouse is over.",voice/V_Tutorial.swf:Tutorial0167
+Guy,"Note, you can not interact with your character like this.",voice/V_Tutorial.swf:Tutorial0168
+_avatar,"Tell me how to pick things up",voice/V_Tutorial.swf:Tutorial0148
+Guy,"Lift with your legs, not your back....oh, you mean in the game!",voice/V_Tutorial.swf:Tutorial0198
+Guy,"If you see something in the room you think you can pick up",voice/V_Tutorial.swf:Tutorial0152
+Guy,"Just use it like you would any other item",voice/V_Tutorial.swf:Tutorial0153
+Guy,"If it can be picked up, you will.",voice/V_Tutorial.swf:Tutorial0154
+Guy,"It will appear in your inventory",voice/V_Tutorial.swf:Tutorial0155
+Guy,"Try picking up that book",voice/V_Tutorial.swf:Tutorial0161
+Guy,"You must end the conversation before you can interact with anything else",voice/V_Tutorial.swf:Tutorial0203
+_avatar,"Tell me how to use my inventory",voice/V_Tutorial.swf:Tutorial0149
+Guy,"Any item you pick up appears in your inventory",voice/V_Tutorial.swf:Tutorial0156
+Guy,"You can view your inventory by pressing the chest icon",voice/V_Tutorial.swf:Tutorial0157
+Guy,"Which is at the bottom right of the screen",voice/V_Tutorial.swf:Tutorial0158
+Guy,"Or you can press 'i' on your keyboard",voice/V_Tutorial.swf:Tutorial0159
+Guy,"Try picking up that book",voice/V_Tutorial.swf:Tutorial0161
+_avatar,"Tell me how to use things in my inventory",voice/V_Tutorial.swf:Tutorial0160
+Guy,"You can look at and use items while they are still in you inventory",voice/V_Tutorial.swf:Tutorial0162
+Guy,"This works exactly the same as items in the room",voice/V_Tutorial.swf:Tutorial0163
+_avatar,"How do I use things from my inventory on things in the room?",voice/V_Tutorial.swf:Tutorial0170
+Guy,"A single click on an item in your inventory will make it your cursor",voice/V_Tutorial.swf:Tutorial0171
+Guy,"You can now single click any interactive item and it will attempt to use the item on it.",voice/V_Tutorial.swf:Tutorial0172
+Guy,"If you no longer want the item on your cursor",voice/V_Tutorial.swf:Tutorial0173
+Guy,"Double click on an area with no interactive items to return it to your inventory",voice/V_Tutorial.swf:Tutorial0174
+Guy,"Try using the book on me",voice/V_Tutorial.swf:Tutorial0175
+Guy,"This is how you give items to people",voice/V_Tutorial.swf:Tutorial0176
+_avatar,"Press the bright yellow arrow to see more dialogue options",voice/V_Tutorial.swf:Tutorial0199
+_avatar,"",voice/V_Tutorial.swf:Tutorial0202
+_avatar,"Tell me about the help system",voice/V_Tutorial.swf:Tutorial0150
+Guy,"In the top right of the screen is a small image of your character",voice/V_Tutorial.swf:Tutorial0178
+Guy,"A single press on this will open a dialog, just like if you were speaking to someone",voice/V_Tutorial.swf:Tutorial0179
+Guy,"From this you can get help on the room you are currently in",voice/V_Tutorial.swf:Tutorial0180
+Guy,"Try it now",voice/V_Tutorial.swf:Tutorial0181
+_avatar,"Tell me about the menu",voice/V_Tutorial.swf:Tutorial0151
+Guy,"In the top left of the screen is a menu",voice/V_Tutorial.swf:Tutorial0182
+Guy,"You can press it, or use the 'M' on your keyboard",voice/V_Tutorial.swf:Tutorial0183
+Guy,"From the menu you can save your game",voice/V_Tutorial.swf:Tutorial0184
+Guy,"Load a game",voice/V_Tutorial.swf:Tutorial0185
+Guy,"Or turn off the audio",voice/V_Tutorial.swf:Tutorial0186
+
+
+
+addSound( Tutorial0037 );
+addSound( Tutorial0038 );
+addSound( Tutorial0120 );
+addSound( Tutorial0121 );
+addSound( Tutorial0125 );
+addSound( Tutorial0126 );
+addSound( Tutorial0127 );
+addSound( Tutorial0128 );
+addSound( Tutorial0039 );
+addSound( Tutorial0040 );
+addSound( Tutorial0115 );
+addSound( Tutorial0116 );
+addSound( Tutorial0117 );
+addSound( Tutorial0118 );
+addSound( Tutorial0119 );
+addSound( Tutorial0052 );
+addSound( Tutorial0053 );
+addSound( Tutorial0036 );
+addSound( Tutorial0052 );
+addSound( Tutorial0053 );
+addSound( Tutorial0195 );
+addSound( Tutorial0196 );
+addSound( Tutorial0123 );
+addSound( Tutorial0143 );
+addSound( Tutorial0144 );
+addSound( Tutorial0145 );
+addSound( Tutorial0122 );
+addSound( Tutorial0177 );
+addSound( Tutorial0129 );
+addSound( Tutorial0130 );
+addSound( Tutorial0197 );
+addSound( Tutorial0193 );
+addSound( Tutorial0194 );
+addSound( Tutorial0055 );
+addSound( Tutorial0056 );
+addSound( Tutorial0057 );
+addSound( Tutorial0058 );
+addSound( Tutorial0059 );
+addSound( Tutorial0060 );
+addSound( Tutorial0061 );
+addSound( Tutorial0061 );
+addSound( Tutorial0062 );
+addSound( Tutorial0062 );
+addSound( Tutorial0265 );
+addSound( Tutorial0188 );
+addSound( Tutorial0189 );
+addSound( Tutorial0190 );
+addSound( Tutorial0191 );
+addSound( Tutorial0192 );
+addSound( Tutorial0146 );
+addSound( Tutorial0164 );
+addSound( Tutorial0165 );
+addSound( Tutorial0166 );
+addSound( Tutorial0167 );
+addSound( Tutorial0168 );
+addSound( Tutorial0148 );
+addSound( Tutorial0198 );
+addSound( Tutorial0152 );
+addSound( Tutorial0153 );
+addSound( Tutorial0154 );
+addSound( Tutorial0155 );
+addSound( Tutorial0161 );
+addSound( Tutorial0203 );
+addSound( Tutorial0149 );
+addSound( Tutorial0156 );
+addSound( Tutorial0157 );
+addSound( Tutorial0158 );
+addSound( Tutorial0159 );
+addSound( Tutorial0161 );
+addSound( Tutorial0160 );
+addSound( Tutorial0162 );
+addSound( Tutorial0163 );
+addSound( Tutorial0170 );
+addSound( Tutorial0171 );
+addSound( Tutorial0172 );
+addSound( Tutorial0173 );
+addSound( Tutorial0174 );
+addSound( Tutorial0175 );
+addSound( Tutorial0176 );
+addSound( Tutorial0199 );
+addSound( Tutorial0202 );
+addSound( Tutorial0150 );
+addSound( Tutorial0178 );
+addSound( Tutorial0179 );
+addSound( Tutorial0180 );
+addSound( Tutorial0181 );
+addSound( Tutorial0151 );
+addSound( Tutorial0182 );
+addSound( Tutorial0183 );
+addSound( Tutorial0184 );
+addSound( Tutorial0185 );
+addSound( Tutorial0186 );

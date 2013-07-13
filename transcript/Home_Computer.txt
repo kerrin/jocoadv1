@@ -35,8 +35,8 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Monitor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0000]
-   "It the login screen"
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0000]
+   "It's the login screen"
 
   -----
   Action: "Talk to" (#1, layer: Monitor, state: main)
@@ -44,7 +44,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Monitor, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0001]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0001]
    "It's on already."
 
  --------------------------------------------------
@@ -54,7 +54,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Monitor, state: LoggedOn)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0002]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0002]
    "It's OS Win."
 
   -----
@@ -63,7 +63,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Monitor, state: LoggedOn)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0003]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0003]
    "It's on already."
 
  --------------------------------------------------
@@ -73,16 +73,16 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Monitor, state: LoggedOnEmail)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0004]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0004]
    "I don't have any emails except one that arrived today and a load of spam."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0005]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0005]
    "That is very odd."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0006]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0006]
    "I wonder if anyone deleted them."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0007]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0007]
    "The email from today is a joke about pirates."
 
   -----
@@ -91,7 +91,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Monitor, state: LoggedOnEmail)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0008]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0008]
    "It's on already."
 
  --------------------------------------------------
@@ -101,13 +101,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Monitor, state: LoggedOnContacts)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0009]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0009]
    "I don't have any contacts."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0010]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0010]
    "I wonder if someone deleted them."
 
-   - Dialog [puppet: ego, voice::Home_Computer0080]
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0080]
    "Na, you just don't have any friends."
 
   -----
@@ -116,7 +116,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Monitor, state: LoggedOnContacts)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0011]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0011]
    "It's on already."
 
  --------------------------------------------------
@@ -126,16 +126,16 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Monitor, state: LoggedOnCalendar)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0012]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0012]
    "Nothing in my calender."
 
-   - Dialog [puppet: ego, voice::Home_Computer0081]
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0081]
    "You must just stay in and do nothing all day."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0082]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0082]
    "I thought I'd be a cool person."
 
-   - Dialog [puppet: ego, voice::Home_Computer0083]
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0083]
    "Cool people don't say they are cool."
 
   -----
@@ -144,7 +144,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Monitor, state: LoggedOnCalendar)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0013]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0013]
    "It's on already."
 
  --------------------------------------------------
@@ -154,13 +154,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Monitor, state: LoggedOnWebBrowser)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0014]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0014]
    "It's SafIE."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0015]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0015]
    "I remember when Apple bought Microsoft and merged Safari and IE to make the best browser ever."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0016]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0016]
    "Of course now it's back to being rubbish again."
 
   -----
@@ -169,7 +169,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Monitor, state: LoggedOnWebBrowser)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0017]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0017]
    "It's on already."
 
  --------------------------------------------------
@@ -179,10 +179,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Monitor, state: LoggedOnWebBrowserJoCo)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0018]
-   "It's Jonathan Coultons website."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0018]
+   "It's Jonathan Coulton's website."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0019]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0019]
    "He is releasing a song a week."
 
   -----
@@ -191,7 +191,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Monitor, state: LoggedOnWebBrowserJoCo)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0020]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0020]
    "It's on already."
 
  --------------------------------------------------
@@ -201,7 +201,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Monitor, state: LoggedOnWebBrowserIBay)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0021]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0021]
    "It's iBay. The page is showing auctions nearing completion."
 
   -----
@@ -210,7 +210,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Monitor, state: LoggedOnWebBrowserIBay)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0022]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0022]
    "It's on already."
 
 
@@ -224,7 +224,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Keyboard, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0023]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0023]
    "It's a keyboard."
 
   -----
@@ -244,7 +244,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: iPodDock, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0077]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0077]
    "It's a dock for an iPod."
 
   -----
@@ -256,7 +256,7 @@ LAYERS
   -----
   Item: "IPod", "" (layer: iPodDock, state: main)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0024]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0024]
    "It won't sync until I've logged on."
 
  --------------------------------------------------
@@ -266,7 +266,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: iPodDock, state: syncable)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0078]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0078]
    "It's a dock for an iPod."
 
   -----
@@ -278,8 +278,8 @@ LAYERS
   -----
   Item: "IPod", "" (layer: iPodDock, state: syncable)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0025]
-   "It has syncronied with my music collection."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0025]
+   "It has synchronized with my music collection."
 
 
 --------------------------------------------------
@@ -305,7 +305,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Email, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0026]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0026]
    "It my email program, 'Planner'"
 
   -----
@@ -338,8 +338,8 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: EmailContacts, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0027]
-   "It my email program, 'Planner'"
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0027]
+   "It's my email program, 'Planner'"
 
   -----
   Action: "Talk to" (#1, layer: EmailContacts, state: On)
@@ -371,7 +371,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: EmailCalendar, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0028]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0028]
    "It my email program, 'Planner'"
 
   -----
@@ -434,11 +434,11 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: TodSong, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0029]
-   "It's last weeks Thing a Week song. Todd The T-1000"
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0029]
+   "It's last week's Thing-a-Week song. Todd The T-1000"
 
-   - Dialog [puppet: ego, voice::Home_Computer0076]
-   "Does Jonathan know Sarahs friend, it seems to be about him?"
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0076]
+   "Does Jonathan know Sarah's friend, it seems to be about him?"
 
   -----
   Action: "Talk to" (#1, layer: TodSong, state: On)
@@ -446,7 +446,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: TodSong, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0030]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0030]
    "I'll download it."
 
  --------------------------------------------------
@@ -456,7 +456,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: TodSong, state: OnDownloaded)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0031]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0031]
    "It's last weeks Thing a Week song. Tod The T-1000"
 
   -----
@@ -465,7 +465,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: TodSong, state: OnDownloaded)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0032]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0032]
    "I have already downloaded it."
 
 
@@ -492,8 +492,8 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: LaptopSong, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0033]
-   "It's this weeks Thing a Week song. A Laptop Like You."
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0033]
+   "It's this week's Thing-a-Week song. A Laptop Like You."
 
   -----
   Action: "Talk to" (#1, layer: LaptopSong, state: On)
@@ -501,7 +501,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: LaptopSong, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0034]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0034]
    "I'll download it."
 
  --------------------------------------------------
@@ -511,7 +511,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: LaptopSong, state: OnDownloaded)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0035]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0035]
    "It's this weeks Thing a Week song. A Laptop Like You."
 
   -----
@@ -520,7 +520,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: LaptopSong, state: OnDownloaded)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0036]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0036]
    "I have already downloaded it."
 
 
@@ -667,17 +667,17 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Sonic, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0037]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0037]
    "It's the original Sonic the Hedgehog"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0038]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0038]
    "I must buy."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0039]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0039]
    "The auction is nearly over."
 
-   - Dialog [puppet: ego, voice::Home_Computer0075]
-   "Oh, your one of those people who thinks the games were better in the old days."
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0075]
+   "Oh, you're one of those people who thinks the games were better in the old days."
 
   -----
   Action: "Talk to" (#1, layer: Sonic, state: On)
@@ -685,19 +685,19 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Sonic, state: On)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0040]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0040]
    "I got my bid in just before the end of the auction."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0041]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0041]
    "Almost finished...."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0042]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0042]
    "I won the auction!"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0043]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0043]
    "I'll just pay."
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0044]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0044]
    "The auction says same day delivery."
 
  --------------------------------------------------
@@ -707,10 +707,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Sonic, state: OnBought)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0045]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0045]
    "It's just an old Sonic Youth CD"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0046]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0046]
    "I could buy it new cheaper than that!"
 
   -----
@@ -719,8 +719,25 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Sonic, state: OnBought)
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0047]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0047]
    "Just a load of junk I'm not interested in."
+
+
+--------------------------------------------------
+- Layer: ego
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: ego)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: ego, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: ego, state: main)
+
+  -----
+  Action: "Use" (#2, layer: ego, state: main)
 
 
 
@@ -735,212 +752,527 @@ TREES
   -----
   Topic: "_0" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0048]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0048]
    "Password"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0049]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0049]
    "Nope that didn't work."
 
   -----
   Topic: "_2" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0050]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0050]
    "123456"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0051]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0051]
    "Nope that didn't work."
 
   -----
   Topic: "_3" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0052]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0052]
    "Enterprise"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0053]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0053]
    "Nope that didn't work."
 
   -----
   Topic: "_4" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0054]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0054]
    "Spiderman"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0055]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0055]
    "Nope that didn't work."
 
   -----
   Topic: "_5" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0056]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0056]
    "Computer"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0057]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0057]
    "Nope that didn't work."
 
   -----
   Topic: "_6" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0058]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0058]
    "Sarah"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0059]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0059]
    "Nope that didn't work."
 
   -----
   Topic: "_7" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0060]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0060]
    "Ted"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0061]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0061]
    "Nope that didn't work."
 
   -----
   Topic: "_8" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0062]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0062]
    "Martin"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0063]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0063]
    "Nope that didn't work."
 
   -----
   Topic: "_9" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0064]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0064]
    "Robert"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0065]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0065]
    "Nope that didn't work."
 
   -----
   Topic: "_10" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0066]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0066]
    "Mary"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0067]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0067]
    "Nope that didn't work."
 
   -----
   Topic: "_11" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0068]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0068]
    "BSG"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0069]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0069]
    "That worked!"
 
   -----
   Topic: "_13" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0070]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0070]
    "BSG75"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0071]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0071]
    "Nope that didn't work."
 
   -----
   Topic: "_14" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0072]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0072]
    "Galactica"
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0073]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0073]
    "Nope that didn't work."
 
   -----
   Topic: "_12" (tree: GuessPassword, tier: )
 
-   - Dialog [puppet: _avatar, voice::Home_Computer0074]
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0074]
    "I give up"
 
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0084]
+   "No More Help Please"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_3" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0089]
+   "Enough help with logging on"
+
+  -----
+  Topic: "_4" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0091]
+   "None of the passwords worked. Now what?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0092]
+   "I guess you need to find a way to jog your memory"
+
+  -----
+  Topic: "_5" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0093]
+   "How do I jog my memory?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0094]
+   "Look around your house, office and speak to people you know."
+
+  -----
+  Topic: "_6" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0095]
+   "Just tell me what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0096]
+   "You need to talk to your friend Tom"
+
+  -----
+  Topic: "_1" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0087]
+   "How do I logon?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0088]
+   "You need to remember your password"
+
+  -----
+  Topic: "_2" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0085]
+   "Are there any pirate jokes to be found?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0086]
+   "I hear that people are always emailing jokes around, so maybe that would be a good place to look"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_8" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0099]
+   "Enough hints on downloading things"
+
+  -----
+  Topic: "_9" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0100]
+   "What can I download?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0101]
+   "You could download some songs"
+
+  -----
+  Topic: "_10" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0102]
+   "Just tell me what to do."
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0103]
+   "Start up the web browser and go to the Jonathan Coulton web page"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0104]
+   "You can download two songs"
+
+  -----
+  Topic: "_7" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0097]
+   "Can I download anything?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0098]
+   "Yes"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_12" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0108]
+   "No more hints please"
+
+  -----
+  Topic: "_13" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0109]
+   "What else can I do?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0110]
+   "You can buy stuff on iBuy"
+
+  -----
+  Topic: "_11" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0106]
+   "Can I do anything else?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0107]
+   "Yes"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_15" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0113]
+   "Enough hints"
+
+  -----
+  Topic: "_16" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0115]
+   "How do I get the songs elsewhere?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0116]
+   "You need an MP3 player, maybe someone has one you could borrow"
+
+  -----
+  Topic: "_17" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0117]
+   "Tell me what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0118]
+   "You have an iPod, and there is an iPod dock."
+
+  -----
+  Topic: "_14" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_Home_Computer.swf:Home_Computer0111]
+   "I downloaded songs, now what?"
+
+   - Dialog [puppet: ego, voice:voice/V_Home_Computer.swf:Home_Computer0112]
+   "Well you need a song somewhere that isn't here"
 
 
 
-_avatar,"It the login screen",:Home_Computer0000
-_avatar,"It's on already.",:Home_Computer0001
-_avatar,"It's OS Win.",:Home_Computer0002
-_avatar,"It's on already.",:Home_Computer0003
-_avatar,"I don't have any emails except one that arrived today and a load of spam.",:Home_Computer0004
-_avatar,"That is very odd.",:Home_Computer0005
-_avatar,"I wonder if anyone deleted them.",:Home_Computer0006
-_avatar,"The email from today is a joke about pirates.",:Home_Computer0007
-_avatar,"It's on already.",:Home_Computer0008
-_avatar,"I don't have any contacts.",:Home_Computer0009
-_avatar,"I wonder if someone deleted them.",:Home_Computer0010
-ego,"Na, you just don't have any friends.",:Home_Computer0080
-_avatar,"It's on already.",:Home_Computer0011
-_avatar,"Nothing in my calender.",:Home_Computer0012
-ego,"You must just stay in and do nothing all day.",:Home_Computer0081
-_avatar,"I thought I'd be a cool person.",:Home_Computer0082
-ego,"Cool people don't say they are cool.",:Home_Computer0083
-_avatar,"It's on already.",:Home_Computer0013
-_avatar,"It's SafIE.",:Home_Computer0014
-_avatar,"I remember when Apple bought Microsoft and merged Safari and IE to make the best browser ever.",:Home_Computer0015
-_avatar,"Of course now it's back to being rubbish again.",:Home_Computer0016
-_avatar,"It's on already.",:Home_Computer0017
-_avatar,"It's Jonathan Coultons website.",:Home_Computer0018
-_avatar,"He is releasing a song a week.",:Home_Computer0019
-_avatar,"It's on already.",:Home_Computer0020
-_avatar,"It's iBay. The page is showing auctions nearing completion.",:Home_Computer0021
-_avatar,"It's on already.",:Home_Computer0022
-_avatar,"It's a keyboard.",:Home_Computer0023
-_avatar,"It's a dock for an iPod.",:Home_Computer0077
-_avatar,"It won't sync until I've logged on.",:Home_Computer0024
-_avatar,"It's a dock for an iPod.",:Home_Computer0078
-_avatar,"It has syncronied with my music collection.",:Home_Computer0025
-_avatar,"It my email program, 'Planner'",:Home_Computer0026
-_avatar,"It my email program, 'Planner'",:Home_Computer0027
-_avatar,"It my email program, 'Planner'",:Home_Computer0028
-_avatar,"It's last weeks Thing a Week song. Todd The T-1000",:Home_Computer0029
-ego,"Does Jonathan know Sarahs friend, it seems to be about him?",:Home_Computer0076
-_avatar,"I'll download it.",:Home_Computer0030
-_avatar,"It's last weeks Thing a Week song. Tod The T-1000",:Home_Computer0031
-_avatar,"I have already downloaded it.",:Home_Computer0032
-_avatar,"It's this weeks Thing a Week song. A Laptop Like You.",:Home_Computer0033
-_avatar,"I'll download it.",:Home_Computer0034
-_avatar,"It's this weeks Thing a Week song. A Laptop Like You.",:Home_Computer0035
-_avatar,"I have already downloaded it.",:Home_Computer0036
-_avatar,"It's the original Sonic the Hedgehog",:Home_Computer0037
-_avatar,"I must buy.",:Home_Computer0038
-_avatar,"The auction is nearly over.",:Home_Computer0039
-ego,"Oh, your one of those people who thinks the games were better in the old days.",:Home_Computer0075
-_avatar,"I got my bid in just before the end of the auction.",:Home_Computer0040
-_avatar,"Almost finished....",:Home_Computer0041
-_avatar,"I won the auction!",:Home_Computer0042
-_avatar,"I'll just pay.",:Home_Computer0043
-_avatar,"The auction says same day delivery.",:Home_Computer0044
-_avatar,"It's just an old Sonic Youth CD",:Home_Computer0045
-_avatar,"I could buy it new cheaper than that!",:Home_Computer0046
-_avatar,"Just a load of junk I'm not interested in.",:Home_Computer0047
-_avatar,"Password",:Home_Computer0048
-_avatar,"Nope that didn't work.",:Home_Computer0049
-_avatar,"123456",:Home_Computer0050
-_avatar,"Nope that didn't work.",:Home_Computer0051
-_avatar,"Enterprise",:Home_Computer0052
-_avatar,"Nope that didn't work.",:Home_Computer0053
-_avatar,"Spiderman",:Home_Computer0054
-_avatar,"Nope that didn't work.",:Home_Computer0055
-_avatar,"Computer",:Home_Computer0056
-_avatar,"Nope that didn't work.",:Home_Computer0057
-_avatar,"Sarah",:Home_Computer0058
-_avatar,"Nope that didn't work.",:Home_Computer0059
-_avatar,"Ted",:Home_Computer0060
-_avatar,"Nope that didn't work.",:Home_Computer0061
-_avatar,"Martin",:Home_Computer0062
-_avatar,"Nope that didn't work.",:Home_Computer0063
-_avatar,"Robert",:Home_Computer0064
-_avatar,"Nope that didn't work.",:Home_Computer0065
-_avatar,"Mary",:Home_Computer0066
-_avatar,"Nope that didn't work.",:Home_Computer0067
-_avatar,"BSG",:Home_Computer0068
-_avatar,"That worked!",:Home_Computer0069
-_avatar,"BSG75",:Home_Computer0070
-_avatar,"Nope that didn't work.",:Home_Computer0071
-_avatar,"Galactica",:Home_Computer0072
-_avatar,"Nope that didn't work.",:Home_Computer0073
-_avatar,"I give up",:Home_Computer0074
+
+_avatar,"It's the login screen",voice/V_Home_Computer.swf:Home_Computer0000
+_avatar,"It's on already.",voice/V_Home_Computer.swf:Home_Computer0001
+_avatar,"It's OS Win.",voice/V_Home_Computer.swf:Home_Computer0002
+_avatar,"It's on already.",voice/V_Home_Computer.swf:Home_Computer0003
+_avatar,"I don't have any emails except one that arrived today and a load of spam.",voice/V_Home_Computer.swf:Home_Computer0004
+_avatar,"That is very odd.",voice/V_Home_Computer.swf:Home_Computer0005
+_avatar,"I wonder if anyone deleted them.",voice/V_Home_Computer.swf:Home_Computer0006
+_avatar,"The email from today is a joke about pirates.",voice/V_Home_Computer.swf:Home_Computer0007
+_avatar,"It's on already.",voice/V_Home_Computer.swf:Home_Computer0008
+_avatar,"I don't have any contacts.",voice/V_Home_Computer.swf:Home_Computer0009
+_avatar,"I wonder if someone deleted them.",voice/V_Home_Computer.swf:Home_Computer0010
+ego,"Na, you just don't have any friends.",voice/V_Home_Computer.swf:Home_Computer0080
+_avatar,"It's on already.",voice/V_Home_Computer.swf:Home_Computer0011
+_avatar,"Nothing in my calender.",voice/V_Home_Computer.swf:Home_Computer0012
+ego,"You must just stay in and do nothing all day.",voice/V_Home_Computer.swf:Home_Computer0081
+_avatar,"I thought I'd be a cool person.",voice/V_Home_Computer.swf:Home_Computer0082
+ego,"Cool people don't say they are cool.",voice/V_Home_Computer.swf:Home_Computer0083
+_avatar,"It's on already.",voice/V_Home_Computer.swf:Home_Computer0013
+_avatar,"It's SafIE.",voice/V_Home_Computer.swf:Home_Computer0014
+_avatar,"I remember when Apple bought Microsoft and merged Safari and IE to make the best browser ever.",voice/V_Home_Computer.swf:Home_Computer0015
+_avatar,"Of course now it's back to being rubbish again.",voice/V_Home_Computer.swf:Home_Computer0016
+_avatar,"It's on already.",voice/V_Home_Computer.swf:Home_Computer0017
+_avatar,"It's Jonathan Coulton's website.",voice/V_Home_Computer.swf:Home_Computer0018
+_avatar,"He is releasing a song a week.",voice/V_Home_Computer.swf:Home_Computer0019
+_avatar,"It's on already.",voice/V_Home_Computer.swf:Home_Computer0020
+_avatar,"It's iBay. The page is showing auctions nearing completion.",voice/V_Home_Computer.swf:Home_Computer0021
+_avatar,"It's on already.",voice/V_Home_Computer.swf:Home_Computer0022
+_avatar,"It's a keyboard.",voice/V_Home_Computer.swf:Home_Computer0023
+_avatar,"It's a dock for an iPod.",voice/V_Home_Computer.swf:Home_Computer0077
+_avatar,"It won't sync until I've logged on.",voice/V_Home_Computer.swf:Home_Computer0024
+_avatar,"It's a dock for an iPod.",voice/V_Home_Computer.swf:Home_Computer0078
+_avatar,"It has synchronized with my music collection.",voice/V_Home_Computer.swf:Home_Computer0025
+_avatar,"It my email program, 'Planner'",voice/V_Home_Computer.swf:Home_Computer0026
+_avatar,"It's my email program, 'Planner'",voice/V_Home_Computer.swf:Home_Computer0027
+_avatar,"It my email program, 'Planner'",voice/V_Home_Computer.swf:Home_Computer0028
+_avatar,"It's last week's Thing-a-Week song. Todd The T-1000",voice/V_Home_Computer.swf:Home_Computer0029
+ego,"Does Jonathan know Sarah's friend, it seems to be about him?",voice/V_Home_Computer.swf:Home_Computer0076
+_avatar,"I'll download it.",voice/V_Home_Computer.swf:Home_Computer0030
+_avatar,"It's last weeks Thing a Week song. Tod The T-1000",voice/V_Home_Computer.swf:Home_Computer0031
+_avatar,"I have already downloaded it.",voice/V_Home_Computer.swf:Home_Computer0032
+_avatar,"It's this week's Thing-a-Week song. A Laptop Like You.",voice/V_Home_Computer.swf:Home_Computer0033
+_avatar,"I'll download it.",voice/V_Home_Computer.swf:Home_Computer0034
+_avatar,"It's this weeks Thing a Week song. A Laptop Like You.",voice/V_Home_Computer.swf:Home_Computer0035
+_avatar,"I have already downloaded it.",voice/V_Home_Computer.swf:Home_Computer0036
+_avatar,"It's the original Sonic the Hedgehog",voice/V_Home_Computer.swf:Home_Computer0037
+_avatar,"I must buy.",voice/V_Home_Computer.swf:Home_Computer0038
+_avatar,"The auction is nearly over.",voice/V_Home_Computer.swf:Home_Computer0039
+ego,"Oh, you're one of those people who thinks the games were better in the old days.",voice/V_Home_Computer.swf:Home_Computer0075
+_avatar,"I got my bid in just before the end of the auction.",voice/V_Home_Computer.swf:Home_Computer0040
+_avatar,"Almost finished....",voice/V_Home_Computer.swf:Home_Computer0041
+_avatar,"I won the auction!",voice/V_Home_Computer.swf:Home_Computer0042
+_avatar,"I'll just pay.",voice/V_Home_Computer.swf:Home_Computer0043
+_avatar,"The auction says same day delivery.",voice/V_Home_Computer.swf:Home_Computer0044
+_avatar,"It's just an old Sonic Youth CD",voice/V_Home_Computer.swf:Home_Computer0045
+_avatar,"I could buy it new cheaper than that!",voice/V_Home_Computer.swf:Home_Computer0046
+_avatar,"Just a load of junk I'm not interested in.",voice/V_Home_Computer.swf:Home_Computer0047
+_avatar,"Password",voice/V_Home_Computer.swf:Home_Computer0048
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0049
+_avatar,"123456",voice/V_Home_Computer.swf:Home_Computer0050
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0051
+_avatar,"Enterprise",voice/V_Home_Computer.swf:Home_Computer0052
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0053
+_avatar,"Spiderman",voice/V_Home_Computer.swf:Home_Computer0054
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0055
+_avatar,"Computer",voice/V_Home_Computer.swf:Home_Computer0056
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0057
+_avatar,"Sarah",voice/V_Home_Computer.swf:Home_Computer0058
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0059
+_avatar,"Ted",voice/V_Home_Computer.swf:Home_Computer0060
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0061
+_avatar,"Martin",voice/V_Home_Computer.swf:Home_Computer0062
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0063
+_avatar,"Robert",voice/V_Home_Computer.swf:Home_Computer0064
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0065
+_avatar,"Mary",voice/V_Home_Computer.swf:Home_Computer0066
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0067
+_avatar,"BSG",voice/V_Home_Computer.swf:Home_Computer0068
+_avatar,"That worked!",voice/V_Home_Computer.swf:Home_Computer0069
+_avatar,"BSG75",voice/V_Home_Computer.swf:Home_Computer0070
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0071
+_avatar,"Galactica",voice/V_Home_Computer.swf:Home_Computer0072
+_avatar,"Nope that didn't work.",voice/V_Home_Computer.swf:Home_Computer0073
+_avatar,"I give up",voice/V_Home_Computer.swf:Home_Computer0074
+_avatar,"No More Help Please",voice/V_Home_Computer.swf:Home_Computer0084
+_avatar,"Enough help with logging on",voice/V_Home_Computer.swf:Home_Computer0089
+_avatar,"None of the passwords worked. Now what?",voice/V_Home_Computer.swf:Home_Computer0091
+ego,"I guess you need to find a way to jog your memory",voice/V_Home_Computer.swf:Home_Computer0092
+_avatar,"How do I jog my memory?",voice/V_Home_Computer.swf:Home_Computer0093
+ego,"Look around your house, office and speak to people you know.",voice/V_Home_Computer.swf:Home_Computer0094
+_avatar,"Just tell me what to do!",voice/V_Home_Computer.swf:Home_Computer0095
+ego,"You need to talk to your friend Tom",voice/V_Home_Computer.swf:Home_Computer0096
+_avatar,"How do I logon?",voice/V_Home_Computer.swf:Home_Computer0087
+ego,"You need to remember your password",voice/V_Home_Computer.swf:Home_Computer0088
+_avatar,"Are there any pirate jokes to be found?",voice/V_Home_Computer.swf:Home_Computer0085
+ego,"I hear that people are always emailing jokes around, so maybe that would be a good place to look",voice/V_Home_Computer.swf:Home_Computer0086
+_avatar,"Enough hints on downloading things",voice/V_Home_Computer.swf:Home_Computer0099
+_avatar,"What can I download?",voice/V_Home_Computer.swf:Home_Computer0100
+ego,"You could download some songs",voice/V_Home_Computer.swf:Home_Computer0101
+_avatar,"Just tell me what to do.",voice/V_Home_Computer.swf:Home_Computer0102
+ego,"Start up the web browser and go to the Jonathan Coulton web page",voice/V_Home_Computer.swf:Home_Computer0103
+ego,"You can download two songs",voice/V_Home_Computer.swf:Home_Computer0104
+_avatar,"Can I download anything?",voice/V_Home_Computer.swf:Home_Computer0097
+ego,"Yes",voice/V_Home_Computer.swf:Home_Computer0098
+_avatar,"No more hints please",voice/V_Home_Computer.swf:Home_Computer0108
+_avatar,"What else can I do?",voice/V_Home_Computer.swf:Home_Computer0109
+ego,"You can buy stuff on iBuy",voice/V_Home_Computer.swf:Home_Computer0110
+_avatar,"Can I do anything else?",voice/V_Home_Computer.swf:Home_Computer0106
+ego,"Yes",voice/V_Home_Computer.swf:Home_Computer0107
+_avatar,"Enough hints",voice/V_Home_Computer.swf:Home_Computer0113
+_avatar,"How do I get the songs elsewhere?",voice/V_Home_Computer.swf:Home_Computer0115
+ego,"You need an MP3 player, maybe someone has one you could borrow",voice/V_Home_Computer.swf:Home_Computer0116
+_avatar,"Tell me what to do!",voice/V_Home_Computer.swf:Home_Computer0117
+ego,"You have an iPod, and there is an iPod dock.",voice/V_Home_Computer.swf:Home_Computer0118
+_avatar,"I downloaded songs, now what?",voice/V_Home_Computer.swf:Home_Computer0111
+ego,"Well you need a song somewhere that isn't here",voice/V_Home_Computer.swf:Home_Computer0112
 
 
 
+addSound( Home_Computer0000 );
+addSound( Home_Computer0001 );
+addSound( Home_Computer0002 );
+addSound( Home_Computer0003 );
+addSound( Home_Computer0004 );
+addSound( Home_Computer0005 );
+addSound( Home_Computer0006 );
+addSound( Home_Computer0007 );
+addSound( Home_Computer0008 );
+addSound( Home_Computer0009 );
+addSound( Home_Computer0010 );
+addSound( Home_Computer0080 );
+addSound( Home_Computer0011 );
+addSound( Home_Computer0012 );
+addSound( Home_Computer0081 );
+addSound( Home_Computer0082 );
+addSound( Home_Computer0083 );
+addSound( Home_Computer0013 );
+addSound( Home_Computer0014 );
+addSound( Home_Computer0015 );
+addSound( Home_Computer0016 );
+addSound( Home_Computer0017 );
+addSound( Home_Computer0018 );
+addSound( Home_Computer0019 );
+addSound( Home_Computer0020 );
+addSound( Home_Computer0021 );
+addSound( Home_Computer0022 );
+addSound( Home_Computer0023 );
+addSound( Home_Computer0077 );
+addSound( Home_Computer0024 );
+addSound( Home_Computer0078 );
+addSound( Home_Computer0025 );
+addSound( Home_Computer0026 );
+addSound( Home_Computer0027 );
+addSound( Home_Computer0028 );
+addSound( Home_Computer0029 );
+addSound( Home_Computer0076 );
+addSound( Home_Computer0030 );
+addSound( Home_Computer0031 );
+addSound( Home_Computer0032 );
+addSound( Home_Computer0033 );
+addSound( Home_Computer0034 );
+addSound( Home_Computer0035 );
+addSound( Home_Computer0036 );
+addSound( Home_Computer0037 );
+addSound( Home_Computer0038 );
+addSound( Home_Computer0039 );
+addSound( Home_Computer0075 );
+addSound( Home_Computer0040 );
+addSound( Home_Computer0041 );
+addSound( Home_Computer0042 );
+addSound( Home_Computer0043 );
+addSound( Home_Computer0044 );
+addSound( Home_Computer0045 );
+addSound( Home_Computer0046 );
+addSound( Home_Computer0047 );
+addSound( Home_Computer0048 );
+addSound( Home_Computer0049 );
+addSound( Home_Computer0050 );
+addSound( Home_Computer0051 );
+addSound( Home_Computer0052 );
+addSound( Home_Computer0053 );
+addSound( Home_Computer0054 );
+addSound( Home_Computer0055 );
+addSound( Home_Computer0056 );
+addSound( Home_Computer0057 );
+addSound( Home_Computer0058 );
+addSound( Home_Computer0059 );
+addSound( Home_Computer0060 );
+addSound( Home_Computer0061 );
+addSound( Home_Computer0062 );
+addSound( Home_Computer0063 );
+addSound( Home_Computer0064 );
+addSound( Home_Computer0065 );
+addSound( Home_Computer0066 );
+addSound( Home_Computer0067 );
+addSound( Home_Computer0068 );
+addSound( Home_Computer0069 );
+addSound( Home_Computer0070 );
+addSound( Home_Computer0071 );
+addSound( Home_Computer0072 );
+addSound( Home_Computer0073 );
+addSound( Home_Computer0074 );
+addSound( Home_Computer0084 );
+addSound( Home_Computer0089 );
+addSound( Home_Computer0091 );
+addSound( Home_Computer0092 );
+addSound( Home_Computer0093 );
+addSound( Home_Computer0094 );
+addSound( Home_Computer0095 );
+addSound( Home_Computer0096 );
+addSound( Home_Computer0087 );
+addSound( Home_Computer0088 );
+addSound( Home_Computer0085 );
+addSound( Home_Computer0086 );
+addSound( Home_Computer0099 );
+addSound( Home_Computer0100 );
+addSound( Home_Computer0101 );
+addSound( Home_Computer0102 );
+addSound( Home_Computer0103 );
+addSound( Home_Computer0104 );
+addSound( Home_Computer0097 );
+addSound( Home_Computer0098 );
+addSound( Home_Computer0108 );
+addSound( Home_Computer0109 );
+addSound( Home_Computer0110 );
+addSound( Home_Computer0106 );
+addSound( Home_Computer0107 );
+addSound( Home_Computer0113 );
+addSound( Home_Computer0115 );
+addSound( Home_Computer0116 );
+addSound( Home_Computer0117 );
+addSound( Home_Computer0118 );
+addSound( Home_Computer0111 );
+addSound( Home_Computer0112 );

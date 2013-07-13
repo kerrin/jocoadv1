@@ -18,22 +18,22 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: DrMartinPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0000]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0000]
    "Who is this handsome guy? He looks familar."
 
-   - Dialog [puppet: ego, voice::FT_HallDay0001]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0001]
    "I've never seen him."
 
   -----
   Action: "Talk to" (#1, layer: DrMartinPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0002]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0002]
    "It is just a photo."
 
   -----
   Action: "Use" (#2, layer: DrMartinPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0003]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0003]
    "I don't need any more photos."
 
 
@@ -47,13 +47,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SecurityDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0004]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0004]
    "It's where the security guards drink coffee and chat."
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0005]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0005]
    "Oh and keep an eye on the security monitors."
 
-   - Dialog [puppet: ego, voice::FT_HallDay0006]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0006]
    "I don't see any cameras."
 
   -----
@@ -62,46 +62,46 @@ LAYERS
   -----
   Action: "Use" (#2, layer: SecurityDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0007]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0007]
    "I don't think the security guards would like me to go in there."
 
   -----
   Item: "MyKeyCard", "" (layer: SecurityDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0008]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0008]
    "It didn't work."
 
   -----
   Item: "Stethoscope", "" (layer: SecurityDoor, state: main)
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0009]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0009]
    "And that is when she said &quot;Don't pull it that hard or it will change colour!&quot;"
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0010]
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0010]
    "I don't blame her! Don't touch mine."
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0011]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0011]
    "Ha! Ha!"
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0012]
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0012]
    "Ha! Ha!"
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0013]
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0013]
    "You know, I was sure that Dr Martin found out last night about Project Pants after you came back saying he was nosing about in the operating theater."
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0014]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0014]
    "Yeah, that would be a disaster!"
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0015]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0015]
    "I felt a right idiot not knowing who he was though after you told me who he was."
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0016]
-   "Oh! Be quite, Oprah is about to start!"
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0016]
+   "Oh! Be quiet, Oprah is about to start!"
 
-   - Dialog [puppet: Oprah, voice::FT_HallDay0017]
+   - Dialog [puppet: Oprah, voice:voice/V_FT_Hall.swf:FT_HallDay0017]
    "Today we are talking to upcoming musician Jonathan Coulton."
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0018]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0018]
    "Ok, I've heard enough."
 
  --------------------------------------------------
@@ -111,13 +111,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SecurityDoor, state: stethoscope2)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0019]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0019]
    "It's where the security guards drink coffee and chat."
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0020]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0020]
    "Oh and keep an eye on the security monitors."
 
-   - Dialog [puppet: ego, voice::FT_HallDay0021]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0021]
    "I don't see any cameras."
 
   -----
@@ -126,46 +126,46 @@ LAYERS
   -----
   Action: "Use" (#2, layer: SecurityDoor, state: stethoscope2)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0022]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0022]
    "I don't think the security guards would like me to go in there."
 
   -----
   Item: "MyKeyCard", "" (layer: SecurityDoor, state: stethoscope2)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0023]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0023]
    "It didn't work."
 
   -----
   Item: "Stethoscope", "" (layer: SecurityDoor, state: stethoscope2)
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0024]
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0024]
    "And that is when he said &quot;If you stick it up there it will hurt!&quot;"
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0025]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0011]
    "Ha! Ha!"
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0026]
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0026]
    "Ha! Ha!"
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0027]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0027]
    "You know, I was sure that Dr Martin found out last night about Project Pants when I caught him nosing about in the operating theater."
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0028]
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0028]
    "We said that earlier. You're very forgetful."
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0029]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0029]
    "Yeah, I'm terrible! I'm always losing my keys."
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0030]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0030]
    "That is actually why I lost my last job. Apparently, leaving keys to highly secure areas laying around is a bad thing for a security guard to do."
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0031]
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0031]
    "Oh....er. Oprah is starting again."
 
-   - Dialog [puppet: Oprah, voice::FT_HallDay0032]
-   "So where do you get the ideas for all you songs?"
+   - Dialog [puppet: Oprah, voice:voice/V_FT_Hall.swf:FT_HallDay0032]
+   "So where do your get the ideas for all you songs?"
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0033]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0033]
    "Ok, I've heard enough."
 
  --------------------------------------------------
@@ -175,13 +175,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SecurityDoor, state: stethoscope3)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0034]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0034]
    "It's where the security guards drink coffee and chat."
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0035]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0035]
    "Oh and keep an eye on the security monitors."
 
-   - Dialog [puppet: ego, voice::FT_HallDay0036]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0036]
    "I don't see any cameras."
 
   -----
@@ -190,34 +190,34 @@ LAYERS
   -----
   Action: "Use" (#2, layer: SecurityDoor, state: stethoscope3)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0037]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0037]
    "I don't think the security guards would like me to go in there."
 
   -----
   Item: "MyKeyCard", "" (layer: SecurityDoor, state: stethoscope3)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0038]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0038]
    "It didn't work."
 
   -----
   Item: "Stethoscope", "" (layer: SecurityDoor, state: stethoscope3)
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0039]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0039]
    "You know, I was sure that Dr Martin found out last night about"
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0040]
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0040]
    "Wow, you really are forgetful!"
 
-   - Dialog [puppet: Guard, voice::FT_HallDay0041]
+   - Dialog [puppet: Guard, voice:voice/V_FT_Hall.swf:FT_HallDay0029]
    "Yeah, I'm terrible! I'm always losing my keys."
 
-   - Dialog [puppet: Guard2, voice::FT_HallDay0042]
-   "We had this conversation already. Be quite, Oprah is back!"
+   - Dialog [puppet: Guard2, voice:voice/V_FT_Hall.swf:FT_HallDay0042]
+   "We had this conversation already. Be quiet, Oprah is back!"
 
-   - Dialog [puppet: Oprah, voice::FT_HallDay0043]
-   "Just before the break we heard Jonathan play a song..."
+   - Dialog [puppet: Oprah, voice:voice/V_FT_Hall.swf:FT_HallDay0043]
+   "Alright, Just before the break we heard Jonathan play a song about the first of May. That was an interesting one."
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0044]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0044]
    "Ok, I've heard enough."
 
  --------------------------------------------------
@@ -227,13 +227,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SecurityDoor, state: oneGuard)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0045]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0045]
    "It's where the security guards drink coffee and chat."
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0046]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0046]
    "Oh and keep an eye on the security monitors."
 
-   - Dialog [puppet: ego, voice::FT_HallDay0047]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0047]
    "I don't see any cameras."
 
   -----
@@ -242,19 +242,19 @@ LAYERS
   -----
   Action: "Use" (#2, layer: SecurityDoor, state: oneGuard)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0048]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0048]
    "I don't think the security guards would like me to go in there."
 
   -----
   Item: "MyKeyCard", "" (layer: SecurityDoor, state: oneGuard)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0049]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0049]
    "It didn't work."
 
   -----
   Item: "Stethoscope", "" (layer: SecurityDoor, state: oneGuard)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0050]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0050]
    "I can't hear anything apart from the TV."
 
 
@@ -268,25 +268,25 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: BillJonesPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0051]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0051]
    "It's a picture of Bill Jones. He appears to be a security guard."
 
-   - Dialog [puppet: ego, voice::FT_HallDay0052]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0052]
    "Doesn't he look familiar?"
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0053]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0053]
    "Yeah, I can't quite remember where I have seen him before."
 
   -----
   Action: "Talk to" (#1, layer: BillJonesPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0054]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0054]
    "It is just a photo."
 
   -----
   Action: "Use" (#2, layer: BillJonesPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0055]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0055]
    "I don't need any more photos."
 
 
@@ -300,8 +300,8 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: OfficeDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0056]
-   "It's Dr Martins' door."
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0056]
+   "It's Dr Martin's door."
 
   -----
   Action: "Talk to" (#1, layer: OfficeDoor, state: main)
@@ -309,7 +309,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: OfficeDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0057]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0057]
    "It's locked."
 
   -----
@@ -322,7 +322,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: OfficeDoor, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0058]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0058]
    "It's Dr Martins' door."
 
   -----
@@ -334,39 +334,39 @@ LAYERS
   -----
   Item: "MyKeyCard", "" (layer: OfficeDoor, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0059]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0059]
    "It's open already."
 
   -----
   Item: "Stethoscope", "" (layer: OfficeDoor, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0107]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0107]
    "I can't hear anything interesting."
 
 
 --------------------------------------------------
-- Layer: FredMcCoy
+- Layer: JillMcCoy
 --------------------------------------------------
  --------------------------------------------------
- State: main (layer: FredMcCoy)
+ State: main (layer: JillMcCoy)
  title: "Photo"
 
   -----
-  Action: "Look at" (#0, layer: FredMcCoy, state: main)
+  Action: "Look at" (#0, layer: JillMcCoy, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0060]
-   "It's a photo of Fred McCoy. He appears to be a Nurse."
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0060]
+   "It's a photo of Jill McCoy. She appears to be the receptionist."
 
   -----
-  Action: "Talk to" (#1, layer: FredMcCoy, state: main)
+  Action: "Talk to" (#1, layer: JillMcCoy, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0061]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0061]
    "It is just a photo."
 
   -----
-  Action: "Use" (#2, layer: FredMcCoy, state: main)
+  Action: "Use" (#2, layer: JillMcCoy, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0062]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0062]
    "I don't need any more photos."
 
 
@@ -380,13 +380,13 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: ITSupportDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0063]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0063]
    "It's a room for geeks."
 
-   - Dialog [puppet: ego, voice::FT_HallDay0064]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0064]
    "You can't call them that anymore, they're called intelligence enhanched superiors now."
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0065]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0065]
    "Ah yeah, it became an insult after George Bush the third claimed he was a geek."
 
   -----
@@ -395,22 +395,22 @@ LAYERS
   -----
   Action: "Use" (#2, layer: ITSupportDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0066]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0066]
    "It's locked."
 
   -----
   Item: "MyKeyCard", "" (layer: ITSupportDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0067]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0067]
    "It didn't work."
 
   -----
   Item: "Stethoscope", "" (layer: ITSupportDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0104]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0104]
    "Sounds like someone is playing Portal 2"
 
-   - Dialog [puppet: ego, voice::FT_HallDay0105]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0105]
    "Steve Merchant is in there trying to help them escape."
 
 
@@ -424,19 +424,19 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: RogerWilco, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0068]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0068]
    "It's a picture of Roger Wilco. He appears to be a janitor."
 
   -----
   Action: "Talk to" (#1, layer: RogerWilco, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0069]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0069]
    "It is just a photo."
 
   -----
   Action: "Use" (#2, layer: RogerWilco, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0070]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0070]
    "I don't need any more photos."
 
 
@@ -450,10 +450,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: CEODoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0071]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0071]
    "It's a door to the CEO's office."
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0072]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0072]
    "She looks pretty."
 
   -----
@@ -462,19 +462,19 @@ LAYERS
   -----
   Action: "Use" (#2, layer: CEODoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0073]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0073]
    "It's locked."
 
   -----
   Item: "MyKeyCard", "" (layer: CEODoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0074]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0074]
    "It didn't work."
 
   -----
   Item: "Stethoscope", "" (layer: CEODoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0110]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0110]
    "I can't hear anything interesting."
 
 
@@ -488,19 +488,19 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SamFroggertPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0075]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0075]
    "It's a photo of Sam Frogert. He appears to be a researcher."
 
   -----
   Action: "Talk to" (#1, layer: SamFroggertPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0076]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0076]
    "It is just a photo."
 
   -----
   Action: "Use" (#2, layer: SamFroggertPhoto, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0077]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0077]
    "I don't need any more photos."
 
 
@@ -514,7 +514,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: StorageRoomDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0078]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0078]
    "It's the storage room I was locked in."
 
   -----
@@ -523,7 +523,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: StorageRoomDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0079]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0079]
    "It's locked."
 
   -----
@@ -532,7 +532,7 @@ LAYERS
   -----
   Item: "Stethoscope", "" (layer: StorageRoomDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0108]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0108]
    "I can't hear anything interesting."
 
  --------------------------------------------------
@@ -542,7 +542,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: StorageRoomDoor, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0080]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0080]
    "It's the storage room I was locked in."
 
   -----
@@ -565,19 +565,19 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: ChrisLanders, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0081]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0081]
    "It's a picture of Chris Landers. He appears to be IT Support."
 
   -----
   Action: "Talk to" (#1, layer: ChrisLanders, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0082]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0082]
    "It is just a photo."
 
   -----
   Action: "Use" (#2, layer: ChrisLanders, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0083]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0083]
    "I don't need any more photos."
 
 
@@ -591,8 +591,8 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: OTDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0084]
-   "It's the door for the Operating Theather."
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0084]
+   "It's the door for the Operating Theatre."
 
   -----
   Action: "Talk to" (#1, layer: OTDoor, state: main)
@@ -600,7 +600,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: OTDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0085]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0085]
    "It's locked."
 
   -----
@@ -609,7 +609,7 @@ LAYERS
   -----
   Item: "Stethoscope", "" (layer: OTDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0109]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0109]
    "I can't hear anything interesting."
 
  --------------------------------------------------
@@ -619,7 +619,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: OTDoor, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0086]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0086]
    "It's the door to the Operating Theater."
 
   -----
@@ -642,19 +642,19 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: RobSmith, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0087]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0087]
    "It's a picture of Rob Smith. He appears to be a security guard."
 
   -----
   Action: "Talk to" (#1, layer: RobSmith, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0088]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0088]
    "It is just a photo."
 
   -----
   Action: "Use" (#2, layer: RobSmith, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0089]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0089]
    "I don't need any more photos."
 
 
@@ -668,7 +668,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: ReceptionDoor, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0090]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0090]
    "It's the door to reception."
 
   -----
@@ -680,13 +680,13 @@ LAYERS
   -----
   Item: "MyKeyCard", "" (layer: ReceptionDoor, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0091]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0091]
    "It's open already."
 
   -----
   Item: "Stethoscope", "" (layer: ReceptionDoor, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0106]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0106]
    "I can't hear anything interesting."
 
 
@@ -700,19 +700,19 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SarahBio, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0092]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0092]
    "It's a picture like they one I am carrying. It looks more recent though."
 
   -----
   Action: "Talk to" (#1, layer: SarahBio, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0093]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0093]
    "It is just a photo."
 
   -----
   Action: "Use" (#2, layer: SarahBio, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0094]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0094]
    "I don't need any more photos."
 
 
@@ -777,25 +777,25 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: plant2, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0095]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0095]
    "It's a plant"
 
-   - Dialog [puppet: ego, voice::FT_HallDay0114]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0114]
    "'No magician, I have never met you before, honest.'"
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0116]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0116]
    "No, not that kind of plant!"
 
   -----
   Action: "Talk to" (#1, layer: plant2, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0096]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0096]
    "Hello little fella."
 
   -----
   Action: "Use" (#2, layer: plant2, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0097]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0097]
    "What with?"
 
 
@@ -804,30 +804,30 @@ LAYERS
 --------------------------------------------------
  --------------------------------------------------
  State: main (layer: plant1)
- title: "Plant"
+ title: "Chuck the Plant"
 
   -----
   Action: "Look at" (#0, layer: plant1, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0098]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0098]
    "It's a plant"
 
-   - Dialog [puppet: ego, voice::FT_HallDay0113]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0113]
    "'No magician, I have never met you before, honest.'"
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0115]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0115]
    "No, not that kind of plant!"
 
   -----
   Action: "Talk to" (#1, layer: plant1, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0099]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0099]
    "Hello little fella."
 
   -----
   Action: "Use" (#2, layer: plant1, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0100]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0100]
    "What with?"
 
 
@@ -841,25 +841,25 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: cactus, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0101]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0101]
    "It's a plant"
 
-   - Dialog [puppet: ego, voice::FT_HallDay0112]
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0112]
    "'No magician, I have never met you before, honest.'"
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0111]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0111]
    "No, not that kind of plant!"
 
   -----
   Action: "Talk to" (#1, layer: cactus, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0102]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0102]
    "Hello little fella."
 
   -----
   Action: "Use" (#2, layer: cactus, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_HallDay0103]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0103]
    "What with?"
 
 
@@ -891,126 +891,382 @@ LAYERS
 
 
 TREES
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0117]
+   "No More Help Please"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_2" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0121]
+   "Enough Help"
+
+  -----
+  Topic: "_3" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0122]
+   "What can I do in here?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0123]
+   "You need to get some insight in to someone on the other side of one of these doors"
+
+  -----
+  Topic: "_4" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0124]
+   "How do I listen to people?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0125]
+   "You need a listening device"
+
+  -----
+  Topic: "_5" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0126]
+   "Tell me what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0127]
+   "Use the stethoscope on the guards door."
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0128]
+   "You may need to do it multiple times"
+
+  -----
+  Topic: "_7" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0132]
+   "Do I need to find something here?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0133]
+   "Yes. You need to find something out here."
+
+  -----
+  Topic: "_8" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0134]
+   "What do I need to find out?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0135]
+   "You need to remember one of your work colleague's names"
+
+  -----
+  Topic: "_9" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0136]
+   "How do I remember their name?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0137]
+   "Look at all the photos on the walls"
+
+  -----
+  Topic: "_1" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0119]
+   "Do I need to do anything in this room?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0120]
+   "Yes"
+
+  -----
+  Topic: "_6" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_Hall.swf:FT_HallDay0129]
+   "What can I do here?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0130]
+   "You have a new key card"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_Hall.swf:FT_HallDay0131]
+   "Maybe that one works on more doors?"
 
 
 
-_avatar,"Who is this handsome guy? He looks familar.",:FT_HallDay0000
-ego,"I've never seen him.",:FT_HallDay0001
-_avatar,"It is just a photo.",:FT_HallDay0002
-_avatar,"I don't need any more photos.",:FT_HallDay0003
-_avatar,"It's where the security guards drink coffee and chat.",:FT_HallDay0004
-_avatar,"Oh and keep an eye on the security monitors.",:FT_HallDay0005
-ego,"I don't see any cameras.",:FT_HallDay0006
-_avatar,"I don't think the security guards would like me to go in there.",:FT_HallDay0007
-_avatar,"It didn't work.",:FT_HallDay0008
-Guard,"And that is when she said &quot;Don't pull it that hard or it will change colour!&quot;",:FT_HallDay0009
-Guard2,"I don't blame her! Don't touch mine.",:FT_HallDay0010
-Guard,"Ha! Ha!",:FT_HallDay0011
-Guard2,"Ha! Ha!",:FT_HallDay0012
-Guard2,"You know, I was sure that Dr Martin found out last night about Project Pants after you came back saying he was nosing about in the operating theater.",:FT_HallDay0013
-Guard,"Yeah, that would be a disaster!",:FT_HallDay0014
-Guard,"I felt a right idiot not knowing who he was though after you told me who he was.",:FT_HallDay0015
-Guard2,"Oh! Be quite, Oprah is about to start!",:FT_HallDay0016
-Oprah,"Today we are talking to upcoming musician Jonathan Coulton.",:FT_HallDay0017
-_avatar,"Ok, I've heard enough.",:FT_HallDay0018
-_avatar,"It's where the security guards drink coffee and chat.",:FT_HallDay0019
-_avatar,"Oh and keep an eye on the security monitors.",:FT_HallDay0020
-ego,"I don't see any cameras.",:FT_HallDay0021
-_avatar,"I don't think the security guards would like me to go in there.",:FT_HallDay0022
-_avatar,"It didn't work.",:FT_HallDay0023
-Guard2,"And that is when he said &quot;If you stick it up there it will hurt!&quot;",:FT_HallDay0024
-Guard,"Ha! Ha!",:FT_HallDay0025
-Guard2,"Ha! Ha!",:FT_HallDay0026
-Guard,"You know, I was sure that Dr Martin found out last night about Project Pants when I caught him nosing about in the operating theater.",:FT_HallDay0027
-Guard2,"We said that earlier. You're very forgetful.",:FT_HallDay0028
-Guard,"Yeah, I'm terrible! I'm always losing my keys.",:FT_HallDay0029
-Guard,"That is actually why I lost my last job. Apparently, leaving keys to highly secure areas laying around is a bad thing for a security guard to do.",:FT_HallDay0030
-Guard2,"Oh....er. Oprah is starting again.",:FT_HallDay0031
-Oprah,"So where do you get the ideas for all you songs?",:FT_HallDay0032
-_avatar,"Ok, I've heard enough.",:FT_HallDay0033
-_avatar,"It's where the security guards drink coffee and chat.",:FT_HallDay0034
-_avatar,"Oh and keep an eye on the security monitors.",:FT_HallDay0035
-ego,"I don't see any cameras.",:FT_HallDay0036
-_avatar,"I don't think the security guards would like me to go in there.",:FT_HallDay0037
-_avatar,"It didn't work.",:FT_HallDay0038
-Guard,"You know, I was sure that Dr Martin found out last night about",:FT_HallDay0039
-Guard2,"Wow, you really are forgetful!",:FT_HallDay0040
-Guard,"Yeah, I'm terrible! I'm always losing my keys.",:FT_HallDay0041
-Guard2,"We had this conversation already. Be quite, Oprah is back!",:FT_HallDay0042
-Oprah,"Just before the break we heard Jonathan play a song...",:FT_HallDay0043
-_avatar,"Ok, I've heard enough.",:FT_HallDay0044
-_avatar,"It's where the security guards drink coffee and chat.",:FT_HallDay0045
-_avatar,"Oh and keep an eye on the security monitors.",:FT_HallDay0046
-ego,"I don't see any cameras.",:FT_HallDay0047
-_avatar,"I don't think the security guards would like me to go in there.",:FT_HallDay0048
-_avatar,"It didn't work.",:FT_HallDay0049
-_avatar,"I can't hear anything apart from the TV.",:FT_HallDay0050
-_avatar,"It's a picture of Bill Jones. He appears to be a security guard.",:FT_HallDay0051
-ego,"Doesn't he look familiar?",:FT_HallDay0052
-_avatar,"Yeah, I can't quite remember where I have seen him before.",:FT_HallDay0053
-_avatar,"It is just a photo.",:FT_HallDay0054
-_avatar,"I don't need any more photos.",:FT_HallDay0055
-_avatar,"It's Dr Martins' door.",:FT_HallDay0056
-_avatar,"It's locked.",:FT_HallDay0057
-_avatar,"It's Dr Martins' door.",:FT_HallDay0058
-_avatar,"It's open already.",:FT_HallDay0059
-_avatar,"I can't hear anything interesting.",:FT_HallDay0107
-_avatar,"It's a photo of Fred McCoy. He appears to be a Nurse.",:FT_HallDay0060
-_avatar,"It is just a photo.",:FT_HallDay0061
-_avatar,"I don't need any more photos.",:FT_HallDay0062
-_avatar,"It's a room for geeks.",:FT_HallDay0063
-ego,"You can't call them that anymore, they're called intelligence enhanched superiors now.",:FT_HallDay0064
-_avatar,"Ah yeah, it became an insult after George Bush the third claimed he was a geek.",:FT_HallDay0065
-_avatar,"It's locked.",:FT_HallDay0066
-_avatar,"It didn't work.",:FT_HallDay0067
-_avatar,"Sounds like someone is playing Portal 2",:FT_HallDay0104
-ego,"Steve Merchant is in there trying to help them escape.",:FT_HallDay0105
-_avatar,"It's a picture of Roger Wilco. He appears to be a janitor.",:FT_HallDay0068
-_avatar,"It is just a photo.",:FT_HallDay0069
-_avatar,"I don't need any more photos.",:FT_HallDay0070
-_avatar,"It's a door to the CEO's office.",:FT_HallDay0071
-_avatar,"She looks pretty.",:FT_HallDay0072
-_avatar,"It's locked.",:FT_HallDay0073
-_avatar,"It didn't work.",:FT_HallDay0074
-_avatar,"I can't hear anything interesting.",:FT_HallDay0110
-_avatar,"It's a photo of Sam Frogert. He appears to be a researcher.",:FT_HallDay0075
-_avatar,"It is just a photo.",:FT_HallDay0076
-_avatar,"I don't need any more photos.",:FT_HallDay0077
-_avatar,"It's the storage room I was locked in.",:FT_HallDay0078
-_avatar,"It's locked.",:FT_HallDay0079
-_avatar,"I can't hear anything interesting.",:FT_HallDay0108
-_avatar,"It's the storage room I was locked in.",:FT_HallDay0080
-_avatar,"It's a picture of Chris Landers. He appears to be IT Support.",:FT_HallDay0081
-_avatar,"It is just a photo.",:FT_HallDay0082
-_avatar,"I don't need any more photos.",:FT_HallDay0083
-_avatar,"It's the door for the Operating Theather.",:FT_HallDay0084
-_avatar,"It's locked.",:FT_HallDay0085
-_avatar,"I can't hear anything interesting.",:FT_HallDay0109
-_avatar,"It's the door to the Operating Theater.",:FT_HallDay0086
-_avatar,"It's a picture of Rob Smith. He appears to be a security guard.",:FT_HallDay0087
-_avatar,"It is just a photo.",:FT_HallDay0088
-_avatar,"I don't need any more photos.",:FT_HallDay0089
-_avatar,"It's the door to reception.",:FT_HallDay0090
-_avatar,"It's open already.",:FT_HallDay0091
-_avatar,"I can't hear anything interesting.",:FT_HallDay0106
-_avatar,"It's a picture like they one I am carrying. It looks more recent though.",:FT_HallDay0092
-_avatar,"It is just a photo.",:FT_HallDay0093
-_avatar,"I don't need any more photos.",:FT_HallDay0094
-_avatar,"It's a plant",:FT_HallDay0095
-ego,"'No magician, I have never met you before, honest.'",:FT_HallDay0114
-_avatar,"No, not that kind of plant!",:FT_HallDay0116
-_avatar,"Hello little fella.",:FT_HallDay0096
-_avatar,"What with?",:FT_HallDay0097
-_avatar,"It's a plant",:FT_HallDay0098
-ego,"'No magician, I have never met you before, honest.'",:FT_HallDay0113
-_avatar,"No, not that kind of plant!",:FT_HallDay0115
-_avatar,"Hello little fella.",:FT_HallDay0099
-_avatar,"What with?",:FT_HallDay0100
-_avatar,"It's a plant",:FT_HallDay0101
-ego,"'No magician, I have never met you before, honest.'",:FT_HallDay0112
-_avatar,"No, not that kind of plant!",:FT_HallDay0111
-_avatar,"Hello little fella.",:FT_HallDay0102
-_avatar,"What with?",:FT_HallDay0103
+
+_avatar,"Who is this handsome guy? He looks familar.",voice/V_FT_Hall.swf:FT_HallDay0000
+ego,"I've never seen him.",voice/V_FT_Hall.swf:FT_HallDay0001
+_avatar,"It is just a photo.",voice/V_FT_Hall.swf:FT_HallDay0002
+_avatar,"I don't need any more photos.",voice/V_FT_Hall.swf:FT_HallDay0003
+_avatar,"It's where the security guards drink coffee and chat.",voice/V_FT_Hall.swf:FT_HallDay0004
+_avatar,"Oh and keep an eye on the security monitors.",voice/V_FT_Hall.swf:FT_HallDay0005
+ego,"I don't see any cameras.",voice/V_FT_Hall.swf:FT_HallDay0006
+_avatar,"I don't think the security guards would like me to go in there.",voice/V_FT_Hall.swf:FT_HallDay0007
+_avatar,"It didn't work.",voice/V_FT_Hall.swf:FT_HallDay0008
+Guard,"And that is when she said &quot;Don't pull it that hard or it will change colour!&quot;",voice/V_FT_Hall.swf:FT_HallDay0009
+Guard2,"I don't blame her! Don't touch mine.",voice/V_FT_Hall.swf:FT_HallDay0010
+Guard,"Ha! Ha!",voice/V_FT_Hall.swf:FT_HallDay0011
+Guard2,"Ha! Ha!",voice/V_FT_Hall.swf:FT_HallDay0012
+Guard2,"You know, I was sure that Dr Martin found out last night about Project Pants after you came back saying he was nosing about in the operating theater.",voice/V_FT_Hall.swf:FT_HallDay0013
+Guard,"Yeah, that would be a disaster!",voice/V_FT_Hall.swf:FT_HallDay0014
+Guard,"I felt a right idiot not knowing who he was though after you told me who he was.",voice/V_FT_Hall.swf:FT_HallDay0015
+Guard2,"Oh! Be quiet, Oprah is about to start!",voice/V_FT_Hall.swf:FT_HallDay0016
+Oprah,"Today we are talking to upcoming musician Jonathan Coulton.",voice/V_FT_Hall.swf:FT_HallDay0017
+_avatar,"Ok, I've heard enough.",voice/V_FT_Hall.swf:FT_HallDay0018
+_avatar,"It's where the security guards drink coffee and chat.",voice/V_FT_Hall.swf:FT_HallDay0019
+_avatar,"Oh and keep an eye on the security monitors.",voice/V_FT_Hall.swf:FT_HallDay0020
+ego,"I don't see any cameras.",voice/V_FT_Hall.swf:FT_HallDay0021
+_avatar,"I don't think the security guards would like me to go in there.",voice/V_FT_Hall.swf:FT_HallDay0022
+_avatar,"It didn't work.",voice/V_FT_Hall.swf:FT_HallDay0023
+Guard2,"And that is when he said &quot;If you stick it up there it will hurt!&quot;",voice/V_FT_Hall.swf:FT_HallDay0024
+Guard,"Ha! Ha!",voice/V_FT_Hall.swf:FT_HallDay0011
+Guard2,"Ha! Ha!",voice/V_FT_Hall.swf:FT_HallDay0026
+Guard,"You know, I was sure that Dr Martin found out last night about Project Pants when I caught him nosing about in the operating theater.",voice/V_FT_Hall.swf:FT_HallDay0027
+Guard2,"We said that earlier. You're very forgetful.",voice/V_FT_Hall.swf:FT_HallDay0028
+Guard,"Yeah, I'm terrible! I'm always losing my keys.",voice/V_FT_Hall.swf:FT_HallDay0029
+Guard,"That is actually why I lost my last job. Apparently, leaving keys to highly secure areas laying around is a bad thing for a security guard to do.",voice/V_FT_Hall.swf:FT_HallDay0030
+Guard2,"Oh....er. Oprah is starting again.",voice/V_FT_Hall.swf:FT_HallDay0031
+Oprah,"So where do your get the ideas for all you songs?",voice/V_FT_Hall.swf:FT_HallDay0032
+_avatar,"Ok, I've heard enough.",voice/V_FT_Hall.swf:FT_HallDay0033
+_avatar,"It's where the security guards drink coffee and chat.",voice/V_FT_Hall.swf:FT_HallDay0034
+_avatar,"Oh and keep an eye on the security monitors.",voice/V_FT_Hall.swf:FT_HallDay0035
+ego,"I don't see any cameras.",voice/V_FT_Hall.swf:FT_HallDay0036
+_avatar,"I don't think the security guards would like me to go in there.",voice/V_FT_Hall.swf:FT_HallDay0037
+_avatar,"It didn't work.",voice/V_FT_Hall.swf:FT_HallDay0038
+Guard,"You know, I was sure that Dr Martin found out last night about",voice/V_FT_Hall.swf:FT_HallDay0039
+Guard2,"Wow, you really are forgetful!",voice/V_FT_Hall.swf:FT_HallDay0040
+Guard,"Yeah, I'm terrible! I'm always losing my keys.",voice/V_FT_Hall.swf:FT_HallDay0029
+Guard2,"We had this conversation already. Be quiet, Oprah is back!",voice/V_FT_Hall.swf:FT_HallDay0042
+Oprah,"Alright, Just before the break we heard Jonathan play a song about the first of May. That was an interesting one.",voice/V_FT_Hall.swf:FT_HallDay0043
+_avatar,"Ok, I've heard enough.",voice/V_FT_Hall.swf:FT_HallDay0044
+_avatar,"It's where the security guards drink coffee and chat.",voice/V_FT_Hall.swf:FT_HallDay0045
+_avatar,"Oh and keep an eye on the security monitors.",voice/V_FT_Hall.swf:FT_HallDay0046
+ego,"I don't see any cameras.",voice/V_FT_Hall.swf:FT_HallDay0047
+_avatar,"I don't think the security guards would like me to go in there.",voice/V_FT_Hall.swf:FT_HallDay0048
+_avatar,"It didn't work.",voice/V_FT_Hall.swf:FT_HallDay0049
+_avatar,"I can't hear anything apart from the TV.",voice/V_FT_Hall.swf:FT_HallDay0050
+_avatar,"It's a picture of Bill Jones. He appears to be a security guard.",voice/V_FT_Hall.swf:FT_HallDay0051
+ego,"Doesn't he look familiar?",voice/V_FT_Hall.swf:FT_HallDay0052
+_avatar,"Yeah, I can't quite remember where I have seen him before.",voice/V_FT_Hall.swf:FT_HallDay0053
+_avatar,"It is just a photo.",voice/V_FT_Hall.swf:FT_HallDay0054
+_avatar,"I don't need any more photos.",voice/V_FT_Hall.swf:FT_HallDay0055
+_avatar,"It's Dr Martin's door.",voice/V_FT_Hall.swf:FT_HallDay0056
+_avatar,"It's locked.",voice/V_FT_Hall.swf:FT_HallDay0057
+_avatar,"It's Dr Martins' door.",voice/V_FT_Hall.swf:FT_HallDay0058
+_avatar,"It's open already.",voice/V_FT_Hall.swf:FT_HallDay0059
+_avatar,"I can't hear anything interesting.",voice/V_FT_Hall.swf:FT_HallDay0107
+_avatar,"It's a photo of Jill McCoy. She appears to be the receptionist.",voice/V_FT_Hall.swf:FT_HallDay0060
+_avatar,"It is just a photo.",voice/V_FT_Hall.swf:FT_HallDay0061
+_avatar,"I don't need any more photos.",voice/V_FT_Hall.swf:FT_HallDay0062
+_avatar,"It's a room for geeks.",voice/V_FT_Hall.swf:FT_HallDay0063
+ego,"You can't call them that anymore, they're called intelligence enhanched superiors now.",voice/V_FT_Hall.swf:FT_HallDay0064
+_avatar,"Ah yeah, it became an insult after George Bush the third claimed he was a geek.",voice/V_FT_Hall.swf:FT_HallDay0065
+_avatar,"It's locked.",voice/V_FT_Hall.swf:FT_HallDay0066
+_avatar,"It didn't work.",voice/V_FT_Hall.swf:FT_HallDay0067
+_avatar,"Sounds like someone is playing Portal 2",voice/V_FT_Hall.swf:FT_HallDay0104
+ego,"Steve Merchant is in there trying to help them escape.",voice/V_FT_Hall.swf:FT_HallDay0105
+_avatar,"It's a picture of Roger Wilco. He appears to be a janitor.",voice/V_FT_Hall.swf:FT_HallDay0068
+_avatar,"It is just a photo.",voice/V_FT_Hall.swf:FT_HallDay0069
+_avatar,"I don't need any more photos.",voice/V_FT_Hall.swf:FT_HallDay0070
+_avatar,"It's a door to the CEO's office.",voice/V_FT_Hall.swf:FT_HallDay0071
+_avatar,"She looks pretty.",voice/V_FT_Hall.swf:FT_HallDay0072
+_avatar,"It's locked.",voice/V_FT_Hall.swf:FT_HallDay0073
+_avatar,"It didn't work.",voice/V_FT_Hall.swf:FT_HallDay0074
+_avatar,"I can't hear anything interesting.",voice/V_FT_Hall.swf:FT_HallDay0110
+_avatar,"It's a photo of Sam Frogert. He appears to be a researcher.",voice/V_FT_Hall.swf:FT_HallDay0075
+_avatar,"It is just a photo.",voice/V_FT_Hall.swf:FT_HallDay0076
+_avatar,"I don't need any more photos.",voice/V_FT_Hall.swf:FT_HallDay0077
+_avatar,"It's the storage room I was locked in.",voice/V_FT_Hall.swf:FT_HallDay0078
+_avatar,"It's locked.",voice/V_FT_Hall.swf:FT_HallDay0079
+_avatar,"I can't hear anything interesting.",voice/V_FT_Hall.swf:FT_HallDay0108
+_avatar,"It's the storage room I was locked in.",voice/V_FT_Hall.swf:FT_HallDay0080
+_avatar,"It's a picture of Chris Landers. He appears to be IT Support.",voice/V_FT_Hall.swf:FT_HallDay0081
+_avatar,"It is just a photo.",voice/V_FT_Hall.swf:FT_HallDay0082
+_avatar,"I don't need any more photos.",voice/V_FT_Hall.swf:FT_HallDay0083
+_avatar,"It's the door for the Operating Theatre.",voice/V_FT_Hall.swf:FT_HallDay0084
+_avatar,"It's locked.",voice/V_FT_Hall.swf:FT_HallDay0085
+_avatar,"I can't hear anything interesting.",voice/V_FT_Hall.swf:FT_HallDay0109
+_avatar,"It's the door to the Operating Theater.",voice/V_FT_Hall.swf:FT_HallDay0086
+_avatar,"It's a picture of Rob Smith. He appears to be a security guard.",voice/V_FT_Hall.swf:FT_HallDay0087
+_avatar,"It is just a photo.",voice/V_FT_Hall.swf:FT_HallDay0088
+_avatar,"I don't need any more photos.",voice/V_FT_Hall.swf:FT_HallDay0089
+_avatar,"It's the door to reception.",voice/V_FT_Hall.swf:FT_HallDay0090
+_avatar,"It's open already.",voice/V_FT_Hall.swf:FT_HallDay0091
+_avatar,"I can't hear anything interesting.",voice/V_FT_Hall.swf:FT_HallDay0106
+_avatar,"It's a picture like they one I am carrying. It looks more recent though.",voice/V_FT_Hall.swf:FT_HallDay0092
+_avatar,"It is just a photo.",voice/V_FT_Hall.swf:FT_HallDay0093
+_avatar,"I don't need any more photos.",voice/V_FT_Hall.swf:FT_HallDay0094
+_avatar,"It's a plant",voice/V_FT_Hall.swf:FT_HallDay0095
+ego,"'No magician, I have never met you before, honest.'",voice/V_FT_Hall.swf:FT_HallDay0114
+_avatar,"No, not that kind of plant!",voice/V_FT_Hall.swf:FT_HallDay0116
+_avatar,"Hello little fella.",voice/V_FT_Hall.swf:FT_HallDay0096
+_avatar,"What with?",voice/V_FT_Hall.swf:FT_HallDay0097
+_avatar,"It's a plant",voice/V_FT_Hall.swf:FT_HallDay0098
+ego,"'No magician, I have never met you before, honest.'",voice/V_FT_Hall.swf:FT_HallDay0113
+_avatar,"No, not that kind of plant!",voice/V_FT_Hall.swf:FT_HallDay0115
+_avatar,"Hello little fella.",voice/V_FT_Hall.swf:FT_HallDay0099
+_avatar,"What with?",voice/V_FT_Hall.swf:FT_HallDay0100
+_avatar,"It's a plant",voice/V_FT_Hall.swf:FT_HallDay0101
+ego,"'No magician, I have never met you before, honest.'",voice/V_FT_Hall.swf:FT_HallDay0112
+_avatar,"No, not that kind of plant!",voice/V_FT_Hall.swf:FT_HallDay0111
+_avatar,"Hello little fella.",voice/V_FT_Hall.swf:FT_HallDay0102
+_avatar,"What with?",voice/V_FT_Hall.swf:FT_HallDay0103
+_avatar,"No More Help Please",voice/V_FT_Hall.swf:FT_HallDay0117
+_avatar,"Enough Help",voice/V_FT_Hall.swf:FT_HallDay0121
+_avatar,"What can I do in here?",voice/V_FT_Hall.swf:FT_HallDay0122
+ego,"You need to get some insight in to someone on the other side of one of these doors",voice/V_FT_Hall.swf:FT_HallDay0123
+_avatar,"How do I listen to people?",voice/V_FT_Hall.swf:FT_HallDay0124
+ego,"You need a listening device",voice/V_FT_Hall.swf:FT_HallDay0125
+_avatar,"Tell me what to do!",voice/V_FT_Hall.swf:FT_HallDay0126
+ego,"Use the stethoscope on the guards door.",voice/V_FT_Hall.swf:FT_HallDay0127
+ego,"You may need to do it multiple times",voice/V_FT_Hall.swf:FT_HallDay0128
+_avatar,"Do I need to find something here?",voice/V_FT_Hall.swf:FT_HallDay0132
+ego,"Yes. You need to find something out here.",voice/V_FT_Hall.swf:FT_HallDay0133
+_avatar,"What do I need to find out?",voice/V_FT_Hall.swf:FT_HallDay0134
+ego,"You need to remember one of your work colleague's names",voice/V_FT_Hall.swf:FT_HallDay0135
+_avatar,"How do I remember their name?",voice/V_FT_Hall.swf:FT_HallDay0136
+ego,"Look at all the photos on the walls",voice/V_FT_Hall.swf:FT_HallDay0137
+_avatar,"Do I need to do anything in this room?",voice/V_FT_Hall.swf:FT_HallDay0119
+ego,"Yes",voice/V_FT_Hall.swf:FT_HallDay0120
+_avatar,"What can I do here?",voice/V_FT_Hall.swf:FT_HallDay0129
+ego,"You have a new key card",voice/V_FT_Hall.swf:FT_HallDay0130
+ego,"Maybe that one works on more doors?",voice/V_FT_Hall.swf:FT_HallDay0131
 
 
 
+addSound( FT_HallDay0000 );
+addSound( FT_HallDay0001 );
+addSound( FT_HallDay0002 );
+addSound( FT_HallDay0003 );
+addSound( FT_HallDay0004 );
+addSound( FT_HallDay0005 );
+addSound( FT_HallDay0006 );
+addSound( FT_HallDay0007 );
+addSound( FT_HallDay0008 );
+addSound( FT_HallDay0009 );
+addSound( FT_HallDay0010 );
+addSound( FT_HallDay0011 );
+addSound( FT_HallDay0012 );
+addSound( FT_HallDay0013 );
+addSound( FT_HallDay0014 );
+addSound( FT_HallDay0015 );
+addSound( FT_HallDay0016 );
+addSound( FT_HallDay0017 );
+addSound( FT_HallDay0018 );
+addSound( FT_HallDay0019 );
+addSound( FT_HallDay0020 );
+addSound( FT_HallDay0021 );
+addSound( FT_HallDay0022 );
+addSound( FT_HallDay0023 );
+addSound( FT_HallDay0024 );
+addSound( FT_HallDay0011 );
+addSound( FT_HallDay0026 );
+addSound( FT_HallDay0027 );
+addSound( FT_HallDay0028 );
+addSound( FT_HallDay0029 );
+addSound( FT_HallDay0030 );
+addSound( FT_HallDay0031 );
+addSound( FT_HallDay0032 );
+addSound( FT_HallDay0033 );
+addSound( FT_HallDay0034 );
+addSound( FT_HallDay0035 );
+addSound( FT_HallDay0036 );
+addSound( FT_HallDay0037 );
+addSound( FT_HallDay0038 );
+addSound( FT_HallDay0039 );
+addSound( FT_HallDay0040 );
+addSound( FT_HallDay0029 );
+addSound( FT_HallDay0042 );
+addSound( FT_HallDay0043 );
+addSound( FT_HallDay0044 );
+addSound( FT_HallDay0045 );
+addSound( FT_HallDay0046 );
+addSound( FT_HallDay0047 );
+addSound( FT_HallDay0048 );
+addSound( FT_HallDay0049 );
+addSound( FT_HallDay0050 );
+addSound( FT_HallDay0051 );
+addSound( FT_HallDay0052 );
+addSound( FT_HallDay0053 );
+addSound( FT_HallDay0054 );
+addSound( FT_HallDay0055 );
+addSound( FT_HallDay0056 );
+addSound( FT_HallDay0057 );
+addSound( FT_HallDay0058 );
+addSound( FT_HallDay0059 );
+addSound( FT_HallDay0107 );
+addSound( FT_HallDay0060 );
+addSound( FT_HallDay0061 );
+addSound( FT_HallDay0062 );
+addSound( FT_HallDay0063 );
+addSound( FT_HallDay0064 );
+addSound( FT_HallDay0065 );
+addSound( FT_HallDay0066 );
+addSound( FT_HallDay0067 );
+addSound( FT_HallDay0104 );
+addSound( FT_HallDay0105 );
+addSound( FT_HallDay0068 );
+addSound( FT_HallDay0069 );
+addSound( FT_HallDay0070 );
+addSound( FT_HallDay0071 );
+addSound( FT_HallDay0072 );
+addSound( FT_HallDay0073 );
+addSound( FT_HallDay0074 );
+addSound( FT_HallDay0110 );
+addSound( FT_HallDay0075 );
+addSound( FT_HallDay0076 );
+addSound( FT_HallDay0077 );
+addSound( FT_HallDay0078 );
+addSound( FT_HallDay0079 );
+addSound( FT_HallDay0108 );
+addSound( FT_HallDay0080 );
+addSound( FT_HallDay0081 );
+addSound( FT_HallDay0082 );
+addSound( FT_HallDay0083 );
+addSound( FT_HallDay0084 );
+addSound( FT_HallDay0085 );
+addSound( FT_HallDay0109 );
+addSound( FT_HallDay0086 );
+addSound( FT_HallDay0087 );
+addSound( FT_HallDay0088 );
+addSound( FT_HallDay0089 );
+addSound( FT_HallDay0090 );
+addSound( FT_HallDay0091 );
+addSound( FT_HallDay0106 );
+addSound( FT_HallDay0092 );
+addSound( FT_HallDay0093 );
+addSound( FT_HallDay0094 );
+addSound( FT_HallDay0095 );
+addSound( FT_HallDay0114 );
+addSound( FT_HallDay0116 );
+addSound( FT_HallDay0096 );
+addSound( FT_HallDay0097 );
+addSound( FT_HallDay0098 );
+addSound( FT_HallDay0113 );
+addSound( FT_HallDay0115 );
+addSound( FT_HallDay0099 );
+addSound( FT_HallDay0100 );
+addSound( FT_HallDay0101 );
+addSound( FT_HallDay0112 );
+addSound( FT_HallDay0111 );
+addSound( FT_HallDay0102 );
+addSound( FT_HallDay0103 );
+addSound( FT_HallDay0117 );
+addSound( FT_HallDay0121 );
+addSound( FT_HallDay0122 );
+addSound( FT_HallDay0123 );
+addSound( FT_HallDay0124 );
+addSound( FT_HallDay0125 );
+addSound( FT_HallDay0126 );
+addSound( FT_HallDay0127 );
+addSound( FT_HallDay0128 );
+addSound( FT_HallDay0132 );
+addSound( FT_HallDay0133 );
+addSound( FT_HallDay0134 );
+addSound( FT_HallDay0135 );
+addSound( FT_HallDay0136 );
+addSound( FT_HallDay0137 );
+addSound( FT_HallDay0119 );
+addSound( FT_HallDay0120 );
+addSound( FT_HallDay0129 );
+addSound( FT_HallDay0130 );
+addSound( FT_HallDay0131 );

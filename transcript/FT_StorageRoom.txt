@@ -13,15 +13,15 @@ LAYERS
 --------------------------------------------------
  --------------------------------------------------
  State: main (layer: Scrubs1)
- title: "Scrubs"
+ title: "Smelly Scrubs"
 
   -----
   Action: "Look at" (#0, layer: Scrubs1, state: main)
 
-   - Dialog [puppet: _avatar, voice:PocketKey]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0127]
    "One of the pockets has a key in it."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0000]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0000]
    "It won't fit any of the locks in here, don't bother trying."
 
   -----
@@ -30,20 +30,20 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Scrubs1, state: main)
 
-   - Dialog [puppet: _avatar, voice:WearOldScubs]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0134]
    "I'm not wearing old scrubs!"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0001]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0001]
    "A few blood stains never hurt anyone, wimp!"
 
  --------------------------------------------------
  State: found (layer: Scrubs1)
- title: "Scrubs"
+ title: "Smelly Scrubs"
 
   -----
   Action: "Look at" (#0, layer: Scrubs1, state: found)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0002]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0002]
    "Looks like old medical scrubs"
 
   -----
@@ -52,10 +52,10 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Scrubs1, state: found)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0003]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0003]
    "I'm not wearing old scrubs!"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0004]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0004]
    "A few blood stains never hurt anyone, wimp!"
 
 
@@ -64,12 +64,12 @@ LAYERS
 --------------------------------------------------
  --------------------------------------------------
  State: main (layer: Scrubs2)
- title: "Scrubs"
+ title: "Blood Stained Scrubs"
 
   -----
   Action: "Look at" (#0, layer: Scrubs2, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0005]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0005]
    "Looks like old medical scrubs."
 
   -----
@@ -78,10 +78,10 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Scrubs2, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0006]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0006]
    "I'm not wearing old scrubs!"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0007]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0007]
    "A few blood stains never hurt anyone, wimp!"
 
 
@@ -90,15 +90,15 @@ LAYERS
 --------------------------------------------------
  --------------------------------------------------
  State: main (layer: Scrubs3)
- title: "Scrubs"
+ title: "Almost Clean Scrubs"
 
   -----
   Action: "Look at" (#0, layer: Scrubs3, state: main)
 
-   - Dialog [puppet: _avatar, voice:IdCard]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0112]
    "There is a ID card in here."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0008]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0008]
    "It's not yours, put it back!"
 
   -----
@@ -107,20 +107,20 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Scrubs3, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0009]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0009]
    "I'm not wearing old scrubs!"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0010]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0010]
    "A few blood stains never hurt anyone, wimp!"
 
  --------------------------------------------------
  State: found (layer: Scrubs3)
- title: "Scrubs"
+ title: "Almost Clean Scrubs"
 
   -----
   Action: "Look at" (#0, layer: Scrubs3, state: found)
 
-   - Dialog [puppet: _avatar, voice:LooksOldScrubs]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0116]
    "Looks like old medical scrubs"
 
   -----
@@ -129,10 +129,10 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Scrubs3, state: found)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0011]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0011]
    "I'm not wearing old scrubs!"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0012]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0012]
    "A few blood stains never hurt anyone, wimp!"
 
 
@@ -146,10 +146,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Cabinet, state: main)
 
-   - Dialog [puppet: _avatar, voice:LockedCabenet]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0114]
    "It's a filling cabinet and it appears to be locked."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0013]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0013]
    "I doubt there is anything important in there."
 
   -----
@@ -158,28 +158,28 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Cabinet, state: main)
 
-   - Dialog [puppet: _avatar, voice:LockedShut]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0115]
    "It's locked firmly shut."
 
   -----
   Item: "Key", "" (layer: Cabinet, state: main)
 
-   - Dialog [puppet: _avatar, voice:DoesntFitLock]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0105]
    "It doesn't fit the lock."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0014]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0014]
    "Maybe you aren't trying hard enough."
 
   -----
   Item: "WireHanger", "" (layer: Cabinet, state: main)
 
-   - Dialog [puppet: _avatar, voice:PickLock]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0126]
    "Lets try and pick the lock."
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0015]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0015]
    "That worked! I wonder what's inside?"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0016]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0016]
    "I doubt there is anything important in there."
 
  --------------------------------------------------
@@ -189,7 +189,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Cabinet, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice:UnlockedCabenet]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0133]
    "It's a unlocked filing cabinet."
 
   -----
@@ -198,10 +198,10 @@ LAYERS
   -----
   Action: "Use" (#2, layer: Cabinet, state: Unlocked)
 
-   - Dialog [puppet: _avatar, voice:FTDocs]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0108]
    "It's a lot of Future Tech company documents in here. Employee personal files. Shame there are no photo on them. It looks like the CEO is a Ms. Sarah Bio."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0017]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0017]
    "That isn't worth remembering."
 
 
@@ -215,34 +215,34 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SecureDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice:NoHandle]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0121]
    "The handel doesn't work, and there is no lock on the door."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0018]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0018]
    "Try giving it a push."
 
   -----
   Action: "Talk to" (#1, layer: SecureDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice:AnyoneThere]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0100]
    "Is anyone there?"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0019]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0019]
    "I'm here. I'm your sub-conscience."
 
   -----
   Action: "Use" (#2, layer: SecureDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice:NotPushDoor]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0124]
    "I don't think it is a push door."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0020]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0020]
    "Try the handle."
 
   -----
   Item: "Key", "" (layer: SecureDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice:NoKeyHole]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0122]
    "There is no key hole."
 
  --------------------------------------------------
@@ -252,7 +252,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SecureDoor, state: Open)
 
-   - Dialog [puppet: _avatar, voice:OpenNow]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0125]
    "It's open now."
 
   -----
@@ -261,7 +261,7 @@ LAYERS
    - Dialog [puppet: _avatar, voice:AnyoneThere]
    "Is anyone there?"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0021]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0021]
    "I'm here. I'm your sub-conscience."
 
   -----
@@ -280,7 +280,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SecureDoor, state: OpenDay)
 
-   - Dialog [puppet: _avatar, voice:OpenNow]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0125]
    "It's open."
 
   -----
@@ -289,7 +289,7 @@ LAYERS
    - Dialog [puppet: _avatar, voice:AnyoneThere]
    "Is anyone there?"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0022]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0022]
    "I'm here. I'm your sub-conscience."
 
   -----
@@ -312,10 +312,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: IrisScanner, state: main)
 
-   - Dialog [puppet: _avatar, voice:LooksScanner]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0117]
    "Looks a bit hi-tech, I think it may be a scanner of some sort. There is a slot that looks like it is a credit card reader."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0023]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0023]
    "Looks broken to me."
 
   -----
@@ -324,28 +324,28 @@ LAYERS
   -----
   Action: "Use" (#2, layer: IrisScanner, state: main)
 
-   - Dialog [puppet: _avatar, voice:NoStartButton]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0123]
    "There is nothing to press to start it, just a slot and a scanner."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0024]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0024]
    "I'd try to find the start button if I were you."
 
   -----
   Item: "KeyCard", "" (layer: IrisScanner, state: main)
 
-   - Dialog [puppet: _avatar, voice:ScannedIris]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0128]
    "It scanned my iris, but didn't open the door."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0025]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0025]
    "You clearly don't work here."
 
   -----
   Item: "FramedPhoto", "" (layer: IrisScanner, state: main)
 
-   - Dialog [puppet: _avatar, voice:MightWork]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0118]
    "That might work, I need to activate the scanner and I'll try that."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0026]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0026]
    "You think a photo will fool an iris scanner. Ha!"
 
  --------------------------------------------------
@@ -355,7 +355,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: IrisScanner, state: TriedPhoto)
 
-   - Dialog [puppet: _avatar, voice:ScannerAndSlot]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0129]
    "It's a scanner and a slot for an key card."
 
   -----
@@ -364,25 +364,25 @@ LAYERS
   -----
   Action: "Use" (#2, layer: IrisScanner, state: TriedPhoto)
 
-   - Dialog [puppet: _avatar, voice:NoStartButton]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0123]
    "There is nothing to press to start it, just a slot and a scanner."
 
   -----
   Item: "KeyCard", "" (layer: IrisScanner, state: TriedPhoto)
 
-   - Dialog [puppet: _avatar, voice:CheapScanner]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0104]
    "It must be a cheap iris scanner to be fooled by a photo."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0027]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0027]
    "Yeah. I guess it must."
 
   -----
   Item: "FramedPhoto", "" (layer: IrisScanner, state: TriedPhoto)
 
-   - Dialog [puppet: _avatar, voice:NeedToActivate]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0120]
    "I need to activate the scanner and I'll try that."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0028]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0028]
    "Find that start button."
 
 
@@ -396,35 +396,44 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: LockedDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice:KeyHole]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0113]
    "There is a key hole in the door."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0029]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0029]
    "You could always trying using your finger to pick the lock."
 
   -----
   Action: "Talk to" (#1, layer: LockedDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice:AnyoneThere]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0100]
    "Is anyone there?"
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0030]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0030]
    "I'm here. I'm your sub-conscience."
 
   -----
   Action: "Use" (#2, layer: LockedDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice:LockedShut]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0115]
    "It's is locked firmly shut."
 
   -----
   Item: "Key", "" (layer: LockedDoor, state: main)
 
-   - Dialog [puppet: _avatar, voice:DoesntFitLock]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0105]
    "It doesn't fit the lock."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0031]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0031]
    "Maybe you aren't trying hard enough."
+
+  -----
+  Item: "WireHanger", "" (layer: LockedDoor, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0126]
+   "Let's try and pick the lock."
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0110]
+   "I can't do that"
 
 
 --------------------------------------------------
@@ -437,10 +446,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SealedBoxes, state: main)
 
-   - Dialog [puppet: _avatar, voice:SealedBoxes]
-   "Some sealed boxes, from MedialSupplies.com. I wonder what is inside? If only I could break the tape with something pointy."
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0130]
+   "Some sealed boxes, from MedicalSupplies.com. I wonder what is inside? If only I could break the tape with something pointy."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0032]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0032]
    "It's probably just more scrubs."
 
   -----
@@ -449,16 +458,16 @@ LAYERS
   -----
   Action: "Use" (#2, layer: SealedBoxes, state: main)
 
-   - Dialog [puppet: _avatar, voice:TapeSealing]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0131]
    "The tape is sealling these firmly shut."
 
   -----
   Item: "Key", "" (layer: SealedBoxes, state: main)
 
-   - Dialog [puppet: _avatar, voice:BreakTape]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0102]
    "That should break the tape sealing these. There are scrubs on hangers in here, I'll take one."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0033]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0033]
    "See, told you it was just more scrubs."
 
  --------------------------------------------------
@@ -468,7 +477,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: SealedBoxes, state: Open)
 
-   - Dialog [puppet: _avatar, voice:MoreScubs]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0119]
    "Just more scrubs, I have enough of those."
 
   -----
@@ -477,7 +486,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: SealedBoxes, state: Open)
 
-   - Dialog [puppet: _avatar, voice:HaveEnough]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0109]
    "I don't need any more of those."
 
 
@@ -491,7 +500,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: OpenBoxes, state: main)
 
-   - Dialog [puppet: _avatar, voice:FramedPhotos]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0107]
    "A box of framed photos."
 
   -----
@@ -500,7 +509,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: OpenBoxes, state: main)
 
-   - Dialog [puppet: _avatar, voice:TooMany]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0132]
    "There are too many to take them all, I'll take one if I need one later."
 
  --------------------------------------------------
@@ -510,10 +519,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: OpenBoxes, state: KnowCEO)
 
-   - Dialog [puppet: _avatar, voice:BoxFramedPhotos]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0101]
    "A box of employee photos in frames."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0034]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0034]
    "What a load of junk."
 
   -----
@@ -522,10 +531,10 @@ LAYERS
   -----
   Action: "Use" (#2, layer: OpenBoxes, state: KnowCEO)
 
-   - Dialog [puppet: _avatar, voice:CeoUseful]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0103]
    "This one of the CEO might be useful."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0035]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0035]
    "What makes you think that?"
 
  --------------------------------------------------
@@ -535,10 +544,10 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: OpenBoxes, state: GotCEO)
 
-   - Dialog [puppet: _avatar, voice:BoxFramedPhotos]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0101]
    "A box of employee photos in frames."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0036]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0036]
    "What a load of junk."
 
   -----
@@ -547,7 +556,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: OpenBoxes, state: GotCEO)
 
-   - Dialog [puppet: _avatar, voice:HaveEnough]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0109]
    "I don't need any more of those."
 
 
@@ -561,7 +570,7 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: WaterBottle, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0037]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0037]
    "It's a full bottle of water for one of those water dispensers."
 
   -----
@@ -570,7 +579,7 @@ LAYERS
   -----
   Action: "Use" (#2, layer: WaterBottle, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0038]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0038]
    "What with?"
 
 
@@ -584,219 +593,23 @@ LAYERS
   -----
   Action: "Look at" (#0, layer: Sign, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0039]
-   "You have just started a short tutorial."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0040]
-   "You have just learnt how to look at anything in the room. Looking at an item will find more details about it, and you may find useful details about it."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0041]
-   "By pressing and holding the mouse button and selecting the other two symbols on the pop up menu"
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0042]
-   "you can also attempt to use or pick up an item by selecting the hand symbol."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0043]
-   "You can try talking to items as people by selecting the mouth symbol."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0044]
-   "If you start a conversation with someone, a list of possible things you can say will appear in the lower left of the screen."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0045]
-   "Select the one you want to say by moving the mouse over the option and pressing the mouse button."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0046]
-   "In the lower right of the screen is a chest icon. Selecting it with the mouse will open your inventory of items you have picked up."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0047]
-   "You can also open it by pressing the &quot;i&quot; button on your keyboard. You can interact with items in you inventory the same as items in the room."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0048]
-   "If you press and release the mouse button on an inventory item, it will be come your mouse pointer, you can now try using it with items in the room by pressing the mouse button on them."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0049]
-   "If you do this with a person, it will attempt to give the item to them."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0050]
-   "You can put the item back in you inventory by quickly pressing the mouse button twice while it is not over any object."
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0051]
-   "You can open the main menu by pressing the &quot;m&quot; on the keyboard at anytime. From there you can save or load your game."
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0135]
+   "Nothing of interest"
 
   -----
   Action: "Talk to" (#1, layer: Sign, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0052]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0052]
    "I'm not talking to that!"
 
   -----
   Action: "Use" (#2, layer: Sign, state: main)
 
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0053]
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0053]
    "I see no use for that."
 
-   - Dialog [puppet: ego, voice::FT_StorageRoom0054]
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0054]
    "Yeah, it's not like it's a chicken with a pully in the middle."
-
-
---------------------------------------------------
-- Layer: CheatHall
---------------------------------------------------
- --------------------------------------------------
- State: main (layer: CheatHall)
- title: "Cheat Hall"
-
-  -----
-  Action: "Look at" (#0, layer: CheatHall, state: main)
-
-  -----
-  Action: "Talk to" (#1, layer: CheatHall, state: main)
-
-  -----
-  Action: "Use" (#2, layer: CheatHall, state: main)
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0055]
-   "Cheat"
-
-
---------------------------------------------------
-- Layer: CheatOT
---------------------------------------------------
- --------------------------------------------------
- State: main (layer: CheatOT)
- title: "Cheat OT"
-
-  -----
-  Action: "Look at" (#0, layer: CheatOT, state: main)
-
-  -----
-  Action: "Talk to" (#1, layer: CheatOT, state: main)
-
-  -----
-  Action: "Use" (#2, layer: CheatOT, state: main)
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0056]
-   "Cheat"
-
-
---------------------------------------------------
-- Layer: CheatMap
---------------------------------------------------
- --------------------------------------------------
- State: main (layer: CheatMap)
- title: "Cheat Map"
-
-  -----
-  Action: "Look at" (#0, layer: CheatMap, state: main)
-
-  -----
-  Action: "Talk to" (#1, layer: CheatMap, state: main)
-
-  -----
-  Action: "Use" (#2, layer: CheatMap, state: main)
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0057]
-   "Cheat"
-
-
---------------------------------------------------
-- Layer: CheatMapDay
---------------------------------------------------
- --------------------------------------------------
- State: main (layer: CheatMapDay)
- title: "Cheat Map Day"
-
-  -----
-  Action: "Look at" (#0, layer: CheatMapDay, state: main)
-
-  -----
-  Action: "Talk to" (#1, layer: CheatMapDay, state: main)
-
-  -----
-  Action: "Use" (#2, layer: CheatMapDay, state: main)
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0058]
-   "Cheat"
-
-
---------------------------------------------------
-- Layer: CheatOffice
---------------------------------------------------
- --------------------------------------------------
- State: main (layer: CheatOffice)
- title: "Cheat Office"
-
-  -----
-  Action: "Look at" (#0, layer: CheatOffice, state: main)
-
-  -----
-  Action: "Talk to" (#1, layer: CheatOffice, state: main)
-
-  -----
-  Action: "Use" (#2, layer: CheatOffice, state: main)
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0059]
-   "Cheat"
-
-
---------------------------------------------------
-- Layer: CheatCoffeeShop
---------------------------------------------------
- --------------------------------------------------
- State: main (layer: CheatCoffeeShop)
- title: "Cheat Coffee Shop"
-
-  -----
-  Action: "Look at" (#0, layer: CheatCoffeeShop, state: main)
-
-  -----
-  Action: "Talk to" (#1, layer: CheatCoffeeShop, state: main)
-
-  -----
-  Action: "Use" (#2, layer: CheatCoffeeShop, state: main)
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0060]
-   "Cheat"
-
-
---------------------------------------------------
-- Layer: CheatHomeComputer
---------------------------------------------------
- --------------------------------------------------
- State: main (layer: CheatHomeComputer)
- title: "Cheat Home Computer"
-
-  -----
-  Action: "Look at" (#0, layer: CheatHomeComputer, state: main)
-
-  -----
-  Action: "Talk to" (#1, layer: CheatHomeComputer, state: main)
-
-  -----
-  Action: "Use" (#2, layer: CheatHomeComputer, state: main)
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0061]
-   "Cheat"
-
-
---------------------------------------------------
-- Layer: CheatSecretLair
---------------------------------------------------
- --------------------------------------------------
- State: main (layer: CheatSecretLair)
- title: "Cheat Secret Lair"
-
-  -----
-  Action: "Look at" (#0, layer: CheatSecretLair, state: main)
-
-  -----
-  Action: "Talk to" (#1, layer: CheatSecretLair, state: main)
-
-  -----
-  Action: "Use" (#2, layer: CheatSecretLair, state: main)
-
-   - Dialog [puppet: _avatar, voice::FT_StorageRoom0062]
-   "Cheat"
 
 
 --------------------------------------------------
@@ -827,115 +640,515 @@ LAYERS
 
 
 TREES
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0265]
+   "No More Help Please!"
+
+  -----
+  Topic: "_1" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0266]
+   "What do I do first?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0267]
+   "Well you figure out how to interact with inventory items"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0268]
+   "Try Looking at things in the room"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_3" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0272]
+   "Enough hints on the key"
+
+  -----
+  Topic: "_4" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0274]
+   "More hints on the key"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0275]
+   "Have you thought outside the box?"
+
+  -----
+  Topic: "_5" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0276]
+   "Just tell me exactly what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0277]
+   "Use the key on the sealed boxes"
+
+  -----
+  Topic: "_2" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0270]
+   "What is the key for?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0269]
+   "Try using the key on things in the room"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0271]
+   "Doors, locked things."
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_7" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0279]
+   "Enough hints on the key card"
+
+  -----
+  Topic: "_8" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0281]
+   "More hints"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0282]
+   "Key Cards usually need to be used on a device that reads the digital data"
+
+  -----
+  Topic: "_9" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0283]
+   "Just tell me exactly what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0284]
+   "Use the key card on the Gizmo"
+
+  -----
+  Topic: "_10" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0285]
+   "I'm still stuck"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0286]
+   "You need to use it with something else too"
+
+  -----
+  Topic: "_11" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0287]
+   "Just tell me exactly what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0288]
+   "Use the key card on the Gizmo"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0289]
+   "And then use the photo on the gizmo"
+
+  -----
+  Topic: "_6" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0278]
+   "What is the key card for?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0280]
+   "Have you tried using it on things in the room?"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_13" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0292]
+   "Enough hints on the Photo"
+
+  -----
+  Topic: "_16" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0298]
+   "Hint"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0299]
+   "You may need to look around the room some more first"
+
+  -----
+  Topic: "_14" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0294]
+   "Hint"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0295]
+   "Do you want to be someone else?"
+
+  -----
+  Topic: "_15" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0296]
+   "Just tell me what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0297]
+   "Use the key card and the photo on the gizmo"
+
+  -----
+  Topic: "_12" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0290]
+   "What is the photo for?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0291]
+   "Have you tried using it on things in the room?"
+
+  -----
+  Topic: "_17" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0200]
+   "What are the scrubs on hanger for?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0201]
+   "Have you had a closer look at them?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0202]
+   "Scubs on Hanger....that sounds like two items really"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0203]
+   "You could try using them in the inventory"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_19" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0206]
+   "Enough hints on the wire hanger"
+
+  -----
+  Topic: "_20" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0207]
+   "Hint"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0208]
+   "You don't need to be picky about what items you try using this on."
+
+  -----
+  Topic: "_21" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0209]
+   "Just tell me what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0210]
+   "Use the wire hanger to pick the lock on the cabinet"
+
+  -----
+  Topic: "_18" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0204]
+   "What is the wire hanger for?"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0205]
+   "Have you tried using it on things in the room?"
+
+  -----
+  Topic: "_22" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0211]
+   "I'm stuck"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0212]
+   "You just opened the cabinet, take a look"
+
+  -----
+  Topic: "_23" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0213]
+   "I'm stuck"
+
+   - Dialog [puppet: ego, voice:voice/V_FT_StorageRoom.swf:FT_StorageRoom0214]
+   "Now you know who the CEO is, maybe you can make use of those photos in a box"
 
 
 
-_avatar,"One of the pockets has a key in it.",PocketKey
-ego,"It won't fit any of the locks in here, don't bother trying.",:FT_StorageRoom0000
-_avatar,"I'm not wearing old scrubs!",WearOldScubs
-ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0001
-_avatar,"Looks like old medical scrubs",:FT_StorageRoom0002
-_avatar,"I'm not wearing old scrubs!",:FT_StorageRoom0003
-ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0004
-_avatar,"Looks like old medical scrubs.",:FT_StorageRoom0005
-_avatar,"I'm not wearing old scrubs!",:FT_StorageRoom0006
-ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0007
-_avatar,"There is a ID card in here.",IdCard
-ego,"It's not yours, put it back!",:FT_StorageRoom0008
-_avatar,"I'm not wearing old scrubs!",:FT_StorageRoom0009
-ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0010
-_avatar,"Looks like old medical scrubs",LooksOldScrubs
-_avatar,"I'm not wearing old scrubs!",:FT_StorageRoom0011
-ego,"A few blood stains never hurt anyone, wimp!",:FT_StorageRoom0012
-_avatar,"It's a filling cabinet and it appears to be locked.",LockedCabenet
-ego,"I doubt there is anything important in there.",:FT_StorageRoom0013
-_avatar,"It's locked firmly shut.",LockedShut
-_avatar,"It doesn't fit the lock.",DoesntFitLock
-ego,"Maybe you aren't trying hard enough.",:FT_StorageRoom0014
-_avatar,"Lets try and pick the lock.",PickLock
-_avatar,"That worked! I wonder what's inside?",:FT_StorageRoom0015
-ego,"I doubt there is anything important in there.",:FT_StorageRoom0016
-_avatar,"It's a unlocked filing cabinet.",UnlockedCabenet
-_avatar,"It's a lot of Future Tech company documents in here. Employee personal files. Shame there are no photo on them. It looks like the CEO is a Ms. Sarah Bio.",FTDocs
-ego,"That isn't worth remembering.",:FT_StorageRoom0017
-_avatar,"The handel doesn't work, and there is no lock on the door.",NoHandle
-ego,"Try giving it a push.",:FT_StorageRoom0018
+
+_avatar,"One of the pockets has a key in it.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0127
+ego,"It won't fit any of the locks in here, don't bother trying.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0000
+_avatar,"I'm not wearing old scrubs!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0134
+ego,"A few blood stains never hurt anyone, wimp!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0001
+_avatar,"Looks like old medical scrubs",voice/V_FT_StorageRoom.swf:FT_StorageRoom0002
+_avatar,"I'm not wearing old scrubs!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0003
+ego,"A few blood stains never hurt anyone, wimp!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0004
+_avatar,"Looks like old medical scrubs.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0005
+_avatar,"I'm not wearing old scrubs!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0006
+ego,"A few blood stains never hurt anyone, wimp!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0007
+_avatar,"There is a ID card in here.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0112
+ego,"It's not yours, put it back!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0008
+_avatar,"I'm not wearing old scrubs!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0009
+ego,"A few blood stains never hurt anyone, wimp!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0010
+_avatar,"Looks like old medical scrubs",voice/V_FT_StorageRoom.swf:FT_StorageRoom0116
+_avatar,"I'm not wearing old scrubs!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0011
+ego,"A few blood stains never hurt anyone, wimp!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0012
+_avatar,"It's a filling cabinet and it appears to be locked.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0114
+ego,"I doubt there is anything important in there.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0013
+_avatar,"It's locked firmly shut.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0115
+_avatar,"It doesn't fit the lock.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0105
+ego,"Maybe you aren't trying hard enough.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0014
+_avatar,"Lets try and pick the lock.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0126
+_avatar,"That worked! I wonder what's inside?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0015
+ego,"I doubt there is anything important in there.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0016
+_avatar,"It's a unlocked filing cabinet.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0133
+_avatar,"It's a lot of Future Tech company documents in here. Employee personal files. Shame there are no photo on them. It looks like the CEO is a Ms. Sarah Bio.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0108
+ego,"That isn't worth remembering.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0017
+_avatar,"The handel doesn't work, and there is no lock on the door.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0121
+ego,"Try giving it a push.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0018
+_avatar,"Is anyone there?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0100
+ego,"I'm here. I'm your sub-conscience.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0019
+_avatar,"I don't think it is a push door.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0124
+ego,"Try the handle.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0020
+_avatar,"There is no key hole.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0122
+_avatar,"It's open now.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0125
 _avatar,"Is anyone there?",AnyoneThere
-ego,"I'm here. I'm your sub-conscience.",:FT_StorageRoom0019
-_avatar,"I don't think it is a push door.",NotPushDoor
-ego,"Try the handle.",:FT_StorageRoom0020
+ego,"I'm here. I'm your sub-conscience.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0021
 _avatar,"There is no key hole.",NoKeyHole
-_avatar,"It's open now.",OpenNow
+_avatar,"It's open.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0125
 _avatar,"Is anyone there?",AnyoneThere
-ego,"I'm here. I'm your sub-conscience.",:FT_StorageRoom0021
+ego,"I'm here. I'm your sub-conscience.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0022
 _avatar,"There is no key hole.",NoKeyHole
-_avatar,"It's open.",OpenNow
-_avatar,"Is anyone there?",AnyoneThere
-ego,"I'm here. I'm your sub-conscience.",:FT_StorageRoom0022
-_avatar,"There is no key hole.",NoKeyHole
-_avatar,"Looks a bit hi-tech, I think it may be a scanner of some sort. There is a slot that looks like it is a credit card reader.",LooksScanner
-ego,"Looks broken to me.",:FT_StorageRoom0023
-_avatar,"There is nothing to press to start it, just a slot and a scanner.",NoStartButton
-ego,"I'd try to find the start button if I were you.",:FT_StorageRoom0024
-_avatar,"It scanned my iris, but didn't open the door.",ScannedIris
-ego,"You clearly don't work here.",:FT_StorageRoom0025
-_avatar,"That might work, I need to activate the scanner and I'll try that.",MightWork
-ego,"You think a photo will fool an iris scanner. Ha!",:FT_StorageRoom0026
-_avatar,"It's a scanner and a slot for an key card.",ScannerAndSlot
-_avatar,"There is nothing to press to start it, just a slot and a scanner.",NoStartButton
-_avatar,"It must be a cheap iris scanner to be fooled by a photo.",CheapScanner
-ego,"Yeah. I guess it must.",:FT_StorageRoom0027
-_avatar,"I need to activate the scanner and I'll try that.",NeedToActivate
-ego,"Find that start button.",:FT_StorageRoom0028
-_avatar,"There is a key hole in the door.",KeyHole
-ego,"You could always trying using your finger to pick the lock.",:FT_StorageRoom0029
-_avatar,"Is anyone there?",AnyoneThere
-ego,"I'm here. I'm your sub-conscience.",:FT_StorageRoom0030
-_avatar,"It's is locked firmly shut.",LockedShut
-_avatar,"It doesn't fit the lock.",DoesntFitLock
-ego,"Maybe you aren't trying hard enough.",:FT_StorageRoom0031
-_avatar,"Some sealed boxes, from MedialSupplies.com. I wonder what is inside? If only I could break the tape with something pointy.",SealedBoxes
-ego,"It's probably just more scrubs.",:FT_StorageRoom0032
-_avatar,"The tape is sealling these firmly shut.",TapeSealing
-_avatar,"That should break the tape sealing these. There are scrubs on hangers in here, I'll take one.",BreakTape
-ego,"See, told you it was just more scrubs.",:FT_StorageRoom0033
-_avatar,"Just more scrubs, I have enough of those.",MoreScubs
-_avatar,"I don't need any more of those.",HaveEnough
-_avatar,"A box of framed photos.",FramedPhotos
-_avatar,"There are too many to take them all, I'll take one if I need one later.",TooMany
-_avatar,"A box of employee photos in frames.",BoxFramedPhotos
-ego,"What a load of junk.",:FT_StorageRoom0034
-_avatar,"This one of the CEO might be useful.",CeoUseful
-ego,"What makes you think that?",:FT_StorageRoom0035
-_avatar,"A box of employee photos in frames.",BoxFramedPhotos
-ego,"What a load of junk.",:FT_StorageRoom0036
-_avatar,"I don't need any more of those.",HaveEnough
-_avatar,"It's a full bottle of water for one of those water dispensers.",:FT_StorageRoom0037
-_avatar,"What with?",:FT_StorageRoom0038
-_avatar,"You have just started a short tutorial.",:FT_StorageRoom0039
-_avatar,"You have just learnt how to look at anything in the room. Looking at an item will find more details about it, and you may find useful details about it.",:FT_StorageRoom0040
-_avatar,"By pressing and holding the mouse button and selecting the other two symbols on the pop up menu",:FT_StorageRoom0041
-_avatar,"you can also attempt to use or pick up an item by selecting the hand symbol.",:FT_StorageRoom0042
-_avatar,"You can try talking to items as people by selecting the mouth symbol.",:FT_StorageRoom0043
-_avatar,"If you start a conversation with someone, a list of possible things you can say will appear in the lower left of the screen.",:FT_StorageRoom0044
-_avatar,"Select the one you want to say by moving the mouse over the option and pressing the mouse button.",:FT_StorageRoom0045
-_avatar,"In the lower right of the screen is a chest icon. Selecting it with the mouse will open your inventory of items you have picked up.",:FT_StorageRoom0046
-_avatar,"You can also open it by pressing the &quot;i&quot; button on your keyboard. You can interact with items in you inventory the same as items in the room.",:FT_StorageRoom0047
-_avatar,"If you press and release the mouse button on an inventory item, it will be come your mouse pointer, you can now try using it with items in the room by pressing the mouse button on them.",:FT_StorageRoom0048
-_avatar,"If you do this with a person, it will attempt to give the item to them.",:FT_StorageRoom0049
-_avatar,"You can put the item back in you inventory by quickly pressing the mouse button twice while it is not over any object.",:FT_StorageRoom0050
-_avatar,"You can open the main menu by pressing the &quot;m&quot; on the keyboard at anytime. From there you can save or load your game.",:FT_StorageRoom0051
-_avatar,"I'm not talking to that!",:FT_StorageRoom0052
-_avatar,"I see no use for that.",:FT_StorageRoom0053
-ego,"Yeah, it's not like it's a chicken with a pully in the middle.",:FT_StorageRoom0054
-_avatar,"Cheat",:FT_StorageRoom0055
-_avatar,"Cheat",:FT_StorageRoom0056
-_avatar,"Cheat",:FT_StorageRoom0057
-_avatar,"Cheat",:FT_StorageRoom0058
-_avatar,"Cheat",:FT_StorageRoom0059
-_avatar,"Cheat",:FT_StorageRoom0060
-_avatar,"Cheat",:FT_StorageRoom0061
-_avatar,"Cheat",:FT_StorageRoom0062
+_avatar,"Looks a bit hi-tech, I think it may be a scanner of some sort. There is a slot that looks like it is a credit card reader.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0117
+ego,"Looks broken to me.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0023
+_avatar,"There is nothing to press to start it, just a slot and a scanner.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0123
+ego,"I'd try to find the start button if I were you.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0024
+_avatar,"It scanned my iris, but didn't open the door.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0128
+ego,"You clearly don't work here.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0025
+_avatar,"That might work, I need to activate the scanner and I'll try that.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0118
+ego,"You think a photo will fool an iris scanner. Ha!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0026
+_avatar,"It's a scanner and a slot for an key card.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0129
+_avatar,"There is nothing to press to start it, just a slot and a scanner.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0123
+_avatar,"It must be a cheap iris scanner to be fooled by a photo.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0104
+ego,"Yeah. I guess it must.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0027
+_avatar,"I need to activate the scanner and I'll try that.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0120
+ego,"Find that start button.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0028
+_avatar,"There is a key hole in the door.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0113
+ego,"You could always trying using your finger to pick the lock.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0029
+_avatar,"Is anyone there?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0100
+ego,"I'm here. I'm your sub-conscience.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0030
+_avatar,"It's is locked firmly shut.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0115
+_avatar,"It doesn't fit the lock.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0105
+ego,"Maybe you aren't trying hard enough.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0031
+_avatar,"Let's try and pick the lock.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0126
+_avatar,"I can't do that",voice/V_FT_StorageRoom.swf:FT_StorageRoom0110
+_avatar,"Some sealed boxes, from MedicalSupplies.com. I wonder what is inside? If only I could break the tape with something pointy.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0130
+ego,"It's probably just more scrubs.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0032
+_avatar,"The tape is sealling these firmly shut.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0131
+_avatar,"That should break the tape sealing these. There are scrubs on hangers in here, I'll take one.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0102
+ego,"See, told you it was just more scrubs.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0033
+_avatar,"Just more scrubs, I have enough of those.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0119
+_avatar,"I don't need any more of those.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0109
+_avatar,"A box of framed photos.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0107
+_avatar,"There are too many to take them all, I'll take one if I need one later.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0132
+_avatar,"A box of employee photos in frames.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0101
+ego,"What a load of junk.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0034
+_avatar,"This one of the CEO might be useful.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0103
+ego,"What makes you think that?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0035
+_avatar,"A box of employee photos in frames.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0101
+ego,"What a load of junk.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0036
+_avatar,"I don't need any more of those.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0109
+_avatar,"It's a full bottle of water for one of those water dispensers.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0037
+_avatar,"What with?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0038
+_avatar,"Nothing of interest",voice/V_FT_StorageRoom.swf:FT_StorageRoom0135
+_avatar,"I'm not talking to that!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0052
+_avatar,"I see no use for that.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0053
+ego,"Yeah, it's not like it's a chicken with a pully in the middle.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0054
+_avatar,"No More Help Please!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0265
+_avatar,"What do I do first?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0266
+ego,"Well you figure out how to interact with inventory items",voice/V_FT_StorageRoom.swf:FT_StorageRoom0267
+ego,"Try Looking at things in the room",voice/V_FT_StorageRoom.swf:FT_StorageRoom0268
+_avatar,"Enough hints on the key",voice/V_FT_StorageRoom.swf:FT_StorageRoom0272
+_avatar,"More hints on the key",voice/V_FT_StorageRoom.swf:FT_StorageRoom0274
+ego,"Have you thought outside the box?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0275
+_avatar,"Just tell me exactly what to do!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0276
+ego,"Use the key on the sealed boxes",voice/V_FT_StorageRoom.swf:FT_StorageRoom0277
+_avatar,"What is the key for?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0270
+ego,"Try using the key on things in the room",voice/V_FT_StorageRoom.swf:FT_StorageRoom0269
+ego,"Doors, locked things.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0271
+_avatar,"Enough hints on the key card",voice/V_FT_StorageRoom.swf:FT_StorageRoom0279
+_avatar,"More hints",voice/V_FT_StorageRoom.swf:FT_StorageRoom0281
+ego,"Key Cards usually need to be used on a device that reads the digital data",voice/V_FT_StorageRoom.swf:FT_StorageRoom0282
+_avatar,"Just tell me exactly what to do!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0283
+ego,"Use the key card on the Gizmo",voice/V_FT_StorageRoom.swf:FT_StorageRoom0284
+_avatar,"I'm still stuck",voice/V_FT_StorageRoom.swf:FT_StorageRoom0285
+ego,"You need to use it with something else too",voice/V_FT_StorageRoom.swf:FT_StorageRoom0286
+_avatar,"Just tell me exactly what to do!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0287
+ego,"Use the key card on the Gizmo",voice/V_FT_StorageRoom.swf:FT_StorageRoom0288
+ego,"And then use the photo on the gizmo",voice/V_FT_StorageRoom.swf:FT_StorageRoom0289
+_avatar,"What is the key card for?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0278
+ego,"Have you tried using it on things in the room?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0280
+_avatar,"Enough hints on the Photo",voice/V_FT_StorageRoom.swf:FT_StorageRoom0292
+_avatar,"Hint",voice/V_FT_StorageRoom.swf:FT_StorageRoom0298
+ego,"You may need to look around the room some more first",voice/V_FT_StorageRoom.swf:FT_StorageRoom0299
+_avatar,"Hint",voice/V_FT_StorageRoom.swf:FT_StorageRoom0294
+ego,"Do you want to be someone else?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0295
+_avatar,"Just tell me what to do!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0296
+ego,"Use the key card and the photo on the gizmo",voice/V_FT_StorageRoom.swf:FT_StorageRoom0297
+_avatar,"What is the photo for?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0290
+ego,"Have you tried using it on things in the room?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0291
+_avatar,"What are the scrubs on hanger for?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0200
+ego,"Have you had a closer look at them?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0201
+ego,"Scubs on Hanger....that sounds like two items really",voice/V_FT_StorageRoom.swf:FT_StorageRoom0202
+ego,"You could try using them in the inventory",voice/V_FT_StorageRoom.swf:FT_StorageRoom0203
+_avatar,"Enough hints on the wire hanger",voice/V_FT_StorageRoom.swf:FT_StorageRoom0206
+_avatar,"Hint",voice/V_FT_StorageRoom.swf:FT_StorageRoom0207
+ego,"You don't need to be picky about what items you try using this on.",voice/V_FT_StorageRoom.swf:FT_StorageRoom0208
+_avatar,"Just tell me what to do!",voice/V_FT_StorageRoom.swf:FT_StorageRoom0209
+ego,"Use the wire hanger to pick the lock on the cabinet",voice/V_FT_StorageRoom.swf:FT_StorageRoom0210
+_avatar,"What is the wire hanger for?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0204
+ego,"Have you tried using it on things in the room?",voice/V_FT_StorageRoom.swf:FT_StorageRoom0205
+_avatar,"I'm stuck",voice/V_FT_StorageRoom.swf:FT_StorageRoom0211
+ego,"You just opened the cabinet, take a look",voice/V_FT_StorageRoom.swf:FT_StorageRoom0212
+_avatar,"I'm stuck",voice/V_FT_StorageRoom.swf:FT_StorageRoom0213
+ego,"Now you know who the CEO is, maybe you can make use of those photos in a box",voice/V_FT_StorageRoom.swf:FT_StorageRoom0214
 
 
 
+addSound( FT_StorageRoom0127 );
+addSound( FT_StorageRoom0000 );
+addSound( FT_StorageRoom0134 );
+addSound( FT_StorageRoom0001 );
+addSound( FT_StorageRoom0002 );
+addSound( FT_StorageRoom0003 );
+addSound( FT_StorageRoom0004 );
+addSound( FT_StorageRoom0005 );
+addSound( FT_StorageRoom0006 );
+addSound( FT_StorageRoom0007 );
+addSound( FT_StorageRoom0112 );
+addSound( FT_StorageRoom0008 );
+addSound( FT_StorageRoom0009 );
+addSound( FT_StorageRoom0010 );
+addSound( FT_StorageRoom0116 );
+addSound( FT_StorageRoom0011 );
+addSound( FT_StorageRoom0012 );
+addSound( FT_StorageRoom0114 );
+addSound( FT_StorageRoom0013 );
+addSound( FT_StorageRoom0115 );
+addSound( FT_StorageRoom0105 );
+addSound( FT_StorageRoom0014 );
+addSound( FT_StorageRoom0126 );
+addSound( FT_StorageRoom0015 );
+addSound( FT_StorageRoom0016 );
+addSound( FT_StorageRoom0133 );
+addSound( FT_StorageRoom0108 );
+addSound( FT_StorageRoom0017 );
+addSound( FT_StorageRoom0121 );
+addSound( FT_StorageRoom0018 );
+addSound( FT_StorageRoom0100 );
+addSound( FT_StorageRoom0019 );
+addSound( FT_StorageRoom0124 );
+addSound( FT_StorageRoom0020 );
+addSound( FT_StorageRoom0122 );
+addSound( FT_StorageRoom0125 );
+addSound( AnyoneThere );
+addSound( FT_StorageRoom0021 );
+addSound( NoKeyHole );
+addSound( FT_StorageRoom0125 );
+addSound( AnyoneThere );
+addSound( FT_StorageRoom0022 );
+addSound( NoKeyHole );
+addSound( FT_StorageRoom0117 );
+addSound( FT_StorageRoom0023 );
+addSound( FT_StorageRoom0123 );
+addSound( FT_StorageRoom0024 );
+addSound( FT_StorageRoom0128 );
+addSound( FT_StorageRoom0025 );
+addSound( FT_StorageRoom0118 );
+addSound( FT_StorageRoom0026 );
+addSound( FT_StorageRoom0129 );
+addSound( FT_StorageRoom0123 );
+addSound( FT_StorageRoom0104 );
+addSound( FT_StorageRoom0027 );
+addSound( FT_StorageRoom0120 );
+addSound( FT_StorageRoom0028 );
+addSound( FT_StorageRoom0113 );
+addSound( FT_StorageRoom0029 );
+addSound( FT_StorageRoom0100 );
+addSound( FT_StorageRoom0030 );
+addSound( FT_StorageRoom0115 );
+addSound( FT_StorageRoom0105 );
+addSound( FT_StorageRoom0031 );
+addSound( FT_StorageRoom0126 );
+addSound( FT_StorageRoom0110 );
+addSound( FT_StorageRoom0130 );
+addSound( FT_StorageRoom0032 );
+addSound( FT_StorageRoom0131 );
+addSound( FT_StorageRoom0102 );
+addSound( FT_StorageRoom0033 );
+addSound( FT_StorageRoom0119 );
+addSound( FT_StorageRoom0109 );
+addSound( FT_StorageRoom0107 );
+addSound( FT_StorageRoom0132 );
+addSound( FT_StorageRoom0101 );
+addSound( FT_StorageRoom0034 );
+addSound( FT_StorageRoom0103 );
+addSound( FT_StorageRoom0035 );
+addSound( FT_StorageRoom0101 );
+addSound( FT_StorageRoom0036 );
+addSound( FT_StorageRoom0109 );
+addSound( FT_StorageRoom0037 );
+addSound( FT_StorageRoom0038 );
+addSound( FT_StorageRoom0135 );
+addSound( FT_StorageRoom0052 );
+addSound( FT_StorageRoom0053 );
+addSound( FT_StorageRoom0054 );
+addSound( FT_StorageRoom0265 );
+addSound( FT_StorageRoom0266 );
+addSound( FT_StorageRoom0267 );
+addSound( FT_StorageRoom0268 );
+addSound( FT_StorageRoom0272 );
+addSound( FT_StorageRoom0274 );
+addSound( FT_StorageRoom0275 );
+addSound( FT_StorageRoom0276 );
+addSound( FT_StorageRoom0277 );
+addSound( FT_StorageRoom0270 );
+addSound( FT_StorageRoom0269 );
+addSound( FT_StorageRoom0271 );
+addSound( FT_StorageRoom0279 );
+addSound( FT_StorageRoom0281 );
+addSound( FT_StorageRoom0282 );
+addSound( FT_StorageRoom0283 );
+addSound( FT_StorageRoom0284 );
+addSound( FT_StorageRoom0285 );
+addSound( FT_StorageRoom0286 );
+addSound( FT_StorageRoom0287 );
+addSound( FT_StorageRoom0288 );
+addSound( FT_StorageRoom0289 );
+addSound( FT_StorageRoom0278 );
+addSound( FT_StorageRoom0280 );
+addSound( FT_StorageRoom0292 );
+addSound( FT_StorageRoom0298 );
+addSound( FT_StorageRoom0299 );
+addSound( FT_StorageRoom0294 );
+addSound( FT_StorageRoom0295 );
+addSound( FT_StorageRoom0296 );
+addSound( FT_StorageRoom0297 );
+addSound( FT_StorageRoom0290 );
+addSound( FT_StorageRoom0291 );
+addSound( FT_StorageRoom0200 );
+addSound( FT_StorageRoom0201 );
+addSound( FT_StorageRoom0202 );
+addSound( FT_StorageRoom0203 );
+addSound( FT_StorageRoom0206 );
+addSound( FT_StorageRoom0207 );
+addSound( FT_StorageRoom0208 );
+addSound( FT_StorageRoom0209 );
+addSound( FT_StorageRoom0210 );
+addSound( FT_StorageRoom0204 );
+addSound( FT_StorageRoom0205 );
+addSound( FT_StorageRoom0211 );
+addSound( FT_StorageRoom0212 );
+addSound( FT_StorageRoom0213 );
+addSound( FT_StorageRoom0214 );

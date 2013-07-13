@@ -211,6 +211,81 @@ LAYERS
   -----
   Action: "Talk to" (#1, layer: iDog, state: main)
 
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0360]
+   "Hi, is this the robo-therapy group meetup?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0361]
+   "Are you implying that we are bunch of robo-losers?"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0362]
+   "Good day, how can I help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0421]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0420]
+   "To leave us alone, we're busy!"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0417]
+   "Yeah! We're too busy to chat."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0531]
+   "Don't you know who I am?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0532]
+   "No, who are you?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0533]
+   "Oh. No one really, just hoped you’d know."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0363]
+   "Hi, I do know you."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0364]
+   "Fine! We do know you."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0418]
+   "We were just pulling your leg earlier. Woof!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0365]
+   "Hi"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0419]
+   "I have some information that might help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0366]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0422]
+   "But I'm not going to tell you what it is! Ha! Ha! Ha!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0406]
+   "I guess you want to know where Sarah is?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0407]
+   "Yeah."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0414]
+   "She's in her secret lair! Ha Ha! Ha!"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0408]
+   "We can't tell you where that is though!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0409]
+   "We promised we'd tell him."
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0410]
+   "We also promised Sarah not to say where her secret lair is."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0411]
+   "The one on the top of the mountain or the one in her office?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0412]
+   "The mountain one dummy, she's not hiding in her office is she?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0413]
+   "Guys! Shh!"
+
   -----
   Action: "Use" (#2, layer: iDog, state: main)
 
@@ -252,6 +327,81 @@ LAYERS
   -----
   Action: "Talk to" (#1, layer: Cyberman, state: main)
 
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0360]
+   "Hi, is this the robo-therapy group meetup?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0361]
+   "Are you implying that we are bunch of robo-losers?"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0362]
+   "Good day, how can I help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0421]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0420]
+   "To leave us alone, we're busy!"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0417]
+   "Yeah! We're too busy to chat."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0531]
+   "Don't you know who I am?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0532]
+   "No, who are you?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0533]
+   "Oh. No one really, just hoped you’d know."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0363]
+   "Hi, I do know you."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0364]
+   "Fine! We do know you."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0418]
+   "We were just pulling your leg earlier. Woof!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0365]
+   "Hi"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0419]
+   "I have some information that might help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0366]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0422]
+   "But I'm not going to tell you what it is! Ha! Ha! Ha!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0406]
+   "I guess you want to know where Sarah is?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0407]
+   "Yeah."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0414]
+   "She's in her secret lair! Ha Ha! Ha!"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0408]
+   "We can't tell you where that is though!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0409]
+   "We promised we'd tell him."
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0410]
+   "We also promised Sarah not to say where her secret lair is."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0411]
+   "The one on the top of the mountain or the one in her office?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0412]
+   "The mountain one dummy, she's not hiding in her office is she?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0413]
+   "Guys! Shh!"
+
   -----
   Action: "Use" (#2, layer: Cyberman, state: main)
 
@@ -265,13 +415,13 @@ LAYERS
    "A parcel?"
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0011]
-   "Oh, it's for a Doctor...The Doctor?"
+   "Oh, it's for The Doctor?"
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0012]
    "What is it?"
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0013]
-   "It's a Sonic Hedghog!"
+   "It's a Sonic Hedgehog!"
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0014]
    "Er, yes....that is what I wanted. I think."
@@ -296,11 +446,86 @@ LAYERS
   -----
   Action: "Talk to" (#1, layer: Optimus, state: main)
 
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0360]
+   "Hi, is this the robo-therapy group meetup?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0361]
+   "Are you implying that we are bunch of robo-losers?"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0362]
+   "Good day, how can I help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0421]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0420]
+   "To leave us alone, we're busy!"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0417]
+   "Yeah! We're too busy to chat."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0531]
+   "Don't you know who I am?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0532]
+   "No, who are you?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0533]
+   "Oh. No one really, just hoped you’d know."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0363]
+   "Hi, I do know you."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0364]
+   "Fine! We do know you."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0418]
+   "We were just pulling your leg earlier. Woof!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0365]
+   "Hi"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0419]
+   "I have some information that might help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0366]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0422]
+   "But I'm not going to tell you what it is! Ha! Ha! Ha!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0406]
+   "I guess you want to know where Sarah is?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0407]
+   "Yeah."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0414]
+   "She's in her secret lair! Ha Ha! Ha!"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0408]
+   "We can't tell you where that is though!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0409]
+   "We promised we'd tell him."
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0410]
+   "We also promised Sarah not to say where her secret lair is."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0411]
+   "The one on the top of the mountain or the one in her office?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0412]
+   "The mountain one dummy, she's not hiding in her office is she?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0413]
+   "Guys! Shh!"
+
   -----
   Action: "Use" (#2, layer: Optimus, state: main)
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0017]
-   "I don't feel like using that person, for now."
+   "I don't feel like using this person, for now."
 
   -----
   Item: "O2Tank", "" (layer: Optimus, state: main)
@@ -330,6 +555,81 @@ LAYERS
   -----
   Action: "Talk to" (#1, layer: Optimus, state: HaveO2)
 
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0360]
+   "Hi, is this the robo-therapy group meetup?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0361]
+   "Are you implying that we are bunch of robo-losers?"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0362]
+   "Good day, how can I help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0421]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0420]
+   "To leave us alone, we're busy!"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0417]
+   "Yeah! We're too busy to chat."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0531]
+   "Don't you know who I am?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0532]
+   "No, who are you?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0533]
+   "Oh. No one really, just hoped you’d know."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0363]
+   "Hi, I do know you."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0364]
+   "Fine! We do know you."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0418]
+   "We were just pulling your leg earlier. Woof!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0365]
+   "Hi"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0419]
+   "I have some information that might help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0366]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0422]
+   "But I'm not going to tell you what it is! Ha! Ha! Ha!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0406]
+   "I guess you want to know where Sarah is?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0407]
+   "Yeah."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0414]
+   "She's in her secret lair! Ha Ha! Ha!"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0408]
+   "We can't tell you where that is though!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0409]
+   "We promised we'd tell him."
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0410]
+   "We also promised Sarah not to say where her secret lair is."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0411]
+   "The one on the top of the mountain or the one in her office?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0412]
+   "The mountain one dummy, she's not hiding in her office is she?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0413]
+   "Guys! Shh!"
+
   -----
   Action: "Use" (#2, layer: Optimus, state: HaveO2)
 
@@ -340,7 +640,7 @@ LAYERS
   Item: "O2Tank", "" (layer: Optimus, state: HaveO2)
 
    - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0023]
-   "Thanks I don't need anymore."
+   "Thanks I don't need any more."
 
   -----
   Item: "Pills", "" (layer: Optimus, state: HaveO2)
@@ -360,6 +660,81 @@ LAYERS
 
   -----
   Action: "Talk to" (#1, layer: Optimus, state: Done)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0360]
+   "Hi, is this the robo-therapy group meetup?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0361]
+   "Are you implying that we are bunch of robo-losers?"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0362]
+   "Good day, how can I help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0421]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0420]
+   "To leave us alone, we're busy!"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0417]
+   "Yeah! We're too busy to chat."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0531]
+   "Don't you know who I am?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0532]
+   "No, who are you?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0533]
+   "Oh. No one really, just hoped you’d know."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0363]
+   "Hi, I do know you."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0364]
+   "Fine! We do know you."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0418]
+   "We were just pulling your leg earlier. Woof!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0365]
+   "Hi"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0419]
+   "I have some information that might help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0366]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0422]
+   "But I'm not going to tell you what it is! Ha! Ha! Ha!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0406]
+   "I guess you want to know where Sarah is?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0407]
+   "Yeah."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0414]
+   "She's in her secret lair! Ha Ha! Ha!"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0408]
+   "We can't tell you where that is though!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0409]
+   "We promised we'd tell him."
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0410]
+   "We also promised Sarah not to say where her secret lair is."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0411]
+   "The one on the top of the mountain or the one in her office?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0412]
+   "The mountain one dummy, she's not hiding in her office is she?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0413]
+   "Guys! Shh!"
 
   -----
   Action: "Use" (#2, layer: Optimus, state: Done)
@@ -389,6 +764,81 @@ LAYERS
 
   -----
   Action: "Talk to" (#1, layer: Todd, state: main)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0360]
+   "Hi, is this the robo-therapy group meetup?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0361]
+   "Are you implying that we are bunch of robo-losers?"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0362]
+   "Good day, how can I help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0421]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0420]
+   "To leave us alone, we're busy!"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0417]
+   "Yeah! We're too busy to chat."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0531]
+   "Don't you know who I am?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0532]
+   "No, who are you?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0533]
+   "Oh. No one really, just hoped you’d know."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0363]
+   "Hi, I do know you."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0364]
+   "Fine! We do know you."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0418]
+   "We were just pulling your leg earlier. Woof!"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0365]
+   "Hi"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0419]
+   "I have some information that might help you"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0366]
+   "&lt;huf-huf&gt;"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0422]
+   "But I'm not going to tell you what it is! Ha! Ha! Ha!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0406]
+   "I guess you want to know where Sarah is?"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0407]
+   "Yeah."
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0414]
+   "She's in her secret lair! Ha Ha! Ha!"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0408]
+   "We can't tell you where that is though!"
+
+   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0409]
+   "We promised we'd tell him."
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0410]
+   "We also promised Sarah not to say where her secret lair is."
+
+   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0411]
+   "The one on the top of the mountain or the one in her office?"
+
+   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0412]
+   "The mountain one dummy, she's not hiding in her office is she?"
+
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0413]
+   "Guys! Shh!"
 
   -----
   Action: "Use" (#2, layer: Todd, state: main)
@@ -440,6 +890,23 @@ LAYERS
 
    - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0042]
    "Yeah sure whatever."
+
+
+--------------------------------------------------
+- Layer: Tina
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Tina)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Tina, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Tina, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Tina, state: main)
 
 
 --------------------------------------------------
@@ -504,6 +971,12 @@ LAYERS
   -----
   Action: "Talk to" (#1, layer: Friend, state: main)
 
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0118]
+   "Hi"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0119]
+   "Hi Ted"
+
   -----
   Action: "Use" (#2, layer: Friend, state: main)
 
@@ -566,7 +1039,7 @@ LAYERS
   Action: "Use" (#2, layer: KitchenDoor, state: main)
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0054]
-   "I'll get in to trouble."
+   "I'll get into trouble."
 
 
 --------------------------------------------------
@@ -586,7 +1059,7 @@ LAYERS
    "I don't like fish."
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0057]
-   "I once got servered a herring, that was red."
+   "I once got served a herring, that was red."
 
    - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0534]
    "Careful. If you make too many references to that game, you might get sued."
@@ -603,13 +1076,13 @@ LAYERS
 --------------------------------------------------
  --------------------------------------------------
  State: main (layer: window1)
- title: "Win dow"
+ title: "Window"
 
   -----
   Action: "Look at" (#0, layer: window1, state: main)
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0058]
-   "It a window. I can see the street outside from here."
+   "It's a window. I can see the street outside from here."
 
   -----
   Action: "Talk to" (#1, layer: window1, state: main)
@@ -635,13 +1108,13 @@ LAYERS
 --------------------------------------------------
  --------------------------------------------------
  State: main (layer: window2)
- title: "Win dow"
+ title: "Window"
 
   -----
   Action: "Look at" (#0, layer: window2, state: main)
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0063]
-   "It a window. I can see the street outside from here."
+   "It's a window. I can see the street outside from here."
 
   -----
   Action: "Talk to" (#1, layer: window2, state: main)
@@ -667,13 +1140,13 @@ LAYERS
 --------------------------------------------------
  --------------------------------------------------
  State: main (layer: window3)
- title: "Win dow"
+ title: "Window"
 
   -----
   Action: "Look at" (#0, layer: window3, state: main)
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0068]
-   "It a window. I can see the street outside from here."
+   "It's a window. I can see the street outside from here."
 
   -----
   Action: "Talk to" (#1, layer: window3, state: main)
@@ -714,7 +1187,7 @@ LAYERS
   Action: "Use" (#2, layer: shelves, state: main)
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0074]
-   "There is nothing of interest on them. And even if there was, that would be stealling."
+   "There is nothing of interest on them. And even if there was, that would be stealing."
 
    - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0075]
    "I'm sure that book would come in really useful, you should take it."
@@ -755,223 +1228,7 @@ TREES
 - Tree: Friend
 --------------------------------------------------
  --------------------------------------------------
- Tier: "" (tree: Friend)
-
- --------------------------------------------------
  Tier: "_0" (tree: Friend)
-
- --------------------------------------------------
- Tier: "" (tree: Friend)
-
- --------------------------------------------------
- Tier: "_8" (tree: Friend)
-
- --------------------------------------------------
- Tier: "" (tree: Friend)
-
- --------------------------------------------------
- Tier: "_16" (tree: Friend)
-
-  -----
-  Topic: "_17" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0130]
-   "What upgrades has she had?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0131]
-   "Well it started with infrared eyes."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0132]
-   "Some gills and some wings and a few extra thumbsr"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0133]
-   "Now she is thirteen feet tall"
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0134]
-   "When she's asleep her machinery hums."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0135]
-   "Really?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0136]
-   "That's..er...interesting."
-
-  -----
-  Topic: "_18" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0137]
-   "Is she dangerous?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0138]
-   "Well"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0139]
-   "Given that you have lost your memory and everything the same night you were going to confront her about her illegal activities."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0140]
-   "Maybe."
-
-  -----
-  Topic: "_19" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0141]
-   "What should I do?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0142]
-   "I don't know!"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0143]
-   "I suggest you get your memory back before you see her again."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0144]
-   "You could try talking to her robot friends over there."
-
-  -----
-  Topic: "_24" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0145]
-   "I don't suppose I told you what my password is for my home computer."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0146]
-   "No, sorry. It's probably something important to you though."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0147]
-   "Have you tried your familys names or you were a big fan of Battlestar Galactica? "
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0148]
-   "Thanks, I'll give them a try."
-
-  -----
-  Topic: "_23" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0149]
-   "I don't know what else to ask."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0150]
-   "I don't know what else to tell you."
-
-  -----
-  Topic: "_20" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0151]
-   "Ok, I've heard enough."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0152]
-   "Just glad I could help."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0153]
-   "Be careful!"
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0154]
-   "Thanks Tom. Bye."
-
-  -----
-  Topic: "_16" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0126]
-   "What did I say?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0127]
-   "You said you had found files on here computer, and she was in to illegal practices to fund her obbession with her surgeory."
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0128]
-   "What surgeory?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0129]
-   "Her cyborg upgrades."
-
-  -----
-  Topic: "_12" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0124]
-   "What makes you think Sarah is to blame?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0125]
-   "Well we met yesterday, and you told me where you were going."
-
-  -----
-  Topic: "_15" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0155]
-   "Do you think I've gone crazy?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0156]
-   "Well...."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0157]
-   "It's possible."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0158]
-   "But I don't think so."
-
-  -----
-  Topic: "_8" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0122]
-   "I remember waking up in a locked storage closet!"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0123]
-   "Sarah is clearly more dangerous than we thought."
-
-  -----
-  Topic: "_9" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0159]
-   "I remember where I live."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0160]
-   "Well that is a good sign."
-
-  -----
-  Topic: "_10" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0161]
-   "I remember Sarah is my girlfriend."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0162]
-   "Well that is a good sign."
-
-  -----
-  Topic: "_11" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0163]
-   "I know I have an annoying inner voice that won't shut up!"
-
-   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0164]
-   "Hey, I'm just trying to be helpful."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0165]
-   "That just sounds like you are going crazy."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0166]
-   "Maybe Sarah isn't to blame after all."
-
-  -----
-  Topic: "_14" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0167]
-   "I remember where I work."
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0168]
-   "Well that is a good sign."
-
-  -----
-  Topic: "_13" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0169]
-   "I don't remember anything!"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0170]
-   "How did you phone me then?"
-
-  -----
-  Topic: "_2" (tree: Friend, tier: _16)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0120]
-   "So what is it that you have to tell me?"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0121]
-   "How much do you remember?"
 
  --------------------------------------------------
  Tier: "" (tree: Friend)
@@ -989,7 +1246,7 @@ TREES
    "Wow, you really have lost your memory!"
 
    - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0177]
-   "She is your girlfriend."
+   "She's your girlfriend."
 
   -----
   Topic: "_6" (tree: Friend, tier: _4)
@@ -1013,7 +1270,7 @@ TREES
    "No. Should I?"
 
    - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0174]
-   "They are Sarahs friends."
+   "They're Sarah's friends."
 
   -----
   Topic: "_7" (tree: Friend, tier: _4)
@@ -1021,8 +1278,8 @@ TREES
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0182]
    "They look like a toy shop rejection bin!"
 
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0183]
-   "They are Sarahs friends."
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0174]
+   "They're Sarahs friends."
 
   -----
   Topic: "_3" (tree: Friend, tier: _4)
@@ -1034,86 +1291,236 @@ TREES
    "You don't recognise them?"
 
   -----
-  Topic: "_22" (tree: Friend, tier: _4)
+  Topic: "_24" (tree: Friend, tier: _4)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0145]
+   "I don't suppose I told you what my password is for my home computer."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0146]
+   "No, sorry. It's probably something important to you though."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0147]
+   "Have you tried your family's names or you were a big fan of Battlestar Galactica? "
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0148]
+   "Thanks, I'll give them a try."
+
+ --------------------------------------------------
+ Tier: "" (tree: Friend)
+
+  -----
+  Topic: "_9" (tree: Friend, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0159]
+   "I remember where I live."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0160]
+   "Well that is a good sign."
+
+  -----
+  Topic: "_10" (tree: Friend, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0161]
+   "I remember Sarah is my girlfriend."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0160]
+   "Well that is a good sign."
+
+  -----
+  Topic: "_14" (tree: Friend, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0167]
+   "I remember where I work."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0160]
+   "Well that is a good sign."
+
+  -----
+  Topic: "_13" (tree: Friend, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0169]
+   "I don't remember anything!"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0170]
+   "How did you phone me then?"
+
+  -----
+  Topic: "_11" (tree: Friend, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0163]
+   "I know I have an annoying inner voice that won't shut up!"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0164]
+   "Hey, I'm just trying to be helpful."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0165]
+   "That just sounds like you are going crazy."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0166]
+   "Maybe Sarah isn't to blame after all."
+
+ --------------------------------------------------
+ Tier: "_8" (tree: Friend)
+
+  -----
+  Topic: "_15" (tree: Friend, tier: _8)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0155]
+   "Do you think I've gone crazy?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0156]
+   "Well...."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0157]
+   "It's possible."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0158]
+   "But I don't think so."
+
+ --------------------------------------------------
+ Tier: "" (tree: Friend)
+
+ --------------------------------------------------
+ Tier: "_16" (tree: Friend)
+
+  -----
+  Topic: "_17" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0130]
+   "What upgrades has she had?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0131]
+   "Well it started with infrared eyes."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0132]
+   "Some gills and some wings and a few extra thumbs"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0133]
+   "Now she's thirteen feet tall"
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0134]
+   "When she's asleep her machinery hums."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0135]
+   "Really?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0136]
+   "That's..er...interesting."
+
+  -----
+  Topic: "_18" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0137]
+   "Is she dangerous?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0138]
+   "Well..."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0139]
+   "Given that you have lost your memory and everything, the same night you were going to confront her about her illegal activities."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0140]
+   "Maybe."
+
+  -----
+  Topic: "_19" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0141]
+   "What should I do?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0142]
+   "I don't know!"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0143]
+   "I suggest you get your memory back before you see her again."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0144]
+   "You could try talking to her robot friends over there."
+
+  -----
+  Topic: "_23" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0149]
+   "I don't know what else to ask."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0150]
+   "I don't know what else to tell you."
+
+  -----
+  Topic: "_20" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0151]
+   "Ok, I've heard enough."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0152]
+   "Just glad I could help."
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0153]
+   "Be careful!"
+
+  -----
+  Topic: "_16" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0126]
+   "What did I say?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0127]
+   "You said you had found files on her computer, and she was into illegal practices to fund her obsession with her surgery."
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0128]
+   "What surgery?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0129]
+   "Her cyborg upgrades."
+
+  -----
+  Topic: "_12" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0124]
+   "What makes you think Sarah is to blame?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0125]
+   "Well we met yesterday, and you told me where you were going."
+
+  -----
+  Topic: "_8" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0122]
+   "I remember waking up in a locked storage closet!"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0123]
+   "Sarah is clearly more dangerous than we thought."
+
+  -----
+  Topic: "_2" (tree: Friend, tier: _16)
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0120]
+   "So what is it that you have to tell me?"
+
+   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0121]
+   "How much do you remember?"
+
+  -----
+  Topic: "_22" (tree: Friend, tier: _16)
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0184]
-   "Is there anymore you can tell me?"
+   "Is there any more you can tell me?"
 
    - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0185]
    "What do you want to know?"
 
   -----
-  Topic: "_21" (tree: Friend, tier: _4)
+  Topic: "_1" (tree: Friend, tier: _16)
 
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0186]
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0188]
    "Bye"
 
    - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0187]
    "Take care."
 
-  -----
-  Topic: "_0" (tree: Friend, tier: _4)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0118]
-   "Hi"
-
-   - Dialog [puppet: Friend, voice:voice/V_CoffeeShop.swf:CoffeeShop0119]
-   "Hey Ted."
-
-  -----
-  Topic: "_1" (tree: Friend, tier: _4)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0188]
-   "Bye"
-
 --------------------------------------------------
 - Tree: Robots
 --------------------------------------------------
- --------------------------------------------------
- Tier: "" (tree: Robots)
-
-  -----
-  Topic: "_0" (tree: Robots, tier: )
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0360]
-   "Hi, is this the robo-therapy group meetup?"
-
-   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0361]
-   "Are you implying that we are bunch of robo-loosers?"
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0362]
-   "Good day, how can I help you"
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0421]
-   "&lt;huf-huf&gt;"
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0420]
-   "to leave us alone, we're busy!"
-
-   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0417]
-   "Yeah! We're too busy to chat."
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0531]
-   "Don't you know who I am?"
-
-   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0532]
-   "No, who are you?"
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0533]
-   "Oh. No one really, just hoped you’d know."
-
-  -----
-  Topic: "_2" (tree: Robots, tier: )
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0363]
-   "Hi, I do know you."
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0364]
-   "Fine! We do know you."
-
-   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0418]
-   "We were just pulling your leg earlier. Woof!"
-
  --------------------------------------------------
  Tier: "_3" (tree: Robots)
 
@@ -1193,13 +1600,13 @@ TREES
    "The Doctor! You are the Doctor!"
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0435]
-   " Impending critical failure, rebooting!"
+   "Impending critical failure, rebooting!"
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0436]
    "Restoring from last back up."
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0437]
-   "Hello, what just happend"
+   "Hello, what just happened"
 
    - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0438]
    "Oh, nothing."
@@ -1217,10 +1624,10 @@ TREES
    "Todd T-1000. Or 'T' to my friends."
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0430]
-   "Ok Mr T. Do you pitty the fool?"
+   "Ok Mr T. Do you pity the fool?"
 
    - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0431]
-   "Your not my friend. And it's just 'T'."
+   "You're not my friend. And it's just 'T'."
 
   -----
   Topic: "_5" (tree: Robots, tier: _3)
@@ -1235,7 +1642,7 @@ TREES
    "&lt;huf-huf&gt;"
 
    - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0385]
-   "but I'm not going to! Ha! Ha! Ha!"
+   "But I'm not going to! Ha! Ha! Ha!"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0386]
    "I thought we were friends."
@@ -1259,7 +1666,7 @@ TREES
    "&lt;huf-huf&gt;"
 
    - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0443]
-   "shame she had no taste in men!"
+   "Shame she had no taste in men!"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0444]
    "Thanks for that."
@@ -1271,7 +1678,7 @@ TREES
    "Optimus, you want a favour?"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0472]
-   "What do I need to do to for you to tell me where Sarah is?"
+   "What do I need to do for you to tell me where Sarah is?"
 
    - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0390]
    "Well, I've been having breathing problems recently, so I had an oxygen tank installed, but it need refilling."
@@ -1286,10 +1693,10 @@ TREES
    "Lappy, you want a favour?"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0474]
-   "What do I need to do to for you to tell me where Sarah is?"
+   "What do I need to do for you to tell me where Sarah is?"
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0447]
-   "I love music. I’ve listened to all my music so much, I need a new song to listen too! Make it good though! Woof!"
+   "I love music. I’ve listened to all my music so much, I need a new song to listen to! Make it good though! Woof!"
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0475]
    "Oh a parrot, come play with me parrot, I want to be your friend."
@@ -1301,7 +1708,7 @@ TREES
    "Cyberman, you want a favour?"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0455]
-   "What do I need to do to for you to tell me where Sarah is?"
+   "What do I need to do for you to tell me where Sarah is?"
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0457]
    "I'm looking for The Doctor."
@@ -1310,7 +1717,7 @@ TREES
    "The Doctor must be stopped!"
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0459]
-   "My memory has been corrupted, but I know he uses a sonic something. Get me The Doctors sonic thingamy."
+   "My memory has been corrupted, but I know he uses a sonic something. Get me The Doctor's sonic thingamy."
 
   -----
   Topic: "_18" (tree: Robots, tier: _3)
@@ -1319,7 +1726,7 @@ TREES
    "Todd, you want a favour?"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0464]
-   "What do I need to do to for you to tell me where Sarah is?"
+   "What do I need to do for you to tell me where Sarah is?"
 
    - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0469]
    "I’m so handsome all the girl robots are scared to be near me."
@@ -1334,7 +1741,7 @@ TREES
    "Like that one I said how large her chest cavities were."
 
    - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0482]
-   "I liked it, but she thought I was saying he was large structured."
+   "I liked it, but she thought I was saying she was large structured."
 
   -----
   Topic: "_20" (tree: Robots, tier: _3)
@@ -1346,10 +1753,10 @@ TREES
    "Bow at my feet! Tremble at my massive muscles!"
 
    - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0479]
-   "Well their quite big, I guess they could always be improved on."
+   "Well they're quite big, I guess they could always be improved on."
 
    - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0480]
-   "I need to work on my pectorals more don’t I? I can tell your unimpressed."
+   "I need to work on my pectorals more don’t I? I can tell you're unimpressed."
 
    - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0529]
    "Quiver at my stupendous intellect! Actually, that sounds like I’m saying I’m stupid doesn’t it?"
@@ -1361,13 +1768,13 @@ TREES
    "Why are you all in this coffee shop?"
 
    - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0401]
-   "It's the only place in town that will let us in since Barry Bots eye incident."
+   "It's the only place in town that will let us in since Barry Bot's eye incident."
 
    - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0483]
    "Where he accidently burnt down that shop."
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0484]
-   "Yeah it's the only place in town that allows still allows robots."
+   "Yeah it's the only place in town that still allows robots."
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0485]
    "Is that a new cape Optimus?"
@@ -1391,7 +1798,7 @@ TREES
    "Additionally, I can express various emotions, grow through learning, and communicate with human beings to bring an entirely new form of entertainment into the home."
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0491]
-   "I think you emotion setting is stuck on happy!"
+   "I think your emotion setting is stuck on happy!"
 
   -----
   Topic: "_22" (tree: Robots, tier: _3)
@@ -1400,13 +1807,13 @@ TREES
    "Can't you give me at least one clue about Sarah's location?"
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0492]
-   "You gotta be crazy, you gotta have a real need (singing)"
+   "You gotta be crazy, you gotta have a real need"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0494]
-   "I'm just a man who's Circumstances went beyond his control  (singing)"
+   "I'm just a man who's Circumstances went beyond his control"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0495]
-   "Give my umbrella to the rain dogs. For I am a rain dog too  (singing)"
+   "Give my umbrella to the rain dogs. For I am a rain dog too"
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0496]
    "Pink Floyd, Mr Roboto and Tom Waits? Are you trying to impress me with you musical knowledge?"
@@ -1421,19 +1828,19 @@ TREES
    "Be a good iDog, why can't you tell me where Sarah is?"
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0499]
-   "It's been a hard day's night, and I've been working like a dog  (singing)"
+   "It's been a hard day's night, and I've been working like a dog"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0500]
-   "There's nothing you can sing that can't be sung (singing)"
+   "There's nothing you can sing that can't be sung"
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0501]
-   "The answer, my friend, is blowing in the wind (singing)"
+   "The answer, my friend, is blowin' in the wind"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0502]
-   "You ain't never caught a rabbit and you ain't no friend of mine (singing)"
+   "You ain't never caught a rabbit and you ain't no friend of mine"
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0503]
-   "You've got a friend in me. Yeah, you've got a friend in me (singing)"
+   "You've got a friend in me. Yeah, you've got a friend in me"
 
    - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0504]
    "But I'm not telling you anything."
@@ -1445,10 +1852,10 @@ TREES
    "Cyberman, how come you don't remember anything?"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0506]
-   "Can robot forget?"
+   "Can robots forget?"
 
-   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0507]
-   "My HD has a few bad sectors. I've bought it in the 70's!"
+   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0507]
+   "My HD has a few bad sectors. I bought it in the 70's!"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0508]
    "Have you tried SCANDISK /autofix ?"
@@ -1469,7 +1876,7 @@ TREES
    "510423 KB in bad sectors"
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0514]
-   "That doesn't sound good.Maybe you need to see a Doctor."
+   "That doesn't sound good. Maybe you need to see a Doctor."
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0515]
    "Yes I need to find The Doctor!"
@@ -1502,7 +1909,7 @@ TREES
    "Or buy a big black motorcycle and travel the world."
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0524]
-   "I can't, I've got a mortgage to pay."
+   "I can't, I've got a mortgage to repay."
 
    - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0525]
    "And I need to kill the Doctor first. "
@@ -1517,69 +1924,271 @@ TREES
    "I don't remember!"
 
   -----
-  Topic: "_7" (tree: Robots, tier: _3)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0402]
-   "Bye"
-
-  -----
-  Topic: "_3" (tree: Robots, tier: _3)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0365]
-   "Hi"
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0419]
-   "I have some information that might help you"
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0366]
-   "&lt;huf-huf&gt;"
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0422]
-   "But I'm not going to tell you what it is! Ha! Ha! Ha!"
-
-  -----
-  Topic: "_10" (tree: Robots, tier: _3)
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0405]
-   "Hi"
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0406]
-   "I guess you want to know where Sarah is?"
-
-   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0407]
-   "Yeah."
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0414]
-   "She's in her secret lair! Ha Ha! Ha!"
-
-   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0408]
-   "We can't tell you where that is though!"
-
-   - Dialog [puppet: Optimus, voice:voice/V_CoffeeShop.swf:CoffeeShop0409]
-   "We promised we'd tell him."
-
-   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0410]
-   "We also promised Sarah not to say where her secret lair is."
-
-   - Dialog [puppet: iDog, voice:voice/V_CoffeeShop.swf:CoffeeShop0411]
-   "The one on the top of the mountain or the one in her office?"
-
-   - Dialog [puppet: Todd, voice:voice/V_CoffeeShop.swf:CoffeeShop0412]
-   "The mountain one dummy, she's not hiding in her office is she?"
-
-   - Dialog [puppet: Cyberman, voice:voice/V_CoffeeShop.swf:CoffeeShop0413]
-   "Guys! Shh!"
-
-  -----
   Topic: "_1" (tree: Robots, tier: _3)
 
    - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0416]
    "Bye"
 
+--------------------------------------------------
+- Tree: HelpMe
+--------------------------------------------------
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_0" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0537]
+   "No More Help Please"
+
+  -----
+  Topic: "_1" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0538]
+   "The robots won't talk to me"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0539]
+   "They claim you don't know them"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0540]
+   "You don't remember if you know them."
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0541]
+   "Maybe there is someone who would know if you do know them"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_3" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0544]
+   "Don't tell me where it is."
+
+  -----
+  Topic: "_4" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0545]
+   "Where is the pirate joke?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0546]
+   "Look at the parrot photo"
+
+  -----
+  Topic: "_2" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0542]
+   "Are there any pirate jokes in here?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0543]
+   "Yes, make sure you look at everything"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_6" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0549]
+   "Enough help with Optimus"
+
+  -----
+  Topic: "_7" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0550]
+   "How do I get Oxygen?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0551]
+   "Have you tried a medical facility?"
+
+  -----
+  Topic: "_8" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0552]
+   "How do I get medicine?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0553]
+   "Medicine is usally locked away."
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0554]
+   "Have you tried a medical facility?"
+
+  -----
+  Topic: "_5" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0547]
+   "How do I help Optimus?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0548]
+   "He wants oxygen and hayfeaver medicine"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_10" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0557]
+   "Enough help with Lappy"
+
+  -----
+  Topic: "_11" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0558]
+   "Where can I get a song?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0559]
+   "I hear you can download music from the internet"
+
+  -----
+  Topic: "_12" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0560]
+   "How do I get the song to Lappy?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0561]
+   "I hear that mp3 players are a good way to do that."
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0562]
+   "Maybe you could find someone with one you could borrow."
+
+  -----
+  Topic: "_9" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0555]
+   "How do I help Lappy (iDog)?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0556]
+   "Lappy wants a good song."
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_14" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0565]
+   "Enough help with Cyberman"
+
+  -----
+  Topic: "_15" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0566]
+   "Hint"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0567]
+   "He does not really know what he wants from The Doctor"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0568]
+   "You are a doctor, maybe you could trick him into thinking that something you own is what he wants"
+
+  -----
+  Topic: "_16" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0569]
+   "Bigger Hint"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0570]
+   "I'd get a parcel delivered with a Sonic something in"
+
+  -----
+  Topic: "_17" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0571]
+   "Just tell me what to do"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0572]
+   "I hear iBay is good for buying stuff"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0573]
+   "You will need a computer though, you have one at home you could use"
+
+  -----
+  Topic: "_13" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0563]
+   "How do I help Cyberman?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0564]
+   "He wants something belonging to The Doctor"
+
+ --------------------------------------------------
+ Tier: "" (tree: HelpMe)
+
+  -----
+  Topic: "_19" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0576]
+   "Enough Help with Todd"
+
+  -----
+  Topic: "_20" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0577]
+   "Hint"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0578]
+   "Robots probably want electronic girlfriends"
+
+  -----
+  Topic: "_21" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0579]
+   "Tell me what to do"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0580]
+   "I would try doing other things first, you can't do this yet."
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0583]
+   "Maybe someone will give you one later"
+
+  -----
+  Topic: "_22" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0581]
+   "Tell me what to do!"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0582]
+   "You have a female AI on a USB stick, try giving Todd that"
+
+  -----
+  Topic: "_18" (tree: HelpMe, tier: )
+
+   - Dialog [puppet: _avatar, voice:voice/V_CoffeeShop.swf:CoffeeShop0574]
+   "How do I help Todd?"
+
+   - Dialog [puppet: ego, voice:voice/V_CoffeeShop.swf:CoffeeShop0575]
+   "Todd wants a girlfriend"
+
 
 
 
 _avatar,"It's iDog.",voice/V_CoffeeShop.swf:CoffeeShop0001
+_avatar,"Hi, is this the robo-therapy group meetup?",voice/V_CoffeeShop.swf:CoffeeShop0360
+Todd,"Are you implying that we are bunch of robo-losers?",voice/V_CoffeeShop.swf:CoffeeShop0361
+Optimus,"Good day, how can I help you",voice/V_CoffeeShop.swf:CoffeeShop0362
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0421
+Optimus,"To leave us alone, we're busy!",voice/V_CoffeeShop.swf:CoffeeShop0420
+Todd,"Yeah! We're too busy to chat.",voice/V_CoffeeShop.swf:CoffeeShop0417
+_avatar,"Don't you know who I am?",voice/V_CoffeeShop.swf:CoffeeShop0531
+Cyberman,"No, who are you?",voice/V_CoffeeShop.swf:CoffeeShop0532
+_avatar,"Oh. No one really, just hoped you’d know.",voice/V_CoffeeShop.swf:CoffeeShop0533
+_avatar,"Hi, I do know you.",voice/V_CoffeeShop.swf:CoffeeShop0363
+Optimus,"Fine! We do know you.",voice/V_CoffeeShop.swf:CoffeeShop0364
+iDog,"We were just pulling your leg earlier. Woof!",voice/V_CoffeeShop.swf:CoffeeShop0418
+_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0365
+Optimus,"I have some information that might help you",voice/V_CoffeeShop.swf:CoffeeShop0419
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0366
+Optimus,"But I'm not going to tell you what it is! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0422
+Optimus,"I guess you want to know where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0406
+_avatar,"Yeah.",voice/V_CoffeeShop.swf:CoffeeShop0407
+Optimus,"She's in her secret lair! Ha Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0414
+Cyberman,"We can't tell you where that is though!",voice/V_CoffeeShop.swf:CoffeeShop0408
+Optimus,"We promised we'd tell him.",voice/V_CoffeeShop.swf:CoffeeShop0409
+Todd,"We also promised Sarah not to say where her secret lair is.",voice/V_CoffeeShop.swf:CoffeeShop0410
+iDog,"The one on the top of the mountain or the one in her office?",voice/V_CoffeeShop.swf:CoffeeShop0411
+Todd,"The mountain one dummy, she's not hiding in her office is she?",voice/V_CoffeeShop.swf:CoffeeShop0412
+Cyberman,"Guys! Shh!",voice/V_CoffeeShop.swf:CoffeeShop0413
 _avatar,"I don't feel like using that person, for now.",voice/V_CoffeeShop.swf:CoffeeShop0002
 iDog,"There is nothing on here I like.",voice/V_CoffeeShop.swf:CoffeeShop0003
 iDog,"Hey, this song!",voice/V_CoffeeShop.swf:CoffeeShop0004
@@ -1587,26 +2196,151 @@ iDog,"It's about me!",voice/V_CoffeeShop.swf:CoffeeShop0005
 iDog,"I love it. Woof!",voice/V_CoffeeShop.swf:CoffeeShop0006
 iDog,"Thanks, I'll classify you as a friend now.",voice/V_CoffeeShop.swf:CoffeeShop0007
 _avatar,"It's Cyberman",voice/V_CoffeeShop.swf:CoffeeShop0008
+_avatar,"Hi, is this the robo-therapy group meetup?",voice/V_CoffeeShop.swf:CoffeeShop0360
+Todd,"Are you implying that we are bunch of robo-losers?",voice/V_CoffeeShop.swf:CoffeeShop0361
+Optimus,"Good day, how can I help you",voice/V_CoffeeShop.swf:CoffeeShop0362
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0421
+Optimus,"To leave us alone, we're busy!",voice/V_CoffeeShop.swf:CoffeeShop0420
+Todd,"Yeah! We're too busy to chat.",voice/V_CoffeeShop.swf:CoffeeShop0417
+_avatar,"Don't you know who I am?",voice/V_CoffeeShop.swf:CoffeeShop0531
+Cyberman,"No, who are you?",voice/V_CoffeeShop.swf:CoffeeShop0532
+_avatar,"Oh. No one really, just hoped you’d know.",voice/V_CoffeeShop.swf:CoffeeShop0533
+_avatar,"Hi, I do know you.",voice/V_CoffeeShop.swf:CoffeeShop0363
+Optimus,"Fine! We do know you.",voice/V_CoffeeShop.swf:CoffeeShop0364
+iDog,"We were just pulling your leg earlier. Woof!",voice/V_CoffeeShop.swf:CoffeeShop0418
+_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0365
+Optimus,"I have some information that might help you",voice/V_CoffeeShop.swf:CoffeeShop0419
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0366
+Optimus,"But I'm not going to tell you what it is! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0422
+Optimus,"I guess you want to know where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0406
+_avatar,"Yeah.",voice/V_CoffeeShop.swf:CoffeeShop0407
+Optimus,"She's in her secret lair! Ha Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0414
+Cyberman,"We can't tell you where that is though!",voice/V_CoffeeShop.swf:CoffeeShop0408
+Optimus,"We promised we'd tell him.",voice/V_CoffeeShop.swf:CoffeeShop0409
+Todd,"We also promised Sarah not to say where her secret lair is.",voice/V_CoffeeShop.swf:CoffeeShop0410
+iDog,"The one on the top of the mountain or the one in her office?",voice/V_CoffeeShop.swf:CoffeeShop0411
+Todd,"The mountain one dummy, she's not hiding in her office is she?",voice/V_CoffeeShop.swf:CoffeeShop0412
+Cyberman,"Guys! Shh!",voice/V_CoffeeShop.swf:CoffeeShop0413
 _avatar,"I don't feel like using that person, for now.",voice/V_CoffeeShop.swf:CoffeeShop0009
 Cyberman,"A parcel?",voice/V_CoffeeShop.swf:CoffeeShop0010
-Cyberman,"Oh, it's for a Doctor...The Doctor?",voice/V_CoffeeShop.swf:CoffeeShop0011
+Cyberman,"Oh, it's for The Doctor?",voice/V_CoffeeShop.swf:CoffeeShop0011
 Cyberman,"What is it?",voice/V_CoffeeShop.swf:CoffeeShop0012
-Cyberman,"It's a Sonic Hedghog!",voice/V_CoffeeShop.swf:CoffeeShop0013
+Cyberman,"It's a Sonic Hedgehog!",voice/V_CoffeeShop.swf:CoffeeShop0013
 Cyberman,"Er, yes....that is what I wanted. I think.",voice/V_CoffeeShop.swf:CoffeeShop0014
 Cyberman,"I will now log you as my friend in my data-banks.",voice/V_CoffeeShop.swf:CoffeeShop0015
 _avatar,"It's Optimus Vader Darth Prime.",voice/V_CoffeeShop.swf:CoffeeShop0016
-_avatar,"I don't feel like using that person, for now.",voice/V_CoffeeShop.swf:CoffeeShop0017
+_avatar,"Hi, is this the robo-therapy group meetup?",voice/V_CoffeeShop.swf:CoffeeShop0360
+Todd,"Are you implying that we are bunch of robo-losers?",voice/V_CoffeeShop.swf:CoffeeShop0361
+Optimus,"Good day, how can I help you",voice/V_CoffeeShop.swf:CoffeeShop0362
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0421
+Optimus,"To leave us alone, we're busy!",voice/V_CoffeeShop.swf:CoffeeShop0420
+Todd,"Yeah! We're too busy to chat.",voice/V_CoffeeShop.swf:CoffeeShop0417
+_avatar,"Don't you know who I am?",voice/V_CoffeeShop.swf:CoffeeShop0531
+Cyberman,"No, who are you?",voice/V_CoffeeShop.swf:CoffeeShop0532
+_avatar,"Oh. No one really, just hoped you’d know.",voice/V_CoffeeShop.swf:CoffeeShop0533
+_avatar,"Hi, I do know you.",voice/V_CoffeeShop.swf:CoffeeShop0363
+Optimus,"Fine! We do know you.",voice/V_CoffeeShop.swf:CoffeeShop0364
+iDog,"We were just pulling your leg earlier. Woof!",voice/V_CoffeeShop.swf:CoffeeShop0418
+_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0365
+Optimus,"I have some information that might help you",voice/V_CoffeeShop.swf:CoffeeShop0419
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0366
+Optimus,"But I'm not going to tell you what it is! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0422
+Optimus,"I guess you want to know where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0406
+_avatar,"Yeah.",voice/V_CoffeeShop.swf:CoffeeShop0407
+Optimus,"She's in her secret lair! Ha Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0414
+Cyberman,"We can't tell you where that is though!",voice/V_CoffeeShop.swf:CoffeeShop0408
+Optimus,"We promised we'd tell him.",voice/V_CoffeeShop.swf:CoffeeShop0409
+Todd,"We also promised Sarah not to say where her secret lair is.",voice/V_CoffeeShop.swf:CoffeeShop0410
+iDog,"The one on the top of the mountain or the one in her office?",voice/V_CoffeeShop.swf:CoffeeShop0411
+Todd,"The mountain one dummy, she's not hiding in her office is she?",voice/V_CoffeeShop.swf:CoffeeShop0412
+Cyberman,"Guys! Shh!",voice/V_CoffeeShop.swf:CoffeeShop0413
+_avatar,"I don't feel like using this person, for now.",voice/V_CoffeeShop.swf:CoffeeShop0017
 Optimus,"Thanks. I still have a problem with hayfever though.",voice/V_CoffeeShop.swf:CoffeeShop0018
 Optimus,"You can keep the tank, mine is full now.",voice/V_CoffeeShop.swf:CoffeeShop0019
 Optimus,"I need my oxygen tank refilling more urgently!",voice/V_CoffeeShop.swf:CoffeeShop0020
 _avatar,"It's Optimus Vader Darth Prime.",voice/V_CoffeeShop.swf:CoffeeShop0021
+_avatar,"Hi, is this the robo-therapy group meetup?",voice/V_CoffeeShop.swf:CoffeeShop0360
+Todd,"Are you implying that we are bunch of robo-losers?",voice/V_CoffeeShop.swf:CoffeeShop0361
+Optimus,"Good day, how can I help you",voice/V_CoffeeShop.swf:CoffeeShop0362
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0421
+Optimus,"To leave us alone, we're busy!",voice/V_CoffeeShop.swf:CoffeeShop0420
+Todd,"Yeah! We're too busy to chat.",voice/V_CoffeeShop.swf:CoffeeShop0417
+_avatar,"Don't you know who I am?",voice/V_CoffeeShop.swf:CoffeeShop0531
+Cyberman,"No, who are you?",voice/V_CoffeeShop.swf:CoffeeShop0532
+_avatar,"Oh. No one really, just hoped you’d know.",voice/V_CoffeeShop.swf:CoffeeShop0533
+_avatar,"Hi, I do know you.",voice/V_CoffeeShop.swf:CoffeeShop0363
+Optimus,"Fine! We do know you.",voice/V_CoffeeShop.swf:CoffeeShop0364
+iDog,"We were just pulling your leg earlier. Woof!",voice/V_CoffeeShop.swf:CoffeeShop0418
+_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0365
+Optimus,"I have some information that might help you",voice/V_CoffeeShop.swf:CoffeeShop0419
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0366
+Optimus,"But I'm not going to tell you what it is! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0422
+Optimus,"I guess you want to know where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0406
+_avatar,"Yeah.",voice/V_CoffeeShop.swf:CoffeeShop0407
+Optimus,"She's in her secret lair! Ha Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0414
+Cyberman,"We can't tell you where that is though!",voice/V_CoffeeShop.swf:CoffeeShop0408
+Optimus,"We promised we'd tell him.",voice/V_CoffeeShop.swf:CoffeeShop0409
+Todd,"We also promised Sarah not to say where her secret lair is.",voice/V_CoffeeShop.swf:CoffeeShop0410
+iDog,"The one on the top of the mountain or the one in her office?",voice/V_CoffeeShop.swf:CoffeeShop0411
+Todd,"The mountain one dummy, she's not hiding in her office is she?",voice/V_CoffeeShop.swf:CoffeeShop0412
+Cyberman,"Guys! Shh!",voice/V_CoffeeShop.swf:CoffeeShop0413
 _avatar,"I don't feel like using that person, for now.",voice/V_CoffeeShop.swf:CoffeeShop0022
-Optimus,"Thanks I don't need anymore.",voice/V_CoffeeShop.swf:CoffeeShop0023
+Optimus,"Thanks I don't need any more.",voice/V_CoffeeShop.swf:CoffeeShop0023
 Optimus,"That will help, thanks friend.",voice/V_CoffeeShop.swf:CoffeeShop0024
 _avatar,"It's Optimus Vader Darth Prime.",voice/V_CoffeeShop.swf:CoffeeShop0025
+_avatar,"Hi, is this the robo-therapy group meetup?",voice/V_CoffeeShop.swf:CoffeeShop0360
+Todd,"Are you implying that we are bunch of robo-losers?",voice/V_CoffeeShop.swf:CoffeeShop0361
+Optimus,"Good day, how can I help you",voice/V_CoffeeShop.swf:CoffeeShop0362
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0421
+Optimus,"To leave us alone, we're busy!",voice/V_CoffeeShop.swf:CoffeeShop0420
+Todd,"Yeah! We're too busy to chat.",voice/V_CoffeeShop.swf:CoffeeShop0417
+_avatar,"Don't you know who I am?",voice/V_CoffeeShop.swf:CoffeeShop0531
+Cyberman,"No, who are you?",voice/V_CoffeeShop.swf:CoffeeShop0532
+_avatar,"Oh. No one really, just hoped you’d know.",voice/V_CoffeeShop.swf:CoffeeShop0533
+_avatar,"Hi, I do know you.",voice/V_CoffeeShop.swf:CoffeeShop0363
+Optimus,"Fine! We do know you.",voice/V_CoffeeShop.swf:CoffeeShop0364
+iDog,"We were just pulling your leg earlier. Woof!",voice/V_CoffeeShop.swf:CoffeeShop0418
+_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0365
+Optimus,"I have some information that might help you",voice/V_CoffeeShop.swf:CoffeeShop0419
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0366
+Optimus,"But I'm not going to tell you what it is! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0422
+Optimus,"I guess you want to know where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0406
+_avatar,"Yeah.",voice/V_CoffeeShop.swf:CoffeeShop0407
+Optimus,"She's in her secret lair! Ha Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0414
+Cyberman,"We can't tell you where that is though!",voice/V_CoffeeShop.swf:CoffeeShop0408
+Optimus,"We promised we'd tell him.",voice/V_CoffeeShop.swf:CoffeeShop0409
+Todd,"We also promised Sarah not to say where her secret lair is.",voice/V_CoffeeShop.swf:CoffeeShop0410
+iDog,"The one on the top of the mountain or the one in her office?",voice/V_CoffeeShop.swf:CoffeeShop0411
+Todd,"The mountain one dummy, she's not hiding in her office is she?",voice/V_CoffeeShop.swf:CoffeeShop0412
+Cyberman,"Guys! Shh!",voice/V_CoffeeShop.swf:CoffeeShop0413
 _avatar,"I don't feel like using that person, for now.",voice/V_CoffeeShop.swf:CoffeeShop0026
 Optimus,"Thanks I don't need anymore.",voice/V_CoffeeShop.swf:CoffeeShop0027
 _avatar,"It's Todd the T-1000",voice/V_CoffeeShop.swf:CoffeeShop0028
+_avatar,"Hi, is this the robo-therapy group meetup?",voice/V_CoffeeShop.swf:CoffeeShop0360
+Todd,"Are you implying that we are bunch of robo-losers?",voice/V_CoffeeShop.swf:CoffeeShop0361
+Optimus,"Good day, how can I help you",voice/V_CoffeeShop.swf:CoffeeShop0362
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0421
+Optimus,"To leave us alone, we're busy!",voice/V_CoffeeShop.swf:CoffeeShop0420
+Todd,"Yeah! We're too busy to chat.",voice/V_CoffeeShop.swf:CoffeeShop0417
+_avatar,"Don't you know who I am?",voice/V_CoffeeShop.swf:CoffeeShop0531
+Cyberman,"No, who are you?",voice/V_CoffeeShop.swf:CoffeeShop0532
+_avatar,"Oh. No one really, just hoped you’d know.",voice/V_CoffeeShop.swf:CoffeeShop0533
+_avatar,"Hi, I do know you.",voice/V_CoffeeShop.swf:CoffeeShop0363
+Optimus,"Fine! We do know you.",voice/V_CoffeeShop.swf:CoffeeShop0364
+iDog,"We were just pulling your leg earlier. Woof!",voice/V_CoffeeShop.swf:CoffeeShop0418
+_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0365
+Optimus,"I have some information that might help you",voice/V_CoffeeShop.swf:CoffeeShop0419
+Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0366
+Optimus,"But I'm not going to tell you what it is! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0422
+Optimus,"I guess you want to know where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0406
+_avatar,"Yeah.",voice/V_CoffeeShop.swf:CoffeeShop0407
+Optimus,"She's in her secret lair! Ha Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0414
+Cyberman,"We can't tell you where that is though!",voice/V_CoffeeShop.swf:CoffeeShop0408
+Optimus,"We promised we'd tell him.",voice/V_CoffeeShop.swf:CoffeeShop0409
+Todd,"We also promised Sarah not to say where her secret lair is.",voice/V_CoffeeShop.swf:CoffeeShop0410
+iDog,"The one on the top of the mountain or the one in her office?",voice/V_CoffeeShop.swf:CoffeeShop0411
+Todd,"The mountain one dummy, she's not hiding in her office is she?",voice/V_CoffeeShop.swf:CoffeeShop0412
+Cyberman,"Guys! Shh!",voice/V_CoffeeShop.swf:CoffeeShop0413
 _avatar,"I don't feel like using that person, for now.",voice/V_CoffeeShop.swf:CoffeeShop0029
 Todd,"There is nothing on here of interest.",voice/V_CoffeeShop.swf:CoffeeShop0030
 Todd,"Hey! This song is about me!",voice/V_CoffeeShop.swf:CoffeeShop0031
@@ -1626,6 +2360,8 @@ ego,"You must be used to sitting alone.",voice/V_CoffeeShop.swf:CoffeeShop0536
 _avatar,"I'd rather sit with someone.",voice/V_CoffeeShop.swf:CoffeeShop0044
 _avatar,"It's Tom",voice/V_CoffeeShop.swf:CoffeeShop0045
 ego,"I wouldn't talk to him, he is dull and boring.",voice/V_CoffeeShop.swf:CoffeeShop0535
+_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0118
+Friend,"Hi Ted",voice/V_CoffeeShop.swf:CoffeeShop0119
 _avatar,"I don't feel like using that person, for now.",voice/V_CoffeeShop.swf:CoffeeShop0046
 _avatar,"It's a picture of a parrot.",voice/V_CoffeeShop.swf:CoffeeShop0047
 _avatar,"Oh, that reminds me of a pirate joke I could tell Paul and Storm!",voice/V_CoffeeShop.swf:CoffeeShop0048
@@ -1634,113 +2370,97 @@ _avatar,"Well not with people around.",voice/V_CoffeeShop.swf:CoffeeShop0050
 _avatar,"It's the kitchen, where they prepare the food.",voice/V_CoffeeShop.swf:CoffeeShop0051
 _avatar,"It smells of cooking cephalopods.",voice/V_CoffeeShop.swf:CoffeeShop0052
 ego,"Stop showing off, if you mean squid, say squid.",voice/V_CoffeeShop.swf:CoffeeShop0053
-_avatar,"I'll get in to trouble.",voice/V_CoffeeShop.swf:CoffeeShop0054
+_avatar,"I'll get into trouble.",voice/V_CoffeeShop.swf:CoffeeShop0054
 _avatar,"I thought today was special, but I don't know why,",voice/V_CoffeeShop.swf:CoffeeShop0055
 _avatar,"I don't like fish.",voice/V_CoffeeShop.swf:CoffeeShop0056
-_avatar,"I once got servered a herring, that was red.",voice/V_CoffeeShop.swf:CoffeeShop0057
+_avatar,"I once got served a herring, that was red.",voice/V_CoffeeShop.swf:CoffeeShop0057
 ego,"Careful. If you make too many references to that game, you might get sued.",voice/V_CoffeeShop.swf:CoffeeShop0534
-_avatar,"It a window. I can see the street outside from here.",voice/V_CoffeeShop.swf:CoffeeShop0058
+_avatar,"It's a window. I can see the street outside from here.",voice/V_CoffeeShop.swf:CoffeeShop0058
 _avatar,"It won't open",voice/V_CoffeeShop.swf:CoffeeShop0059
 ego,"It's getting hot in here.",voice/V_CoffeeShop.swf:CoffeeShop0060
 ego,"So take off all your clothes.",voice/V_CoffeeShop.swf:CoffeeShop0061
 _avatar,"Er...no. Are you trying to get me arrested?",voice/V_CoffeeShop.swf:CoffeeShop0062
-_avatar,"It a window. I can see the street outside from here.",voice/V_CoffeeShop.swf:CoffeeShop0063
+_avatar,"It's a window. I can see the street outside from here.",voice/V_CoffeeShop.swf:CoffeeShop0063
 _avatar,"It won't open",voice/V_CoffeeShop.swf:CoffeeShop0064
 ego,"It's getting hot in here.",voice/V_CoffeeShop.swf:CoffeeShop0065
 ego,"So take off all your clothes.",voice/V_CoffeeShop.swf:CoffeeShop0066
 _avatar,"Er...no. Are you trying to get me arrested?",voice/V_CoffeeShop.swf:CoffeeShop0067
-_avatar,"It a window. I can see the street outside from here.",voice/V_CoffeeShop.swf:CoffeeShop0068
+_avatar,"It's a window. I can see the street outside from here.",voice/V_CoffeeShop.swf:CoffeeShop0068
 _avatar,"It won't open",voice/V_CoffeeShop.swf:CoffeeShop0069
 ego,"It's getting hot in here.",voice/V_CoffeeShop.swf:CoffeeShop0070
 ego,"So take off all your clothes.",voice/V_CoffeeShop.swf:CoffeeShop0071
 _avatar,"Er...no. Are you trying to get me arrested?",voice/V_CoffeeShop.swf:CoffeeShop0072
 _avatar,"It's some shelves. And there's a book on it..",voice/V_CoffeeShop.swf:CoffeeShop0073
-_avatar,"There is nothing of interest on them. And even if there was, that would be stealling.",voice/V_CoffeeShop.swf:CoffeeShop0074
+_avatar,"There is nothing of interest on them. And even if there was, that would be stealing.",voice/V_CoffeeShop.swf:CoffeeShop0074
 ego,"I'm sure that book would come in really useful, you should take it.",voice/V_CoffeeShop.swf:CoffeeShop0075
 _avatar,"You mean &quot;The Joy of Hex&quot;? What possible use could that be?",voice/V_CoffeeShop.swf:CoffeeShop0076
-_avatar,"What upgrades has she had?",voice/V_CoffeeShop.swf:CoffeeShop0130
-Friend,"Well it started with infrared eyes.",voice/V_CoffeeShop.swf:CoffeeShop0131
-Friend,"Some gills and some wings and a few extra thumbsr",voice/V_CoffeeShop.swf:CoffeeShop0132
-Friend,"Now she is thirteen feet tall",voice/V_CoffeeShop.swf:CoffeeShop0133
-_avatar,"When she's asleep her machinery hums.",voice/V_CoffeeShop.swf:CoffeeShop0134
-Friend,"Really?",voice/V_CoffeeShop.swf:CoffeeShop0135
-Friend,"That's..er...interesting.",voice/V_CoffeeShop.swf:CoffeeShop0136
-_avatar,"Is she dangerous?",voice/V_CoffeeShop.swf:CoffeeShop0137
-Friend,"Well",voice/V_CoffeeShop.swf:CoffeeShop0138
-Friend,"Given that you have lost your memory and everything the same night you were going to confront her about her illegal activities.",voice/V_CoffeeShop.swf:CoffeeShop0139
-Friend,"Maybe.",voice/V_CoffeeShop.swf:CoffeeShop0140
-_avatar,"What should I do?",voice/V_CoffeeShop.swf:CoffeeShop0141
-Friend,"I don't know!",voice/V_CoffeeShop.swf:CoffeeShop0142
-Friend,"I suggest you get your memory back before you see her again.",voice/V_CoffeeShop.swf:CoffeeShop0143
-Friend,"You could try talking to her robot friends over there.",voice/V_CoffeeShop.swf:CoffeeShop0144
-_avatar,"I don't suppose I told you what my password is for my home computer.",voice/V_CoffeeShop.swf:CoffeeShop0145
-Friend,"No, sorry. It's probably something important to you though.",voice/V_CoffeeShop.swf:CoffeeShop0146
-Friend,"Have you tried your familys names or you were a big fan of Battlestar Galactica? ",voice/V_CoffeeShop.swf:CoffeeShop0147
-_avatar,"Thanks, I'll give them a try.",voice/V_CoffeeShop.swf:CoffeeShop0148
-_avatar,"I don't know what else to ask.",voice/V_CoffeeShop.swf:CoffeeShop0149
-Friend,"I don't know what else to tell you.",voice/V_CoffeeShop.swf:CoffeeShop0150
-_avatar,"Ok, I've heard enough.",voice/V_CoffeeShop.swf:CoffeeShop0151
-Friend,"Just glad I could help.",voice/V_CoffeeShop.swf:CoffeeShop0152
-Friend,"Be careful!",voice/V_CoffeeShop.swf:CoffeeShop0153
-_avatar,"Thanks Tom. Bye.",voice/V_CoffeeShop.swf:CoffeeShop0154
-_avatar,"What did I say?",voice/V_CoffeeShop.swf:CoffeeShop0126
-Friend,"You said you had found files on here computer, and she was in to illegal practices to fund her obbession with her surgeory.",voice/V_CoffeeShop.swf:CoffeeShop0127
-_avatar,"What surgeory?",voice/V_CoffeeShop.swf:CoffeeShop0128
-Friend,"Her cyborg upgrades.",voice/V_CoffeeShop.swf:CoffeeShop0129
-_avatar,"What makes you think Sarah is to blame?",voice/V_CoffeeShop.swf:CoffeeShop0124
-Friend,"Well we met yesterday, and you told me where you were going.",voice/V_CoffeeShop.swf:CoffeeShop0125
-_avatar,"Do you think I've gone crazy?",voice/V_CoffeeShop.swf:CoffeeShop0155
-Friend,"Well....",voice/V_CoffeeShop.swf:CoffeeShop0156
-Friend,"It's possible.",voice/V_CoffeeShop.swf:CoffeeShop0157
-Friend,"But I don't think so.",voice/V_CoffeeShop.swf:CoffeeShop0158
-_avatar,"I remember waking up in a locked storage closet!",voice/V_CoffeeShop.swf:CoffeeShop0122
-Friend,"Sarah is clearly more dangerous than we thought.",voice/V_CoffeeShop.swf:CoffeeShop0123
-_avatar,"I remember where I live.",voice/V_CoffeeShop.swf:CoffeeShop0159
-Friend,"Well that is a good sign.",voice/V_CoffeeShop.swf:CoffeeShop0160
-_avatar,"I remember Sarah is my girlfriend.",voice/V_CoffeeShop.swf:CoffeeShop0161
-Friend,"Well that is a good sign.",voice/V_CoffeeShop.swf:CoffeeShop0162
-_avatar,"I know I have an annoying inner voice that won't shut up!",voice/V_CoffeeShop.swf:CoffeeShop0163
-ego,"Hey, I'm just trying to be helpful.",voice/V_CoffeeShop.swf:CoffeeShop0164
-Friend,"That just sounds like you are going crazy.",voice/V_CoffeeShop.swf:CoffeeShop0165
-Friend,"Maybe Sarah isn't to blame after all.",voice/V_CoffeeShop.swf:CoffeeShop0166
-_avatar,"I remember where I work.",voice/V_CoffeeShop.swf:CoffeeShop0167
-Friend,"Well that is a good sign.",voice/V_CoffeeShop.swf:CoffeeShop0168
-_avatar,"I don't remember anything!",voice/V_CoffeeShop.swf:CoffeeShop0169
-Friend,"How did you phone me then?",voice/V_CoffeeShop.swf:CoffeeShop0170
-_avatar,"So what is it that you have to tell me?",voice/V_CoffeeShop.swf:CoffeeShop0120
-Friend,"How much do you remember?",voice/V_CoffeeShop.swf:CoffeeShop0121
 _avatar,"Who is Sarah?",voice/V_CoffeeShop.swf:CoffeeShop0175
 Friend,"Wow, you really have lost your memory!",voice/V_CoffeeShop.swf:CoffeeShop0176
-Friend,"She is your girlfriend.",voice/V_CoffeeShop.swf:CoffeeShop0177
+Friend,"She's your girlfriend.",voice/V_CoffeeShop.swf:CoffeeShop0177
 _avatar,"Sarah? My girlfriend?",voice/V_CoffeeShop.swf:CoffeeShop0178
 Friend,"Yeah. So you do remember some things then?",voice/V_CoffeeShop.swf:CoffeeShop0179
 _avatar,"I saw pictures at home of us together and figured it out.",voice/V_CoffeeShop.swf:CoffeeShop0180
 _avatar,"I don't really remember.",voice/V_CoffeeShop.swf:CoffeeShop0181
 _avatar,"No. Should I?",voice/V_CoffeeShop.swf:CoffeeShop0173
-Friend,"They are Sarahs friends.",voice/V_CoffeeShop.swf:CoffeeShop0174
+Friend,"They're Sarah's friends.",voice/V_CoffeeShop.swf:CoffeeShop0174
 _avatar,"They look like a toy shop rejection bin!",voice/V_CoffeeShop.swf:CoffeeShop0182
-Friend,"They are Sarahs friends.",voice/V_CoffeeShop.swf:CoffeeShop0183
+Friend,"They're Sarahs friends.",voice/V_CoffeeShop.swf:CoffeeShop0174
 _avatar,"Why are there robots in a coffee shop?",voice/V_CoffeeShop.swf:CoffeeShop0171
 Friend,"You don't recognise them?",voice/V_CoffeeShop.swf:CoffeeShop0172
-_avatar,"Is there anymore you can tell me?",voice/V_CoffeeShop.swf:CoffeeShop0184
+_avatar,"I don't suppose I told you what my password is for my home computer.",voice/V_CoffeeShop.swf:CoffeeShop0145
+Friend,"No, sorry. It's probably something important to you though.",voice/V_CoffeeShop.swf:CoffeeShop0146
+Friend,"Have you tried your family's names or you were a big fan of Battlestar Galactica? ",voice/V_CoffeeShop.swf:CoffeeShop0147
+_avatar,"Thanks, I'll give them a try.",voice/V_CoffeeShop.swf:CoffeeShop0148
+_avatar,"I remember where I live.",voice/V_CoffeeShop.swf:CoffeeShop0159
+Friend,"Well that is a good sign.",voice/V_CoffeeShop.swf:CoffeeShop0160
+_avatar,"I remember Sarah is my girlfriend.",voice/V_CoffeeShop.swf:CoffeeShop0161
+Friend,"Well that is a good sign.",voice/V_CoffeeShop.swf:CoffeeShop0160
+_avatar,"I remember where I work.",voice/V_CoffeeShop.swf:CoffeeShop0167
+Friend,"Well that is a good sign.",voice/V_CoffeeShop.swf:CoffeeShop0160
+_avatar,"I don't remember anything!",voice/V_CoffeeShop.swf:CoffeeShop0169
+Friend,"How did you phone me then?",voice/V_CoffeeShop.swf:CoffeeShop0170
+_avatar,"I know I have an annoying inner voice that won't shut up!",voice/V_CoffeeShop.swf:CoffeeShop0163
+ego,"Hey, I'm just trying to be helpful.",voice/V_CoffeeShop.swf:CoffeeShop0164
+Friend,"That just sounds like you are going crazy.",voice/V_CoffeeShop.swf:CoffeeShop0165
+Friend,"Maybe Sarah isn't to blame after all.",voice/V_CoffeeShop.swf:CoffeeShop0166
+_avatar,"Do you think I've gone crazy?",voice/V_CoffeeShop.swf:CoffeeShop0155
+Friend,"Well....",voice/V_CoffeeShop.swf:CoffeeShop0156
+Friend,"It's possible.",voice/V_CoffeeShop.swf:CoffeeShop0157
+Friend,"But I don't think so.",voice/V_CoffeeShop.swf:CoffeeShop0158
+_avatar,"What upgrades has she had?",voice/V_CoffeeShop.swf:CoffeeShop0130
+Friend,"Well it started with infrared eyes.",voice/V_CoffeeShop.swf:CoffeeShop0131
+Friend,"Some gills and some wings and a few extra thumbs",voice/V_CoffeeShop.swf:CoffeeShop0132
+Friend,"Now she's thirteen feet tall",voice/V_CoffeeShop.swf:CoffeeShop0133
+_avatar,"When she's asleep her machinery hums.",voice/V_CoffeeShop.swf:CoffeeShop0134
+Friend,"Really?",voice/V_CoffeeShop.swf:CoffeeShop0135
+Friend,"That's..er...interesting.",voice/V_CoffeeShop.swf:CoffeeShop0136
+_avatar,"Is she dangerous?",voice/V_CoffeeShop.swf:CoffeeShop0137
+Friend,"Well...",voice/V_CoffeeShop.swf:CoffeeShop0138
+Friend,"Given that you have lost your memory and everything, the same night you were going to confront her about her illegal activities.",voice/V_CoffeeShop.swf:CoffeeShop0139
+Friend,"Maybe.",voice/V_CoffeeShop.swf:CoffeeShop0140
+_avatar,"What should I do?",voice/V_CoffeeShop.swf:CoffeeShop0141
+Friend,"I don't know!",voice/V_CoffeeShop.swf:CoffeeShop0142
+Friend,"I suggest you get your memory back before you see her again.",voice/V_CoffeeShop.swf:CoffeeShop0143
+Friend,"You could try talking to her robot friends over there.",voice/V_CoffeeShop.swf:CoffeeShop0144
+_avatar,"I don't know what else to ask.",voice/V_CoffeeShop.swf:CoffeeShop0149
+Friend,"I don't know what else to tell you.",voice/V_CoffeeShop.swf:CoffeeShop0150
+_avatar,"Ok, I've heard enough.",voice/V_CoffeeShop.swf:CoffeeShop0151
+Friend,"Just glad I could help.",voice/V_CoffeeShop.swf:CoffeeShop0152
+Friend,"Be careful!",voice/V_CoffeeShop.swf:CoffeeShop0153
+_avatar,"What did I say?",voice/V_CoffeeShop.swf:CoffeeShop0126
+Friend,"You said you had found files on her computer, and she was into illegal practices to fund her obsession with her surgery.",voice/V_CoffeeShop.swf:CoffeeShop0127
+_avatar,"What surgery?",voice/V_CoffeeShop.swf:CoffeeShop0128
+Friend,"Her cyborg upgrades.",voice/V_CoffeeShop.swf:CoffeeShop0129
+_avatar,"What makes you think Sarah is to blame?",voice/V_CoffeeShop.swf:CoffeeShop0124
+Friend,"Well we met yesterday, and you told me where you were going.",voice/V_CoffeeShop.swf:CoffeeShop0125
+_avatar,"I remember waking up in a locked storage closet!",voice/V_CoffeeShop.swf:CoffeeShop0122
+Friend,"Sarah is clearly more dangerous than we thought.",voice/V_CoffeeShop.swf:CoffeeShop0123
+_avatar,"So what is it that you have to tell me?",voice/V_CoffeeShop.swf:CoffeeShop0120
+Friend,"How much do you remember?",voice/V_CoffeeShop.swf:CoffeeShop0121
+_avatar,"Is there any more you can tell me?",voice/V_CoffeeShop.swf:CoffeeShop0184
 Friend,"What do you want to know?",voice/V_CoffeeShop.swf:CoffeeShop0185
-_avatar,"Bye",voice/V_CoffeeShop.swf:CoffeeShop0186
-Friend,"Take care.",voice/V_CoffeeShop.swf:CoffeeShop0187
-_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0118
-Friend,"Hey Ted.",voice/V_CoffeeShop.swf:CoffeeShop0119
 _avatar,"Bye",voice/V_CoffeeShop.swf:CoffeeShop0188
-_avatar,"Hi, is this the robo-therapy group meetup?",voice/V_CoffeeShop.swf:CoffeeShop0360
-Todd,"Are you implying that we are bunch of robo-loosers?",voice/V_CoffeeShop.swf:CoffeeShop0361
-Optimus,"Good day, how can I help you",voice/V_CoffeeShop.swf:CoffeeShop0362
-Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0421
-Optimus,"to leave us alone, we're busy!",voice/V_CoffeeShop.swf:CoffeeShop0420
-Todd,"Yeah! We're too busy to chat.",voice/V_CoffeeShop.swf:CoffeeShop0417
-_avatar,"Don't you know who I am?",voice/V_CoffeeShop.swf:CoffeeShop0531
-Cyberman,"No, who are you?",voice/V_CoffeeShop.swf:CoffeeShop0532
-_avatar,"Oh. No one really, just hoped you’d know.",voice/V_CoffeeShop.swf:CoffeeShop0533
-_avatar,"Hi, I do know you.",voice/V_CoffeeShop.swf:CoffeeShop0363
-Optimus,"Fine! We do know you.",voice/V_CoffeeShop.swf:CoffeeShop0364
-iDog,"We were just pulling your leg earlier. Woof!",voice/V_CoffeeShop.swf:CoffeeShop0418
+Friend,"Take care.",voice/V_CoffeeShop.swf:CoffeeShop0187
 _avatar,"Optimus: So who are you again?",voice/V_CoffeeShop.swf:CoffeeShop0367
 Optimus,"I'm Optimus Vader Darth Prime",voice/V_CoffeeShop.swf:CoffeeShop0368
 _avatar,"Are you paying the licenses to wear those names?",voice/V_CoffeeShop.swf:CoffeeShop0369
@@ -1763,86 +2483,86 @@ Cyberman,"We are...I am Cyberman.",voice/V_CoffeeShop.swf:CoffeeShop0427
 Cyberman,"Who are you?",voice/V_CoffeeShop.swf:CoffeeShop0432
 _avatar,"You know who I am, I'm Doctor Ted Martin.",voice/V_CoffeeShop.swf:CoffeeShop0433
 Cyberman,"The Doctor! You are the Doctor!",voice/V_CoffeeShop.swf:CoffeeShop0434
-Cyberman," Impending critical failure, rebooting!",voice/V_CoffeeShop.swf:CoffeeShop0435
+Cyberman,"Impending critical failure, rebooting!",voice/V_CoffeeShop.swf:CoffeeShop0435
 Cyberman,"Restoring from last back up.",voice/V_CoffeeShop.swf:CoffeeShop0436
-Cyberman,"Hello, what just happend",voice/V_CoffeeShop.swf:CoffeeShop0437
+Cyberman,"Hello, what just happened",voice/V_CoffeeShop.swf:CoffeeShop0437
 Optimus,"Oh, nothing.",voice/V_CoffeeShop.swf:CoffeeShop0438
 Optimus,"Probably best not to mention that again.",voice/V_CoffeeShop.swf:CoffeeShop0439
 _avatar,"Todd: So who are you again?",voice/V_CoffeeShop.swf:CoffeeShop0428
 Todd,"Todd T-1000. Or 'T' to my friends.",voice/V_CoffeeShop.swf:CoffeeShop0429
-_avatar,"Ok Mr T. Do you pitty the fool?",voice/V_CoffeeShop.swf:CoffeeShop0430
-Todd,"Your not my friend. And it's just 'T'.",voice/V_CoffeeShop.swf:CoffeeShop0431
+_avatar,"Ok Mr T. Do you pity the fool?",voice/V_CoffeeShop.swf:CoffeeShop0430
+Todd,"You're not my friend. And it's just 'T'.",voice/V_CoffeeShop.swf:CoffeeShop0431
 _avatar,"Where is Sarah? I can't find her.",voice/V_CoffeeShop.swf:CoffeeShop0382
 Optimus,"I can tell you where Sarah is",voice/V_CoffeeShop.swf:CoffeeShop0383
 Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0384
-Optimus,"but I'm not going to! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0385
+Optimus,"But I'm not going to! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0385
 _avatar,"I thought we were friends.",voice/V_CoffeeShop.swf:CoffeeShop0386
 Optimus,"Not really. You've never done anything for us.",voice/V_CoffeeShop.swf:CoffeeShop0387
 Todd,"Yeah, friends do favours for each other!",voice/V_CoffeeShop.swf:CoffeeShop0388
 _avatar,"Can you tell me anything about Sarah? It might jog my memory.",voice/V_CoffeeShop.swf:CoffeeShop0440
 Optimus,"Sarah was always saying how nice you were",voice/V_CoffeeShop.swf:CoffeeShop0441
 Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0442
-Optimus,"shame she had no taste in men!",voice/V_CoffeeShop.swf:CoffeeShop0443
+Optimus,"Shame she had no taste in men!",voice/V_CoffeeShop.swf:CoffeeShop0443
 _avatar,"Thanks for that.",voice/V_CoffeeShop.swf:CoffeeShop0444
 _avatar,"Optimus, you want a favour?",voice/V_CoffeeShop.swf:CoffeeShop0389
-_avatar,"What do I need to do to for you to tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0472
+_avatar,"What do I need to do for you to tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0472
 Optimus,"Well, I've been having breathing problems recently, so I had an oxygen tank installed, but it need refilling.",voice/V_CoffeeShop.swf:CoffeeShop0390
 Optimus,"And my heyfever is just making my breathing trouble worse. I want something to help with that too.",voice/V_CoffeeShop.swf:CoffeeShop0473
 _avatar,"Lappy, you want a favour?",voice/V_CoffeeShop.swf:CoffeeShop0445
-_avatar,"What do I need to do to for you to tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0474
-iDog,"I love music. I’ve listened to all my music so much, I need a new song to listen too! Make it good though! Woof!",voice/V_CoffeeShop.swf:CoffeeShop0447
+_avatar,"What do I need to do for you to tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0474
+iDog,"I love music. I’ve listened to all my music so much, I need a new song to listen to! Make it good though! Woof!",voice/V_CoffeeShop.swf:CoffeeShop0447
 iDog,"Oh a parrot, come play with me parrot, I want to be your friend.",voice/V_CoffeeShop.swf:CoffeeShop0475
 _avatar,"Cyberman, you want a favour?",voice/V_CoffeeShop.swf:CoffeeShop0454
-_avatar,"What do I need to do to for you to tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0455
+_avatar,"What do I need to do for you to tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0455
 Cyberman,"I'm looking for The Doctor.",voice/V_CoffeeShop.swf:CoffeeShop0457
 Cyberman,"The Doctor must be stopped!",voice/V_CoffeeShop.swf:CoffeeShop0458
-Cyberman,"My memory has been corrupted, but I know he uses a sonic something. Get me The Doctors sonic thingamy.",voice/V_CoffeeShop.swf:CoffeeShop0459
+Cyberman,"My memory has been corrupted, but I know he uses a sonic something. Get me The Doctor's sonic thingamy.",voice/V_CoffeeShop.swf:CoffeeShop0459
 _avatar,"Todd, you want a favour?",voice/V_CoffeeShop.swf:CoffeeShop0463
-_avatar,"What do I need to do to for you to tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0464
+_avatar,"What do I need to do for you to tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0464
 Todd,"I’m so handsome all the girl robots are scared to be near me.",voice/V_CoffeeShop.swf:CoffeeShop0469
 Todd,"It’s a shame really, I miss the companionship of a lady.",voice/V_CoffeeShop.swf:CoffeeShop0470
 Todd,"If they do ever talk to me, I always say the wrong thing.",voice/V_CoffeeShop.swf:CoffeeShop0471
 Todd,"Like that one I said how large her chest cavities were.",voice/V_CoffeeShop.swf:CoffeeShop0481
-Todd,"I liked it, but she thought I was saying he was large structured.",voice/V_CoffeeShop.swf:CoffeeShop0482
+Todd,"I liked it, but she thought I was saying she was large structured.",voice/V_CoffeeShop.swf:CoffeeShop0482
 _avatar,"Todd, you look big.",voice/V_CoffeeShop.swf:CoffeeShop0476
 Todd,"Bow at my feet! Tremble at my massive muscles!",voice/V_CoffeeShop.swf:CoffeeShop0478
-Todd,"Well their quite big, I guess they could always be improved on.",voice/V_CoffeeShop.swf:CoffeeShop0479
-Todd,"I need to work on my pectorals more don’t I? I can tell your unimpressed.",voice/V_CoffeeShop.swf:CoffeeShop0480
+Todd,"Well they're quite big, I guess they could always be improved on.",voice/V_CoffeeShop.swf:CoffeeShop0479
+Todd,"I need to work on my pectorals more don’t I? I can tell you're unimpressed.",voice/V_CoffeeShop.swf:CoffeeShop0480
 Todd,"Quiver at my stupendous intellect! Actually, that sounds like I’m saying I’m stupid doesn’t it?",voice/V_CoffeeShop.swf:CoffeeShop0529
 _avatar,"Why are you all in this coffee shop?",voice/V_CoffeeShop.swf:CoffeeShop0400
-Optimus,"It's the only place in town that will let us in since Barry Bots eye incident.",voice/V_CoffeeShop.swf:CoffeeShop0401
+Optimus,"It's the only place in town that will let us in since Barry Bot's eye incident.",voice/V_CoffeeShop.swf:CoffeeShop0401
 Todd,"Where he accidently burnt down that shop.",voice/V_CoffeeShop.swf:CoffeeShop0483
-iDog,"Yeah it's the only place in town that allows still allows robots.",voice/V_CoffeeShop.swf:CoffeeShop0484
+iDog,"Yeah it's the only place in town that still allows robots.",voice/V_CoffeeShop.swf:CoffeeShop0484
 iDog,"Is that a new cape Optimus?",voice/V_CoffeeShop.swf:CoffeeShop0485
 Optimus,"Yeah, I got it yesterday.",voice/V_CoffeeShop.swf:CoffeeShop0486
 _avatar,"Is there a big market demand for music loving dogs these days?",voice/V_CoffeeShop.swf:CoffeeShop0487
 iDog,"Well, multi room speaker systems are expensive since the speaker wars of 2020.",voice/V_CoffeeShop.swf:CoffeeShop0488
 iDog,"iDogs are like walking speakers that follow you around the house.",voice/V_CoffeeShop.swf:CoffeeShop0489
 iDog,"Additionally, I can express various emotions, grow through learning, and communicate with human beings to bring an entirely new form of entertainment into the home.",voice/V_CoffeeShop.swf:CoffeeShop0490
-Cyberman,"I think you emotion setting is stuck on happy!",voice/V_CoffeeShop.swf:CoffeeShop0491
+Cyberman,"I think your emotion setting is stuck on happy!",voice/V_CoffeeShop.swf:CoffeeShop0491
 _avatar,"Can't you give me at least one clue about Sarah's location?",voice/V_CoffeeShop.swf:CoffeeShop0493
-iDog,"You gotta be crazy, you gotta have a real need (singing)",voice/V_CoffeeShop.swf:CoffeeShop0492
-_avatar,"I'm just a man who's Circumstances went beyond his control  (singing)",voice/V_CoffeeShop.swf:CoffeeShop0494
-_avatar,"Give my umbrella to the rain dogs. For I am a rain dog too  (singing)",voice/V_CoffeeShop.swf:CoffeeShop0495
+iDog,"You gotta be crazy, you gotta have a real need",voice/V_CoffeeShop.swf:CoffeeShop0492
+_avatar,"I'm just a man who's Circumstances went beyond his control",voice/V_CoffeeShop.swf:CoffeeShop0494
+_avatar,"Give my umbrella to the rain dogs. For I am a rain dog too",voice/V_CoffeeShop.swf:CoffeeShop0495
 iDog,"Pink Floyd, Mr Roboto and Tom Waits? Are you trying to impress me with you musical knowledge?",voice/V_CoffeeShop.swf:CoffeeShop0496
 iDog,"Your voice is awful though, come to me with real music!",voice/V_CoffeeShop.swf:CoffeeShop0497
 _avatar,"Be a good iDog, why can't you tell me where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0498
-iDog,"It's been a hard day's night, and I've been working like a dog  (singing)",voice/V_CoffeeShop.swf:CoffeeShop0499
-_avatar,"There's nothing you can sing that can't be sung (singing)",voice/V_CoffeeShop.swf:CoffeeShop0500
-iDog,"The answer, my friend, is blowing in the wind (singing)",voice/V_CoffeeShop.swf:CoffeeShop0501
-_avatar,"You ain't never caught a rabbit and you ain't no friend of mine (singing)",voice/V_CoffeeShop.swf:CoffeeShop0502
-iDog,"You've got a friend in me. Yeah, you've got a friend in me (singing)",voice/V_CoffeeShop.swf:CoffeeShop0503
+iDog,"It's been a hard day's night, and I've been working like a dog",voice/V_CoffeeShop.swf:CoffeeShop0499
+_avatar,"There's nothing you can sing that can't be sung",voice/V_CoffeeShop.swf:CoffeeShop0500
+iDog,"The answer, my friend, is blowin' in the wind",voice/V_CoffeeShop.swf:CoffeeShop0501
+_avatar,"You ain't never caught a rabbit and you ain't no friend of mine",voice/V_CoffeeShop.swf:CoffeeShop0502
+iDog,"You've got a friend in me. Yeah, you've got a friend in me",voice/V_CoffeeShop.swf:CoffeeShop0503
 iDog,"But I'm not telling you anything.",voice/V_CoffeeShop.swf:CoffeeShop0504
 _avatar,"Cyberman, how come you don't remember anything?",voice/V_CoffeeShop.swf:CoffeeShop0505
-_avatar,"Can robot forget?",voice/V_CoffeeShop.swf:CoffeeShop0506
-Todd,"My HD has a few bad sectors. I've bought it in the 70's!",voice/V_CoffeeShop.swf:CoffeeShop0507
+_avatar,"Can robots forget?",voice/V_CoffeeShop.swf:CoffeeShop0506
+Cyberman,"My HD has a few bad sectors. I bought it in the 70's!",voice/V_CoffeeShop.swf:CoffeeShop0507
 _avatar,"Have you tried SCANDISK /autofix ?",voice/V_CoffeeShop.swf:CoffeeShop0508
 Cyberman,"Checking file system on C:",voice/V_CoffeeShop.swf:CoffeeShop0509
 Cyberman,"The type of the file system is FAT16",voice/V_CoffeeShop.swf:CoffeeShop0510
 Cyberman,"512128 KB total disk space.",voice/V_CoffeeShop.swf:CoffeeShop0511
 Cyberman,"511352 KB in 54029 files",voice/V_CoffeeShop.swf:CoffeeShop0512
 Cyberman,"510423 KB in bad sectors",voice/V_CoffeeShop.swf:CoffeeShop0513
-_avatar,"That doesn't sound good.Maybe you need to see a Doctor.",voice/V_CoffeeShop.swf:CoffeeShop0514
+_avatar,"That doesn't sound good. Maybe you need to see a Doctor.",voice/V_CoffeeShop.swf:CoffeeShop0514
 Cyberman,"Yes I need to find The Doctor!",voice/V_CoffeeShop.swf:CoffeeShop0515
 _avatar,"My GP is Dr Kanputianski, highly recommended.",voice/V_CoffeeShop.swf:CoffeeShop0516
 Cyberman,"Dr who?",voice/V_CoffeeShop.swf:CoffeeShop0517
@@ -1852,31 +2572,88 @@ _avatar,"Memories are not that important",voice/V_CoffeeShop.swf:CoffeeShop0520
 Cyberman,"What do you mean?",voice/V_CoffeeShop.swf:CoffeeShop0521
 _avatar,"You can start a new life, maybe join Greenpeace and use your weapons to save dolphins.",voice/V_CoffeeShop.swf:CoffeeShop0522
 _avatar,"Or buy a big black motorcycle and travel the world.",voice/V_CoffeeShop.swf:CoffeeShop0523
-Cyberman,"I can't, I've got a mortgage to pay.",voice/V_CoffeeShop.swf:CoffeeShop0524
+Cyberman,"I can't, I've got a mortgage to repay.",voice/V_CoffeeShop.swf:CoffeeShop0524
 Cyberman,"And I need to kill the Doctor first. ",voice/V_CoffeeShop.swf:CoffeeShop0525
 _avatar,"I wish I could reset myself, set me free from my memories, I'll be as happy as a computer just reset.",voice/V_CoffeeShop.swf:CoffeeShop0526
 Cyberman,"Really? What are those memories haunting you?",voice/V_CoffeeShop.swf:CoffeeShop0527
 _avatar,"I don't remember!",voice/V_CoffeeShop.swf:CoffeeShop0528
-_avatar,"Bye",voice/V_CoffeeShop.swf:CoffeeShop0402
-_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0365
-Optimus,"I have some information that might help you",voice/V_CoffeeShop.swf:CoffeeShop0419
-Optimus,"&lt;huf-huf&gt;",voice/V_CoffeeShop.swf:CoffeeShop0366
-Optimus,"But I'm not going to tell you what it is! Ha! Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0422
-_avatar,"Hi",voice/V_CoffeeShop.swf:CoffeeShop0405
-Optimus,"I guess you want to know where Sarah is?",voice/V_CoffeeShop.swf:CoffeeShop0406
-_avatar,"Yeah.",voice/V_CoffeeShop.swf:CoffeeShop0407
-Optimus,"She's in her secret lair! Ha Ha! Ha!",voice/V_CoffeeShop.swf:CoffeeShop0414
-Cyberman,"We can't tell you where that is though!",voice/V_CoffeeShop.swf:CoffeeShop0408
-Optimus,"We promised we'd tell him.",voice/V_CoffeeShop.swf:CoffeeShop0409
-Todd,"We also promised Sarah not to say where her secret lair is.",voice/V_CoffeeShop.swf:CoffeeShop0410
-iDog,"The one on the top of the mountain or the one in her office?",voice/V_CoffeeShop.swf:CoffeeShop0411
-Todd,"The mountain one dummy, she's not hiding in her office is she?",voice/V_CoffeeShop.swf:CoffeeShop0412
-Cyberman,"Guys! Shh!",voice/V_CoffeeShop.swf:CoffeeShop0413
 _avatar,"Bye",voice/V_CoffeeShop.swf:CoffeeShop0416
+_avatar,"No More Help Please",voice/V_CoffeeShop.swf:CoffeeShop0537
+_avatar,"The robots won't talk to me",voice/V_CoffeeShop.swf:CoffeeShop0538
+ego,"They claim you don't know them",voice/V_CoffeeShop.swf:CoffeeShop0539
+ego,"You don't remember if you know them.",voice/V_CoffeeShop.swf:CoffeeShop0540
+ego,"Maybe there is someone who would know if you do know them",voice/V_CoffeeShop.swf:CoffeeShop0541
+_avatar,"Don't tell me where it is.",voice/V_CoffeeShop.swf:CoffeeShop0544
+_avatar,"Where is the pirate joke?",voice/V_CoffeeShop.swf:CoffeeShop0545
+ego,"Look at the parrot photo",voice/V_CoffeeShop.swf:CoffeeShop0546
+_avatar,"Are there any pirate jokes in here?",voice/V_CoffeeShop.swf:CoffeeShop0542
+ego,"Yes, make sure you look at everything",voice/V_CoffeeShop.swf:CoffeeShop0543
+_avatar,"Enough help with Optimus",voice/V_CoffeeShop.swf:CoffeeShop0549
+_avatar,"How do I get Oxygen?",voice/V_CoffeeShop.swf:CoffeeShop0550
+ego,"Have you tried a medical facility?",voice/V_CoffeeShop.swf:CoffeeShop0551
+_avatar,"How do I get medicine?",voice/V_CoffeeShop.swf:CoffeeShop0552
+ego,"Medicine is usally locked away.",voice/V_CoffeeShop.swf:CoffeeShop0553
+ego,"Have you tried a medical facility?",voice/V_CoffeeShop.swf:CoffeeShop0554
+_avatar,"How do I help Optimus?",voice/V_CoffeeShop.swf:CoffeeShop0547
+ego,"He wants oxygen and hayfeaver medicine",voice/V_CoffeeShop.swf:CoffeeShop0548
+_avatar,"Enough help with Lappy",voice/V_CoffeeShop.swf:CoffeeShop0557
+_avatar,"Where can I get a song?",voice/V_CoffeeShop.swf:CoffeeShop0558
+ego,"I hear you can download music from the internet",voice/V_CoffeeShop.swf:CoffeeShop0559
+_avatar,"How do I get the song to Lappy?",voice/V_CoffeeShop.swf:CoffeeShop0560
+ego,"I hear that mp3 players are a good way to do that.",voice/V_CoffeeShop.swf:CoffeeShop0561
+ego,"Maybe you could find someone with one you could borrow.",voice/V_CoffeeShop.swf:CoffeeShop0562
+_avatar,"How do I help Lappy (iDog)?",voice/V_CoffeeShop.swf:CoffeeShop0555
+ego,"Lappy wants a good song.",voice/V_CoffeeShop.swf:CoffeeShop0556
+_avatar,"Enough help with Cyberman",voice/V_CoffeeShop.swf:CoffeeShop0565
+_avatar,"Hint",voice/V_CoffeeShop.swf:CoffeeShop0566
+ego,"He does not really know what he wants from The Doctor",voice/V_CoffeeShop.swf:CoffeeShop0567
+ego,"You are a doctor, maybe you could trick him into thinking that something you own is what he wants",voice/V_CoffeeShop.swf:CoffeeShop0568
+_avatar,"Bigger Hint",voice/V_CoffeeShop.swf:CoffeeShop0569
+ego,"I'd get a parcel delivered with a Sonic something in",voice/V_CoffeeShop.swf:CoffeeShop0570
+_avatar,"Just tell me what to do",voice/V_CoffeeShop.swf:CoffeeShop0571
+ego,"I hear iBay is good for buying stuff",voice/V_CoffeeShop.swf:CoffeeShop0572
+ego,"You will need a computer though, you have one at home you could use",voice/V_CoffeeShop.swf:CoffeeShop0573
+_avatar,"How do I help Cyberman?",voice/V_CoffeeShop.swf:CoffeeShop0563
+ego,"He wants something belonging to The Doctor",voice/V_CoffeeShop.swf:CoffeeShop0564
+_avatar,"Enough Help with Todd",voice/V_CoffeeShop.swf:CoffeeShop0576
+_avatar,"Hint",voice/V_CoffeeShop.swf:CoffeeShop0577
+ego,"Robots probably want electronic girlfriends",voice/V_CoffeeShop.swf:CoffeeShop0578
+_avatar,"Tell me what to do",voice/V_CoffeeShop.swf:CoffeeShop0579
+ego,"I would try doing other things first, you can't do this yet.",voice/V_CoffeeShop.swf:CoffeeShop0580
+ego,"Maybe someone will give you one later",voice/V_CoffeeShop.swf:CoffeeShop0583
+_avatar,"Tell me what to do!",voice/V_CoffeeShop.swf:CoffeeShop0581
+ego,"You have a female AI on a USB stick, try giving Todd that",voice/V_CoffeeShop.swf:CoffeeShop0582
+_avatar,"How do I help Todd?",voice/V_CoffeeShop.swf:CoffeeShop0574
+ego,"Todd wants a girlfriend",voice/V_CoffeeShop.swf:CoffeeShop0575
 
 
 
 addSound( CoffeeShop0001 );
+addSound( CoffeeShop0360 );
+addSound( CoffeeShop0361 );
+addSound( CoffeeShop0362 );
+addSound( CoffeeShop0421 );
+addSound( CoffeeShop0420 );
+addSound( CoffeeShop0417 );
+addSound( CoffeeShop0531 );
+addSound( CoffeeShop0532 );
+addSound( CoffeeShop0533 );
+addSound( CoffeeShop0363 );
+addSound( CoffeeShop0364 );
+addSound( CoffeeShop0418 );
+addSound( CoffeeShop0365 );
+addSound( CoffeeShop0419 );
+addSound( CoffeeShop0366 );
+addSound( CoffeeShop0422 );
+addSound( CoffeeShop0406 );
+addSound( CoffeeShop0407 );
+addSound( CoffeeShop0414 );
+addSound( CoffeeShop0408 );
+addSound( CoffeeShop0409 );
+addSound( CoffeeShop0410 );
+addSound( CoffeeShop0411 );
+addSound( CoffeeShop0412 );
+addSound( CoffeeShop0413 );
 addSound( CoffeeShop0002 );
 addSound( CoffeeShop0003 );
 addSound( CoffeeShop0004 );
@@ -1884,6 +2661,31 @@ addSound( CoffeeShop0005 );
 addSound( CoffeeShop0006 );
 addSound( CoffeeShop0007 );
 addSound( CoffeeShop0008 );
+addSound( CoffeeShop0360 );
+addSound( CoffeeShop0361 );
+addSound( CoffeeShop0362 );
+addSound( CoffeeShop0421 );
+addSound( CoffeeShop0420 );
+addSound( CoffeeShop0417 );
+addSound( CoffeeShop0531 );
+addSound( CoffeeShop0532 );
+addSound( CoffeeShop0533 );
+addSound( CoffeeShop0363 );
+addSound( CoffeeShop0364 );
+addSound( CoffeeShop0418 );
+addSound( CoffeeShop0365 );
+addSound( CoffeeShop0419 );
+addSound( CoffeeShop0366 );
+addSound( CoffeeShop0422 );
+addSound( CoffeeShop0406 );
+addSound( CoffeeShop0407 );
+addSound( CoffeeShop0414 );
+addSound( CoffeeShop0408 );
+addSound( CoffeeShop0409 );
+addSound( CoffeeShop0410 );
+addSound( CoffeeShop0411 );
+addSound( CoffeeShop0412 );
+addSound( CoffeeShop0413 );
 addSound( CoffeeShop0009 );
 addSound( CoffeeShop0010 );
 addSound( CoffeeShop0011 );
@@ -1892,18 +2694,118 @@ addSound( CoffeeShop0013 );
 addSound( CoffeeShop0014 );
 addSound( CoffeeShop0015 );
 addSound( CoffeeShop0016 );
+addSound( CoffeeShop0360 );
+addSound( CoffeeShop0361 );
+addSound( CoffeeShop0362 );
+addSound( CoffeeShop0421 );
+addSound( CoffeeShop0420 );
+addSound( CoffeeShop0417 );
+addSound( CoffeeShop0531 );
+addSound( CoffeeShop0532 );
+addSound( CoffeeShop0533 );
+addSound( CoffeeShop0363 );
+addSound( CoffeeShop0364 );
+addSound( CoffeeShop0418 );
+addSound( CoffeeShop0365 );
+addSound( CoffeeShop0419 );
+addSound( CoffeeShop0366 );
+addSound( CoffeeShop0422 );
+addSound( CoffeeShop0406 );
+addSound( CoffeeShop0407 );
+addSound( CoffeeShop0414 );
+addSound( CoffeeShop0408 );
+addSound( CoffeeShop0409 );
+addSound( CoffeeShop0410 );
+addSound( CoffeeShop0411 );
+addSound( CoffeeShop0412 );
+addSound( CoffeeShop0413 );
 addSound( CoffeeShop0017 );
 addSound( CoffeeShop0018 );
 addSound( CoffeeShop0019 );
 addSound( CoffeeShop0020 );
 addSound( CoffeeShop0021 );
+addSound( CoffeeShop0360 );
+addSound( CoffeeShop0361 );
+addSound( CoffeeShop0362 );
+addSound( CoffeeShop0421 );
+addSound( CoffeeShop0420 );
+addSound( CoffeeShop0417 );
+addSound( CoffeeShop0531 );
+addSound( CoffeeShop0532 );
+addSound( CoffeeShop0533 );
+addSound( CoffeeShop0363 );
+addSound( CoffeeShop0364 );
+addSound( CoffeeShop0418 );
+addSound( CoffeeShop0365 );
+addSound( CoffeeShop0419 );
+addSound( CoffeeShop0366 );
+addSound( CoffeeShop0422 );
+addSound( CoffeeShop0406 );
+addSound( CoffeeShop0407 );
+addSound( CoffeeShop0414 );
+addSound( CoffeeShop0408 );
+addSound( CoffeeShop0409 );
+addSound( CoffeeShop0410 );
+addSound( CoffeeShop0411 );
+addSound( CoffeeShop0412 );
+addSound( CoffeeShop0413 );
 addSound( CoffeeShop0022 );
 addSound( CoffeeShop0023 );
 addSound( CoffeeShop0024 );
 addSound( CoffeeShop0025 );
+addSound( CoffeeShop0360 );
+addSound( CoffeeShop0361 );
+addSound( CoffeeShop0362 );
+addSound( CoffeeShop0421 );
+addSound( CoffeeShop0420 );
+addSound( CoffeeShop0417 );
+addSound( CoffeeShop0531 );
+addSound( CoffeeShop0532 );
+addSound( CoffeeShop0533 );
+addSound( CoffeeShop0363 );
+addSound( CoffeeShop0364 );
+addSound( CoffeeShop0418 );
+addSound( CoffeeShop0365 );
+addSound( CoffeeShop0419 );
+addSound( CoffeeShop0366 );
+addSound( CoffeeShop0422 );
+addSound( CoffeeShop0406 );
+addSound( CoffeeShop0407 );
+addSound( CoffeeShop0414 );
+addSound( CoffeeShop0408 );
+addSound( CoffeeShop0409 );
+addSound( CoffeeShop0410 );
+addSound( CoffeeShop0411 );
+addSound( CoffeeShop0412 );
+addSound( CoffeeShop0413 );
 addSound( CoffeeShop0026 );
 addSound( CoffeeShop0027 );
 addSound( CoffeeShop0028 );
+addSound( CoffeeShop0360 );
+addSound( CoffeeShop0361 );
+addSound( CoffeeShop0362 );
+addSound( CoffeeShop0421 );
+addSound( CoffeeShop0420 );
+addSound( CoffeeShop0417 );
+addSound( CoffeeShop0531 );
+addSound( CoffeeShop0532 );
+addSound( CoffeeShop0533 );
+addSound( CoffeeShop0363 );
+addSound( CoffeeShop0364 );
+addSound( CoffeeShop0418 );
+addSound( CoffeeShop0365 );
+addSound( CoffeeShop0419 );
+addSound( CoffeeShop0366 );
+addSound( CoffeeShop0422 );
+addSound( CoffeeShop0406 );
+addSound( CoffeeShop0407 );
+addSound( CoffeeShop0414 );
+addSound( CoffeeShop0408 );
+addSound( CoffeeShop0409 );
+addSound( CoffeeShop0410 );
+addSound( CoffeeShop0411 );
+addSound( CoffeeShop0412 );
+addSound( CoffeeShop0413 );
 addSound( CoffeeShop0029 );
 addSound( CoffeeShop0030 );
 addSound( CoffeeShop0031 );
@@ -1923,6 +2825,8 @@ addSound( CoffeeShop0536 );
 addSound( CoffeeShop0044 );
 addSound( CoffeeShop0045 );
 addSound( CoffeeShop0535 );
+addSound( CoffeeShop0118 );
+addSound( CoffeeShop0119 );
 addSound( CoffeeShop0046 );
 addSound( CoffeeShop0047 );
 addSound( CoffeeShop0048 );
@@ -1955,6 +2859,39 @@ addSound( CoffeeShop0073 );
 addSound( CoffeeShop0074 );
 addSound( CoffeeShop0075 );
 addSound( CoffeeShop0076 );
+addSound( CoffeeShop0175 );
+addSound( CoffeeShop0176 );
+addSound( CoffeeShop0177 );
+addSound( CoffeeShop0178 );
+addSound( CoffeeShop0179 );
+addSound( CoffeeShop0180 );
+addSound( CoffeeShop0181 );
+addSound( CoffeeShop0173 );
+addSound( CoffeeShop0174 );
+addSound( CoffeeShop0182 );
+addSound( CoffeeShop0174 );
+addSound( CoffeeShop0171 );
+addSound( CoffeeShop0172 );
+addSound( CoffeeShop0145 );
+addSound( CoffeeShop0146 );
+addSound( CoffeeShop0147 );
+addSound( CoffeeShop0148 );
+addSound( CoffeeShop0159 );
+addSound( CoffeeShop0160 );
+addSound( CoffeeShop0161 );
+addSound( CoffeeShop0160 );
+addSound( CoffeeShop0167 );
+addSound( CoffeeShop0160 );
+addSound( CoffeeShop0169 );
+addSound( CoffeeShop0170 );
+addSound( CoffeeShop0163 );
+addSound( CoffeeShop0164 );
+addSound( CoffeeShop0165 );
+addSound( CoffeeShop0166 );
+addSound( CoffeeShop0155 );
+addSound( CoffeeShop0156 );
+addSound( CoffeeShop0157 );
+addSound( CoffeeShop0158 );
 addSound( CoffeeShop0130 );
 addSound( CoffeeShop0131 );
 addSound( CoffeeShop0132 );
@@ -1970,74 +2907,25 @@ addSound( CoffeeShop0141 );
 addSound( CoffeeShop0142 );
 addSound( CoffeeShop0143 );
 addSound( CoffeeShop0144 );
-addSound( CoffeeShop0145 );
-addSound( CoffeeShop0146 );
-addSound( CoffeeShop0147 );
-addSound( CoffeeShop0148 );
 addSound( CoffeeShop0149 );
 addSound( CoffeeShop0150 );
 addSound( CoffeeShop0151 );
 addSound( CoffeeShop0152 );
 addSound( CoffeeShop0153 );
-addSound( CoffeeShop0154 );
 addSound( CoffeeShop0126 );
 addSound( CoffeeShop0127 );
 addSound( CoffeeShop0128 );
 addSound( CoffeeShop0129 );
 addSound( CoffeeShop0124 );
 addSound( CoffeeShop0125 );
-addSound( CoffeeShop0155 );
-addSound( CoffeeShop0156 );
-addSound( CoffeeShop0157 );
-addSound( CoffeeShop0158 );
 addSound( CoffeeShop0122 );
 addSound( CoffeeShop0123 );
-addSound( CoffeeShop0159 );
-addSound( CoffeeShop0160 );
-addSound( CoffeeShop0161 );
-addSound( CoffeeShop0162 );
-addSound( CoffeeShop0163 );
-addSound( CoffeeShop0164 );
-addSound( CoffeeShop0165 );
-addSound( CoffeeShop0166 );
-addSound( CoffeeShop0167 );
-addSound( CoffeeShop0168 );
-addSound( CoffeeShop0169 );
-addSound( CoffeeShop0170 );
 addSound( CoffeeShop0120 );
 addSound( CoffeeShop0121 );
-addSound( CoffeeShop0175 );
-addSound( CoffeeShop0176 );
-addSound( CoffeeShop0177 );
-addSound( CoffeeShop0178 );
-addSound( CoffeeShop0179 );
-addSound( CoffeeShop0180 );
-addSound( CoffeeShop0181 );
-addSound( CoffeeShop0173 );
-addSound( CoffeeShop0174 );
-addSound( CoffeeShop0182 );
-addSound( CoffeeShop0183 );
-addSound( CoffeeShop0171 );
-addSound( CoffeeShop0172 );
 addSound( CoffeeShop0184 );
 addSound( CoffeeShop0185 );
-addSound( CoffeeShop0186 );
-addSound( CoffeeShop0187 );
-addSound( CoffeeShop0118 );
-addSound( CoffeeShop0119 );
 addSound( CoffeeShop0188 );
-addSound( CoffeeShop0360 );
-addSound( CoffeeShop0361 );
-addSound( CoffeeShop0362 );
-addSound( CoffeeShop0421 );
-addSound( CoffeeShop0420 );
-addSound( CoffeeShop0417 );
-addSound( CoffeeShop0531 );
-addSound( CoffeeShop0532 );
-addSound( CoffeeShop0533 );
-addSound( CoffeeShop0363 );
-addSound( CoffeeShop0364 );
-addSound( CoffeeShop0418 );
+addSound( CoffeeShop0187 );
 addSound( CoffeeShop0367 );
 addSound( CoffeeShop0368 );
 addSound( CoffeeShop0369 );
@@ -2154,19 +3042,51 @@ addSound( CoffeeShop0525 );
 addSound( CoffeeShop0526 );
 addSound( CoffeeShop0527 );
 addSound( CoffeeShop0528 );
-addSound( CoffeeShop0402 );
-addSound( CoffeeShop0365 );
-addSound( CoffeeShop0419 );
-addSound( CoffeeShop0366 );
-addSound( CoffeeShop0422 );
-addSound( CoffeeShop0405 );
-addSound( CoffeeShop0406 );
-addSound( CoffeeShop0407 );
-addSound( CoffeeShop0414 );
-addSound( CoffeeShop0408 );
-addSound( CoffeeShop0409 );
-addSound( CoffeeShop0410 );
-addSound( CoffeeShop0411 );
-addSound( CoffeeShop0412 );
-addSound( CoffeeShop0413 );
 addSound( CoffeeShop0416 );
+addSound( CoffeeShop0537 );
+addSound( CoffeeShop0538 );
+addSound( CoffeeShop0539 );
+addSound( CoffeeShop0540 );
+addSound( CoffeeShop0541 );
+addSound( CoffeeShop0544 );
+addSound( CoffeeShop0545 );
+addSound( CoffeeShop0546 );
+addSound( CoffeeShop0542 );
+addSound( CoffeeShop0543 );
+addSound( CoffeeShop0549 );
+addSound( CoffeeShop0550 );
+addSound( CoffeeShop0551 );
+addSound( CoffeeShop0552 );
+addSound( CoffeeShop0553 );
+addSound( CoffeeShop0554 );
+addSound( CoffeeShop0547 );
+addSound( CoffeeShop0548 );
+addSound( CoffeeShop0557 );
+addSound( CoffeeShop0558 );
+addSound( CoffeeShop0559 );
+addSound( CoffeeShop0560 );
+addSound( CoffeeShop0561 );
+addSound( CoffeeShop0562 );
+addSound( CoffeeShop0555 );
+addSound( CoffeeShop0556 );
+addSound( CoffeeShop0565 );
+addSound( CoffeeShop0566 );
+addSound( CoffeeShop0567 );
+addSound( CoffeeShop0568 );
+addSound( CoffeeShop0569 );
+addSound( CoffeeShop0570 );
+addSound( CoffeeShop0571 );
+addSound( CoffeeShop0572 );
+addSound( CoffeeShop0573 );
+addSound( CoffeeShop0563 );
+addSound( CoffeeShop0564 );
+addSound( CoffeeShop0576 );
+addSound( CoffeeShop0577 );
+addSound( CoffeeShop0578 );
+addSound( CoffeeShop0579 );
+addSound( CoffeeShop0580 );
+addSound( CoffeeShop0583 );
+addSound( CoffeeShop0581 );
+addSound( CoffeeShop0582 );
+addSound( CoffeeShop0574 );
+addSound( CoffeeShop0575 );

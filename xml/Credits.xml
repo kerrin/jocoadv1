@@ -1,0 +1,51 @@
+<room id="Credits" coreLibs="lib/CreditsMovie.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes/>
+      <nodes>
+        <node id="n0" x="1769" y="683" join="" trap="0" name="StreetDoor"/>
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="StreetDoor" turn="4" x="1769" y="683"/>
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="545" y="720" scale="1.5" rate="1.5" blur="1" color="0x000000" tint="0.5"/>
+      <pole x="545" y="721" scale="2" rate="2" blur="5" color="0xFFFFFF" tint="0.5"/>
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <scriptCall global="beforeDialogue"/>
+      <layer target="Home_LivingRoom:StreetDoor" state="EndGame"/>
+      <layer target="Home_LivingRoom:BedroomDoor" state="EndGame"/>
+      <layer target="Home_LivingRoom:KitchenDoor" state="EndGame"/>
+      <layerSprite target="_avatar" visible="0"/>
+      <cursor gameMouse="0" visible="0"/>
+      <curtain blackout="0"/>
+    </script>
+    <script id="_exit">
+      <curtain blackout="1"/>
+      <layerSprite target="_avatar" visible="1"/>
+      <cursor gameMouse="1" visible="1"/>
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/CreditsMovie.swf:Credits" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1.8" imgH="1.8" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1000" hitH="740" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+          <vars/>
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions/>
+          <items/>
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees/>
+</room>

@@ -25,6 +25,23 @@ LAYERS
   Action: "Use" (#2, layer: StrollerTown, state: main)
 
 
+--------------------------------------------------
+- Layer: Exit
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: Exit)
+ title: ""
+
+  -----
+  Action: "Look at" (#0, layer: Exit, state: main)
+
+  -----
+  Action: "Talk to" (#1, layer: Exit, state: main)
+
+  -----
+  Action: "Use" (#2, layer: Exit, state: main)
+
+
 
 
 TREES
